@@ -29,7 +29,20 @@ MAX_RETRIES = 3
 REQUEST_TIMEOUT = (10, 120)
 EASTERN = ZoneInfo("America/New_York")
 UTC = timezone.utc
+GMT = UTC
 TIME_PATTERN = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b", re.IGNORECASE)
+NEXT_GAME_PATTERN = re.compile(
+    r"Next Game:\s*(?P<away>.+?)\s+@\s+(?P<home>.+?)\s+on\s+"
+    r"(?P<date>\d{4}-\d{2}-\d{2})\s+at\s+"
+    r"(?P<clock>\d{1,2}(?::\d{2})?\s*[AP]M)\s+"
+    r"(?P<zone>EDT|EST|GMT|UTC)\b",
+    re.IGNORECASE,
+)
+MATCHUP_PATTERN = re.compile(
+    r"^(?P<prefix>.*?)(?P<away>[^@\n]+?)\s+@\s+"
+    r"(?P<home>[^@\n]+?)(?P<suffix>\s+on\s+.*)?$",
+    re.IGNORECASE,
+)
 
 
 def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
@@ -66,6 +79,53 @@ def _parse_eastern_starts(suffix: str) -> list[datetime_time]:
                 )
                 starts.insert(max(0, len(starts) - 1), first)
     return list(dict.fromkeys(starts))
+
+
+def _format_next_game(match: re.Match[str]) -> str | None:
+    """Convert a next-game date/time into a GMT label, honoring EDT or EST."""
+    clock = re.sub(r"\s+", "", match.group("clock")).upper()
+    date_text = match.group("date")
+    try:
+        fmt = "%Y-%m-%d %I:%M%p" if ":" in clock else "%Y-%m-%d %I%p"
+        local_time = datetime.strptime(f"{date_text} {clock}", fmt)
+        zone = match.group("zone").upper()
+        if zone in {"EDT", "EST"}:
+            # The abbreviation distinguishes the repeated hour at DST fall-back.
+            candidates = [
+                local_time.replace(tzinfo=EASTERN, fold=fold)
+                for fold in (0, 1)
+            ]
+            local_time = next((dt for dt in candidates if dt.tzname() == zone), None)
+            if local_time is None:
+                return None
+        else:
+            local_time = local_time.replace(tzinfo=GMT)
+        gmt_time = local_time.astimezone(GMT)
+        return (
+            f"Next Game: {match.group('home').strip()} vs {match.group('away').strip()} "
+            f"on {gmt_time.strftime('%d/%m/%Y')} at {gmt_time.strftime('%H:%M')} GMT"
+        )
+    except ValueError:
+        return None
+
+
+def _rewrite_football_text(text: str) -> str:
+    """Put the home team first and convert a supported Next Game timestamp."""
+    next_game = NEXT_GAME_PATTERN.search(text)
+    if next_game:
+        formatted = _format_next_game(next_game)
+        if formatted:
+            return text[: next_game.start()] + formatted + text[next_game.end() :]
+
+    matchup = MATCHUP_PATTERN.match(text.strip())
+    if not matchup:
+        return text
+    suffix = matchup.group("suffix") or ""
+    return (
+        matchup.group("prefix")
+        + f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
+        + suffix
+    )
 
 
 def _parse_model_response(response: Any) -> list[dict[str, str]]:
@@ -252,6 +312,20 @@ def process_epg() -> None:
     )
     for offset, programme in enumerate(generated):
         root.insert(first_programme_index + offset, programme)
+
+    football_channel_ids = {
+        channel.get("id")
+        for channel in root.findall("channel")
+        if (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
+    }
+    print(f"Rewriting fixtures for {len(football_channel_ids)} EPL/EFL channel(s)...")
+    for programme in root.findall("programme"):
+        if programme.get("channel") not in football_channel_ids:
+            continue
+        for tag in ("title", "desc"):
+            element = programme.find(tag)
+            if element is not None and element.text:
+                element.text = _rewrite_football_text(element.text)
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
