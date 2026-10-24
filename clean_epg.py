@@ -28,6 +28,7 @@ TARGET_CHANNELS = {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
 MAX_RETRIES = 3
 REQUEST_TIMEOUT = (10, 120)
 EASTERN = ZoneInfo("America/New_York")
+LONDON = ZoneInfo("Europe/London")
 UTC = timezone.utc
 GMT = UTC
 TIME_PATTERN = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b", re.IGNORECASE)
@@ -42,6 +43,12 @@ MATCHUP_PATTERN = re.compile(
     r"^(?P<prefix>.*?)(?P<away>[^@\n]+?)\s+@\s+"
     r"(?P<home>[^@\n]+?)(?P<suffix>\s+on\s+.*)?$",
     re.IGNORECASE,
+)
+EPL_CHANNEL_PATTERN = re.compile(r"^EPL(?P<number>0[1-9]|10):\s*(?P<details>.*)$", re.IGNORECASE)
+EPL_FIXTURE_PATTERN = re.compile(
+    r"^(?P<home>.+?)\s+(?P<clock>(?:[01]?\d|2[0-3]):[0-5]\d)\s+"
+    r"(?P<away>.+?)\s+(?P<day>\d{1,2})/(?P<month>\d{1,2})"
+    r"(?:/(?P<year>\d{4}))?$"
 )
 
 
@@ -111,6 +118,13 @@ def _format_next_game(match: re.Match[str]) -> str | None:
 
 def _rewrite_football_text(text: str) -> str:
     """Put the home team first and convert a supported Next Game timestamp."""
+    # Some provider descriptions contain JSON-style Unicode escapes literally
+    # (for example, ``\u0026`` instead of ``&``). Decode them for display.
+    text = re.sub(
+        r"\\u([0-9a-fA-F]{4})",
+        lambda match: chr(int(match.group(1), 16)),
+        text,
+    )
     next_game = NEXT_GAME_PATTERN.search(text)
     if next_game:
         formatted = _format_next_game(next_game)
@@ -126,6 +140,46 @@ def _rewrite_football_text(text: str) -> str:
         + f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
         + suffix
     )
+
+
+def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
+    """Parse labels such as `EPL01: Aston Villa 12:30 Man City 24/10`."""
+    channel_match = EPL_CHANNEL_PATTERN.match(label.strip())
+    if not channel_match:
+        return None
+    number = int(channel_match.group("number"))
+    details = channel_match.group("details").strip()
+    result: dict[str, Any] = {
+        "channel_name": f"EPL{number:02d}",
+        "title": "",
+        "start_utc": None,
+    }
+    fixture = EPL_FIXTURE_PATTERN.match(details)
+    if not fixture:
+        return result
+
+    year = int(fixture.group("year") or today.year)
+    month = int(fixture.group("month"))
+    day = int(fixture.group("day"))
+    try:
+        fixture_date = datetime(year, month, day).date()
+    except ValueError:
+        return result
+
+    # Labels omit the year. A late-December fixture viewed in early January
+    # belongs to the previous season-year; otherwise use the current year.
+    if not fixture.group("year") and fixture_date - today > timedelta(days=180):
+        fixture_date = fixture_date.replace(year=year - 1)
+
+    hour_text, minute_text = fixture.group("clock").split(":", 1)
+    local_start = datetime.combine(
+        fixture_date,
+        datetime_time(int(hour_text), int(minute_text)),
+        tzinfo=LONDON,
+    )
+    result["title"] = f"{fixture.group('home').strip()} vs {fixture.group('away').strip()}"
+    result["start_utc"] = local_start.astimezone(UTC)
+    return result
 
 
 def _parse_model_response(response: Any) -> list[dict[str, str]]:
@@ -229,7 +283,8 @@ def process_epg() -> None:
             parsed_name = _event_number_and_suffix(display_name)
             if parsed_name:
                 core, suffix = parsed_name
-                event_title = next(
+                permanent_title = "UFC Special Feed" if core == "LIVE EVENT 01" else ""
+                event_title = permanent_title or next(
                     (name for name in display_names
                      if not _event_number_and_suffix(name)
                      and name.casefold() != "no event"),
@@ -240,9 +295,22 @@ def process_epg() -> None:
                     "core": core,
                     "event_title": event_title,
                     "start_times": times,
+                    "permanent": bool(permanent_title),
                 }
                 # Use the first matching marker alias; channel names are
                 # normalized below regardless of their daily suffix.
+                break
+
+    epl_today = datetime.now(LONDON).date()
+    epl_targets: dict[str, dict[str, Any]] = {}
+    for channel in root.findall("channel"):
+        ch_id = channel.get("id")
+        if not ch_id:
+            continue
+        for display_el in channel.findall("display-name"):
+            parsed = _parse_epl_dynamic_label((display_el.text or "").strip(), epl_today)
+            if parsed:
+                epl_targets[ch_id] = parsed
                 break
 
     # Some providers expose the event title only in the programme entries.
@@ -252,10 +320,16 @@ def process_epg() -> None:
             title = (programme.findtext("title") or "").strip()
             if title.casefold() != "no event":
                 targets[ch_id]["event_title"] = title
+        if ch_id and ch_id not in epl_targets:
+            parsed = _parse_epl_dynamic_label(
+                (programme.findtext("title") or "").strip(), epl_today
+            )
+            if parsed:
+                epl_targets[ch_id] = parsed
 
     active_titles = sorted({
         item["event_title"] for item in targets.values()
-        if item["event_title"] and item["start_times"]
+        if item["event_title"] and item["start_times"] and not item["permanent"]
     })
     print(f"Found {len(targets)} target channel(s), "
           f"{len(active_titles)} active event title(s) with parseable start times.")
@@ -284,6 +358,18 @@ def process_epg() -> None:
     generated: list[ET.Element] = []
     for ch_id, item in targets.items():
         raw_title = item["event_title"]
+        if item["permanent"]:
+            start_utc = datetime.combine(datetime.now(UTC).date(), datetime_time.min, tzinfo=UTC)
+            end_utc = start_utc + timedelta(days=1)
+            programme = ET.Element("programme", {
+                "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "stop": end_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(programme, "title").text = "UFC Special Feed"
+            ET.SubElement(programme, "desc").text = "UFC Special Feed"
+            generated.append(programme)
+            continue
         if not raw_title or not item["start_times"]:
             print(f"No scheduled listing for {item['core']} (no event or parseable start time).")
             continue
@@ -291,9 +377,12 @@ def process_epg() -> None:
             "clean_title": raw_title,
             "description": "Live event",
         })
+        channel_generated_start = len(generated)
+        scheduled_starts: list[datetime] = []
         for event_time in item["start_times"]:
             start_eastern = datetime.combine(event_date, event_time, tzinfo=EASTERN)
             start_utc = start_eastern.astimezone(UTC)
+            scheduled_starts.append(start_utc)
             end_utc = datetime.combine(
                 start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
             )
@@ -305,6 +394,57 @@ def process_epg() -> None:
             ET.SubElement(programme, "title").text = result["clean_title"]
             ET.SubElement(programme, "desc").text = result["description"]
             generated.append(programme)
+
+        # Fill the gap before kickoff so UHF has an upcoming listing instead of
+        # showing "No information". The pre-event slot ends exactly at kickoff.
+        first_start = min(scheduled_starts)
+        upcoming_start = datetime.combine(first_start.date(), datetime_time.min, tzinfo=UTC)
+        upcoming_title = (
+            f"Upcoming Event: {result['clean_title']} "
+            f"{first_start.strftime('%H:%M')} GMT"
+        )
+        if upcoming_start < first_start and datetime.now(UTC) < first_start:
+            upcoming = ET.Element("programme", {
+                "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": first_start.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(upcoming, "title").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = upcoming_title
+            generated.insert(channel_generated_start, upcoming)
+
+    # Replace repeating source placeholders on the dynamic EPL01–EPL10 channels.
+    for programme in root.findall("programme"):
+        if programme.get("channel") in epl_targets:
+            root.remove(programme)
+
+    now_utc = datetime.now(UTC)
+    for ch_id, item in epl_targets.items():
+        title = item["title"]
+        start_utc = item["start_utc"]
+        if not title or start_utc is None:
+            print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
+            continue
+        end_utc = start_utc + timedelta(minutes=150)
+        upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        upcoming_title = f"Upcoming Event: {title} {start_utc.strftime('%H:%M')} GMT"
+        if upcoming_start < start_utc and now_utc < start_utc:
+            upcoming = ET.Element("programme", {
+                "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(upcoming, "title").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = upcoming_title
+            generated.append(upcoming)
+        fixture_programme = ET.Element("programme", {
+            "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": end_utc.strftime("%Y%m%d%H%M%S %z"),
+            "channel": ch_id,
+        })
+        ET.SubElement(fixture_programme, "title").text = title
+        ET.SubElement(fixture_programme, "desc").text = title
+        generated.append(fixture_programme)
 
     first_programme_index = next(
         (index for index, element in enumerate(root) if element.tag == "programme"),
