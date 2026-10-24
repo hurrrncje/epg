@@ -50,6 +50,16 @@ EPL_FIXTURE_PATTERN = re.compile(
     r"(?P<away>.+?)\s+(?P<day>\d{1,2})/(?P<month>\d{1,2})"
     r"(?:/(?P<year>\d{4}))?$"
 )
+PARAMOUNT_CHANNEL_PATTERN = re.compile(
+    r"^Paramount\+\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
+PARAMOUNT_FIXTURE_PATTERN = re.compile(
+    r"^(?P<title>.+?)\s+@\s+(?P<date>\d{1,2}\s+[A-Za-z]{3})"
+    r"(?:\s+(?P<year>\d{4}))?\s+"
+    r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+(?P<zone>ET|EDT|EST)$",
+    re.IGNORECASE,
+)
 
 
 def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
@@ -182,6 +192,57 @@ def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
     return result
 
 
+def _parse_paramount_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
+    """Parse labels such as `Paramount+ 03: Event @ 24 Oct 07:20 AM ET`."""
+    channel_match = PARAMOUNT_CHANNEL_PATTERN.match(label.strip())
+    if not channel_match:
+        return None
+    number = int(channel_match.group("number"))
+    details = channel_match.group("details").strip()
+    result: dict[str, Any] = {
+        "channel_name": f"Paramount+ {number:02d}",
+        "title": "",
+        "start_utc": None,
+    }
+    fixture = PARAMOUNT_FIXTURE_PATTERN.match(details)
+    if not fixture:
+        return result
+
+    year = int(fixture.group("year") or today.year)
+    try:
+        local_date = datetime.strptime(
+            f"{fixture.group('date')} {year}", "%d %b %Y"
+        ).date()
+    except ValueError:
+        return result
+
+    if not fixture.group("year"):
+        delta = (local_date - today).days
+        if delta > 180:
+            local_date = local_date.replace(year=year - 1)
+        elif delta < -180:
+            local_date = local_date.replace(year=year + 1)
+
+    clock = re.sub(r"\s+", "", fixture.group("clock")).upper()
+    try:
+        local_time = datetime.strptime(
+            f"{local_date.isoformat()} {clock}", "%Y-%m-%d %I:%M%p"
+        )
+    except ValueError:
+        return result
+    zone_name = fixture.group("zone").upper()
+    candidates = [local_time.replace(tzinfo=EASTERN, fold=fold) for fold in (0, 1)]
+    if zone_name in {"EDT", "EST"}:
+        local_time = next((dt for dt in candidates if dt.tzname() == zone_name), None)
+        if local_time is None:
+            return result
+    else:
+        local_time = candidates[0]
+    result["title"] = fixture.group("title").strip()
+    result["start_utc"] = local_time.astimezone(UTC)
+    return result
+
+
 def _parse_model_response(response: Any) -> list[dict[str, str]]:
     """Parse the model's requested Python-list format, tolerating code fences."""
     text = getattr(response, "text", None) or ""
@@ -303,6 +364,8 @@ def process_epg() -> None:
 
     epl_today = datetime.now(LONDON).date()
     epl_targets: dict[str, dict[str, Any]] = {}
+    paramount_today = datetime.now(EASTERN).date()
+    paramount_targets: dict[str, dict[str, Any]] = {}
     for channel in root.findall("channel"):
         ch_id = channel.get("id")
         if not ch_id:
@@ -311,6 +374,12 @@ def process_epg() -> None:
             parsed = _parse_epl_dynamic_label((display_el.text or "").strip(), epl_today)
             if parsed:
                 epl_targets[ch_id] = parsed
+                continue
+            parsed = _parse_paramount_dynamic_label(
+                (display_el.text or "").strip(), paramount_today
+            )
+            if parsed:
+                paramount_targets[ch_id] = parsed
                 break
 
     # Some providers expose the event title only in the programme entries.
@@ -326,6 +395,12 @@ def process_epg() -> None:
             )
             if parsed:
                 epl_targets[ch_id] = parsed
+        if ch_id and ch_id not in paramount_targets:
+            parsed = _parse_paramount_dynamic_label(
+                (programme.findtext("title") or "").strip(), paramount_today
+            )
+            if parsed:
+                paramount_targets[ch_id] = parsed
 
     active_titles = sorted({
         item["event_title"] for item in targets.values()
@@ -420,6 +495,45 @@ def process_epg() -> None:
 
     now_utc = datetime.now(UTC)
     for ch_id, item in epl_targets.items():
+        title = item["title"]
+        start_utc = item["start_utc"]
+        if not title or start_utc is None:
+            print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
+            continue
+        end_utc = datetime.combine(
+            start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
+        )
+        upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        upcoming_title = f"Upcoming Event: {title} {start_utc.strftime('%H:%M')} GMT"
+        if upcoming_start < start_utc and now_utc < start_utc:
+            upcoming = ET.Element("programme", {
+                "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(upcoming, "title").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = upcoming_title
+            generated.append(upcoming)
+        fixture_programme = ET.Element("programme", {
+            "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": end_utc.strftime("%Y%m%d%H%M%S %z"),
+            "channel": ch_id,
+        })
+        ET.SubElement(fixture_programme, "title").text = title
+        ET.SubElement(fixture_programme, "desc").text = title
+        generated.append(fixture_programme)
+
+    # Normalize Paramount+ 01–100 names and replace their repeated placeholders.
+    for channel in root.findall("channel"):
+        item = paramount_targets.get(channel.get("id"))
+        if item:
+            for display_el in channel.findall("display-name"):
+                display_el.text = item["channel_name"]
+    for programme in root.findall("programme"):
+        if programme.get("channel") in paramount_targets:
+            root.remove(programme)
+
+    for ch_id, item in paramount_targets.items():
         title = item["title"]
         start_utc = item["start_utc"]
         if not title or start_utc is None:
