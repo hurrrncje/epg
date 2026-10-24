@@ -5,6 +5,20 @@ channels whose display-name alias contains `LIVE EVENT 01` through `LIVE EVENT
 36`, and publishes `cleaned_epg.xml.gz`. GitHub Actions runs daily at 05:15 UTC
 and can also be started manually from the Actions tab.
 
+For those channels, the generated EPG replaces the provider's placeholder
+programme rows with listings based on the daily event label. Every channel
+display-name is reduced to its stable `LIVE EVENT NN` name. Times are interpreted
+in `America/New_York` (including daylight saving time), converted to UTC/GMT,
+and each generated listing ends at the next midnight UTC. A label such as
+`5:25/8pm` creates two start-time entries, interpreting the first time as 5:25pm.
+Channels marked `No Event` or with no explicit AM/PM time receive no programme
+entry that day.
+
+For channels whose XMLTV IDs start with `EPL` or `EFL`, fixture text is changed
+from `Away @ Home` to `Home vs Away`. `Next Game` dates are rendered as
+`DD/MM/YYYY HH:MM GMT`; Eastern timestamps are converted using their stated
+EDT/EST offset, including daylight saving time.
+
 ## One-time setup
 
 1. Add `clean_epg.py`, `requirements.txt`, and `.github/workflows/update-epg.yml`
