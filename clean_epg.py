@@ -1,4 +1,4 @@
-"""Download an XMLTV EPG and clean titles on channels that mirror their name."""
+"""Generate daily event listings for XMLTV channels LIVE EVENT 01–36."""
 
 from __future__ import annotations
 
@@ -6,10 +6,13 @@ import ast
 import gzip
 import json
 import os
+import re
 import time
+from datetime import datetime, time as datetime_time, timedelta, timezone
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import requests
 from google import genai
@@ -24,6 +27,45 @@ BATCH_SIZE = 50
 TARGET_CHANNELS = {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
 MAX_RETRIES = 3
 REQUEST_TIMEOUT = (10, 120)
+EASTERN = ZoneInfo("America/New_York")
+UTC = timezone.utc
+TIME_PATTERN = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b", re.IGNORECASE)
+
+
+def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
+    """Return the stable LIVE EVENT NN name and its changing suffix."""
+    match = re.match(r"^(LIVE EVENT \d{2})(?=$|[\s-])(.*)$", display_name.strip(), re.IGNORECASE)
+    if not match:
+        return None
+    core = match.group(1).upper()
+    if core not in TARGET_CHANNELS:
+        return None
+    return core, match.group(2).strip().lstrip("- ").strip()
+
+
+def _parse_eastern_starts(suffix: str) -> list[datetime_time]:
+    """Read 12-hour start times, including paired labels such as 5:25/8pm."""
+    starts: list[datetime_time] = []
+    for match in TIME_PATTERN.finditer(suffix):
+        meridiem = match.group(3).lower()
+        hour = int(match.group(1))
+        minute = int(match.group(2) or "0")
+        if 1 <= hour <= 12 and 0 <= minute <= 59:
+            starts.append(datetime_time(hour % 12 + (12 if meridiem == "pm" else 0), minute))
+
+        # If the preceding slash-separated time omitted AM/PM, inherit the
+        # suffix from the explicit time, e.g. 5:25/8pm means 5:25pm and 8pm.
+        preceding = suffix[:match.start()]
+        paired = re.search(r"(\d{1,2})(?::(\d{2}))?\s*/\s*$", preceding)
+        if paired:
+            first_hour = int(paired.group(1))
+            first_minute = int(paired.group(2) or "0")
+            if 1 <= first_hour <= 12 and 0 <= first_minute <= 59:
+                first = datetime_time(
+                    first_hour % 12 + (12 if meridiem == "pm" else 0), first_minute
+                )
+                starts.insert(max(0, len(starts) - 1), first)
+    return list(dict.fromkeys(starts))
 
 
 def _parse_model_response(response: Any) -> list[dict[str, str]]:
@@ -114,10 +156,8 @@ def process_epg() -> None:
     # XMLTV documents may declare a non-UTF-8 encoding; parse the response bytes.
     root = ET.fromstring(response.content)
 
-    print("Finding LIVE EVENT 01–36 channels and their current event titles...")
-    channel_names: dict[str, str] = {}
-    target_channel_ids: set[str] = set()
-    target_labels: dict[str, str] = {}
+    print("Finding LIVE EVENT 01–36 channels, current events, and start times...")
+    targets: dict[str, dict[str, Any]] = {}
     for channel in root.findall("channel"):
         ch_id = channel.get("id")
         if not ch_id:
@@ -125,63 +165,93 @@ def process_epg() -> None:
         display_names = [(el.text or "").strip() for el in channel.findall("display-name")]
         if not display_names:
             continue
-        channel_names[ch_id] = display_names[0]
         for display_name in display_names:
-            marker = next(
-                (prefix for prefix in TARGET_CHANNELS
-                 if display_name == prefix or display_name.startswith(prefix + " ") or display_name.startswith(prefix + "-")),
-                None,
-            )
-            if marker:
-                target_channel_ids.add(ch_id)
-                target_labels[ch_id] = display_name
+            parsed_name = _event_number_and_suffix(display_name)
+            if parsed_name:
+                core, suffix = parsed_name
+                event_title = next(
+                    (name for name in display_names
+                     if not _event_number_and_suffix(name)
+                     and name.casefold() != "no event"),
+                    "",
+                )
+                times = _parse_eastern_starts(suffix)
+                targets[ch_id] = {
+                    "core": core,
+                    "event_title": event_title,
+                    "start_times": times,
+                }
+                # Use the first matching marker alias; channel names are
+                # normalized below regardless of their daily suffix.
                 break
 
-    # The current event title is the title in this channel's XMLTV programmes.
-    titles_by_channel: dict[str, str] = {}
+    # Some providers expose the event title only in the programme entries.
     for programme in root.findall("programme"):
         ch_id = programme.get("channel")
-        title_el = programme.find("title")
-        title = (title_el.text or "").strip() if title_el is not None else ""
-        if ch_id in target_channel_ids and title:
-            titles_by_channel.setdefault(ch_id, title)
+        if ch_id in targets and not targets[ch_id]["event_title"]:
+            title = (programme.findtext("title") or "").strip()
+            if title.casefold() != "no event":
+                targets[ch_id]["event_title"] = title
 
-    titles = sorted(set(titles_by_channel.values()))
-    print(f"Found {len(target_channel_ids)} LIVE EVENT 01–36 channel(s) and "
-          f"{len(titles)} distinct current event title(s).")
+    active_titles = sorted({
+        item["event_title"] for item in targets.values()
+        if item["event_title"] and item["start_times"]
+    })
+    print(f"Found {len(targets)} target channel(s), "
+          f"{len(active_titles)} active event title(s) with parseable start times.")
 
     cleaned_mapping: dict[str, dict[str, str]] = {}
-    for start in range(0, len(titles), BATCH_SIZE):
-        batch = titles[start : start + BATCH_SIZE]
+    for start in range(0, len(active_titles), BATCH_SIZE):
+        batch = active_titles[start : start + BATCH_SIZE]
         print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
         cleaned_mapping.update(ai_clean_sport_titles(batch, client))
 
-    print("Applying cleaned titles and descriptions...")
-    # Update all schedule rows for selected channels, including repeated listings.
-    for programme in root.findall("programme"):
-        ch_id = programme.get("channel")
-        raw_title = titles_by_channel.get(ch_id)
-        result = cleaned_mapping.get(raw_title or "")
-        if result is None:
-            continue
-        title_el = programme.find("title")
-        if title_el is not None:
-            title_el.text = result["clean_title"]
-        desc_el = programme.find("desc")
-        if desc_el is None:
-            desc_el = ET.SubElement(programme, "desc")
-        desc_el.text = result["description"]
-
-    # Keep all other display-name aliases intact; update only the LIVE EVENT alias.
+    # Strip all changing event details from display names. Repeated aliases are
+    # retained to preserve the XML structure, but contain only the stable label.
     for channel in root.findall("channel"):
-        ch_id = channel.get("id")
-        raw_title = titles_by_channel.get(ch_id)
-        result = cleaned_mapping.get(raw_title or "")
-        if result is None:
+        item = targets.get(channel.get("id"))
+        if item:
+            for display_el in channel.findall("display-name"):
+                display_el.text = item["core"]
+
+    # Replace provider placeholder rows on these channels with generated listings.
+    target_ids = set(targets)
+    for programme in root.findall("programme"):
+        if programme.get("channel") in target_ids:
+            root.remove(programme)
+
+    event_date = datetime.now(EASTERN).date()
+    generated: list[ET.Element] = []
+    for ch_id, item in targets.items():
+        raw_title = item["event_title"]
+        if not raw_title or not item["start_times"]:
+            print(f"No scheduled listing for {item['core']} (no event or parseable start time).")
             continue
-        for display_el in channel.findall("display-name"):
-            if (display_el.text or "").strip() == target_labels.get(ch_id):
-                display_el.text = result["clean_title"]
+        result = cleaned_mapping.get(raw_title, {
+            "clean_title": raw_title,
+            "description": "Live event",
+        })
+        for event_time in item["start_times"]:
+            start_eastern = datetime.combine(event_date, event_time, tzinfo=EASTERN)
+            start_utc = start_eastern.astimezone(UTC)
+            end_utc = datetime.combine(
+                start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
+            )
+            programme = ET.Element("programme", {
+                "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "stop": end_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(programme, "title").text = result["clean_title"]
+            ET.SubElement(programme, "desc").text = result["description"]
+            generated.append(programme)
+
+    first_programme_index = next(
+        (index for index, element in enumerate(root) if element.tag == "programme"),
+        len(root),
+    )
+    for offset, programme in enumerate(generated):
+        root.insert(first_programme_index + offset, programme)
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
