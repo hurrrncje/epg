@@ -1,8 +1,9 @@
 # Daily cleaned EPG
 
 This repository downloads the provider XMLTV feed, cleans programme listings
-for `LIVE EVENT 01` through `LIVE EVENT 36`, dynamic EPL and other European
-football event channels, and publishes `cleaned_epg.xml.gz`. GitHub Actions runs daily at 05:15,
+for `LIVE EVENT 01` through `LIVE EVENT 36`, `DAZN UK 01` through `DAZN UK 100`,
+and dynamic EPL and other European football event channels, then publishes
+`cleaned_epg.xml.gz`. GitHub Actions runs daily at 05:15,
 07:15, and 09:15 UK time (Europe/London) and can also be started manually from
 the Actions tab. GitHub may delay scheduled runs during busy periods.
 The workflow also saves Gemini results in `ai_cache.json` and commits that file
@@ -26,7 +27,8 @@ the pre-event period. Titles use a compact 12-hour GMT clock, for example
 and the source label's leading kickoff time.
 
 For channels whose XMLTV IDs start with `EPL` or `EFL`, fixture text is changed
-from `Away @ Home` to `Home vs Away`. `Next Game` dates are rendered as
+from `Away @ Home` to `Home vs Away`, and `Game` in programme titles becomes
+`Match` (for example, `No Match Today`). `Next Game` dates are rendered as
 `DD/MM/YYYY HH:MM GMT`; Eastern timestamps are converted using their stated
 EDT/EST offset, including daylight saving time.
 
@@ -36,6 +38,12 @@ time and date. Programme titles use `Home vs Away`; kickoff is converted from
 the label's London time to UTC/GMT, with `Upcoming Match` before kickoff, the
 match listing for 2.5 hours, and `Match ended` until midnight GMT. Channels
 without parseable fixture data receive an all-day `No match today` listing.
+
+Dynamic `DAZN UK 01`–`DAZN UK 100` labels are parsed as event titles and London
+kickoff dates/times. Channel names are normalized to their stable DAZN UK
+number, event titles are cleaned with the same AI process as LIVE EVENT
+channels, and events run from kickoff until midnight GMT. Before kickoff, an
+upcoming listing runs from today's midnight GMT to the event start.
 
 Dynamic `Paramount+ 01`–`Paramount+ 100` labels use the event text and Eastern
 date/time after the prefix. The programme title drops the channel number; the
