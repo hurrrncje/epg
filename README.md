@@ -2,15 +2,19 @@
 
 This repository downloads the provider XMLTV feed, cleans programme listings
 for `LIVE EVENT 01` through `LIVE EVENT 36`, `DAZN UK 01` through `DAZN UK 100`,
-and dynamic EPL and other European football event channels, then publishes
-`cleaned_epg.xml.gz`. GitHub Actions runs daily at 05:15,
-07:15, and 09:15 UK time (Europe/London) and can also be started manually from
-the Actions tab. GitHub may delay scheduled runs during busy periods.
+`Paramount+ 01` through `Paramount+ 100`, `Disney+ Events 01` through
+`Disney+ Events 500`, `ESPN+ 01` through `ESPN+ 400`, and dynamic EPL and other
+European football event channels, then publishes `cleaned_epg.xml.gz`.
+GitHub Actions runs every three hours at :45 UK time, starting at 14:45
+(Europe/London), and
+can also be started manually from the Actions tab. GitHub may delay scheduled
+runs during busy periods.
 The workflow also saves Gemini results in `ai_cache.json` and commits that file
 with the EPG. Unchanged event inputs reuse cached titles and descriptions;
 changed or new events may require new Gemini requests. Failed API requests are
-also held for six hours so the three morning runs do not repeatedly hit the
-same exhausted quota.
+also held for six hours so scheduled runs do not repeatedly hit the
+same exhausted quota. Successful cache entries older than 30 days and expired
+failure cooldowns are pruned automatically.
 
 For those channels, the generated EPG replaces the provider's placeholder
 programme rows with listings based on the daily event label. Every channel
@@ -35,8 +39,11 @@ EDT/EST offset, including daylight saving time.
 Dynamic labels for `EPL01`–`EPL10`, `Bundesliga 01`–`10`, `La Liga 01`–`10`,
 `Serie A 01`–`10`, and `Ligue 1 01`–`10` are parsed as fixtures with a kickoff
 time and date. Programme titles use `Home vs Away`; kickoff is converted from
-the label's London time to UTC/GMT, with `Upcoming Match` before kickoff, the
-match listing for 2.5 hours, and `Match ended` until midnight GMT. Channels
+the label's London time to UTC/GMT. For Ligue 1, the script also checks the
+public ESPN scoreboard for that date and replaces the label time only when
+both teams match an unambiguous fixture; if lookup or matching fails, it keeps
+the provider time. The generated schedule uses `Upcoming Match` before kickoff,
+the match listing for 2.5 hours, and `Match ended` until midnight GMT. Channels
 without parseable fixture data receive an all-day `No match today` listing.
 
 Dynamic `DAZN UK 01`–`DAZN UK 100` labels are parsed as event titles and London
@@ -50,6 +57,14 @@ Dynamic `Paramount+ 01`–`Paramount+ 100` labels use the event text and Eastern
 date/time after the prefix. The programme title drops the channel number; the
 upcoming entry precedes kickoff and the event listing continues until midnight
 GMT on the kickoff date.
+
+Dynamic `Disney+ Events 01`–`500` and `ESPN+ 01`–`400` labels use the same
+Eastern-time event schedule handling. The provider prefix, channel number,
+date, and time are removed from programme titles; channel names are reduced to
+their stable numbered names. An upcoming listing runs until kickoff, then the
+event listing continues until midnight GMT. AI-generated descriptions are
+cached with the other event descriptions. Empty or unparseable labels receive
+no programme entry.
 
 ## One-time setup
 
