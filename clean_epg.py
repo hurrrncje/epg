@@ -40,6 +40,9 @@ TIME_PATTERN = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b", re.IGNORECASE
 LIVE_EVENT_PREFIX_PATTERN = re.compile(
     r"^\s*LIVE\s+EVENT\s+\d{1,2}\s*(?:[-:–—]+\s*)?", re.IGNORECASE
 )
+DAZN_LABEL_PREFIX_PATTERN = re.compile(
+    r"^\s*DAZN\s+UK\s*\d{1,3}\s*:\s*", re.IGNORECASE
+)
 LEADING_EVENT_TIME_PATTERN = re.compile(
     r"^\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)\b\s*[-:–—]*\s*", re.IGNORECASE
 )
@@ -85,11 +88,21 @@ PARAMOUNT_CHANNEL_PATTERN = re.compile(
     r"^Paramount\+\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
     re.IGNORECASE,
 )
+DAZN_CHANNEL_PATTERN = re.compile(
+    r"^DAZN\s+UK\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
 EPL_EVENT_DURATION = timedelta(minutes=150)
 PARAMOUNT_FIXTURE_PATTERN = re.compile(
     r"^(?P<title>.+?)\s+@\s+(?P<date>\d{1,2}\s+[A-Za-z]{3})"
     r"(?:\s+(?P<year>\d{4}))?\s+"
     r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+(?P<zone>ET|EDT|EST)$",
+    re.IGNORECASE,
+)
+DAZN_FIXTURE_PATTERN = re.compile(
+    r"^(?P<title>.+?)\s*@\s*(?P<date>\d{1,2}\s+[A-Za-z]{3})"
+    r"(?:\s+(?P<year>\d{4}))?\s+"
+    r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+London$",
     re.IGNORECASE,
 )
 
@@ -106,8 +119,9 @@ def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
 
 
 def _clean_live_event_title(title: str) -> str:
-    """Remove the channel label and kickoff clock from a mirrored event title."""
+    """Remove a dynamic channel label and kickoff clock from an event title."""
     cleaned = LIVE_EVENT_PREFIX_PATTERN.sub("", title.strip(), count=1)
+    cleaned = DAZN_LABEL_PREFIX_PATTERN.sub("", cleaned, count=1)
     cleaned = LEADING_EVENT_TIME_PATTERN.sub("", cleaned, count=1)
     return cleaned.strip(" -:–—")
 
@@ -213,6 +227,17 @@ def _rewrite_football_text(text: str) -> str:
     )
 
 
+def _replace_game_with_match(title: str) -> str:
+    """Use football terminology in EPL/EFL programme titles."""
+    replacements = {"game": "match", "Game": "Match", "GAME": "MATCH"}
+    return re.sub(
+        r"\bgame\b",
+        lambda match: replacements.get(match.group(0), "match"),
+        title,
+        flags=re.IGNORECASE,
+    )
+
+
 def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
     """Parse labels such as `EPL01: Aston Villa 12:30 Man City 24/10`."""
     channel_match = EPL_CHANNEL_PATTERN.match(label.strip())
@@ -315,6 +340,53 @@ def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | Non
         local_start = local_start.replace(tzinfo=UTC)
 
     result["title"] = f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
+    result["start_utc"] = local_start.astimezone(UTC)
+    return result
+
+
+def _parse_dazn_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
+    """Parse labels such as `DAZN UK 02: Event @ 25 Oct 07:00 AM London`."""
+    channel_match = DAZN_CHANNEL_PATTERN.match(label.strip())
+    if not channel_match:
+        return None
+
+    number = int(channel_match.group("number"))
+    result: dict[str, Any] = {
+        "channel_name": f"DAZN UK {number:02d}",
+        "title": "",
+        "start_utc": None,
+    }
+    details = channel_match.group("details").strip()
+    if not details or details.casefold() in {"no event", "no match", "no game"}:
+        return result
+
+    fixture = DAZN_FIXTURE_PATTERN.match(details)
+    if not fixture:
+        return result
+
+    year = int(fixture.group("year") or today.year)
+    try:
+        event_date = datetime.strptime(
+            f"{fixture.group('date')} {year}", "%d %b %Y"
+        ).date()
+    except ValueError:
+        return result
+
+    if not fixture.group("year"):
+        day_delta = (event_date - today).days
+        if day_delta > 180:
+            event_date = event_date.replace(year=year - 1)
+        elif day_delta < -180:
+            event_date = event_date.replace(year=year + 1)
+
+    clock = re.sub(r"\s+", "", fixture.group("clock")).upper()
+    try:
+        local_clock = datetime.strptime(clock, "%I:%M%p").time()
+    except ValueError:
+        return result
+
+    local_start = datetime.combine(event_date, local_clock, tzinfo=LONDON)
+    result["title"] = fixture.group("title").strip()
     result["start_utc"] = local_start.astimezone(UTC)
     return result
 
@@ -609,6 +681,8 @@ def process_epg() -> None:
     epl_today = datetime.now(LONDON).date()
     epl_targets: dict[str, dict[str, Any]] = {}
     european_league_targets: dict[str, dict[str, Any]] = {}
+    dazn_targets: dict[str, dict[str, Any]] = {}
+    dazn_today = datetime.now(LONDON).date()
     paramount_today = datetime.now(EASTERN).date()
     paramount_targets: dict[str, dict[str, Any]] = {}
     for channel in root.findall("channel"):
@@ -625,6 +699,12 @@ def process_epg() -> None:
             )
             if parsed:
                 european_league_targets[ch_id] = parsed
+                continue
+            parsed = _parse_dazn_dynamic_label(
+                (display_el.text or "").strip(), dazn_today
+            )
+            if parsed:
+                dazn_targets[ch_id] = parsed
                 continue
             parsed = _parse_paramount_dynamic_label(
                 (display_el.text or "").strip(), paramount_today
@@ -652,6 +732,12 @@ def process_epg() -> None:
             )
             if parsed:
                 european_league_targets[ch_id] = parsed
+        if ch_id and ch_id not in dazn_targets:
+            parsed = _parse_dazn_dynamic_label(
+                (programme.findtext("title") or "").strip(), dazn_today
+            )
+            if parsed:
+                dazn_targets[ch_id] = parsed
         if ch_id and ch_id not in paramount_targets:
             parsed = _parse_paramount_dynamic_label(
                 (programme.findtext("title") or "").strip(), paramount_today
@@ -664,6 +750,7 @@ def process_epg() -> None:
     description_events: dict[str, dict[str, str]] = {}
     epl_description_keys: dict[str, str] = {}
     european_league_description_keys: dict[str, str] = {}
+    dazn_description_keys: dict[str, str] = {}
     paramount_description_keys: dict[str, str] = {}
     football_programme_description_keys: dict[int, str] = {}
 
@@ -693,6 +780,17 @@ def process_epg() -> None:
                 key,
                 item["title"],
                 f"{item['league']} fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
+            )
+
+    for ch_id, item in dazn_targets.items():
+        if item["title"] and item["start_utc"]:
+            start_utc = item["start_utc"]
+            key = f"dazn:{start_utc:%Y%m%d%H%M}:{item['title']}"
+            dazn_description_keys[ch_id] = key
+            add_description_event(
+                key,
+                item["title"],
+                f"DAZN UK event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
             )
 
     for ch_id, item in paramount_targets.items():
@@ -733,12 +831,19 @@ def process_epg() -> None:
         add_description_event(key, event_title, f"{ch_id}; {formatted}")
 
     event_date = datetime.now(EASTERN).date()
+    dazn_event_titles = {
+        item["title"] for item in dazn_targets.values()
+        if item["title"] and item["start_utc"]
+    }
     active_titles = sorted({
         item["event_title"] for item in targets.values()
         if item["event_title"] and item["start_times"] and not item["permanent"]
-    })
-    print(f"Found {len(targets)} target channel(s), "
-          f"{len(active_titles)} active event title(s) with parseable start times.")
+    } | dazn_event_titles)
+    print(
+        f"Found {len(targets)} LIVE EVENT channel(s), {len(dazn_targets)} DAZN channel(s), "
+        f"{len(epl_targets) + len(european_league_targets)} dynamic football channel(s), "
+        f"and {len(active_titles)} LIVE EVENT/DAZN title(s) with parseable start times."
+    )
 
     cleaned_mapping: dict[str, dict[str, str]] = {}
     live_cache_keys = {
@@ -851,6 +956,10 @@ def process_epg() -> None:
         if item:
             for display_el in channel.findall("display-name"):
                 display_el.text = item["core"]
+        item = dazn_targets.get(channel.get("id"))
+        if item:
+            for display_el in channel.findall("display-name"):
+                display_el.text = item["channel_name"]
 
     # Replace provider placeholder rows on these channels with generated listings.
     target_ids = set(targets)
@@ -918,13 +1027,58 @@ def process_epg() -> None:
             )
             generated.insert(channel_generated_start, upcoming)
 
+    now_utc = datetime.now(UTC)
+    # Normalize DAZN UK 01–100 names and replace their provider placeholders.
+    for programme in root.findall("programme"):
+        if programme.get("channel") in dazn_targets:
+            root.remove(programme)
+
+    for ch_id, item in dazn_targets.items():
+        raw_title = item["title"]
+        start_utc = item["start_utc"]
+        if not raw_title or start_utc is None:
+            print(f"No scheduled listing for {item['channel_name']} (no event or unparsed label).")
+            continue
+
+        result = cleaned_mapping.get(raw_title, {
+            "clean_title": raw_title,
+            "description": "Live event",
+        })
+        clean_title = _format_title_event_name(result["clean_title"])
+        description_key = dazn_description_keys.get(ch_id, "")
+        description = event_descriptions.get(description_key, result["description"])
+        day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        day_end = day_start + timedelta(days=1)
+
+        upcoming_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
+        if upcoming_start < start_utc and now_utc < start_utc:
+            upcoming_title = (
+                f"Upcoming Event: {clean_title} at {_format_gmt_time(start_utc)}"
+            )
+            upcoming = ET.Element("programme", {
+                "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(upcoming, "title").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = f"{upcoming_title}\n\n{description}"
+            generated.append(upcoming)
+
+        event = ET.Element("programme", {
+            "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": ch_id,
+        })
+        ET.SubElement(event, "title").text = clean_title
+        ET.SubElement(event, "desc").text = description
+        generated.append(event)
+
     # Replace repeating source placeholders on the dynamic football event channels.
     dynamic_football_targets = {**epl_targets, **european_league_targets}
     for programme in root.findall("programme"):
         if programme.get("channel") in dynamic_football_targets:
             root.remove(programme)
 
-    now_utc = datetime.now(UTC)
     for ch_id, item in dynamic_football_targets.items():
         title = item["title"]
         start_utc = item["start_utc"]
@@ -1045,6 +1199,8 @@ def process_epg() -> None:
             element = programme.find(tag)
             if element is not None and element.text:
                 element.text = _rewrite_football_text(element.text)
+                if tag == "title":
+                    element.text = _replace_game_with_match(element.text)
         desc_el = programme.find("desc")
         description_key = football_programme_description_keys.get(id(programme))
         generated_description = event_descriptions.get(description_key or "")
