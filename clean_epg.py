@@ -544,9 +544,10 @@ def process_epg() -> None:
         cleaned_mapping.update(ai_clean_sport_titles(batch, client))
 
     event_descriptions: dict[str, str] = {}
+    description_event_list = list(description_events.values())
     description_batches = [
-        description_events[start : start + DESCRIPTION_BATCH_SIZE]
-        for start in range(0, len(description_events), DESCRIPTION_BATCH_SIZE)
+        description_event_list[start : start + DESCRIPTION_BATCH_SIZE]
+        for start in range(0, len(description_event_list), DESCRIPTION_BATCH_SIZE)
     ]
     for batch in description_batches:
         event_descriptions.update(ai_describe_events(batch, client))
