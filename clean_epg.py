@@ -1,4 +1,4 @@
-"""Generate daily event listings for XMLTV channels LIVE EVENT 01–36."""
+"""Generate cleaned XMLTV listings for dynamic live-event and football channels."""
 
 from __future__ import annotations
 
@@ -59,11 +59,28 @@ MATCHUP_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EPL_CHANNEL_PATTERN = re.compile(r"^EPL(?P<number>0[1-9]|10):\s*(?P<details>.*)$", re.IGNORECASE)
+EUROPEAN_LEAGUE_CHANNEL_PATTERN = re.compile(
+    r"^(?P<league>Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1|Ligue1)\s*"
+    r"(?P<number>0?[1-9]|10):\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
 EPL_FIXTURE_PATTERN = re.compile(
     r"^(?P<home>.+?)\s+(?P<clock>(?:[01]?\d|2[0-3]):[0-5]\d)\s+"
     r"(?P<away>.+?)\s+(?P<day>\d{1,2})/(?P<month>\d{1,2})"
     r"(?:/(?P<year>\d{4}))?$"
 )
+EUROPEAN_LEAGUE_FIXTURE_PATTERN = re.compile(
+    r"^(?P<matchup>.+?)\s*@\s*(?P<date>\d{1,2}\s+[A-Za-z]{3})"
+    r"(?:\s+(?P<year>\d{4}))?\s+"
+    r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+"
+    r"(?P<zone>London|UK|BST|GMT|UTC)$",
+    re.IGNORECASE,
+)
+LEAGUE_NAME_PREFIX_PATTERN = re.compile(
+    r"^(?:Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1)\s*:?\s*",
+    re.IGNORECASE,
+)
+LEAGUE_MATCHUP_PATTERN = re.compile(r"^(?P<home>.+?)\s+vs\.?\s+(?P<away>.+?)$", re.IGNORECASE)
 PARAMOUNT_CHANNEL_PATTERN = re.compile(
     r"^Paramount\+\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
     re.IGNORECASE,
@@ -232,6 +249,72 @@ def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
         tzinfo=LONDON,
     )
     result["title"] = f"{fixture.group('home').strip()} vs {fixture.group('away').strip()}"
+    result["start_utc"] = local_start.astimezone(UTC)
+    return result
+
+
+def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | None:
+    """Parse dynamic Bundesliga, La Liga, Serie A, and Ligue 1 channel labels."""
+    channel_match = EUROPEAN_LEAGUE_CHANNEL_PATTERN.match(label.strip())
+    if not channel_match:
+        return None
+
+    league_key = re.sub(r"\s+", "", channel_match.group("league")).casefold()
+    league = {
+        "bundesliga": "Bundesliga",
+        "laliga": "La Liga",
+        "seriea": "Serie A",
+        "ligue1": "Ligue 1",
+    }[league_key]
+    number = int(channel_match.group("number"))
+    result: dict[str, Any] = {
+        "channel_name": f"{league} {number:02d}",
+        "league": league,
+        "title": "",
+        "start_utc": None,
+    }
+    details = channel_match.group("details").strip()
+    if not details or details.casefold() in {"no event", "no match", "no game"}:
+        return result
+
+    fixture = EUROPEAN_LEAGUE_FIXTURE_PATTERN.match(details)
+    if not fixture:
+        return result
+
+    matchup_text = LEAGUE_NAME_PREFIX_PATTERN.sub("", fixture.group("matchup").strip(), count=1)
+    matchup = LEAGUE_MATCHUP_PATTERN.match(matchup_text)
+    if not matchup:
+        return result
+
+    year = int(fixture.group("year") or today.year)
+    try:
+        local_date = datetime.strptime(
+            f"{fixture.group('date')} {year}", "%d %b %Y"
+        ).date()
+    except ValueError:
+        return result
+
+    if not fixture.group("year"):
+        day_delta = (local_date - today).days
+        if day_delta > 180:
+            local_date = local_date.replace(year=year - 1)
+        elif day_delta < -180:
+            local_date = local_date.replace(year=year + 1)
+
+    clock = re.sub(r"\s+", "", fixture.group("clock")).upper()
+    try:
+        local_clock = datetime.strptime(clock, "%I:%M%p").time()
+    except ValueError:
+        return result
+
+    local_start = datetime.combine(local_date, local_clock)
+    zone = fixture.group("zone").upper()
+    if zone in {"LONDON", "UK", "BST"}:
+        local_start = local_start.replace(tzinfo=LONDON)
+    else:
+        local_start = local_start.replace(tzinfo=UTC)
+
+    result["title"] = f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
     result["start_utc"] = local_start.astimezone(UTC)
     return result
 
@@ -490,7 +573,7 @@ def process_epg() -> None:
     # XMLTV documents may declare a non-UTF-8 encoding; parse the response bytes.
     root = ET.fromstring(response.content)
 
-    print("Finding LIVE EVENT 01–36 channels, current events, and start times...")
+    print("Finding dynamic live-event and football channels...")
     targets: dict[str, dict[str, Any]] = {}
     for channel in root.findall("channel"):
         ch_id = channel.get("id")
@@ -525,6 +608,7 @@ def process_epg() -> None:
 
     epl_today = datetime.now(LONDON).date()
     epl_targets: dict[str, dict[str, Any]] = {}
+    european_league_targets: dict[str, dict[str, Any]] = {}
     paramount_today = datetime.now(EASTERN).date()
     paramount_targets: dict[str, dict[str, Any]] = {}
     for channel in root.findall("channel"):
@@ -535,6 +619,12 @@ def process_epg() -> None:
             parsed = _parse_epl_dynamic_label((display_el.text or "").strip(), epl_today)
             if parsed:
                 epl_targets[ch_id] = parsed
+                continue
+            parsed = _parse_european_league_label(
+                (display_el.text or "").strip(), epl_today
+            )
+            if parsed:
+                european_league_targets[ch_id] = parsed
                 continue
             parsed = _parse_paramount_dynamic_label(
                 (display_el.text or "").strip(), paramount_today
@@ -556,6 +646,12 @@ def process_epg() -> None:
             )
             if parsed:
                 epl_targets[ch_id] = parsed
+        if ch_id and ch_id not in european_league_targets:
+            parsed = _parse_european_league_label(
+                (programme.findtext("title") or "").strip(), epl_today
+            )
+            if parsed:
+                european_league_targets[ch_id] = parsed
         if ch_id and ch_id not in paramount_targets:
             parsed = _parse_paramount_dynamic_label(
                 (programme.findtext("title") or "").strip(), paramount_today
@@ -567,6 +663,7 @@ def process_epg() -> None:
     # team channels carry their next fixture in the programme description.
     description_events: dict[str, dict[str, str]] = {}
     epl_description_keys: dict[str, str] = {}
+    european_league_description_keys: dict[str, str] = {}
     paramount_description_keys: dict[str, str] = {}
     football_programme_description_keys: dict[int, str] = {}
 
@@ -585,6 +682,17 @@ def process_epg() -> None:
                 key,
                 item["title"],
                 f"EPL fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
+            )
+
+    for ch_id, item in european_league_targets.items():
+        if item["title"] and item["start_utc"]:
+            start_utc = item["start_utc"]
+            key = f"{item['league'].casefold()}:{start_utc:%Y%m%d%H%M}:{item['title']}"
+            european_league_description_keys[ch_id] = key
+            add_description_event(
+                key,
+                item["title"],
+                f"{item['league']} fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
             )
 
     for ch_id, item in paramount_targets.items():
@@ -810,24 +918,38 @@ def process_epg() -> None:
             )
             generated.insert(channel_generated_start, upcoming)
 
-    # Replace repeating source placeholders on the dynamic EPL01–EPL10 channels.
+    # Replace repeating source placeholders on the dynamic football event channels.
+    dynamic_football_targets = {**epl_targets, **european_league_targets}
     for programme in root.findall("programme"):
-        if programme.get("channel") in epl_targets:
+        if programme.get("channel") in dynamic_football_targets:
             root.remove(programme)
 
     now_utc = datetime.now(UTC)
-    for ch_id, item in epl_targets.items():
+    for ch_id, item in dynamic_football_targets.items():
         title = item["title"]
         start_utc = item["start_utc"]
         if not title or start_utc is None:
-            print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
+            print(
+                f"No fixture found for {item['channel_name']}; adding an all-day placeholder."
+            )
+            day_start = datetime.combine(epl_today, datetime_time.min, tzinfo=UTC)
+            day_end = day_start + timedelta(days=1)
+            no_match = ET.Element("programme", {
+                "start": day_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(no_match, "title").text = "No match today"
+            ET.SubElement(no_match, "desc").text = "No match today"
+            generated.append(no_match)
             continue
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
         event_end = min(start_utc + EPL_EVENT_DURATION, day_end)
         upcoming_start = day_start
-        upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
-        description = event_descriptions.get(epl_description_keys.get(ch_id, ""), title)
+        upcoming_title = f"Upcoming Match: {title} at {_format_gmt_time(start_utc)}"
+        description_key = epl_description_keys.get(ch_id) or european_league_description_keys.get(ch_id, "")
+        description = event_descriptions.get(description_key, title)
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
@@ -857,8 +979,8 @@ def process_epg() -> None:
                 "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
                 "channel": ch_id,
             })
-            ET.SubElement(ended, "title").text = "Event ended"
-            ET.SubElement(ended, "desc").text = "Event ended"
+            ET.SubElement(ended, "title").text = "Match ended"
+            ET.SubElement(ended, "desc").text = "Match ended"
             generated.append(ended)
 
     # Normalize Paramount+ 01–100 names and replace their repeated placeholders.
