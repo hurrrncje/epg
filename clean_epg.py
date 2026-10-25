@@ -81,6 +81,21 @@ EUROPEAN_LEAGUE_FIXTURE_PATTERN = re.compile(
     r"(?P<zone>London|UK|BST|GMT|UTC)$",
     re.IGNORECASE,
 )
+MLS_CHANNEL_PATTERN = re.compile(
+    r"^MLS\s*(?P<number>0?[1-9]|[1-4]\d|50):?\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
+MLS_FIXTURE_PATTERN = re.compile(
+    r"^(?P<home>.+?)\s+(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+"
+    r"(?P<away>.+?)\s+(?P<date>\d{1,2}/\d{1,2})(?:/(?P<year>\d{4}))?$",
+    re.IGNORECASE,
+)
+MLS_AT_FIXTURE_PATTERN = re.compile(
+    r"^(?P<matchup>.+?)\s*@\s*(?P<date>\d{1,2}\s+[A-Za-z]{3})"
+    r"(?:\s+(?P<year>\d{4}))?\s+"
+    r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s*(?P<zone>ET|EST|EDT)$",
+    re.IGNORECASE,
+)
 ESPN_LIGUE1_SCOREBOARD_URL = (
     "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard"
 )
@@ -313,7 +328,7 @@ def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
 
 
 def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | None:
-    """Parse dynamic Bundesliga, La Liga, Serie A, and Ligue 1 channel labels."""
+    """Parse dynamic Bundesliga, La Liga, Serie A, and Ligue 1 labels."""
     channel_match = EUROPEAN_LEAGUE_CHANNEL_PATTERN.match(label.strip())
     if not channel_match:
         return None
@@ -374,6 +389,63 @@ def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | Non
         local_start = local_start.replace(tzinfo=UTC)
 
     result["title"] = f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
+    result["start_utc"] = local_start.astimezone(UTC)
+    return result
+
+
+def _parse_mls_label(label: str, today: Any) -> dict[str, Any] | None:
+    """Parse dynamic MLS fixture labels with Eastern kickoff times."""
+    channel_match = MLS_CHANNEL_PATTERN.match(label.strip())
+    if not channel_match:
+        return None
+
+    number = int(channel_match.group("number"))
+    result: dict[str, Any] = {
+        "channel_name": f"MLS {number:02d}",
+        "league": "MLS",
+        "title": "",
+        "start_utc": None,
+    }
+    details = channel_match.group("details").strip()
+    if not details or details.casefold() in {"no event", "no match", "no game"}:
+        return result
+
+    fixture = MLS_FIXTURE_PATTERN.match(details)
+    at_fixture = MLS_AT_FIXTURE_PATTERN.match(details) if not fixture else None
+    if not fixture and not at_fixture:
+        return result
+
+    try:
+        if fixture:
+            year = int(fixture.group("year") or today.year)
+            local_date = datetime.strptime(
+                f"{fixture.group('date')}/{year}", "%m/%d/%Y"
+            ).date()
+            home, away = fixture.group("home"), fixture.group("away")
+        else:
+            year = int(at_fixture.group("year") or today.year)
+            local_date = datetime.strptime(
+                f"{at_fixture.group('date')} {year}", "%d %b %Y"
+            ).date()
+            matchup = LEAGUE_MATCHUP_PATTERN.match(at_fixture.group("matchup").strip())
+            if not matchup:
+                return result
+            home, away = matchup.group("home"), matchup.group("away")
+        clock_text = re.sub(r"\s+", "", (fixture or at_fixture).group("clock")).upper()
+        local_clock = datetime.strptime(clock_text, "%I:%M%p").time()
+    except ValueError:
+        return result
+
+    if not (fixture or at_fixture).group("year"):
+        day_delta = (local_date - today).days
+        if day_delta > 180:
+            local_date = local_date.replace(year=year - 1)
+        elif day_delta < -180:
+            local_date = local_date.replace(year=year + 1)
+
+    # Provider labels use Eastern Time (the date determines EST or EDT).
+    local_start = datetime.combine(local_date, local_clock, tzinfo=EASTERN)
+    result["title"] = f"{home.strip()} vs {away.strip()}"
     result["start_utc"] = local_start.astimezone(UTC)
     return result
 
@@ -931,6 +1003,7 @@ def process_epg() -> None:
                 break
 
     epl_today = datetime.now(LONDON).date()
+    mls_today = datetime.now(EASTERN).date()
     epl_targets: dict[str, dict[str, Any]] = {}
     european_league_targets: dict[str, dict[str, Any]] = {}
     dazn_targets: dict[str, dict[str, Any]] = {}
@@ -951,6 +1024,10 @@ def process_epg() -> None:
             parsed = _parse_european_league_label(
                 (display_el.text or "").strip(), epl_today
             )
+            if parsed:
+                european_league_targets[ch_id] = parsed
+                continue
+            parsed = _parse_mls_label((display_el.text or "").strip(), mls_today)
             if parsed:
                 european_league_targets[ch_id] = parsed
                 continue
@@ -995,6 +1072,12 @@ def process_epg() -> None:
         if ch_id and ch_id not in european_league_targets:
             parsed = _parse_european_league_label(
                 (programme.findtext("title") or "").strip(), epl_today
+            )
+            if parsed:
+                european_league_targets[ch_id] = parsed
+        if ch_id and ch_id not in european_league_targets:
+            parsed = _parse_mls_label(
+                (programme.findtext("title") or "").strip(), mls_today
             )
             if parsed:
                 european_league_targets[ch_id] = parsed
@@ -1111,6 +1194,7 @@ def process_epg() -> None:
         if (
             (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
             or "spfl" in (channel.get("id") or "").casefold()
+            or channel.get("id") in european_league_targets
         )
     }
     for programme in root.iter("programme"):
@@ -1148,7 +1232,7 @@ def process_epg() -> None:
         f"{len(disney_event_targets)} Disney+ Events channel(s), "
         f"{len(espn_event_targets)} ESPN+ channel(s), "
         f"{len(epl_targets) + len(european_league_targets)} dynamic football channel(s), "
-        f"and {len(active_titles)} LIVE EVENT/DAZN title(s) with parseable start times."
+        f"and {len(active_titles)} Event Changes title(s) with parseable start times."
     )
 
     cleaned_mapping: dict[str, dict[str, str]] = {}
@@ -1572,10 +1656,11 @@ def process_epg() -> None:
         if (
             (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
             or "spfl" in (channel.get("id") or "").casefold()
+            or channel.get("id") in european_league_targets
         )
     }
     print(
-        f"Rewriting fixtures for {len(football_channel_ids)} EPL/EFL/SPFL channel(s)..."
+        f"Applying Team Changes to {len(football_channel_ids)} team channel(s)..."
     )
     for programme in root.iter("programme"):
         if programme.get("channel") not in football_channel_ids:
