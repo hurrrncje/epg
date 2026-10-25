@@ -3,7 +3,8 @@
 This repository downloads the provider XMLTV feed, cleans programme listings
 for `LIVE EVENT 01` through `LIVE EVENT 36`, `DAZN UK 01` through `DAZN UK 100`,
 `Paramount+ 01` through `Paramount+ 100`, `Disney+ Events 01` through
-`Disney+ Events 500`, `ESPN+ 01` through `ESPN+ 400`, and dynamic EPL and other
+`Disney+ Events 500`, `ESPN+ 01` through `ESPN+ 400`, `MAX UK 01` through
+`MAX UK 100`, and dynamic EPL and other
 European football event channels, then publishes `cleaned_epg.xml.gz`.
 GitHub Actions runs every three hours at :45 UK time, starting at 14:45
 (Europe/London), and
@@ -65,9 +66,9 @@ date/time after the prefix. The programme title drops the channel number; the
 upcoming entry precedes kickoff and the event listing continues until midnight
 GMT on the kickoff date.
 
-Dynamic `Disney+ Events 01`–`500` and `ESPN+ 01`–`400` labels use the same
-Eastern-time event schedule handling. The provider prefix, channel number,
-date, and time are removed from programme titles; channel names are reduced to
+Dynamic `Disney+ Events 01`–`500`, `ESPN+ 01`–`400`, and `MAX UK 01`–`100`
+labels use the same Eastern-time event schedule handling. The provider prefix,
+channel number, date, and time are removed from programme titles; channel names are reduced to
 their stable numbered names. An upcoming listing runs until kickoff, then the
 event listing continues until midnight GMT. AI-generated descriptions are
 cached with the other event descriptions. Empty or unparseable labels receive
