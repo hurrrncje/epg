@@ -807,7 +807,10 @@ def process_epg() -> None:
     football_channel_ids = {
         channel.get("id")
         for channel in root.findall("channel")
-        if (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
+        if (
+            (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
+            or "spfl" in (channel.get("id") or "").casefold()
+        )
     }
     for programme in root.findall("programme"):
         ch_id = programme.get("channel")
@@ -1069,7 +1072,8 @@ def process_epg() -> None:
             "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
             "channel": ch_id,
         })
-        ET.SubElement(event, "title").text = clean_title
+        started_title = f"{clean_title} (Started {_format_gmt_time(start_utc)})"
+        ET.SubElement(event, "title").text = started_title
         ET.SubElement(event, "desc").text = description
         generated.append(event)
 
@@ -1189,9 +1193,14 @@ def process_epg() -> None:
     football_channel_ids = {
         channel.get("id")
         for channel in root.findall("channel")
-        if (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
+        if (
+            (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
+            or "spfl" in (channel.get("id") or "").casefold()
+        )
     }
-    print(f"Rewriting fixtures for {len(football_channel_ids)} EPL/EFL channel(s)...")
+    print(
+        f"Rewriting fixtures for {len(football_channel_ids)} EPL/EFL/SPFL channel(s)..."
+    )
     for programme in root.findall("programme"):
         if programme.get("channel") not in football_channel_ids:
             continue
