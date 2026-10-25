@@ -18,7 +18,8 @@ failure cooldowns are pruned automatically.
 
 For those channels, the generated EPG replaces the provider's placeholder
 programme rows with listings based on the daily event label. Every channel
-display-name is reduced to its stable `LIVE EVENT NN` name. Times are interpreted
+display-name is reduced to its stable `LIVE EVENT NN` name. These transformations
+are referred to as **Event Changes**. Times are interpreted
 in `America/New_York` (including daylight saving time), converted to UTC/GMT,
 and each generated listing ends at the next midnight UTC. A label such as
 `5:25/8pm` creates two start-time entries, interpreting the first time as 5:25pm.
@@ -30,21 +31,27 @@ the pre-event period. Titles use a compact 12-hour GMT clock, for example
 `2pm` or `2.30pm`. LIVE EVENT programme titles omit the `LIVE EVENT NN` prefix
 and the source label's leading kickoff time.
 
-For channels whose XMLTV IDs start with `EPL` or `EFL`, or contain `spfl`,
-fixture text is changed from `Away @ Home` to `Home vs Away`, and `Game` in
+For **Team Changes**, channels whose XMLTV IDs start with `EPL` or `EFL`, or
+contain `spfl`, have fixture text changed from `Away @ Home` to `Home vs Away`, and `Game` in
 programme titles becomes `Match` (for example, `No Match Today`). `Next Game` dates are rendered as
 `DD/MM/YYYY HH:MM GMT`; Eastern timestamps are converted using their stated
 EDT/EST offset, including daylight saving time.
 
+These EPL/EFL/SPFL team-channel transformations are referred to as **Team
+Changes**. They are separate from **League Changes**, which handle numbered
+dynamic fixture channels such as EPL01–EPL10 and MLS 01–50.
+
 Dynamic labels for `EPL01`–`EPL10`, `Bundesliga 01`–`10`, `La Liga 01`–`10`,
-`Serie A 01`–`10`, and `Ligue 1 01`–`10` are parsed as fixtures with a kickoff
-time and date. Programme titles use `Home vs Away`; kickoff is converted from
-the label's London time to UTC/GMT. For Ligue 1, the script also checks the
+`Serie A 01`–`10`, `Ligue 1 01`–`10`, and `MLS 01`–`50` are parsed as fixtures
+with a kickoff time and date. Programme titles use `Home vs Away`; kickoff is
+converted from the label's league-local time to UTC/GMT (MLS labels use Eastern
+Time with daylight saving handled by the timezone database). For Ligue 1, the script also checks the
 public ESPN scoreboard for that date and replaces the label time only when
 both teams match an unambiguous fixture; if lookup or matching fails, it keeps
 the provider time. The generated schedule uses `Upcoming Match` before kickoff,
 the match listing for 2.5 hours, and `Match ended` until midnight GMT. Channels
 without parseable fixture data receive an all-day `No match today` listing.
+These transformations are referred to as **League Changes**.
 
 Dynamic `DAZN UK 01`–`DAZN UK 100` labels are parsed as event titles and London
 kickoff dates/times. Channel names are normalized to their stable DAZN UK
