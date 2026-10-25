@@ -24,6 +24,7 @@ OUTPUT_XML_FILE = Path("cleaned_epg.xml")
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
 GEMINI_MODEL = "gemini-3.8-flash"
 BATCH_SIZE = 50
+DESCRIPTION_BATCH_SIZE = 25
 TARGET_CHANNELS = {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
 MAX_RETRIES = 3
 REQUEST_TIMEOUT = (10, 120)
@@ -54,6 +55,7 @@ PARAMOUNT_CHANNEL_PATTERN = re.compile(
     r"^Paramount\+\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
     re.IGNORECASE,
 )
+EPL_EVENT_DURATION = timedelta(minutes=150)
 PARAMOUNT_FIXTURE_PATTERN = re.compile(
     r"^(?P<title>.+?)\s+@\s+(?P<date>\d{1,2}\s+[A-Za-z]{3})"
     r"(?:\s+(?P<year>\d{4}))?\s+"
@@ -281,10 +283,12 @@ def ai_clean_sport_titles(channel_names: list[str], client: genai.Client) -> dic
         return {}
 
     prompt = """You organize sports event titles for an IPTV electronic program guide.
-For every input string, return its exact original value in `raw`, a concise
-properly formatted `clean_title`, and a brief factual `description`. Do not
-invent teams, competitions, or event details that cannot be inferred. Return
-only a JSON array of objects with exactly these string fields:
+For every input string, use Google Search to find reliable information about
+the specific event when possible. Return its exact original value in `raw`, a
+concise properly formatted `clean_title`, and a brief factual `description`
+based on the search results. Do not invent teams, competitions, or event
+details. If reliable information is unavailable, say only what is known from
+the title. Return only a JSON array of objects with exactly these string fields:
 raw, clean_title, description.
 
 Input titles (JSON):
@@ -298,6 +302,7 @@ Input titles (JSON):
                 config=types.GenerateContentConfig(
                     temperature=0.1,
                     response_mime_type="application/json",
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
                 ),
             )
             parsed = _parse_model_response(response)
@@ -313,10 +318,72 @@ Input titles (JSON):
             return mapping
         except Exception as exc:
             print(f"Gemini attempt {attempt + 1}/{MAX_RETRIES} failed: {exc}")
+            if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
+                print("Gemini quota is exhausted; skipping this batch without further retries.")
+                return {}
             if attempt + 1 < MAX_RETRIES:
                 time.sleep(min(2 ** attempt, 8))
     print("Skipping this batch after repeated failures.")
     return {}
+
+
+def ai_describe_events(
+    events: list[dict[str, str]], client: genai.Client
+) -> dict[str, str]:
+    """Create short, web-grounded EPG descriptions keyed to event instances."""
+    descriptions: dict[str, str] = {}
+    if not events:
+        return descriptions
+
+    for start in range(0, len(events), DESCRIPTION_BATCH_SIZE):
+        batch = events[start : start + DESCRIPTION_BATCH_SIZE]
+        prompt = """For each sports event below, use Google Search to find reliable,
+current information about that exact event. Write a concise EPG description
+(one or two sentences) identifying the competition and relevant event details.
+Do not guess or add unsupported facts. If search results do not identify the
+event reliably, use only the supplied title and context. Return only a JSON
+array with one object per input, with exactly these string fields: key,
+description. Preserve each key exactly.
+
+Events (JSON):
+""" + json.dumps(batch, ensure_ascii=False)
+
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.1,
+                    response_mime_type="application/json",
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                ),
+            )
+            text = (getattr(response, "text", None) or "").strip()
+            if not text:
+                raise ValueError("Gemini returned an empty description response")
+            parsed = json.loads(text)
+            if not isinstance(parsed, list):
+                raise ValueError("Gemini description response was not a JSON array")
+            expected = {event["key"] for event in batch}
+            for item in parsed:
+                if (
+                    isinstance(item, dict)
+                    and isinstance(item.get("key"), str)
+                    and isinstance(item.get("description"), str)
+                    and item["key"] in expected
+                ):
+                    descriptions[item["key"]] = item["description"].strip()
+            missing = expected - descriptions.keys()
+            if missing:
+                print(f"Gemini omitted {len(missing)} event description(s) in this batch.")
+        except Exception as exc:
+            print(f"Gemini event-description batch failed: {exc}")
+            if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
+                print("Gemini quota is exhausted; skipping remaining descriptions.")
+                break
+            # Descriptions are optional; keep schedules publishing if search or
+            # model output fails for a batch.
+    return descriptions
 
 
 def process_epg() -> None:
@@ -402,6 +469,67 @@ def process_epg() -> None:
             if parsed:
                 paramount_targets[ch_id] = parsed
 
+    # Collect distinct fixture events for grounded descriptions. Static EPL/EFL
+    # team channels carry their next fixture in the programme description.
+    description_events: dict[str, dict[str, str]] = {}
+    epl_description_keys: dict[str, str] = {}
+    paramount_description_keys: dict[str, str] = {}
+    football_programme_description_keys: dict[int, str] = {}
+
+    def add_description_event(key: str, title: str, context: str) -> None:
+        if title:
+            description_events.setdefault(
+                key, {"key": key, "title": title, "context": context}
+            )
+
+    for ch_id, item in epl_targets.items():
+        if item["title"] and item["start_utc"]:
+            start_utc = item["start_utc"]
+            key = f"epl-dynamic:{start_utc:%Y%m%d%H%M}:{item['title']}"
+            epl_description_keys[ch_id] = key
+            add_description_event(
+                key,
+                item["title"],
+                f"EPL fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
+            )
+
+    for ch_id, item in paramount_targets.items():
+        if item["title"] and item["start_utc"]:
+            start_utc = item["start_utc"]
+            key = f"paramount:{start_utc:%Y%m%d%H%M}:{item['title']}"
+            paramount_description_keys[ch_id] = key
+            add_description_event(
+                key,
+                item["title"],
+                f"Paramount+ event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
+            )
+
+    football_channel_ids = {
+        channel.get("id")
+        for channel in root.findall("channel")
+        if (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
+    }
+    for programme in root.findall("programme"):
+        ch_id = programme.get("channel")
+        if ch_id not in football_channel_ids:
+            continue
+        desc = programme.findtext("desc") or ""
+        desc = re.sub(
+            r"\\u([0-9a-fA-F]{4})",
+            lambda match: chr(int(match.group(1), 16)),
+            desc,
+        )
+        fixture_match = NEXT_GAME_PATTERN.search(desc)
+        if not fixture_match:
+            continue
+        formatted = _format_next_game(fixture_match)
+        if not formatted:
+            continue
+        event_title = f"{fixture_match.group('home').strip()} vs {fixture_match.group('away').strip()}"
+        key = f"team-fixture:{formatted}"
+        football_programme_description_keys[id(programme)] = key
+        add_description_event(key, event_title, f"{ch_id}; {formatted}")
+
     active_titles = sorted({
         item["event_title"] for item in targets.values()
         if item["event_title"] and item["start_times"] and not item["permanent"]
@@ -414,6 +542,18 @@ def process_epg() -> None:
         batch = active_titles[start : start + BATCH_SIZE]
         print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
         cleaned_mapping.update(ai_clean_sport_titles(batch, client))
+
+    event_descriptions: dict[str, str] = {}
+    description_batches = [
+        description_events[start : start + DESCRIPTION_BATCH_SIZE]
+        for start in range(0, len(description_events), DESCRIPTION_BATCH_SIZE)
+    ]
+    for batch in description_batches:
+        event_descriptions.update(ai_describe_events(batch, client))
+    print(
+        f"Generated web-grounded descriptions for {len(event_descriptions)} "
+        f"of {len(description_events)} distinct fixtures."
+    )
 
     # Strip all changing event details from display names. Repeated aliases are
     # retained to preserve the XML structure, but contain only the stable label.
@@ -485,7 +625,9 @@ def process_epg() -> None:
                 "channel": ch_id,
             })
             ET.SubElement(upcoming, "title").text = upcoming_title
-            ET.SubElement(upcoming, "desc").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = (
+                f"{upcoming_title}\n\n{result['description']}"
+            )
             generated.insert(channel_generated_start, upcoming)
 
     # Replace repeating source placeholders on the dynamic EPL01–EPL10 channels.
@@ -500,11 +642,12 @@ def process_epg() -> None:
         if not title or start_utc is None:
             print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
             continue
-        end_utc = datetime.combine(
-            start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
-        )
-        upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        day_end = day_start + timedelta(days=1)
+        event_end = min(start_utc + EPL_EVENT_DURATION, day_end)
+        upcoming_start = day_start
         upcoming_title = f"Upcoming Event: {title} {start_utc.strftime('%H:%M')} GMT"
+        description = event_descriptions.get(epl_description_keys.get(ch_id, ""), title)
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
@@ -512,16 +655,31 @@ def process_epg() -> None:
                 "channel": ch_id,
             })
             ET.SubElement(upcoming, "title").text = upcoming_title
-            ET.SubElement(upcoming, "desc").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = (
+                f"{upcoming_title}\n\n{description}"
+            )
             generated.append(upcoming)
         fixture_programme = ET.Element("programme", {
             "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
-            "stop": end_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": event_end.strftime("%Y%m%d%H%M%S %z"),
             "channel": ch_id,
         })
         ET.SubElement(fixture_programme, "title").text = title
-        ET.SubElement(fixture_programme, "desc").text = title
+        ET.SubElement(fixture_programme, "desc").text = description
         generated.append(fixture_programme)
+
+        # Keep the channel populated after the 2.5-hour event, but only
+        # through midnight on the fixture's GMT date. No next-day placeholder
+        # is generated; the next daily source import will provide that day's data.
+        if event_end < day_end:
+            ended = ET.Element("programme", {
+                "start": event_end.strftime("%Y%m%d%H%M%S %z"),
+                "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(ended, "title").text = "Event ended"
+            ET.SubElement(ended, "desc").text = "Event ended"
+            generated.append(ended)
 
     # Normalize Paramount+ 01–100 names and replace their repeated placeholders.
     for channel in root.findall("channel"):
@@ -542,6 +700,9 @@ def process_epg() -> None:
         end_utc = start_utc + timedelta(minutes=150)
         upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         upcoming_title = f"Upcoming Event: {title} {start_utc.strftime('%H:%M')} GMT"
+        description = event_descriptions.get(
+            paramount_description_keys.get(ch_id, ""), title
+        )
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
@@ -549,7 +710,9 @@ def process_epg() -> None:
                 "channel": ch_id,
             })
             ET.SubElement(upcoming, "title").text = upcoming_title
-            ET.SubElement(upcoming, "desc").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = (
+                f"{upcoming_title}\n\n{description}"
+            )
             generated.append(upcoming)
         fixture_programme = ET.Element("programme", {
             "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
@@ -557,7 +720,7 @@ def process_epg() -> None:
             "channel": ch_id,
         })
         ET.SubElement(fixture_programme, "title").text = title
-        ET.SubElement(fixture_programme, "desc").text = title
+        ET.SubElement(fixture_programme, "desc").text = description
         generated.append(fixture_programme)
 
     first_programme_index = next(
@@ -580,6 +743,13 @@ def process_epg() -> None:
             element = programme.find(tag)
             if element is not None and element.text:
                 element.text = _rewrite_football_text(element.text)
+        desc_el = programme.find("desc")
+        description_key = football_programme_description_keys.get(id(programme))
+        generated_description = event_descriptions.get(description_key or "")
+        if desc_el is not None and generated_description:
+            existing = (desc_el.text or "").strip()
+            if generated_description not in existing:
+                desc_el.text = f"{existing}\n\n{generated_description}" if existing else generated_description
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
