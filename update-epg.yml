@@ -2,8 +2,9 @@ name: Update cleaned EPG
 
 on:
   schedule:
-    # 05:15 UTC every day. GitHub may delay scheduled runs during busy periods.
-    - cron: "15 5 * * *"
+    # 05:15, 07:15, and 09:15 UK time every day. GitHub may delay scheduled runs.
+    - cron: "15 5,7,9 * * *"
+      timezone: "Europe/London"
   workflow_dispatch:
 
 permissions:
@@ -37,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add cleaned_epg.xml.gz
+          git add cleaned_epg.xml.gz ai_cache.json
           if git diff --cached --quiet; then
             echo "EPG has not changed; nothing to commit."
           else
