@@ -9,6 +9,7 @@ import json
 import os
 import re
 import time
+import unicodedata
 from datetime import datetime, time as datetime_time, timedelta, timezone
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -21,12 +22,13 @@ from google.genai import types
 
 
 EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
-OUTPUT_XML_FILE = Path("cleaned_epg.xml")
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
 AI_CACHE_FILE = Path("ai_cache.json")
 GEMINI_MODEL = "gemini-3.8-flash"
 AI_CACHE_VERSION = 1
 CACHE_FAILURE_COOLDOWN = timedelta(hours=6)
+AI_CACHE_MAX_AGE = timedelta(days=30)
+GZIP_COMPRESSLEVEL = 6
 BATCH_SIZE = 50
 DESCRIPTION_BATCH_SIZE = 25
 TARGET_CHANNELS = {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
@@ -79,6 +81,23 @@ EUROPEAN_LEAGUE_FIXTURE_PATTERN = re.compile(
     r"(?P<zone>London|UK|BST|GMT|UTC)$",
     re.IGNORECASE,
 )
+ESPN_LIGUE1_SCOREBOARD_URL = (
+    "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard"
+)
+LIGUE1_TEAM_ALIASES = {
+    "aj auxerre": "auxerre",
+    "angers sco": "angers",
+    "estac troyes": "troyes",
+    "fc lorient": "lorient",
+    "havre ac": "le havre",
+    "le havre ac": "le havre",
+    "le mans fc": "le mans",
+    "lille osc": "lille",
+    "losc": "lille",
+    "olympique de marseille": "marseille",
+    "rc strasbourg": "strasbourg",
+    "rc strasbourg alsace": "strasbourg",
+}
 LEAGUE_NAME_PREFIX_PATTERN = re.compile(
     r"^(?:Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1)\s*:?\s*",
     re.IGNORECASE,
@@ -86,6 +105,14 @@ LEAGUE_NAME_PREFIX_PATTERN = re.compile(
 LEAGUE_MATCHUP_PATTERN = re.compile(r"^(?P<home>.+?)\s+vs\.?\s+(?P<away>.+?)$", re.IGNORECASE)
 PARAMOUNT_CHANNEL_PATTERN = re.compile(
     r"^Paramount\+\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
+DISNEY_EVENT_CHANNEL_PATTERN = re.compile(
+    r"^Disney\+\s*Events?\s*(?P<number>\d{1,3}):\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
+ESPN_EVENT_CHANNEL_PATTERN = re.compile(
+    r"^ESPN\+\s*(?P<number>\d{1,3}):\s*(?P<details>.*)$",
     re.IGNORECASE,
 )
 DAZN_CHANNEL_PATTERN = re.compile(
@@ -97,6 +124,13 @@ PARAMOUNT_FIXTURE_PATTERN = re.compile(
     r"^(?P<title>.+?)\s+@\s+(?P<date>\d{1,2}\s+[A-Za-z]{3})"
     r"(?:\s+(?P<year>\d{4}))?\s+"
     r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+(?P<zone>ET|EDT|EST)$",
+    re.IGNORECASE,
+)
+SPORTS_EVENT_FIXTURE_PATTERN = re.compile(
+    r"^(?P<title>.+?)\s+@\s*(?P<date>"
+    r"\d{1,2}\s+[A-Za-z]{3}|[A-Za-z]{3}\s+\d{1,2})\s+"
+    r"(?P<clock>\d{1,2}(?::\d{2})?\s*[AP]M)\s+"
+    r"(?P<zone>ET|EDT|EST)$",
     re.IGNORECASE,
 )
 DAZN_FIXTURE_PATTERN = re.compile(
@@ -344,6 +378,113 @@ def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | Non
     return result
 
 
+def _normalize_ligue1_team_name(name: str) -> str:
+    normalized = unicodedata.normalize("NFKD", name.casefold())
+    normalized = "".join(char for char in normalized if not unicodedata.combining(char))
+    normalized = re.sub(r"[^a-z0-9]+", " ", normalized).strip()
+    normalized = LIGUE1_TEAM_ALIASES.get(normalized, normalized)
+    normalized = re.sub(r"\b(?:fc|afc|cf|sc)\b", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+def _correct_ligue1_kickoff_times(
+    targets: dict[str, dict[str, Any]],
+) -> None:
+    """Replace Ligue 1 feed timestamps with matched ESPN fixture kickoffs.
+
+    The provider's Ligue 1 labels can show a stream/pregame start instead of
+    the match kickoff. If the public scoreboard returns one unambiguous match
+    for the same home/away teams and UK calendar date, use its UTC start time.
+    Leave the provider time intact when lookup or matching is uncertain.
+    """
+    dates = sorted({
+        item["start_utc"].astimezone(LONDON).date()
+        for item in targets.values()
+        if item.get("league") == "Ligue 1"
+        and item.get("title")
+        and item.get("start_utc") is not None
+    })
+    if not dates:
+        return
+
+    fixtures_by_date: dict[Any, list[dict[str, Any]]] = {}
+    for fixture_date in dates:
+        try:
+            response = requests.get(
+                ESPN_LIGUE1_SCOREBOARD_URL,
+                params={"dates": fixture_date.strftime("%Y%m%d")},
+                timeout=REQUEST_TIMEOUT,
+            )
+            response.raise_for_status()
+            payload = response.json()
+        except (requests.RequestException, ValueError) as exc:
+            print(f"Ligue 1 kickoff lookup failed for {fixture_date}: {exc}")
+            continue
+
+        fixtures: list[dict[str, Any]] = []
+        for event in payload.get("events", []):
+            competitions = event.get("competitions") or []
+            if not competitions:
+                continue
+            competition = competitions[0]
+            competitors = competition.get("competitors") or []
+            home = next(
+                (item.get("team", {}).get("displayName", "")
+                 for item in competitors if item.get("homeAway") == "home"),
+                "",
+            )
+            away = next(
+                (item.get("team", {}).get("displayName", "")
+                 for item in competitors if item.get("homeAway") == "away"),
+                "",
+            )
+            kickoff_text = competition.get("date") or event.get("date")
+            if not home or not away or not kickoff_text:
+                continue
+            try:
+                kickoff = datetime.fromisoformat(kickoff_text.replace("Z", "+00:00"))
+            except (TypeError, ValueError):
+                continue
+            if kickoff.tzinfo is None:
+                continue
+            if kickoff.astimezone(LONDON).date() != fixture_date:
+                continue
+            fixtures.append({"home": home, "away": away, "kickoff": kickoff.astimezone(UTC)})
+        fixtures_by_date[fixture_date] = fixtures
+
+    for item in targets.values():
+        if (
+            item.get("league") != "Ligue 1"
+            or not item.get("title")
+            or item.get("start_utc") is None
+        ):
+            continue
+        fixture_date = item["start_utc"].astimezone(LONDON).date()
+        teams = re.split(r"\s+vs\.?\s+", item["title"], maxsplit=1, flags=re.IGNORECASE)
+        if len(teams) != 2:
+            continue
+        expected_home, expected_away = map(_normalize_ligue1_team_name, teams)
+        matches = [
+            fixture for fixture in fixtures_by_date.get(fixture_date, [])
+            if _normalize_ligue1_team_name(fixture["home"]) == expected_home
+            and _normalize_ligue1_team_name(fixture["away"]) == expected_away
+        ]
+        if len(matches) != 1:
+            print(
+                f"No unambiguous Ligue 1 kickoff match for {item['title']} "
+                f"on {fixture_date}; keeping the provider time."
+            )
+            continue
+        old_start = item["start_utc"]
+        item["start_utc"] = matches[0]["kickoff"]
+        if old_start != item["start_utc"]:
+            print(
+                f"Corrected Ligue 1 kickoff for {item['title']}: "
+                f"{old_start.strftime('%H:%M GMT')} → "
+                f"{item['start_utc'].strftime('%H:%M GMT')}."
+            )
+
+
 def _parse_dazn_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
     """Parse labels such as `DAZN UK 02: Event @ 25 Oct 07:00 AM London`."""
     channel_match = DAZN_CHANNEL_PATTERN.match(label.strip())
@@ -437,6 +578,82 @@ def _parse_paramount_dynamic_label(label: str, today: Any) -> dict[str, Any] | N
             return result
     else:
         local_time = candidates[0]
+    result["title"] = fixture.group("title").strip()
+    result["start_utc"] = local_time.astimezone(UTC)
+    return result
+
+
+def _parse_additional_sports_event_label(
+    label: str, today: Any, provider: str
+) -> dict[str, Any] | None:
+    """Parse Disney+ Events or ESPN+ event labels with Eastern timestamps."""
+    if provider == "Disney+ Events":
+        channel_pattern = DISNEY_EVENT_CHANNEL_PATTERN
+        maximum_number = 500
+    elif provider == "ESPN+":
+        channel_pattern = ESPN_EVENT_CHANNEL_PATTERN
+        maximum_number = 400
+    else:
+        raise ValueError(f"Unsupported sports event provider: {provider}")
+
+    channel_match = channel_pattern.match(label.strip())
+    if not channel_match:
+        return None
+    number = int(channel_match.group("number"))
+    if not 1 <= number <= maximum_number:
+        return None
+
+    result: dict[str, Any] = {
+        "channel_name": f"{provider} {number:02d}",
+        "title": "",
+        "start_utc": None,
+    }
+    details = channel_match.group("details").strip()
+    if not details or details.casefold() in {"no event", "no match", "no game"}:
+        return result
+
+    fixture = SPORTS_EVENT_FIXTURE_PATTERN.match(details)
+    if not fixture:
+        return result
+
+    date_text = fixture.group("date")
+    date_formats = ("%d %b %Y", "%b %d %Y")
+    local_date = None
+    year_text = fixture.groupdict().get("year")
+    year = int(year_text or today.year)
+    for date_format in date_formats:
+        try:
+            local_date = datetime.strptime(f"{date_text} {year}", date_format).date()
+            break
+        except ValueError:
+            continue
+    if local_date is None:
+        return result
+
+    if not year_text:
+        day_delta = (local_date - today).days
+        if day_delta > 180:
+            local_date = local_date.replace(year=year - 1)
+        elif day_delta < -180:
+            local_date = local_date.replace(year=year + 1)
+
+    clock = re.sub(r"\s+", "", fixture.group("clock")).upper()
+    clock_format = "%I:%M%p" if ":" in clock else "%I%p"
+    try:
+        local_clock = datetime.strptime(clock, clock_format).time()
+    except ValueError:
+        return result
+
+    local_time = datetime.combine(local_date, local_clock)
+    zone_name = fixture.group("zone").upper()
+    candidates = [local_time.replace(tzinfo=EASTERN, fold=fold) for fold in (0, 1)]
+    if zone_name in {"EDT", "EST"}:
+        local_time = next((dt for dt in candidates if dt.tzname() == zone_name), None)
+        if local_time is None:
+            return result
+    else:
+        local_time = candidates[0]
+
     result["title"] = fixture.group("title").strip()
     result["start_utc"] = local_time.astimezone(UTC)
     return result
@@ -596,6 +813,7 @@ def _load_ai_cache() -> dict[str, Any]:
     try:
         cached = json.loads(AI_CACHE_FILE.read_text(encoding="utf-8"))
         if cached.get("version") == AI_CACHE_VERSION and isinstance(cached.get("entries"), dict):
+            _prune_ai_cache(cached)
             return cached
         print("AI cache version is outdated or invalid; starting a fresh cache.")
     except FileNotFoundError:
@@ -603,6 +821,40 @@ def _load_ai_cache() -> dict[str, Any]:
     except (OSError, json.JSONDecodeError, AttributeError) as exc:
         print(f"Could not read AI cache ({exc}); starting a fresh cache.")
     return {"version": AI_CACHE_VERSION, "entries": {}}
+
+
+def _prune_ai_cache(cache: dict[str, Any]) -> None:
+    """Drop expired failures and successful results older than 30 days."""
+    entries = cache["entries"]
+    now = datetime.now(UTC)
+    cutoff = now - AI_CACHE_MAX_AGE
+    stale_keys: list[str] = []
+
+    for key, entry in entries.items():
+        if not isinstance(entry, dict):
+            stale_keys.append(key)
+            continue
+
+        timestamp_value = entry.get("retry_after") if entry.get("failed") else entry.get("created_at")
+        if not isinstance(timestamp_value, str):
+            continue
+        try:
+            timestamp = datetime.fromisoformat(timestamp_value)
+        except ValueError:
+            continue
+        if timestamp.tzinfo is None:
+            timestamp = timestamp.replace(tzinfo=UTC)
+
+        if entry.get("failed"):
+            if timestamp <= now:
+                stale_keys.append(key)
+        elif timestamp < cutoff:
+            stale_keys.append(key)
+
+    for key in stale_keys:
+        del entries[key]
+    if stale_keys:
+        print(f"Pruned {len(stale_keys)} expired or stale AI cache entr(y/ies).")
 
 
 def _save_ai_cache(cache: dict[str, Any]) -> None:
@@ -647,7 +899,7 @@ def process_epg() -> None:
 
     print("Finding dynamic live-event and football channels...")
     targets: dict[str, dict[str, Any]] = {}
-    for channel in root.findall("channel"):
+    for channel in root.iter("channel"):
         ch_id = channel.get("id")
         if not ch_id:
             continue
@@ -685,7 +937,9 @@ def process_epg() -> None:
     dazn_today = datetime.now(LONDON).date()
     paramount_today = datetime.now(EASTERN).date()
     paramount_targets: dict[str, dict[str, Any]] = {}
-    for channel in root.findall("channel"):
+    disney_event_targets: dict[str, dict[str, Any]] = {}
+    espn_event_targets: dict[str, dict[str, Any]] = {}
+    for channel in root.iter("channel"):
         ch_id = channel.get("id")
         if not ch_id:
             continue
@@ -712,9 +966,21 @@ def process_epg() -> None:
             if parsed:
                 paramount_targets[ch_id] = parsed
                 break
+            parsed = _parse_additional_sports_event_label(
+                (display_el.text or "").strip(), paramount_today, "Disney+ Events"
+            )
+            if parsed:
+                disney_event_targets[ch_id] = parsed
+                break
+            parsed = _parse_additional_sports_event_label(
+                (display_el.text or "").strip(), paramount_today, "ESPN+"
+            )
+            if parsed:
+                espn_event_targets[ch_id] = parsed
+                break
 
     # Some providers expose the event title only in the programme entries.
-    for programme in root.findall("programme"):
+    for programme in root.iter("programme"):
         ch_id = programme.get("channel")
         if ch_id in targets and not targets[ch_id]["event_title"]:
             title = (programme.findtext("title") or "").strip()
@@ -744,6 +1010,24 @@ def process_epg() -> None:
             )
             if parsed:
                 paramount_targets[ch_id] = parsed
+        if ch_id and ch_id not in disney_event_targets:
+            parsed = _parse_additional_sports_event_label(
+                (programme.findtext("title") or "").strip(),
+                paramount_today,
+                "Disney+ Events",
+            )
+            if parsed:
+                disney_event_targets[ch_id] = parsed
+        if ch_id and ch_id not in espn_event_targets:
+            parsed = _parse_additional_sports_event_label(
+                (programme.findtext("title") or "").strip(),
+                paramount_today,
+                "ESPN+",
+            )
+            if parsed:
+                espn_event_targets[ch_id] = parsed
+
+    _correct_ligue1_kickoff_times(european_league_targets)
 
     # Collect distinct fixture events for grounded descriptions. Static EPL/EFL
     # team channels carry their next fixture in the programme description.
@@ -752,6 +1036,8 @@ def process_epg() -> None:
     european_league_description_keys: dict[str, str] = {}
     dazn_description_keys: dict[str, str] = {}
     paramount_description_keys: dict[str, str] = {}
+    disney_event_description_keys: dict[str, str] = {}
+    espn_event_description_keys: dict[str, str] = {}
     football_programme_description_keys: dict[int, str] = {}
 
     def add_description_event(key: str, title: str, context: str) -> None:
@@ -804,15 +1090,30 @@ def process_epg() -> None:
                 f"Paramount+ event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
             )
 
+    for provider, targets_for_provider, key_map in (
+        ("Disney+ Events", disney_event_targets, disney_event_description_keys),
+        ("ESPN+", espn_event_targets, espn_event_description_keys),
+    ):
+        for ch_id, item in targets_for_provider.items():
+            if item["title"] and item["start_utc"]:
+                start_utc = item["start_utc"]
+                key = f"sports-event:{start_utc:%Y%m%d%H%M}:{item['title']}"
+                key_map[ch_id] = key
+                add_description_event(
+                    key,
+                    item["title"],
+                    f"{provider} event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
+                )
+
     football_channel_ids = {
         channel.get("id")
-        for channel in root.findall("channel")
+        for channel in root.iter("channel")
         if (
             (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
             or "spfl" in (channel.get("id") or "").casefold()
         )
     }
-    for programme in root.findall("programme"):
+    for programme in root.iter("programme"):
         ch_id = programme.get("channel")
         if ch_id not in football_channel_ids:
             continue
@@ -844,6 +1145,8 @@ def process_epg() -> None:
     } | dazn_event_titles)
     print(
         f"Found {len(targets)} LIVE EVENT channel(s), {len(dazn_targets)} DAZN channel(s), "
+        f"{len(disney_event_targets)} Disney+ Events channel(s), "
+        f"{len(espn_event_targets)} ESPN+ channel(s), "
         f"{len(epl_targets) + len(european_league_targets)} dynamic football channel(s), "
         f"and {len(active_titles)} LIVE EVENT/DAZN title(s) with parseable start times."
     )
@@ -954,7 +1257,7 @@ def process_epg() -> None:
 
     # Strip all changing event details from display names. Repeated aliases are
     # retained to preserve the XML structure, but contain only the stable label.
-    for channel in root.findall("channel"):
+    for channel in root.iter("channel"):
         item = targets.get(channel.get("id"))
         if item:
             for display_el in channel.findall("display-name"):
@@ -966,9 +1269,13 @@ def process_epg() -> None:
 
     # Replace provider placeholder rows on these channels with generated listings.
     target_ids = set(targets)
-    for programme in root.findall("programme"):
-        if programme.get("channel") in target_ids:
-            root.remove(programme)
+    programmes_to_remove = [
+        programme
+        for programme in root.iter("programme")
+        if programme.get("channel") in target_ids
+    ]
+    for programme in programmes_to_remove:
+        root.remove(programme)
 
     generated: list[ET.Element] = []
     for ch_id, item in targets.items():
@@ -1032,9 +1339,13 @@ def process_epg() -> None:
 
     now_utc = datetime.now(UTC)
     # Normalize DAZN UK 01–100 names and replace their provider placeholders.
-    for programme in root.findall("programme"):
-        if programme.get("channel") in dazn_targets:
-            root.remove(programme)
+    programmes_to_remove = [
+        programme
+        for programme in root.iter("programme")
+        if programme.get("channel") in dazn_targets
+    ]
+    for programme in programmes_to_remove:
+        root.remove(programme)
 
     for ch_id, item in dazn_targets.items():
         raw_title = item["title"]
@@ -1079,9 +1390,13 @@ def process_epg() -> None:
 
     # Replace repeating source placeholders on the dynamic football event channels.
     dynamic_football_targets = {**epl_targets, **european_league_targets}
-    for programme in root.findall("programme"):
-        if programme.get("channel") in dynamic_football_targets:
-            root.remove(programme)
+    programmes_to_remove = [
+        programme
+        for programme in root.iter("programme")
+        if programme.get("channel") in dynamic_football_targets
+    ]
+    for programme in programmes_to_remove:
+        root.remove(programme)
 
     for ch_id, item in dynamic_football_targets.items():
         title = item["title"]
@@ -1142,14 +1457,18 @@ def process_epg() -> None:
             generated.append(ended)
 
     # Normalize Paramount+ 01–100 names and replace their repeated placeholders.
-    for channel in root.findall("channel"):
+    for channel in root.iter("channel"):
         item = paramount_targets.get(channel.get("id"))
         if item:
             for display_el in channel.findall("display-name"):
                 display_el.text = item["channel_name"]
-    for programme in root.findall("programme"):
-        if programme.get("channel") in paramount_targets:
-            root.remove(programme)
+    programmes_to_remove = [
+        programme
+        for programme in root.iter("programme")
+        if programme.get("channel") in paramount_targets
+    ]
+    for programme in programmes_to_remove:
+        root.remove(programme)
 
     for ch_id, item in paramount_targets.items():
         title = item["title"]
@@ -1157,7 +1476,9 @@ def process_epg() -> None:
         if not title or start_utc is None:
             print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
             continue
-        end_utc = start_utc + timedelta(minutes=150)
+        end_utc = datetime.combine(
+            start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
+        )
         upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
         description = event_descriptions.get(
@@ -1183,6 +1504,61 @@ def process_epg() -> None:
         ET.SubElement(fixture_programme, "desc").text = description
         generated.append(fixture_programme)
 
+    sports_event_targets = {**disney_event_targets, **espn_event_targets}
+    sports_event_description_keys = {
+        **disney_event_description_keys,
+        **espn_event_description_keys,
+    }
+    for channel in root.iter("channel"):
+        item = sports_event_targets.get(channel.get("id"))
+        if item:
+            for display_el in channel.findall("display-name"):
+                display_el.text = item["channel_name"]
+    programmes_to_remove = [
+        programme
+        for programme in root.iter("programme")
+        if programme.get("channel") in sports_event_targets
+    ]
+    for programme in programmes_to_remove:
+        root.remove(programme)
+
+    for ch_id, item in sports_event_targets.items():
+        title = item["title"]
+        start_utc = item["start_utc"]
+        if not title or start_utc is None:
+            print(
+                f"No fixture listing for {item['channel_name']} "
+                "(no event or unparsed label)."
+            )
+            continue
+
+        day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        day_end = day_start + timedelta(days=1)
+        description = event_descriptions.get(
+            sports_event_description_keys.get(ch_id, ""), title
+        )
+        upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
+        if day_start < start_utc and now_utc < start_utc:
+            upcoming = ET.Element("programme", {
+                "start": day_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(upcoming, "title").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = (
+                f"{upcoming_title}\n\n{description}"
+            )
+            generated.append(upcoming)
+
+        event = ET.Element("programme", {
+            "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": ch_id,
+        })
+        ET.SubElement(event, "title").text = title
+        ET.SubElement(event, "desc").text = description
+        generated.append(event)
+
     first_programme_index = next(
         (index for index, element in enumerate(root) if element.tag == "programme"),
         len(root),
@@ -1192,7 +1568,7 @@ def process_epg() -> None:
 
     football_channel_ids = {
         channel.get("id")
-        for channel in root.findall("channel")
+        for channel in root.iter("channel")
         if (
             (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
             or "spfl" in (channel.get("id") or "").casefold()
@@ -1201,7 +1577,7 @@ def process_epg() -> None:
     print(
         f"Rewriting fixtures for {len(football_channel_ids)} EPL/EFL/SPFL channel(s)..."
     )
-    for programme in root.findall("programme"):
+    for programme in root.iter("programme"):
         if programme.get("channel") not in football_channel_ids:
             continue
         for tag in ("title", "desc"):
@@ -1219,12 +1595,12 @@ def process_epg() -> None:
                 desc_el.text = f"{existing}\n\n{generated_description}" if existing else generated_description
 
     tree = ET.ElementTree(root)
-    ET.indent(tree, space="  ")
-    tree.write(OUTPUT_XML_FILE, encoding="utf-8", xml_declaration=True)
-    with OUTPUT_XML_FILE.open("rb") as source, gzip.open(OUTPUT_GZ_FILE, "wb", compresslevel=9) as destination:
-        destination.write(source.read())
+    with gzip.open(
+        OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL
+    ) as destination:
+        tree.write(destination, encoding="utf-8", xml_declaration=True)
     _save_ai_cache(ai_cache)
-    print(f"Generated {OUTPUT_XML_FILE.resolve()} and {OUTPUT_GZ_FILE.resolve()}")
+    print(f"Generated {OUTPUT_GZ_FILE.resolve()}")
 
 
 if __name__ == "__main__":
