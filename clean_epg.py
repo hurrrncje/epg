@@ -130,6 +130,10 @@ ESPN_EVENT_CHANNEL_PATTERN = re.compile(
     r"^ESPN\+\s*(?P<number>\d{1,3}):\s*(?P<details>.*)$",
     re.IGNORECASE,
 )
+MAX_UK_CHANNEL_PATTERN = re.compile(
+    r"^MAX\s+UK\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
+    re.IGNORECASE,
+)
 DAZN_CHANNEL_PATTERN = re.compile(
     r"^DAZN\s+UK\s*(?P<number>0?[1-9]|[1-9]\d|100):\s*(?P<details>.*)$",
     re.IGNORECASE,
@@ -658,13 +662,16 @@ def _parse_paramount_dynamic_label(label: str, today: Any) -> dict[str, Any] | N
 def _parse_additional_sports_event_label(
     label: str, today: Any, provider: str
 ) -> dict[str, Any] | None:
-    """Parse Disney+ Events or ESPN+ event labels with Eastern timestamps."""
+    """Parse Disney+, ESPN+, and MAX UK event labels with Eastern timestamps."""
     if provider == "Disney+ Events":
         channel_pattern = DISNEY_EVENT_CHANNEL_PATTERN
         maximum_number = 500
     elif provider == "ESPN+":
         channel_pattern = ESPN_EVENT_CHANNEL_PATTERN
         maximum_number = 400
+    elif provider == "MAX UK":
+        channel_pattern = MAX_UK_CHANNEL_PATTERN
+        maximum_number = 100
     else:
         raise ValueError(f"Unsupported sports event provider: {provider}")
 
@@ -1012,6 +1019,7 @@ def process_epg() -> None:
     paramount_targets: dict[str, dict[str, Any]] = {}
     disney_event_targets: dict[str, dict[str, Any]] = {}
     espn_event_targets: dict[str, dict[str, Any]] = {}
+    max_uk_targets: dict[str, dict[str, Any]] = {}
     for channel in root.iter("channel"):
         ch_id = channel.get("id")
         if not ch_id:
@@ -1054,6 +1062,12 @@ def process_epg() -> None:
             )
             if parsed:
                 espn_event_targets[ch_id] = parsed
+                break
+            parsed = _parse_additional_sports_event_label(
+                (display_el.text or "").strip(), paramount_today, "MAX UK"
+            )
+            if parsed:
+                max_uk_targets[ch_id] = parsed
                 break
 
     # Some providers expose the event title only in the programme entries.
@@ -1109,6 +1123,14 @@ def process_epg() -> None:
             )
             if parsed:
                 espn_event_targets[ch_id] = parsed
+        if ch_id and ch_id not in max_uk_targets:
+            parsed = _parse_additional_sports_event_label(
+                (programme.findtext("title") or "").strip(),
+                paramount_today,
+                "MAX UK",
+            )
+            if parsed:
+                max_uk_targets[ch_id] = parsed
 
     _correct_ligue1_kickoff_times(european_league_targets)
 
@@ -1121,6 +1143,7 @@ def process_epg() -> None:
     paramount_description_keys: dict[str, str] = {}
     disney_event_description_keys: dict[str, str] = {}
     espn_event_description_keys: dict[str, str] = {}
+    max_uk_description_keys: dict[str, str] = {}
     football_programme_description_keys: dict[int, str] = {}
 
     def add_description_event(key: str, title: str, context: str) -> None:
@@ -1176,6 +1199,7 @@ def process_epg() -> None:
     for provider, targets_for_provider, key_map in (
         ("Disney+ Events", disney_event_targets, disney_event_description_keys),
         ("ESPN+", espn_event_targets, espn_event_description_keys),
+        ("MAX UK", max_uk_targets, max_uk_description_keys),
     ):
         for ch_id, item in targets_for_provider.items():
             if item["title"] and item["start_utc"]:
@@ -1231,6 +1255,7 @@ def process_epg() -> None:
         f"Found {len(targets)} LIVE EVENT channel(s), {len(dazn_targets)} DAZN channel(s), "
         f"{len(disney_event_targets)} Disney+ Events channel(s), "
         f"{len(espn_event_targets)} ESPN+ channel(s), "
+        f"{len(max_uk_targets)} MAX UK channel(s), "
         f"{len(epl_targets) + len(european_league_targets)} dynamic football channel(s), "
         f"and {len(active_titles)} Event Changes title(s) with parseable start times."
     )
@@ -1588,10 +1613,15 @@ def process_epg() -> None:
         ET.SubElement(fixture_programme, "desc").text = description
         generated.append(fixture_programme)
 
-    sports_event_targets = {**disney_event_targets, **espn_event_targets}
+    sports_event_targets = {
+        **disney_event_targets,
+        **espn_event_targets,
+        **max_uk_targets,
+    }
     sports_event_description_keys = {
         **disney_event_description_keys,
         **espn_event_description_keys,
+        **max_uk_description_keys,
     }
     for channel in root.iter("channel"):
         item = sports_event_targets.get(channel.get("id"))
