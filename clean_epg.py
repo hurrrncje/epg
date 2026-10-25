@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import ast
+import hashlib
 import gzip
 import json
 import os
@@ -22,7 +23,10 @@ from google.genai import types
 EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
 OUTPUT_XML_FILE = Path("cleaned_epg.xml")
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
+AI_CACHE_FILE = Path("ai_cache.json")
 GEMINI_MODEL = "gemini-3.8-flash"
+AI_CACHE_VERSION = 1
+CACHE_FAILURE_COOLDOWN = timedelta(hours=6)
 BATCH_SIZE = 50
 DESCRIPTION_BATCH_SIZE = 25
 TARGET_CHANNELS = {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
@@ -386,11 +390,61 @@ Events (JSON):
     return descriptions
 
 
+def _make_ai_cache_key(kind: str, payload: dict[str, str]) -> str:
+    material = json.dumps(
+        {"version": AI_CACHE_VERSION, "model": GEMINI_MODEL, "kind": kind, "payload": payload},
+        ensure_ascii=False,
+        sort_keys=True,
+    )
+    return hashlib.sha256(material.encode("utf-8")).hexdigest()
+
+
+def _load_ai_cache() -> dict[str, Any]:
+    try:
+        cached = json.loads(AI_CACHE_FILE.read_text(encoding="utf-8"))
+        if cached.get("version") == AI_CACHE_VERSION and isinstance(cached.get("entries"), dict):
+            return cached
+        print("AI cache version is outdated or invalid; starting a fresh cache.")
+    except FileNotFoundError:
+        print("No saved AI cache yet; the first run will populate it.")
+    except (OSError, json.JSONDecodeError, AttributeError) as exc:
+        print(f"Could not read AI cache ({exc}); starting a fresh cache.")
+    return {"version": AI_CACHE_VERSION, "entries": {}}
+
+
+def _save_ai_cache(cache: dict[str, Any]) -> None:
+    temporary = AI_CACHE_FILE.with_suffix(".json.tmp")
+    temporary.write_text(
+        json.dumps(cache, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(AI_CACHE_FILE)
+
+
+def _cache_failure_is_active(entry: Any) -> bool:
+    if not isinstance(entry, dict) or not entry.get("failed"):
+        return False
+    try:
+        retry_after = datetime.fromisoformat(entry["retry_after"])
+    except (KeyError, TypeError, ValueError):
+        return False
+    return datetime.now(UTC) < retry_after
+
+
 def process_epg() -> None:
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY environment variable is required.")
-    client = genai.Client(api_key=api_key)
+    client: genai.Client | None = None
+    ai_cache = _load_ai_cache()
+    ai_cache_entries: dict[str, Any] = ai_cache["entries"]
+
+    def get_client() -> genai.Client | None:
+        nonlocal client
+        if client is None:
+            api_key = os.environ.get("GEMINI_API_KEY")
+            if not api_key:
+                print("GEMINI_API_KEY is unavailable; using cached results and fallbacks.")
+                return None
+            client = genai.Client(api_key=api_key)
+        return client
 
     print("Downloading EPG XML...")
     response = requests.get(EPG_URL, timeout=REQUEST_TIMEOUT)
@@ -530,6 +584,7 @@ def process_epg() -> None:
         football_programme_description_keys[id(programme)] = key
         add_description_event(key, event_title, f"{ch_id}; {formatted}")
 
+    event_date = datetime.now(EASTERN).date()
     active_titles = sorted({
         item["event_title"] for item in targets.values()
         if item["event_title"] and item["start_times"] and not item["permanent"]
@@ -538,19 +593,102 @@ def process_epg() -> None:
           f"{len(active_titles)} active event title(s) with parseable start times.")
 
     cleaned_mapping: dict[str, dict[str, str]] = {}
-    for start in range(0, len(active_titles), BATCH_SIZE):
-        batch = active_titles[start : start + BATCH_SIZE]
-        print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
-        cleaned_mapping.update(ai_clean_sport_titles(batch, client))
+    live_cache_keys = {
+        title: _make_ai_cache_key(
+            "live-title",
+            {"title": title, "event_date": event_date.isoformat()},
+        )
+        for title in active_titles
+    }
+    titles_to_clean: list[str] = []
+    cached_failures = 0
+    for title, cache_key in live_cache_keys.items():
+        cache_entry = ai_cache_entries.get(cache_key, {})
+        result = cache_entry.get("result") if isinstance(cache_entry, dict) else None
+        if (
+            isinstance(result, dict)
+            and result.get("raw") == title
+            and isinstance(result.get("clean_title"), str)
+            and isinstance(result.get("description"), str)
+        ):
+            cleaned_mapping[title] = result
+        elif _cache_failure_is_active(cache_entry):
+            cached_failures += 1
+        else:
+            titles_to_clean.append(title)
+    print(
+        f"Reusing {len(cleaned_mapping)} cached LIVE EVENT title result(s); "
+        f"{cached_failures} recent failure(s) held for cooldown; "
+        f"{len(titles_to_clean)} need Gemini."
+    )
+    if titles_to_clean:
+        gemini_client = get_client()
+        if gemini_client:
+            for start in range(0, len(titles_to_clean), BATCH_SIZE):
+                batch = titles_to_clean[start : start + BATCH_SIZE]
+                print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
+                results = ai_clean_sport_titles(batch, gemini_client)
+                cleaned_mapping.update(results)
+                for title, result in results.items():
+                    ai_cache_entries[live_cache_keys[title]] = {
+                        "kind": "live-title",
+                        "created_at": datetime.now(UTC).isoformat(),
+                        "result": result,
+                    }
+                failed_titles = set(batch) - results.keys()
+                retry_after = (datetime.now(UTC) + CACHE_FAILURE_COOLDOWN).isoformat()
+                for title in failed_titles:
+                    ai_cache_entries[live_cache_keys[title]] = {
+                        "kind": "live-title",
+                        "failed": True,
+                        "retry_after": retry_after,
+                    }
 
     event_descriptions: dict[str, str] = {}
     description_event_list = list(description_events.values())
-    description_batches = [
-        description_event_list[start : start + DESCRIPTION_BATCH_SIZE]
-        for start in range(0, len(description_event_list), DESCRIPTION_BATCH_SIZE)
-    ]
-    for batch in description_batches:
-        event_descriptions.update(ai_describe_events(batch, client))
+    description_cache_keys: dict[str, str] = {}
+    events_to_describe: list[dict[str, str]] = []
+    cached_description_failures = 0
+    for event in description_event_list:
+        cache_key = _make_ai_cache_key(
+            "event-description",
+            {"key": event["key"], "title": event["title"], "context": event["context"]},
+        )
+        description_cache_keys[event["key"]] = cache_key
+        cache_entry = ai_cache_entries.get(cache_key, {})
+        result = cache_entry.get("result") if isinstance(cache_entry, dict) else None
+        if isinstance(result, str) and result.strip():
+            event_descriptions[event["key"]] = result
+        elif _cache_failure_is_active(cache_entry):
+            cached_description_failures += 1
+        else:
+            events_to_describe.append(event)
+    print(
+        f"Reusing {len(event_descriptions)} cached event description(s); "
+        f"{cached_description_failures} recent failure(s) held for cooldown; "
+        f"{len(events_to_describe)} need Gemini."
+    )
+    if events_to_describe:
+        gemini_client = get_client()
+        if gemini_client:
+            new_descriptions = ai_describe_events(events_to_describe, gemini_client)
+            event_descriptions.update(new_descriptions)
+            for event in events_to_describe:
+                description = new_descriptions.get(event["key"])
+                if description:
+                    ai_cache_entries[description_cache_keys[event["key"]]] = {
+                        "kind": "event-description",
+                        "created_at": datetime.now(UTC).isoformat(),
+                        "result": description,
+                    }
+                else:
+                    ai_cache_entries[description_cache_keys[event["key"]]] = {
+                        "kind": "event-description",
+                        "failed": True,
+                        "retry_after": (
+                            datetime.now(UTC) + CACHE_FAILURE_COOLDOWN
+                        ).isoformat(),
+                    }
     print(
         f"Generated web-grounded descriptions for {len(event_descriptions)} "
         f"of {len(description_events)} distinct fixtures."
@@ -570,7 +708,6 @@ def process_epg() -> None:
         if programme.get("channel") in target_ids:
             root.remove(programme)
 
-    event_date = datetime.now(EASTERN).date()
     generated: list[ET.Element] = []
     for ch_id, item in targets.items():
         raw_title = item["event_title"]
@@ -757,6 +894,7 @@ def process_epg() -> None:
     tree.write(OUTPUT_XML_FILE, encoding="utf-8", xml_declaration=True)
     with OUTPUT_XML_FILE.open("rb") as source, gzip.open(OUTPUT_GZ_FILE, "wb", compresslevel=9) as destination:
         destination.write(source.read())
+    _save_ai_cache(ai_cache)
     print(f"Generated {OUTPUT_XML_FILE.resolve()} and {OUTPUT_GZ_FILE.resolve()}")
 
 
