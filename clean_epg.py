@@ -37,6 +37,15 @@ LONDON = ZoneInfo("Europe/London")
 UTC = timezone.utc
 GMT = UTC
 TIME_PATTERN = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b", re.IGNORECASE)
+LIVE_EVENT_PREFIX_PATTERN = re.compile(
+    r"^\s*LIVE\s+EVENT\s+\d{1,2}\s*(?:[-:–—]+\s*)?", re.IGNORECASE
+)
+LEADING_EVENT_TIME_PATTERN = re.compile(
+    r"^\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)\b\s*[-:–—]*\s*", re.IGNORECASE
+)
+TRAILING_GMT_TIME_PATTERN = re.compile(
+    r"\s+at\s+(\d{1,2}):(\d{2})\s+GMT\s*$", re.IGNORECASE
+)
 NEXT_GAME_PATTERN = re.compile(
     r"Next Game:\s*(?P<away>.+?)\s+@\s+(?P<home>.+?)\s+on\s+"
     r"(?P<date>\d{4}-\d{2}-\d{2})\s+at\s+"
@@ -77,6 +86,35 @@ def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
     if core not in TARGET_CHANNELS:
         return None
     return core, match.group(2).strip().lstrip("- ").strip()
+
+
+def _clean_live_event_title(title: str) -> str:
+    """Remove the channel label and kickoff clock from a mirrored event title."""
+    cleaned = LIVE_EVENT_PREFIX_PATTERN.sub("", title.strip(), count=1)
+    cleaned = LEADING_EVENT_TIME_PATTERN.sub("", cleaned, count=1)
+    return cleaned.strip(" -:–—")
+
+
+def _format_gmt_time(value: datetime) -> str:
+    """Format a GMT clock as 2pm or 2.30pm for display in programme titles."""
+    local = value.astimezone(GMT)
+    hour = local.hour % 12 or 12
+    minute = f".{local.minute:02d}" if local.minute else ""
+    meridiem = "am" if local.hour < 12 else "pm"
+    return f"{hour}{minute}{meridiem}"
+
+
+def _format_title_event_name(title: str) -> str:
+    """Clean a title and render any trailing GMT clock in compact 12-hour form."""
+    cleaned = _clean_live_event_title(title)
+    match = TRAILING_GMT_TIME_PATTERN.search(cleaned)
+    if match:
+        hour = int(match.group(1))
+        minute = int(match.group(2))
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+            when = datetime(2000, 1, 1, hour, minute, tzinfo=GMT)
+            cleaned = cleaned[:match.start()] + " at " + _format_gmt_time(when)
+    return cleaned.strip()
 
 
 def _parse_eastern_starts(suffix: str) -> list[datetime_time]:
@@ -472,6 +510,8 @@ def process_epg() -> None:
                      and name.casefold() != "no event"),
                     "",
                 )
+                if event_title and not permanent_title:
+                    event_title = _format_title_event_name(event_title)
                 times = _parse_eastern_starts(suffix)
                 targets[ch_id] = {
                     "core": core,
@@ -509,7 +549,7 @@ def process_epg() -> None:
         if ch_id in targets and not targets[ch_id]["event_title"]:
             title = (programme.findtext("title") or "").strip()
             if title.casefold() != "no event":
-                targets[ch_id]["event_title"] = title
+                targets[ch_id]["event_title"] = _format_title_event_name(title)
         if ch_id and ch_id not in epl_targets:
             parsed = _parse_epl_dynamic_label(
                 (programme.findtext("title") or "").strip(), epl_today
@@ -628,6 +668,8 @@ def process_epg() -> None:
                 batch = titles_to_clean[start : start + BATCH_SIZE]
                 print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
                 results = ai_clean_sport_titles(batch, gemini_client)
+                for result in results.values():
+                    result["clean_title"] = _format_title_event_name(result["clean_title"])
                 cleaned_mapping.update(results)
                 for title, result in results.items():
                     ai_cache_entries[live_cache_keys[title]] = {
@@ -730,6 +772,7 @@ def process_epg() -> None:
             "clean_title": raw_title,
             "description": "Live event",
         })
+        result["clean_title"] = _format_title_event_name(result["clean_title"])
         channel_generated_start = len(generated)
         scheduled_starts: list[datetime] = []
         for event_time in item["start_times"]:
@@ -753,8 +796,7 @@ def process_epg() -> None:
         first_start = min(scheduled_starts)
         upcoming_start = datetime.combine(first_start.date(), datetime_time.min, tzinfo=UTC)
         upcoming_title = (
-            f"Upcoming Event: {result['clean_title']} "
-            f"{first_start.strftime('%H:%M')} GMT"
+            f"Upcoming Event: {result['clean_title']} at {_format_gmt_time(first_start)}"
         )
         if upcoming_start < first_start and datetime.now(UTC) < first_start:
             upcoming = ET.Element("programme", {
@@ -784,7 +826,7 @@ def process_epg() -> None:
         day_end = day_start + timedelta(days=1)
         event_end = min(start_utc + EPL_EVENT_DURATION, day_end)
         upcoming_start = day_start
-        upcoming_title = f"Upcoming Event: {title} {start_utc.strftime('%H:%M')} GMT"
+        upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
         description = event_descriptions.get(epl_description_keys.get(ch_id, ""), title)
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
@@ -837,7 +879,7 @@ def process_epg() -> None:
             continue
         end_utc = start_utc + timedelta(minutes=150)
         upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
-        upcoming_title = f"Upcoming Event: {title} {start_utc.strftime('%H:%M')} GMT"
+        upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
         description = event_descriptions.get(
             paramount_description_keys.get(ch_id, ""), title
         )
