@@ -1,8 +1,8 @@
 # Daily cleaned EPG
 
-This repository downloads the provider XMLTV feed, cleans programme titles for
-channels whose display-name alias contains `LIVE EVENT 01` through `LIVE EVENT
-36`, and publishes `cleaned_epg.xml.gz`. GitHub Actions runs daily at 05:15,
+This repository downloads the provider XMLTV feed, cleans programme listings
+for `LIVE EVENT 01` through `LIVE EVENT 36`, dynamic EPL and other European
+football event channels, and publishes `cleaned_epg.xml.gz`. GitHub Actions runs daily at 05:15,
 07:15, and 09:15 UK time (Europe/London) and can also be started manually from
 the Actions tab. GitHub may delay scheduled runs during busy periods.
 The workflow also saves Gemini results in `ai_cache.json` and commits that file
@@ -30,10 +30,12 @@ from `Away @ Home` to `Home vs Away`. `Next Game` dates are rendered as
 `DD/MM/YYYY HH:MM GMT`; Eastern timestamps are converted using their stated
 EDT/EST offset, including daylight saving time.
 
-Dynamic labels for `EPL01`–`EPL10` are parsed as home team, UK kickoff time,
-away team, and date. The programme title becomes `Home vs Away`; kickoff is
-converted from Europe/London time to UTC/GMT, with an upcoming listing before
-kickoff and the match listing continuing to midnight GMT.
+Dynamic labels for `EPL01`–`EPL10`, `Bundesliga 01`–`10`, `La Liga 01`–`10`,
+`Serie A 01`–`10`, and `Ligue 1 01`–`10` are parsed as fixtures with a kickoff
+time and date. Programme titles use `Home vs Away`; kickoff is converted from
+the label's London time to UTC/GMT, with `Upcoming Match` before kickoff, the
+match listing for 2.5 hours, and `Match ended` until midnight GMT. Channels
+without parseable fixture data receive an all-day `No match today` listing.
 
 Dynamic `Paramount+ 01`–`Paramount+ 100` labels use the event text and Eastern
 date/time after the prefix. The programme title drops the channel number; the
