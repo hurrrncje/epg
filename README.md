@@ -19,9 +19,11 @@ and each generated listing ends at the next midnight UTC. A label such as
 `5:25/8pm` creates two start-time entries, interpreting the first time as 5:25pm.
 Channels marked `No Event` or with no explicit AM/PM time receive no programme
 entry that day.
-Before the first scheduled start, an `Upcoming Event: [Event Name] HH:MM GMT`
+Before the first scheduled start, an `Upcoming Event: [Event Name] at Hpm`
 programme runs from midnight GMT until kickoff so UHF has guide information in
-the pre-event period.
+the pre-event period. Titles use a compact 12-hour GMT clock, for example
+`2pm` or `2.30pm`. LIVE EVENT programme titles omit the `LIVE EVENT NN` prefix
+and the source label's leading kickoff time.
 
 For channels whose XMLTV IDs start with `EPL` or `EFL`, fixture text is changed
 from `Away @ Home` to `Home vs Away`. `Next Game` dates are rendered as
