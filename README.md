@@ -26,9 +26,9 @@ the pre-event period. Titles use a compact 12-hour GMT clock, for example
 `2pm` or `2.30pm`. LIVE EVENT programme titles omit the `LIVE EVENT NN` prefix
 and the source label's leading kickoff time.
 
-For channels whose XMLTV IDs start with `EPL` or `EFL`, fixture text is changed
-from `Away @ Home` to `Home vs Away`, and `Game` in programme titles becomes
-`Match` (for example, `No Match Today`). `Next Game` dates are rendered as
+For channels whose XMLTV IDs start with `EPL` or `EFL`, or contain `spfl`,
+fixture text is changed from `Away @ Home` to `Home vs Away`, and `Game` in
+programme titles becomes `Match` (for example, `No Match Today`). `Next Game` dates are rendered as
 `DD/MM/YYYY HH:MM GMT`; Eastern timestamps are converted using their stated
 EDT/EST offset, including daylight saving time.
 
@@ -42,8 +42,9 @@ without parseable fixture data receive an all-day `No match today` listing.
 Dynamic `DAZN UK 01`–`DAZN UK 100` labels are parsed as event titles and London
 kickoff dates/times. Channel names are normalized to their stable DAZN UK
 number, event titles are cleaned with the same AI process as LIVE EVENT
-channels, and events run from kickoff until midnight GMT. Before kickoff, an
-upcoming listing runs from today's midnight GMT to the event start.
+channels, and events run from kickoff until midnight GMT. Active event titles
+include the GMT kickoff time as `(Started Hpm)` or `(Started H.MMpm)`. Before
+kickoff, an upcoming listing runs from today's midnight GMT to the event start.
 
 Dynamic `Paramount+ 01`–`Paramount+ 100` labels use the event text and Eastern
 date/time after the prefix. The programme title drops the channel number; the
