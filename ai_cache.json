@@ -3,7 +3,7 @@
     "00254e08a55ba4c6d1e7c31f4367b7c8419782ddbd0b526abedff8cb66d19c7d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597881+00:00"
+      "retry_after": "2026-10-26T18:06:59.043288+00:00"
     },
     "008a22e0d63c4ecbaab3a771324421acc8a3f76e68e4e7b153f26636ff004a76": {
       "failed": true,
@@ -103,7 +103,7 @@
     "072cc03d4ce9659d8490dde01023fc672757eb64c5e36b43c3d044d8901286be": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597876+00:00"
+      "retry_after": "2026-10-26T18:06:59.043358+00:00"
     },
     "073babef5aa36dfc87ad8bee3fd2eafd96bacf7f93d8a6da582f9c494c485146": {
       "failed": true,
@@ -118,7 +118,7 @@
     "0893fd482912fbf077d8931f518f14a9fa33784e114c68178e74ac0e1a3a8f68": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597996+00:00"
+      "retry_after": "2026-10-26T18:06:59.043391+00:00"
     },
     "089f4d2caa7aacb51d7523d856d5c97e84cd38e184e53f4469277a243b6e54d2": {
       "failed": true,
@@ -153,7 +153,7 @@
     "09c1c9046e7b8057546c64dfc8d5521fec2cead519694a34dee0a816b6b71dd6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973930+00:00"
+      "retry_after": "2026-10-26T18:06:59.043191+00:00"
     },
     "0a27d89852d63855709fa3a47ac134af4db1f43af038434029e8caededba2580": {
       "failed": true,
@@ -163,7 +163,7 @@
     "0a84c1cf034cde5a91d0283c3963ce6f3f908d7c226de2cac6c48f627c59b73f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597951+00:00"
+      "retry_after": "2026-10-26T18:06:59.043327+00:00"
     },
     "0ae049f50ceacc72529248f4c9866ac9a310a22c7f7fa236d5bded1736a7769d": {
       "failed": true,
@@ -173,7 +173,7 @@
     "0b431308dfe8b0490159ea469b29d8e1774463469eed825e53ff956e8646d714": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597956+00:00"
+      "retry_after": "2026-10-26T18:06:59.043204+00:00"
     },
     "0c24a4a08f3c4c2793cfa78c5d74cf9110b056b6895b7b2cfe7fa4f394ffd264": {
       "failed": true,
@@ -198,7 +198,7 @@
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597864+00:00"
+      "retry_after": "2026-10-26T18:06:59.043109+00:00"
     },
     "0ff82903a1face890a60ff80d15ce4c5d39d800438ef05b1e19f9900cb10a1a2": {
       "failed": true,
@@ -208,12 +208,12 @@
     "1022776f3d6ef267926f692e1280e4a75e7a19fceb8c764b4e6330136e2ae7f0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597888+00:00"
+      "retry_after": "2026-10-26T18:06:59.043304+00:00"
     },
     "10499bc14c01c013d282951940a10aaf4435fae34b0b0a830c5b7ff307c0fe8c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973874+00:00"
+      "retry_after": "2026-10-26T18:06:59.043144+00:00"
     },
     "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
       "failed": true,
@@ -353,7 +353,7 @@
     "1871af38e07181aeba23217f5390c79076b1c2a5184510ef5a4a5dfaebd8f096": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597974+00:00"
+      "retry_after": "2026-10-26T18:06:59.043346+00:00"
     },
     "18ae9898d1a41c6545f8afdb09d62993d0b2f71ad11277277ea8ddce75964f48": {
       "failed": true,
@@ -388,7 +388,7 @@
     "1b0c1840f305321435b41f527a22186c4aaef098d43c5b0cd1089e8bc29251f5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973934+00:00"
+      "retry_after": "2026-10-26T18:06:59.043196+00:00"
     },
     "1be1630277b56e6df2e56f2fd3ecc4b99c2705b3dffb7a4593ffb5e01f098ae5": {
       "failed": true,
@@ -423,17 +423,17 @@
     "20adf8bf65bf7ed6fcee4bed7ef169435eb2e19e162b08ffc0edc537e2398506": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597929+00:00"
+      "retry_after": "2026-10-26T18:06:59.043297+00:00"
     },
     "20aef95a5b7b78a9339bedd8eb56a2c85f65e3a235fef85c369afd0f624424af": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973928+00:00"
+      "retry_after": "2026-10-26T18:06:59.043189+00:00"
     },
     "20c9e37fe862c8951c1cab1f8dd1ac57286acd2b9bf90511ae9ee3dc3fb27bca": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597870+00:00"
+      "retry_after": "2026-10-26T18:06:59.043271+00:00"
     },
     "21977ee11c0f73bc8291fc8f1fc303b2852514783bfe703616fafe4ea6c3a92d": {
       "failed": true,
@@ -443,7 +443,7 @@
     "22103c58608d5cb547d89bb348bcc22d84cdd3fbfabefb443a2d8c926a6c1694": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000610+00:00"
+      "retry_after": "2026-10-26T18:06:59.043115+00:00"
     },
     "226749cb72496772c1edec1c74001f009200d636635f7a2adb06096489a717b1": {
       "failed": true,
@@ -458,7 +458,7 @@
     "23a623cca4d301f434672a1779c7e49353d4948e6ed887dab30ef3b2876d5132": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597945+00:00"
+      "retry_after": "2026-10-26T18:06:59.043388+00:00"
     },
     "23c4501c69d610b55b23f01c9ba52afd92e16caf2a1014e6528f02f7caccc5a2": {
       "failed": true,
@@ -468,12 +468,12 @@
     "23f8aaafc181e4f2116cc3316930a3b67fd15ccf8a7d7bbfcc3ad6acedebc12d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597872+00:00"
+      "retry_after": "2026-10-26T18:06:59.043354+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973869+00:00"
+      "retry_after": "2026-10-26T18:06:59.043136+00:00"
     },
     "25cabb8e4e0ccc4cc144daf02672e66ed52825904b0f1ad3f3e3463e580a368c": {
       "failed": true,
@@ -496,9 +496,13 @@
       "retry_after": "2026-10-26T15:24:33.597719+00:00"
     },
     "270be99e90987e506740da34743fcd9974711473b486bfadd8a7b2962b4e9546": {
-      "failed": true,
+      "created_at": "2026-10-26T12:06:58.198975+00:00",
       "kind": "live-title",
-      "retry_after": "2026-10-26T12:16:13.873939+00:00"
+      "result": {
+        "clean_title": "Wild vs Canucks",
+        "description": "NHL regular‑season game between the Minnesota Wild and the Vancouver Canucks, played on October 25, 2026.",
+        "raw": "Wild @ Canucks"
+      }
     },
     "274cff022f91dcc93cebb03b09a00ab0d3b9f4756e021435e1345f031d6759c1": {
       "failed": true,
@@ -543,12 +547,12 @@
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598009+00:00"
+      "retry_after": "2026-10-26T18:06:59.043239+00:00"
     },
     "2b2cbf7ab267dcb5e5516b9f73ac7b98de5f188732183d6d6827820610dc166b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000638+00:00"
+      "retry_after": "2026-10-26T18:06:59.043221+00:00"
     },
     "2beefdf36de28547c7b2030e28d4232d250293727855b713ae4a76a292829f58": {
       "failed": true,
@@ -613,7 +617,7 @@
     "32be7fd7a2d79b89aa3a5a6547b9ad35ef64e79e8568f9dcc8d104d338bfd3da": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597908+00:00"
+      "retry_after": "2026-10-26T18:06:59.043341+00:00"
     },
     "334c7c45efa7e793cf51b757f0333b058d67cfe25c73d279ebdaad522e4f4ca9": {
       "failed": true,
@@ -628,7 +632,7 @@
     "34e43feb7ebd54689a19294493d912df37eef536b4294c8ab5c35377cb47ebb0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597911+00:00"
+      "retry_after": "2026-10-26T18:06:59.043344+00:00"
     },
     "34eea54c8f2eb13627b87cb309d40a0f168696adc2dd5b84dc054f70cd468d96": {
       "failed": true,
@@ -658,7 +662,7 @@
     "35dc5d19b6a095a5537a0fb62dd83edb7e5157f38dc1ef8406e9a5e8b45528d9": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704284+00:00"
+      "retry_after": "2026-10-26T18:06:59.043253+00:00"
     },
     "36c10bb94ec99708f77947c09926d71cc914777383253840ecd2879328972785": {
       "failed": true,
@@ -668,7 +672,7 @@
     "36c4afe008dee8c44549f1c7984cb61dda7729a3f716a26fdf04bd095890d790": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597897+00:00"
+      "retry_after": "2026-10-26T18:06:59.043316+00:00"
     },
     "36cd3121ec287c307c71228ddc5edadeaf0147dc036e304036de5519f1f4e0d9": {
       "failed": true,
@@ -688,7 +692,7 @@
     "37dabaa767b0261dd1d742b2c62493418b5ba44d6aa03660f7163c081b07f60c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973895+00:00"
+      "retry_after": "2026-10-26T18:06:59.043166+00:00"
     },
     "384640c186af84d4611e478a74351faaeba1974403f191d0a0950d5295d251bb": {
       "failed": true,
@@ -698,12 +702,12 @@
     "3943684d21c174c54bb2e79b52ea0db67adfd1c6a85b902f797ab148332f2186": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597910+00:00"
+      "retry_after": "2026-10-26T18:06:59.043268+00:00"
     },
     "3a2cf81610588d95da7872b3c3c92bdca80b3ee1a9489c0c92d92e8ee79b0d82": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973917+00:00"
+      "retry_after": "2026-10-26T18:06:59.043175+00:00"
     },
     "3a3f322285f16c4ff42c8c95dac4f410652bc567ad35037e70b404f2210e4b4f": {
       "failed": true,
@@ -728,7 +732,7 @@
     "3a917676bb17cccac85d676c2b5a9d49b55a3e64423e6cdf2847c7e005c22505": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597989+00:00"
+      "retry_after": "2026-10-26T18:06:59.043374+00:00"
     },
     "3bc8ab2d03ae70dcaf372543291596e1c45b13ef7e3c5a13dd1d3fcb66725435": {
       "failed": true,
@@ -743,7 +747,7 @@
     "3c1ed41e731aebf03fcd3311807ddda53b5901f55904583a857a3c8c96c5947d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704299+00:00"
+      "retry_after": "2026-10-26T18:06:59.043264+00:00"
     },
     "3c4ba9bf4f89c8c74d6a99ffba932cce2fde3f047312176be07c5e1cce51d50c": {
       "failed": true,
@@ -768,7 +772,7 @@
     "3f4a0fc791a08fb8beda3f27a66dff2e190079000f4264dff0d65669878e85aa": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973913+00:00"
+      "retry_after": "2026-10-26T18:06:59.043170+00:00"
     },
     "3f97627e08077298cde71765e37c0c16d0b51dabf6b609358d72f4de0f757a7f": {
       "failed": true,
@@ -798,12 +802,12 @@
     "40f068beac846fbcb0f928e820feab8c3e4270f2c13a6e03ab8f171dd52123ce": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000612+00:00"
+      "retry_after": "2026-10-26T18:06:59.043117+00:00"
     },
     "4101cc14d2cc8a52b445f1a4e66a47540bba2bb95750fcec7857bb22a992eeae": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597981+00:00"
+      "retry_after": "2026-10-26T18:06:59.043362+00:00"
     },
     "41d8341a9e8788e51e8081c157a19a11678eeacc059ef087645ce0ce504a9b45": {
       "failed": true,
@@ -813,7 +817,7 @@
     "422e9d73ad0e1ecb5f6a73afcf1cd2239353e4f5391064449ac95b0717bd78a6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597930+00:00"
+      "retry_after": "2026-10-26T18:06:59.043219+00:00"
     },
     "422efea60c6669f8ed77226973b53e595f51a0418d7392e35dbef25c5cccf7ca": {
       "failed": true,
@@ -883,12 +887,12 @@
     "4723142829a05d3d457bdb0c0a7534fe5699073cfee9059a7aafa4d179457a20": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598008+00:00"
+      "retry_after": "2026-10-26T18:06:59.043227+00:00"
     },
     "49925d8778e801e755a7db601ff079be5519dbda13de59c7f7dd5a8dc2328acb": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597960+00:00"
+      "retry_after": "2026-10-26T18:06:59.043333+00:00"
     },
     "49ce8d252be33b74537d981874e6fe00fb4837e597d588c3f531a0229eb8d391": {
       "failed": true,
@@ -903,7 +907,7 @@
     "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597916+00:00"
+      "retry_after": "2026-10-26T18:06:59.043280+00:00"
     },
     "4b7a8388c637c39fc459a270ae6c0e4b128fb920ab0b20d26da6d11be5230ffc": {
       "failed": true,
@@ -913,7 +917,7 @@
     "4b88a67f69b5a83184d08669e1e085c4e445f856c59f2d3f4c676d5f2abf0e48": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597993+00:00"
+      "retry_after": "2026-10-26T18:06:59.043308+00:00"
     },
     "4bedaede4a4496b821d2a301491ed85f5efa3bb9e24ff3be3e35fd95a7bcae65": {
       "failed": true,
@@ -923,7 +927,7 @@
     "4c55a139c8e810554bc8974ace6fa2994488021151849393d17fabcce88754de": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000660+00:00"
+      "retry_after": "2026-10-26T18:06:59.043266+00:00"
     },
     "4d5d480a1f3611e96c537cf6f486cf98a54f1376ed019f545e2d4fecf6b7e7f6": {
       "failed": true,
@@ -933,7 +937,7 @@
     "4d7ba823c7276bf5f4a2dd610618ffd580a2a5031a387253d0354c32ba63d94b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000664+00:00"
+      "retry_after": "2026-10-26T18:06:59.043314+00:00"
     },
     "4d9bfc1885871d18bbfbc6bc347d2194cc20e4e7f281758d1333d463af49ee98": {
       "failed": true,
@@ -948,7 +952,7 @@
     "4f3249c2021b7ca9c24194b011e1ef8c604009fb815c59697065207a485ee886": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704303+00:00"
+      "retry_after": "2026-10-26T18:06:59.043291+00:00"
     },
     "5050038644b6c8a2ab646af170255d75343138638ffbf0df3b01c969c42bf50e": {
       "failed": true,
@@ -963,7 +967,7 @@
     "50c15404104e8bcfacd6b0858422d7e02fcae919721349360e595189afe7615b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597995+00:00"
+      "retry_after": "2026-10-26T18:06:59.043310+00:00"
     },
     "50d01b540c9130d8dccf5df3bbe34f0b8b458572eba027e8b2ebad5f5a103d80": {
       "failed": true,
@@ -983,7 +987,7 @@
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704308+00:00"
+      "retry_after": "2026-10-26T18:06:59.043302+00:00"
     },
     "52540e7916be2aa1de3fa257f7e1fc64b57b36aab5fc4eae3a3ea40a41ef0a19": {
       "failed": true,
@@ -993,7 +997,7 @@
     "5267399256fbef1b60ca7c8f7010b17db3d8a5f6b2834aa0cf55ae9e28fe122d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597882+00:00"
+      "retry_after": "2026-10-26T18:06:59.043293+00:00"
     },
     "5317ff956435ba4f5c676fcaa7b288dd0206ce5d451f3645f479ffd8f4f038c1": {
       "failed": true,
@@ -1013,17 +1017,17 @@
     "54f2377de193d7ebcd45845e14e2ba550587d8db79686a71881e67c774877ea6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597946+00:00"
+      "retry_after": "2026-10-26T18:06:59.043389+00:00"
     },
     "555ea6353199b7d5d26c97970aeaa5dd6bdece027d71fafe6cdc71a1f1683364": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973923+00:00"
+      "retry_after": "2026-10-26T18:06:59.043182+00:00"
     },
     "5672a157c4e7e6f823e6c4e7aafed3732d70d9c705ed840aee6f9fa6131b52ad": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000640+00:00"
+      "retry_after": "2026-10-26T18:06:59.043230+00:00"
     },
     "569d466a7566fec66b16e7c046dc3e962f837b51e9157c292a9638ab5d8d0038": {
       "failed": true,
@@ -1033,7 +1037,7 @@
     "56c6175b497ab7f2600897e18b5c604b5f7566fc5429b9d2077d1bc7383561c5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597887+00:00"
+      "retry_after": "2026-10-26T18:06:59.043366+00:00"
     },
     "570c2b6e9b964ccb373ea58a4b60ec1ce22490fe1e34cf64d2ac3b998204ef1c": {
       "failed": true,
@@ -1043,7 +1047,7 @@
     "5737d9f40351577552db6ae98e392e75bac99055e41c5cd38c7b98fc44b01124": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597943+00:00"
+      "retry_after": "2026-10-26T18:06:59.043235+00:00"
     },
     "581858dbc0555a775a31e25fcdbdd7695dab48aa82e8175f85473ece0ba2a918": {
       "failed": true,
@@ -1053,7 +1057,7 @@
     "59a54fe93e43cb1b76d211c257f46c5d14948cb4a400642430edb5d9f4d07c45": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973932+00:00"
+      "retry_after": "2026-10-26T18:06:59.043193+00:00"
     },
     "59acbd14eec0ecaa69d8ca2b33c93d096691c52ba133f8d8118c0c7355b2c3b2": {
       "failed": true,
@@ -1113,12 +1117,12 @@
     "5d9a2b0b69511c104a4e7e1efa5b38b0c8ca7c34749544af294ede2afe82c5b8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597836+00:00"
+      "retry_after": "2026-10-26T18:06:59.043105+00:00"
     },
     "5f1545b99c20f19c8edbe43d84932021d43a497478ba497ecef8b570bdb91bf2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597915+00:00"
+      "retry_after": "2026-10-26T18:06:59.043277+00:00"
     },
     "5f18244f96520a654bfc0b4a6d32d4884b2208aa23910b01bcf7989593402805": {
       "failed": true,
@@ -1153,7 +1157,7 @@
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597831+00:00"
+      "retry_after": "2026-10-26T18:06:59.043100+00:00"
     },
     "61507542ac59bfa54b3f79816f1dd16717e2792b478d41f6f6bf5dda91325b48": {
       "failed": true,
@@ -1213,7 +1217,7 @@
     "64b049dd0da5966a61d41bff14cd5c116da55d970d0795f07230db69b482bbf8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597947+00:00"
+      "retry_after": "2026-10-26T18:06:59.043322+00:00"
     },
     "64c44a5cd64e32f7dc1f667f0780ef305dff854b30321725ea11eaf04689f4e4": {
       "failed": true,
@@ -1228,7 +1232,7 @@
     "6606e4b87f17d42e16f12d0543e5eb044668be2585f420d009e98d579c5f99d5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000646+00:00"
+      "retry_after": "2026-10-26T18:06:59.043200+00:00"
     },
     "664e17465475afa8dd415e13f97797ef6d69f88f1d123a0c512238c2793ec598": {
       "failed": true,
@@ -1243,17 +1247,17 @@
     "686c41530cf80faf1d29c0eac6adfff8b964c74a6d24e4131cfa39e9bb1b2846": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973889+00:00"
+      "retry_after": "2026-10-26T18:06:59.043159+00:00"
     },
     "6875b11ffeaae72309ae9a3d38394d9a9c8949b692897e35cd89240da0687c75": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000644+00:00"
+      "retry_after": "2026-10-26T18:06:59.043251+00:00"
     },
     "68c2144b53dde7f0305f8067d211a01ebcc89ee28b37cf0c89be221a57f187b8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597902+00:00"
+      "retry_after": "2026-10-26T18:06:59.043325+00:00"
     },
     "68d881189944332467c33cbed7d205450911e4b8160ca2d6d93dbb1628b68451": {
       "failed": true,
@@ -1263,7 +1267,7 @@
     "68daf2e310cf342452b2c9c995c9bf447093eeb254ec2252f6aa4d00b360febe": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597932+00:00"
+      "retry_after": "2026-10-26T18:06:59.043368+00:00"
     },
     "69010e655f02b569c096b84302fb4e14f9f9e7a31b9898accb47acd68026f289": {
       "failed": true,
@@ -1288,7 +1292,7 @@
     "6a4db5f5f329bb72e9e43c55597f1437f4c7d59b17041df69d774e29529b5820": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597984+00:00"
+      "retry_after": "2026-10-26T18:06:59.043223+00:00"
     },
     "6af4042d8e6479e5e470f2ec9a047c1fe560e992d71fb4d431fe7b2025afc3cd": {
       "failed": true,
@@ -1318,7 +1322,7 @@
     "6c7c4fb0cde0b70857c7a6f32c31a8ca298b02e644b474756c2e4cc66fa10176": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973891+00:00"
+      "retry_after": "2026-10-26T18:06:59.043161+00:00"
     },
     "6e9b6c3d866e8f975abf079292340b125d69ce6256e8b164aaad826695add4c6": {
       "failed": true,
@@ -1333,7 +1337,7 @@
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000607+00:00"
+      "retry_after": "2026-10-26T18:06:59.043112+00:00"
     },
     "7055ce25fdf2a4bbb3d96e8ead7c762d8c02c8961dbdfdd3419557eda33d9dec": {
       "failed": true,
@@ -1388,12 +1392,12 @@
     "7306f5e34c44fe5d739e8a0f994206a43d9df1be5caf4eaa1414ce550036335e": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597830+00:00"
+      "retry_after": "2026-10-26T18:06:59.043097+00:00"
     },
     "735de622dac991f1acea9bbaec90b7017c9df15237e7060259f6e5bc7fd0bcff": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597837+00:00"
+      "retry_after": "2026-10-26T18:06:59.043107+00:00"
     },
     "736d33630f9f51e19b80ad8a719b4b9f8d2926b23a5a0243bb349a98ddd47b90": {
       "failed": true,
@@ -1463,12 +1467,12 @@
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973871+00:00"
+      "retry_after": "2026-10-26T18:06:59.043139+00:00"
     },
     "79e1b2f08758361c1d4654cbd407507cac8943ad4d371db7ecc300a483827460": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597893+00:00"
+      "retry_after": "2026-10-26T18:06:59.043381+00:00"
     },
     "7b4ee6d557ca65d2394373dcd7befea37e96f2f59372abbfcc5ae5a839ae9351": {
       "failed": true,
@@ -1478,22 +1482,22 @@
     "7b6106ed24ba7e370461d9186ea54ebab7e67ece185f7f6d0c77b7725796fe83": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973877+00:00"
+      "retry_after": "2026-10-26T18:06:59.043146+00:00"
     },
     "7bc10328320b3885ac7e0c40862d9c901808b69bb1aae32968677b1e4d3567a5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597917+00:00"
+      "retry_after": "2026-10-26T18:06:59.043348+00:00"
     },
     "7bd583b1e3ae7d7ca28b932a354c89367f40e31fe93f11b8e57d68815a49989b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973867+00:00"
+      "retry_after": "2026-10-26T18:06:59.043134+00:00"
     },
     "7c4dc3f03f81776f505a8fba0df6286114e4df4037eb892ac9f6c79db722034f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597967+00:00"
+      "retry_after": "2026-10-26T18:06:59.043329+00:00"
     },
     "7c563b4ea218affce9bdc14860d8142d24c2c6f514b75f1656fe10f61e873ffb": {
       "failed": true,
@@ -1503,7 +1507,7 @@
     "7d0986fce9dfcca68c73264c2b64517fdb9dda449a8f65171d0c8e75be263c50": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597976+00:00"
+      "retry_after": "2026-10-26T18:06:59.043350+00:00"
     },
     "7e9dc87ada10d1521e9eb9ec26f2ac42d65c5f7c5d86746334a5d8053a68877e": {
       "failed": true,
@@ -1518,17 +1522,17 @@
     "7f525a2aafa89db6d1094873cfb2fe669b94f064e993e35e26340b1ae8187a01": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597874+00:00"
+      "retry_after": "2026-10-26T18:06:59.043282+00:00"
     },
     "7fa40b6e60e6c6b015e810ce21e16f1312b4147e8a87202721388744cc929232": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000668+00:00"
+      "retry_after": "2026-10-26T18:06:59.043331+00:00"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973862+00:00"
+      "retry_after": "2026-10-26T18:06:59.043129+00:00"
     },
     "80b33e8c4f31207c7df062666b3cf77c5ec117652433cf2f39e4a5cbfbe28f7b": {
       "failed": true,
@@ -1538,7 +1542,7 @@
     "81b6955b149184ea74055a81971d9e93366b2628e364acf1beb72ecf0a832c01": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598003+00:00"
+      "retry_after": "2026-10-26T18:06:59.043215+00:00"
     },
     "81b8f3c7eb4b0eabd3798d8b52d17c805e5f695dab5bb64213f9bc840f295809": {
       "failed": true,
@@ -1548,12 +1552,12 @@
     "826d30180fd298bc5d877827b5a45c688d3773ce6712f35493f4c46fb7d44344": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:46:06.690384+00:00"
+      "retry_after": "2026-10-26T18:06:59.043385+00:00"
     },
     "8289b5647e7e0d56f85b0e48fdccdd4e81f5edd3cea41cf7eeda21f0e10923f5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597879+00:00"
+      "retry_after": "2026-10-26T18:06:59.043286+00:00"
     },
     "8367a891e8de5c49c3c8786b7ea038fa4e788cd0db73508e43dc6036b2ce0c7d": {
       "failed": true,
@@ -1563,7 +1567,7 @@
     "848177a43c5d84701f978619707ec9a697bb82c90f61c1c5b4114ff64c9a6f17": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597975+00:00"
+      "retry_after": "2026-10-26T18:06:59.043212+00:00"
     },
     "8491e148455c7ee3ff775b64b47c8effcabee56832fd4ab389d0bd3c898e60f9": {
       "failed": true,
@@ -1635,10 +1639,15 @@
       "kind": "event-description",
       "retry_after": "2026-10-26T15:24:33.597707+00:00"
     },
+    "8c7c490cc95391f7380bcf0a37cccecdff48309e842c8597f85d8a5e94461bf9": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-26T18:06:59.043339+00:00"
+    },
     "8c95fcb9a73dea2bf6d4cdf1fce720cc43997dd2e4202ad1e49b97f0e85f3390": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973837+00:00"
+      "retry_after": "2026-10-26T18:06:59.043122+00:00"
     },
     "8d1b6b0c34b4c14086727a5f49dc1283d01666287b10d5a9973c6c8ff257675d": {
       "failed": true,
@@ -1688,7 +1697,7 @@
     "8fccda39ea98b4b4cba700d643f4a4195b2e06734c50516ee0831fa724e5f71b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597971+00:00"
+      "retry_after": "2026-10-26T18:06:59.043398+00:00"
     },
     "9120f2ced342e44aff9bb6cdd77c5b0432abd00ef01a7f86e363cfe54b83b2ac": {
       "failed": true,
@@ -1713,7 +1722,7 @@
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597992+00:00"
+      "retry_after": "2026-10-26T18:06:59.043377+00:00"
     },
     "94157ceb01476af8dea58ba31929178fe247c462015197f41ba600da6fbd8a02": {
       "failed": true,
@@ -1808,7 +1817,7 @@
     "98ce917394b6d9c8a67a34f5c954146299534e719d7b695632052d53dc68b341": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000674+00:00"
+      "retry_after": "2026-10-26T18:06:59.043383+00:00"
     },
     "98f257bb6bd3bad27f7edf8494159cb8605f0dcbffab62e6650978bb7684d156": {
       "failed": true,
@@ -1828,7 +1837,7 @@
     "9981e399d99f8dedd7b7774ce94bd2b8766dd84a1b723ebfbccd50ec5e0d6ab5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973885+00:00"
+      "retry_after": "2026-10-26T18:06:59.043155+00:00"
     },
     "999f21c92cad8bcd0f7667150cf659c127f91d2c651cee97c4bb094cdc6401b7": {
       "failed": true,
@@ -1863,7 +1872,7 @@
     "9bb9c6a0596f15589f8fecfc275302b774aca1c4f5f08ee99216ccd143964e4a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597906+00:00"
+      "retry_after": "2026-10-26T18:06:59.043337+00:00"
     },
     "9c28c390c0b90a85e32bd17dd5c9db39c35cea4f4797511a18fbe112a16a15da": {
       "failed": true,
@@ -1888,7 +1897,7 @@
     "a004048ee3bc60a3e2956d1d117db33b4ce4c3d309e1e2099a63de77b21ddfc8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598013+00:00"
+      "retry_after": "2026-10-26T18:06:59.043244+00:00"
     },
     "a0208024f9f996052d04fbb9fa9f7d54fb6446e4c3887c6e4d369a5c6f179c47": {
       "failed": true,
@@ -1913,17 +1922,21 @@
     "a30de22a23e13528055728ffdec9fa430e202b004a9c6ad38eb508163c98d130": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597941+00:00"
+      "retry_after": "2026-10-26T18:06:59.043232+00:00"
     },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
-      "failed": true,
+      "created_at": "2026-10-26T12:06:58.198973+00:00",
       "kind": "live-title",
-      "retry_after": "2026-10-26T12:16:13.744732+00:00"
+      "result": {
+        "clean_title": "Chiefs vs Seahawks (US., French, German, Japanese, Portuguese Commentary)",
+        "description": "Game commentary available in US, French, German, Japanese, and Portuguese for the Week 7 NFL matchup between the Kansas City Chiefs and the Seattle Seahawks, played on October 25, 2026.",
+        "raw": "Chiefs @ Seahawks (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "a36363c9766dd64e232bdd97e180607e66e983a6f8d8cf6c8af30f7ceb2c4691": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597938+00:00"
+      "retry_after": "2026-10-26T18:06:59.043379+00:00"
     },
     "a428489464329e13d7fb9b15fccf82028108d4d67dcfce21e5e19e7c304c45b9": {
       "failed": true,
@@ -1943,7 +1956,7 @@
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000614+00:00"
+      "retry_after": "2026-10-26T18:06:59.043120+00:00"
     },
     "a6ae4342b236e8e618a8da1728ce9905396084e30f18a9f8b3ce93e3ebf5b637": {
       "failed": true,
@@ -1983,7 +1996,7 @@
     "aab0d22a39520a91e23645adc251948acf1742210d3a35c384ac4378f05f226d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597936+00:00"
+      "retry_after": "2026-10-26T18:06:59.043372+00:00"
     },
     "ab9ef0fa665e328585d11376e4c61bc6f32a20803c2385eb632bb9ebe140fb94": {
       "failed": true,
@@ -1998,7 +2011,7 @@
     "ac12a7380b9057ac3acf1d12320bab969dd82a29d771a3db31d7e43c0d692a9f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597934+00:00"
+      "retry_after": "2026-10-26T18:06:59.043370+00:00"
     },
     "ac747120c6d403c116f484639db1208a512c80590a011339265bad2f11256238": {
       "failed": true,
@@ -2043,7 +2056,7 @@
     "b087329d93b55e4e7a0f49193ac4b8bdf60bcb129e585fc31d541bfcacda122f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000672+00:00"
+      "retry_after": "2026-10-26T18:06:59.043335+00:00"
     },
     "b105b7a8e2d6df46931c0a5a2b77e371bcebffadd80d3e13146dd914646cc921": {
       "failed": true,
@@ -2058,12 +2071,12 @@
     "b15fb8bb2c631dc1dc45337b9719824f27f36a585e5db90590e5c444942ced9c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:13.999961+00:00"
+      "retry_after": "2026-10-26T18:06:59.043094+00:00"
     },
     "b170cd2f8aecc9e842c1fd8d31227c8d59df820ee3ae3d325e1a6047e7c63779": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597978+00:00"
+      "retry_after": "2026-10-26T18:06:59.043352+00:00"
     },
     "b2276cd6790dc7c5f2b791e11f5db50cab51e1c480812bf3156acfa89ab0c5ab": {
       "failed": true,
@@ -2133,12 +2146,12 @@
     "b859e325fa416e1341487bfd803a4850cab8f36260a3f86077ad78816156c050": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597899+00:00"
+      "retry_after": "2026-10-26T18:06:59.043318+00:00"
     },
     "b88e4cece27aff8eb929956381262ff2c1da90cd76d58335e3ccb72fdb5e0c5f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597833+00:00"
+      "retry_after": "2026-10-26T18:06:59.043102+00:00"
     },
     "b936c4756513aea7325c2d3843e7d0b75b82cfad68ae6351d10e79412b1a6537": {
       "failed": true,
@@ -2148,7 +2161,7 @@
     "b93c4fe79519a8b56be7e97680ad17b4777f7805b399a12d4127d2e5f368f1f3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597923+00:00"
+      "retry_after": "2026-10-26T18:06:59.043360+00:00"
     },
     "b95c83d4a53f21196376c677631c4ab7d54d09d453557cbe73009bed2555d6f1": {
       "failed": true,
@@ -2188,12 +2201,12 @@
     "bd59e31283bb16cd371c1d3bfc20f328ac51be39f2e28213e9b80bebb631511a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973873+00:00"
+      "retry_after": "2026-10-26T18:06:59.043141+00:00"
     },
     "bd6d86d64a1c1b279f861744c545b38736fb7db65d50a55e7f176dbfee484d9a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973883+00:00"
+      "retry_after": "2026-10-26T18:06:59.043153+00:00"
     },
     "bdcc2bf07346942ca3c3d1db945effffec8ce6cbfd0032f14910d9c4c27a7335": {
       "failed": true,
@@ -2203,7 +2216,7 @@
     "be77efdf78ca04ef1c2e79a6a1172a1c4bfbb4e2594d253920005b6631d669b3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597972+00:00"
+      "retry_after": "2026-10-26T18:06:59.043262+00:00"
     },
     "bff67d8524551d2d279cfadf70258ec300ce3d97aa76971a0ba4de2b4ff713f2": {
       "failed": true,
@@ -2213,7 +2226,7 @@
     "c269bce43535954894caeb326eda37c100a7c25c2aaa4e84175a2e8c17b74208": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000642+00:00"
+      "retry_after": "2026-10-26T18:06:59.043237+00:00"
     },
     "c2a00d8a73dba4db3dba7651c976aea3c21c829c0198e9efec30dc1c1363fbfe": {
       "failed": true,
@@ -2228,12 +2241,12 @@
     "c2edb5543d7a290aa0420eb3b8ac7ebf45d100847f975e59574da778cbc91d6d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973880+00:00"
+      "retry_after": "2026-10-26T18:06:59.043150+00:00"
     },
     "c2f21bd0d72058bb58707cdc8e928d5ca803d580897ea1c9a8bee1f42f0d75ac": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973879+00:00"
+      "retry_after": "2026-10-26T18:06:59.043148+00:00"
     },
     "c3bb2dfc55dcececd8ee9afd03c54dab1d2e28327e3786ff1d5101947293af52": {
       "failed": true,
@@ -2263,7 +2276,7 @@
     "c4c8469d61500f7f037c36cef06b7005474ba0eaca756a3bd4b9e11a62f039bc": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973927+00:00"
+      "retry_after": "2026-10-26T18:06:59.043187+00:00"
     },
     "c4cf53e35cc8f13bcb2c0b574b781db1c93f9c96bd0aa3d999777c119d855d47": {
       "failed": true,
@@ -2286,14 +2299,22 @@
       "retry_after": "2026-10-26T15:24:33.597741+00:00"
     },
     "c550dc9c942a771dc1372384c70d9cd35c893fa55d400c7fdef87ad167734ad9": {
-      "failed": true,
+      "created_at": "2026-10-26T12:06:58.198950+00:00",
       "kind": "live-title",
-      "retry_after": "2026-10-26T12:16:13.744732+00:00"
+      "result": {
+        "clean_title": "Avalanche vs Predators",
+        "description": "NHL regular‑season game between the Colorado Avalanche and the Nashville Predators, played on October 25, 2026.",
+        "raw": "Avalanche @ Predators"
+      }
     },
     "c5c7a028de0dedfe148ad521f27f08c5e1c0cab3db24af47091302aaa6d241fb": {
-      "failed": true,
+      "created_at": "2026-10-26T12:06:58.198967+00:00",
       "kind": "live-title",
-      "retry_after": "2026-10-26T12:16:13.744732+00:00"
+      "result": {
+        "clean_title": "Chiefs vs Seahawks",
+        "description": "Week 7 NFL game between the Kansas City Chiefs and the Seattle Seahawks, played on October 25, 2026, at Lumen Field in Seattle.",
+        "raw": "Chiefs @ Seahawks"
+      }
     },
     "c5e5b894dcf65729b01c8c8a40269d2dde6489612c40559e5dcb11e1d9338a80": {
       "failed": true,
@@ -2333,7 +2354,7 @@
     "c86b80d89d9b51635ec55071ca56d57a44ec79b105318a85c054bbc85a022d84": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973919+00:00"
+      "retry_after": "2026-10-26T18:06:59.043177+00:00"
     },
     "c901b3919a2cf42f87a9a8296fa3cd085bb00081d823135a18ab714f73219241": {
       "failed": true,
@@ -2348,12 +2369,12 @@
     "c9bc368cdb2ad8a52d796c533e355b384ef1bcc2068746e2f5708cea7fe07b5a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597987+00:00"
+      "retry_after": "2026-10-26T18:06:59.043225+00:00"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973856+00:00"
+      "retry_after": "2026-10-26T18:06:59.043124+00:00"
     },
     "cb0e5988b962f3f1ff9bf408f60201ef64b1ca9c04cd4fbed4fb1f6fec637201": {
       "failed": true,
@@ -2383,12 +2404,12 @@
     "ce371d970a8c61ea977fd2db94eeee771a4e824156d20a2195edfcfdc5279104": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973887+00:00"
+      "retry_after": "2026-10-26T18:06:59.043157+00:00"
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597878+00:00"
+      "retry_after": "2026-10-26T18:06:59.043284+00:00"
     },
     "cf5920381008a6729e282778e493ca9703d1d7e8ee7d8921fb23c0a4e31b3013": {
       "failed": true,
@@ -2408,7 +2429,7 @@
     "d02f112b290eb505b4683a763cba1db374a0ff8c8311ca9fd23080d9b79f8f44": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973893+00:00"
+      "retry_after": "2026-10-26T18:06:59.043164+00:00"
     },
     "d063746074a7f12cdf024e8bd6040b38663a3f8b2d3266f5736246b810c7eeb0": {
       "failed": true,
@@ -2418,7 +2439,7 @@
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597900+00:00"
+      "retry_after": "2026-10-26T18:06:59.043320+00:00"
     },
     "d2499a7d1fd2849f2c0d84d33cedbbf1cd1ea2048c49772d8474f0d92c00293f": {
       "failed": true,
@@ -2428,12 +2449,12 @@
     "d2f783cb4b893acb26a0721fcc57a29f716c0f68386e41e52a022c647f257f50": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598000+00:00"
+      "retry_after": "2026-10-26T18:06:59.043202+00:00"
     },
     "d341c62e17337b1e5496ad5e02e62bad575d5315cd46a10634394f43dd96b5f4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973925+00:00"
+      "retry_after": "2026-10-26T18:06:59.043184+00:00"
     },
     "d34d23bf3e41635070b4ecd100dcf7155f221b65815357c542159c2327118f10": {
       "failed": true,
@@ -2443,12 +2464,12 @@
     "d3b0f4c4e1a766756f13de4e7b70172bf26caca07fef07aad47fc9dd1f9a6f2f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598014+00:00"
+      "retry_after": "2026-10-26T18:06:59.043246+00:00"
     },
     "d3cfcc9f5415bd354f978df7966bbf5cdc383dc1e9874d8bb278de42a41be851": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000650+00:00"
+      "retry_after": "2026-10-26T18:06:59.043206+00:00"
     },
     "d466dcce17c7d9ea6eafffa8b2cab8bb9ea9e47805c8dcefb7471a85d1fd9118": {
       "failed": true,
@@ -2456,9 +2477,13 @@
       "retry_after": "2026-10-26T15:24:33.597820+00:00"
     },
     "d4a0ba68de0ace523edf11327d2840fc4a408336a00b57abdb950aea77b0fd07": {
-      "failed": true,
+      "created_at": "2026-10-26T12:06:58.198970+00:00",
       "kind": "live-title",
-      "retry_after": "2026-10-26T12:16:13.744732+00:00"
+      "result": {
+        "clean_title": "Chiefs vs Seahawks (Spanish Broadcast)",
+        "description": "Spanish‑language broadcast of the Week 7 NFL game between the Kansas City Chiefs and the Seattle Seahawks, played on October 25, 2026.",
+        "raw": "Chiefs @ Seahawks (Spanish Broadcast)"
+      }
     },
     "d4c580f2594ed76a89b6db0443dbfc1ba2b3f23321c12a1a9952445cd9764055": {
       "failed": true,
@@ -2498,7 +2523,7 @@
     "d8427db96e1452266cb462d9b21f2b1eb555e60326317f8bcad64ef59b9eebe5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597986+00:00"
+      "retry_after": "2026-10-26T18:06:59.043396+00:00"
     },
     "d896a74163b60a5970cf516044e5a118018a45f5ea4465e2aa8d80d664397aed": {
       "failed": true,
@@ -2508,7 +2533,7 @@
     "da16ccd9b7ec8fb17632ede01ab7f8d60c8c662dfe9f3376af8d53e5a2158cb3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:46:06.690363+00:00"
+      "retry_after": "2026-10-26T18:06:59.043072+00:00"
     },
     "da405f00744c1bbc005a238911c3be79a9846dda9a8316dbc72ab81a3986b6f3": {
       "failed": true,
@@ -2533,12 +2558,12 @@
     "dbc85870d2fc80b6b989dcd4fb51c4f824eccf65b6c560f38daac00c7ab5bbaa": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597952+00:00"
+      "retry_after": "2026-10-26T18:06:59.043255+00:00"
     },
     "dbd4b2a2a5b632ab08d018040eef6a58de80474e8b5beccbed6c6e6f5226421c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598011+00:00"
+      "retry_after": "2026-10-26T18:06:59.043242+00:00"
     },
     "dbe7b7ec3afe649193355e732a9442789c29b8acb22284e20fd9dd0b2bf13907": {
       "failed": true,
@@ -2558,7 +2583,7 @@
     "dd82bf563aad6f49cfbd9fd97453964bb2d2c4d6679b82d459964eecf1a1ecb6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597958+00:00"
+      "retry_after": "2026-10-26T18:06:59.043208+00:00"
     },
     "ddb4a816e5b5e2afdafed757a9a291083fdc3f5df558c458520fc2cf168d414f": {
       "failed": true,
@@ -2613,7 +2638,7 @@
     "e1a07dc262f99a09e359c94f75a0dd92385acbb57d71e87be07c744d49ce785b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000654+00:00"
+      "retry_after": "2026-10-26T18:06:59.043248+00:00"
     },
     "e1f3a1c6bf43bbaf59ed5b463635c0a7baebe7d4246531d2f5ee6490754d3cc8": {
       "failed": true,
@@ -2623,7 +2648,7 @@
     "e23c3f7a875d572201232e697f56ffbbff87cb70a30af3bc7eababb5f62b63c9": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704314+00:00"
+      "retry_after": "2026-10-26T18:06:59.043257+00:00"
     },
     "e2780f6ac2adc0e67046a2130652afdf652a6f513e96e47a7079c514bd026a0d": {
       "failed": true,
@@ -2648,7 +2673,7 @@
     "e3efbfe17b4d4e1c8fb25163928d4c33682171b631614205a4c7eb7f52bc176c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597871+00:00"
+      "retry_after": "2026-10-26T18:06:59.043273+00:00"
     },
     "e426074b598a9ba87a9142754ab7831f3fa6ce54f73f16e8132c45f98ab47e37": {
       "failed": true,
@@ -2673,12 +2698,12 @@
     "e5a81c8f40ffa9333bfb11f394f89b739ce9a1d1ec62c63c701c1ee4b11d0cfe": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973921+00:00"
+      "retry_after": "2026-10-26T18:06:59.043179+00:00"
     },
     "e5ab9002d11066ca497f333df296465153053b92360a0a9ab6e01684f3d2a1dd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597913+00:00"
+      "retry_after": "2026-10-26T18:06:59.043275+00:00"
     },
     "e5d2dd706eb969032ccd9723accd0400ae152a320f864e1fb5ff6b783af1e68d": {
       "failed": true,
@@ -2698,7 +2723,7 @@
     "e6d64e3fcb4bc131afdf7e345cb4bd5d33aaa664dce75db4e3fc9822b839b4cd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704305+00:00"
+      "retry_after": "2026-10-26T18:06:59.043299+00:00"
     },
     "e6e07a0c5a6fa2c6e4eaf0b73c9653473253dada086d6c9ba1217ebef008d49d": {
       "failed": true,
@@ -2753,7 +2778,7 @@
     "ed01eab9a22340d38a652f2ae7c88318182e1c6d1c6f8b134be124b7601850f0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597927+00:00"
+      "retry_after": "2026-10-26T18:06:59.043295+00:00"
     },
     "edadf61bb9b5993574ae8f42492a26e9111635a00871620f3da470865dc099e6": {
       "failed": true,
@@ -2763,12 +2788,12 @@
     "ede274b4bd9a7c09b20b1944ef4f1042e6847628bf96647aa3dd9f9910726330": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973910+00:00"
+      "retry_after": "2026-10-26T18:06:59.043168+00:00"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:13.999959+00:00"
+      "retry_after": "2026-10-26T18:06:59.043090+00:00"
     },
     "eeef8998cca72474d88c81e1300f39bd1013aacd7713be3d9966ba17573dd0ec": {
       "failed": true,
@@ -2813,7 +2838,7 @@
     "f3dc7c917b19146c62c85bb05028fcf64605c1694034d3847065cd6452966ddf": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597979+00:00"
+      "retry_after": "2026-10-26T18:06:59.043356+00:00"
     },
     "f40c3bf4c49354e3c956600e3c5a4ca8a58937a4bf3faf35376f1c0a0acb6228": {
       "failed": true,
@@ -2833,12 +2858,12 @@
     "f58a0e379b680e5fe16ffe15e72e80bde4002122277e7b59ee429b6813599851": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597883+00:00"
+      "retry_after": "2026-10-26T18:06:59.043364+00:00"
     },
     "f5c089a8184e998921bb8a0aeb3a94db32c9cd42b14abe897e48839718d3b564": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597891+00:00"
+      "retry_after": "2026-10-26T18:06:59.043306+00:00"
     },
     "f662bdeb7861d09b3d503c29fd745b5353f7ff77e15da3a7ad81e36b10568ac3": {
       "failed": true,
@@ -2848,7 +2873,7 @@
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973859+00:00"
+      "retry_after": "2026-10-26T18:06:59.043127+00:00"
     },
     "f78453ff65f4ca11e81bd1ae96afc56177d4378acc3047f8c8436882c94b71d5": {
       "failed": true,
@@ -2878,7 +2903,7 @@
     "f9a7ca3186aa2f4f7cf53d4743d84d6edc8a8faa439d475a31c2063e6dee1a2c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597982+00:00"
+      "retry_after": "2026-10-26T18:06:59.043393+00:00"
     },
     "fa0a672438de216df01db3018eb886e995d722b4fefb4685f337acaa312c87ea": {
       "failed": true,
@@ -2908,7 +2933,7 @@
     "fc0dea0fd6c9e540a17608f1f9afdb7f67c100f95854134cf8dfb10b74e45018": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973935+00:00"
+      "retry_after": "2026-10-26T18:06:59.043198+00:00"
     },
     "fc3f8d1c704a3e343fb16185ae8f4ecdcc352a0cfd3222969ae0577668219ec0": {
       "failed": true,
@@ -2918,7 +2943,7 @@
     "fcdb318892c5e29d77f230266371d95348e2643cfc5cae6e2d38c4817129bd27": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.598004+00:00"
+      "retry_after": "2026-10-26T18:06:59.043217+00:00"
     },
     "fd4da5f2243c5b4720b02c1c7805ccbbec2d9de56b78ad267a50dcaa453ff6cf": {
       "failed": true,
@@ -2928,7 +2953,7 @@
     "fd7ee8056112ef8ca8641fa114d80dd1ec86f0cb1f995e2da234ff7c8124a2ab": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973864+00:00"
+      "retry_after": "2026-10-26T18:06:59.043132+00:00"
     },
     "fd805049572cd7db28fd900f8eb7d1edf6f65667dff0ad72cc8096a94ff609ec": {
       "failed": true,
@@ -2938,12 +2963,12 @@
     "fdc03de312c96d614c9c5556e4df04e0d4c3fb9c18d44549f7aea3bc73a381f1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T16:29:20.704310+00:00"
+      "retry_after": "2026-10-26T18:06:59.043312+00:00"
     },
     "fddb1ac238379029fb6d3a9f91bff404d7b947127abcd3bc541da072b38d9d58": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T17:18:29.973915+00:00"
+      "retry_after": "2026-10-26T18:06:59.043172+00:00"
     },
     "fe65091613bc52ac24cc6e198d2f9cb8e9f8c57819a9492af43f5f2152b14519": {
       "failed": true,
@@ -2953,12 +2978,12 @@
     "ff9e77de7f38533811f7e5c5d5dc832f69307eb0809db71b6feb9fbe49d7dcbe": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T15:24:33.597868+00:00"
+      "retry_after": "2026-10-26T18:06:59.043259+00:00"
     },
     "ffbb833cd2592b381badebd08f4db40cf14b4a469ad07fcce1ee97a1b7b18e4f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T12:16:14.000652+00:00"
+      "retry_after": "2026-10-26T18:06:59.043210+00:00"
     }
   },
   "version": 1
