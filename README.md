@@ -6,7 +6,9 @@ for `LIVE EVENT 01` through `LIVE EVENT 36`, `[PPV EVENT 37]` through
 `Paramount+ 01` through `Paramount+ 100`, `Disney+ Events 01` through
 `Disney+ Events 500`, `ESPN+ 01` through `ESPN+ 400`, `MAX UK 01` through
 `MAX UK 100`, and dynamic EPL and other
-European football event channels, then publishes `cleaned_epg.xml.gz`.
+European football event channels, plus the reviewed mirrored channels listed
+in `football_mirror_channel_ids.txt` and `event_mirror_channel_ids.txt`, then
+publishes `cleaned_epg.xml.gz`.
 GitHub Actions runs every three hours at :45 UK time, starting at 14:45
 (Europe/London), and
 can also be started manually from the Actions tab. GitHub may delay scheduled
@@ -62,6 +64,17 @@ the match listing for 2.5 hours, and `Match ended` until midnight GMT. Channels
 without parseable fixture data receive an all-day `No match today` listing.
 These transformations are referred to as **League Changes**.
 
+The reviewed mirrored ID manifests classify additional channels as football
+or general events. Football channels use `Upcoming Match`, a 2.5-hour match,
+and `Match ended` through GMT midnight; unparsed or past fixtures show
+`No match today`. General event channels use `Upcoming Event` before a parsed
+kickoff and list the cleaned title through GMT midnight; unparsed titles are
+listed all day, while explicit no-event and past-date labels show
+`No event today`. These broad manifest targets use deterministic title cleanup and do
+not request AI descriptions for every channel. Keep both text manifests beside
+`clean_epg.py` in the GitHub repository; each contains one XMLTV channel ID per
+line.
+
 Dynamic `DAZN UK 01`–`DAZN UK 100` labels are parsed as event titles and London
 kickoff dates/times. Channel names are normalized to their stable DAZN UK
 number, event titles are cleaned with the same AI process as LIVE EVENT
@@ -87,9 +100,10 @@ entry, respectively; past events are skipped when collecting Gemini descriptions
 
 ## One-time setup
 
-1. Add `clean_epg.py`, `requirements.txt`, and `.github/workflows/update-epg.yml`
-   to the root of your public GitHub repository. Keep `cleaned_epg.xml.gz` and
-   the generated `ai_cache.json` in that same repository so the EPG URL stays
+1. Add `clean_epg.py`, `requirements.txt`, `football_mirror_channel_ids.txt`,
+   `event_mirror_channel_ids.txt`, and `.github/workflows/update-epg.yml` to
+   the root of your public GitHub repository. Keep `cleaned_epg.xml.gz` and the
+   generated `ai_cache.json` in that same repository so the EPG URL stays
    stable and the AI cache persists between runs.
 2. In the repository, open **Settings → Secrets and variables → Actions → New
    repository secret**. Add `GEMINI_API_KEY` and `GROQ_API_KEY` as separate
