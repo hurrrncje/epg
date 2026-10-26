@@ -149,7 +149,7 @@ SPORTS_EVENT_FIXTURE_PATTERN = re.compile(
     r"^(?P<title>.+?)\s+@\s*(?P<date>"
     r"\d{1,2}\s+[A-Za-z]{3}|[A-Za-z]{3}\s+\d{1,2})\s+"
     r"(?P<clock>\d{1,2}(?::\d{2})?\s*[AP]M)\s+"
-    r"(?P<zone>ET|EDT|EST)$",
+    r"(?P<zone>ET|EDT|EST|London|UK|BST|GMT|UTC)$",
     re.IGNORECASE,
 )
 DAZN_FIXTURE_PATTERN = re.compile(
@@ -662,7 +662,7 @@ def _parse_paramount_dynamic_label(label: str, today: Any) -> dict[str, Any] | N
 def _parse_additional_sports_event_label(
     label: str, today: Any, provider: str
 ) -> dict[str, Any] | None:
-    """Parse Disney+, ESPN+, and MAX UK event labels with Eastern timestamps."""
+    """Parse Disney+, ESPN+, and MAX UK events with provider-local timestamps."""
     if provider == "Disney+ Events":
         channel_pattern = DISNEY_EVENT_CHANNEL_PATTERN
         maximum_number = 500
@@ -725,13 +725,16 @@ def _parse_additional_sports_event_label(
 
     local_time = datetime.combine(local_date, local_clock)
     zone_name = fixture.group("zone").upper()
-    candidates = [local_time.replace(tzinfo=EASTERN, fold=fold) for fold in (0, 1)]
-    if zone_name in {"EDT", "EST"}:
-        local_time = next((dt for dt in candidates if dt.tzname() == zone_name), None)
-        if local_time is None:
-            return result
+    if provider == "MAX UK" or zone_name in {"LONDON", "UK", "BST", "GMT", "UTC"}:
+        local_time = local_time.replace(tzinfo=LONDON)
     else:
-        local_time = candidates[0]
+        candidates = [local_time.replace(tzinfo=EASTERN, fold=fold) for fold in (0, 1)]
+        if zone_name in {"EDT", "EST"}:
+            local_time = next((dt for dt in candidates if dt.tzname() == zone_name), None)
+            if local_time is None:
+                return result
+        else:
+            local_time = candidates[0]
 
     result["title"] = fixture.group("title").strip()
     result["start_utc"] = local_time.astimezone(UTC)
@@ -1011,6 +1014,7 @@ def process_epg() -> None:
 
     epl_today = datetime.now(LONDON).date()
     mls_today = datetime.now(EASTERN).date()
+    max_uk_today = datetime.now(LONDON).date()
     epl_targets: dict[str, dict[str, Any]] = {}
     european_league_targets: dict[str, dict[str, Any]] = {}
     dazn_targets: dict[str, dict[str, Any]] = {}
@@ -1064,7 +1068,7 @@ def process_epg() -> None:
                 espn_event_targets[ch_id] = parsed
                 break
             parsed = _parse_additional_sports_event_label(
-                (display_el.text or "").strip(), paramount_today, "MAX UK"
+                (display_el.text or "").strip(), max_uk_today, "MAX UK"
             )
             if parsed:
                 max_uk_targets[ch_id] = parsed
@@ -1126,7 +1130,7 @@ def process_epg() -> None:
         if ch_id and ch_id not in max_uk_targets:
             parsed = _parse_additional_sports_event_label(
                 (programme.findtext("title") or "").strip(),
-                paramount_today,
+                max_uk_today,
                 "MAX UK",
             )
             if parsed:
@@ -1136,6 +1140,7 @@ def process_epg() -> None:
 
     # Collect distinct fixture events for grounded descriptions. Static EPL/EFL
     # team channels carry their next fixture in the programme description.
+    current_utc_date = datetime.now(UTC).date()
     description_events: dict[str, dict[str, str]] = {}
     epl_description_keys: dict[str, str] = {}
     european_league_description_keys: dict[str, str] = {}
@@ -1153,7 +1158,11 @@ def process_epg() -> None:
             )
 
     for ch_id, item in epl_targets.items():
-        if item["title"] and item["start_utc"]:
+        if (
+            item["title"]
+            and item["start_utc"]
+            and item["start_utc"].date() >= current_utc_date
+        ):
             start_utc = item["start_utc"]
             key = f"epl-dynamic:{start_utc:%Y%m%d%H%M}:{item['title']}"
             epl_description_keys[ch_id] = key
@@ -1164,7 +1173,11 @@ def process_epg() -> None:
             )
 
     for ch_id, item in european_league_targets.items():
-        if item["title"] and item["start_utc"]:
+        if (
+            item["title"]
+            and item["start_utc"]
+            and item["start_utc"].date() >= current_utc_date
+        ):
             start_utc = item["start_utc"]
             key = f"{item['league'].casefold()}:{start_utc:%Y%m%d%H%M}:{item['title']}"
             european_league_description_keys[ch_id] = key
@@ -1175,7 +1188,11 @@ def process_epg() -> None:
             )
 
     for ch_id, item in dazn_targets.items():
-        if item["title"] and item["start_utc"]:
+        if (
+            item["title"]
+            and item["start_utc"]
+            and item["start_utc"].date() >= current_utc_date
+        ):
             start_utc = item["start_utc"]
             key = f"dazn:{start_utc:%Y%m%d%H%M}:{item['title']}"
             dazn_description_keys[ch_id] = key
@@ -1186,7 +1203,11 @@ def process_epg() -> None:
             )
 
     for ch_id, item in paramount_targets.items():
-        if item["title"] and item["start_utc"]:
+        if (
+            item["title"]
+            and item["start_utc"]
+            and item["start_utc"].date() >= current_utc_date
+        ):
             start_utc = item["start_utc"]
             key = f"paramount:{start_utc:%Y%m%d%H%M}:{item['title']}"
             paramount_description_keys[ch_id] = key
@@ -1202,7 +1223,11 @@ def process_epg() -> None:
         ("MAX UK", max_uk_targets, max_uk_description_keys),
     ):
         for ch_id, item in targets_for_provider.items():
-            if item["title"] and item["start_utc"]:
+            if (
+                item["title"]
+                and item["start_utc"]
+                and item["start_utc"].date() >= current_utc_date
+            ):
                 start_utc = item["start_utc"]
                 key = f"sports-event:{start_utc:%Y%m%d%H%M}:{item['title']}"
                 key_map[ch_id] = key
@@ -1245,7 +1270,11 @@ def process_epg() -> None:
     event_date = datetime.now(EASTERN).date()
     dazn_event_titles = {
         item["title"] for item in dazn_targets.values()
-        if item["title"] and item["start_utc"]
+        if (
+            item["title"]
+            and item["start_utc"]
+            and item["start_utc"].date() >= current_utc_date
+        )
     }
     active_titles = sorted({
         item["event_title"] for item in targets.values()
@@ -1377,7 +1406,11 @@ def process_epg() -> None:
                 display_el.text = item["channel_name"]
 
     # Replace provider placeholder rows on these channels with generated listings.
-    target_ids = set(targets)
+    target_ids = {
+        ch_id
+        for ch_id, item in targets.items()
+        if item["permanent"] or (item["event_title"] and item["start_times"])
+    }
     programmes_to_remove = [
         programme
         for programme in root.iter("programme")
@@ -1447,11 +1480,28 @@ def process_epg() -> None:
             generated.insert(channel_generated_start, upcoming)
 
     now_utc = datetime.now(UTC)
+
+    def add_all_day_notice(channel_id: str, title: str) -> None:
+        day_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
+        day_end = day_start + timedelta(days=1)
+        notice = ET.Element("programme", {
+            "start": day_start.strftime("%Y%m%d%H%M%S %z"),
+            "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": channel_id,
+        })
+        ET.SubElement(notice, "title").text = title
+        ET.SubElement(notice, "desc").text = title
+        generated.append(notice)
+
     # Normalize DAZN UK 01–100 names and replace their provider placeholders.
+    dazn_replace_ids = {
+        ch_id for ch_id, item in dazn_targets.items()
+        if item["title"] and item["start_utc"] is not None
+    }
     programmes_to_remove = [
         programme
         for programme in root.iter("programme")
-        if programme.get("channel") in dazn_targets
+        if programme.get("channel") in dazn_replace_ids
     ]
     for programme in programmes_to_remove:
         root.remove(programme)
@@ -1461,6 +1511,9 @@ def process_epg() -> None:
         start_utc = item["start_utc"]
         if not raw_title or start_utc is None:
             print(f"No scheduled listing for {item['channel_name']} (no event or unparsed label).")
+            continue
+        if start_utc.date() < now_utc.date():
+            add_all_day_notice(ch_id, "No event today")
             continue
 
         result = cleaned_mapping.get(raw_title, {
@@ -1525,6 +1578,9 @@ def process_epg() -> None:
             ET.SubElement(no_match, "desc").text = "No match today"
             generated.append(no_match)
             continue
+        if start_utc.date() < now_utc.date():
+            add_all_day_notice(ch_id, "No match today")
+            continue
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
         event_end = min(start_utc + EPL_EVENT_DURATION, day_end)
@@ -1571,10 +1627,14 @@ def process_epg() -> None:
         if item:
             for display_el in channel.findall("display-name"):
                 display_el.text = item["channel_name"]
+    paramount_replace_ids = {
+        ch_id for ch_id, item in paramount_targets.items()
+        if item["title"] and item["start_utc"] is not None
+    }
     programmes_to_remove = [
         programme
         for programme in root.iter("programme")
-        if programme.get("channel") in paramount_targets
+        if programme.get("channel") in paramount_replace_ids
     ]
     for programme in programmes_to_remove:
         root.remove(programme)
@@ -1584,6 +1644,9 @@ def process_epg() -> None:
         start_utc = item["start_utc"]
         if not title or start_utc is None:
             print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
+            continue
+        if start_utc.date() < now_utc.date():
+            add_all_day_notice(ch_id, "No event today")
             continue
         end_utc = datetime.combine(
             start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
@@ -1628,10 +1691,14 @@ def process_epg() -> None:
         if item:
             for display_el in channel.findall("display-name"):
                 display_el.text = item["channel_name"]
+    sports_event_replace_ids = {
+        ch_id for ch_id, item in sports_event_targets.items()
+        if item["title"] and item["start_utc"] is not None
+    }
     programmes_to_remove = [
         programme
         for programme in root.iter("programme")
-        if programme.get("channel") in sports_event_targets
+        if programme.get("channel") in sports_event_replace_ids
     ]
     for programme in programmes_to_remove:
         root.remove(programme)
@@ -1644,6 +1711,9 @@ def process_epg() -> None:
                 f"No fixture listing for {item['channel_name']} "
                 "(no event or unparsed label)."
             )
+            continue
+        if start_utc.date() < now_utc.date():
+            add_all_day_notice(ch_id, "No event today")
             continue
 
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
