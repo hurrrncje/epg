@@ -48,7 +48,10 @@ Changes**. They are separate from **League Changes**, which handle numbered
 dynamic fixture channels such as EPL01–EPL10, EFL01–EFL35, and MLS 01–50.
 
 Dynamic labels for `EPL01`–`EPL10`, `EFL01`–`EFL35`, `Bundesliga 01`–`10`, `La Liga 01`–`10`,
-`Serie A 01`–`10`, `Ligue 1 01`–`10`, and `MLS 01`–`50` are parsed as fixtures
+`Serie A 01`–`10`, `Ligue 1 01`–`10`, `MLS 01`–`50`, `Scottish Premiership 01`–`08`,
+`Scottish Championship 01`–`09`, `Scottish Cup 1`–`10`, `FA Cup 01`–`20`,
+`UEFA Champions League 01`–`20`, `UEFA Europa League 01`–`20`, and
+`UEFA Europa Conf. League 01`–`20` are parsed as fixtures
 with a kickoff time and date. Programme titles use `Home vs Away`; kickoff is
 converted from the label's league-local time to UTC/GMT (MLS labels use Eastern
 Time with daylight saving handled by the timezone database). For Ligue 1, the script also checks the
