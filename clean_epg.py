@@ -819,7 +819,14 @@ def _groq_generate_text(prompt: str, api_key: str) -> str:
         },
         timeout=REQUEST_TIMEOUT,
     )
-    response.raise_for_status()
+    if not response.ok:
+        # Include the provider's JSON error: the HTTP status alone doesn't
+        # distinguish request-rate, token, daily-quota, or account limits.
+        error_detail = response.text.strip()[:2000]
+        raise requests.HTTPError(
+            f"Groq API returned HTTP {response.status_code}: {error_detail}",
+            response=response,
+        )
     try:
         return response.json()["choices"][0]["message"]["content"].strip()
     except (KeyError, IndexError, TypeError, AttributeError) as exc:
