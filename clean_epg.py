@@ -25,13 +25,18 @@ EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
 AI_CACHE_FILE = Path("ai_cache.json")
 GEMINI_MODEL = "gemini-3.8-flash"
+GROQ_MODEL = "openai/gpt-oss-20b"
+GROQ_CHAT_URL = "https://api.groq.com/openai/v1/chat/completions"
 AI_CACHE_VERSION = 1
 CACHE_FAILURE_COOLDOWN = timedelta(hours=6)
 AI_CACHE_MAX_AGE = timedelta(days=30)
 GZIP_COMPRESSLEVEL = 6
 BATCH_SIZE = 50
 DESCRIPTION_BATCH_SIZE = 25
-TARGET_CHANNELS = {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
+TARGET_CHANNELS = (
+    {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
+    | {f"[PPV EVENT {number:02d}]" for number in range(37, 41)}
+)
 MAX_RETRIES = 3
 REQUEST_TIMEOUT = (10, 120)
 EASTERN = ZoneInfo("America/New_York")
@@ -40,7 +45,9 @@ UTC = timezone.utc
 GMT = UTC
 TIME_PATTERN = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b", re.IGNORECASE)
 LIVE_EVENT_PREFIX_PATTERN = re.compile(
-    r"^\s*LIVE\s+EVENT\s+\d{1,2}\s*(?:[-:–—]+\s*)?", re.IGNORECASE
+    r"^\s*(?:LIVE\s+EVENT\s+\d{1,2}|\[?\s*PPV\s+EVENT\s+\d{1,2}\]?)"
+    r"\s*(?:[-:–—]+\s*)?",
+    re.IGNORECASE,
 )
 DAZN_LABEL_PREFIX_PATTERN = re.compile(
     r"^\s*DAZN\s+UK\s*\d{1,3}\s*:\s*", re.IGNORECASE
@@ -165,14 +172,30 @@ DAZN_FIXTURE_PATTERN = re.compile(
 
 
 def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
-    """Return the stable LIVE EVENT NN name and its changing suffix."""
+    """Return a supported event channel's stable name and changing suffix."""
     match = re.match(r"^(LIVE EVENT \d{2})(?=$|[\s-])(.*)$", display_name.strip(), re.IGNORECASE)
-    if not match:
+    if match:
+        core = match.group(1).upper()
+        if core in TARGET_CHANNELS:
+            return core, match.group(2).strip().lstrip("-:–— ").strip()
+
+    ppv_match = re.match(
+        r"^\[?\s*(?P<core>PPV EVENT (?P<number>3[7-9]|40))\]?"
+        r"(?=$|[\]\s:–—-])(?P<suffix>.*)$",
+        display_name.strip(),
+        re.IGNORECASE,
+    )
+    if not ppv_match:
         return None
-    core = match.group(1).upper()
+    core = f"[PPV EVENT {int(ppv_match.group('number')):02d}]"
     if core not in TARGET_CHANNELS:
         return None
-    return core, match.group(2).strip().lstrip("- ").strip()
+    return core, ppv_match.group("suffix").strip().lstrip("-:–— ]").strip()
+
+
+def _is_no_event_title(title: str) -> bool:
+    cleaned = _clean_live_event_title(title).strip(" []-:–—").casefold()
+    return cleaned in {"", "no event", "no match", "no game", "no event today"}
 
 
 def _clean_live_event_title(title: str) -> str:
@@ -751,7 +774,7 @@ def _parse_additional_sports_event_label(
 
 def _parse_model_response(response: Any) -> list[dict[str, str]]:
     """Parse the model's requested Python-list format, tolerating code fences."""
-    text = getattr(response, "text", None) or ""
+    text = response if isinstance(response, str) else (getattr(response, "text", None) or "")
     if not text:
         candidates = getattr(response, "candidates", None) or []
         if candidates:
@@ -771,17 +794,54 @@ def _parse_model_response(response: Any) -> list[dict[str, str]]:
         # Backward compatibility with the prompt's Python-list response format.
         result = ast.literal_eval(text)
     if not isinstance(result, list):
-        raise ValueError("Gemini response was not a list")
+        raise ValueError("Model response was not a list")
     for item in result:
         if not isinstance(item, dict) or not all(
             isinstance(item.get(key), str)
             for key in ("raw", "clean_title", "description")
         ):
-            raise ValueError("Gemini returned an item with missing or invalid fields")
+            raise ValueError("Model returned an item with missing or invalid fields")
     return result
 
 
-def ai_clean_sport_titles(channel_names: list[str], client: genai.Client) -> dict[str, dict[str, str]]:
+def _groq_generate_text(prompt: str, api_key: str) -> str:
+    """Generate a web-grounded response with Groq's built-in browser search."""
+    response = requests.post(
+        GROQ_CHAT_URL,
+        headers={"Authorization": f"Bearer {api_key}"},
+        json={
+            "model": GROQ_MODEL,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.1,
+            "max_completion_tokens": 4096,
+            "tool_choice": "required",
+            "tools": [{"type": "browser_search"}],
+        },
+        timeout=REQUEST_TIMEOUT,
+    )
+    response.raise_for_status()
+    try:
+        return response.json()["choices"][0]["message"]["content"].strip()
+    except (KeyError, IndexError, TypeError, AttributeError) as exc:
+        raise ValueError("Groq returned no text content") from exc
+
+
+def _parse_json_array(text: str) -> list[Any]:
+    """Parse a JSON array, allowing a surrounding Markdown code fence."""
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[-1]
+    if text.endswith("```"):
+        text = text[:-3]
+    parsed = json.loads(text.strip())
+    if not isinstance(parsed, list):
+        raise ValueError("Model response was not a JSON array")
+    return parsed
+
+
+def ai_clean_sport_titles(
+    channel_names: list[str], client: genai.Client | None, groq_api_key: str | None = None
+) -> dict[str, dict[str, str]]:
     """Ask Gemini to clean a batch of mirrored event titles."""
     if not channel_names:
         return {}
@@ -797,6 +857,20 @@ raw, clean_title, description.
 
 Input titles (JSON):
 """ + json.dumps(channel_names, ensure_ascii=False)
+
+    if client is None:
+        if not groq_api_key:
+            return {}
+        try:
+            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key))
+            expected = set(channel_names)
+            mapping = {item["raw"]: item for item in parsed if item["raw"] in expected}
+            if expected - mapping.keys():
+                raise ValueError(f"Groq omitted {len(expected - mapping.keys())} requested title(s)")
+            return mapping
+        except Exception as exc:
+            print(f"Groq LIVE EVENT title cleanup failed: {exc}")
+            return {}
 
     for attempt in range(MAX_RETRIES):
         try:
@@ -823,22 +897,33 @@ Input titles (JSON):
         except Exception as exc:
             print(f"Gemini attempt {attempt + 1}/{MAX_RETRIES} failed: {exc}")
             if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
-                print("Gemini quota is exhausted; skipping this batch without further retries.")
-                return {}
+                print("Gemini quota is exhausted; trying Groq for this title batch.")
+                break
             if attempt + 1 < MAX_RETRIES:
                 time.sleep(min(2 ** attempt, 8))
+    if groq_api_key:
+        try:
+            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key))
+            expected = set(channel_names)
+            mapping = {item["raw"]: item for item in parsed if item["raw"] in expected}
+            if expected - mapping.keys():
+                raise ValueError(f"Groq omitted {len(expected - mapping.keys())} requested title(s)")
+            return mapping
+        except Exception as exc:
+            print(f"Groq LIVE EVENT title cleanup failed: {exc}")
     print("Skipping this batch after repeated failures.")
     return {}
 
 
 def ai_describe_events(
-    events: list[dict[str, str]], client: genai.Client
+    events: list[dict[str, str]], client: genai.Client | None, groq_api_key: str | None = None
 ) -> dict[str, str]:
     """Create short, web-grounded EPG descriptions keyed to event instances."""
     descriptions: dict[str, str] = {}
     if not events:
         return descriptions
 
+    gemini_exhausted = client is None
     for start in range(0, len(events), DESCRIPTION_BATCH_SIZE):
         batch = events[start : start + DESCRIPTION_BATCH_SIZE]
         prompt = """For each sports event below, use Google Search to find reliable,
@@ -853,6 +938,8 @@ Events (JSON):
 """ + json.dumps(batch, ensure_ascii=False)
 
         try:
+            if gemini_exhausted:
+                raise RuntimeError("Gemini unavailable; use configured fallback")
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
                 contents=prompt,
@@ -865,9 +952,7 @@ Events (JSON):
             text = (getattr(response, "text", None) or "").strip()
             if not text:
                 raise ValueError("Gemini returned an empty description response")
-            parsed = json.loads(text)
-            if not isinstance(parsed, list):
-                raise ValueError("Gemini description response was not a JSON array")
+            parsed = _parse_json_array(text)
             expected = {event["key"] for event in batch}
             for item in parsed:
                 if (
@@ -881,12 +966,30 @@ Events (JSON):
             if missing:
                 print(f"Gemini omitted {len(missing)} event description(s) in this batch.")
         except Exception as exc:
-            print(f"Gemini event-description batch failed: {exc}")
-            if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
-                print("Gemini quota is exhausted; skipping remaining descriptions.")
-                break
-            # Descriptions are optional; keep schedules publishing if search or
-            # model output fails for a batch.
+            if not gemini_exhausted:
+                print(f"Gemini event-description batch failed: {exc}")
+            if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc) or client is None:
+                gemini_exhausted = True
+                print("Gemini is unavailable; trying Groq for this and remaining description batches.")
+            if groq_api_key:
+                try:
+                    groq_text = _groq_generate_text(prompt, groq_api_key)
+                    parsed = _parse_json_array(groq_text)
+                    expected = {event["key"] for event in batch}
+                    for item in parsed:
+                        if (
+                            isinstance(item, dict)
+                            and isinstance(item.get("key"), str)
+                            and isinstance(item.get("description"), str)
+                            and item["key"] in expected
+                        ):
+                            descriptions[item["key"]] = item["description"].strip()
+                    missing = expected - descriptions.keys()
+                    if missing:
+                        print(f"Groq omitted {len(missing)} event description(s) in this batch.")
+                except Exception as groq_exc:
+                    print(f"Groq event-description batch failed: {groq_exc}")
+            # Keep the schedule publishing if either model fails.
     return descriptions
 
 
@@ -968,6 +1071,7 @@ def _cache_failure_is_active(entry: Any) -> bool:
 
 def process_epg() -> None:
     client: genai.Client | None = None
+    groq_api_key = os.environ.get("GROQ_API_KEY")
     ai_cache = _load_ai_cache()
     ai_cache_entries: dict[str, Any] = ai_cache["entries"]
 
@@ -976,7 +1080,7 @@ def process_epg() -> None:
         if client is None:
             api_key = os.environ.get("GEMINI_API_KEY")
             if not api_key:
-                print("GEMINI_API_KEY is unavailable; using cached results and fallbacks.")
+                print("GEMINI_API_KEY is unavailable; trying Groq if configured.")
                 return None
             client = genai.Client(api_key=api_key)
         return client
@@ -1001,20 +1105,27 @@ def process_epg() -> None:
             if parsed_name:
                 core, suffix = parsed_name
                 permanent_title = "UFC Special Feed" if core == "LIVE EVENT 01" else ""
+                no_event = _is_no_event_title(suffix)
                 event_title = permanent_title or next(
                     (name for name in display_names
                      if not _event_number_and_suffix(name)
-                     and name.casefold() != "no event"),
+                     and not _is_no_event_title(name)),
                     "",
                 )
+                if not event_title and suffix and not no_event:
+                    event_title = _format_title_event_name(suffix)
                 if event_title and not permanent_title:
                     event_title = _format_title_event_name(event_title)
+                    no_event = _is_no_event_title(event_title)
+                    if no_event:
+                        event_title = ""
                 times = _parse_eastern_starts(suffix)
                 targets[ch_id] = {
                     "core": core,
                     "event_title": event_title,
                     "start_times": times,
                     "permanent": bool(permanent_title),
+                    "no_event": no_event or not event_title,
                 }
                 # Use the first matching marker alias; channel names are
                 # normalized below regardless of their daily suffix.
@@ -1087,8 +1198,12 @@ def process_epg() -> None:
         ch_id = programme.get("channel")
         if ch_id in targets and not targets[ch_id]["event_title"]:
             title = (programme.findtext("title") or "").strip()
-            if title.casefold() != "no event":
-                targets[ch_id]["event_title"] = _format_title_event_name(title)
+            clean_title = _format_title_event_name(title)
+            if _is_no_event_title(clean_title):
+                targets[ch_id]["no_event"] = True
+            elif clean_title:
+                targets[ch_id]["event_title"] = clean_title
+                targets[ch_id]["no_event"] = False
         if ch_id and ch_id not in epl_targets:
             parsed = _parse_epl_dynamic_label(
                 (programme.findtext("title") or "").strip(), epl_today
@@ -1286,7 +1401,12 @@ def process_epg() -> None:
     }
     active_titles = sorted({
         item["event_title"] for item in targets.values()
-        if item["event_title"] and item["start_times"] and not item["permanent"]
+        if (
+            item["event_title"]
+            and item["start_times"]
+            and not item["permanent"]
+            and not item["no_event"]
+        )
     } | dazn_event_titles)
     print(
         f"Found {len(targets)} LIVE EVENT channel(s), {len(dazn_targets)} DAZN channel(s), "
@@ -1318,21 +1438,24 @@ def process_epg() -> None:
         ):
             cleaned_mapping[title] = result
         elif _cache_failure_is_active(cache_entry):
-            cached_failures += 1
+            if groq_api_key:
+                titles_to_clean.append(title)
+            else:
+                cached_failures += 1
         else:
             titles_to_clean.append(title)
     print(
         f"Reusing {len(cleaned_mapping)} cached LIVE EVENT title result(s); "
         f"{cached_failures} recent failure(s) held for cooldown; "
-        f"{len(titles_to_clean)} need Gemini."
+        f"{len(titles_to_clean)} need AI cleanup."
     )
     if titles_to_clean:
         gemini_client = get_client()
-        if gemini_client:
+        if gemini_client or groq_api_key:
             for start in range(0, len(titles_to_clean), BATCH_SIZE):
                 batch = titles_to_clean[start : start + BATCH_SIZE]
                 print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
-                results = ai_clean_sport_titles(batch, gemini_client)
+                results = ai_clean_sport_titles(batch, gemini_client, groq_api_key)
                 for result in results.values():
                     result["clean_title"] = _format_title_event_name(result["clean_title"])
                 cleaned_mapping.update(results)
@@ -1367,18 +1490,21 @@ def process_epg() -> None:
         if isinstance(result, str) and result.strip():
             event_descriptions[event["key"]] = result
         elif _cache_failure_is_active(cache_entry):
-            cached_description_failures += 1
+            if groq_api_key:
+                events_to_describe.append(event)
+            else:
+                cached_description_failures += 1
         else:
             events_to_describe.append(event)
     print(
         f"Reusing {len(event_descriptions)} cached event description(s); "
         f"{cached_description_failures} recent failure(s) held for cooldown; "
-        f"{len(events_to_describe)} need Gemini."
+        f"{len(events_to_describe)} need AI descriptions."
     )
     if events_to_describe:
         gemini_client = get_client()
-        if gemini_client:
-            new_descriptions = ai_describe_events(events_to_describe, gemini_client)
+        if gemini_client or groq_api_key:
+            new_descriptions = ai_describe_events(events_to_describe, gemini_client, groq_api_key)
             event_descriptions.update(new_descriptions)
             for event in events_to_describe:
                 description = new_descriptions.get(event["key"])
@@ -1414,11 +1540,22 @@ def process_epg() -> None:
                 display_el.text = item["channel_name"]
 
     # Replace provider placeholder rows on these channels with generated listings.
-    target_ids = {
-        ch_id
-        for ch_id, item in targets.items()
-        if item["permanent"] or (item["event_title"] and item["start_times"])
-    }
+    generated: list[ET.Element] = []
+    now_utc = datetime.now(UTC)
+
+    def add_all_day_notice(channel_id: str, title: str) -> None:
+        day_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
+        day_end = day_start + timedelta(days=1)
+        notice = ET.Element("programme", {
+            "start": day_start.strftime("%Y%m%d%H%M%S %z"),
+            "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": channel_id,
+        })
+        ET.SubElement(notice, "title").text = title
+        ET.SubElement(notice, "desc").text = title
+        generated.append(notice)
+
+    target_ids = set(targets)
     programmes_to_remove = [
         programme
         for programme in root.iter("programme")
@@ -1427,7 +1564,6 @@ def process_epg() -> None:
     for programme in programmes_to_remove:
         root.remove(programme)
 
-    generated: list[ET.Element] = []
     for ch_id, item in targets.items():
         raw_title = item["event_title"]
         if item["permanent"]:
@@ -1442,14 +1578,26 @@ def process_epg() -> None:
             ET.SubElement(programme, "desc").text = "UFC Special Feed"
             generated.append(programme)
             continue
-        if not raw_title or not item["start_times"]:
-            print(f"No scheduled listing for {item['core']} (no event or parseable start time).")
+        if item["no_event"] or not raw_title:
+            add_all_day_notice(ch_id, "No event today")
             continue
         result = cleaned_mapping.get(raw_title, {
             "clean_title": raw_title,
             "description": "Live event",
         })
         result["clean_title"] = _format_title_event_name(result["clean_title"])
+        if not item["start_times"]:
+            day_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
+            day_end = day_start + timedelta(days=1)
+            programme = ET.Element("programme", {
+                "start": day_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(programme, "title").text = result["clean_title"]
+            ET.SubElement(programme, "desc").text = result["description"]
+            generated.append(programme)
+            continue
         channel_generated_start = len(generated)
         scheduled_starts: list[datetime] = []
         for event_time in item["start_times"]:
@@ -1486,20 +1634,6 @@ def process_epg() -> None:
                 f"{upcoming_title}\n\n{result['description']}"
             )
             generated.insert(channel_generated_start, upcoming)
-
-    now_utc = datetime.now(UTC)
-
-    def add_all_day_notice(channel_id: str, title: str) -> None:
-        day_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
-        day_end = day_start + timedelta(days=1)
-        notice = ET.Element("programme", {
-            "start": day_start.strftime("%Y%m%d%H%M%S %z"),
-            "stop": day_end.strftime("%Y%m%d%H%M%S %z"),
-            "channel": channel_id,
-        })
-        ET.SubElement(notice, "title").text = title
-        ET.SubElement(notice, "desc").text = title
-        generated.append(notice)
 
     # Normalize DAZN UK 01–100 names and replace their provider placeholders.
     dazn_replace_ids = {
