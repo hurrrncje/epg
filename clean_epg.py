@@ -10,6 +10,7 @@ import os
 import re
 import time
 import unicodedata
+from collections import Counter
 from datetime import datetime, time as datetime_time, timedelta, timezone
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -23,6 +24,8 @@ from google.genai import types
 
 EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
+FOOTBALL_MIRROR_IDS_FILE = Path("football_mirror_channel_ids.txt")
+EVENT_MIRROR_IDS_FILE = Path("event_mirror_channel_ids.txt")
 AI_CACHE_FILE = Path("ai_cache.json")
 GEMINI_MODEL = "gemini-3.8-flash"
 GROQ_MODEL = "openai/gpt-oss-20b"
@@ -233,6 +236,139 @@ def _format_title_event_name(title: str) -> str:
             when = datetime(2000, 1, 1, hour, minute, tzinfo=GMT)
             cleaned = cleaned[:match.start()] + " at " + _format_gmt_time(when)
     return cleaned.strip()
+
+
+def _read_channel_id_manifest(path: Path) -> set[str]:
+    """Read one XMLTV channel ID per line from an optional target manifest."""
+    try:
+        return {
+            line.strip()
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        }
+    except FileNotFoundError:
+        print(f"Optional target manifest not found: {path}; skipping its channels.")
+        return set()
+
+
+def _clean_mirrored_event_title(raw_title: str) -> str:
+    """Remove common channel labels, dates, clocks, and feed suffixes."""
+    title = raw_title.strip()
+    # Labels such as `Soccer03:`, `Bar TV 01:`, or `TOD EN 10:` are
+    # channel identifiers. Keep the material after that identifier.
+    prefix = re.match(
+        r"^((?=[^:]*[A-Za-z])[^:]{1,48}\d{1,3})\s*:\s*(.*)$", title
+    )
+    if prefix:
+        title = prefix.group(2).strip()
+    title = re.sub(r"^Soccer\s*:\s*", "", title, flags=re.IGNORECASE)
+    title = re.sub(
+        r"^(?:USA/Canada|North America)\s*-\s*[^:]{2,60}:\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    )
+    title = re.sub(r"^\d{1,2}:\d{2}\s*[|:-]\s*", "", title)
+    title = re.sub(r"\s*\|\s*all\s*\|.*$", "", title, flags=re.IGNORECASE)
+    title = re.sub(
+        r"\s*(?:@|\bat\b)\s*(?:\d{4}-\d{1,2}-\d{1,2}|\d{1,2}\s+[A-Za-z]{3,9}|[A-Za-z]{3,9}\s+\d{1,2}|\d{1,2}/\d{1,2}(?:/\d{2,4})?)"
+        r"(?:\s+\d{4})?\s+\d{1,2}(?::\d{2})?\s*(?:AM|PM)(?:\s+[A-Za-z_+\-/0-9]+)?\s*$",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    )
+    title = re.sub(
+        r"\s*[@|]\s*(?:\d{1,2}:\d{2}\s*)?(?:AM|PM)\b.*$",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    )
+    title = re.sub(r"\s+\([^)]*(?:feed|broadcast)[^)]*\)\s*$", "", title, flags=re.I)
+    title = re.sub(r"\s+", " ", title).strip(" -:–—|.")
+    return title
+
+
+def _parse_mirrored_start(raw_title: str, today: Any) -> datetime | None:
+    """Parse common date/time suffixes from dynamically mirrored channel labels."""
+    match = re.search(
+        r"(?:@|\bat\b)\s*(?:(?P<date>\d{4}-\d{1,2}-\d{1,2}|\d{1,2}\s+[A-Za-z]{3,9}|[A-Za-z]{3,9}\s+\d{1,2}|\d{1,2}/\d{1,2}(?:/\d{2,4})?)\s*)?"
+        r"(?P<year>\d{4})?\s*(?P<clock>\d{1,2}(?::\d{2})?\s*(?:AM|PM))"
+        r"(?:\s+(?P<zone>[A-Za-z_+\-/0-9]+))?\s*$",
+        raw_title,
+        re.IGNORECASE,
+    )
+    if not match:
+        return None
+
+    date_text = (match.group("date") or "").strip()
+    year = int(match.group("year") or today.year)
+    local_date = today
+    if date_text:
+        numeric_date = re.fullmatch(
+            r"(?P<day>\d{1,2})/(?P<month>\d{1,2})(?:/(?P<year>\d{2,4}))?",
+            date_text,
+        )
+        iso_date = re.fullmatch(
+            r"(?P<year>\d{4})-(?P<month>\d{1,2})-(?P<day>\d{1,2})",
+            date_text,
+        )
+        if numeric_date or iso_date:
+            parts = numeric_date or iso_date
+            date_year = parts.group("year")
+            if date_year:
+                date_year = int(date_year)
+                if date_year < 100:
+                    date_year += 2000
+            else:
+                date_year = year
+            try:
+                local_date = datetime(
+                    int(date_year), int(parts.group("month")), int(parts.group("day"))
+                ).date()
+            except ValueError:
+                return None
+        else:
+            for fmt in ("%d %b %Y", "%d %B %Y", "%b %d %Y", "%B %d %Y"):
+                try:
+                    local_date = datetime.strptime(f"{date_text} {year}", fmt).date()
+                    break
+                except ValueError:
+                    continue
+            else:
+                return None
+    clock = re.sub(r"\s+", "", match.group("clock")).upper()
+    try:
+        local_clock = datetime.strptime(
+            clock, "%I:%M%p" if ":" in clock else "%I%p"
+        ).time()
+    except ValueError:
+        return None
+
+    zone_name = (match.group("zone") or "ET").upper()
+    zone_aliases = {"ET": "America/New_York", "EDT": "America/New_York", "EST": "America/New_York",
+                    "AEST": "Australia/Sydney", "AEDT": "Australia/Sydney",
+                    "BST": "Europe/London", "UK": "Europe/London", "GMT": "UTC"}
+    zone = zone_aliases.get(zone_name, zone_name)
+    try:
+        local_start = datetime.combine(local_date, local_clock, tzinfo=ZoneInfo(zone))
+    except Exception:
+        offset = re.fullmatch(r"GMT([+-])(\d{1,2})(?::?(\d{2}))?", zone_name)
+        if not offset:
+            return None
+        hours = int(offset.group(2))
+        minutes = int(offset.group(3) or 0)
+        delta = timedelta(hours=hours, minutes=minutes)
+        if offset.group(1) == "-":
+            delta = -delta
+        local_start = datetime.combine(local_date, local_clock, tzinfo=timezone(delta))
+
+    if not match.group("year") and date_text:
+        delta_days = (local_date - today).days
+        if delta_days > 180:
+            local_start = local_start.replace(year=local_start.year - 1)
+        elif delta_days < -180:
+            local_start = local_start.replace(year=local_start.year + 1)
+    return local_start.astimezone(UTC)
 
 
 def _parse_eastern_starts(suffix: str) -> list[datetime_time]:
@@ -1160,6 +1296,8 @@ def process_epg() -> None:
     groq_api_key = os.environ.get("GROQ_API_KEY")
     ai_cache = _load_ai_cache()
     ai_cache_entries: dict[str, Any] = ai_cache["entries"]
+    football_mirror_ids = _read_channel_id_manifest(FOOTBALL_MIRROR_IDS_FILE)
+    event_mirror_ids = _read_channel_id_manifest(EVENT_MIRROR_IDS_FILE)
 
     def get_client() -> genai.Client | None:
         nonlocal client
@@ -1179,6 +1317,7 @@ def process_epg() -> None:
 
     print("Finding dynamic live-event and football channels...")
     targets: dict[str, dict[str, Any]] = {}
+    display_names_by_id: dict[str, list[str]] = {}
     for channel in root.iter("channel"):
         ch_id = channel.get("id")
         if not ch_id:
@@ -1186,6 +1325,7 @@ def process_epg() -> None:
         display_names = [(el.text or "").strip() for el in channel.findall("display-name")]
         if not display_names:
             continue
+        display_names_by_id[ch_id] = [name for name in display_names if name]
         for display_name in display_names:
             parsed_name = _event_number_and_suffix(display_name)
             if parsed_name:
@@ -1216,6 +1356,23 @@ def process_epg() -> None:
                 # Use the first matching marker alias; channel names are
                 # normalized below regardless of their daily suffix.
                 break
+
+    # These channel IDs were reviewed in IPTV Editor as channels whose
+    # programme title mirrors the channel name. Use only manifest IDs and
+    # verify the mirror still exists in this feed before rewriting anything.
+    mirrored_title_counts: dict[str, Counter[str]] = {}
+    for programme in root.iter("programme"):
+        ch_id = programme.get("channel")
+        if ch_id not in football_mirror_ids and ch_id not in event_mirror_ids:
+            continue
+        title = (programme.findtext("title") or "").strip()
+        if title and title in display_names_by_id.get(ch_id or "", []):
+            mirrored_title_counts.setdefault(ch_id, Counter())[title] += 1
+    mirrored_titles = {
+        ch_id: counts.most_common(1)[0][0]
+        for ch_id, counts in mirrored_title_counts.items()
+        if counts
+    }
 
     epl_today = datetime.now(LONDON).date()
     mls_today = datetime.now(EASTERN).date()
@@ -1996,6 +2153,141 @@ def process_epg() -> None:
         ET.SubElement(event, "title").text = title
         ET.SubElement(event, "desc").text = description
         generated.append(event)
+
+    handled_channel_ids = (
+        set(targets) | set(epl_targets) | set(european_league_targets)
+        | set(dazn_targets) | set(paramount_targets) | set(disney_event_targets)
+        | set(espn_event_targets) | set(max_uk_targets)
+    )
+    mirrored_football_targets = {
+        ch_id: mirrored_titles[ch_id]
+        for ch_id in football_mirror_ids
+        if ch_id in mirrored_titles and ch_id not in handled_channel_ids
+    }
+    mirrored_event_targets = {
+        ch_id: mirrored_titles[ch_id]
+        for ch_id in event_mirror_ids
+        if ch_id in mirrored_titles and ch_id not in handled_channel_ids
+    }
+
+    for channel in root.iter("channel"):
+        ch_id = channel.get("id")
+        raw_title = mirrored_titles.get(ch_id or "")
+        if not raw_title or ch_id in handled_channel_ids:
+            continue
+        # Normalize a changing numbered label to its stable channel prefix.
+        prefix = re.match(
+            r"^((?=[^:]*[A-Za-z])[^:]{1,48}\d{1,3})\s*:\s*.+$", raw_title
+        )
+        if prefix:
+            for display_el in channel.findall("display-name"):
+                display_el.text = prefix.group(1).strip()
+
+    mirror_ids_to_replace = set(mirrored_football_targets) | set(mirrored_event_targets)
+    for programme in list(root.iter("programme")):
+        if programme.get("channel") in mirror_ids_to_replace:
+            root.remove(programme)
+
+    mirror_today = datetime.now(LONDON).date()
+    mirror_now_utc = datetime.now(UTC)
+    mirror_day_start = datetime.combine(mirror_now_utc.date(), datetime_time.min, tzinfo=UTC)
+    mirror_day_end = mirror_day_start + timedelta(days=1)
+
+    def add_mirror_notice(channel_id: str, title: str) -> None:
+        notice = ET.Element("programme", {
+            "start": mirror_day_start.strftime("%Y%m%d%H%M%S %z"),
+            "stop": mirror_day_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": channel_id,
+        })
+        ET.SubElement(notice, "title").text = title
+        ET.SubElement(notice, "desc").text = title
+        generated.append(notice)
+
+    for ch_id, raw_title in mirrored_event_targets.items():
+        title = _clean_mirrored_event_title(raw_title)
+        no_event = bool(re.search(r"\b(?:NO\s+EVENT|NO\s+MATCH|NO\s+GAME)\b", raw_title, re.I))
+        start_utc = _parse_mirrored_start(raw_title, mirror_today)
+        if no_event or (start_utc and start_utc.date() < mirror_now_utc.date()):
+            add_mirror_notice(ch_id, "No event today")
+            continue
+        if not title:
+            add_mirror_notice(ch_id, "No event today")
+            continue
+        if start_utc is None:
+            event = ET.Element("programme", {
+                "start": mirror_day_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": mirror_day_end.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(event, "title").text = title
+            ET.SubElement(event, "desc").text = title
+            generated.append(event)
+            continue
+        event_day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        event_day_end = event_day_start + timedelta(days=1)
+        if mirror_now_utc < start_utc:
+            upcoming = ET.Element("programme", {
+                "start": event_day_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
+            ET.SubElement(upcoming, "title").text = upcoming_title
+            ET.SubElement(upcoming, "desc").text = upcoming_title
+            generated.append(upcoming)
+        event = ET.Element("programme", {
+            "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": event_day_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": ch_id,
+        })
+        ET.SubElement(event, "title").text = title
+        ET.SubElement(event, "desc").text = title
+        generated.append(event)
+
+    for ch_id, raw_title in mirrored_football_targets.items():
+        title = _clean_mirrored_event_title(raw_title)
+        title = _replace_game_with_match(_rewrite_football_text(title))
+        no_match = bool(re.search(r"\b(?:NO\s+EVENT|NO\s+MATCH|NO\s+GAME)\b", raw_title, re.I))
+        start_utc = _parse_mirrored_start(raw_title, mirror_today)
+        if no_match or not title or start_utc is None or start_utc.date() < mirror_now_utc.date():
+            add_mirror_notice(ch_id, "No match today")
+            continue
+        match_day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        match_day_end = match_day_start + timedelta(days=1)
+        match_end = min(start_utc + EPL_EVENT_DURATION, match_day_end)
+        if mirror_now_utc < start_utc:
+            upcoming = ET.Element("programme", {
+                "start": match_day_start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(upcoming, "title").text = (
+                f"Upcoming Match: {title} at {_format_gmt_time(start_utc)}"
+            )
+            ET.SubElement(upcoming, "desc").text = title
+            generated.append(upcoming)
+        match = ET.Element("programme", {
+            "start": start_utc.strftime("%Y%m%d%H%M%S %z"),
+            "stop": match_end.strftime("%Y%m%d%H%M%S %z"),
+            "channel": ch_id,
+        })
+        ET.SubElement(match, "title").text = title
+        ET.SubElement(match, "desc").text = title
+        generated.append(match)
+        if match_end < match_day_end:
+            ended = ET.Element("programme", {
+                "start": match_end.strftime("%Y%m%d%H%M%S %z"),
+                "stop": match_day_end.strftime("%Y%m%d%H%M%S %z"),
+                "channel": ch_id,
+            })
+            ET.SubElement(ended, "title").text = "Match ended"
+            ET.SubElement(ended, "desc").text = "Match ended"
+            generated.append(ended)
+
+    print(
+        f"Applied League Changes to {len(mirrored_football_targets)} mirrored football channel(s) "
+        f"and Event Changes to {len(mirrored_event_targets)} mirrored event channel(s)."
+    )
 
     first_programme_index = next(
         (index for index, element in enumerate(root) if element.tag == "programme"),
