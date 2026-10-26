@@ -63,7 +63,11 @@ MATCHUP_PATTERN = re.compile(
     r"(?P<home>[^@\n]+?)(?P<suffix>\s+on\s+.*)?$",
     re.IGNORECASE,
 )
-EPL_CHANNEL_PATTERN = re.compile(r"^EPL(?P<number>0[1-9]|10):\s*(?P<details>.*)$", re.IGNORECASE)
+EPL_EFL_CHANNEL_PATTERN = re.compile(
+    r"^(?P<league>EPL|EFL)\s*(?P<number>0?[1-9]|[12]\d|3[0-5]):\s*"
+    r"(?P<details>.*)$",
+    re.IGNORECASE,
+)
 EUROPEAN_LEAGUE_CHANNEL_PATTERN = re.compile(
     r"^(?P<league>Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1|Ligue1)\s*"
     r"(?P<number>0?[1-9]|10):\s*(?P<details>.*)$",
@@ -292,14 +296,18 @@ def _replace_game_with_match(title: str) -> str:
 
 
 def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
-    """Parse labels such as `EPL01: Aston Villa 12:30 Man City 24/10`."""
-    channel_match = EPL_CHANNEL_PATTERN.match(label.strip())
+    """Parse numbered EPL/EFL labels such as `EFL01: Team A 12:30 Team B 24/10`."""
+    channel_match = EPL_EFL_CHANNEL_PATTERN.match(label.strip())
     if not channel_match:
         return None
     number = int(channel_match.group("number"))
+    league = channel_match.group("league").upper()
+    if (league == "EPL" and number > 10) or (league == "EFL" and number > 35):
+        return None
     details = channel_match.group("details").strip()
     result: dict[str, Any] = {
-        "channel_name": f"EPL{number:02d}",
+        "channel_name": f"{league}{number:02d}",
+        "league": league,
         "title": "",
         "start_utc": None,
     }
@@ -1169,7 +1177,7 @@ def process_epg() -> None:
             add_description_event(
                 key,
                 item["title"],
-                f"EPL fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
+                f"{item['league']} fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
             )
 
     for ch_id, item in european_league_targets.items():
