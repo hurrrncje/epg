@@ -969,6 +969,11 @@ Events (JSON):
                     and item["key"] in expected
                 ):
                     descriptions[item["key"]] = item["description"].strip()
+                    event = next(event for event in batch if event["key"] == item["key"])
+                    print(
+                        "Generated event description for: "
+                        f"{event['title']} [{event['context']}]"
+                    )
             missing = expected - descriptions.keys()
             if missing:
                 print(f"Gemini omitted {len(missing)} event description(s) in this batch.")
@@ -991,6 +996,13 @@ Events (JSON):
                             and item["key"] in expected
                         ):
                             descriptions[item["key"]] = item["description"].strip()
+                            event = next(
+                                event for event in batch if event["key"] == item["key"]
+                            )
+                            print(
+                                "Generated event description for: "
+                                f"{event['title']} [{event['context']}] (Groq)"
+                            )
                     missing = expected - descriptions.keys()
                     if missing:
                         print(f"Groq omitted {len(missing)} event description(s) in this batch.")
@@ -1496,6 +1508,10 @@ def process_epg() -> None:
         result = cache_entry.get("result") if isinstance(cache_entry, dict) else None
         if isinstance(result, str) and result.strip():
             event_descriptions[event["key"]] = result
+            print(
+                "Reusing cached event description for: "
+                f"{event['title']} [{event['context']}]"
+            )
         elif _cache_failure_is_active(cache_entry):
             if groq_api_key:
                 events_to_describe.append(event)
@@ -1519,6 +1535,8 @@ def process_epg() -> None:
                     ai_cache_entries[description_cache_keys[event["key"]]] = {
                         "kind": "event-description",
                         "created_at": datetime.now(UTC).isoformat(),
+                        "title": event["title"],
+                        "context": event["context"],
                         "result": description,
                     }
                 else:
