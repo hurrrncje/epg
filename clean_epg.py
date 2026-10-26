@@ -76,8 +76,11 @@ EPL_EFL_CHANNEL_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EUROPEAN_LEAGUE_CHANNEL_PATTERN = re.compile(
-    r"^(?P<league>Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1|Ligue1)\s*"
-    r"(?P<number>0?[1-9]|10):\s*(?P<details>.*)$",
+    r"^(?P<league>Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1|Ligue1|"
+    r"Scottish\s+Premiership|Scottish\s+Championship|Scottish\s+Cup|FA\s+Cup|"
+    r"UEFA\s+Champions\s+League|UEFA\s+Europa\s+League|"
+    r"UEFA\s+Europa\s+Conf\.?\s+League)\s*"
+    r"(?P<number>\d{1,3})\s*[:–—-]\s*(?P<details>.*)$",
     re.IGNORECASE,
 )
 EPL_FIXTURE_PATTERN = re.compile(
@@ -86,10 +89,11 @@ EPL_FIXTURE_PATTERN = re.compile(
     r"(?:/(?P<year>\d{4}))?$"
 )
 EUROPEAN_LEAGUE_FIXTURE_PATTERN = re.compile(
-    r"^(?P<matchup>.+?)\s*@\s*(?P<date>\d{1,2}\s+[A-Za-z]{3})"
+    r"^(?P<matchup>.+?)\s*@\s*(?P<date>"
+    r"\d{1,2}\s+[A-Za-z]{3}|[A-Za-z]{3}\s+\d{1,2})"
     r"(?:\s+(?P<year>\d{4}))?\s+"
     r"(?P<clock>\d{1,2}:\d{2}\s*[AP]M)\s+"
-    r"(?P<zone>London|UK|BST|GMT|UTC)$",
+    r"(?P<zone>London|UK|BST|GMT|UTC|ET|EDT|EST)$",
     re.IGNORECASE,
 )
 MLS_CHANNEL_PATTERN = re.compile(
@@ -125,7 +129,10 @@ LIGUE1_TEAM_ALIASES = {
     "rc strasbourg alsace": "strasbourg",
 }
 LEAGUE_NAME_PREFIX_PATTERN = re.compile(
-    r"^(?:Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1)\s*:?\s*",
+    r"^(?:Bundesliga|La\s*Liga|LaLiga|Serie\s*A|Ligue\s*1|"
+    r"Scottish\s+Premiership|Scottish\s+Championship|Scottish\s+Cup|FA\s+Cup|"
+    r"UEFA\s+Champions\s+League|UEFA\s+Europa\s+League|"
+    r"UEFA\s+Europa\s+Conf\.?\s+League)\s*:?\s*",
     re.IGNORECASE,
 )
 LEAGUE_MATCHUP_PATTERN = re.compile(r"^(?P<home>.+?)\s+vs\.?\s+(?P<away>.+?)$", re.IGNORECASE)
@@ -363,19 +370,41 @@ def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
 
 
 def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | None:
-    """Parse dynamic Bundesliga, La Liga, Serie A, and Ligue 1 labels."""
+    """Parse numbered football competition labels used for League Changes."""
     channel_match = EUROPEAN_LEAGUE_CHANNEL_PATTERN.match(label.strip())
     if not channel_match:
         return None
 
-    league_key = re.sub(r"\s+", "", channel_match.group("league")).casefold()
+    league_key = re.sub(r"[^a-z0-9]", "", channel_match.group("league").casefold())
     league = {
         "bundesliga": "Bundesliga",
         "laliga": "La Liga",
         "seriea": "Serie A",
         "ligue1": "Ligue 1",
+        "scottishpremiership": "Scottish Premiership",
+        "scottishchampionship": "Scottish Championship",
+        "scottishcup": "Scottish Cup",
+        "facup": "FA Cup",
+        "uefachampionsleague": "UEFA Champions League",
+        "uefaeuropaleague": "UEFA Europa League",
+        "uefaeuropaconfleague": "UEFA Europa Conf. League",
     }[league_key]
     number = int(channel_match.group("number"))
+    maximum_numbers = {
+        "Bundesliga": 10,
+        "La Liga": 10,
+        "Serie A": 10,
+        "Ligue 1": 10,
+        "Scottish Premiership": 8,
+        "Scottish Championship": 9,
+        "Scottish Cup": 10,
+        "FA Cup": 20,
+        "UEFA Champions League": 20,
+        "UEFA Europa League": 20,
+        "UEFA Europa Conf. League": 20,
+    }
+    if number < 1 or number > maximum_numbers[league]:
+        return None
     result: dict[str, Any] = {
         "channel_name": f"{league} {number:02d}",
         "league": league,
@@ -387,43 +416,76 @@ def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | Non
         return result
 
     fixture = EUROPEAN_LEAGUE_FIXTURE_PATTERN.match(details)
-    if not fixture:
+    uk_fixture = EPL_FIXTURE_PATTERN.match(details) if not fixture else None
+    if not fixture and not uk_fixture:
         return result
 
-    matchup_text = LEAGUE_NAME_PREFIX_PATTERN.sub("", fixture.group("matchup").strip(), count=1)
-    matchup = LEAGUE_MATCHUP_PATTERN.match(matchup_text)
-    if not matchup:
-        return result
+    if fixture:
+        matchup_text = LEAGUE_NAME_PREFIX_PATTERN.sub(
+            "", fixture.group("matchup").strip(), count=1
+        )
+        matchup = LEAGUE_MATCHUP_PATTERN.match(matchup_text)
+        if not matchup:
+            return result
+        date_text = fixture.group("date")
+        year_text = fixture.group("year")
+        year = int(year_text or today.year)
+        local_date = None
+        for date_format in ("%d %b %Y", "%b %d %Y"):
+            try:
+                local_date = datetime.strptime(f"{date_text} {year}", date_format).date()
+                break
+            except ValueError:
+                pass
+        if local_date is None:
+            return result
+        clock = re.sub(r"\s+", "", fixture.group("clock")).upper()
+        try:
+            local_clock = datetime.strptime(clock, "%I:%M%p").time()
+        except ValueError:
+            return result
+        zone = fixture.group("zone").upper()
+        result["title"] = (
+            f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
+        )
+    else:
+        year_text = uk_fixture.group("year")
+        year = int(year_text or today.year)
+        try:
+            local_date = datetime(
+                year, int(uk_fixture.group("month")), int(uk_fixture.group("day"))
+            ).date()
+            local_clock = datetime.strptime(
+                uk_fixture.group("clock"), "%H:%M"
+            ).time()
+        except ValueError:
+            return result
+        zone = "LONDON"
+        result["title"] = (
+            f"{uk_fixture.group('home').strip()} vs {uk_fixture.group('away').strip()}"
+        )
 
-    year = int(fixture.group("year") or today.year)
-    try:
-        local_date = datetime.strptime(
-            f"{fixture.group('date')} {year}", "%d %b %Y"
-        ).date()
-    except ValueError:
-        return result
-
-    if not fixture.group("year"):
+    if not year_text:
         day_delta = (local_date - today).days
         if day_delta > 180:
             local_date = local_date.replace(year=year - 1)
         elif day_delta < -180:
             local_date = local_date.replace(year=year + 1)
 
-    clock = re.sub(r"\s+", "", fixture.group("clock")).upper()
-    try:
-        local_clock = datetime.strptime(clock, "%I:%M%p").time()
-    except ValueError:
-        return result
-
     local_start = datetime.combine(local_date, local_clock)
-    zone = fixture.group("zone").upper()
     if zone in {"LONDON", "UK", "BST"}:
         local_start = local_start.replace(tzinfo=LONDON)
+    elif zone in {"ET", "EDT", "EST"}:
+        candidates = [local_start.replace(tzinfo=EASTERN, fold=fold) for fold in (0, 1)]
+        if zone in {"EDT", "EST"}:
+            local_start = next((dt for dt in candidates if dt.tzname() == zone), None)
+            if local_start is None:
+                return result
+        else:
+            local_start = candidates[0]
     else:
         local_start = local_start.replace(tzinfo=UTC)
 
-    result["title"] = f"{matchup.group('home').strip()} vs {matchup.group('away').strip()}"
     result["start_utc"] = local_start.astimezone(UTC)
     return result
 
@@ -717,9 +779,14 @@ def _parse_additional_sports_event_label(
         "channel_name": f"{provider} {number:02d}",
         "title": "",
         "start_utc": None,
+        "no_event": False,
+        "provider": provider,
     }
     details = channel_match.group("details").strip()
-    if not details or details.casefold() in {"no event", "no match", "no game"}:
+    if _is_no_event_title(details):
+        result["no_event"] = True
+        return result
+    if not details:
         return result
 
     fixture = SPORTS_EVENT_FIXTURE_PATTERN.match(details)
@@ -1211,6 +1278,22 @@ def process_epg() -> None:
             if parsed:
                 max_uk_targets[ch_id] = parsed
                 break
+
+    # Some feeds put the complete changing ESPN+ event label in programme
+    # titles while the channel display-name is static or formatted differently.
+    # Use those titles as a fallback so the channel can still be normalized.
+    for programme in root.iter("programme"):
+        ch_id = programme.get("channel")
+        existing = espn_event_targets.get(ch_id or "")
+        if not ch_id or (existing and (existing["title"] or existing["no_event"])):
+            continue
+        programme_title = (programme.findtext("title") or "").strip()
+        parsed = _parse_additional_sports_event_label(
+            programme_title, paramount_today, "ESPN+"
+        )
+        if parsed and (parsed["title"] or parsed["no_event"]):
+            espn_event_targets[ch_id] = parsed
+            print(f"Recognized ESPN+ event from programme title for {parsed['channel_name']}.")
 
     # Some providers expose the event title only in the programme entries.
     for programme in root.iter("programme"):
@@ -1860,7 +1943,8 @@ def process_epg() -> None:
                 display_el.text = item["channel_name"]
     sports_event_replace_ids = {
         ch_id for ch_id, item in sports_event_targets.items()
-        if item["title"] and item["start_utc"] is not None
+        if (item["title"] and item["start_utc"] is not None)
+        or (item.get("provider") == "ESPN+" and item.get("no_event"))
     }
     programmes_to_remove = [
         programme
@@ -1874,6 +1958,9 @@ def process_epg() -> None:
         title = item["title"]
         start_utc = item["start_utc"]
         if not title or start_utc is None:
+            if item.get("provider") == "ESPN+" and item.get("no_event"):
+                add_all_day_notice(ch_id, "No event today")
+                continue
             print(
                 f"No fixture listing for {item['channel_name']} "
                 "(no event or unparsed label)."
