@@ -254,6 +254,14 @@ def _read_channel_id_manifest(path: Path) -> set[str]:
 def _clean_mirrored_event_title(raw_title: str) -> str:
     """Remove common channel labels, dates, clocks, and feed suffixes."""
     title = raw_title.strip()
+    # Some mirrored league feeds use a pipe separator rather than a colon,
+    # e.g. `FA Cup 01 | Chelsea 15:00 Manchester City 16/05`.
+    title = re.sub(
+        r"^[A-Za-z][A-Za-z0-9 +&'.-]{0,45}?\s+\d{1,3}\s*\|\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    )
     # Labels such as `Soccer03:`, `Bar TV 01:`, or `TOD EN 10:` are
     # channel identifiers. Keep the material after that identifier.
     prefix = re.match(
@@ -277,6 +285,14 @@ def _clean_mirrored_event_title(raw_title: str) -> str:
         title,
         flags=re.IGNORECASE,
     )
+    # Also handle league labels where the kickoff precedes the teams and the
+    # date is a bare trailing value, such as `Chelsea 15:00 Man City 16/05`.
+    title = re.sub(
+        r"\s+(?:\d{1,2}/\d{1,2}(?:/\d{2,4})?|\d{4}-\d{1,2}-\d{1,2})\s*$",
+        "",
+        title,
+    )
+    title = re.sub(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\b", "", title)
     title = re.sub(
         r"\s*[@|]\s*(?:\d{1,2}:\d{2}\s*)?(?:AM|PM)\b.*$",
         "",
@@ -298,7 +314,55 @@ def _parse_mirrored_start(raw_title: str, today: Any) -> datetime | None:
         re.IGNORECASE,
     )
     if not match:
-        return None
+        # League mirrors often put a 24-hour kickoff between the teams and
+        # append a short date, for example `FA Cup 01 | Chelsea 15:00 Man City 16/05`.
+        date_match = re.search(
+            r"(?P<date>\d{1,2}/\d{1,2}(?:/\d{2,4})?|\d{4}-\d{1,2}-\d{1,2})\s*$",
+            raw_title,
+            re.IGNORECASE,
+        )
+        clock_match = re.search(r"(?<!\d)(?P<clock>(?:[01]?\d|2[0-3]):[0-5]\d)(?!\d)", raw_title)
+        if not date_match or not clock_match:
+            return None
+        date_text = date_match.group("date")
+        numeric_date = re.fullmatch(
+            r"(?P<day>\d{1,2})/(?P<month>\d{1,2})(?:/(?P<year>\d{2,4}))?",
+            date_text,
+        )
+        iso_date = re.fullmatch(
+            r"(?P<year>\d{4})-(?P<month>\d{1,2})-(?P<day>\d{1,2})",
+            date_text,
+        )
+        parts = numeric_date or iso_date
+        if not parts:
+            return None
+        date_year = parts.group("year")
+        if date_year:
+            date_year = int(date_year)
+            if date_year < 100:
+                date_year += 2000
+        else:
+            date_year = today.year
+        try:
+            event_date = datetime(
+                int(date_year), int(parts.group("month")), int(parts.group("day"))
+            ).date()
+            # Dates without a year are interpreted as the nearest occurrence;
+            # this preserves the usual New Year rollover while detecting old fixtures.
+            delta_days = (event_date - today).days
+            if not date_year or not parts.group("year"):
+                if delta_days > 180:
+                    event_date = event_date.replace(year=event_date.year - 1)
+                elif delta_days < -180:
+                    event_date = event_date.replace(year=event_date.year + 1)
+            hour, minute = (int(value) for value in clock_match.group("clock").split(":"))
+            return datetime.combine(
+                event_date,
+                datetime_time(hour, minute),
+                tzinfo=LONDON,
+            ).astimezone(UTC)
+        except (ValueError, OverflowError):
+            return None
 
     date_text = (match.group("date") or "").strip()
     year = int(match.group("year") or today.year)
