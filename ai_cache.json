@@ -6,14 +6,11 @@
       "retry_after": "2026-10-27T03:17:46.482279+00:00"
     },
     "00254e08a55ba4c6d1e7c31f4367b7c8419782ddbd0b526abedff8cb66d19c7d": {
-      "failed": true,
+      "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770315+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482433+00:00"
-    },
-    "009e74aa951f2d3243af9a423f38aad60a44ec318e7d31abca850bdac3a5fccc": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528750+00:00"
+      "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
+      "title": "Millwall FC vs Derby County"
     },
     "04450b0c41725cb17778bc095adff2635a30862ccd32e09894cd3415067e3065": {
       "failed": true,
@@ -39,6 +36,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482524+00:00"
+    },
+    "079c01d0545b25b894100bbf33892439020b5f7e328fac34bf6e159d372cb3e2": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770410+00:00"
     },
     "0893fd482912fbf077d8931f518f14a9fa33784e114c68178e74ac0e1a3a8f68": {
       "failed": true,
@@ -67,7 +69,7 @@
     "0f6914c5b034be687f436abe6e1fad3cc3a0c2f7fce8ab97facbba317ad36701": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482260+00:00"
+      "retry_after": "2026-10-27T09:17:18.770249+00:00"
     },
     "0fd59c2ee22a15b44f4ffe2b6a9009b27e636e98b09d2c4bd5e4c890f3fd3e95": {
       "failed": true,
@@ -100,24 +102,31 @@
       "retry_after": "2026-10-27T03:17:46.482344+00:00"
     },
     "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
-      "failed": true,
+      "context": "EPLFulham.uk; Next Game: Fulham vs Crystal Palace on 28/10/2026 at 19:45 GMT",
+      "created_at": "2026-10-27T03:17:18.770350+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482510+00:00"
+      "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
+      "title": "Fulham vs Crystal Palace"
     },
     "11c65dd699eb6649be351bd7ce385cce0fc732a6d99b3cf10dbad8d0796d85fe": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482350+00:00"
+      "retry_after": "2026-10-27T09:17:18.770274+00:00"
     },
     "17bca747cc5c8dba7a2b2fab72f7f44027b70bc58005e94f57c8e0d3c2aa9bab": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196231+00:00"
+      "retry_after": "2026-10-27T09:17:18.770390+00:00"
+    },
+    "18695fa662e00af6f35dfb6b0b6f52976f8c4d6edf07a2757c7d491dcdf2805e": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770378+00:00"
     },
     "1871af38e07181aeba23217f5390c79076b1c2a5184510ef5a4a5dfaebd8f096": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482475+00:00"
+      "retry_after": "2026-10-27T09:17:18.770364+00:00"
     },
     "19a9205a53514bf8fdd14876f97a27bcb06c2126a2e8e583b7964e315c234d06": {
       "failed": true,
@@ -133,10 +142,10 @@
         "raw": "Pitch 6A | Day 3: Afternoon Session"
       }
     },
-    "1be1630277b56e6df2e56f2fd3ecc4b99c2705b3dffb7a4593ffb5e01f098ae5": {
+    "1a4296887b1ef185aa071d9590c86e2af3bcb93f013573cbffd9ef6a66f42bd1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196250+00:00"
+      "retry_after": "2026-10-27T09:17:18.770291+00:00"
     },
     "1c1cd6047dd3a6896214ec8a592375cca0f44b5431db80c9c840d220b0476125": {
       "failed": true,
@@ -146,7 +155,7 @@
     "1d9a844a09470f46093beca2ded836a10e05a5b1b44303d964bc0dc758d96a8a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482365+00:00"
+      "retry_after": "2026-10-27T09:17:18.770285+00:00"
     },
     "20adf8bf65bf7ed6fcee4bed7ef169435eb2e19e162b08ffc0edc537e2398506": {
       "failed": true,
@@ -177,6 +186,13 @@
         "raw": "Maple Leafs @ Flames"
       }
     },
+    "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
+      "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
+      "created_at": "2026-10-27T03:17:18.770342+00:00",
+      "kind": "event-description",
+      "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
+      "title": "Leicester City vs Wigan Athletic"
+    },
     "23a623cca4d301f434672a1779c7e49353d4948e6ed887dab30ef3b2876d5132": {
       "failed": true,
       "kind": "event-description",
@@ -185,7 +201,7 @@
     "23f8aaafc181e4f2116cc3316930a3b67fd15ccf8a7d7bbfcc3ad6acedebc12d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482522+00:00"
+      "retry_after": "2026-10-27T09:17:18.770369+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -221,14 +237,11 @@
       }
     },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
-      "failed": true,
+      "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770340+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482460+00:00"
-    },
-    "2b2cbf7ab267dcb5e5516b9f73ac7b98de5f188732183d6d6827820610dc166b": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528653+00:00"
+      "result": "EFL Championship clash between West Ham United and West Bromwich Albion at 15:00 GMT on 31 Oct 2026.",
+      "title": "West Ham United vs West Bromwich Albion"
     },
     "2b964365640da98a7d726c7802664095318ae6094100cdecb81ff70b9c7c4dca": {
       "created_at": "2026-10-26T19:21:40.738720+00:00",
@@ -251,7 +264,7 @@
     "32be7fd7a2d79b89aa3a5a6547b9ad35ef64e79e8568f9dcc8d104d338bfd3da": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482517+00:00"
+      "retry_after": "2026-10-27T09:17:18.770403+00:00"
     },
     "3480acc15300834084a4fab073a0ee332957c62bd86be9066470400cc933319f": {
       "failed": true,
@@ -263,6 +276,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482519+00:00"
     },
+    "352286935fd39feac03b7675838d8221be3b90945b012af145671b7380723284": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770399+00:00"
+    },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
       "kind": "live-title",
@@ -271,11 +289,6 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 9B | Day 3: Afternoon Session"
       }
-    },
-    "35c6dded7021d81d1b2c5ab5e9b4174fd473b50308f4fa74af163fcc0022ba71": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196240+00:00"
     },
     "35dc5d19b6a095a5537a0fb62dd83edb7e5157f38dc1ef8406e9a5e8b45528d9": {
       "failed": true,
@@ -286,6 +299,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482455+00:00"
+    },
+    "37b3ed55ac517361cd8c50e2910b1da020c3f10e9fbf4e63299408881a0cc5e4": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770426+00:00"
     },
     "3943684d21c174c54bb2e79b52ea0db67adfd1c6a85b902f797ab148332f2186": {
       "failed": true,
@@ -304,17 +322,29 @@
     "3a64bdcae0c9f4b152b04b6fcc6665a037e54da7a45e2dd542bb8c74ff6be657": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528693+00:00"
+      "retry_after": "2026-10-27T09:17:18.770361+00:00"
     },
     "3a917676bb17cccac85d676c2b5a9d49b55a3e64423e6cdf2847c7e005c22505": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482498+00:00"
+      "retry_after": "2026-10-27T09:17:18.770382+00:00"
     },
     "3c1ed41e731aebf03fcd3311807ddda53b5901f55904583a857a3c8c96c5947d": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482385+00:00"
+    },
+    "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
+      "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770320+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Accrington Stanley and Northampton Town at 15:00 GMT on 31 Oct 2026.",
+      "title": "Accrington Stanley FC vs Northampton Town FC"
+    },
+    "3d6910c651a671fdb5fc576188418719fa0c72f2210732f725be8d4bda83df61": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770417+00:00"
     },
     "409265c74cfb284d173bf2173d5a35fb1a6f1e2a80e2b1933e5b00b561d89af4": {
       "failed": true,
@@ -341,10 +371,17 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482407+00:00"
     },
+    "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
+      "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770318+00:00",
+      "kind": "event-description",
+      "result": "EFL League One match between Peterborough United and Luton Town at 15:00 GMT on 31 Oct 2026.",
+      "title": "Peterborough United FC vs Luton Town"
+    },
     "42ec150b980f9cfa068df6cb7cc0462edcb597d59409ea2f2cb10768e992a15a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482352+00:00"
+      "retry_after": "2026-10-27T09:17:18.770277+00:00"
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -358,12 +395,14 @@
     "46da3391c0930e3137d7480353c50218c2b1ea2bead926f7fd87f2146ffa8abf": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196229+00:00"
+      "retry_after": "2026-10-27T09:17:18.770388+00:00"
     },
     "4723142829a05d3d457bdb0c0a7534fe5699073cfee9059a7aafa4d179457a20": {
-      "failed": true,
+      "context": "EFLOldhamAthletic.uk; Next Game: Oldham Athletic AFC vs Crawley Town FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770322+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482496+00:00"
+      "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
+      "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
     "4774a90773bcb68a51f0fb7360263ec80096c7ba490a1d37f1b17897f8d17ec3": {
       "failed": true,
@@ -387,7 +426,7 @@
     "49925d8778e801e755a7db601ff079be5519dbda13de59c7f7dd5a8dc2328acb": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482516+00:00"
+      "retry_after": "2026-10-27T09:17:18.770400+00:00"
     },
     "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
       "failed": true,
@@ -399,10 +438,17 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482411+00:00"
     },
+    "4c48d6e8f72cad4cf43bd9b7afd4c1cd2d2bc2f987106b174036ed347a521308": {
+      "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770302+00:00",
+      "kind": "event-description",
+      "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
+      "title": "Bolton Wanderers FC vs Bristol City FC"
+    },
     "4c55a139c8e810554bc8974ace6fa2994488021151849393d17fabcce88754de": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482422+00:00"
+      "retry_after": "2026-10-27T09:17:18.770299+00:00"
     },
     "4d7ba823c7276bf5f4a2dd610618ffd580a2a5031a387253d0354c32ba63d94b": {
       "failed": true,
@@ -437,12 +483,12 @@
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482409+00:00"
+      "retry_after": "2026-10-27T09:17:18.770418+00:00"
     },
     "5267399256fbef1b60ca7c8f7010b17db3d8a5f6b2834aa0cf55ae9e28fe122d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482435+00:00"
+      "retry_after": "2026-10-27T09:17:18.770374+00:00"
     },
     "54728abdcbaebf82a9ead5de3695316797646bb6c5b161e2a7bee20f1435a26c": {
       "failed": true,
@@ -462,7 +508,7 @@
     "55597f0ab205fb1ecbf8041ea6f2796f3cc3d096ccb693f39611c580a52116d7": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482258+00:00"
+      "retry_after": "2026-10-27T09:17:18.770246+00:00"
     },
     "5666506a7d519755298c0448529df4094155f67eebebcb0327852fc06b0fcdd3": {
       "failed": true,
@@ -470,9 +516,11 @@
       "retry_after": "2026-10-27T03:17:46.482274+00:00"
     },
     "5672a157c4e7e6f823e6c4e7aafed3732d70d9c705ed840aee6f9fa6131b52ad": {
-      "failed": true,
+      "context": "EFLSheffieldUnited.uk; Next Game: Sheffield United vs Wrexham AFC on 30/10/2026 at 20:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770329+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482448+00:00"
+      "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
+      "title": "Sheffield United vs Wrexham AFC"
     },
     "56c6175b497ab7f2600897e18b5c604b5f7566fc5429b9d2077d1bc7383561c5": {
       "failed": true,
@@ -496,17 +544,24 @@
     "5951501a07a66ce0aa63cf8f5fb0477a502782f0d06eab8d803e5844b94e0f9d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482346+00:00"
+      "retry_after": "2026-10-27T09:17:18.770268+00:00"
     },
     "59a54fe93e43cb1b76d211c257f46c5d14948cb4a400642430edb5d9f4d07c45": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482360+00:00"
+      "retry_after": "2026-10-27T09:17:18.770283+00:00"
     },
     "5a21dfb4b3a610728347b30dca160786475426d0fe4e104c8b6e8c933fe4189a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196294+00:00"
+      "retry_after": "2026-10-27T09:17:18.770397+00:00"
+    },
+    "5c56e76e89c2109224adac1b49b2568e7b7bb6cfc06935c726f4ab4a26c25926": {
+      "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770345+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Wigan Athletic and Bromley at 15:00 GMT on 31 Oct 2026.",
+      "title": "Wigan Athletic vs Bromley FC"
     },
     "5d9a2b0b69511c104a4e7e1efa5b38b0c8ca7c34749544af294ede2afe82c5b8": {
       "created_at": "2026-10-26T12:30:58.030780+00:00",
@@ -518,20 +573,22 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482393+00:00"
     },
-    "609e56460e8394206f9521e432b1229ad849cfdb57e01c49802cded2ac206c4d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-26T23:54:34.771882+00:00"
-    },
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "created_at": "2026-10-26T12:30:58.030774+00:00",
       "kind": "event-description",
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
     },
-    "637d76be8159774a2deb07a8ad72df51151c21f18f40cbb5a87d0e37ddf2bd4c": {
+    "62155bf4b8163c1b903f61cc3b46837cd8ba13280f7bba4e918d8c1fb2c1d837": {
+      "context": "EPLFulham.uk; Next Game: Aston Villa vs Fulham on 31/10/2026 at 20:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770352+00:00",
+      "kind": "event-description",
+      "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
+      "title": "Aston Villa vs Fulham"
+    },
+    "624e2de2fa4a14d646b1b386452ffc69909d37f165a86dfd6e063af5c1b5ff84": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528673+00:00"
+      "retry_after": "2026-10-27T09:17:18.770371+00:00"
     },
     "64b049dd0da5966a61d41bff14cd5c116da55d970d0795f07230db69b482bbf8": {
       "failed": true,
@@ -542,11 +599,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482209+00:00"
-    },
-    "6606e4b87f17d42e16f12d0543e5eb044668be2585f420d009e98d579c5f99d5": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528679+00:00"
     },
     "66cb6f991083b329c47ea5d41a8f5a8e0031d0e3a90cff29a3cfe04bda984868": {
       "failed": true,
@@ -562,11 +614,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482319+00:00"
-    },
-    "689a8808eaf288aa9d92531cd9f152e765fa3c4800df587d6f05c8a81338fe37": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528706+00:00"
     },
     "68c2144b53dde7f0305f8067d211a01ebcc89ee28b37cf0c89be221a57f187b8": {
       "failed": true,
@@ -605,7 +652,7 @@
     "6afce8545a24f80d560caeff0cb94a0a49b699f2c499262bfa7a3f82451373b0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482356+00:00"
+      "retry_after": "2026-10-27T09:17:18.770281+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -622,15 +669,22 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
-    "75cae5c46ec84c4b445495226eec43adea6d392d80b23390fb2ffc89871b0c45": {
+    "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
+      "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
+      "created_at": "2026-10-27T03:17:18.770317+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Luton Town and Doncaster Rovers at 19:45 GMT on 27 Oct 2026.",
+      "title": "Luton Town vs Doncaster Rovers FC"
+    },
+    "770155bcafef20d43c0ba9a0f98b0ff68a614cdf5178b313730d50c811e0e5ad": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196208+00:00"
+      "retry_after": "2026-10-27T09:17:18.770395+00:00"
     },
     "77c54fa402982c10fbf10cd64d2093f77c8d2277e6831c95a6bd88562b3babd4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482266+00:00"
+      "retry_after": "2026-10-27T09:17:18.770257+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -638,9 +692,11 @@
       "result": "UTSA Weekly Soccer Press Conference."
     },
     "79e1b2f08758361c1d4654cbd407507cac8943ad4d371db7ecc300a483827460": {
-      "failed": true,
+      "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
+      "created_at": "2026-10-27T03:17:18.770326+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482445+00:00"
+      "result": "EFL Championship fixture between Stoke City and Preston North End at 12:30 GMT on 31 Oct 2026.",
+      "title": "Stoke City vs Preston North End FC"
     },
     "7b6106ed24ba7e370461d9186ea54ebab7e67ece185f7f6d0c77b7725796fe83": {
       "created_at": "2026-10-26T12:30:58.030825+00:00",
@@ -660,12 +716,12 @@
     "7c4dc3f03f81776f505a8fba0df6286114e4df4037eb892ac9f6c79db722034f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482514+00:00"
+      "retry_after": "2026-10-27T09:17:18.770391+00:00"
     },
     "7d0986fce9dfcca68c73264c2b64517fdb9dda449a8f65171d0c8e75be263c50": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482479+00:00"
+      "retry_after": "2026-10-27T09:17:18.770367+00:00"
     },
     "7da651bbc0cc62430848b1f9d058ef281c40c4a072569ce7ea9efce9d57f2011": {
       "failed": true,
@@ -675,22 +731,14 @@
     "7db86f6b815f8bfb3fc4fda98eab881de69375d7180df11f96b5b2972498fe3d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482262+00:00"
-    },
-    "7e9dc87ada10d1521e9eb9ec26f2ac42d65c5f7c5d86746334a5d8053a68877e": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196292+00:00"
+      "retry_after": "2026-10-27T09:17:18.770252+00:00"
     },
     "7f525a2aafa89db6d1094873cfb2fe669b94f064e993e35e26340b1ae8187a01": {
-      "failed": true,
+      "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770307+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482427+00:00"
-    },
-    "7fa40b6e60e6c6b015e810ce21e16f1312b4147e8a87202721388744cc929232": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196297+00:00"
+      "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
+      "title": "Wolverhampton Wanderers vs Cardiff City"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -708,29 +756,26 @@
       "retry_after": "2026-10-27T03:17:46.482252+00:00"
     },
     "81b6955b149184ea74055a81971d9e93366b2628e364acf1beb72ecf0a832c01": {
-      "failed": true,
+      "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770305+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482483+00:00"
+      "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
+      "title": "Wycombe Wanderers FC vs Burton Albion FC"
     },
     "826d30180fd298bc5d877827b5a45c688d3773ce6712f35493f4c46fb7d44344": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482503+00:00"
+      "retry_after": "2026-10-27T09:17:18.770384+00:00"
     },
     "8289b5647e7e0d56f85b0e48fdccdd4e81f5edd3cea41cf7eeda21f0e10923f5": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482430+00:00"
     },
-    "8367a891e8de5c49c3c8786b7ea038fa4e788cd0db73508e43dc6036b2ce0c7d": {
+    "838abb56fd46de9cc0684116f143b7845d8df254b29f7aa5009bb6c4ae631d24": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196282+00:00"
-    },
-    "843f6571d01c822f82be65a4b4cf570361151e593152228963e78033f9e1899a": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-26T21:54:54.781530+00:00"
+      "retry_after": "2026-10-27T09:17:18.770356+00:00"
     },
     "8460b456d3626a5f384a57aa20782244a026c5e287ee0d6f29af26ab824c5999": {
       "created_at": "2026-10-26T19:21:40.738768+00:00",
@@ -744,7 +789,7 @@
     "8465e14737db67b07436615bb9fc1eaf2f524e243afcfee0932c115a75261489": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482349+00:00"
+      "retry_after": "2026-10-27T09:17:18.770272+00:00"
     },
     "848177a43c5d84701f978619707ec9a697bb82c90f61c1c5b4114ff64c9a6f17": {
       "failed": true,
@@ -778,7 +823,7 @@
     "8c7c490cc95391f7380bcf0a37cccecdff48309e842c8597f85d8a5e94461bf9": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482473+00:00"
+      "retry_after": "2026-10-27T09:17:18.770359+00:00"
     },
     "8c95fcb9a73dea2bf6d4cdf1fce720cc43997dd2e4202ad1e49b97f0e85f3390": {
       "created_at": "2026-10-26T12:30:58.030799+00:00",
@@ -795,10 +840,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482513+00:00"
     },
-    "92bd95ff0757db1725cf00e37c106639dd59b448adfda43824df7dd2944ada3f": {
+    "90d0392715c96bc92d5dba3b2a41347c4fc53db3c11942ca110889b41a8e6f06": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528728+00:00"
+      "retry_after": "2026-10-27T09:17:18.770408+00:00"
     },
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
@@ -814,6 +859,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482312+00:00"
+    },
+    "97da0563632327126ccf877e41151e8f3e83d5265c9db20a122762bbeaaf37b8": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770405+00:00"
     },
     "980359e18f89846b62143e7ea29bd463a59ae0a1f40ba92f74fbd85db69d51fb": {
       "failed": true,
@@ -837,7 +887,7 @@
     "9bb9c6a0596f15589f8fecfc275302b774aca1c4f5f08ee99216ccd143964e4a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482471+00:00"
+      "retry_after": "2026-10-27T09:17:18.770357+00:00"
     },
     "9c516a41f7e1990d247a2b9c4da7faf41ecc3ff4217e4fc764b9a2182701ce1a": {
       "failed": true,
@@ -886,11 +936,6 @@
         "raw": "Pitch 4B | Day 3: Afternoon Session"
       }
     },
-    "a3054d876343583fd09e5c896defbcc9c5c3625e94fb2e906e126571f4d70528": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-26T23:54:34.771831+00:00"
-    },
     "a30de22a23e13528055728ffdec9fa430e202b004a9c6ad38eb508163c98d130": {
       "failed": true,
       "kind": "event-description",
@@ -928,27 +973,37 @@
     "a68262d0cfd9e933edd6f3e76a1a430431dcd38bbb21a04617ed244e2c45f17a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482354+00:00"
+      "retry_after": "2026-10-27T09:17:18.770279+00:00"
     },
     "a6f99cad8ce80e08690291c5f02700a15b0b469f0cf905d3c6407a0efa0294bb": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482287+00:00"
+      "retry_after": "2026-10-27T09:17:18.770265+00:00"
     },
     "a752abcde690534dc227d779a078be361c192c0c3cb0ac1785ed8c7471c29a12": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482347+00:00"
+      "retry_after": "2026-10-27T09:17:18.770270+00:00"
+    },
+    "a7971546618cd9126fe20db35276e968a2e1956ec527756389d786d6379623f0": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770407+00:00"
     },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482197+00:00"
+      "retry_after": "2026-10-27T09:17:18.770226+00:00"
     },
     "aab0d22a39520a91e23645adc251948acf1742210d3a35c384ac4378f05f226d": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482529+00:00"
+    },
+    "ab840dd97de5501a074c4f24b2148a63749f66cf4055520ad626cba7cf01d9fc": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770363+00:00"
     },
     "ac12a7380b9057ac3acf1d12320bab969dd82a29d771a3db31d7e43c0d692a9f": {
       "failed": true,
@@ -958,7 +1013,7 @@
     "addd2a897472f6499f85752b0c77282285f35c9bbb5b7a440c67830859e13461": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482285+00:00"
+      "retry_after": "2026-10-27T09:17:18.770263+00:00"
     },
     "ae89528484ff1edda0ea98afc74209ea67288fa2283946dc0c2dd1cde222c1e6": {
       "failed": true,
@@ -977,7 +1032,7 @@
     "b087329d93b55e4e7a0f49193ac4b8bdf60bcb129e585fc31d541bfcacda122f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482511+00:00"
+      "retry_after": "2026-10-27T09:17:18.770354+00:00"
     },
     "b0dd97c28b8cb22a645ce6ae2cfd65f349efa5a2a3a77f2158a8b06a3dc23870": {
       "failed": true,
@@ -1005,9 +1060,11 @@
       "retry_after": "2026-10-27T03:17:46.482277+00:00"
     },
     "b859e325fa416e1341487bfd803a4850cab8f36260a3f86077ad78816156c050": {
-      "failed": true,
+      "context": "EFLStockportCounty.uk; Next Game: Oxford United vs Stockport County on 27/10/2026 at 19:45 GMT",
+      "created_at": "2026-10-27T03:17:18.770334+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482457+00:00"
+      "result": "EFL League Two fixture between Oxford United and Stockport County at 19:45 GMT on 27 Oct 2026.",
+      "title": "Oxford United vs Stockport County"
     },
     "b88e4cece27aff8eb929956381262ff2c1da90cd76d58335e3ccb72fdb5e0c5f": {
       "created_at": "2026-10-26T12:30:58.030778+00:00",
@@ -1022,12 +1079,19 @@
     "b93c4fe79519a8b56be7e97680ad17b4777f7805b399a12d4127d2e5f368f1f3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482526+00:00"
+      "retry_after": "2026-10-27T09:17:18.770411+00:00"
     },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
+      "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770346+00:00",
+      "kind": "event-description",
+      "result": "Scottish Premiership match between Heart of Midlothian and Rangers at 20:00 GMT on 28 Oct 2026.",
+      "title": "Heart of Midlothian vs Rangers"
+    },
+    "ba803cdeaf929284aefed9639001cee04a258c1e4b6ece8e4867851c14af6e14": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T00:20:31.196236+00:00"
+      "retry_after": "2026-10-27T09:17:18.770420+00:00"
     },
     "bc49da2a28a3b5f30984ace76324ceb6c49f95c7eb59b9f15f35e2cd3134ff0e": {
       "created_at": "2026-10-26T19:21:40.738730+00:00",
@@ -1074,7 +1138,7 @@
     "be77efdf78ca04ef1c2e79a6a1172a1c4bfbb4e2594d253920005b6631d669b3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482383+00:00"
+      "retry_after": "2026-10-27T09:17:18.770424+00:00"
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -1104,9 +1168,16 @@
       }
     },
     "c269bce43535954894caeb326eda37c100a7c25c2aaa4e84175a2e8c17b74208": {
+      "context": "EFLSwindonTown.uk; Next Game: Swindon Town FC vs Rotherham United FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770339+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
+      "title": "Swindon Town FC vs Rotherham United FC"
+    },
+    "c2b486e6d3f71a1ba1fd2cc5960a2f2003a36d92368dacd48c331fedfcb21cbe": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528663+00:00"
+      "retry_after": "2026-10-27T09:17:18.770366+00:00"
     },
     "c2f21bd0d72058bb58707cdc8e928d5ca803d580897ea1c9a8bee1f42f0d75ac": {
       "created_at": "2026-10-26T12:30:58.030827+00:00",
@@ -1139,6 +1210,11 @@
         "description": "Week 7 NFL game between the Kansas City Chiefs and the Seattle Seahawks, played on October 25, 2026, at Lumen Field in Seattle.",
         "raw": "Chiefs @ Seahawks"
       }
+    },
+    "c68ad34acc6f4beb2dbf12eeb68fbc826f4af946d021146d6e8c81adac87bdea": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770413+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -1179,10 +1255,22 @@
       "kind": "event-description",
       "result": "Minnesota State vs. Boston College."
     },
-    "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
+    "caee0f0b9b14fb68062f8e3138644d1a4a95f9e40430e4372081aa981be3fbf8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482429+00:00"
+      "retry_after": "2026-10-27T09:17:18.770373+00:00"
+    },
+    "cd229307b90ff6fc9e06a2b30f8609d31083177c1f7320b14a3b10f20e3fd3ca": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770422+00:00"
+    },
+    "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
+      "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770309+00:00",
+      "kind": "event-description",
+      "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
+      "title": "Colchester United FC vs Walsall FC"
     },
     "cf36b781aae96c1cc753d81e845c869fd319daf93eb168527ec704098cacdd40": {
       "failed": true,
@@ -1205,14 +1293,23 @@
       "retry_after": "2026-10-27T03:17:46.482234+00:00"
     },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
-      "failed": true,
+      "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770337+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482459+00:00"
+      "result": "EFL League Two match between Stockport County and AFC Wimbledon at 15:00 GMT on 31 Oct 2026.",
+      "title": "Stockport County vs AFC Wimbledon"
     },
     "d2f783cb4b893acb26a0721fcc57a29f716c0f68386e41e52a022c647f257f50": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482470+00:00"
+    },
+    "d31d9a08516f35215d67ee084313594e976d376dd07fda9bb469c878427cec4a": {
+      "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770333+00:00",
+      "kind": "event-description",
+      "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
+      "title": "Leicester City vs Stevenage FC"
     },
     "d3b0f4c4e1a766756f13de4e7b70172bf26caca07fef07aad47fc9dd1f9a6f2f": {
       "failed": true,
@@ -1222,7 +1319,7 @@
     "d3cfcc9f5415bd354f978df7966bbf5cdc383dc1e9874d8bb278de42a41be851": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528685+00:00"
+      "retry_after": "2026-10-27T09:17:18.770295+00:00"
     },
     "d470cd7f6c0b7c6abfc2d9317c87b169f3e0267c8d73311b3753684fa7f5f363": {
       "failed": true,
@@ -1294,7 +1391,7 @@
     "dbc85870d2fc80b6b989dcd4fb51c4f824eccf65b6c560f38daac00c7ab5bbaa": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482369+00:00"
+      "retry_after": "2026-10-27T09:17:18.770393+00:00"
     },
     "dbd4b2a2a5b632ab08d018040eef6a58de80474e8b5beccbed6c6e6f5226421c": {
       "failed": true,
@@ -1322,12 +1419,17 @@
     "dd82bf563aad6f49cfbd9fd97453964bb2d2c4d6679b82d459964eecf1a1ecb6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482376+00:00"
+      "retry_after": "2026-10-27T09:17:18.770427+00:00"
     },
-    "de394b564b714279174c7a93965f65400ef032af59f77559073c80e237338326": {
+    "de814f9cbabbc9d443dffbdfa7280a8c26385e4fc55725630d3b5b03d1df4222": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528700+00:00"
+      "retry_after": "2026-10-27T09:17:18.770415+00:00"
+    },
+    "e05fe5331ebe1a0bf480a897727e44904fa1dc2883d3e2ba15ef72627bf69686": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770294+00:00"
     },
     "e1a07dc262f99a09e359c94f75a0dd92385acbb57d71e87be07c744d49ce785b": {
       "failed": true,
@@ -1342,7 +1444,7 @@
     "e2b224fe10bc82fa9562fb97dc8383c4852cab2f1bdc8610abd3816339458392": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-26T23:00:48.388522+00:00"
+      "retry_after": "2026-10-27T09:17:18.770289+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -1356,7 +1458,7 @@
     "e37a79ad9c28887a86fb32d29bef21e1de06528b38d88b50bb714ea0cfd2dcbf": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482268+00:00"
+      "retry_after": "2026-10-27T09:17:18.770260+00:00"
     },
     "e3efbfe17b4d4e1c8fb25163928d4c33682171b631614205a4c7eb7f52bc176c": {
       "failed": true,
@@ -1378,15 +1480,12 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482390+00:00"
     },
-    "e5e10c9e1a30f4c2cc3ebfb8df05c73430228c849c6d5e2c7dd801070d55a8ee": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528734+00:00"
-    },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
-      "failed": true,
+      "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
+      "created_at": "2026-10-27T03:17:18.770324+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528795+00:00"
+      "result": "EFL Championship clash between Plymouth Argyle and Reading at 12:30 GMT on 31 Oct 2026.",
+      "title": "Plymouth Argyle vs Reading FC"
     },
     "e6d64e3fcb4bc131afdf7e345cb4bd5d33aaa664dce75db4e3fc9822b839b4cd": {
       "failed": true,
@@ -1398,10 +1497,15 @@
       "kind": "event-description",
       "retry_after": "2026-10-27T03:17:46.482241+00:00"
     },
+    "ebfaf3a80a661a4e4b73afdf6d62dea1ff12e2dcb04d01c62a6e074b7e495f28": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-27T09:17:18.770386+00:00"
+    },
     "ec434d640fa68dd03419622aa8111ce28bc68f395dc545490388796bbbd9bcbd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482367+00:00"
+      "retry_after": "2026-10-27T09:17:18.770287+00:00"
     },
     "ed01eab9a22340d38a652f2ae7c88318182e1c6d1c6f8b134be124b7601850f0": {
       "failed": true,
@@ -1417,6 +1521,13 @@
       "created_at": "2026-10-26T12:30:58.030763+00:00",
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
+    },
+    "ef4af734f4be28015f06ad30713e2026be5bc7bead2c2ffc6a8de06785fc25ec": {
+      "context": "EFLSheffieldWednesday.uk; Next Game: Sheffield Wednesday vs Cambridge United FC on 27/10/2026 at 19:45 GMT",
+      "created_at": "2026-10-27T03:17:18.770331+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Sheffield Wednesday and Cambridge United at 19:45 GMT on 27 Oct 2026.",
+      "title": "Sheffield Wednesday vs Cambridge United FC"
     },
     "f3b6b6177fa36f1ad800a88c3c1e25027d0a0c66936b64aae5eda1e53e8f49c9": {
       "failed": true,
@@ -1436,7 +1547,7 @@
     "f43fb0218f60706d187210e3bdb3fda611725a848937640ad02d4ac2960bdd98": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482264+00:00"
+      "retry_after": "2026-10-27T09:17:18.770254+00:00"
     },
     "f58a0e379b680e5fe16ffe15e72e80bde4002122277e7b59ee429b6813599851": {
       "failed": true,
@@ -1446,7 +1557,7 @@
     "f5c089a8184e998921bb8a0aeb3a94db32c9cd42b14abe897e48839718d3b564": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482443+00:00"
+      "retry_after": "2026-10-27T09:17:18.770380+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -1461,7 +1572,7 @@
     "f9a7ca3186aa2f4f7cf53d4743d84d6edc8a8faa439d475a31c2063e6dee1a2c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482487+00:00"
+      "retry_after": "2026-10-27T09:17:18.770376+00:00"
     },
     "faf4e59a1e9b35bbd53e46549c6cc86c1f88a6ab7754e49f5371e463e3cfbe12": {
       "failed": true,
@@ -1474,9 +1585,11 @@
       "retry_after": "2026-10-27T03:17:46.482418+00:00"
     },
     "fcdb318892c5e29d77f230266371d95348e2643cfc5cae6e2d38c4817129bd27": {
-      "failed": true,
+      "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770312+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482432+00:00"
+      "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
+      "title": "Crewe Alexandra FC vs Barnet FC"
     },
     "fd7ee8056112ef8ca8641fa114d80dd1ec86f0cb1f995e2da234ff7c8124a2ab": {
       "created_at": "2026-10-26T12:30:58.030809+00:00",
@@ -1494,14 +1607,16 @@
       "retry_after": "2026-10-27T03:17:46.482270+00:00"
     },
     "ff9e77de7f38533811f7e5c5d5dc832f69307eb0809db71b6feb9fbe49d7dcbe": {
-      "failed": true,
+      "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770348+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-27T03:17:46.482420+00:00"
+      "result": "Scottish Premiership fixture between Dundee United and Heart of Midlothian at 15:00 GMT on 31 Oct 2026.",
+      "title": "Dundee United vs Heart of Midlothian"
     },
     "ffbb833cd2592b381badebd08f4db40cf14b4a469ad07fcce1ee97a1b7b18e4f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-27T01:21:43.528689+00:00"
+      "retry_after": "2026-10-27T09:17:18.770297+00:00"
     },
     "ffc70766d8e1111d6c783b9bfbb786584d17693d867b0528e06e9ab8a48eab26": {
       "failed": true,
