@@ -10,27 +10,27 @@
     "04450b0c41725cb17778bc095adff2635a30862ccd32e09894cd3415067e3065": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516420+00:00"
+      "retry_after": "2026-10-28T15:32:40.370071+00:00"
     },
     "044b1dab53cd9e8879576dbdc61eaac6fda334635490b40728dacadac52a4b1d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516404+00:00"
+      "retry_after": "2026-10-28T15:32:40.370083+00:00"
     },
     "079c01d0545b25b894100bbf33892439020b5f7e328fac34bf6e159d372cb3e2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695301+00:00"
+      "retry_after": "2026-10-28T15:32:40.370151+00:00"
     },
     "086d54960c38424b67b179db7687a01b4d13d30d6dcdf2288e45dc4558493157": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516359+00:00"
+      "retry_after": "2026-10-28T15:32:40.370050+00:00"
     },
     "095482a1ef47cce73e2cd3867b26a953dcc04070601718c13e7e038300ef21b3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516356+00:00"
+      "retry_after": "2026-10-28T15:32:40.370047+00:00"
     },
     "0ba95f0c6038f88b161a1fd8465beeeef87546ad8a66cd8386dd8becaac12d32": {
       "created_at": "2026-10-26T19:21:40.738724+00:00",
@@ -53,7 +53,7 @@
     "0e1787b1f703ff8e92d8c5589ed21636220cabbb12fc448698b914550ab0fd72": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516321+00:00"
+      "retry_after": "2026-10-28T15:32:40.370005+00:00"
     },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
@@ -75,12 +75,12 @@
     "1401ffa806218d6fb5fff1421afcb27a65caff9cd6c62d3734104b0ca715341b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516429+00:00"
+      "retry_after": "2026-10-28T15:32:40.370080+00:00"
     },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516302+00:00"
+      "retry_after": "2026-10-28T15:32:40.369987+00:00"
     },
     "17bca747cc5c8dba7a2b2fab72f7f44027b70bc58005e94f57c8e0d3c2aa9bab": {
       "failed": true,
@@ -95,7 +95,7 @@
     "1871af38e07181aeba23217f5390c79076b1c2a5184510ef5a4a5dfaebd8f096": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516468+00:00"
+      "retry_after": "2026-10-28T15:32:40.370183+00:00"
     },
     "1a0441dc70a5752684928e36368a5a91af7492aecabd0cd887460846e0e7844f": {
       "created_at": "2026-10-26T19:21:40.738756+00:00",
@@ -153,7 +153,7 @@
     "23f8aaafc181e4f2116cc3316930a3b67fd15ccf8a7d7bbfcc3ad6acedebc12d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695298+00:00"
+      "retry_after": "2026-10-28T15:32:40.370149+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -183,10 +183,15 @@
       "kind": "event-description",
       "retry_after": "2026-10-28T12:20:34.516397+00:00"
     },
+    "29edcc08813b58fdc9f2ff74d553f9a959d0ce4a558458ffa80e512834250994": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370128+00:00"
+    },
     "2ad831ed32cf3fbc9809d906b17ac5fb26ed8416a79acc5a9cbfc2fd0265b8c6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516436+00:00"
+      "retry_after": "2026-10-28T15:32:40.370099+00:00"
     },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
@@ -239,17 +244,17 @@
     "319bab3a1070fb46390850c9693ef0e82352e3a06f59a1df2eaf505b05bfe30f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516402+00:00"
+      "retry_after": "2026-10-28T15:32:40.370069+00:00"
     },
     "32be7fd7a2d79b89aa3a5a6547b9ad35ef64e79e8568f9dcc8d104d338bfd3da": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516466+00:00"
+      "retry_after": "2026-10-28T15:32:40.370141+00:00"
     },
     "32d094c39996120e341296d7289f54112becd3ac8920051e2c334d2f7ec95a3c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516377+00:00"
+      "retry_after": "2026-10-28T15:32:40.370176+00:00"
     },
     "33512667d1640a17a0b4a8df2baede6ec45e839f165e5a043b7c3cb1bc2154e6": {
       "created_at": "2026-10-28T00:12:37.428459+00:00",
@@ -274,30 +279,40 @@
         "raw": "Pitch 9B | Day 3: Afternoon Session"
       }
     },
+    "35c6dded7021d81d1b2c5ab5e9b4174fd473b50308f4fa74af163fcc0022ba71": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370133+00:00"
+    },
+    "35dc5d19b6a095a5537a0fb62dd83edb7e5157f38dc1ef8406e9a5e8b45528d9": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370132+00:00"
+    },
     "37b3ed55ac517361cd8c50e2910b1da020c3f10e9fbf4e63299408881a0cc5e4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695351+00:00"
+      "retry_after": "2026-10-28T15:32:40.370075+00:00"
     },
     "380eca5e864ae09bbe1578fac10eba9418cb7e3342a333c878aee3493d19a127": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516438+00:00"
+      "retry_after": "2026-10-28T15:32:40.370105+00:00"
     },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516292+00:00"
+      "retry_after": "2026-10-28T15:32:40.369976+00:00"
     },
     "38cc5ee45d7999ac02509cad4b70599c1497d8acdc1df42e8a022cdbdd92a407": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516388+00:00"
+      "retry_after": "2026-10-28T15:32:40.370160+00:00"
     },
     "3943684d21c174c54bb2e79b52ea0db67adfd1c6a85b902f797ab148332f2186": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516432+00:00"
+      "retry_after": "2026-10-28T15:32:40.370090+00:00"
     },
     "39680f4d1f2c4ec9c61c94e0b9b22dab7d607fb4024895cc665f42bcf40ea068": {
       "created_at": "2026-10-26T19:21:40.738753+00:00",
@@ -321,7 +336,7 @@
     "3c1ed41e731aebf03fcd3311807ddda53b5901f55904583a857a3c8c96c5947d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695234+00:00"
+      "retry_after": "2026-10-28T15:32:40.370062+00:00"
     },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
@@ -333,7 +348,7 @@
     "3d6910c651a671fdb5fc576188418719fa0c72f2210732f725be8d4bda83df61": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516452+00:00"
+      "retry_after": "2026-10-28T15:32:40.370122+00:00"
     },
     "40f068beac846fbcb0f928e820feab8c3e4270f2c13a6e03ab8f171dd52123ce": {
       "created_at": "2026-10-26T12:30:58.030794+00:00",
@@ -343,7 +358,7 @@
     "422e9d73ad0e1ecb5f6a73afcf1cd2239353e4f5391064449ac95b0717bd78a6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516444+00:00"
+      "retry_after": "2026-10-28T15:32:40.370112+00:00"
     },
     "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
@@ -360,6 +375,11 @@
         "description": "Montreal Canadiens defeated the St. Louis Blues 2‑0 at Enterprise Center on Oct 27 2026, with Jacob Fowler recording a career‑high 46‑save shutout【3†L10-L20】.",
         "raw": "Canadiens @ Blues"
       }
+    },
+    "44eda551765cf85a0d276a2a86b6888f80f252da39427378fc84d05ea862a06d": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370100+00:00"
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -399,7 +419,7 @@
     "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516434+00:00"
+      "retry_after": "2026-10-28T15:32:40.370096+00:00"
     },
     "4c48d6e8f72cad4cf43bd9b7afd4c1cd2d2bc2f987106b174036ed347a521308": {
       "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
@@ -411,22 +431,22 @@
     "4c55a139c8e810554bc8974ace6fa2994488021151849393d17fabcce88754de": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516372+00:00"
+      "retry_after": "2026-10-28T15:32:40.370172+00:00"
     },
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516446+00:00"
+      "retry_after": "2026-10-28T15:32:40.370114+00:00"
     },
     "5267399256fbef1b60ca7c8f7010b17db3d8a5f6b2834aa0cf55ae9e28fe122d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516386+00:00"
+      "retry_after": "2026-10-28T15:32:40.370155+00:00"
     },
     "531d356fd63e24006a4c6ba2ed7bf67f493860f9366977de55f5474e587b5747": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516323+00:00"
+      "retry_after": "2026-10-28T15:32:40.370008+00:00"
     },
     "54f2377de193d7ebcd45845e14e2ba550587d8db79686a71881e67c774877ea6": {
       "failed": true,
@@ -439,6 +459,11 @@
       "kind": "event-description",
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
+    },
+    "56c6175b497ab7f2600897e18b5c604b5f7566fc5429b9d2077d1bc7383561c5": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370158+00:00"
     },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
@@ -471,7 +496,7 @@
     "5c0fbfd134aacf7f19add43592b112f7de89441a14970f4bcfe577dbf9e2dd81": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516442+00:00"
+      "retry_after": "2026-10-28T15:32:40.370110+00:00"
     },
     "5c56e76e89c2109224adac1b49b2568e7b7bb6cfc06935c726f4ab4a26c25926": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -497,17 +522,17 @@
     "5e02e837700eb71f6ffb05245230f5c0f5e82240f5185e9d1c3725bfc2273bf2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516304+00:00"
+      "retry_after": "2026-10-28T15:32:40.369989+00:00"
     },
     "5f1f6528c67979c8cbd6f9478756f853808ce0443a5874b5200c864587659927": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516325+00:00"
+      "retry_after": "2026-10-28T15:32:40.370010+00:00"
     },
     "6066e7b1057175503a74ff31fd94486c411ab9d028bc0909ef62fe07049383bf": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516365+00:00"
+      "retry_after": "2026-10-28T15:32:40.370057+00:00"
     },
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "created_at": "2026-10-26T12:30:58.030774+00:00",
@@ -529,17 +554,22 @@
     "6598a653c40bf441bfe6ab4f12eb65e5ea370f8a92a852d5fa2781c9f7dcbed1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695324+00:00"
+      "retry_after": "2026-10-28T15:32:40.370102+00:00"
     },
     "6690f9081779aa8e5c3879caad343226c65558413225ccf1362a1223a349be61": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516338+00:00"
+      "retry_after": "2026-10-28T15:32:40.370029+00:00"
+    },
+    "6875b11ffeaae72309ae9a3d38394d9a9c8949b692897e35cd89240da0687c75": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370130+00:00"
     },
     "6918548dd0847ad1b49d30559f9dd4e8ffbb9127e95dda428eb1631ab919a010": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516395+00:00"
+      "retry_after": "2026-10-28T15:32:40.370166+00:00"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -562,7 +592,7 @@
     "6ef78f9c255deb5020de65560c43c2f10a6eac190a447e1f4c97e1e8216d2e85": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516425+00:00"
+      "retry_after": "2026-10-28T15:32:40.370077+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -589,7 +619,7 @@
     "770155bcafef20d43c0ba9a0f98b0ff68a614cdf5178b313730d50c811e0e5ad": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516484+00:00"
+      "retry_after": "2026-10-28T15:32:40.370135+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -616,7 +646,7 @@
     "7c4dc3f03f81776f505a8fba0df6286114e4df4037eb892ac9f6c79db722034f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516482+00:00"
+      "retry_after": "2026-10-28T15:32:40.370187+00:00"
     },
     "7e9dc87ada10d1521e9eb9ec26f2ac42d65c5f7c5d86746334a5d8053a68877e": {
       "failed": true,
@@ -626,7 +656,7 @@
     "7e9e36f4c3936721830b41a89a04cd504c79b053ede2a6e4374a881c9097d92c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516295+00:00"
+      "retry_after": "2026-10-28T15:32:40.369979+00:00"
     },
     "7f525a2aafa89db6d1094873cfb2fe669b94f064e993e35e26340b1ae8187a01": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
@@ -638,12 +668,12 @@
     "7fa40b6e60e6c6b015e810ce21e16f1312b4147e8a87202721388744cc929232": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516486+00:00"
+      "retry_after": "2026-10-28T15:32:40.370138+00:00"
     },
     "80358dcf367708c411e2ef77586f921cc716bc8b9d9a69a455ed9009ea59e63b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516341+00:00"
+      "retry_after": "2026-10-28T15:32:40.370032+00:00"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -653,7 +683,7 @@
     "80b9cff12382db1c17628bd319f1d13881471c078b18a398d201ca5e85ade75d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516331+00:00"
+      "retry_after": "2026-10-28T15:32:40.370015+00:00"
     },
     "815260001fef79adde87c602537999fd79a36be9404f3751dcf3f84d7daa5868": {
       "created_at": "2026-10-28T06:20:34.001579+00:00",
@@ -674,7 +704,7 @@
     "83831c85cf063498a0482ea934159ac7718b3c9b55d8f9c2aafd287ab233ded1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516457+00:00"
+      "retry_after": "2026-10-28T15:32:40.370126+00:00"
     },
     "838abb56fd46de9cc0684116f143b7845d8df254b29f7aa5009bb6c4ae631d24": {
       "failed": true,
@@ -708,6 +738,11 @@
         "raw": "Islanders @ Predators"
       }
     },
+    "89d14e673bacde4a2a301db6375fcf01cc178d4752961bddae9d979e47ff63d6": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370162+00:00"
+    },
     "8c7c490cc95391f7380bcf0a37cccecdff48309e842c8597f85d8a5e94461bf9": {
       "failed": true,
       "kind": "event-description",
@@ -730,22 +765,22 @@
     "8d286285e27e3eafc5c01f6e331570ca26e2db5680ee957ee0f73c0bb99d54be": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516318+00:00"
+      "retry_after": "2026-10-28T15:32:40.370003+00:00"
     },
     "8f52ea957233698864d8b35aabbe6017296b845e39af60ee8799e9cb4094ab28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516300+00:00"
+      "retry_after": "2026-10-28T15:32:40.369985+00:00"
     },
     "8fc28e2824cda959a733827975befa1ce18d5f3d0ce60cd33b95c495f4ffafcc": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516354+00:00"
+      "retry_after": "2026-10-28T15:32:40.370045+00:00"
     },
     "903ff22db74a06e966bc5914475c78409611e3e71d11d52d55f293062638ec48": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516314+00:00"
+      "retry_after": "2026-10-28T15:32:40.369999+00:00"
     },
     "90d0392715c96bc92d5dba3b2a41347c4fc53db3c11942ca110889b41a8e6f06": {
       "failed": true,
@@ -755,17 +790,17 @@
     "918f30c6147fbe6db1a27aa7a0a67e782ceec84506266616fa1e12a556e87060": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516343+00:00"
+      "retry_after": "2026-10-28T15:32:40.370034+00:00"
     },
     "933926228f9575e5740d72e1bd204c8fd3686e0db2ef53f6598e70d03d1bd7f9": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516352+00:00"
+      "retry_after": "2026-10-28T15:32:40.370043+00:00"
     },
     "933f9e8bd1628be1ed88e4c40ec16e409a8a246df3e9af2afdf80b9e0adc08b0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516455+00:00"
+      "retry_after": "2026-10-28T15:32:40.370124+00:00"
     },
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
@@ -784,17 +819,17 @@
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516287+00:00"
+      "retry_after": "2026-10-28T15:32:40.369972+00:00"
     },
     "97da0563632327126ccf877e41151e8f3e83d5265c9db20a122762bbeaaf37b8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516489+00:00"
+      "retry_after": "2026-10-28T15:32:40.370145+00:00"
     },
     "99f6594b5a78b0ba9ed8601743192cfd5bff210d058908008ca694a909a2b4b2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516411+00:00"
+      "retry_after": "2026-10-28T15:32:40.370088+00:00"
     },
     "9a29dbc83801d05e9ace97dcdf2dd9d514ad8b2c397d3e01609d0286452db6b1": {
       "created_at": "2026-10-26T19:21:40.738711+00:00",
@@ -856,6 +891,11 @@
         "raw": "Pitch 4B | Day 3: Afternoon Session"
       }
     },
+    "a3054d876343583fd09e5c896defbcc9c5c3625e94fb2e906e126571f4d70528": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370143+00:00"
+    },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
       "created_at": "2026-10-26T12:06:58.198973+00:00",
       "kind": "live-title",
@@ -868,7 +908,7 @@
     "a48e2acb08546485b9ed9e6870acf2ee5b1ba8ded087c753f955dfa5cbe7ea52": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516384+00:00"
+      "retry_after": "2026-10-28T15:32:40.370153+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -878,22 +918,22 @@
     "a6e5b0c4eee3785b205c9251caad29dd78f6da6a7736eccfe58de567743977cd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516361+00:00"
+      "retry_after": "2026-10-28T15:32:40.370052+00:00"
     },
     "a7971546618cd9126fe20db35276e968a2e1956ec527756389d786d6379623f0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516381+00:00"
+      "retry_after": "2026-10-28T15:32:40.370094+00:00"
     },
     "aa34c20bded1a5bc65744eaa9ce1756acbdefaf30f82e39d90eeb047607eb1ce": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516423+00:00"
+      "retry_after": "2026-10-28T15:32:40.370073+00:00"
     },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516261+00:00"
+      "retry_after": "2026-10-28T15:32:40.369950+00:00"
     },
     "ab1c5da332493b2a912d8bf55ee9938597cf0b81e584a5a43d0f9d2ccaf4b7db": {
       "created_at": "2026-10-28T00:12:37.428441+00:00",
@@ -907,7 +947,7 @@
     "ab840dd97de5501a074c4f24b2148a63749f66cf4055520ad626cba7cf01d9fc": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516375+00:00"
+      "retry_after": "2026-10-28T15:32:40.370174+00:00"
     },
     "ac12a7380b9057ac3acf1d12320bab969dd82a29d771a3db31d7e43c0d692a9f": {
       "failed": true,
@@ -917,12 +957,12 @@
     "ac9b5628b2f8ee4db50cfa1f45cf6a49f7f48ef9eb3ed8215d1b010d4c2891ff": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516336+00:00"
+      "retry_after": "2026-10-28T15:32:40.370028+00:00"
     },
     "aee89c143597813049b33b4ad1f84b4d7cb076d2acfa1dbced62b67899db703f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516479+00:00"
+      "retry_after": "2026-10-28T15:32:40.370164+00:00"
     },
     "afded0b941398c5df6b2413d4c801296224a02b3541f99fadebc4608dde51224": {
       "created_at": "2026-10-26T19:21:40.738715+00:00",
@@ -946,7 +986,7 @@
     "b170cd2f8aecc9e842c1fd8d31227c8d59df820ee3ae3d325e1a6047e7c63779": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695296+00:00"
+      "retry_after": "2026-10-28T15:32:40.370178+00:00"
     },
     "b859e325fa416e1341487bfd803a4850cab8f36260a3f86077ad78816156c050": {
       "context": "EFLStockportCounty.uk; Next Game: Oxford United vs Stockport County on 27/10/2026 at 19:45 GMT",
@@ -975,7 +1015,7 @@
     "ba803cdeaf929284aefed9639001cee04a258c1e4b6ece8e4867851c14af6e14": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516448+00:00"
+      "retry_after": "2026-10-28T15:32:40.370116+00:00"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -1007,7 +1047,7 @@
     "bd10825e93b8a5500b9cc437ba8c9b10ceb1af6b1b689efe152adb8835763415": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516306+00:00"
+      "retry_after": "2026-10-28T15:32:40.369992+00:00"
     },
     "bd59e31283bb16cd371c1d3bfc20f328ac51be39f2e28213e9b80bebb631511a": {
       "created_at": "2026-10-26T12:30:58.030820+00:00",
@@ -1026,7 +1066,7 @@
     "be77efdf78ca04ef1c2e79a6a1172a1c4bfbb4e2594d253920005b6631d669b3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516464+00:00"
+      "retry_after": "2026-10-28T15:32:40.370059+00:00"
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -1058,7 +1098,7 @@
     "c0f6c23ee8087a936b3f9d06d907194b8489f084e77f5236b525b31145967381": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516309+00:00"
+      "retry_after": "2026-10-28T15:32:40.369994+00:00"
     },
     "c248a78d0b5e347ce7587ce82f6f5d2c0be85bf43049524e3ebf19e2fe21d38c": {
       "created_at": "2026-10-26T19:21:40.738705+00:00",
@@ -1104,6 +1144,11 @@
         "raw": "Avalanche @ Predators"
       }
     },
+    "c5b4137e0e9fc03445871af5fd6c8a299e786cfdaab8f4441d72fabdc911174c": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370140+00:00"
+    },
     "c5c7a028de0dedfe148ad521f27f08c5e1c0cab3db24af47091302aaa6d241fb": {
       "created_at": "2026-10-26T12:06:58.198967+00:00",
       "kind": "live-title",
@@ -1116,12 +1161,12 @@
     "c68ad34acc6f4beb2dbf12eeb68fbc826f4af946d021146d6e8c81adac87bdea": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516440+00:00"
+      "retry_after": "2026-10-28T15:32:40.370107+00:00"
     },
     "c6d6731a06c541fb2fb870f448632895727e8194acaa2cfe36ed43dc481d91e1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516311+00:00"
+      "retry_after": "2026-10-28T15:32:40.369996+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -1140,12 +1185,12 @@
     "caee0f0b9b14fb68062f8e3138644d1a4a95f9e40430e4372081aa981be3fbf8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516471+00:00"
+      "retry_after": "2026-10-28T15:32:40.370185+00:00"
     },
     "cd229307b90ff6fc9e06a2b30f8609d31083177c1f7320b14a3b10f20e3fd3ca": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516450+00:00"
+      "retry_after": "2026-10-28T15:32:40.370118+00:00"
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -1157,7 +1202,7 @@
     "d0684391d9959255226d122acff49ce6758d0e07b75eaf12fdeb215cd7bce9c0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516328+00:00"
+      "retry_after": "2026-10-28T15:32:40.370012+00:00"
     },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
@@ -1190,7 +1235,7 @@
     "d468b08fe75764b6969f713f4ae704850c596005a9fd441d1027992263263b94": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516284+00:00"
+      "retry_after": "2026-10-28T15:32:40.369969+00:00"
     },
     "d484c0f41ab25aa355c4e52540d631075e23d8c77552dcbaf2ef27fdca6c0f7b": {
       "created_at": "2026-10-26T19:21:40.738762+00:00",
@@ -1213,12 +1258,12 @@
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516279+00:00"
+      "retry_after": "2026-10-28T15:32:40.369965+00:00"
     },
     "d72fcc0b4a4566c99d09a7638a1efbc869ce164ca40c0a2f254a4bd63e64d337": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516348+00:00"
+      "retry_after": "2026-10-28T15:32:40.370039+00:00"
     },
     "d7ff3ac6ea3873863c9b6fec265292dae795c1246dd07db31b362fcc49fa84ef": {
       "created_at": "2026-10-26T19:21:40.738758+00:00",
@@ -1232,7 +1277,7 @@
     "d9d7008a07e20eb9f7e57840056b1b4f53fe517619324716131a9bba2622c2a2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516350+00:00"
+      "retry_after": "2026-10-28T15:32:40.370041+00:00"
     },
     "da0566176861644787f1520a0e23ad8341394624dde872285e009d504d7e61a6": {
       "created_at": "2026-10-28T00:12:37.428443+00:00",
@@ -1251,7 +1296,7 @@
     "dbc85870d2fc80b6b989dcd4fb51c4f824eccf65b6c560f38daac00c7ab5bbaa": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516399+00:00"
+      "retry_after": "2026-10-28T15:32:40.370066+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -1274,7 +1319,7 @@
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516297+00:00"
+      "retry_after": "2026-10-28T15:32:40.369982+00:00"
     },
     "de814f9cbabbc9d443dffbdfa7280a8c26385e4fc55725630d3b5b03d1df4222": {
       "failed": true,
@@ -1284,17 +1329,22 @@
     "e05fe5331ebe1a0bf480a897727e44904fa1dc2883d3e2ba15ef72627bf69686": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516427+00:00"
+      "retry_after": "2026-10-28T15:32:40.370170+00:00"
+    },
+    "e1a07dc262f99a09e359c94f75a0dd92385acbb57d71e87be07c744d49ce785b": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370064+00:00"
     },
     "e23c3f7a875d572201232e697f56ffbbff87cb70a30af3bc7eababb5f62b63c9": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516409+00:00"
+      "retry_after": "2026-10-28T15:32:40.370085+00:00"
     },
     "e2b224fe10bc82fa9562fb97dc8383c4852cab2f1bdc8610abd3816339458392": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695319+00:00"
+      "retry_after": "2026-10-28T15:32:40.370168+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -1308,7 +1358,7 @@
     "e5ab9002d11066ca497f333df296465153053b92360a0a9ab6e01684f3d2a1dd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516379+00:00"
+      "retry_after": "2026-10-28T15:32:40.370092+00:00"
     },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
@@ -1320,17 +1370,17 @@
     "e763bfe6baad5f18e6e73f5c6646d4c6fd5fc2b4c9843d7cb9f091c58e31ee43": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516316+00:00"
+      "retry_after": "2026-10-28T15:32:40.370001+00:00"
     },
     "eb633b5101e1ca5c73623933f3fdb7b025b1932b621a9c032dde7bd8e02119cb": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516290+00:00"
+      "retry_after": "2026-10-28T15:32:40.369974+00:00"
     },
     "ec4ef0d9edfd2c7c7514502336d58dfd99d2eadffe83f29380a91eec15e84a16": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516363+00:00"
+      "retry_after": "2026-10-28T15:32:40.370054+00:00"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
@@ -1365,17 +1415,17 @@
     "f0d50db3c2646d83f4abf8ec58c93f2a7d730980c7765583fb0e32bcec00bf9d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516333+00:00"
+      "retry_after": "2026-10-28T15:32:40.370025+00:00"
     },
     "f58a0e379b680e5fe16ffe15e72e80bde4002122277e7b59ee429b6813599851": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695329+00:00"
+      "retry_after": "2026-10-28T15:32:40.370156+00:00"
     },
     "f5c089a8184e998921bb8a0aeb3a94db32c9cd42b14abe897e48839718d3b564": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516392+00:00"
+      "retry_after": "2026-10-28T15:32:40.370180+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -1395,7 +1445,7 @@
     "fccbd378f2337cf47a5a38b3e37e5594122642d5a05872b757ca6c83b4866544": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T09:27:45.695292+00:00"
+      "retry_after": "2026-10-28T15:32:40.370147+00:00"
     },
     "fcdb318892c5e29d77f230266371d95348e2643cfc5cae6e2d38c4817129bd27": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
@@ -1409,10 +1459,15 @@
       "kind": "event-description",
       "result": "Collin Klein Press Conference."
     },
+    "fdc03de312c96d614c9c5556e4df04e0d4c3fb9c18d44549f7aea3bc73a381f1": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-28T15:32:40.370121+00:00"
+    },
     "fe56c70ffd6c87656cca2b8a6292bf13ac3297e9d482e14bdf6209f22fea0198": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-28T12:20:34.516345+00:00"
+      "retry_after": "2026-10-28T15:32:40.370037+00:00"
     },
     "ff9e77de7f38533811f7e5c5d5dc832f69307eb0809db71b6feb9fbe49d7dcbe": {
       "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
