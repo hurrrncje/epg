@@ -20,7 +20,12 @@
     "079c01d0545b25b894100bbf33892439020b5f7e328fac34bf6e159d372cb3e2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898760+00:00"
+      "retry_after": "2026-10-29T12:23:30.006370+00:00"
+    },
+    "0a8faa96df75ceb26e80c66506245914815540ecc0deea4682c19e86bc538666": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T12:23:30.006328+00:00"
     },
     "0b35a70595b5a0f42a9f2115270432066d8606448429f8731e3640ccc37f4b59": {
       "context": "Paramount+ event scheduled 28/10/2026 13:00 GMT",
@@ -70,9 +75,11 @@
       "retry_after": "2026-10-29T09:25:48.898830+00:00"
     },
     "14cb3c2a2495c51870bc90c6e88633410d0cf77df3fdeaa826e4ac549d57fbed": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006249+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898712+00:00"
+      "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Maple Leafs, scheduled for Oct 29 2026.",
+      "title": "Toronto Maple Leafs vs. Seattle Kraken (Maple Leafs Broadcast)"
     },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
@@ -91,12 +98,12 @@
     "17bca747cc5c8dba7a2b2fab72f7f44027b70bc58005e94f57c8e0d3c2aa9bab": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898742+00:00"
+      "retry_after": "2026-10-29T12:23:30.006283+00:00"
     },
     "18695fa662e00af6f35dfb6b0b6f52976f8c4d6edf07a2757c7d491dcdf2805e": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898767+00:00"
+      "retry_after": "2026-10-29T12:23:30.006302+00:00"
     },
     "1a0441dc70a5752684928e36368a5a91af7492aecabd0cd887460846e0e7844f": {
       "created_at": "2026-10-26T19:21:40.738756+00:00",
@@ -115,9 +122,11 @@
       "title": "cbssportshq: What 2 Watch"
     },
     "1d5885836d3c5417e0092762f7379890b842964adc477e76f32c9740567ee319": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006241+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898703+00:00"
+      "result": "Men's basketball game between Saint Mary's Gaels and Pacific Tigers scheduled for Oct 29 2026.",
+      "title": "Saint Mary's vs. Pacific"
     },
     "1fc62bfb261279c82b543745e8586a572238840a7cb66ba4c13a99319c355514": {
       "created_at": "2026-10-28T00:12:37.428457+00:00",
@@ -129,9 +138,11 @@
       }
     },
     "1ffef06f754f4685310e4387234d16f117a1477f3dfa856f4e6619392b552ef8": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006227+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898691+00:00"
+      "result": "Cal State Fullerton Titans vs UC Irvine Anteaters women's soccer match at Anteater Stadium, Irvine, Oct 28 2026, 9:00 PM EDT.",
+      "title": "Cal State Fullerton vs. UC Irvine"
     },
     "2009c5658ce199139b6b30977d6c7046f21f54195b08d2e5e7c28874408d410e": {
       "created_at": "2026-10-28T06:20:34.001574+00:00",
@@ -166,7 +177,7 @@
     "23f8aaafc181e4f2116cc3316930a3b67fd15ccf8a7d7bbfcc3ad6acedebc12d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898792+00:00"
+      "retry_after": "2026-10-29T12:23:30.006367+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -201,7 +212,7 @@
     "289ce2917b8a82ce466a2dab8a8873b9fe461df87009a4a4d0868bd0381d0cd2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898779+00:00"
+      "retry_after": "2026-10-29T12:23:30.006312+00:00"
     },
     "28a114fd4329a04497d496cb073c7ea7baa9d95c70ff27b9a195cfb530fb235e": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -241,9 +252,11 @@
       }
     },
     "2bd23c3bd005cb6a32a07e0fec2649fafc20b8da3abe086a7f42a4c05f557a40": {
-      "failed": true,
+      "context": "ESPN+ event scheduled 29/10/2026 00:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006268+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898730+00:00"
+      "result": "NHL game New Jersey Devils vs Colorado Avalanche broadcast by ESPN+, scheduled for Oct 29 2026.",
+      "title": "New Jersey Devils vs. Colorado Avalanche"
     },
     "2be64ba92ecd146af8dcfadd8b92c37c0a141e8574af99f1f32d89b75e7d80f6": {
       "created_at": "2026-10-28T00:12:37.428434+00:00",
@@ -253,11 +266,6 @@
         "description": "NHL regular season game between the Montreal Canadiens and the St. Louis Blues, scheduled for Wednesday, October 28, 2026 at the Enterprise Center in St. Louis, MO. 【8†L25-L26】",
         "raw": "Canadiens @ Blues"
       }
-    },
-    "2cfb73d5f087c010714fff2956267d8758519bb11c2d87eaa638daf0f18b280d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659561+00:00"
     },
     "2e3971e83e6f41b4b972c88ea8d8fcdc8c6bb442dc4ceef27dc0cda86d760278": {
       "created_at": "2026-10-28T06:20:34.001586+00:00",
@@ -285,9 +293,11 @@
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
     },
     "316d542016dfa0ebb5f947ff9b1ce11efbc3e76122fb74cd85ad6dded26adcd8": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006238+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898701+00:00"
+      "result": "Men's basketball game between Denver Pioneers and Loyola Marymount Lions scheduled for Oct 29 2026.",
+      "title": "Denver vs. Loyola Marymount"
     },
     "319bab3a1070fb46390850c9693ef0e82352e3a06f59a1df2eaf505b05bfe30f": {
       "failed": true,
@@ -295,14 +305,16 @@
       "retry_after": "2026-10-29T09:25:48.898814+00:00"
     },
     "3298059fa870c0824f5e756458f67f5664ef921c36d7be2b263d936c71e33d20": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006210+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898679+00:00"
+      "result": "Jacksonville State Gamecocks vs New Mexico State Aggies college football game at Las Cruces, Oct 28 2026, ESPN2.",
+      "title": "Jacksonville State vs. New Mexico State"
     },
     "32d094c39996120e341296d7289f54112becd3ac8920051e2c334d2f7ec95a3c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898758+00:00"
+      "retry_after": "2026-10-29T12:23:30.006288+00:00"
     },
     "333dbea7839f106931e37490e6312741e1abff296ac043ab614ef1c8aadbbdc2": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -323,7 +335,7 @@
     "352286935fd39feac03b7675838d8221be3b90945b012af145671b7380723284": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898823+00:00"
+      "retry_after": "2026-10-29T12:23:30.006353+00:00"
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -349,7 +361,7 @@
     "37b3ed55ac517361cd8c50e2910b1da020c3f10e9fbf4e63299408881a0cc5e4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898825+00:00"
+      "retry_after": "2026-10-29T12:23:30.006380+00:00"
     },
     "380eca5e864ae09bbe1578fac10eba9418cb7e3342a333c878aee3493d19a127": {
       "failed": true,
@@ -387,7 +399,7 @@
     "3a64bdcae0c9f4b152b04b6fcc6665a037e54da7a45e2dd542bb8c74ff6be657": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659624+00:00"
+      "retry_after": "2026-10-29T12:23:30.006341+00:00"
     },
     "3c1ed41e731aebf03fcd3311807ddda53b5901f55904583a857a3c8c96c5947d": {
       "failed": true,
@@ -402,9 +414,11 @@
       "title": "Accrington Stanley FC vs Northampton Town FC"
     },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006230+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898693+00:00"
+      "result": "Asia‑Pacific Amateur Championship first round, amateur golf tournament held at Te Arai Links, New Zealand, Oct 28 2026.",
+      "title": "Asia-Pacific Amateur Championship (First Round)"
     },
     "40f068beac846fbcb0f928e820feab8c3e4270f2c13a6e03ab8f171dd52123ce": {
       "created_at": "2026-10-26T12:30:58.030794+00:00",
@@ -433,9 +447,11 @@
       }
     },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
-      "failed": true,
+      "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006271+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898732+00:00"
+      "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
+      "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -447,9 +463,11 @@
       }
     },
     "46da3391c0930e3137d7480353c50218c2b1ea2bead926f7fd87f2146ffa8abf": {
-      "failed": true,
+      "context": "Aberdeen.spfl; Next Game: Aberdeen vs Falkirk on 28/10/2026 at 19:45 GMT",
+      "created_at": "2026-10-29T06:23:30.006280+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898740+00:00"
+      "result": "Scottish Premiership match Aberdeen vs Falkirk scheduled for Oct 28 2026 at 19:45 GMT.",
+      "title": "Aberdeen vs Falkirk"
     },
     "4723142829a05d3d457bdb0c0a7534fe5699073cfee9059a7aafa4d179457a20": {
       "context": "EFLOldhamAthletic.uk; Next Game: Oldham Athletic AFC vs Crawley Town FC on 31/10/2026 at 15:00 GMT",
@@ -470,7 +488,7 @@
     "49925d8778e801e755a7db601ff079be5519dbda13de59c7f7dd5a8dc2328acb": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898750+00:00"
+      "retry_after": "2026-10-29T12:23:30.006355+00:00"
     },
     "49af132424a4e6e4e7fb00a14d5b88fe45b3db9747a58606c218b511c4be584b": {
       "context": "Paramount+ event scheduled 29/10/2026 00:20 GMT",
@@ -499,9 +517,11 @@
       "title": "2 | Vancouver Whitecaps FC vs San Diego FC (Spanish)"
     },
     "4b9fcc5e1889cc0c494d143cb978ca27e390967f6db9cddad528f13f380027db": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006194+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898674+00:00"
+      "result": "University of Georgia women's volleyball vs No. 14 Texas Longhorns at Gregory Gym, Austin, Oct 28 2026, SEC Network.",
+      "title": "Georgia vs. #14 Texas"
     },
     "4c48d6e8f72cad4cf43bd9b7afd4c1cd2d2bc2f987106b174036ed347a521308": {
       "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
@@ -513,17 +533,17 @@
     "4c55a139c8e810554bc8974ace6fa2994488021151849393d17fabcce88754de": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898755+00:00"
+      "retry_after": "2026-10-29T12:23:30.006286+00:00"
     },
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898805+00:00"
+      "retry_after": "2026-10-29T12:23:30.006382+00:00"
     },
     "5267399256fbef1b60ca7c8f7010b17db3d8a5f6b2834aa0cf55ae9e28fe122d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898765+00:00"
+      "retry_after": "2026-10-29T12:23:30.006297+00:00"
     },
     "54f2377de193d7ebcd45845e14e2ba550587d8db79686a71881e67c774877ea6": {
       "failed": true,
@@ -544,11 +564,6 @@
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
     },
-    "56c6175b497ab7f2600897e18b5c604b5f7566fc5429b9d2077d1bc7383561c5": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659557+00:00"
-    },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
       "kind": "live-title",
@@ -559,14 +574,16 @@
       }
     },
     "5995be9f9bbcce68555d983cf448403bb9729c52f66ee08bc521cf5adbc968f7": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006257+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898720+00:00"
+      "result": "College football game Virginia Tech Hokies vs Clemson Tigers scheduled for Oct 29 2026.",
+      "title": "Virginia Tech vs. Clemson"
     },
     "5a21dfb4b3a610728347b30dca160786475426d0fe4e104c8b6e8c933fe4189a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898821+00:00"
+      "retry_after": "2026-10-29T12:23:30.006350+00:00"
     },
     "5b6962dbad410f402105dddf3167989356112cc51c675380c0467afa237a2117": {
       "created_at": "2026-10-28T06:20:34.001552+00:00",
@@ -612,11 +629,6 @@
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "7 | San Jose Earthquakes vs Colorado Rapids (English)"
     },
-    "609e56460e8394206f9521e432b1229ad849cfdb57e01c49802cded2ac206c4d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659568+00:00"
-    },
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "created_at": "2026-10-26T12:30:58.030774+00:00",
       "kind": "event-description",
@@ -639,7 +651,7 @@
     "624e2de2fa4a14d646b1b386452ffc69909d37f165a86dfd6e063af5c1b5ff84": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659610+00:00"
+      "retry_after": "2026-10-29T12:23:30.006335+00:00"
     },
     "64f614a36bdb5f986aa5075a08ec09257e6b4ad7ba828977e2326709cc281b94": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -658,7 +670,7 @@
     "6918548dd0847ad1b49d30559f9dd4e8ffbb9127e95dda428eb1631ab919a010": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898775+00:00"
+      "retry_after": "2026-10-29T12:23:30.006309+00:00"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -670,9 +682,11 @@
       }
     },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006251+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898714+00:00"
+      "result": "NBA broadcast event \"En Español\" featuring Oklahoma City Thunder vs Dallas Mavericks scheduled for Oct 29 2026.",
+      "title": "En Español-Oklahoma City Thunder vs. Dallas Mavericks"
     },
     "6ecbf32674a563c4da563803a44a1f78f71ab9dd735f70bba3a8dda5109ac768": {
       "created_at": "2026-10-28T06:20:34.001573+00:00",
@@ -729,7 +743,7 @@
     "770155bcafef20d43c0ba9a0f98b0ff68a614cdf5178b313730d50c811e0e5ad": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898747+00:00"
+      "retry_after": "2026-10-29T12:23:30.006348+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -742,11 +756,6 @@
       "kind": "event-description",
       "result": "EFL Championship fixture between Stoke City and Preston North End at 12:30 GMT on 31 Oct 2026.",
       "title": "Stoke City vs Preston North End FC"
-    },
-    "7a1e526942f42d63b8c481d826522d341f0693a2db27776de8ec0a00d84fa224": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659566+00:00"
     },
     "7b6106ed24ba7e370461d9186ea54ebab7e67ece185f7f6d0c77b7725796fe83": {
       "created_at": "2026-10-26T12:30:58.030825+00:00",
@@ -761,12 +770,14 @@
     "7c4dc3f03f81776f505a8fba0df6286114e4df4037eb892ac9f6c79db722034f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898839+00:00"
+      "retry_after": "2026-10-29T12:23:30.006317+00:00"
     },
     "7d8e8f1e7b95319251efba661c064f4181c70df2c672bb5a03852f10577d78ab": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006263+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898725+00:00"
+      "result": "College basketball game UC Santa Barbara Gauchos vs Cal State Northridge Matadors scheduled for Oct 29 2026.",
+      "title": "UC Santa Barbara vs. Cal State Northridge"
     },
     "7e9dc87ada10d1521e9eb9ec26f2ac42d65c5f7c5d86746334a5d8053a68877e": {
       "failed": true,
@@ -816,7 +827,7 @@
     "838abb56fd46de9cc0684116f143b7845d8df254b29f7aa5009bb6c4ae631d24": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659606+00:00"
+      "retry_after": "2026-10-29T12:23:30.006324+00:00"
     },
     "8460b456d3626a5f384a57aa20782244a026c5e287ee0d6f29af26ab824c5999": {
       "created_at": "2026-10-26T19:21:40.738768+00:00",
@@ -828,9 +839,11 @@
       }
     },
     "860f3190b53bd49683aad58e81b75c6df6c5896af42489fa66ed15651084f69b": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006233+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898696+00:00"
+      "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
+      "title": "Seattle U vs. Portland"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -842,9 +855,11 @@
       }
     },
     "8935e620d6e89809a62114c301484830012310514fce90d7dc19e92eb8b9202d": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:35 GMT",
+      "created_at": "2026-10-29T06:23:30.006254+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898717+00:00"
+      "result": "NBA game Oklahoma City Thunder vs Dallas Mavericks scheduled for Oct 29 2026.",
+      "title": "Oklahoma City Thunder vs. Dallas Mavericks"
     },
     "897f1378957ead43fe57585e550720dd98289d29743b89d3db5b5acd41781a92": {
       "created_at": "2026-10-28T06:20:34.001577+00:00",
@@ -854,6 +869,11 @@
         "description": "New York Islanders edged the Nashville Predators 4‑3 in a shootout on Oct 27 2026, after blowing a three‑goal lead【8†L12-L26】.",
         "raw": "Islanders @ Predators"
       }
+    },
+    "8c7c490cc95391f7380bcf0a37cccecdff48309e842c8597f85d8a5e94461bf9": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T12:23:30.006339+00:00"
     },
     "8c95fcb9a73dea2bf6d4cdf1fce720cc43997dd2e4202ad1e49b97f0e85f3390": {
       "created_at": "2026-10-26T12:30:58.030799+00:00",
@@ -877,14 +897,16 @@
       "title": "Wild @ Mammoth"
     },
     "8fc5122b3deeed7a1d16651ccf9d96d14297b583fbb7e94a74a9ca07cb8fff39": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006246+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898709+00:00"
+      "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
+      "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
     },
     "90d0392715c96bc92d5dba3b2a41347c4fc53db3c11942ca110889b41a8e6f06": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898790+00:00"
+      "retry_after": "2026-10-29T12:23:30.006365+00:00"
     },
     "933f9e8bd1628be1ed88e4c40ec16e409a8a246df3e9af2afdf80b9e0adc08b0": {
       "failed": true,
@@ -894,7 +916,7 @@
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898848+00:00"
+      "retry_after": "2026-10-29T12:23:30.006307+00:00"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -915,7 +937,7 @@
     "97da0563632327126ccf877e41151e8f3e83d5265c9db20a122762bbeaaf37b8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898782+00:00"
+      "retry_after": "2026-10-29T12:23:30.006358+00:00"
     },
     "9a29dbc83801d05e9ace97dcdf2dd9d514ad8b2c397d3e01609d0286452db6b1": {
       "created_at": "2026-10-26T19:21:40.738711+00:00",
@@ -934,9 +956,11 @@
       "title": "Serie A: Venezia vs. Inter"
     },
     "9bb9c6a0596f15589f8fecfc275302b774aca1c4f5f08ee99216ccd143964e4a": {
-      "failed": true,
+      "context": "EPLTottenhamHotspur.uk; Next Game: Tottenham Hotspur vs Crystal Palace on 31/10/2026 at 17:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006277+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898753+00:00"
+      "result": "Premier League match Tottenham Hotspur vs Crystal Palace scheduled for Oct 31 2026 at 17:30 GMT.",
+      "title": "Tottenham Hotspur vs Crystal Palace"
     },
     "9d90e64b12ffbb894866057ef9c813fcf02dc93f17149483e314d7ae44dba86a": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -964,14 +988,11 @@
       }
     },
     "9ea2b703aff783b94733bb3b81034b31c3adfe5cb0ca904bebe15d0e46beab82": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006260+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898722+00:00"
-    },
-    "a1307697309e7e1bcba8f41ab993d08cf1cc5e994a0c39b7542cacb5396a61c8": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659546+00:00"
+      "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
+      "title": "#18 Stanford vs. California"
     },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
@@ -991,11 +1012,6 @@
         "raw": "Pitch 4B | Day 3: Afternoon Session"
       }
     },
-    "a3054d876343583fd09e5c896defbcc9c5c3625e94fb2e906e126571f4d70528": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659582+00:00"
-    },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
       "created_at": "2026-10-26T12:06:58.198973+00:00",
       "kind": "live-title",
@@ -1008,7 +1024,7 @@
     "a48e2acb08546485b9ed9e6870acf2ee5b1ba8ded087c753f955dfa5cbe7ea52": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898763+00:00"
+      "retry_after": "2026-10-29T12:23:30.006294+00:00"
     },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -1021,6 +1037,11 @@
       "created_at": "2026-10-26T12:30:58.030796+00:00",
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
+    },
+    "a7971546618cd9126fe20db35276e968a2e1956ec527756389d786d6379623f0": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T12:23:30.006363+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1074,7 +1095,7 @@
     "b087329d93b55e4e7a0f49193ac4b8bdf60bcb129e585fc31d541bfcacda122f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659603+00:00"
+      "retry_after": "2026-10-29T12:23:30.006322+00:00"
     },
     "b15fb8bb2c631dc1dc45337b9719824f27f36a585e5db90590e5c444942ced9c": {
       "created_at": "2026-10-26T12:30:58.030767+00:00",
@@ -1084,7 +1105,7 @@
     "b170cd2f8aecc9e842c1fd8d31227c8d59df820ee3ae3d325e1a6047e7c63779": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898843+00:00"
+      "retry_after": "2026-10-29T12:23:30.006333+00:00"
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1108,9 +1129,11 @@
       "title": "Oxford United vs Stockport County"
     },
     "b886994ffdd1bb7a80023d03a44329f0d930f9e95d22eb51d5b9812a8ef2570d": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006244+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898706+00:00"
+      "result": "NBA broadcast event \"Above the Rim\" featuring Oklahoma City Thunder vs Dallas Mavericks scheduled for Oct 29 2026.",
+      "title": "Above the Rim: Oklahoma City Thunder vs. Dallas Mavericks"
     },
     "b88e4cece27aff8eb929956381262ff2c1da90cd76d58335e3ccb72fdb5e0c5f": {
       "created_at": "2026-10-26T12:30:58.030778+00:00",
@@ -1120,7 +1143,7 @@
     "b93c4fe79519a8b56be7e97680ad17b4777f7805b399a12d4127d2e5f368f1f3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898795+00:00"
+      "retry_after": "2026-10-29T12:23:30.006373+00:00"
     },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
       "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
@@ -1180,7 +1203,7 @@
     "be77efdf78ca04ef1c2e79a6a1172a1c4bfbb4e2594d253920005b6631d669b3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898834+00:00"
+      "retry_after": "2026-10-29T12:23:30.006343+00:00"
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -1228,7 +1251,7 @@
     "c2b486e6d3f71a1ba1fd2cc5960a2f2003a36d92368dacd48c331fedfcb21cbe": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659608+00:00"
+      "retry_after": "2026-10-29T12:23:30.006331+00:00"
     },
     "c2f21bd0d72058bb58707cdc8e928d5ca803d580897ea1c9a8bee1f42f0d75ac": {
       "created_at": "2026-10-26T12:30:58.030827+00:00",
@@ -1260,11 +1283,6 @@
         "raw": "Avalanche @ Predators"
       }
     },
-    "c5b4137e0e9fc03445871af5fd6c8a299e786cfdaab8f4441d72fabdc911174c": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659536+00:00"
-    },
     "c5c7a028de0dedfe148ad521f27f08c5e1c0cab3db24af47091302aaa6d241fb": {
       "created_at": "2026-10-26T12:06:58.198967+00:00",
       "kind": "live-title",
@@ -1277,7 +1295,7 @@
     "c68ad34acc6f4beb2dbf12eeb68fbc826f4af946d021146d6e8c81adac87bdea": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898800+00:00"
+      "retry_after": "2026-10-29T12:23:30.006375+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -1296,12 +1314,12 @@
     "caee0f0b9b14fb68062f8e3138644d1a4a95f9e40430e4372081aa981be3fbf8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898845+00:00"
+      "retry_after": "2026-10-29T12:23:30.006291+00:00"
     },
     "cd229307b90ff6fc9e06a2b30f8609d31083177c1f7320b14a3b10f20e3fd3ca": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898850+00:00"
+      "retry_after": "2026-10-29T12:23:30.006378+00:00"
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -1327,7 +1345,7 @@
     "d3cfcc9f5415bd354f978df7966bbf5cdc383dc1e9874d8bb278de42a41be851": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659539+00:00"
+      "retry_after": "2026-10-29T12:23:30.006320+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -1387,9 +1405,11 @@
       }
     },
     "d84240efa4d4c5cc0d6a514e39a12116de815c9082fc2e90fcfc4fdf9b9620b6": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006265+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898728+00:00"
+      "result": "College basketball game UC San Diego Tritons vs Cal State Bakersfield Roadrunners scheduled for Oct 29 2026.",
+      "title": "UC San Diego vs. Cal State Bakersfield"
     },
     "d976699edce009e76f1eb177fb11f79dd297fd873c7fd20ad2a8d8647c4aac95": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -1411,6 +1431,11 @@
       "created_at": "2026-10-26T12:30:58.030742+00:00",
       "kind": "event-description",
       "result": "League Two match: Walsall vs Salford City, scheduled 26 Oct 2026 20:00 GMT."
+    },
+    "dbc85870d2fc80b6b989dcd4fb51c4f824eccf65b6c560f38daac00c7ab5bbaa": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T12:23:30.006346+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -1437,11 +1462,6 @@
       "result": "NHL regular‑season game between the Toronto Maple Leafs and Nashville Predators, part of the 2026‑27 NHL season.",
       "title": "Islanders @ Predators"
     },
-    "de814f9cbabbc9d443dffbdfa7280a8c26385e4fc55725630d3b5b03d1df4222": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659559+00:00"
-    },
     "df52a722a45f697c83d74b5067c42d1f28bcb88ac8a9024e7561bf3a427697b7": {
       "context": "Paramount+ event scheduled 29/10/2026 03:00 GMT",
       "created_at": "2026-10-29T03:25:48.898659+00:00",
@@ -1462,19 +1482,23 @@
       "retry_after": "2026-10-29T09:25:48.898855+00:00"
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006220+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898685+00:00"
+      "result": "New Jersey Devils vs Colorado Avalanche NHL game at Ball Arena, Denver, Oct 28 2026, Avalanche win 5‑2.",
+      "title": "New Jersey Devils vs. Colorado Avalanche (Devils Broadcast)"
     },
     "e0fbc041549137377660ab2d9840f0dc8360515795ff8fc6719f8b01a419d0e6": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006236+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898699+00:00"
+      "result": "Men's soccer match between Cal Poly Mustangs and UC Riverside Highlanders scheduled for Oct 29 2026.",
+      "title": "Cal Poly vs. UC Riverside"
     },
     "e2b224fe10bc82fa9562fb97dc8383c4852cab2f1bdc8610abd3816339458392": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898852+00:00"
+      "retry_after": "2026-10-29T12:23:30.006315+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -1486,14 +1510,16 @@
       }
     },
     "e3f992e4c1825fda74a60376d3cd433d0374f4e5e6734dd523f5ecd509940de2": {
-      "failed": true,
+      "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
+      "created_at": "2026-10-29T06:23:30.006215+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898683+00:00"
+      "result": "Calgary Flames vs Edmonton Oilers NHL game at Rogers Place, Edmonton, Oct 28 2026, Oilers shut out Flames 4‑0.",
+      "title": "Calgary Flames vs. Edmonton Oilers"
     },
     "e5ab9002d11066ca497f333df296465153053b92360a0a9ab6e01684f3d2a1dd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898785+00:00"
+      "retry_after": "2026-10-29T12:23:30.006361+00:00"
     },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
@@ -1508,6 +1534,11 @@
       "kind": "event-description",
       "result": "NHL regular‑season game between the New Jersey Devils and Dallas Stars, part of the 2026‑27 NHL season.",
       "title": "Devils @ Stars"
+    },
+    "ebfaf3a80a661a4e4b73afdf6d62dea1ff12e2dcb04d01c62a6e074b7e495f28": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T12:23:30.006337+00:00"
     },
     "ec03bd8e02c73be764c51350bf5fd8e19ce6faa529f65f9516a7daa2e93b373a": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1560,15 +1591,10 @@
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
     },
-    "f31e164b5430fb32d4b2c409d1446ff5f9804778695613661311e8d3e6ae04d4": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659618+00:00"
-    },
     "f5c089a8184e998921bb8a0aeb3a94db32c9cd42b14abe897e48839718d3b564": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898769+00:00"
+      "retry_after": "2026-10-29T12:23:30.006304+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -1583,14 +1609,16 @@
       "title": "5 | Nashville SC vs Philadelphia Union (English)"
     },
     "f82527d48461a011c2cee053eedfa7d73edc6dac2748f620ff73cc06690209bc": {
-      "failed": true,
+      "context": "MAX UK event scheduled 29/10/2026 00:00 GMT",
+      "created_at": "2026-10-29T06:23:30.006274+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898735+00:00"
+      "result": "MLB World Series Game 5: Milwaukee Brewers vs Tampa Bay Rays scheduled for Oct 29 2026.",
+      "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
     },
     "f9a7ca3186aa2f4f7cf53d4743d84d6edc8a8faa439d475a31c2063e6dee1a2c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659615+00:00"
+      "retry_after": "2026-10-29T12:23:30.006300+00:00"
     },
     "fcdb318892c5e29d77f230266371d95348e2643cfc5cae6e2d38c4817129bd27": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
@@ -1607,7 +1635,7 @@
     "feeda8915fe70306df74f6203540fadee42a6800afc30c39cf8c7f25613a453b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898688+00:00"
+      "retry_after": "2026-10-29T12:23:30.006223+00:00"
     },
     "ff9e77de7f38533811f7e5c5d5dc832f69307eb0809db71b6feb9fbe49d7dcbe": {
       "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
@@ -1619,7 +1647,7 @@
     "ffbb833cd2592b381badebd08f4db40cf14b4a469ad07fcce1ee97a1b7b18e4f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T06:15:37.659541+00:00"
+      "retry_after": "2026-10-29T12:23:30.006326+00:00"
     }
   },
   "version": 1
