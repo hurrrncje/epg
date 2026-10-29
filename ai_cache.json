@@ -7,20 +7,10 @@
       "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
       "title": "Millwall FC vs Derby County"
     },
-    "04450b0c41725cb17778bc095adff2635a30862ccd32e09894cd3415067e3065": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898816+00:00"
-    },
-    "044b1dab53cd9e8879576dbdc61eaac6fda334635490b40728dacadac52a4b1d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898832+00:00"
-    },
     "079c01d0545b25b894100bbf33892439020b5f7e328fac34bf6e159d372cb3e2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006370+00:00"
+      "retry_after": "2026-10-29T15:35:16.232441+00:00"
     },
     "0a8faa96df75ceb26e80c66506245914815540ecc0deea4682c19e86bc538666": {
       "failed": true,
@@ -72,7 +62,7 @@
     "1401ffa806218d6fb5fff1421afcb27a65caff9cd6c62d3734104b0ca715341b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898830+00:00"
+      "retry_after": "2026-10-29T15:35:16.232423+00:00"
     },
     "14cb3c2a2495c51870bc90c6e88633410d0cf77df3fdeaa826e4ac549d57fbed": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -98,12 +88,12 @@
     "17bca747cc5c8dba7a2b2fab72f7f44027b70bc58005e94f57c8e0d3c2aa9bab": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006283+00:00"
+      "retry_after": "2026-10-29T15:35:16.232400+00:00"
     },
     "18695fa662e00af6f35dfb6b0b6f52976f8c4d6edf07a2757c7d491dcdf2805e": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006302+00:00"
+      "retry_after": "2026-10-29T15:35:16.232385+00:00"
     },
     "1a0441dc70a5752684928e36368a5a91af7492aecabd0cd887460846e0e7844f": {
       "created_at": "2026-10-26T19:21:40.738756+00:00",
@@ -177,7 +167,7 @@
     "23f8aaafc181e4f2116cc3316930a3b67fd15ccf8a7d7bbfcc3ad6acedebc12d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006367+00:00"
+      "retry_after": "2026-10-29T15:35:16.232477+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -302,7 +292,7 @@
     "319bab3a1070fb46390850c9693ef0e82352e3a06f59a1df2eaf505b05bfe30f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898814+00:00"
+      "retry_after": "2026-10-29T15:35:16.232410+00:00"
     },
     "3298059fa870c0824f5e756458f67f5664ef921c36d7be2b263d936c71e33d20": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -349,7 +339,7 @@
     "35c6dded7021d81d1b2c5ab5e9b4174fd473b50308f4fa74af163fcc0022ba71": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898737+00:00"
+      "retry_after": "2026-10-29T15:35:16.232475+00:00"
     },
     "3712e3205b245dda3cb5ff83bbcffbabbc73b67e777fd50f2339b8f392286e50": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -361,12 +351,12 @@
     "37b3ed55ac517361cd8c50e2910b1da020c3f10e9fbf4e63299408881a0cc5e4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006380+00:00"
+      "retry_after": "2026-10-29T15:35:16.232416+00:00"
     },
     "380eca5e864ae09bbe1578fac10eba9418cb7e3342a333c878aee3493d19a127": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898797+00:00"
+      "retry_after": "2026-10-29T15:35:16.232446+00:00"
     },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -381,11 +371,6 @@
       "kind": "event-description",
       "result": "MLS match between Minnesota United and Sporting Kansas City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "2 | Minnesota United vs Sporting Kansas City (Spanish)"
-    },
-    "3943684d21c174c54bb2e79b52ea0db67adfd1c6a85b902f797ab148332f2186": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898841+00:00"
     },
     "39680f4d1f2c4ec9c61c94e0b9b22dab7d607fb4024895cc665f42bcf40ea068": {
       "created_at": "2026-10-26T19:21:40.738753+00:00",
@@ -404,7 +389,7 @@
     "3c1ed41e731aebf03fcd3311807ddda53b5901f55904583a857a3c8c96c5947d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898837+00:00"
+      "retry_after": "2026-10-29T15:35:16.232405+00:00"
     },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
@@ -428,7 +413,7 @@
     "422e9d73ad0e1ecb5f6a73afcf1cd2239353e4f5391064449ac95b0717bd78a6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898803+00:00"
+      "retry_after": "2026-10-29T15:35:16.232454+00:00"
     },
     "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
@@ -504,11 +489,6 @@
       "result": "CBS Sports HQ Just Football, a football highlights show on Paramount+ scheduled for 28 October 2026 at 16:00 GMT.",
       "title": "cbssportshq: Just Football"
     },
-    "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898788+00:00"
-    },
     "4b3a74c0a4ae71573bf923189a52878ce29fa92327c4456b63181627180aa4c6": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898648+00:00",
@@ -533,22 +513,17 @@
     "4c55a139c8e810554bc8974ace6fa2994488021151849393d17fabcce88754de": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006286+00:00"
+      "retry_after": "2026-10-29T15:35:16.232376+00:00"
     },
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006382+00:00"
+      "retry_after": "2026-10-29T15:35:16.232456+00:00"
     },
     "5267399256fbef1b60ca7c8f7010b17db3d8a5f6b2834aa0cf55ae9e28fe122d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006297+00:00"
-    },
-    "54f2377de193d7ebcd45845e14e2ba550587d8db79686a71881e67c774877ea6": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898777+00:00"
+      "retry_after": "2026-10-29T15:35:16.232382+00:00"
     },
     "5577fac0d12e94cbb22bac44e8fc5c6bf3e4ab8f70c06e1503342c206fa96ca4": {
       "context": "Paramount+ event scheduled 28/10/2026 17:20 GMT",
@@ -593,6 +568,11 @@
         "description": "Boston Bruins played the Carolina Hurricanes at the Hurricanes’ home on Oct 27 2026, losing 2‑1 in a game where Pyotr Kochetkov made a career‑high 46‑save shutout【1†L10-L20】.",
         "raw": "Bruins @ Hurricanes"
       }
+    },
+    "5c0fbfd134aacf7f19add43592b112f7de89441a14970f4bcfe577dbf9e2dd81": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T15:35:16.232451+00:00"
     },
     "5c56e76e89c2109224adac1b49b2568e7b7bb6cfc06935c726f4ab4a26c25926": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -670,7 +650,7 @@
     "6918548dd0847ad1b49d30559f9dd4e8ffbb9127e95dda428eb1631ab919a010": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006309+00:00"
+      "retry_after": "2026-10-29T15:35:16.232388+00:00"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -696,6 +676,11 @@
         "description": "Vancouver Canucks beat the Anaheim Ducks 6‑5 in overtime on Oct 27 2026, ending a 10‑game losing streak【5†L18-L22】.",
         "raw": "Canucks @ Ducks"
       }
+    },
+    "6ef78f9c255deb5020de65560c43c2f10a6eac190a447e1f4c97e1e8216d2e85": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T15:35:16.232419+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -743,7 +728,7 @@
     "770155bcafef20d43c0ba9a0f98b0ff68a614cdf5178b313730d50c811e0e5ad": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006348+00:00"
+      "retry_after": "2026-10-29T15:35:16.232470+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -770,7 +755,7 @@
     "7c4dc3f03f81776f505a8fba0df6286114e4df4037eb892ac9f6c79db722034f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006317+00:00"
+      "retry_after": "2026-10-29T15:35:16.232473+00:00"
     },
     "7d8e8f1e7b95319251efba661c064f4181c70df2c672bb5a03852f10577d78ab": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -778,11 +763,6 @@
       "kind": "event-description",
       "result": "College basketball game UC Santa Barbara Gauchos vs Cal State Northridge Matadors scheduled for Oct 29 2026.",
       "title": "UC Santa Barbara vs. Cal State Northridge"
-    },
-    "7e9dc87ada10d1521e9eb9ec26f2ac42d65c5f7c5d86746334a5d8053a68877e": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898745+00:00"
     },
     "7e9e36f4c3936721830b41a89a04cd504c79b053ede2a6e4374a881c9097d92c": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -801,7 +781,7 @@
     "7fa40b6e60e6c6b015e810ce21e16f1312b4147e8a87202721388744cc929232": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898827+00:00"
+      "retry_after": "2026-10-29T15:35:16.232421+00:00"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -911,7 +891,7 @@
     "933f9e8bd1628be1ed88e4c40ec16e409a8a246df3e9af2afdf80b9e0adc08b0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898812+00:00"
+      "retry_after": "2026-10-29T15:35:16.232467+00:00"
     },
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
@@ -937,7 +917,12 @@
     "97da0563632327126ccf877e41151e8f3e83d5265c9db20a122762bbeaaf37b8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006358+00:00"
+      "retry_after": "2026-10-29T15:35:16.232432+00:00"
+    },
+    "99f6594b5a78b0ba9ed8601743192cfd5bff210d058908008ca694a909a2b4b2": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T15:35:16.232429+00:00"
     },
     "9a29dbc83801d05e9ace97dcdf2dd9d514ad8b2c397d3e01609d0286452db6b1": {
       "created_at": "2026-10-26T19:21:40.738711+00:00",
@@ -994,6 +979,11 @@
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
     },
+    "a1307697309e7e1bcba8f41ab993d08cf1cc5e994a0c39b7542cacb5396a61c8": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T15:35:16.232373+00:00"
+    },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
       "kind": "live-title",
@@ -1024,7 +1014,7 @@
     "a48e2acb08546485b9ed9e6870acf2ee5b1ba8ded087c753f955dfa5cbe7ea52": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006294+00:00"
+      "retry_after": "2026-10-29T15:35:16.232379+00:00"
     },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -1041,7 +1031,7 @@
     "a7971546618cd9126fe20db35276e968a2e1956ec527756389d786d6379623f0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006363+00:00"
+      "retry_after": "2026-10-29T15:35:16.232437+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1053,7 +1043,7 @@
     "aa34c20bded1a5bc65744eaa9ce1756acbdefaf30f82e39d90eeb047607eb1ce": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898819+00:00"
+      "retry_after": "2026-10-29T15:35:16.232412+00:00"
     },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
@@ -1074,7 +1064,7 @@
     "aee89c143597813049b33b4ad1f84b4d7cb076d2acfa1dbced62b67899db703f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898772+00:00"
+      "retry_after": "2026-10-29T15:35:16.232465+00:00"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -1143,7 +1133,7 @@
     "b93c4fe79519a8b56be7e97680ad17b4777f7805b399a12d4127d2e5f368f1f3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006373+00:00"
+      "retry_after": "2026-10-29T15:35:16.232444+00:00"
     },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
       "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
@@ -1203,7 +1193,7 @@
     "be77efdf78ca04ef1c2e79a6a1172a1c4bfbb4e2594d253920005b6631d669b3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006343+00:00"
+      "retry_after": "2026-10-29T15:35:16.232402+00:00"
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -1295,7 +1285,7 @@
     "c68ad34acc6f4beb2dbf12eeb68fbc826f4af946d021146d6e8c81adac87bdea": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006375+00:00"
+      "retry_after": "2026-10-29T15:35:16.232449+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -1314,12 +1304,12 @@
     "caee0f0b9b14fb68062f8e3138644d1a4a95f9e40430e4372081aa981be3fbf8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006291+00:00"
+      "retry_after": "2026-10-29T15:35:16.232480+00:00"
     },
     "cd229307b90ff6fc9e06a2b30f8609d31083177c1f7320b14a3b10f20e3fd3ca": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006378+00:00"
+      "retry_after": "2026-10-29T15:35:16.232462+00:00"
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -1345,7 +1335,7 @@
     "d3cfcc9f5415bd354f978df7966bbf5cdc383dc1e9874d8bb278de42a41be851": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006320+00:00"
+      "retry_after": "2026-10-29T15:35:16.232393+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -1435,7 +1425,7 @@
     "dbc85870d2fc80b6b989dcd4fb51c4f824eccf65b6c560f38daac00c7ab5bbaa": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006346+00:00"
+      "retry_after": "2026-10-29T15:35:16.232407+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -1479,7 +1469,7 @@
     "e05fe5331ebe1a0bf480a897727e44904fa1dc2883d3e2ba15ef72627bf69686": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T09:25:48.898855+00:00"
+      "retry_after": "2026-10-29T15:35:16.232391+00:00"
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -1495,10 +1485,15 @@
       "result": "Men's soccer match between Cal Poly Mustangs and UC Riverside Highlanders scheduled for Oct 29 2026.",
       "title": "Cal Poly vs. UC Riverside"
     },
+    "e23c3f7a875d572201232e697f56ffbbff87cb70a30af3bc7eababb5f62b63c9": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-29T15:35:16.232426+00:00"
+    },
     "e2b224fe10bc82fa9562fb97dc8383c4852cab2f1bdc8610abd3816339458392": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006315+00:00"
+      "retry_after": "2026-10-29T15:35:16.232368+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -1519,7 +1514,7 @@
     "e5ab9002d11066ca497f333df296465153053b92360a0a9ab6e01684f3d2a1dd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006361+00:00"
+      "retry_after": "2026-10-29T15:35:16.232435+00:00"
     },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
@@ -1594,7 +1589,7 @@
     "f5c089a8184e998921bb8a0aeb3a94db32c9cd42b14abe897e48839718d3b564": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006304+00:00"
+      "retry_after": "2026-10-29T15:35:16.232459+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -1635,7 +1630,7 @@
     "feeda8915fe70306df74f6203540fadee42a6800afc30c39cf8c7f25613a453b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006223+00:00"
+      "retry_after": "2026-10-29T15:35:16.232345+00:00"
     },
     "ff9e77de7f38533811f7e5c5d5dc832f69307eb0809db71b6feb9fbe49d7dcbe": {
       "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
@@ -1647,7 +1642,7 @@
     "ffbb833cd2592b381badebd08f4db40cf14b4a469ad07fcce1ee97a1b7b18e4f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T12:23:30.006326+00:00"
+      "retry_after": "2026-10-29T15:35:16.232396+00:00"
     }
   },
   "version": 1
