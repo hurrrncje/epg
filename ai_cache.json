@@ -10,7 +10,7 @@
     "044b1dab53cd9e8879576dbdc61eaac6fda334635490b40728dacadac52a4b1d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693556+00:00"
+      "retry_after": "2026-10-30T06:20:28.305970+00:00"
     },
     "062f84ed4a02ff8e8ea909ccf8bc44840b748f2ad9eba1da11bd91f2b6b418ad": {
       "failed": true,
@@ -20,7 +20,7 @@
     "079c01d0545b25b894100bbf33892439020b5f7e328fac34bf6e159d372cb3e2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693610+00:00"
+      "retry_after": "2026-10-30T06:20:28.306044+00:00"
     },
     "07cd07534fda95bb1f32c174127a8c90fc5141d3d1472bac7924f3dc2bdfbaa7": {
       "failed": true,
@@ -45,7 +45,7 @@
     "0b063ea846431db221f0af66d477041255821e53ed2514113ed269630a5f84ec": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693149+00:00"
+      "retry_after": "2026-10-30T06:20:28.305799+00:00"
     },
     "0b35a70595b5a0f42a9f2115270432066d8606448429f8731e3640ccc37f4b59": {
       "context": "Paramount+ event scheduled 28/10/2026 13:00 GMT",
@@ -100,7 +100,7 @@
     "0ee112e521e1556418ddaf031c4ad90f4e486006a669b2ca21753aab7161af88": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693442+00:00"
+      "retry_after": "2026-10-30T06:20:28.305878+00:00"
     },
     "0f4e198240e9e65dd1b3cde68027ce0b3c2b243676d2d627e665696df010ce6f": {
       "failed": true,
@@ -120,12 +120,12 @@
     "105431c637823702a58c90a4fb02ec5325fe8c5a331195d40e868776c4bdddd4": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "10973ce35bbd2391776a9257598966a00d7884d31bf7a23ca59eef448db0d2bd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693197+00:00"
+      "retry_after": "2026-10-30T06:20:28.305849+00:00"
     },
     "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
       "context": "EPLFulham.uk; Next Game: Fulham vs Crystal Palace on 28/10/2026 at 19:45 GMT",
@@ -152,7 +152,7 @@
     "1401ffa806218d6fb5fff1421afcb27a65caff9cd6c62d3734104b0ca715341b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693553+00:00"
+      "retry_after": "2026-10-30T06:20:28.306025+00:00"
     },
     "14cb3c2a2495c51870bc90c6e88633410d0cf77df3fdeaa826e4ac549d57fbed": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -180,10 +180,20 @@
       "kind": "live-title",
       "retry_after": "2026-10-30T03:23:43.353276+00:00"
     },
+    "17bca747cc5c8dba7a2b2fab72f7f44027b70bc58005e94f57c8e0d3c2aa9bab": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-30T06:20:28.305961+00:00"
+    },
+    "18695fa662e00af6f35dfb6b0b6f52976f8c4d6edf07a2757c7d491dcdf2805e": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-30T06:20:28.306000+00:00"
+    },
     "1896b20cce487b6acc0cc31c8cfaf4cffc1555107e167e77acfbb50f9a22b516": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693535+00:00"
+      "retry_after": "2026-10-30T06:20:28.305955+00:00"
     },
     "19ed3642c2ee15ee57a1e3e2ea3c498d5ee393eb2398940b47eee8da2f361943": {
       "failed": true,
@@ -212,7 +222,7 @@
     "1bbc45c80581d9f540aac033ebf547ee69f9d0abe13b58b7468f3036fd2f0bb6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693456+00:00"
+      "retry_after": "2026-10-30T06:20:28.305896+00:00"
     },
     "1beb1477dfee077e5156e375e2f369e5e87079da7fa434c4ef04ba20f51e0b20": {
       "failed": true,
@@ -291,7 +301,7 @@
     "2294902d6ccb35067a50ce03d85ada2e40c3001ccea91e00f390bc89150b8a1a": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "22b2b3e8e917209262b0b8b6e577d1b57f6ca35dd415365cb078dd542aaba2d6": {
       "created_at": "2026-10-26T19:21:40.738728+00:00",
@@ -312,7 +322,7 @@
     "23f8aaafc181e4f2116cc3316930a3b67fd15ccf8a7d7bbfcc3ad6acedebc12d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693608+00:00"
+      "retry_after": "2026-10-30T06:20:28.306041+00:00"
     },
     "2400b7fbc910b4a5a7395e07090cfb253f4ba646f284b3e393a7391fc4a67d17": {
       "failed": true,
@@ -332,7 +342,7 @@
     "269387fdbc9575bf1315109e70e17a0e7be06b88c5bd0f25b135b97ad924ad3a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693462+00:00"
+      "retry_after": "2026-10-30T06:20:28.305905+00:00"
     },
     "26a7feed44d29891614573f7a62456cc9d01f3d49fdb4244a1dce3903a8fee19": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -377,7 +387,7 @@
     "289ce2917b8a82ce466a2dab8a8873b9fe461df87009a4a4d0868bd0381d0cd2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693626+00:00"
+      "retry_after": "2026-10-30T06:20:28.306013+00:00"
     },
     "28a114fd4329a04497d496cb073c7ea7baa9d95c70ff27b9a195cfb530fb235e": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -425,7 +435,7 @@
     "2b62c643f9ce4e9138d0b6976c0be3f10961239f5a6c117ff92c4e778060258b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693482+00:00"
+      "retry_after": "2026-10-30T06:20:28.305932+00:00"
     },
     "2b964365640da98a7d726c7802664095318ae6094100cdecb81ff70b9c7c4dca": {
       "created_at": "2026-10-26T19:21:40.738720+00:00",
@@ -500,12 +510,12 @@
     "2f562230c4a8eea3c82e2ab05dd76f0cc8eb5c6d813238a6d954863303e6b78e": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "301695464a0ab24f7d4ece7bca8f556654c109f151957c670da8ed71a94cd7ec": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693192+00:00"
+      "retry_after": "2026-10-30T06:20:28.305842+00:00"
     },
     "30208647423b19b342db57c5b831e5d67489cf9427fe02fab6d53c5434cd4389": {
       "failed": true,
@@ -522,7 +532,7 @@
     "319bab3a1070fb46390850c9693ef0e82352e3a06f59a1df2eaf505b05bfe30f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693546+00:00"
+      "retry_after": "2026-10-30T06:20:28.305963+00:00"
     },
     "32298760ad206668f33387967c3e337f4c5e7c0e217225977e702e5423e8bd81": {
       "failed": true,
@@ -539,12 +549,12 @@
     "32cd47a90580f068147f5d82afb55ea204026d76994e01969e99e56749daa5fd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693471+00:00"
+      "retry_after": "2026-10-30T06:20:28.305916+00:00"
     },
     "32d094c39996120e341296d7289f54112becd3ac8920051e2c334d2f7ec95a3c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693630+00:00"
+      "retry_after": "2026-10-30T06:20:28.305979+00:00"
     },
     "333dbea7839f106931e37490e6312741e1abff296ac043ab614ef1c8aadbbdc2": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -599,7 +609,7 @@
     "365ade1dbf0539b81724f498dcf3e927582d168eb1f7ddfd0548462e404bcc72": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693449+00:00"
+      "retry_after": "2026-10-30T06:20:28.305888+00:00"
     },
     "36940e5fd31f7b4b1b2c88201545948ffe7d440cb17bd19f167f139effe1b8c6": {
       "failed": true,
@@ -621,7 +631,7 @@
     "380eca5e864ae09bbe1578fac10eba9418cb7e3342a333c878aee3493d19a127": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693575+00:00"
+      "retry_after": "2026-10-30T06:20:28.306047+00:00"
     },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -640,7 +650,7 @@
     "3943684d21c174c54bb2e79b52ea0db67adfd1c6a85b902f797ab148332f2186": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693560+00:00"
+      "retry_after": "2026-10-30T06:20:28.305976+00:00"
     },
     "39680f4d1f2c4ec9c61c94e0b9b22dab7d607fb4024895cc665f42bcf40ea068": {
       "created_at": "2026-10-26T19:21:40.738753+00:00",
@@ -659,12 +669,12 @@
     "3ac8f577cac6499e91202caf5574bb1a339957530778d9a356ba904437dc8897": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "3c1ed41e731aebf03fcd3311807ddda53b5901f55904583a857a3c8c96c5947d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693544+00:00"
+      "retry_after": "2026-10-30T06:20:28.306016+00:00"
     },
     "3cd4821864ee3a4952547adcf8dcc01bca9d39a48da4fde5c8a68746f3e6253e": {
       "failed": true,
@@ -686,7 +696,7 @@
     "3d45111f4a5d56ae3e69c2afda8613bb3a833a6fc330a4301fd298ce014303dd": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "3e3a27752baeb55a19c7caa7de493b0880c0fb41431e3272b2d889b5d162d2a4": {
       "failed": true,
@@ -716,7 +726,7 @@
     "40186dd5730691f6726a7e7c39064e3764cefd1bb9b8aac022b97a1835abab7e": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693434+00:00"
+      "retry_after": "2026-10-30T06:20:28.305866+00:00"
     },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -733,7 +743,7 @@
     "422e9d73ad0e1ecb5f6a73afcf1cd2239353e4f5391064449ac95b0717bd78a6": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T21:37:07.507283+00:00"
+      "retry_after": "2026-10-30T06:20:28.305994+00:00"
     },
     "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
@@ -840,7 +850,7 @@
     "4a193342985cd68e397bdcde8bc4296db08d57243012d167ac2c6ffe9441b303": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693436+00:00"
+      "retry_after": "2026-10-30T06:20:28.305869+00:00"
     },
     "4a5d8645083f8f2264faf9e7f90de8787a5882a6b2781d27175a0a22d32ce8a7": {
       "context": "Paramount+ event scheduled 28/10/2026 16:00 GMT",
@@ -852,7 +862,7 @@
     "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693567+00:00"
+      "retry_after": "2026-10-30T06:20:28.306034+00:00"
     },
     "4b3a74c0a4ae71573bf923189a52878ce29fa92327c4456b63181627180aa4c6": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -893,17 +903,17 @@
     "4f9dccff42e3ffac82b4f746c0fee777583b3d2dbe93d6becf0b069e3d3fd93c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693186+00:00"
+      "retry_after": "2026-10-30T06:20:28.305832+00:00"
     },
     "512200798f0525f3d919f627ef1fe9a8a54bd084f3ce38ec7351fce90f0b6903": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693445+00:00"
+      "retry_after": "2026-10-30T06:20:28.305881+00:00"
     },
     "51420763992e86834b6483bf9a6c413a477f54c87274dae4439f09087eb5939d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693529+00:00"
+      "retry_after": "2026-10-30T06:20:28.305946+00:00"
     },
     "519b4feb8dcbe8c7bba8067a0402beaddc2a3904a8038085a06840cd40e25a8c": {
       "failed": true,
@@ -923,12 +933,12 @@
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693582+00:00"
+      "retry_after": "2026-10-30T06:20:28.305997+00:00"
     },
     "5267399256fbef1b60ca7c8f7010b17db3d8a5f6b2834aa0cf55ae9e28fe122d": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693612+00:00"
+      "retry_after": "2026-10-30T06:20:28.305988+00:00"
     },
     "54ac70dc09da9061732f9a2cc972a6eb3f0a4e11cabdf235dcd156fd96a3f68f": {
       "failed": true,
@@ -1057,7 +1067,7 @@
     "5f856659c44f13027b05ed15d6461ca247e76377692107352175863f2c33e180": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693239+00:00"
+      "retry_after": "2026-10-30T06:20:28.305860+00:00"
     },
     "6026849ff76b2ae2cdbc0a50787854cb26f659fca0cc4ffb79d2ee90821f431a": {
       "failed": true,
@@ -1067,7 +1077,7 @@
     "6103d09483d6df46b4d94e1bc2c4daf3290845b2f8f9f383147a81d0f2c218a8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693467+00:00"
+      "retry_after": "2026-10-30T06:20:28.305910+00:00"
     },
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "created_at": "2026-10-26T12:30:58.030774+00:00",
@@ -1121,7 +1131,7 @@
     "646190d13bdad0c37273355b2e125af6f4504806fd59e928b533be0d97041f85": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693454+00:00"
+      "retry_after": "2026-10-30T06:20:28.305893+00:00"
     },
     "64a9875afc4fca3423bb0cfd1f866db152703b30ad40953a0909ad7d5be03f3c": {
       "failed": true,
@@ -1160,7 +1170,7 @@
     "6918548dd0847ad1b49d30559f9dd4e8ffbb9127e95dda428eb1631ab919a010": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693620+00:00"
+      "retry_after": "2026-10-30T06:20:28.306008+00:00"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -1184,7 +1194,7 @@
     "6e656feb33b7315cc5ebd8798694ff6ba9aae59c5bc4d61add8de80d38185347": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -1205,7 +1215,7 @@
     "6ef78f9c255deb5020de65560c43c2f10a6eac190a447e1f4c97e1e8216d2e85": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693551+00:00"
+      "retry_after": "2026-10-30T06:20:28.306022+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -1263,7 +1273,7 @@
     "770155bcafef20d43c0ba9a0f98b0ff68a614cdf5178b313730d50c811e0e5ad": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693597+00:00"
+      "retry_after": "2026-10-30T06:20:28.306019+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -1315,7 +1325,7 @@
     "7c4dc3f03f81776f505a8fba0df6286114e4df4037eb892ac9f6c79db722034f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693542+00:00"
+      "retry_after": "2026-10-30T06:20:28.306060+00:00"
     },
     "7d3c197cb56ec431e963c4cb4d09ecbf59e3eb3c3af8383979961c5325674ea1": {
       "failed": true,
@@ -1407,7 +1417,7 @@
     "83831c85cf063498a0482ea934159ac7718b3c9b55d8f9c2aafd287ab233ded1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693593+00:00"
+      "retry_after": "2026-10-30T06:20:28.306011+00:00"
     },
     "8460b456d3626a5f384a57aa20782244a026c5e287ee0d6f29af26ab824c5999": {
       "created_at": "2026-10-26T19:21:40.738768+00:00",
@@ -1421,7 +1431,7 @@
     "85dc351df050efd60394c0f9927d723adb3c473b4e2a990885290d34deac0468": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693485+00:00"
+      "retry_after": "2026-10-30T06:20:28.305935+00:00"
     },
     "860f3190b53bd49683aad58e81b75c6df6c5896af42489fa66ed15651084f69b": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -1443,17 +1453,17 @@
     "8649cca9b8a8ee8d77bd6f6395b01eace91a951f4f3b9e120c7986bc958b5d03": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693175+00:00"
+      "retry_after": "2026-10-30T06:20:28.305816+00:00"
     },
     "866cc1484a91b0beb976a571b8fd5a712f579888a4d12245241408ba8a2ce11c": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:25:43.642761+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "86ddc6cb7337650224bd92876f97cc8c330be56730745b714c928c52083f48b4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693537+00:00"
+      "retry_after": "2026-10-30T06:20:28.305958+00:00"
     },
     "870a62671f2745c7d3d9a08cb6a5c86cec3bae2987628165f78006be85cd57c6": {
       "failed": true,
@@ -1468,7 +1478,7 @@
     "87c0c6d4e150e42cf122be8abc397728334bc4322b3f299531678eafbfc8fa13": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693524+00:00"
+      "retry_after": "2026-10-30T06:20:28.305940+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1508,7 +1518,7 @@
     "8bb319cfa3d8f3dfebc7503ea91cd4384883e9ee4a27963df490cc4d851499bf": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693452+00:00"
+      "retry_after": "2026-10-30T06:20:28.305890+00:00"
     },
     "8c95fcb9a73dea2bf6d4cdf1fce720cc43997dd2e4202ad1e49b97f0e85f3390": {
       "created_at": "2026-10-26T12:30:58.030799+00:00",
@@ -1532,7 +1542,7 @@
     "8d82d9ea6f6cb8241e8c04e8ba61858397bf101b637dd9f6fc98c6a2dba86706": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "8f52ea957233698864d8b35aabbe6017296b845e39af60ee8799e9cb4094ab28": {
       "context": "DAZN UK event scheduled 28/10/2026 01:00 GMT",
@@ -1548,6 +1558,11 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
     },
+    "90d0392715c96bc92d5dba3b2a41347c4fc53db3c11942ca110889b41a8e6f06": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-30T06:20:28.306036+00:00"
+    },
     "91b75bdb0ffecba201819c4e2bd5a6d62b73d35c7411f4be5d14806530899976": {
       "failed": true,
       "kind": "event-description",
@@ -1561,7 +1576,7 @@
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693616+00:00"
+      "retry_after": "2026-10-30T06:20:28.306054+00:00"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -1575,22 +1590,22 @@
     "95e16adf50edaa57befc55a0cf190cc2cbefe1f2744131a6995b5faf330bd035": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693431+00:00"
+      "retry_after": "2026-10-30T06:20:28.305863+00:00"
     },
     "96c4a42f6c50ec96d6ca46276417b9015ee00849a1d4b99f808cca59040e81d4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693234+00:00"
+      "retry_after": "2026-10-30T06:20:28.305853+00:00"
     },
     "9703e678874b6757058735156f36de245daf2bdcece45b1481116b51ffae99d7": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693480+00:00"
+      "retry_after": "2026-10-30T06:20:28.305928+00:00"
     },
     "97405c6d7f3c366a48f1183847ef65e0bd2c0e5d63534f28bf01c435c9b7ad9b": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -1612,7 +1627,7 @@
     "97da0563632327126ccf877e41151e8f3e83d5265c9db20a122762bbeaaf37b8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693604+00:00"
+      "retry_after": "2026-10-30T06:20:28.306028+00:00"
     },
     "986abb9bbe52d0db34385f9911b8f82333ff1c113fb2de8b2b5fd1ee793438b7": {
       "failed": true,
@@ -1632,7 +1647,7 @@
     "99f6594b5a78b0ba9ed8601743192cfd5bff210d058908008ca694a909a2b4b2": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693558+00:00"
+      "retry_after": "2026-10-30T06:20:28.305974+00:00"
     },
     "99fa7bf03f253cd2d2270dbb8ed0bb171a0a545a820d9abccf923771745cf86d": {
       "failed": true,
@@ -1696,7 +1711,7 @@
     "9e69093b28aff340c4e5d615f09ede41a4c6bc361f3a65f2ecaab74f8d841859": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693183+00:00"
+      "retry_after": "2026-10-30T06:20:28.305829+00:00"
     },
     "9e6daa7c5ce8b398f9124bbfa359c55faf4a69fcb95038442766acf09ff6b164": {
       "created_at": "2026-10-26T19:21:40.738745+00:00",
@@ -1722,17 +1737,12 @@
     "a0788d119bc901a4e538ed90700e9e67723bcf6685b3cc4bdb5fdaa3a113b14d": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:25:43.642761+00:00"
-    },
-    "a1307697309e7e1bcba8f41ab993d08cf1cc5e994a0c39b7542cacb5396a61c8": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T21:37:07.507239+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "a1937280a4dfcedbf0071c658a8cff7d7b92d0c65ee5a882fedeeff9bc961c63": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693533+00:00"
+      "retry_after": "2026-10-30T06:20:28.305952+00:00"
     },
     "a1c05c552ae44a7edb5851393e879c1e611522d5936296218603ac58a56ae9d0": {
       "failed": true,
@@ -1779,7 +1789,7 @@
     "a334b3c807c7ae45036a8cf25d7d5474e6fe58a401b2e91cc3f390236ac1f40c": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:25:43.642761+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "a47e3f54e93d2ee20e288f5fa075c4d57cb28fef3c47b9e359e4104ba1589be2": {
       "failed": true,
@@ -1789,7 +1799,7 @@
     "a48e2acb08546485b9ed9e6870acf2ee5b1ba8ded087c753f955dfa5cbe7ea52": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693632+00:00"
+      "retry_after": "2026-10-30T06:20:28.305985+00:00"
     },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -1811,7 +1821,7 @@
     "a66e458b78e35cf4bde6cf25626bbaf4e94b66c359ffce8951b3717309f154c0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693473+00:00"
+      "retry_after": "2026-10-30T06:20:28.305919+00:00"
     },
     "a673f21406323de79f981ad40d6a50c8929571f91ccf66b327e0121b42307707": {
       "failed": true,
@@ -1826,12 +1836,12 @@
     "a7971546618cd9126fe20db35276e968a2e1956ec527756389d786d6379623f0": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693565+00:00"
+      "retry_after": "2026-10-30T06:20:28.305982+00:00"
     },
     "a891d61c608ac44bc3f9b054bfc7a0e99a4c2230ba8a760277ee1b70ddcdb7bf": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693440+00:00"
+      "retry_after": "2026-10-30T06:20:28.305875+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1853,7 +1863,7 @@
     "a9e4798daf332664edaa90b83332b9373f9b51a82fe8b7d62028d786ba704030": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693460+00:00"
+      "retry_after": "2026-10-30T06:20:28.305902+00:00"
     },
     "a9f146818c5f94571f8813baa7756bcdae15454d1973202c80efe179b5296bbb": {
       "failed": true,
@@ -1863,7 +1873,7 @@
     "aa34c20bded1a5bc65744eaa9ce1756acbdefaf30f82e39d90eeb047607eb1ce": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693548+00:00"
+      "retry_after": "2026-10-30T06:20:28.305966+00:00"
     },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
@@ -1904,7 +1914,7 @@
     "ac7d833e3c72ce590ef2506282b212c4cdf01c804110d1db318c1b1a8a9d4444": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693530+00:00"
+      "retry_after": "2026-10-30T06:20:28.305949+00:00"
     },
     "acc0a75f77d2ac558340944d50e438fcc493bcc4516bc50700d5cd28304b7a11": {
       "failed": true,
@@ -1919,7 +1929,7 @@
     "aee89c143597813049b33b4ad1f84b4d7cb076d2acfa1dbced62b67899db703f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693618+00:00"
+      "retry_after": "2026-10-30T06:20:28.306057+00:00"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -1955,17 +1965,17 @@
     "b170cd2f8aecc9e842c1fd8d31227c8d59df820ee3ae3d325e1a6047e7c63779": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693606+00:00"
+      "retry_after": "2026-10-30T06:20:28.306039+00:00"
     },
     "b2ded6f3e035dabb99ce2d57ff73d15e5bb9f4b25641dadc6f9dc9410aa3378e": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693237+00:00"
+      "retry_after": "2026-10-30T06:20:28.305856+00:00"
     },
     "b3e4458a1affe129c0309076a654763b70bbc23d86c41b792d1c354873074b63": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1977,7 +1987,7 @@
     "b610a135b002cc8f364aab6fae9fdf81dac5e028c8f4687465f66c4a1aef288a": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693458+00:00"
+      "retry_after": "2026-10-30T06:20:28.305899+00:00"
     },
     "b76cffc7e4281f6dab116a83dfb5d9c0ed2597238a4909b622441183d58b7398": {
       "failed": true,
@@ -1999,7 +2009,7 @@
     "b827da0d079a9a03eefd87185ca85f41585c10d7f54675fa3dd52ca2084cffc1": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693520+00:00"
+      "retry_after": "2026-10-30T06:20:28.305937+00:00"
     },
     "b859e325fa416e1341487bfd803a4850cab8f36260a3f86077ad78816156c050": {
       "context": "EFLStockportCounty.uk; Next Game: Oxford United vs Stockport County on 27/10/2026 at 19:45 GMT",
@@ -2068,7 +2078,7 @@
     "bc6694f08d16f783cd8e476e4307f0d914cc93f43f1f043a185396af168e7c66": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693464+00:00"
+      "retry_after": "2026-10-30T06:20:28.305907+00:00"
     },
     "bc76d9ca59ded8007ab9bf5bcc070ec35f0e69653090b7a6c324eed4d5afa934": {
       "created_at": "2026-10-26T19:21:40.738708+00:00",
@@ -2170,7 +2180,7 @@
     "c1347b68f385648e94cce27b58e84e54fb092df6fe1b80719367b271492af0c7": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693447+00:00"
+      "retry_after": "2026-10-30T06:20:28.305884+00:00"
     },
     "c1ca1d2c85837cdea25cf75c1ab5ae0587c410af0804e02d1f8252d079f991be": {
       "failed": true,
@@ -2202,11 +2212,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-30T03:25:44.693418+00:00"
-    },
-    "c2b486e6d3f71a1ba1fd2cc5960a2f2003a36d92368dacd48c331fedfcb21cbe": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T21:37:07.507264+00:00"
     },
     "c2f21bd0d72058bb58707cdc8e928d5ca803d580897ea1c9a8bee1f42f0d75ac": {
       "created_at": "2026-10-26T12:30:58.030827+00:00",
@@ -2265,7 +2270,7 @@
     "c68ad34acc6f4beb2dbf12eeb68fbc826f4af946d021146d6e8c81adac87bdea": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693577+00:00"
+      "retry_after": "2026-10-30T06:20:28.305992+00:00"
     },
     "c71cc8af3f90912c0a4db9f6265bd1abf063fe991081ff90d925ef2d6fb96b7f": {
       "failed": true,
@@ -2299,7 +2304,7 @@
     "c8a7657e35808b0ea087b651f1317b1520a1ba056d2e9f564130f5d5b5f512bc": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693194+00:00"
+      "retry_after": "2026-10-30T06:20:28.305846+00:00"
     },
     "c98e73be32405ee240f91a4337e31ab10afd9a85b138c2a97dbb468e9b0abdeb": {
       "failed": true,
@@ -2329,7 +2334,7 @@
     "cd229307b90ff6fc9e06a2b30f8609d31083177c1f7320b14a3b10f20e3fd3ca": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693586+00:00"
+      "retry_after": "2026-10-30T06:20:28.306005+00:00"
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -2346,12 +2351,12 @@
     "d0859e891e593f8d85c29b4ffbc8171681d7954e42d998102359ea3d79dc4ad3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693179+00:00"
+      "retry_after": "2026-10-30T06:20:28.305822+00:00"
     },
     "d0abeafe82b0009f26bca5741613f9fdcfcee10ed3ea85e4f0d09e24deb570c3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693181+00:00"
+      "retry_after": "2026-10-30T06:20:28.305826+00:00"
     },
     "d0acd21d65536387fe7d5c397334de794adeaf9fcbaef7ad961eb8293ec6ec74": {
       "failed": true,
@@ -2381,11 +2386,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-30T03:25:44.693138+00:00"
-    },
-    "d3cfcc9f5415bd354f978df7966bbf5cdc383dc1e9874d8bb278de42a41be851": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-29T21:37:07.507230+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -2505,7 +2505,7 @@
     "dbdc689df3de8d1f06bb03ae99c70a9359ae8749b2988f2e07d59d710b82183b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693190+00:00"
+      "retry_after": "2026-10-30T06:20:28.305839+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -2564,7 +2564,7 @@
     "dfa81a9947cb15cd1ce6f78910b8e0483fbeab876c009b0becb52e6ca5b6431f": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693527+00:00"
+      "retry_after": "2026-10-30T06:20:28.305943+00:00"
     },
     "e043740711cbffdedf47b184f15f2f4aace40f25a6f6f44e7592eb76e6ae318a": {
       "failed": true,
@@ -2579,7 +2579,7 @@
     "e05fe5331ebe1a0bf480a897727e44904fa1dc2883d3e2ba15ef72627bf69686": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693628+00:00"
+      "retry_after": "2026-10-30T06:20:28.306063+00:00"
     },
     "e085b423ef6901e748923acd811f9886094af36a40cd0d863161b692fe0ac9ed": {
       "failed": true,
@@ -2603,7 +2603,7 @@
     "e15049a6155f9758f5f3d1a096b40c7c564e7697afa5b65cc3c5b87042c06e18": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693478+00:00"
+      "retry_after": "2026-10-30T06:20:28.305924+00:00"
     },
     "e2ac18c6e30b49f835deb5dd47c012074ea01ee8dcb03571a61adcf29ded9bef": {
       "failed": true,
@@ -2624,6 +2624,11 @@
         "raw": "Pitch 1B | Day 3: Afternoon Session"
       }
     },
+    "e39fe603a4e3330fe625daea5d4a36fe0fb1fd71417d84c7a8699255e70c0c3f": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-30T06:20:28.306052+00:00"
+    },
     "e3f992e4c1825fda74a60376d3cd433d0374f4e5e6734dd523f5ecd509940de2": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
       "created_at": "2026-10-29T06:23:30.006215+00:00",
@@ -2634,12 +2639,12 @@
     "e53a16d9a3c515a10cc8dc416e68a49e54bf860d02015b09e2c8d179c4ee2372": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693188+00:00"
+      "retry_after": "2026-10-30T06:20:28.305835+00:00"
     },
     "e5ab9002d11066ca497f333df296465153053b92360a0a9ab6e01684f3d2a1dd": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693562+00:00"
+      "retry_after": "2026-10-30T06:20:28.306031+00:00"
     },
     "e62dea12c4ea715a0cdf79e04e743049de0c24247b0bda397bd754dfddc36746": {
       "failed": true,
@@ -2690,7 +2695,7 @@
     "eee4ee83094c459400fa51dc447eec67e8807e2982bf4b6090aee4c327dae2c4": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693475+00:00"
+      "retry_after": "2026-10-30T06:20:28.305922+00:00"
     },
     "eeee59829cb2e4883f1f40c3ff481307eeeffb54a8d75c7ed616f7ed6d15c2e0": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -2723,7 +2728,7 @@
     "eff31eab93ef8812e3b7a04e027b7640ac141484e2b20ab5f28ecf127804d061": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693438+00:00"
+      "retry_after": "2026-10-30T06:20:28.305872+00:00"
     },
     "f0b6ac5064ae88e1a8f427e548791c4c4e1cb115836becba2cfc902f6bee510e": {
       "created_at": "2026-10-28T00:12:37.428446+00:00",
@@ -2764,7 +2769,7 @@
     "f49d4e4cae74c61adf25e909fa5c1e01f14f3b52523d4a9070bb6f6ebf3444c0": {
       "failed": true,
       "kind": "live-title",
-      "retry_after": "2026-10-30T03:23:43.353276+00:00"
+      "retry_after": "2026-10-30T06:18:27.771334+00:00"
     },
     "f4df63223d1935ad9ef13852b6dc501700f7bc4c498f2222ae24bb5a21ff4067": {
       "failed": true,
@@ -2774,7 +2779,7 @@
     "f5c089a8184e998921bb8a0aeb3a94db32c9cd42b14abe897e48839718d3b564": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T21:37:07.507286+00:00"
+      "retry_after": "2026-10-30T06:20:28.306002+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -2808,7 +2813,7 @@
     "f9a7ca3186aa2f4f7cf53d4743d84d6edc8a8faa439d475a31c2063e6dee1a2c": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-29T21:37:07.507275+00:00"
+      "retry_after": "2026-10-30T06:20:28.306050+00:00"
     },
     "fbd092b5dab5032f097f9ab2c5067a9b0af9200331ca728cc1a126a35fa89fe1": {
       "failed": true,
@@ -2855,7 +2860,7 @@
     "feb2c0a3a98c3e4eb86fc68963c24e18531588b8346af6c0ca117261402d42d8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-30T03:25:44.693469+00:00"
+      "retry_after": "2026-10-30T06:20:28.305913+00:00"
     },
     "fee96ac6631566007c88a26522b3e83f4e9bedda53a02f076f966b55ffee7694": {
       "failed": true,
