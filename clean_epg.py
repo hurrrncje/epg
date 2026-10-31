@@ -1427,6 +1427,34 @@ def _download_epg_root() -> ET.Element:
     raise RuntimeError("No EPG download attempts configured")
 
 
+def _normalize_paramount_branding(
+    root: ET.Element, channel_ids: set[str]
+) -> None:
+    """Use the readable CBS Sports HQ name on numbered Paramount+ channels."""
+    pattern = re.compile("cbssportshq", re.IGNORECASE)
+    paramount_ids = set(channel_ids)
+    for channel in root.iter("channel"):
+        if any(
+            re.match(
+                r"^Paramount\+\s*(?:0?[1-9]|[1-9]\d|100)(?=\s*:|\s*$)",
+                (element.text or "").strip(),
+                re.IGNORECASE,
+            )
+            for element in channel.findall("display-name")
+        ):
+            paramount_ids.add(channel.get("id", ""))
+        if channel.get("id") in paramount_ids:
+            for element in channel.findall("display-name"):
+                if element.text:
+                    element.text = pattern.sub("CBS Sports HQ", element.text)
+    for programme in root.iter("programme"):
+        if programme.get("channel") in paramount_ids:
+            for tag in ("title", "sub-title", "desc"):
+                for element in programme.findall(tag):
+                    if element.text:
+                        element.text = pattern.sub("CBS Sports HQ", element.text)
+
+
 def process_epg() -> None:
     client: genai.Client | None = None
     provider_state = AIProviderState()
@@ -2452,6 +2480,8 @@ def process_epg() -> None:
             if generated_description not in existing:
                 desc_el.text = f"{existing}\n\n{generated_description}" if existing else generated_description
 
+    _normalize_paramount_branding(root, set(paramount_targets))
+
     tree = ET.ElementTree(root)
     with gzip.open(
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL
@@ -2463,4 +2493,5 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
