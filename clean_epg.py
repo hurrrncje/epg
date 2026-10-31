@@ -691,6 +691,12 @@ def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | Non
     return result
 
 
+def _clean_mls_programme_title(title: str) -> str:
+    """Remove pipe separators and their preceding numeric labels."""
+    title = re.sub(r"(?:\b\d+\s*)?\|", " ", title)
+    return re.sub(r"\s+", " ", title).strip()
+
+
 def _parse_mls_label(label: str, today: Any) -> dict[str, Any] | None:
     """Parse dynamic MLS fixture labels with Eastern kickoff times."""
     channel_match = MLS_CHANNEL_PATTERN.match(label.strip())
@@ -2481,6 +2487,21 @@ def process_epg() -> None:
                 desc_el.text = f"{existing}\n\n{generated_description}" if existing else generated_description
 
     _normalize_paramount_branding(root, set(paramount_targets))
+
+    # Apply after schedule generation so provider rows and Upcoming Match
+    # titles receive the same cleanup, including MLS labels we could not parse.
+    mls_channel_ids = {
+        ch_id for ch_id, names in display_names_by_id.items()
+        if any(re.match(r"^MLS\s*\d{1,2}(?=\D|$)", name, re.IGNORECASE) for name in names)
+    } | {
+        ch_id for ch_id, item in european_league_targets.items()
+        if item.get("league") == "MLS"
+    }
+    for programme in root.iter("programme"):
+        if programme.get("channel") in mls_channel_ids:
+            for title_element in programme.findall("title"):
+                if title_element.text:
+                    title_element.text = _clean_mls_programme_title(title_element.text)
 
     tree = ET.ElementTree(root)
     with gzip.open(
