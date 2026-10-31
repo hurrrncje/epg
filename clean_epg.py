@@ -1395,6 +1395,38 @@ def _cache_failure_is_active(entry: Any) -> bool:
     return datetime.now(UTC) < retry_after
 
 
+def _download_epg_root() -> ET.Element:
+    """Retry interrupted downloads and validate XML before changing any output."""
+    for attempt in range(MAX_RETRIES):
+        try:
+            print(f"Downloading EPG XML (attempt {attempt + 1}/{MAX_RETRIES})...", flush=True)
+            with requests.get(EPG_URL, timeout=REQUEST_TIMEOUT) as response:
+                response.raise_for_status()
+                # Parse bytes so XML encoding declarations remain authoritative.
+                root = ET.fromstring(response.content)
+            if root.tag != "tv":
+                raise ValueError("EPG source did not return an XMLTV document")
+            return root
+        except (requests.exceptions.RequestException, ET.ParseError) as exc:
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            # Authentication and other permanent client errors need intervention.
+            if status is not None and 400 <= status < 500 and status not in {408, 429}:
+                raise
+            if attempt + 1 == MAX_RETRIES:
+                raise RuntimeError(
+                    f"EPG download failed after {MAX_RETRIES} attempts; "
+                    "the published EPG and AI cache were not replaced."
+                ) from exc
+            delay = 2 ** (attempt + 1)
+            print(
+                f"EPG download interrupted or invalid ({type(exc).__name__}); "
+                f"retrying in {delay}s.",
+                flush=True,
+            )
+            time.sleep(delay)
+    raise RuntimeError("No EPG download attempts configured")
+
+
 def process_epg() -> None:
     client: genai.Client | None = None
     provider_state = AIProviderState()
@@ -1414,11 +1446,7 @@ def process_epg() -> None:
             client = genai.Client(api_key=api_key)
         return client
 
-    print("Downloading EPG XML...")
-    response = requests.get(EPG_URL, timeout=REQUEST_TIMEOUT)
-    response.raise_for_status()
-    # XMLTV documents may declare a non-UTF-8 encoding; parse the response bytes.
-    root = ET.fromstring(response.content)
+    root = _download_epg_root()
 
     print("Finding dynamic live-event and football channels...")
     targets: dict[str, dict[str, Any]] = {}
@@ -2435,3 +2463,4 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
