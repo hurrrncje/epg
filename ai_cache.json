@@ -22,11 +22,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795367+00:00"
     },
-    "00b9c573285da5dcb70d1c47e31bd78efca4741dba77aa8cce24cc1d966f1774": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412854+00:00"
-    },
     "00c8f547aa011b92a8760d03676507b16ecf4d501617bed2fcbbf65fc3c56007": {
       "failed": true,
       "kind": "event-description",
@@ -76,11 +71,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795163+00:00"
-    },
-    "02c64cb4f37dc7f1909a2db8019e738950b3ddeb07807c96a84f1902397d6387": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
     },
     "03011ad58de6cb08b18aeb3266f31d2e5351337a5f185dbc687be0d1c7de6b57": {
       "failed": true,
@@ -152,11 +142,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796274+00:00"
     },
-    "07222d31e9dacbabf84ace364759c87c0655137863b5cec53e5f595ba75a8241": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412919+00:00"
-    },
     "072438cc9d6028b7b0db95ea4d415f08b1c69d28dd74be97d1ad2897df94a976": {
       "failed": true,
       "kind": "event-description",
@@ -166,11 +151,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795800+00:00"
-    },
-    "07572cde36e1478b9a22d69e78c00a3f58680359812def4c3c2d733843a8cb30": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412825+00:00"
     },
     "077c2c05fa3576e3317b30700a28f4d0e8b11e41a80da1a173a91f870cb0cd57": {
       "failed": true,
@@ -201,16 +181,6 @@
       "failed": true,
       "kind": "live-title",
       "retry_after": "2026-10-31T21:18:35.853793+00:00"
-    },
-    "099ca6f2b70298e82aadc94d4e43af99bb05fc8f18634467c8b7ede260e2ec52": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412905+00:00"
-    },
-    "09c0fdda4c58990549c39593e917b2e27c9f0d4de77c03b11476fce2b9931732": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412837+00:00"
     },
     "0a7061844cf72b8721deef405f343e53b702f5ffbe0568d9870949506e8566d5": {
       "failed": true,
@@ -349,11 +319,6 @@
       "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
       "title": "Fulham vs Crystal Palace"
     },
-    "10c7dd3e9d39742b3d93a50b1b75f851ea7677e43394fb3b1a9f579ec6131985": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412953+00:00"
-    },
     "11c485088927f6d133d493e3ab7a3cc47b0cae9615d714c3d6d1d4137f837193": {
       "failed": true,
       "kind": "event-description",
@@ -368,6 +333,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795511+00:00"
+    },
+    "12ff9fcfdfe038a2db789f53125325b7dfcee61ea57aed465ba8a91f815a405f": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312246+00:00"
     },
     "13c97fdd6696bf837ff703ecad8acdf6bc530281981ef6b49b1564799b7c0dfe": {
       "failed": true,
@@ -538,16 +508,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796038+00:00"
     },
-    "1e4e3ca96e5de23412668a8f975c9f0d84096b750d00a39913c168b7e8e0742a": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
-    },
-    "1e850dd34960a6a1df9f3d292215dfc7129315d77bce499e6ee0cfac34d9ee9f": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412869+00:00"
-    },
     "1ef15f34e0795de5121fa3a0bdcbf4eb4f05694701274b94596b87f777d4552a": {
       "failed": true,
       "kind": "event-description",
@@ -608,6 +568,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796197+00:00"
     },
+    "20c766b60e872eb53bd1d28a80c25e16a67ded58c0459faf3b2eff0dfdc5dc08": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312236+00:00"
+    },
     "20cec03bcee8c329bd3c9e91985056068c70e246e621a5bcefc8e9639b8c85a0": {
       "failed": true,
       "kind": "event-description",
@@ -637,11 +602,6 @@
       "created_at": "2026-10-26T12:30:58.030791+00:00",
       "kind": "event-description",
       "result": "#15 Stanford vs. #23 North Carolina."
-    },
-    "2234687b55188cb368d6642824d645777126173c1b80c86af4b3c19e87971e24": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412945+00:00"
     },
     "22353a18120357bac6c152eeadb3c76334c7eebcf5f5db837ceda2cca36b2e7f": {
       "failed": true,
@@ -684,11 +644,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795899+00:00"
     },
-    "23c4501c69d610b55b23f01c9ba52afd92e16caf2a1014e6528f02f7caccc5a2": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.413023+00:00"
-    },
     "23d57b6686d373c856cf0d6c63adf11be62b751d6aec774cf7e63d3336bf4911": {
       "failed": true,
       "kind": "live-title",
@@ -729,11 +684,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796205+00:00"
     },
-    "25213b4f1106cbd2183f0542f5091f2f2e77b9f727fa288e06f65a5d90e35a22": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412947+00:00"
-    },
     "252d96f2a57a3c790bd36ceb464613e5519beb34f5b06d57c0e3be20f449e756": {
       "failed": true,
       "kind": "event-description",
@@ -744,10 +694,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795980+00:00"
     },
-    "257fa67cc1ab0548c1f7b1316a700b2903b5da84fc617d3db35a92a22ac4a2a9": {
+    "26085e98847cd5cfb143b9f0982b4a29da073d07a72294b4a73ae5b3c3326f8b": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412828+00:00"
+      "retry_after": "2026-10-31T22:22:16.312270+00:00"
     },
     "2609764fa93339de10277ca401d7865403f9e1990024b5457c878eb9ff1f4200": {
       "failed": true,
@@ -763,11 +713,6 @@
       "failed": true,
       "kind": "live-title",
       "retry_after": "2026-10-31T21:20:36.386581+00:00"
-    },
-    "26a6f2c43753dabfd29eb20f3f4c38a178e472a8c5ad72d3045b1017d12ecdf0": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412903+00:00"
     },
     "26a7feed44d29891614573f7a62456cc9d01f3d49fdb4244a1dce3903a8fee19": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -815,11 +760,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795884+00:00"
     },
-    "279b53f58cd09aab53f9b027b814260e2af8bf4560c5661a2ce21f4cf9bd210d": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
-    },
     "27e8fbcb99ecd602107ab73f60cdce1655fa5676e80c44eac50e10c3dff01c72": {
       "failed": true,
       "kind": "event-description",
@@ -839,11 +779,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795839+00:00"
-    },
-    "285c3571862e19297c4285927d14216ecf8e3f9e823abafc8770ffbf35cd19a8": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
     },
     "286692772625889ca796a16aac090075d7d451d0bb5349644f084a12e3913aa2": {
       "failed": true,
@@ -875,16 +810,6 @@
       "kind": "event-description",
       "result": "MLS match between Chicago Fire FC and Orlando City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "6 | Chicago Fire FC vs Orlando City (Spanish)"
-    },
-    "28a8d24e7b8c68a5be232836c6386ef15ab4e52dd7fde26cf10a88af556a087e": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412769+00:00"
-    },
-    "28b19d6867066179c39747f2307f41b89f34d73eea7b0d8caf81ef77c59c5a8b": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412908+00:00"
     },
     "2925adcf2cf4597aaea9f8de9605478b7b6ff99653dad9526a892cb4a9bc7652": {
       "failed": true,
@@ -987,10 +912,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796405+00:00"
     },
-    "2d8fd93f790ecb65e4163f9fb26b67fbc80d4bb7db25aef7648fed50ff330f71": {
+    "2d9ac842d3c30272f99124f0878ef30b337c13c4651c2b1847c5e0388f3b0194": {
       "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312268+00:00"
     },
     "2de83b275d40f7b827d3ac721d98b33a9e49c91bf2b677ed7890f97f01a25d4d": {
       "failed": true,
@@ -1006,6 +931,13 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795340+00:00"
+    },
+    "2e1c16dd18e2c76509a98a0d269730f58a635a13893222ea9f6ed556a4302a73": {
+      "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
+      "created_at": "2026-10-31T16:22:16.312208+00:00",
+      "kind": "event-description",
+      "result": "MLS regular‑season match: Charlotte FC vs Orlando City, Saturday 31 Oct 2026, kickoff 12:00 PM local (16:55 GMT)【1†L12-L13】",
+      "title": "| Charlotte FC vs Orlando City (English)"
     },
     "2e3971e83e6f41b4b972c88ea8d8fcdc8c6bb442dc4ceef27dc0cda86d760278": {
       "created_at": "2026-10-28T06:20:34.001586+00:00",
@@ -1127,11 +1059,6 @@
         "raw": "Wild @ Mammoth"
       }
     },
-    "33eab001a2c59d8cb3a8a9dc6a44c7fb6eb135b1b08e4c9977fbe26639c6a525": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412937+00:00"
-    },
     "33f911bf3d57cc16707f2c6ceb359ed501d0869175bac1e9c3c987f70ab6120d": {
       "failed": true,
       "kind": "event-description",
@@ -1151,11 +1078,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796321+00:00"
-    },
-    "345f9f1a1ba4618c2f4ceac916ccad9a1c68caa07e7a7ca24c74b5f4f7e527a5": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412819+00:00"
     },
     "352286935fd39feac03b7675838d8221be3b90945b012af145671b7380723284": {
       "failed": true,
@@ -1243,11 +1165,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T18:18:50.630453+00:00"
     },
-    "3827983dd08e7b3daf7c941cada464c35db299ec226ffc1ceec79aea984f92c6": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412782+00:00"
-    },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569495+00:00",
@@ -1316,6 +1233,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795432+00:00"
     },
+    "3a01b2d15d718d10aac86d3835352e8a0f1a077888daeab28337bec44f8946ac": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312265+00:00"
+    },
     "3a64bdcae0c9f4b152b04b6fcc6665a037e54da7a45e2dd542bb8c74ff6be657": {
       "failed": true,
       "kind": "event-description",
@@ -1371,11 +1293,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795554+00:00"
     },
-    "3c4f3c339dc044a1256d4dfbe40261352d98da84b62605b6e446b0f865f88aae": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412792+00:00"
-    },
     "3c9869e9091528ef0270b5700b55a7dac594c0f448cd7bc74ef6701530dbb15b": {
       "failed": true,
       "kind": "event-description",
@@ -1398,10 +1315,12 @@
       "result": "EFL League One fixture between Accrington Stanley and Northampton Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Accrington Stanley FC vs Northampton Town FC"
     },
-    "3de78811114ea16a2e4de3f6d0c5fcd2ab5c347a835c2aafc0237412980f9ab6": {
-      "failed": true,
+    "3df2c4a35a92413d7d492ab2faf55c6745258b3aecbbd665c3b8ddc6b783bc3f": {
+      "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
+      "created_at": "2026-10-31T16:22:16.312227+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412872+00:00"
+      "result": "Partido de la temporada regular de MLS: Charlotte FC contra Orlando City, sábado 31 oct 2026, inicio a las 12:00 p.m. local (16:55 GMT)【1†L12-L13】",
+      "title": "| Charlotte FC vs Orlando City (Spanish)"
     },
     "3e8074c93a713da720cc55cea82e5947ac2f551f9d4bfc39eaaf142e701f7d41": {
       "failed": true,
@@ -1531,22 +1450,12 @@
       "kind": "live-title",
       "retry_after": "2026-10-31T21:18:35.853793+00:00"
     },
-    "43335356c7d0a19c38f04b4a0b14d514a71dffb45d0b303b4d0da1b5c509816b": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412845+00:00"
-    },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
       "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006271+00:00",
       "kind": "event-description",
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
-    },
-    "4387c8bd260697bd962ed9b3940c51803763ad94b8115c46adbd9d24cbf49429": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412916+00:00"
     },
     "438dfc23ee2b3529cf65802afd610c02ca6077230e608b3e6c71d0ba4dbc8cea": {
       "failed": true,
@@ -1709,11 +1618,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796365+00:00"
     },
-    "4ad39edd3370b76e4cd91dc0f53527afbfd7faeecae6a1b21db84e49f523df1a": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412777+00:00"
-    },
     "4ae74bc87c8b85f13774de34557cff2f50282bddf55fcd5415c069d2007e9aaa": {
       "failed": true,
       "kind": "event-description",
@@ -1723,16 +1627,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795880+00:00"
-    },
-    "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412984+00:00"
-    },
-    "4b2de18d21c5384ab5c20fe60fbab16ffd08dc8185da899865cf631a9b7cb224": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412810+00:00"
     },
     "4b3a74c0a4ae71573bf923189a52878ce29fa92327c4456b63181627180aa4c6": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -1760,11 +1654,6 @@
       "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
-    "4d220161fc295671769c5089d1f1ccb9cc4b94b9364ac31a6430c495d9aa6d90": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412745+00:00"
-    },
     "4d997073878ebafc437ff078ac4276d1008f6ce676482d6b169964e4ff3a6836": {
       "failed": true,
       "kind": "event-description",
@@ -1780,10 +1669,12 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795774+00:00"
     },
-    "4e15ae2aea98984ce68916938345a4e75e6dc61f1b13604363dce10aaa489956": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
+    "4eef478580ecb325758b8dab4f8554ab37fe501915e36c97657df7b5fb1c4049": {
+      "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
+      "created_at": "2026-10-31T16:22:16.312222+00:00",
+      "kind": "event-description",
+      "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
+      "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
     "4f333cf453ae73c87cc78eb89afccfdf0d4fb4022da907ca4e53fa0d3bb2e394": {
       "failed": true,
@@ -1799,11 +1690,6 @@
       "failed": true,
       "kind": "live-title",
       "retry_after": "2026-10-31T21:20:36.131622+00:00"
-    },
-    "5036f2049d16abc99a8d7460f37308d172411ecac7c0efe3dc4b089c4ee874e2": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412789+00:00"
     },
     "51c6e191666591c660a210868b365010601adc804308dd08990679c83b7cfca3": {
       "failed": true,
@@ -1823,7 +1709,7 @@
     "52479ec862c0ad9a8ee00aa95a1b6eaa9f802ddffa0c7fd3d88baf7c5beb2f28": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.413033+00:00"
+      "retry_after": "2026-10-31T22:22:16.312276+00:00"
     },
     "5253b5f61cf1c710b7bea200f0dc0b1c23af8e35c5e8e5ab7ec01ae447f947b5": {
       "failed": true,
@@ -1909,11 +1795,6 @@
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
     },
-    "56c6175b497ab7f2600897e18b5c604b5f7566fc5429b9d2077d1bc7383561c5": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412987+00:00"
-    },
     "56c849908fe7c26eeda1e8a3112cbbaaff090ce8e92044f39006a048e5fa73f0": {
       "failed": true,
       "kind": "live-title",
@@ -1953,11 +1834,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795106+00:00"
     },
-    "5838f5f5d43c8d6806eec8b7a601d4399fbd0dbab55cf91cb8e7a3851845b8d4": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412798+00:00"
-    },
     "589bf2610d117b01750371f4157cdff1e5cc709f26ca14f7b44875347558cda0": {
       "failed": true,
       "kind": "event-description",
@@ -1979,11 +1855,6 @@
       "kind": "event-description",
       "result": "College football game Virginia Tech Hokies vs Clemson Tigers scheduled for Oct 29 2026.",
       "title": "Virginia Tech vs. Clemson"
-    },
-    "599f8df7c5c2b3b527e84fe104920f479b8949d4829c380fc5ea44858648f4dd": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412808+00:00"
     },
     "59b7c0fe5d7bb506d74348209731bdc09c370ba1438b18e3d723052662614350": {
       "failed": true,
@@ -2070,11 +1941,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795761+00:00"
     },
-    "5d6ccfa98ea06af6442410001f98dea3f7fc296ac05b8e9fd6cf76ff86a6d0a4": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412862+00:00"
-    },
     "5d9a2b0b69511c104a4e7e1efa5b38b0c8ca7c34749544af294ede2afe82c5b8": {
       "created_at": "2026-10-26T12:30:58.030780+00:00",
       "kind": "event-description",
@@ -2129,11 +1995,6 @@
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "7 | San Jose Earthquakes vs Colorado Rapids (English)"
     },
-    "5f3fa000186d31cd1340044c84f135bb7fae4b582a1ad0d474051e37ebec25d8": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412896+00:00"
-    },
     "5f55aee27405f560c5e85aadf7993855b88a5bd77ede1bf5f847bae24582fc4c": {
       "failed": true,
       "kind": "live-title",
@@ -2143,11 +2004,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795353+00:00"
-    },
-    "609e56460e8394206f9521e432b1229ad849cfdb57e01c49802cded2ac206c4d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412992+00:00"
     },
     "60a3c8a6a4b42c591f624d9c2210e015815cada3b4088831c8261003604fc6f5": {
       "failed": true,
@@ -2192,6 +2048,11 @@
       "kind": "event-description",
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "8 | Austin FC vs Real Salt Lake (Spanish)"
+    },
+    "624e2de2fa4a14d646b1b386452ffc69909d37f165a86dfd6e063af5c1b5ff84": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312284+00:00"
     },
     "633ac45cb21b0127e04e6df667a7725bd8e5da230990ca55c3a5478b7de772c2": {
       "failed": true,
@@ -2371,11 +2232,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795568+00:00"
     },
-    "6d9bd10cc59f3adaf24739ede5f8b6963e12c3b33f839c5d8085ea2b96e9dbab": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412950+00:00"
-    },
     "6e2c9625ba5aae4e8d59d768727761a6853562e102e0173b01a0b961389152a5": {
       "failed": true,
       "kind": "event-description",
@@ -2401,11 +2257,6 @@
         "description": "Vancouver Canucks beat the Anaheim Ducks 6‑5 in overtime on Oct 27 2026, ending a 10‑game losing streak【5†L18-L22】.",
         "raw": "Canucks @ Ducks"
       }
-    },
-    "6ed5309c0c090e5e38ba9b3bcbd3b407884f70035ecbcd6253085f2d90e6b73a": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
     },
     "6ef78f9c255deb5020de65560c43c2f10a6eac190a447e1f4c97e1e8216d2e85": {
       "failed": true,
@@ -2446,16 +2297,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795994+00:00"
-    },
-    "709a8870ae24b0c3b9ca5531d7a5d60d39482753d322e43cfdda334e1b571d2a": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412928+00:00"
-    },
-    "70a0efcef665aaa478129cd5211f468e4552ba60111ff5d7341a15c60cb727b5": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412881+00:00"
     },
     "70cbd62310b43d5fea0e6aa7691cabc7ce3225d2a2b590de02a076d389262601": {
       "failed": true,
@@ -2541,15 +2382,15 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795150+00:00"
     },
-    "7449609dcdf3db8f03b41c2a8e108fc8b60a1c6f7ec017e1b1dd18ca27dd4f2e": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412893+00:00"
-    },
     "7452dc06152251c0cfed12c9d19c4e26094b18136793d0a602e435f1c048599d": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795552+00:00"
+    },
+    "748c5049e727c824a2077ece69e63640dee4b2bd864e8560173325272c5ba125": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312249+00:00"
     },
     "74b39ee61a36ea2d802af02678805076c58f44ec495f38f2584be977dc22fd90": {
       "failed": true,
@@ -2672,11 +2513,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795686+00:00"
     },
-    "7bf7363d5353feec4e39b68fce57b9f561531cad649cd65676554fdfa782f772": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412876+00:00"
-    },
     "7c2c80a27e9ddb1e461263af2ae7d07851223f267f6068dc7eec7b2f233e6627": {
       "failed": true,
       "kind": "event-description",
@@ -2768,20 +2604,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795091+00:00"
     },
-    "8068981fafa68dfb103d4409b1ced79e2244dc4d50d81397c8323f560b48cfa2": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412942+00:00"
-    },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
       "kind": "event-description",
       "result": "Inside Georgia Southern Football with Clay Helton."
-    },
-    "80bc49f1470cd58787cafe83bc8b65740abefc2e99f04a3e100ff5e884dd91cf": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412867+00:00"
     },
     "8106996353e9e4adccd49b90a04c433aca9e15cdfed5f1010b717418ed82f9b8": {
       "failed": true,
@@ -2838,11 +2664,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795153+00:00"
-    },
-    "83553194f386c06708813f1626c0bd6d5196a011a867523d173aa2b541d84b57": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412801+00:00"
     },
     "83790ec9770b1b4fdf8c82d688bda87c6445420d255575a9e4493f569686e22d": {
       "failed": true,
@@ -3025,11 +2846,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795029+00:00"
     },
-    "8cd22c58e2de0040e9b70a19256b21f43d0c595c23f265ccfa6ca45645d8a71c": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412911+00:00"
-    },
     "8cf03b9f35ce848c85f533ec6e6769fe8c2b23014b9e5b177771570d69737d6a": {
       "failed": true,
       "kind": "event-description",
@@ -3063,11 +2879,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795587+00:00"
-    },
-    "8e34a8a78093b95c51297b2bacab90e2b504f28e99f5a339b9c04d95ca616587": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412887+00:00"
     },
     "8eaf9565b9e6ba23da1f44f29577e0ced46f23109c9365ef9e0ae14fddfa8a22": {
       "failed": true,
@@ -3148,11 +2959,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796467+00:00"
     },
-    "92ef762502782d42bbe0d5e46e9668c0c04d7c82734965196b9d9e2d2b557d5b": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412890+00:00"
-    },
     "93031e00d08d62a27fe7644dd7685d74a73bf48796ec49ec645bf36fc8f4ee1f": {
       "failed": true,
       "kind": "event-description",
@@ -3163,15 +2969,15 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T18:18:50.630451+00:00"
     },
-    "9361e4231ea258cfd30ad0c3be9a3f27fd35e0d53277ca1cadb01813a679023e": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412834+00:00"
-    },
     "93db8685137d3b3d9ea0571125148d5f7bc2f8f550a0be82aa0c3e6ed2b6e17f": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796473+00:00"
+    },
+    "9499c327014d18ea023c8c2ba4a69b27d7ac4080722930f0360e97c5f476a51e": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312254+00:00"
     },
     "94b12e235cc6b7b17c986ba7f3495d08f1d82692bb8ad89a636c39fdcb278a72": {
       "failed": true,
@@ -3269,10 +3075,12 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795258+00:00"
     },
-    "991ba886e78a810a42169a9036b41144531e79a9dde975c9cc951f30f98dab62": {
-      "failed": true,
+    "992b130f1e8e33e070a72507ed786ed424f7ab07900fce0c5b7e8d3948d75ad9": {
+      "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
+      "created_at": "2026-10-31T16:22:16.312231+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412934+00:00"
+      "result": "Partido de la temporada regular de MLS: FC Cincinnati contra Philadelphia Union, sábado 31 oct 2026, inicio a las 2:00 p.m. local (17:55 GMT)【13†L22-L27】",
+      "title": "| FC Cincinnati vs Philadelphia Union (Spanish)"
     },
     "992b845e3969a1a33b14e5581da1e7b41f32a518c34843f4f1b1a855bf2b3aa1": {
       "failed": true,
@@ -3288,11 +3096,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795267+00:00"
-    },
-    "99b78c45cc006cd6318526543ef524041f975c4485734df3431ca619e7700a67": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
     },
     "99f6594b5a78b0ba9ed8601743192cfd5bff210d058908008ca694a909a2b4b2": {
       "failed": true,
@@ -3422,11 +3225,6 @@
         "description": "Same 26 October 2026 Cowboys vs. Eagles game, available in Spanish broadcast. The event details are identical to the standard listing【3†L1-L3】.",
         "raw": "Cowboys @ Eagles (Spanish Broadcast)"
       }
-    },
-    "9e0c586fbd44fd11e8d26e6e5fda81302cafa3fce33b7e06659463cf67f6d5d8": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412804+00:00"
     },
     "9e277fe9af8397e314a661ebe7b3e042bde1cf7681d0b3a5c4b298065055c51e": {
       "failed": true,
@@ -3593,6 +3391,11 @@
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "8 | San Jose Earthquakes vs Colorado Rapids (Spanish)"
     },
+    "a543d8f0a669624cd06d4f995bf974247ed29f5325afab74e3d51f5b929e2b16": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312260+00:00"
+    },
     "a55a6db840d3f4d0c3c17df5dd605be71bd845777aa1a68734aebfc9879bafd9": {
       "failed": true,
       "kind": "live-title",
@@ -3647,16 +3450,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796134+00:00"
-    },
-    "a81e0ef8643c082b189830bb4aeaca1b4705e5be5ea0fbe786e87fb9f93ea0bf": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412859+00:00"
-    },
-    "a847a4ec82edb282895451d6fde48a6f0949cd11194a22ae8de6c4af97eaa5e0": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412940+00:00"
     },
     "a87589d9fd65ec3ba2d22674be0ca801cd0e95d4e5484ce45e9a9a5d19a80121": {
       "failed": true,
@@ -3720,27 +3513,12 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795522+00:00"
     },
-    "aa34c20bded1a5bc65744eaa9ce1756acbdefaf30f82e39d90eeb047607eb1ce": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412979+00:00"
-    },
-    "aa38275e45068a86ec76d52001fbe3c4196726eade0ceda0fb18cb5fb9525dff": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412795+00:00"
-    },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569466+00:00",
       "kind": "event-description",
       "result": "Scottish Cup fifth‑round match between Celtic and Dundee, scheduled for 7 February 2027 at 17:30 GMT.",
       "title": "Celtic vs Dundee"
-    },
-    "aaba6524ab07a03cce524829371633b56b59a985a0bd2c9007385a2c8d0febc6": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412878+00:00"
     },
     "aad9d81cdecd1f95d2e46ef9617c28546061a4c7a26164ff5c7ca7949a2cbefd": {
       "failed": true,
@@ -3811,11 +3589,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796437+00:00"
     },
-    "af04054f7bb04e0e27c1f92c9df7164bd6ca8be545011be978c3936ab1eb46a5": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412900+00:00"
-    },
     "af040d68ebea5be425da6414e4bd6bf9ec81adffa4c588cd196e76ee8d6cbf0d": {
       "failed": true,
       "kind": "live-title",
@@ -3877,11 +3650,6 @@
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
     },
-    "b170cd2f8aecc9e842c1fd8d31227c8d59df820ee3ae3d325e1a6047e7c63779": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412964+00:00"
-    },
     "b1b722f9c5b3faee86aa5508f7eda88a0c6cf2e955bc55a16a1d44f717bdc1f2": {
       "failed": true,
       "kind": "event-description",
@@ -3932,11 +3700,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795786+00:00"
     },
-    "b418358c3650d373591b31829c917c8b5fd35a510b9fc92bbc1452a3d168cccd": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
-    },
     "b4670c6b10eefbf16a8b8e72feed3db6a1387fd46eab482efccefb67b3818f91": {
       "failed": true,
       "kind": "event-description",
@@ -3979,15 +3742,15 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796334+00:00"
     },
+    "b66cf209a71717443040b6fd9815fe369bf407ceee015b92f0718b27923e64a1": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312256+00:00"
+    },
     "b7036057ec300c4bb9b0e465822df6abecc1ceeeaa9af2491cea40bb7e9977a1": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796100+00:00"
-    },
-    "b7598495b9098960172e1f29da3d8893767f3ee574e909d3f59a18db96c7a653": {
-      "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
     },
     "b7d59dc94f52d5d4ea10d37ac9caa2b0c055d595ed23158d08b9dbd538ed8ca3": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -4015,11 +3778,6 @@
       "result": "NBA broadcast event \"Above the Rim\" featuring Oklahoma City Thunder vs Dallas Mavericks scheduled for Oct 29 2026.",
       "title": "Above the Rim: Oklahoma City Thunder vs. Dallas Mavericks"
     },
-    "b88d86e9a2c99c6bf3fb668fd9336ac75b18276a1adaee5e02fa56122fb15328": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412884+00:00"
-    },
     "b88e4cece27aff8eb929956381262ff2c1da90cd76d58335e3ccb72fdb5e0c5f": {
       "created_at": "2026-10-26T12:30:58.030778+00:00",
       "kind": "event-description",
@@ -4038,7 +3796,7 @@
     "b93c4fe79519a8b56be7e97680ad17b4777f7805b399a12d4127d2e5f368f1f3": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412967+00:00"
+      "retry_after": "2026-10-31T22:22:16.312282+00:00"
     },
     "b9733d049593bfc2c5168e889e81aa7620ff1b01214a37be28c39eb60a3a0dbc": {
       "failed": true,
@@ -4065,11 +3823,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795053+00:00"
     },
-    "ba2aea1be654167bba6e78d6759d89ad1d3f5cbb899dd056d2f2fe4d684ed63c": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412764+00:00"
-    },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
       "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
       "created_at": "2026-10-27T03:17:18.770346+00:00",
@@ -4091,11 +3844,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796381+00:00"
-    },
-    "bb9a09d80256fc26286fcb30aba2f04b330ea7aa3b9e5b7fe72a1db33ae360d3": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412822+00:00"
     },
     "bbc72dc158e1d6c7a8648d3a17ba44ff54610a020bebdb37d89bda6116683cf4": {
       "failed": true,
@@ -4287,11 +4035,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796142+00:00"
     },
-    "c1efd11517beef48634981e279dd38a37f3ac0060fe7bdef5565c58c8b55dc1a": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412842+00:00"
-    },
     "c248a78d0b5e347ce7587ce82f6f5d2c0be85bf43049524e3ebf19e2fe21d38c": {
       "created_at": "2026-10-26T19:21:40.738705+00:00",
       "kind": "live-title",
@@ -4343,6 +4086,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796371+00:00"
     },
+    "c33bfdaf533ea6298e0f421fddbcc8e93d1c0b2798d3e27422b2a69e98b17a3c": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312251+00:00"
+    },
     "c34d5aac2cc6abf55e4c337d44a22cda9f429598c46bd85a2d25ec9667e7611e": {
       "failed": true,
       "kind": "event-description",
@@ -4364,11 +4112,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795556+00:00"
-    },
-    "c4355119047063da284fbe83d02ee6d591f3c61ad6ee424602071f42ccb1a0b2": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412831+00:00"
     },
     "c488b2c8dd1ce195e949fbb3850d4673ee1025acc9ae48cb9c241cd03c94c1ce": {
       "created_at": "2026-10-26T19:21:40.738749+00:00",
@@ -4407,6 +4150,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795201+00:00"
+    },
+    "c5b4137e0e9fc03445871af5fd6c8a299e786cfdaab8f4441d72fabdc911174c": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312279+00:00"
     },
     "c5c7a028de0dedfe148ad521f27f08c5e1c0cab3db24af47091302aaa6d241fb": {
       "created_at": "2026-10-26T12:06:58.198967+00:00",
@@ -4486,35 +4234,25 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796091+00:00"
     },
-    "c8cd11bc89e3257f043f420fd12b36b1727136cebb3e7e507d09fb0ba4070ef8": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412864+00:00"
-    },
     "c9523a2b82cbe17454e9c9a554ecf54e66ef2d5abc9281a84457286058fb54df": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795828+00:00"
-    },
-    "c9accc5221fa1de5f0e2c296c0c53a9e83a791a4abbbeed6473fb6056830aa10": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412779+00:00"
     },
     "c9c606b1fcf1684fdc969decdb79a6939b7d0d104d967f255cfa3fdd8229a9d9": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795822+00:00"
     },
+    "c9ffc0a5f38af8dd9f1ee0d9773cc016fcc5dcd2e988e0a18d96f118a2e94e5e": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312263+00:00"
+    },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
       "kind": "event-description",
       "result": "Minnesota State vs. Boston College."
-    },
-    "ca4d2315ceb66b979a7658e9bae05b2c5f011dfe440159aeec7e230c1f0abc21": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412816+00:00"
     },
     "ca62ec35f18d73d2cd12c18df842b53dc40cdd33a4199a64ffb85b7952719887": {
       "failed": true,
@@ -4586,6 +4324,11 @@
       "kind": "live-title",
       "retry_after": "2026-10-31T21:18:35.853793+00:00"
     },
+    "ce71b444100768644e03f4c7816718b10c3ae19d81e0e0eece616798d3de1afe": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312258+00:00"
+    },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770309+00:00",
@@ -4598,20 +4341,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795617+00:00"
     },
-    "cf48d05878dccd089eac2b367f17a42e9a9d818e8dbd9d7af34fc8d52ebca0e7": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412851+00:00"
-    },
     "cfff876db841896feca78c1495d07fc4b49aaca6159f02f70d89bdb11069bab9": {
       "failed": true,
       "kind": "live-title",
       "retry_after": "2026-10-31T21:20:36.131622+00:00"
-    },
-    "d08125847b9177b1aa41468247f77fef1f913b2a9afcc7f3073f327f68024b18": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412786+00:00"
     },
     "d10e17c1df2d09ac0acf61ed23b09d6f5f2aa8cb53609493e1ee6e1f8b9ea25c": {
       "failed": true,
@@ -4690,11 +4423,6 @@
         "description": "NHL regular season game between the Boston Bruins and the Carolina Hurricanes, scheduled for Wednesday, October 28, 2026 at the Lenovo Center in Raleigh, NC. 【8†L19-L20】",
         "raw": "Bruins @ Hurricanes"
       }
-    },
-    "d455bf4cc2f368e40fab7c059482679827abf050cf3a3fd3a171264469d2ec89": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412848+00:00"
     },
     "d468b08fe75764b6969f713f4ae704850c596005a9fd441d1027992263263b94": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -4947,25 +4675,15 @@
       "kind": "live-title",
       "retry_after": "2026-10-31T21:20:36.131622+00:00"
     },
-    "de416adb7c64869953171bcc10fdfffdf628d0bca6622fd8e505c1f9e2b503d4": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412839+00:00"
-    },
     "de814f9cbabbc9d443dffbdfa7280a8c26385e4fc55725630d3b5b03d1df4222": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.413031+00:00"
+      "retry_after": "2026-10-31T22:22:16.312273+00:00"
     },
     "df40074b54c8d4df627b6fdd2de7047f6c8fe10848c5207f0e87ef762588fb0d": {
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796323+00:00"
-    },
-    "df50c8821e1458ade8188e5db2a76180cdfafb2edea0f3d6cc14cc7dfae09c4c": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412925+00:00"
     },
     "df52a722a45f697c83d74b5067c42d1f28bcb88ac8a9024e7561bf3a427697b7": {
       "context": "Paramount+ event scheduled 29/10/2026 03:00 GMT",
@@ -5001,10 +4719,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796439+00:00"
     },
-    "e0c10185827c1ec1a6d4b4a966a15c0dc8a686cf8e5d3ad381397c029e598cbe": {
+    "e094624fb9eadc69e9b837a5464eea72af79c3d136a0aa2a26e9a934f870e149": {
       "failed": true,
-      "kind": "live-title",
-      "retry_after": "2026-10-31T15:25:08.867426+00:00"
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:22:16.312240+00:00"
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -5025,16 +4743,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796336+00:00"
     },
-    "e1df02b49b44c29c502949a3c02b63c340b29007527e0bd8096d4d71738b468d": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412922+00:00"
-    },
-    "e2fa23aebd7eca74d269e0f709506be8f869000d848d87c60a0d8884bf70769c": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412913+00:00"
-    },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
       "kind": "live-title",
@@ -5049,10 +4757,12 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796309+00:00"
     },
-    "e39fe603a4e3330fe625daea5d4a36fe0fb1fd71417d84c7a8699255e70c0c3f": {
-      "failed": true,
+    "e3c18cef8d511bd978de57b7e9a5c66b5299c0d470b65d9b5af9d7f6fafb16ae": {
+      "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
+      "created_at": "2026-10-31T16:22:16.312233+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.413040+00:00"
+      "result": "MLS regular‑season match: Columbus Crew vs D.C. United, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【10†L6-L8】",
+      "title": "| Columbus Crew vs D.C. United (English)"
     },
     "e3f992e4c1825fda74a60376d3cd433d0374f4e5e6734dd523f5ecd509940de2": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -5202,11 +4912,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795914+00:00"
     },
-    "ec4614a4188622a3faf78b967fd5aaee0e4bf8eea55f1b7affab2c5dc8001092": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412856+00:00"
-    },
     "ec9a2250d862c5535910a4821092f623209ea731aca98e57f2d8a1216d52a0fc": {
       "failed": true,
       "kind": "event-description",
@@ -5242,11 +4947,6 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796117+00:00"
     },
-    "ee52813797cad751276ffd94030eba5a6e3bcea8ba2d7cdcb3640f4372e00c47": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412813+00:00"
-    },
     "eea2eec04e46a04d32d67161f97433a3c556b3598b8c60cf8dc53100f231fe7f": {
       "failed": true,
       "kind": "event-description",
@@ -5268,11 +4968,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795449+00:00"
-    },
-    "ef2a591a5685a94ee0d4e83feb9926b8f6d3345d0da5be43aaff242c9c97ec9c": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412931+00:00"
     },
     "ef4a33ce2b4676541266f0ea07c7a51245ebe8dfedb9d2274b2b38dacbab332e": {
       "failed": true,
@@ -5505,10 +5200,10 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796435+00:00"
     },
-    "fcc53cdaa8b1889fbfd92814b0105d6a4ad3cc4d0aa32f60374d04511159a716": {
+    "fa1403685a189f01c4c37388a34d5a6436db054a9a616ec2a0adc6ee01861ce8": {
       "failed": true,
       "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412773+00:00"
+      "retry_after": "2026-10-31T22:22:16.312243+00:00"
     },
     "fcc6ae5b5aceb9d0482b43e34f308e34939580e640c1214758bc892bc94d2356": {
       "failed": true,
@@ -5546,11 +5241,6 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795925+00:00"
-    },
-    "fdc03de312c96d614c9c5556e4df04e0d4c3fb9c18d44549f7aea3bc73a381f1": {
-      "failed": true,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T15:27:09.412969+00:00"
     },
     "fdc3fc3daece9d69f1304945fb9f314ad0d7c238f970ed3671704a83577af278": {
       "failed": true,
