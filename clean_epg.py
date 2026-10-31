@@ -34,8 +34,9 @@ AI_CACHE_VERSION = 1
 CACHE_FAILURE_COOLDOWN = timedelta(hours=6)
 AI_CACHE_MAX_AGE = timedelta(days=30)
 GZIP_COMPRESSLEVEL = 6
-BATCH_SIZE = 50
-DESCRIPTION_BATCH_SIZE = 25
+# Browser-grounded requests must stay small enough to finish before the timeout.
+BATCH_SIZE = 10
+DESCRIPTION_BATCH_SIZE = 5
 TARGET_CHANNELS = (
     {f"LIVE EVENT {number:02d}" for number in range(1, 37)}
     | {f"[PPV EVENT {number:02d}]" for number in range(37, 41)}
@@ -1071,8 +1072,31 @@ def _parse_model_response(response: Any) -> list[dict[str, str]]:
     return result
 
 
-def _groq_generate_text(prompt: str, api_key: str) -> str:
+class AIProviderState:
+    """Share quota failures across title and description batches in one run."""
+
+    def __init__(self) -> None:
+        self.exhausted: set[str] = set()
+
+    def record_failure(self, provider: str, exc: Exception) -> None:
+        response = getattr(exc, "response", None)
+        status = getattr(response, "status_code", None)
+        if status == 429 or "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
+            self.exhausted.add(provider)
+
+    def available(self, client: Any, groq_api_key: str | None) -> bool:
+        return bool(
+            (client is not None and "gemini" not in self.exhausted)
+            or (groq_api_key and "groq" not in self.exhausted)
+        )
+
+
+def _groq_generate_text(
+    prompt: str, api_key: str, provider_state: AIProviderState | None = None
+) -> str:
     """Generate a web-grounded response with Groq's built-in browser search."""
+    if provider_state is not None and "groq" in provider_state.exhausted:
+        raise RuntimeError("Groq quota exhausted earlier in this run; skipping request")
     response = requests.post(
         GROQ_CHAT_URL,
         headers={"Authorization": f"Bearer {api_key}"},
@@ -1090,10 +1114,13 @@ def _groq_generate_text(prompt: str, api_key: str) -> str:
         # Include the provider's JSON error: the HTTP status alone doesn't
         # distinguish request-rate, token, daily-quota, or account limits.
         error_detail = response.text.strip()[:2000]
-        raise requests.HTTPError(
+        error = requests.HTTPError(
             f"Groq API returned HTTP {response.status_code}: {error_detail}",
             response=response,
         )
+        if provider_state is not None:
+            provider_state.record_failure("groq", error)
+        raise error
     try:
         return response.json()["choices"][0]["message"]["content"].strip()
     except (KeyError, IndexError, TypeError, AttributeError) as exc:
@@ -1114,11 +1141,17 @@ def _parse_json_array(text: str) -> list[Any]:
 
 
 def ai_clean_sport_titles(
-    channel_names: list[str], client: genai.Client | None, groq_api_key: str | None = None
+    channel_names: list[str], client: genai.Client | None, groq_api_key: str | None = None,
+    provider_state: AIProviderState | None = None,
 ) -> dict[str, dict[str, str]]:
     """Ask Gemini to clean a batch of mirrored event titles."""
     if not channel_names:
         return {}
+    provider_state = provider_state or AIProviderState()
+    if not provider_state.available(client, groq_api_key):
+        return {}
+    if "gemini" in provider_state.exhausted:
+        client = None
 
     prompt = """You organize sports event titles for an IPTV electronic program guide.
 For every input string, use Google Search to find reliable information about
@@ -1136,7 +1169,7 @@ Input titles (JSON):
         if not groq_api_key:
             return {}
         try:
-            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key))
+            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key, provider_state))
             expected = set(channel_names)
             mapping = {item["raw"]: item for item in parsed if item["raw"] in expected}
             if expected - mapping.keys():
@@ -1170,14 +1203,15 @@ Input titles (JSON):
             return mapping
         except Exception as exc:
             print(f"Gemini attempt {attempt + 1}/{MAX_RETRIES} failed: {exc}")
+            provider_state.record_failure("gemini", exc)
             if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
                 print("Gemini quota is exhausted; trying Groq for this title batch.")
                 break
             if attempt + 1 < MAX_RETRIES:
                 time.sleep(min(2 ** attempt, 8))
-    if groq_api_key:
+    if groq_api_key and "groq" not in provider_state.exhausted:
         try:
-            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key))
+            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key, provider_state))
             expected = set(channel_names)
             mapping = {item["raw"]: item for item in parsed if item["raw"] in expected}
             if expected - mapping.keys():
@@ -1190,15 +1224,20 @@ Input titles (JSON):
 
 
 def ai_describe_events(
-    events: list[dict[str, str]], client: genai.Client | None, groq_api_key: str | None = None
+    events: list[dict[str, str]], client: genai.Client | None, groq_api_key: str | None = None,
+    provider_state: AIProviderState | None = None,
 ) -> dict[str, str]:
     """Create short, web-grounded EPG descriptions keyed to event instances."""
     descriptions: dict[str, str] = {}
     if not events:
         return descriptions
 
-    gemini_exhausted = client is None
+    provider_state = provider_state or AIProviderState()
+    gemini_exhausted = client is None or "gemini" in provider_state.exhausted
     for start in range(0, len(events), DESCRIPTION_BATCH_SIZE):
+        if not provider_state.available(client, groq_api_key):
+            print("No AI provider available; deferring remaining descriptions until a later run.")
+            break
         batch = events[start : start + DESCRIPTION_BATCH_SIZE]
         prompt = """For each sports event below, use Google Search to find reliable,
 current information about that exact event. Write a concise EPG description
@@ -1245,14 +1284,15 @@ Events (JSON):
             if missing:
                 print(f"Gemini omitted {len(missing)} event description(s) in this batch.")
         except Exception as exc:
+            provider_state.record_failure("gemini", exc)
             if not gemini_exhausted:
                 print(f"Gemini event-description batch failed: {exc}")
             if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc) or client is None:
                 gemini_exhausted = True
                 print("Gemini is unavailable; trying Groq for this and remaining description batches.")
-            if groq_api_key:
+            if groq_api_key and "groq" not in provider_state.exhausted:
                 try:
-                    groq_text = _groq_generate_text(prompt, groq_api_key)
+                    groq_text = _groq_generate_text(prompt, groq_api_key, provider_state)
                     parsed = _parse_json_array(groq_text)
                     expected = {event["key"] for event in batch}
                     for item in parsed:
@@ -1357,6 +1397,7 @@ def _cache_failure_is_active(entry: Any) -> bool:
 
 def process_epg() -> None:
     client: genai.Client | None = None
+    provider_state = AIProviderState()
     groq_api_key = os.environ.get("GROQ_API_KEY")
     ai_cache = _load_ai_cache()
     ai_cache_entries: dict[str, Any] = ai_cache["entries"]
@@ -1761,10 +1802,7 @@ def process_epg() -> None:
         ):
             cleaned_mapping[title] = result
         elif _cache_failure_is_active(cache_entry):
-            if groq_api_key:
-                titles_to_clean.append(title)
-            else:
-                cached_failures += 1
+            cached_failures += 1
         else:
             titles_to_clean.append(title)
     print(
@@ -1778,7 +1816,7 @@ def process_epg() -> None:
             for start in range(0, len(titles_to_clean), BATCH_SIZE):
                 batch = titles_to_clean[start : start + BATCH_SIZE]
                 print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
-                results = ai_clean_sport_titles(batch, gemini_client, groq_api_key)
+                results = ai_clean_sport_titles(batch, gemini_client, groq_api_key, provider_state)
                 for result in results.values():
                     result["clean_title"] = _format_title_event_name(result["clean_title"])
                 cleaned_mapping.update(results)
@@ -1817,10 +1855,7 @@ def process_epg() -> None:
                 f"{event['title']} [{event['context']}]"
             )
         elif _cache_failure_is_active(cache_entry):
-            if groq_api_key:
-                events_to_describe.append(event)
-            else:
-                cached_description_failures += 1
+            cached_description_failures += 1
         else:
             events_to_describe.append(event)
     print(
@@ -1831,7 +1866,7 @@ def process_epg() -> None:
     if events_to_describe:
         gemini_client = get_client()
         if gemini_client or groq_api_key:
-            new_descriptions = ai_describe_events(events_to_describe, gemini_client, groq_api_key)
+            new_descriptions = ai_describe_events(events_to_describe, gemini_client, groq_api_key, provider_state)
             event_descriptions.update(new_descriptions)
             for event in events_to_describe:
                 description = new_descriptions.get(event["key"])
