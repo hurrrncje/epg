@@ -157,6 +157,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.796190+00:00"
     },
+    "079c01d0545b25b894100bbf33892439020b5f7e328fac34bf6e159d372cb3e2": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820048+00:00"
+    },
     "080aa9a37e28e7656a48198058a3e28fad282718f9275a7dccbd40a0564b4f0d": {
       "failed": true,
       "kind": "event-description",
@@ -502,6 +507,11 @@
       "failed": true,
       "kind": "live-title",
       "retry_after": "2026-10-31T21:18:35.853793+00:00"
+    },
+    "1e0c75e1e6a65a617746adc0d900b2d4fc20482288d79d8a10921f5f1b184f9f": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820042+00:00"
     },
     "1e15792265831c5cfcff50568ec57145bed73d9733543961945ab24b1a3711bf": {
       "failed": true,
@@ -1628,6 +1638,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795880+00:00"
     },
+    "4b29d9a0af4a19090553c214e07f4801313664715c9539ac6c6b9e5e2779622d": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820007+00:00"
+    },
     "4b3a74c0a4ae71573bf923189a52878ce29fa92327c4456b63181627180aa4c6": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898648+00:00",
@@ -1794,6 +1809,11 @@
       "kind": "event-description",
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
+    },
+    "56c6175b497ab7f2600897e18b5c604b5f7566fc5429b9d2077d1bc7383561c5": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820028+00:00"
     },
     "56c849908fe7c26eeda1e8a3112cbbaaff090ce8e92044f39006a048e5fa73f0": {
       "failed": true,
@@ -2004,6 +2024,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795353+00:00"
+    },
+    "609e56460e8394206f9521e432b1229ad849cfdb57e01c49802cded2ac206c4d": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820032+00:00"
     },
     "60a3c8a6a4b42c591f624d9c2210e015815cada3b4088831c8261003604fc6f5": {
       "failed": true,
@@ -3513,6 +3538,11 @@
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795522+00:00"
     },
+    "aa34c20bded1a5bc65744eaa9ce1756acbdefaf30f82e39d90eeb047607eb1ce": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820034+00:00"
+    },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569466+00:00",
@@ -3649,6 +3679,11 @@
       "created_at": "2026-10-26T12:30:58.030767+00:00",
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
+    },
+    "b170cd2f8aecc9e842c1fd8d31227c8d59df820ee3ae3d325e1a6047e7c63779": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820038+00:00"
     },
     "b1b722f9c5b3faee86aa5508f7eda88a0c6cf2e955bc55a16a1d44f717bdc1f2": {
       "failed": true,
@@ -4404,6 +4439,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795158+00:00"
+    },
+    "d3cfcc9f5415bd354f978df7966bbf5cdc383dc1e9874d8bb278de42a41be851": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820045+00:00"
     },
     "d3d2f24037b1500a970b20ab89bf018cbf267f5187c9822f42b842debee58e6f": {
       "failed": true,
@@ -5241,6 +5281,11 @@
       "failed": true,
       "kind": "event-description",
       "retry_after": "2026-10-31T21:20:38.795925+00:00"
+    },
+    "fdc03de312c96d614c9c5556e4df04e0d4c3fb9c18d44549f7aea3bc73a381f1": {
+      "failed": true,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T22:55:10.820024+00:00"
     },
     "fdc3fc3daece9d69f1304945fb9f314ad0d7c238f970ed3671704a83577af278": {
       "failed": true,
