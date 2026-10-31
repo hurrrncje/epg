@@ -17,9 +17,22 @@ The workflow also saves generated AI results in `ai_cache.json` and commits that
 with the EPG. Unchanged event inputs reuse cached titles and descriptions;
 changed or new events may require new AI requests. Gemini is tried first, with
 Groq as a web-search-capable fallback when Gemini is unavailable or over quota.
-Failed API requests are
-also held for six hours so scheduled runs do not repeatedly hit the
-same exhausted quota. Successful cache entries older than 30 days and expired
+Descriptions are prioritised before title cleanup. Matching event titles and
+GMT kickoff times share descriptions across channels, including English and
+Spanish feeds. DAZN title processing reuses an available event description.
+Partial AI batches retain their successful results; only missing items use the
+fallback provider. Groq uses low reasoning effort and compact response keys.
+
+Provider cooldowns persist in `ai_cache.json`. Groq uses its `Retry-After`
+header (or the wait in its error message); a wait below one minute gets one
+bounded retry. Longer waits defer work until a later workflow run. Timeouts
+pause a provider for five minutes. If Gemini gives no quota reset time, its
+fallback cooldown is six hours. Only actually attempted, unsuccessful events
+receive item cooldowns, normally at most fifteen minutes. Unattempted events
+stay pending. The first run after this change removes the old blanket failure
+cooldowns while retaining successful cache entries. Logs report new, cached,
+unsuccessful and unattempted descriptions separately, plus token usage reported
+by successful Groq requests. Successful cache entries older than 30 days and expired
 failure cooldowns are pruned automatically.
 
 For those channels, the generated EPG replaces the provider's placeholder

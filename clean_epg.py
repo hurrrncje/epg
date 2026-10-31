@@ -12,6 +12,7 @@ import time
 import unicodedata
 from collections import Counter
 from datetime import datetime, time as datetime_time, timedelta, timezone
+from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
@@ -32,6 +33,9 @@ GROQ_MODEL = "openai/gpt-oss-20b"
 GROQ_CHAT_URL = "https://api.groq.com/openai/v1/chat/completions"
 AI_CACHE_VERSION = 1
 CACHE_FAILURE_COOLDOWN = timedelta(hours=6)
+AI_FAILURE_POLICY = 2
+AI_TRANSIENT_COOLDOWN = timedelta(minutes=5)
+AI_ITEM_COOLDOWN = timedelta(minutes=15)
 AI_CACHE_MAX_AGE = timedelta(days=30)
 GZIP_COMPRESSLEVEL = 6
 # Browser-grounded requests must stay small enough to finish before the timeout.
@@ -1079,16 +1083,63 @@ def _parse_model_response(response: Any) -> list[dict[str, str]]:
 
 
 class AIProviderState:
-    """Share quota failures across title and description batches in one run."""
+    """Persist provider backoff separately from attempted event failures."""
 
-    def __init__(self) -> None:
+    def __init__(self, cooldowns: dict[str, str] | None = None) -> None:
+        self.cooldowns = cooldowns if cooldowns is not None else {}
         self.exhausted: set[str] = set()
+        self.attempted_titles: set[str] = set()
+        self.attempted_descriptions: set[str] = set()
+        self.groq_tokens = 0
+        for provider, value in list(self.cooldowns.items()):
+            try:
+                if datetime.fromisoformat(value) > datetime.now(UTC):
+                    self.exhausted.add(provider)
+                else:
+                    del self.cooldowns[provider]
+            except (TypeError, ValueError):
+                del self.cooldowns[provider]
 
     def record_failure(self, provider: str, exc: Exception) -> None:
         response = getattr(exc, "response", None)
         status = getattr(response, "status_code", None)
-        if status == 429 or "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
-            self.exhausted.add(provider)
+        quota_error = status == 429 or "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc)
+        transient = isinstance(exc, (requests.exceptions.Timeout, requests.exceptions.ConnectionError))
+        if not quota_error and not transient and not (status and status >= 500):
+            return
+        now = datetime.now(UTC)
+        delay = (CACHE_FAILURE_COOLDOWN if provider == "gemini" else AI_ITEM_COOLDOWN) if quota_error else AI_TRANSIENT_COOLDOWN
+        retry_at = now + delay
+        headers = getattr(response, "headers", {}) or {}
+        retry_header = headers.get("retry-after") or headers.get("Retry-After")
+        if retry_header:
+            try:
+                retry_at = now + timedelta(seconds=max(1, float(retry_header)))
+            except (TypeError, ValueError):
+                try:
+                    retry_at = parsedate_to_datetime(retry_header).astimezone(UTC)
+                except (TypeError, ValueError, OverflowError):
+                    pass
+        elif quota_error:
+            match = re.search(r"try again in\s+([\d.hms]+)", str(exc), re.I)
+            if match:
+                seconds = sum(float(n) * {"h": 3600, "m": 60, "s": 1}[unit]
+                              for n, unit in re.findall(r"(\d+(?:\.\d+)?)([hms])", match.group(1)))
+                if seconds:
+                    retry_at = now + timedelta(seconds=seconds)
+        retry_at = max(now + timedelta(seconds=1), retry_at)
+        self.exhausted.add(provider)
+        self.cooldowns[provider] = retry_at.isoformat()
+        print(f"{provider.title()} requests paused until {retry_at:%Y-%m-%d %H:%M:%S GMT}.")
+
+    def item_retry_after(self) -> str:
+        candidates = [datetime.now(UTC) + AI_ITEM_COOLDOWN]
+        for value in self.cooldowns.values():
+            try:
+                candidates.append(datetime.fromisoformat(value))
+            except (TypeError, ValueError):
+                pass
+        return min(candidates).isoformat()
 
     def available(self, client: Any, groq_api_key: str | None) -> bool:
         return bool(
@@ -1098,24 +1149,31 @@ class AIProviderState:
 
 
 def _groq_generate_text(
-    prompt: str, api_key: str, provider_state: AIProviderState | None = None
+    prompt: str, api_key: str, provider_state: AIProviderState | None = None,
+    *, _retry_short_limit: bool = True,
 ) -> str:
     """Generate a web-grounded response with Groq's built-in browser search."""
     if provider_state is not None and "groq" in provider_state.exhausted:
         raise RuntimeError("Groq quota exhausted earlier in this run; skipping request")
-    response = requests.post(
-        GROQ_CHAT_URL,
-        headers={"Authorization": f"Bearer {api_key}"},
-        json={
-            "model": GROQ_MODEL,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.1,
-            "max_completion_tokens": 4096,
-            "tool_choice": "required",
-            "tools": [{"type": "browser_search"}],
-        },
-        timeout=REQUEST_TIMEOUT,
-    )
+    try:
+        response = requests.post(
+            GROQ_CHAT_URL,
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": GROQ_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,
+                "reasoning_effort": "low",
+                "max_completion_tokens": 4096,
+                "tool_choice": "required",
+                "tools": [{"type": "browser_search"}],
+            },
+            timeout=REQUEST_TIMEOUT,
+        )
+    except requests.exceptions.RequestException as exc:
+        if provider_state is not None:
+            provider_state.record_failure("groq", exc)
+        raise
     if not response.ok:
         # Include the provider's JSON error: the HTTP status alone doesn't
         # distinguish request-rate, token, daily-quota, or account limits.
@@ -1126,9 +1184,27 @@ def _groq_generate_text(
         )
         if provider_state is not None:
             provider_state.record_failure("groq", error)
+            retry_at = provider_state.cooldowns.get("groq")
+            if response.status_code == 429 and _retry_short_limit and retry_at:
+                delay = (datetime.fromisoformat(retry_at) - datetime.now(UTC)).total_seconds()
+                if 0 < delay < 60:
+                    wait_seconds = int(delay) + 1
+                    print(f"Groq requested a short backoff; retrying once in {wait_seconds}s.")
+                    time.sleep(wait_seconds)
+                    provider_state.exhausted.discard("groq")
+                    provider_state.cooldowns.pop("groq", None)
+                    return _groq_generate_text(
+                        prompt, api_key, provider_state, _retry_short_limit=False
+                    )
         raise error
     try:
-        return response.json()["choices"][0]["message"]["content"].strip()
+        payload = response.json()
+        usage = payload.get("usage") or {}
+        total_tokens = usage.get("total_tokens")
+        if provider_state is not None and isinstance(total_tokens, int):
+            provider_state.groq_tokens += total_tokens
+            print(f"Groq request usage: {total_tokens} total tokens.")
+        return payload["choices"][0]["message"]["content"].strip()
     except (KeyError, IndexError, TypeError, AttributeError) as exc:
         raise ValueError("Groq returned no text content") from exc
 
@@ -1150,179 +1226,137 @@ def ai_clean_sport_titles(
     channel_names: list[str], client: genai.Client | None, groq_api_key: str | None = None,
     provider_state: AIProviderState | None = None,
 ) -> dict[str, dict[str, str]]:
-    """Ask Gemini to clean a batch of mirrored event titles."""
-    if not channel_names:
-        return {}
+    """Retain every valid title result and retry only omitted items with fallback."""
     provider_state = provider_state or AIProviderState()
-    if not provider_state.available(client, groq_api_key):
-        return {}
-    if "gemini" in provider_state.exhausted:
-        client = None
-
-    prompt = """You organize sports event titles for an IPTV electronic program guide.
-For every input string, use Google Search to find reliable information about
-the specific event when possible. Return its exact original value in `raw`, a
-concise properly formatted `clean_title`, and a brief factual `description`
-based on the search results. Do not invent teams, competitions, or event
-details. If reliable information is unavailable, say only what is known from
-the title. Return only a JSON array of objects with exactly these string fields:
-raw, clean_title, description.
+    mapping: dict[str, dict[str, str]] = {}
+    for provider in ("gemini", "groq"):
+        remaining = [title for title in channel_names if title not in mapping]
+        if not remaining:
+            break
+        if provider in provider_state.exhausted:
+            continue
+        if (provider == "gemini" and client is None) or (provider == "groq" and not groq_api_key):
+            continue
+        prompt = """Clean these sports event labels. Use search briefly to verify the
+specific events. Return only a JSON array of objects with string fields raw,
+clean_title, description. Preserve raw exactly. Use a short title and one factual
+sentence. If search cannot identify the event, use only the supplied label.
+Do not invent details or return search notes.
 
 Input titles (JSON):
-""" + json.dumps(channel_names, ensure_ascii=False)
-
-    if client is None:
-        if not groq_api_key:
-            return {}
+""" + json.dumps(remaining, ensure_ascii=False)
+        provider_state.attempted_titles.update(remaining)
         try:
-            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key, provider_state))
-            expected = set(channel_names)
-            mapping = {item["raw"]: item for item in parsed if item["raw"] in expected}
-            if expected - mapping.keys():
-                raise ValueError(f"Groq omitted {len(expected - mapping.keys())} requested title(s)")
-            return mapping
+            if provider == "gemini":
+                response = client.models.generate_content(
+                    model=GEMINI_MODEL, contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.1, response_mime_type="application/json",
+                        tools=[types.Tool(google_search=types.GoogleSearch())],
+                    ),
+                )
+                text = getattr(response, "text", None) or ""
+            else:
+                text = _groq_generate_text(prompt, groq_api_key, provider_state)
+            for item in _parse_json_array(text):
+                if (isinstance(item, dict) and isinstance(item.get("raw"), str) and item.get("raw") in remaining
+                    and all(isinstance(item.get(field), str) and item[field].strip()
+                            for field in ("raw", "clean_title", "description"))):
+                    mapping[item["raw"]] = item
+            print(f"{provider.title()} returned {len(mapping)} usable title result(s) so far.")
         except Exception as exc:
-            print(f"Groq LIVE EVENT title cleanup failed: {exc}")
-            return {}
-
-    for attempt in range(MAX_RETRIES):
-        try:
-            response = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.1,
-                    response_mime_type="application/json",
-                    tools=[types.Tool(google_search=types.GoogleSearch())],
-                ),
-            )
-            parsed = _parse_model_response(response)
-            expected = set(channel_names)
-            mapping = {}
-            for item in parsed:
-                raw = item["raw"]
-                if raw in expected:
-                    mapping[raw] = item
-            missing = expected - mapping.keys()
-            if missing:
-                raise ValueError(f"Gemini omitted {len(missing)} requested title(s)")
-            return mapping
-        except Exception as exc:
-            print(f"Gemini attempt {attempt + 1}/{MAX_RETRIES} failed: {exc}")
-            provider_state.record_failure("gemini", exc)
-            if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc):
-                print("Gemini quota is exhausted; trying Groq for this title batch.")
-                break
-            if attempt + 1 < MAX_RETRIES:
-                time.sleep(min(2 ** attempt, 8))
-    if groq_api_key and "groq" not in provider_state.exhausted:
-        try:
-            parsed = _parse_model_response(_groq_generate_text(prompt, groq_api_key, provider_state))
-            expected = set(channel_names)
-            mapping = {item["raw"]: item for item in parsed if item["raw"] in expected}
-            if expected - mapping.keys():
-                raise ValueError(f"Groq omitted {len(expected - mapping.keys())} requested title(s)")
-            return mapping
-        except Exception as exc:
-            print(f"Groq LIVE EVENT title cleanup failed: {exc}")
-    print("Skipping this batch after repeated failures.")
-    return {}
+            provider_state.record_failure(provider, exc)
+            print(f"{provider.title()} title cleanup failed: {exc}")
+    return mapping
 
 
 def ai_describe_events(
     events: list[dict[str, str]], client: genai.Client | None, groq_api_key: str | None = None,
     provider_state: AIProviderState | None = None,
 ) -> dict[str, str]:
-    """Create short, web-grounded EPG descriptions keyed to event instances."""
-    descriptions: dict[str, str] = {}
-    if not events:
-        return descriptions
-
+    """Generate short grounded descriptions, retaining partial batch successes."""
     provider_state = provider_state or AIProviderState()
-    gemini_exhausted = client is None or "gemini" in provider_state.exhausted
+    descriptions: dict[str, str] = {}
     for start in range(0, len(events), DESCRIPTION_BATCH_SIZE):
         if not provider_state.available(client, groq_api_key):
-            print("No AI provider available; deferring remaining descriptions until a later run.")
+            print("No AI provider available; leaving unattempted descriptions pending.")
             break
-        batch = events[start : start + DESCRIPTION_BATCH_SIZE]
-        prompt = """For each sports event below, use Google Search to find reliable,
-current information about that exact event. Write a concise EPG description
-(one or two sentences) identifying the competition and relevant event details.
-Do not guess or add unsupported facts. If search results do not identify the
-event reliably, use only the supplied title and context. Return only a JSON
-array with one object per input, with exactly these string fields: key,
-description. Preserve each key exactly.
+        batch = events[start:start + DESCRIPTION_BATCH_SIZE]
+        for provider in ("gemini", "groq"):
+            remaining = [event for event in batch if event["key"] not in descriptions]
+            if not remaining:
+                break
+            if provider in provider_state.exhausted:
+                continue
+            if (provider == "gemini" and client is None) or (provider == "groq" and not groq_api_key):
+                continue
+            # Long internal cache keys repeat titles and dates; send compact keys instead.
+            aliases = {f"e{i}": event for i, event in enumerate(remaining)}
+            payload = [{"key": alias, "title": _neutral_event_title(event["title"]), "context": event["context"]}
+                       for alias, event in aliases.items()]
+            prompt = """Write one concise, factual EPG sentence per sports event.
+Use a brief web search to verify the specific event and competition. Do not
+research background histories. If results are unclear, use only the supplied
+title/context; never invent facts. Describe the event, not the feed language.
+Return only a JSON array with string fields
+key and description, preserving each key. Do not include search notes.
 
 Events (JSON):
-""" + json.dumps(batch, ensure_ascii=False)
-
-        try:
-            if gemini_exhausted:
-                raise RuntimeError("Gemini unavailable; use configured fallback")
-            response = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.1,
-                    response_mime_type="application/json",
-                    tools=[types.Tool(google_search=types.GoogleSearch())],
-                ),
-            )
-            text = (getattr(response, "text", None) or "").strip()
-            if not text:
-                raise ValueError("Gemini returned an empty description response")
-            parsed = _parse_json_array(text)
-            expected = {event["key"] for event in batch}
-            for item in parsed:
-                if (
-                    isinstance(item, dict)
-                    and isinstance(item.get("key"), str)
-                    and isinstance(item.get("description"), str)
-                    and item["key"] in expected
-                ):
-                    descriptions[item["key"]] = item["description"].strip()
-                    event = next(event for event in batch if event["key"] == item["key"])
-                    print(
-                        "Generated event description for: "
-                        f"{event['title']} [{event['context']}]"
+""" + json.dumps(payload, ensure_ascii=False)
+            provider_state.attempted_descriptions.update(event["key"] for event in remaining)
+            try:
+                if provider == "gemini":
+                    response = client.models.generate_content(
+                        model=GEMINI_MODEL, contents=prompt,
+                        config=types.GenerateContentConfig(
+                            temperature=0.1, response_mime_type="application/json",
+                            tools=[types.Tool(google_search=types.GoogleSearch())],
+                        ),
                     )
-            missing = expected - descriptions.keys()
-            if missing:
-                print(f"Gemini omitted {len(missing)} event description(s) in this batch.")
-        except Exception as exc:
-            provider_state.record_failure("gemini", exc)
-            if not gemini_exhausted:
-                print(f"Gemini event-description batch failed: {exc}")
-            if "RESOURCE_EXHAUSTED" in str(exc) or "429" in str(exc) or client is None:
-                gemini_exhausted = True
-                print("Gemini is unavailable; trying Groq for this and remaining description batches.")
-            if groq_api_key and "groq" not in provider_state.exhausted:
-                try:
-                    groq_text = _groq_generate_text(prompt, groq_api_key, provider_state)
-                    parsed = _parse_json_array(groq_text)
-                    expected = {event["key"] for event in batch}
-                    for item in parsed:
-                        if (
-                            isinstance(item, dict)
-                            and isinstance(item.get("key"), str)
-                            and isinstance(item.get("description"), str)
-                            and item["key"] in expected
-                        ):
-                            descriptions[item["key"]] = item["description"].strip()
-                            event = next(
-                                event for event in batch if event["key"] == item["key"]
-                            )
-                            print(
-                                "Generated event description for: "
-                                f"{event['title']} [{event['context']}] (Groq)"
-                            )
-                    missing = expected - descriptions.keys()
-                    if missing:
-                        print(f"Groq omitted {len(missing)} event description(s) in this batch.")
-                except Exception as groq_exc:
-                    print(f"Groq event-description batch failed: {groq_exc}")
-            # Keep the schedule publishing if either model fails.
+                    text = getattr(response, "text", None) or ""
+                else:
+                    text = _groq_generate_text(prompt, groq_api_key, provider_state)
+                for item in _parse_json_array(text):
+                    if not isinstance(item, dict):
+                        continue
+                    event = aliases.get(item.get("key")) if isinstance(item.get("key"), str) else None
+                    description = item.get("description")
+                    if event and isinstance(description, str) and description.strip():
+                        descriptions[event["key"]] = description.strip()
+                        print(f"Generated event description for: {event['title']} [{event['context']}] ({provider})")
+            except Exception as exc:
+                provider_state.record_failure(provider, exc)
+                print(f"{provider.title()} event-description batch failed: {exc}")
     return descriptions
+
+
+def _neutral_event_title(title: str) -> str:
+    title = _clean_mls_programme_title(title)
+    return re.sub(r"\s*\((?:English|Spanish)\)\s*$", "", title, flags=re.I)
+
+
+def _shared_description_key(event: dict[str, str]) -> str:
+    """Share a description only for the same title and explicit GMT kickoff."""
+    kickoff = re.search(r"(\d{2}/\d{2}/\d{4})(?:\s+at)?\s+(\d{2}:\d{2})\s+GMT", event["context"])
+    if not kickoff:
+        return _make_ai_cache_key("event-description", event)
+    title = _neutral_event_title(event["title"])
+    title = re.sub(r"\bvs\.", "vs", title, flags=re.I).casefold()
+    return _make_ai_cache_key("shared-event-description", {
+        "title": title, "kickoff": " ".join(kickoff.groups()),
+    })
+
+
+def _description_priority(event: dict[str, str]) -> tuple[int, float]:
+    kickoff = re.search(r"(\d{2}/\d{2}/\d{4})(?:\s+at)?\s+(\d{2}:\d{2})\s+GMT", event["context"])
+    if kickoff:
+        try:
+            when = datetime.strptime(" ".join(kickoff.groups()), "%d/%m/%Y %H:%M").replace(tzinfo=UTC)
+            now = datetime.now(UTC)
+            return max(0, (when.date() - now.date()).days), abs((when - now).total_seconds())
+        except ValueError:
+            pass
+    return 0, float("inf")
 
 
 def _make_ai_cache_key(kind: str, payload: dict[str, str]) -> str:
@@ -1356,7 +1390,7 @@ def _prune_ai_cache(cache: dict[str, Any]) -> None:
     stale_keys: list[str] = []
 
     for key, entry in entries.items():
-        if not isinstance(entry, dict):
+        if not isinstance(entry, dict) or (entry.get("failed") and entry.get("failure_policy") != AI_FAILURE_POLICY):
             stale_keys.append(key)
             continue
 
@@ -1392,12 +1426,14 @@ def _save_ai_cache(cache: dict[str, Any]) -> None:
 
 
 def _cache_failure_is_active(entry: Any) -> bool:
-    if not isinstance(entry, dict) or not entry.get("failed"):
+    if not isinstance(entry, dict) or not entry.get("failed") or entry.get("failure_policy") != AI_FAILURE_POLICY:
         return False
     try:
         retry_after = datetime.fromisoformat(entry["retry_after"])
     except (KeyError, TypeError, ValueError):
         return False
+    if retry_after.tzinfo is None:
+        retry_after = retry_after.replace(tzinfo=UTC)
     return datetime.now(UTC) < retry_after
 
 
@@ -1463,9 +1499,9 @@ def _normalize_paramount_branding(
 
 def process_epg() -> None:
     client: genai.Client | None = None
-    provider_state = AIProviderState()
     groq_api_key = os.environ.get("GROQ_API_KEY")
     ai_cache = _load_ai_cache()
+    provider_state = AIProviderState(ai_cache.setdefault("provider_cooldowns", {}))
     ai_cache_entries: dict[str, Any] = ai_cache["entries"]
     football_mirror_ids = _read_channel_id_manifest(FOOTBALL_MIRROR_IDS_FILE)
     event_mirror_ids = _read_channel_id_manifest(EVENT_MIRROR_IDS_FILE)
@@ -1843,7 +1879,81 @@ def process_epg() -> None:
         f"and {len(active_titles)} Event Changes title(s) with parseable start times."
     )
 
+    event_descriptions: dict[str, str] = {}
+    description_groups: dict[str, list[dict[str, str]]] = {}
+    for event in sorted(description_events.values(), key=_description_priority):
+        description_groups.setdefault(_shared_description_key(event), []).append(event)
+    events_to_describe: list[dict[str, str]] = []
+    description_cache_keys: dict[str, str] = {}
+    cached_description_groups = 0
+    cached_description_failures = 0
+    for cache_key, group in description_groups.items():
+        candidates = [ai_cache_entries.get(cache_key, {})]
+        # Migrate valid existing results without discarding the successful cache.
+        candidates.extend(ai_cache_entries.get(_make_ai_cache_key(
+            "event-description", {"key": event["key"], "title": event["title"], "context": event["context"]}
+        ), {}) for event in group)
+        successful = next((entry for entry in candidates if isinstance(entry, dict)
+                           and isinstance(entry.get("result"), str) and entry["result"].strip()
+                           and not (len(group) > 1 and re.search(r"\b(?:English|Spanish)[ -]language\b", entry["result"], re.I))), None)
+        if successful:
+            ai_cache_entries[cache_key] = dict(successful)
+            cached_description_groups += 1
+            for event in group:
+                event_descriptions[event["key"]] = successful["result"]
+        elif any(_cache_failure_is_active(entry) for entry in candidates):
+            cached_description_failures += 1
+        else:
+            representative = group[0]
+            events_to_describe.append(representative)
+            description_cache_keys[representative["key"]] = cache_key
+    print(
+        f"Reusing {cached_description_groups} cached unique event description(s); "
+        f"{cached_description_failures} attempted failure(s) cooling down; "
+        f"{len(events_to_describe)} unique events pending AI descriptions "
+        f"({len(description_events)} event labels before sharing)."
+    )
+    new_descriptions: dict[str, str] = {}
+    if events_to_describe:
+        gemini_client = get_client()
+        if provider_state.available(gemini_client, groq_api_key):
+            new_descriptions = ai_describe_events(events_to_describe, gemini_client, groq_api_key, provider_state)
+            for event in events_to_describe:
+                cache_key = description_cache_keys[event["key"]]
+                description = new_descriptions.get(event["key"])
+                if description:
+                    ai_cache_entries[cache_key] = {
+                        "kind": "event-description",
+                        "created_at": datetime.now(UTC).isoformat(),
+                        "title": event["title"], "context": event["context"],
+                        "result": description,
+                    }
+                    for member in description_groups[cache_key]:
+                        event_descriptions[member["key"]] = description
+                elif event["key"] in provider_state.attempted_descriptions:
+                    ai_cache_entries[cache_key] = {
+                        "kind": "event-description", "failed": True,
+                        "failure_policy": AI_FAILURE_POLICY,
+                        "retry_after": provider_state.item_retry_after(),
+                    }
+    unattempted = sum(event["key"] not in provider_state.attempted_descriptions
+                      for event in events_to_describe)
+    print(
+        f"AI description summary: {len(new_descriptions)} newly generated; "
+        f"{cached_description_groups} reused from cache; "
+        f"{len(provider_state.attempted_descriptions) - len(new_descriptions)} attempted but unsuccessful; "
+        f"{unattempted} unattempted and still pending; "
+        f"{cached_description_failures} cooling down. "
+        f"Descriptions available for {len(event_descriptions)} of {len(description_events)} event labels."
+    )
+
+
     cleaned_mapping: dict[str, dict[str, str]] = {}
+    dazn_reusable_descriptions = {
+        item["title"]: event_descriptions[dazn_description_keys[ch_id]]
+        for ch_id, item in dazn_targets.items()
+        if dazn_description_keys.get(ch_id) in event_descriptions
+    }
     live_cache_keys = {
         title: _make_ai_cache_key(
             "live-title",
@@ -1863,6 +1973,11 @@ def process_epg() -> None:
             and isinstance(result.get("description"), str)
         ):
             cleaned_mapping[title] = result
+        elif title in dazn_reusable_descriptions:
+            cleaned_mapping[title] = {
+                "raw": title, "clean_title": _format_title_event_name(title),
+                "description": dazn_reusable_descriptions[title],
+            }
         elif _cache_failure_is_active(cache_entry):
             cached_failures += 1
         else:
@@ -1876,6 +1991,8 @@ def process_epg() -> None:
         gemini_client = get_client()
         if gemini_client or groq_api_key:
             for start in range(0, len(titles_to_clean), BATCH_SIZE):
+                if not provider_state.available(gemini_client, groq_api_key):
+                    break
                 batch = titles_to_clean[start : start + BATCH_SIZE]
                 print(f"Cleaning batch {start // BATCH_SIZE + 1} ({len(batch)} titles)...")
                 results = ai_clean_sport_titles(batch, gemini_client, groq_api_key, provider_state)
@@ -1888,70 +2005,15 @@ def process_epg() -> None:
                         "created_at": datetime.now(UTC).isoformat(),
                         "result": result,
                     }
-                failed_titles = set(batch) - results.keys()
-                retry_after = (datetime.now(UTC) + CACHE_FAILURE_COOLDOWN).isoformat()
+                failed_titles = (set(batch) & provider_state.attempted_titles) - results.keys()
+                retry_after = provider_state.item_retry_after()
                 for title in failed_titles:
                     ai_cache_entries[live_cache_keys[title]] = {
                         "kind": "live-title",
                         "failed": True,
+                        "failure_policy": AI_FAILURE_POLICY,
                         "retry_after": retry_after,
                     }
-
-    event_descriptions: dict[str, str] = {}
-    description_event_list = list(description_events.values())
-    description_cache_keys: dict[str, str] = {}
-    events_to_describe: list[dict[str, str]] = []
-    cached_description_failures = 0
-    for event in description_event_list:
-        cache_key = _make_ai_cache_key(
-            "event-description",
-            {"key": event["key"], "title": event["title"], "context": event["context"]},
-        )
-        description_cache_keys[event["key"]] = cache_key
-        cache_entry = ai_cache_entries.get(cache_key, {})
-        result = cache_entry.get("result") if isinstance(cache_entry, dict) else None
-        if isinstance(result, str) and result.strip():
-            event_descriptions[event["key"]] = result
-            print(
-                "Reusing cached event description for: "
-                f"{event['title']} [{event['context']}]"
-            )
-        elif _cache_failure_is_active(cache_entry):
-            cached_description_failures += 1
-        else:
-            events_to_describe.append(event)
-    print(
-        f"Reusing {len(event_descriptions)} cached event description(s); "
-        f"{cached_description_failures} recent failure(s) held for cooldown; "
-        f"{len(events_to_describe)} need AI descriptions."
-    )
-    if events_to_describe:
-        gemini_client = get_client()
-        if gemini_client or groq_api_key:
-            new_descriptions = ai_describe_events(events_to_describe, gemini_client, groq_api_key, provider_state)
-            event_descriptions.update(new_descriptions)
-            for event in events_to_describe:
-                description = new_descriptions.get(event["key"])
-                if description:
-                    ai_cache_entries[description_cache_keys[event["key"]]] = {
-                        "kind": "event-description",
-                        "created_at": datetime.now(UTC).isoformat(),
-                        "title": event["title"],
-                        "context": event["context"],
-                        "result": description,
-                    }
-                else:
-                    ai_cache_entries[description_cache_keys[event["key"]]] = {
-                        "kind": "event-description",
-                        "failed": True,
-                        "retry_after": (
-                            datetime.now(UTC) + CACHE_FAILURE_COOLDOWN
-                        ).isoformat(),
-                    }
-    print(
-        f"Generated web-grounded descriptions for {len(event_descriptions)} "
-        f"of {len(description_events)} distinct fixtures."
-    )
 
     # Strip all changing event details from display names. Repeated aliases are
     # retained to preserve the XML structure, but contain only the stable label.
@@ -2508,11 +2570,13 @@ def process_epg() -> None:
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL
     ) as destination:
         tree.write(destination, encoding="utf-8", xml_declaration=True)
+    print(f"Groq reported token usage for successful requests: {provider_state.groq_tokens} total tokens.")
     _save_ai_cache(ai_cache)
     print(f"Generated {OUTPUT_GZ_FILE.resolve()}")
 
 
 if __name__ == "__main__":
     process_epg()
+
 
 
