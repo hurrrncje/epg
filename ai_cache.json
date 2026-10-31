@@ -7,6 +7,13 @@
       "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
       "title": "Millwall FC vs Derby County"
     },
+    "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
+      "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770312+00:00",
+      "kind": "event-description",
+      "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
+      "title": "Crewe Alexandra FC vs Barnet FC"
+    },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770309+00:00",
@@ -45,12 +52,6 @@
       "kind": "event-description",
       "result": "EFL League One match between Peterborough United and Luton Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Peterborough United FC vs Luton Town"
-    },
-    "0fd5d0ea19744832523b101462e74e6773f638c5d872b4d36b0c86e8819cdcf6": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T18:38:51.308519+00:00"
     },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
@@ -210,6 +211,13 @@
       "result": "MLS match between St. Louis CITY SC and Portland Timbers scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "4 | St. Louis CITY SC vs Portland Timbers (Spanish)"
     },
+    "296bc4167c5a2b438b3c2acc4601eaec6eed037fc234cade6d97379d11a64689": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334906+00:00",
+      "kind": "event-description",
+      "result": "Princeton men's ice hockey faces Columbia men's ice hockey in an ECAC regular‑season match.",
+      "title": "Princeton vs. Columbia"
+    },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770340+00:00",
@@ -288,6 +296,13 @@
       "result": "Men's basketball game between Denver Pioneers and Loyola Marymount Lions scheduled for Oct 29 2026.",
       "title": "Denver vs. Loyola Marymount"
     },
+    "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334902+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between Cal State Bakersfield and Cal State Fullerton.",
+      "title": "Cal State Bakersfield vs. Cal State Fullerton"
+    },
     "3298059fa870c0824f5e756458f67f5664ef921c36d7be2b263d936c71e33d20": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T06:23:30.006210+00:00",
@@ -310,6 +325,13 @@
         "description": "NHL regular season game between the Minnesota Wild and the Utah Mammoth, scheduled for Wednesday, October 28, 2026 at the Delta Center in Salt Lake City, UT. 【8†L27-L28】",
         "raw": "Wild @ Mammoth"
       }
+    },
+    "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334909+00:00",
+      "kind": "event-description",
+      "result": "Navy men's ice hockey competes against Bucknell men's ice hockey in an ECAC regular‑season game.",
+      "title": "Navy vs. Bucknell"
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -378,6 +400,24 @@
       "result": "Partido de la temporada regular de MLS: Charlotte FC contra Orlando City, sábado 31 oct 2026, inicio a las 12:00 p.m. local (16:55 GMT)【1†L12-L13】",
       "title": "| Charlotte FC vs Orlando City (Spanish)"
     },
+    "3e6db40cf75e528ca5817d6367098ae1845ee38cd5f0f522f312264faffd1e8f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T21:16:14.334850+00:00"
+    },
+    "3ee7da3768419d83eb56ed0a14a1aca6af70214f530a56babdcbdcb6c2324262": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T21:16:14.334850+00:00"
+    },
+    "3ff2b4e94bee02fb15b6f744187e7aedf338d00327abec3d2a7e194217386874": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T21:16:14.334850+00:00"
+    },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
       "created_at": "2026-10-29T06:23:30.006230+00:00",
@@ -389,12 +429,6 @@
       "created_at": "2026-10-26T12:30:58.030794+00:00",
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
-    },
-    "4150f991f1828836025923623d1b8bbe77cd1c144e4565340c107daa66beabeb": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T18:38:51.308519+00:00"
     },
     "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
@@ -530,6 +564,13 @@
         "raw": "Pitch 8B | Day 3: Afternoon Session"
       }
     },
+    "58be4ffa91b48a8b412ee122603ab45c299f78272077d72bd741f9fd5a7e4529": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334921+00:00",
+      "kind": "event-description",
+      "result": "RPI men's ice hockey meets Union men's ice hockey in an ECAC regular‑season game.",
+      "title": "RPI vs. Union"
+    },
     "5995be9f9bbcce68555d983cf448403bb9729c52f66ee08bc521cf5adbc968f7": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
       "created_at": "2026-10-29T06:23:30.006257+00:00",
@@ -630,6 +671,13 @@
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
     },
+    "6ca4669c5186e02bf70ba41172929cd3d4f94db87d15ddb3ff0dfa368e0f3ad3": {
+      "context": "DAZN UK event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334893+00:00",
+      "kind": "event-description",
+      "result": "Football match between Esgueira and CA Queluz.",
+      "title": "Esgueira vs. CA Queluz"
+    },
     "6d48c33762f2d36f4b5d1b11917acee569aa1738219e4eeb11d3d843d6016c84": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770340+00:00",
@@ -677,6 +725,13 @@
       "result": "MLS match between St. Louis CITY SC and Portland Timbers scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "3 | St. Louis CITY SC vs Portland Timbers (English)"
     },
+    "7357b942732d4c65580d46186efa4dbc118e1fc1db6665f3a7dc62a98965372c": {
+      "context": "DAZN UK event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334898+00:00",
+      "kind": "event-description",
+      "result": "MLTT Week 4 match: Atlanta Blazers versus Chicago Wind.",
+      "title": "MLTT - Week 4: Atlanta Blazers vs. Chicago Wind"
+    },
     "735de622dac991f1acea9bbaec90b7017c9df15237e7060259f6e5bc7fd0bcff": {
       "created_at": "2026-10-26T12:30:58.030784+00:00",
       "kind": "event-description",
@@ -689,12 +744,26 @@
       "result": "EFL League One fixture between Luton Town and Doncaster Rovers at 19:45 GMT on 27 Oct 2026.",
       "title": "Luton Town vs Doncaster Rovers FC"
     },
+    "752b9d85d0a5d2cb34655ce0b80e9f7133c0b42763f893d03de3d19260dc69c7": {
+      "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770348+00:00",
+      "kind": "event-description",
+      "result": "Scottish Premiership fixture between Dundee United and Heart of Midlothian at 15:00 GMT on 31 Oct 2026.",
+      "title": "Dundee United vs Heart of Midlothian"
+    },
     "7602144183d6ba2bc27e7d7f35ab68f058c2425bb6d0cafa1482c271fdb2aea8": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T03:25:48.898662+00:00",
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
+    },
+    "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334917+00:00",
+      "kind": "event-description",
+      "result": "Pacific men's ice hockey takes on Denver men's ice hockey in an NCAA Division I regular‑season match.",
+      "title": "Pacific vs. Denver"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -707,6 +776,13 @@
       "kind": "event-description",
       "result": "EFL Championship fixture between Stoke City and Preston North End at 12:30 GMT on 31 Oct 2026.",
       "title": "Stoke City vs Preston North End FC"
+    },
+    "7a126331c690613a4e923cda480464cc9f1bc760e4ad75ad7340deb9086b7c77": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
+      "created_at": "2026-10-31T21:16:12.334914+00:00",
+      "kind": "event-description",
+      "result": "Yale men's ice hockey plays Harvard men's ice hockey in an ECAC regular‑season contest.",
+      "title": "Yale vs. Harvard"
     },
     "7b6106ed24ba7e370461d9186ea54ebab7e67ece185f7f6d0c77b7725796fe83": {
       "created_at": "2026-10-26T12:30:58.030825+00:00",
@@ -750,6 +826,13 @@
       "kind": "event-description",
       "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
       "title": "Swindon Town FC vs Rotherham United FC"
+    },
+    "815003016c15ff9bb60a56af95cf0aefac2f75d7b793907ed151fac3ef38a6a5": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:15 GMT",
+      "created_at": "2026-10-31T21:16:12.334881+00:00",
+      "kind": "event-description",
+      "result": "Halftime band performances during the Oklahoma football game.",
+      "title": "SEC Halftime Band Performances at Oklahoma"
     },
     "815260001fef79adde87c602537999fd79a36be9404f3751dcf3f84d7daa5868": {
       "created_at": "2026-10-28T06:20:34.001579+00:00",
@@ -815,6 +898,13 @@
         "raw": "Islanders @ Predators"
       }
     },
+    "8c51708c9d0a5550aef6a35279cfcd111e0ef1f36333968a80d815c07a45dc14": {
+      "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770320+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Accrington Stanley and Northampton Town at 15:00 GMT on 31 Oct 2026.",
+      "title": "Accrington Stanley FC vs Northampton Town FC"
+    },
     "8c95fcb9a73dea2bf6d4cdf1fce720cc43997dd2e4202ad1e49b97f0e85f3390": {
       "created_at": "2026-10-26T12:30:58.030799+00:00",
       "kind": "event-description",
@@ -850,6 +940,12 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
     },
+    "902f4d58b5a11f54e2a53fac1360e26fc34b1179302ce1d201539a722ae2de66": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T21:16:14.334850+00:00"
+    },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
       "kind": "live-title",
@@ -865,12 +961,6 @@
       "kind": "event-description",
       "result": "College football regular‑season game between Sam Houston State Bearkats and Missouri State Bears, part of the 2026‑27 NCAA season.",
       "title": "Sam Houston @ Missouri State"
-    },
-    "97e95fcba0205e8a4cdf1fcb55ed149d247e0bd57539d01c9786de3a49ae1a74": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T18:38:51.308519+00:00"
     },
     "992b130f1e8e33e070a72507ed786ed424f7ab07900fce0c5b7e8d3948d75ad9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -933,12 +1023,6 @@
       "kind": "event-description",
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
-    },
-    "a1e0d1f5dc3972c52341a4d6f1ddcfa5143b655b0785d0ceb061f861d09ea8fe": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T18:38:51.308519+00:00"
     },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
@@ -1025,10 +1109,24 @@
         "raw": "Cowboys @ Eagles"
       }
     },
+    "b021a15c32258620119c03d04df5b527cceaf477094af4a42d5d65f0860e85fa": {
+      "context": "Disney+ Events event scheduled 31/10/2026 21:30 GMT",
+      "created_at": "2026-10-31T21:16:12.334888+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between Gardner‑Webb and South Carolina Upstate.",
+      "title": "Gardner-Webb vs. South Carolina Upstate"
+    },
     "b15fb8bb2c631dc1dc45337b9719824f27f36a585e5db90590e5c444942ced9c": {
       "created_at": "2026-10-26T12:30:58.030767+00:00",
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
+    },
+    "b2808e741bf6f9a0aba78ffb40f624fad698631e4917321cfecd993d0b157d36": {
+      "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
+      "created_at": "2026-10-27T03:17:18.770326+00:00",
+      "kind": "event-description",
+      "result": "EFL Championship fixture between Stoke City and Preston North End at 12:30 GMT on 31 Oct 2026.",
+      "title": "Stoke City vs Preston North End FC"
     },
     "b30a10d9df8320c713953d10afceb2fd145535ed3782ab58b43eeaefd5c2808f": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -1223,6 +1321,12 @@
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
+    "c9fc0a834f600792fdae81ecdf2e5fc9924008440944847171b135166677b894": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-10-31T21:16:14.334850+00:00"
+    },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
       "kind": "event-description",
@@ -1351,12 +1455,6 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 10B | Day 3: Afternoon Session"
       }
-    },
-    "ddbe5e3c46c31f29c820489ca362264141c84e2e844ab402c0c804115a2f47b8": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T18:38:51.308519+00:00"
     },
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -1495,6 +1593,13 @@
         "raw": "Kings @ Blackhawks"
       }
     },
+    "f1e4ec933fb7648f8a8ed573e91329fe9b047ee670a05913a6db3ee74b6b365b": {
+      "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770305+00:00",
+      "kind": "event-description",
+      "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
+      "title": "Wycombe Wanderers FC vs Burton Albion FC"
+    },
     "f3108ddf51761fd3a8e0a6af6ad0eeafb244b46bf05be45d1c6b1feb626f3e3e": {
       "context": "Paramount+ event scheduled 28/10/2026 18:00 GMT",
       "created_at": "2026-10-28T18:24:17.569539+00:00",
@@ -1520,6 +1625,13 @@
       "kind": "event-description",
       "result": "MLB World Series Game 5: Milwaukee Brewers vs Tampa Bay Rays scheduled for Oct 29 2026.",
       "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
+    },
+    "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
+      "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
+      "created_at": "2026-10-27T03:17:18.770315+00:00",
+      "kind": "event-description",
+      "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
+      "title": "Millwall FC vs Derby County"
     },
     "fcdb318892c5e29d77f230266371d95348e2643cfc5cae6e2d38c4817129bd27": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
@@ -1550,7 +1662,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-01T00:36:42.118705+00:00",
-    "groq": "2026-10-31T18:38:51.308519+00:00"
+    "groq": "2026-10-31T21:16:14.334850+00:00"
   },
   "version": 1
 }
