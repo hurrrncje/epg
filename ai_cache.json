@@ -7,6 +7,13 @@
       "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
       "title": "Millwall FC vs Derby County"
     },
+    "024a8f384ce131a4fe8c49223ef8964848ac58e4b57f8a53a6730668d0a777e8": {
+      "context": "MAX UK event scheduled 01/11/2026 15:25 GMT",
+      "created_at": "2026-11-01T15:17:06.400733+00:00",
+      "kind": "event-description",
+      "result": "Women’s Group Stage match between Colombia and Ukraine in the Dakar 2026 Youth Olympic Futsal Tournament.",
+      "title": "Women | Group Stage | Dakar 2026: Colombia - Ukraine"
+    },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770312+00:00",
@@ -160,6 +167,19 @@
         "raw": "Devils @ Stars"
       }
     },
+    "20a8f5d15430981dafce7b4579a11bcb7bebb1d27d82a78bc4a5d723b4b1f3ab": {
+      "context": "DAZN UK event scheduled 01/11/2026 15:30 GMT",
+      "created_at": "2026-11-01T15:17:06.400745+00:00",
+      "kind": "event-description",
+      "result": "Domestic basketball game between Saint Quentin and ASVEL scheduled for 1 Nov 2026 at 15:30 GMT.",
+      "title": "Saint Quentin vs. ASVEL"
+    },
+    "213d6db38a6c71af8e6888208849b13809040ff2c2727a264ade4bb75df87e21": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T15:25:20.400700+00:00"
+    },
     "22103c58608d5cb547d89bb348bcc22d84cdd3fbfabefb443a2d8c926a6c1694": {
       "created_at": "2026-10-26T12:30:58.030791+00:00",
       "kind": "event-description",
@@ -217,6 +237,13 @@
       "kind": "event-description",
       "result": "MLS match between Chicago Fire FC and Orlando City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "6 | Chicago Fire FC vs Orlando City (Spanish)"
+    },
+    "2925f743caec3f17a17714fd3597701b296c5629b69264d4908dccc6d55d79e4": {
+      "context": "DAZN UK event scheduled 01/11/2026 15:15 GMT",
+      "created_at": "2026-11-01T15:17:06.400725+00:00",
+      "kind": "event-description",
+      "result": "Domestic league match between Liberte FC and JS Tahoua scheduled for 1 Nov 2026 at 15:15 GMT.",
+      "title": "Liberté FC vs. JS Tahoua"
     },
     "29614e3384635443ac74fb142da0ca6866f052f0c52e11319194a0631091d8c7": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -523,6 +550,12 @@
       "result": "MLS match between Vancouver Whitecaps FC and San Diego FC scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "2 | Vancouver Whitecaps FC vs San Diego FC (Spanish)"
     },
+    "4b3e9da96df83a6fc1a11a258ec2429ae3a7bf1e110647e3254918b1966bb838": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T15:25:20.400700+00:00"
+    },
     "4b9fcc5e1889cc0c494d143cb978ca27e390967f6db9cddad528f13f380027db": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T06:23:30.006194+00:00",
@@ -744,6 +777,12 @@
       "kind": "event-description",
       "result": "Charlotte vs. UAB."
     },
+    "70b2b5bf0b2e9b0c3cbff11be097dbbba75b8a67c40eb1b131611001ca03aab4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T15:25:20.400700+00:00"
+    },
     "70c9627580c4234da153280f6ef6f730ff08cb2563d39ec23d1b996ec6fb0925": {
       "context": "DAZN UK event scheduled 01/11/2026 12:15 GMT",
       "created_at": "2026-11-01T12:11:17.877020+00:00",
@@ -860,12 +899,6 @@
       "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
       "title": "Wolverhampton Wanderers vs Cardiff City"
     },
-    "807327b96a311987ac003783824887064ec3277977883c7306a44f87ae30ff6c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T12:19:06.876997+00:00"
-    },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
       "kind": "event-description",
@@ -916,6 +949,13 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 9A | Day 3: Afternoon Session"
       }
+    },
+    "8542753b7db80df4a9e070acbb107a184b81503ae0df0192d1752f7e42edef2d": {
+      "context": "MAX UK event scheduled 01/11/2026 15:30 GMT",
+      "created_at": "2026-11-01T15:17:06.400738+00:00",
+      "kind": "event-description",
+      "result": "2026 TCS New York City Marathon, a full‑distance road race held on 1 Nov 2026.",
+      "title": "2026: New York City Marathon"
     },
     "860f3190b53bd49683aad58e81b75c6df6c5896af42489fa66ed15651084f69b": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -1137,6 +1177,12 @@
       "kind": "event-description",
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "8 | San Jose Earthquakes vs Colorado Rapids (Spanish)"
+    },
+    "a5813512edf7cc4ef093c30fadb8aba201ac4b6e724959f75a55cd865aa50a12": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T15:25:20.400700+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -1406,12 +1452,6 @@
         "raw": "Chiefs @ Seahawks"
       }
     },
-    "c5f4082d6598e9aca0923313c48a194f88f25af7be5d6eaa0c502a2cb2c6a13f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T12:19:06.876997+00:00"
-    },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
       "kind": "live-title",
@@ -1420,12 +1460,6 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 2A | Day 3: Afternoon Session"
       }
-    },
-    "c76eb027b7ec78324acb7889fb60e8a54ec375db7f4a00c1469cbfd4fcbfbd67": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T12:19:06.876997+00:00"
     },
     "c82194d0355b709c4af5aed70f56b767e45eafe9387ba8415b6b76343e2acbf9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -1480,12 +1514,6 @@
       "kind": "event-description",
       "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
       "title": "Leicester City vs Stevenage FC"
-    },
-    "d3f86bd8ca275476a4ac0448a64eb67fb2f11b94adb64c333191d4a66f61e4f7": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T12:19:06.876997+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -1690,18 +1718,19 @@
       "result": "EFL Championship clash between Plymouth Argyle and Reading at 12:30 GMT on 31 Oct 2026.",
       "title": "Plymouth Argyle vs Reading FC"
     },
+    "e6f12aadecce5be279ced56a351ca00761910d7c65811947d2f2df9bd969bb0c": {
+      "context": "Disney+ Events event scheduled 01/11/2026 15:30 GMT",
+      "created_at": "2026-11-01T15:17:06.400742+00:00",
+      "kind": "event-description",
+      "result": "3. Liga match between Rot‑Weiss Essen and SG Sonnenhof Großaspach scheduled for 1 Nov 2026 at 15:30 GMT.",
+      "title": "Rot-Weiss Essen vs. Sonnenhof Grossaspach"
+    },
     "e7c91ba4a5f8e672ae1894d07af385902338a0b17684162acbb2998490f812f6": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843929+00:00",
       "kind": "event-description",
       "result": "Portland Pilots face Pacific Tigers in a men's college basketball game.",
       "title": "#12 Portland vs. Pacific"
-    },
-    "e8be56634e08f84813a694f5f3826e817aef29d68e7eca2cca22da810d0fc77b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T12:19:06.876997+00:00"
     },
     "e98ced1e4d10275fdcb0778226f3981284d438f3aecdea271e4c65e730087e1f": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
@@ -1775,6 +1804,12 @@
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
     },
+    "f4ddfb80f35a3bc7820ec0e25d45b9d81fca21e091ea110bda2aa10b295d9a15": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T15:25:20.400700+00:00"
+    },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
       "kind": "event-description",
@@ -1836,8 +1871,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-01T12:23:10.684551+00:00",
-    "groq": "2026-11-01T12:19:06.876997+00:00"
+    "gemini": "2026-11-01T21:16:28.835611+00:00",
+    "groq": "2026-11-01T15:25:20.400700+00:00"
   },
   "version": 1
 }
