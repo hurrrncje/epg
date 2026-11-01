@@ -21,12 +21,26 @@
       "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
       "title": "Crewe Alexandra FC vs Barnet FC"
     },
+    "0413aabb229fadc9ef56ea4d8bcc2f46d36a4b32173090dc2ce6259fda2098be": {
+      "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
+      "created_at": "2026-11-01T18:15:10.922558+00:00",
+      "kind": "event-description",
+      "result": "A placement match for 9th place in the Messi Cup 2026.",
+      "title": "Messi Cup 2026 (9th Place Match)"
+    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
       "kind": "event-description",
       "result": "Idaho Vandals face Portland State Vikings in a men's college basketball match.",
       "title": "Idaho vs. Portland State"
+    },
+    "08ab0d32bedc92ca1a8f891dffbf0953de3118644f615fa6c0018f084ab752ed": {
+      "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
+      "created_at": "2026-11-01T18:15:10.922570+00:00",
+      "kind": "event-description",
+      "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
+      "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -174,12 +188,6 @@
       "result": "Domestic basketball game between Saint Quentin and ASVEL scheduled for 1 Nov 2026 at 15:30 GMT.",
       "title": "Saint Quentin vs. ASVEL"
     },
-    "213d6db38a6c71af8e6888208849b13809040ff2c2727a264ade4bb75df87e21": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T15:25:20.400700+00:00"
-    },
     "22103c58608d5cb547d89bb348bcc22d84cdd3fbfabefb443a2d8c926a6c1694": {
       "created_at": "2026-10-26T12:30:58.030791+00:00",
       "kind": "event-description",
@@ -280,6 +288,12 @@
       "result": "MLS match between Chicago Fire FC and Orlando City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "5 | Chicago Fire FC vs Orlando City (English)"
     },
+    "2b8e707c9e04b453fed704b72d6af23b3102ee44173186b36a858b057ba2abb9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T18:24:39.922520+00:00"
+    },
     "2b964365640da98a7d726c7802664095318ae6094100cdecb81ff70b9c7c4dca": {
       "created_at": "2026-10-26T19:21:40.738720+00:00",
       "kind": "live-title",
@@ -357,6 +371,12 @@
       "kind": "event-description",
       "result": "Jacksonville State Gamecocks vs New Mexico State Aggies college football game at Las Cruces, Oct 28 2026, ESPN2.",
       "title": "Jacksonville State vs. New Mexico State"
+    },
+    "33002b73fe6f32f87c92c0f1cf8f9e6c8b6877643ca61e09310d588fcb9f350a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T18:24:39.922520+00:00"
     },
     "333dbea7839f106931e37490e6312741e1abff296ac043ab614ef1c8aadbbdc2": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -529,6 +549,13 @@
         "raw": "Pitch 10A | Day 3: Afternoon Session"
       }
     },
+    "48c3cba40aa32d6fc175fdf8cd45ed8958fd7e0d990a77a6a6b51bf72d85f811": {
+      "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
+      "created_at": "2026-11-01T18:15:10.922550+00:00",
+      "kind": "event-description",
+      "result": "Flamengo vs. Boca Juniors compete for 5th place in the Messi Cup 2026.",
+      "title": "Messi Cup 2026 (5th Place Match)"
+    },
     "49af132424a4e6e4e7fb00a14d5b88fe45b3db9747a58606c218b511c4be584b": {
       "context": "Paramount+ event scheduled 29/10/2026 00:20 GMT",
       "created_at": "2026-10-29T03:25:48.898652+00:00",
@@ -549,12 +576,6 @@
       "kind": "event-description",
       "result": "MLS match between Vancouver Whitecaps FC and San Diego FC scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "2 | Vancouver Whitecaps FC vs San Diego FC (Spanish)"
-    },
-    "4b3e9da96df83a6fc1a11a258ec2429ae3a7bf1e110647e3254918b1966bb838": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T15:25:20.400700+00:00"
     },
     "4b9fcc5e1889cc0c494d143cb978ca27e390967f6db9cddad528f13f380027db": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -590,6 +611,12 @@
       "kind": "event-description",
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
+    },
+    "4fbb096b6eaa3ff5a850405c701b38ec1fc61327e69638d437f86ea021fdedda": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T18:24:39.922520+00:00"
     },
     "4fd7a0684ab2cedf460919c7b33ae3577206867f85275e40842378fd1f7efdf8": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:30 GMT",
@@ -777,11 +804,11 @@
       "kind": "event-description",
       "result": "Charlotte vs. UAB."
     },
-    "70b2b5bf0b2e9b0c3cbff11be097dbbba75b8a67c40eb1b131611001ca03aab4": {
+    "700ca0d81d1baa4be611d1b76676212e71fac60bef08dfde7da512f59d09caa0": {
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-01T15:25:20.400700+00:00"
+      "retry_after": "2026-11-01T18:24:39.922520+00:00"
     },
     "70c9627580c4234da153280f6ef6f730ff08cb2563d39ec23d1b996ec6fb0925": {
       "context": "DAZN UK event scheduled 01/11/2026 12:15 GMT",
@@ -940,6 +967,13 @@
       "kind": "event-description",
       "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
       "title": "Bolton Wanderers FC vs Bristol City FC"
+    },
+    "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
+      "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
+      "created_at": "2026-11-01T18:15:10.922575+00:00",
+      "kind": "event-description",
+      "result": "NFL game: Minnesota Vikings vs. Detroit Lions.",
+      "title": "Vikings @ Lions"
     },
     "8460b456d3626a5f384a57aa20782244a026c5e287ee0d6f29af26ab824c5999": {
       "created_at": "2026-10-26T19:21:40.738768+00:00",
@@ -1112,6 +1146,13 @@
       "result": "Carabao Cup match between Sunderland and Brentford, part of the 2026‑27 Carabao Cup, scheduled for 28 October 2026 at 19:00 GMT.",
       "title": "Carabao Cup: Sunderland vs. Brentford"
     },
+    "9d9b5bba101b76f9143ffdcd2afa5e7762bdfa5e1b4906697731b74c2227105d": {
+      "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
+      "created_at": "2026-11-01T18:15:10.922564+00:00",
+      "kind": "event-description",
+      "result": "NFL RedZone Week 8 delivers live coverage of all Sunday afternoon games.",
+      "title": "RedZone - Week 8"
+    },
     "9dc7c8b77eecad070c075a99dbb7d991a99080ea6bdcdb716e3db127033c332f": {
       "created_at": "2026-10-26T19:21:40.738718+00:00",
       "kind": "live-title",
@@ -1177,12 +1218,6 @@
       "kind": "event-description",
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "8 | San Jose Earthquakes vs Colorado Rapids (Spanish)"
-    },
-    "a5813512edf7cc4ef093c30fadb8aba201ac4b6e724959f75a55cd865aa50a12": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T15:25:20.400700+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -1804,12 +1839,6 @@
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
     },
-    "f4ddfb80f35a3bc7820ec0e25d45b9d81fca21e091ea110bda2aa10b295d9a15": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T15:25:20.400700+00:00"
-    },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
       "kind": "event-description",
@@ -1855,6 +1884,12 @@
       "kind": "event-description",
       "result": "Collin Klein Press Conference."
     },
+    "fe2068b075240e2e0af36b60bb1edac7ac80b1bbbba63147ebeee94459327248": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T18:24:39.922520+00:00"
+    },
     "fef06759bb10b50bb6dda33f8ec5f8bb4d36b1b4207159a82338d52e8a12a42d": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770333+00:00",
@@ -1872,7 +1907,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-01T21:16:28.835611+00:00",
-    "groq": "2026-11-01T15:25:20.400700+00:00"
+    "groq": "2026-11-01T18:24:39.922520+00:00"
   },
   "version": 1
 }
