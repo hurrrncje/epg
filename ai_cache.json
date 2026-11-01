@@ -7,12 +7,6 @@
       "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
       "title": "Millwall FC vs Derby County"
     },
-    "012634a50f2bf6124c3cf2449eef211fbf64611c5d4537cf1584134439f8abb3": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T09:33:39.843891+00:00"
-    },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770312+00:00",
@@ -33,6 +27,13 @@
       "kind": "event-description",
       "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
       "title": "Colchester United FC vs Walsall FC"
+    },
+    "0b01faf040a8363faedd5e32be88eb81c1875095b0b1968538be56dee8412f0c": {
+      "context": "Disney+ Events event scheduled 01/11/2026 12:00 GMT",
+      "created_at": "2026-11-01T12:11:17.877036+00:00",
+      "kind": "event-description",
+      "result": "Eyewitness News Marathon Sunday coverage.",
+      "title": "Eyewitness News: Marathon Sunday"
     },
     "0b35a70595b5a0f42a9f2115270432066d8606448429f8731e3640ccc37f4b59": {
       "context": "Paramount+ event scheduled 28/10/2026 13:00 GMT",
@@ -362,12 +363,6 @@
         "raw": "Pitch 9B | Day 3: Afternoon Session"
       }
     },
-    "3645a4fa1e2140be23450520aecb32c22c11b092d74dcd1a984608fae9b9f2d7": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T09:33:39.843891+00:00"
-    },
     "3712e3205b245dda3cb5ff83bbcffbabbc73b67e777fd50f2339b8f392286e50": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
       "created_at": "2026-10-29T03:25:48.898610+00:00",
@@ -607,6 +602,13 @@
       "result": "RPI men's ice hockey meets Union men's ice hockey in an ECAC regular‑season game.",
       "title": "RPI vs. Union"
     },
+    "59706ef2f429eb9f26d1d6c0c96a4307715101d329c52f691e0fff66fe3cdb9a": {
+      "context": "DAZN UK event scheduled 01/11/2026 12:00 GMT",
+      "created_at": "2026-11-01T12:11:17.877030+00:00",
+      "kind": "event-description",
+      "result": "Araz‑Naxçıvan PFK vs Neftçi PFK in the Azerbaijan Premier League.",
+      "title": "Araz-Naxçıvan PFK vs. Neftçi PFK"
+    },
     "5995be9f9bbcce68555d983cf448403bb9729c52f66ee08bc521cf5adbc968f7": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
       "created_at": "2026-10-29T06:23:30.006257+00:00",
@@ -742,6 +744,13 @@
       "kind": "event-description",
       "result": "Charlotte vs. UAB."
     },
+    "70c9627580c4234da153280f6ef6f730ff08cb2563d39ec23d1b996ec6fb0925": {
+      "context": "DAZN UK event scheduled 01/11/2026 12:15 GMT",
+      "created_at": "2026-11-01T12:11:17.877020+00:00",
+      "kind": "event-description",
+      "result": "Al Mabarrah vs Al Riyadi Al Abbasiyah in the Lebanese Premier League.",
+      "title": "Al Mabarra vs. Riyadi Abbasiyah"
+    },
     "711623853ff4610a92ac2a30b3196f3fed5bfcd3bdd1fc65634d1035c0a15952": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
       "created_at": "2026-10-29T03:25:48.898603+00:00",
@@ -850,6 +859,12 @@
       "kind": "event-description",
       "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
       "title": "Wolverhampton Wanderers vs Cardiff City"
+    },
+    "807327b96a311987ac003783824887064ec3277977883c7306a44f87ae30ff6c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T12:19:06.876997+00:00"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -997,12 +1012,6 @@
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
     },
-    "9365221734def5ec544523d08864da507b5e31bb4818a9bb37c0cd18e85e1cfb": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T09:33:39.843891+00:00"
-    },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
       "kind": "live-title",
@@ -1088,6 +1097,13 @@
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
     },
+    "9fe1ab77335deb1c461b825fdf33457fd766c4d48da97d51cea127b6c0ba472a": {
+      "context": "Paramount+ event scheduled 01/11/2026 12:00 GMT",
+      "created_at": "2026-11-01T12:11:17.877033+00:00",
+      "kind": "event-description",
+      "result": "CBS Sports HQ scoreboard final for the day's games.",
+      "title": "cbssportshq: Scoreboard Final"
+    },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
       "kind": "live-title",
@@ -1134,12 +1150,6 @@
       "result": "Disney+ event 'Long Beach State vs. Utah Valley' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Long Beach State vs. Utah Valley"
     },
-    "a8e7491db6f462f6b3cbce0cea72668370a55486477447bc29c375e7b144c762": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T09:33:39.843891+00:00"
-    },
     "a8fb53a1a3ea34ef88f5125db1f14556d3ac891c47033fd9e7a60a36cabae93d": {
       "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
       "created_at": "2026-11-01T09:25:26.843948+00:00",
@@ -1176,12 +1186,6 @@
       "kind": "event-description",
       "result": "MLS match between Nashville SC and Philadelphia Union scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "6 | Nashville SC vs Philadelphia Union (Spanish)"
-    },
-    "af7015e1285b79a006a7ae94ce26400da600807931bd42a64e6a883cd8adf6ed": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T09:33:39.843891+00:00"
     },
     "afded0b941398c5df6b2413d4c801296224a02b3541f99fadebc4608dde51224": {
       "created_at": "2026-10-26T19:21:40.738715+00:00",
@@ -1402,6 +1406,12 @@
         "raw": "Chiefs @ Seahawks"
       }
     },
+    "c5f4082d6598e9aca0923313c48a194f88f25af7be5d6eaa0c502a2cb2c6a13f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T12:19:06.876997+00:00"
+    },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
       "kind": "live-title",
@@ -1410,6 +1420,12 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 2A | Day 3: Afternoon Session"
       }
+    },
+    "c76eb027b7ec78324acb7889fb60e8a54ec375db7f4a00c1469cbfd4fcbfbd67": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T12:19:06.876997+00:00"
     },
     "c82194d0355b709c4af5aed70f56b767e45eafe9387ba8415b6b76343e2acbf9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -1464,6 +1480,12 @@
       "kind": "event-description",
       "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
       "title": "Leicester City vs Stevenage FC"
+    },
+    "d3f86bd8ca275476a4ac0448a64eb67fb2f11b94adb64c333191d4a66f61e4f7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T12:19:06.876997+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -1675,6 +1697,12 @@
       "result": "Portland Pilots face Pacific Tigers in a men's college basketball game.",
       "title": "#12 Portland vs. Pacific"
     },
+    "e8be56634e08f84813a694f5f3826e817aef29d68e7eca2cca22da810d0fc77b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T12:19:06.876997+00:00"
+    },
     "e98ced1e4d10275fdcb0778226f3981284d438f3aecdea271e4c65e730087e1f": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-31T18:12:52.526252+00:00",
@@ -1766,6 +1794,13 @@
       "result": "MLB World Series Game 5: Milwaukee Brewers vs Tampa Bay Rays scheduled for Oct 29 2026.",
       "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
     },
+    "f8d814f120901a0f9225fc98838a2447b460c88260ee389411089f15ff723bb2": {
+      "context": "Paramount+ event scheduled 01/11/2026 12:20 GMT",
+      "created_at": "2026-11-01T12:11:17.877027+00:00",
+      "kind": "event-description",
+      "result": "Como vs Venezia in Italian Serie A.",
+      "title": "Serie A: Como vs. Venezia"
+    },
     "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
       "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770315+00:00",
@@ -1802,7 +1837,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-01T12:23:10.684551+00:00",
-    "groq": "2026-11-01T09:33:39.843891+00:00"
+    "groq": "2026-11-01T12:19:06.876997+00:00"
   },
   "version": 1
 }
