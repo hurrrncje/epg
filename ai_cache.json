@@ -28,6 +28,12 @@
       "result": "A placement match for 9th place in the Messi Cup 2026.",
       "title": "Messi Cup 2026 (9th Place Match)"
     },
+    "044fde8a131eed4de7b9d50e58c84990a26b9e59e01c5458b16ba5a337a921c3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T21:16:28.835611+00:00"
+    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -41,6 +47,12 @@
       "kind": "event-description",
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
+    },
+    "0970f90c0239501be01f0655912e0a18af502d561a8b0a25c776f2be0820db1b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T21:16:28.835611+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -209,10 +221,37 @@
       "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
       "title": "Leicester City vs Wigan Athletic"
     },
+    "2380a59a10e77340556ce466fffc9664b18e37d8e4b0b0d02bd60986c506172d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T21:16:28.835611+00:00"
+    },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
       "kind": "event-description",
       "result": "The Pat McAfee Show."
+    },
+    "24ebd9192f9f8fb597e1fa64b9d5987870724af0dbda302b194851312b167dce": {
+      "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371171+00:00",
+      "kind": "event-description",
+      "result": "North Carolina Courage play Denver Summit in the National Women’s Soccer League on 01/11/2026 at 22:00 GMT.",
+      "title": "NWSL: North Carolina Courage - Denver Summit"
+    },
+    "253642a0155a1d1a5ce417c30a73330271972de3d9ea5e526826b3add6cb2f98": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
+      "created_at": "2026-11-01T21:19:10.371123+00:00",
+      "kind": "event-description",
+      "result": "Gotham FC play Utah Royals FC in a women’s soccer match on the Disney+ Events platform.",
+      "title": "Gotham FC vs. Utah Royals FC"
+    },
+    "26624a2a499c000baaa17b6c03d9e4e0dba0a6dc88e1b46d025fd18506122b05": {
+      "context": "Disney+ Events event scheduled 01/11/2026 22:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371177+00:00",
+      "kind": "event-description",
+      "result": "The En Español‑NWSL on ESPN Presented by Ally broadcast features NWSL games in Spanish on 01/11/2026 at 22:00 GMT.",
+      "title": "En Español-NWSL on ESPN Presented by Ally"
     },
     "26a7feed44d29891614573f7a62456cc9d01f3d49fdb4244a1dce3903a8fee19": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -245,6 +284,13 @@
       "kind": "event-description",
       "result": "MLS match between Chicago Fire FC and Orlando City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "6 | Chicago Fire FC vs Orlando City (Spanish)"
+    },
+    "28bbe56368e4141ce3b4e2e78cc3a10d67772fabaf9ba2085b4379e6cdaadd0b": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371141+00:00",
+      "kind": "event-description",
+      "result": "Loyola Marymount competes against Portland in a college basketball match.",
+      "title": "Loyola Marymount vs. Portland"
     },
     "2925f743caec3f17a17714fd3597701b296c5629b69264d4908dccc6d55d79e4": {
       "context": "DAZN UK event scheduled 01/11/2026 15:15 GMT",
@@ -287,12 +333,6 @@
       "kind": "event-description",
       "result": "MLS match between Chicago Fire FC and Orlando City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "5 | Chicago Fire FC vs Orlando City (English)"
-    },
-    "2b8e707c9e04b453fed704b72d6af23b3102ee44173186b36a858b057ba2abb9": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T18:24:39.922520+00:00"
     },
     "2b964365640da98a7d726c7802664095318ae6094100cdecb81ff70b9c7c4dca": {
       "created_at": "2026-10-26T19:21:40.738720+00:00",
@@ -371,12 +411,6 @@
       "kind": "event-description",
       "result": "Jacksonville State Gamecocks vs New Mexico State Aggies college football game at Las Cruces, Oct 28 2026, ESPN2.",
       "title": "Jacksonville State vs. New Mexico State"
-    },
-    "33002b73fe6f32f87c92c0f1cf8f9e6c8b6877643ca61e09310d588fcb9f350a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T18:24:39.922520+00:00"
     },
     "333dbea7839f106931e37490e6312741e1abff296ac043ab614ef1c8aadbbdc2": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -510,6 +544,13 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
+    "44c9cf203728cadbb0a6a68c9267443898a81044fb0a5642674cecd5e8dc31b4": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371150+00:00",
+      "kind": "event-description",
+      "result": "NC State competes against California in a college basketball match.",
+      "title": "NC State vs. California"
+    },
     "44eda551765cf85a0d276a2a86b6888f80f252da39427378fc84d05ea862a06d": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-31T18:12:52.526252+00:00",
@@ -525,6 +566,13 @@
         "description": "No reliable information is available about the 2026 Ballon d'Or ceremony.",
         "raw": "Ballon d'Or 2026 Ceremony"
       }
+    },
+    "46824aba36dc3b2ffde6ca463a679d6a58b9de14b2eeae362ae83c8337ef4999": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:55 GMT",
+      "created_at": "2026-11-01T21:19:10.371168+00:00",
+      "kind": "event-description",
+      "result": "The Messi Cup 2026 final, a club football match featuring Lionel Messi’s team against the tournament’s runner‑up, is scheduled for 21:55 GMT on 01/11/2026.",
+      "title": "Messi Cup 2026 (Final)"
     },
     "46da3391c0930e3137d7480353c50218c2b1ea2bead926f7fd87f2146ffa8abf": {
       "context": "Aberdeen.spfl; Next Game: Aberdeen vs Falkirk on 28/10/2026 at 19:45 GMT",
@@ -556,6 +604,13 @@
       "result": "Flamengo vs. Boca Juniors compete for 5th place in the Messi Cup 2026.",
       "title": "Messi Cup 2026 (5th Place Match)"
     },
+    "48dc300de7dbc052bffb9026d258fa874acd03b8b2aa11ae9126def0e262dd26": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371144+00:00",
+      "kind": "event-description",
+      "result": "Army plays Colgate in a college basketball contest.",
+      "title": "Army vs. Colgate"
+    },
     "49af132424a4e6e4e7fb00a14d5b88fe45b3db9747a58606c218b511c4be584b": {
       "context": "Paramount+ event scheduled 29/10/2026 00:20 GMT",
       "created_at": "2026-10-29T03:25:48.898652+00:00",
@@ -569,6 +624,13 @@
       "kind": "event-description",
       "result": "CBS Sports HQ Just Football, a football highlights show on Paramount+ scheduled for 28 October 2026 at 16:00 GMT.",
       "title": "cbssportshq: Just Football"
+    },
+    "4ab496e79c822b965e1d0a28fce42f8618b6f740d452595e6c69c2ab9b04c048": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371147+00:00",
+      "kind": "event-description",
+      "result": "#22 Florida State takes on Miami in a college basketball game.",
+      "title": "#22 Florida State vs. Miami"
     },
     "4b3a74c0a4ae71573bf923189a52878ce29fa92327c4456b63181627180aa4c6": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -612,18 +674,26 @@
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
-    "4fbb096b6eaa3ff5a850405c701b38ec1fc61327e69638d437f86ea021fdedda": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T18:24:39.922520+00:00"
-    },
     "4fd7a0684ab2cedf460919c7b33ae3577206867f85275e40842378fd1f7efdf8": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:30 GMT",
       "created_at": "2026-11-01T06:23:52.067220+00:00",
       "kind": "event-description",
       "result": "NYC Marathon countdown event featuring a live countdown to the starting line, 3:30 pm GMT.",
       "title": "NYC Marathon: Countdown to the Starting Line"
+    },
+    "511b3690f2b7f3cf1935e4c2c73cac83cb4e8a224e37940e77a970891ee11649": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371165+00:00",
+      "kind": "event-description",
+      "result": "Notre Dame women's soccer faces Stanford women's soccer at Edwards Stadium in Berkeley, CA on Sunday, November 1 2026.",
+      "title": "#9 Notre Dame vs. #13 Stanford"
+    },
+    "546ad59c97359ccc424bcde17f05527f1032d948907c24fc038699f0cb4077a4": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371137+00:00",
+      "kind": "event-description",
+      "result": "Western Illinois faces Southern Indiana in a college basketball game.",
+      "title": "Western Illinois vs. Southern Indiana"
     },
     "5577fac0d12e94cbb22bac44e8fc5c6bf3e4ab8f70c06e1503342c206fa96ca4": {
       "context": "Paramount+ event scheduled 28/10/2026 17:20 GMT",
@@ -760,6 +830,13 @@
       "result": "UEFA Women’s Champions League match between Bayern Munich and Real Madrid, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
     },
+    "675e0ebe01566e0fc4340964197be0822a5976b61e6f89d35d23b4940396a331": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
+      "created_at": "2026-11-01T21:19:10.371127+00:00",
+      "kind": "event-description",
+      "result": "Lamar University competes against Houston Christian University in a college football game streamed on Disney+ Events.",
+      "title": "Lamar vs. Houston Christian"
+    },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
       "kind": "live-title",
@@ -803,12 +880,6 @@
       "created_at": "2026-10-26T12:30:58.030789+00:00",
       "kind": "event-description",
       "result": "Charlotte vs. UAB."
-    },
-    "700ca0d81d1baa4be611d1b76676212e71fac60bef08dfde7da512f59d09caa0": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T18:24:39.922520+00:00"
     },
     "70c9627580c4234da153280f6ef6f730ff08cb2563d39ec23d1b996ec6fb0925": {
       "context": "DAZN UK event scheduled 01/11/2026 12:15 GMT",
@@ -912,6 +983,13 @@
       "result": "College basketball game UC Santa Barbara Gauchos vs Cal State Northridge Matadors scheduled for Oct 29 2026.",
       "title": "UC Santa Barbara vs. Cal State Northridge"
     },
+    "7e05a11d1623a3ca228de7b81e007f33f4ca079f3a2ca9d530c1bb9e4bb64a85": {
+      "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371134+00:00",
+      "kind": "event-description",
+      "result": "Eastern Washington University faces Portland State University in a college football contest on Disney+ Events.",
+      "title": "Eastern Washington vs. Portland State"
+    },
     "7e9e36f4c3936721830b41a89a04cd504c79b053ede2a6e4374a881c9097d92c": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569498+00:00",
@@ -997,6 +1075,12 @@
       "kind": "event-description",
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
+    },
+    "875ccc1b750aec4c529feece3c74a807d2deb5de3e86765d4a45060930a874b0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T21:16:28.835611+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1085,6 +1169,13 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
+    },
+    "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
+      "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
+      "created_at": "2026-11-01T21:19:10.371131+00:00",
+      "kind": "event-description",
+      "result": "Los Angeles Chargers visit Los Angeles Rams for an NFL regular‑season matchup at SoFi Stadium.",
+      "title": "Chargers @ Rams"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -1177,6 +1268,12 @@
       "kind": "event-description",
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
+    },
+    "9fa6cce7346a86a8108fad178df9000c3a3d214219e44a5081737db3205d5c74": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T21:16:28.835611+00:00"
     },
     "9fe1ab77335deb1c461b825fdf33457fd766c4d48da97d51cea127b6c0ba472a": {
       "context": "Paramount+ event scheduled 01/11/2026 12:00 GMT",
@@ -1487,6 +1584,13 @@
         "raw": "Chiefs @ Seahawks"
       }
     },
+    "c6deb704865a67fc31361c6652db5c4dd4bd1cbccb169e374cc2c570bd4adf18": {
+      "context": "DAZN UK event scheduled 01/11/2026 21:25 GMT",
+      "created_at": "2026-11-01T21:19:10.371116+00:00",
+      "kind": "event-description",
+      "result": "Kansas City Chiefs host Denver Broncos in an NFL regular‑season game at Empower Field at Mile High.",
+      "title": "Chiefs @ Broncos"
+    },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
       "kind": "live-title",
@@ -1652,6 +1756,13 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 10B | Day 3: Afternoon Session"
       }
+    },
+    "dd51e302876695fc060e55bcc351b995ccbe3bd67754bd76a8b5d4821e86ab95": {
+      "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
+      "created_at": "2026-11-01T21:19:10.371174+00:00",
+      "kind": "event-description",
+      "result": "Angel City FC host Boston Legacy in an NWSL match on 01/11/2026 at 22:00 GMT.",
+      "title": "NWSL: Angel City FC - Boston Legacy"
     },
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -1884,12 +1995,6 @@
       "kind": "event-description",
       "result": "Collin Klein Press Conference."
     },
-    "fe2068b075240e2e0af36b60bb1edac7ac80b1bbbba63147ebeee94459327248": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T18:24:39.922520+00:00"
-    },
     "fef06759bb10b50bb6dda33f8ec5f8bb4d36b1b4207159a82338d52e8a12a42d": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770333+00:00",
@@ -1907,7 +2012,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-01T21:16:28.835611+00:00",
-    "groq": "2026-11-01T18:24:39.922520+00:00"
+    "groq": "2026-11-01T21:27:27.371090+00:00"
   },
   "version": 1
 }
