@@ -288,6 +288,61 @@ class AIProcessingTests(unittest.TestCase):
         manifest = set(Path(__file__).with_name('football_mirror_channel_ids.txt').read_text().splitlines())
         self.assertTrue({f'dummy-{i}' for i in range(12375, 12395)} <= manifest)
 
+    def test_national_league_tv_uses_football_not_general_event_rules(self):
+        import xml.etree.ElementTree as ET
+        labels = [
+            'National League TV 01: FC Halifax Town vs. Yeovil @ 1 Nov 03:00 PM London',
+            'National League TV 02: NO EVENT',
+            'National League TV 03: Old Club vs. Other Club @ 31 Oct 03:00 PM London',
+            'National League TV 04: Barrow vs. Eastleigh @ 1 Nov 11:00 AM London',
+        ]
+        folder = self.prepare_process(labels)
+        football_manifest = Path(__file__).with_name('football_mirror_channel_ids.txt')
+        event_manifest = Path(__file__).with_name('event_mirror_channel_ids.txt')
+        (folder / 'football.txt').write_text(football_manifest.read_text())
+        (folder / 'events.txt').write_text(event_manifest.read_text())
+        root = ET.fromstring(self.requests.get.return_value.content)
+        ids = [f'dummy-{i}' for i in range(12575, 12579)]
+        for channel, channel_id, label in zip(root.findall('channel'), ids, labels):
+            channel.set('id', channel_id)
+            programme = ET.SubElement(root, 'programme', channel=channel_id, start='20261101000000 +0000', stop='20261102000000 +0000')
+            ET.SubElement(programme, 'title').text = label
+        self.requests.get.return_value.content = ET.tostring(root)
+        real_datetime, utc = self.ns['datetime'], self.ns['UTC']
+        class FrozenDatetime(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 11, 1, 12, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        programmes = result.findall("programme[@channel='dummy-12575']")
+        self.assertEqual([p.findtext('title') for p in programmes], [
+            'Upcoming Match: FC Halifax Town vs. Yeovil at 3pm',
+            'FC Halifax Town vs. Yeovil', 'Match ended',
+        ])
+        self.assertEqual(programmes[1].get('start'), '20261101150000 +0000')
+        self.assertEqual(programmes[1].get('stop'), '20261101173000 +0000')
+        for channel_id in ['dummy-12576', 'dummy-12577']:
+            rows = result.findall(f"programme[@channel='{channel_id}']")
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0].findtext('title'), 'No match today')
+        active = result.find("programme[@channel='dummy-12578']")
+        self.assertEqual(active.findtext('title'), 'Barrow vs. Eastleigh')
+        self.assertEqual(active.get('stop'), '20261101133000 +0000')
+        self.assertEqual(result.find("channel[@id='dummy-12575']/display-name").text, 'National League TV 01')
+        all_titles = [p.findtext('title') for p in result.findall('programme')]
+        self.assertNotIn('No event today', all_titles)
+        self.requests.post.assert_not_called()
+
+    def test_national_league_tv_ids_are_exclusively_football_mirrors(self):
+        ids = {f'dummy-{i}' for i in range(12575, 12625)}
+        football = set(Path(__file__).with_name('football_mirror_channel_ids.txt').read_text().splitlines())
+        events = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
+        self.assertTrue(ids <= football)
+        self.assertFalse(ids & events)
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -298,5 +353,6 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 

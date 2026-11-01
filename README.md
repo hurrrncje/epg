@@ -127,6 +127,12 @@ Manchester City`, with London kickoff conversion, `Upcoming Match`, the
 today`; channel numbers, pipe separators, source clocks and dates do not
 appear in match names.
 
+**National League TV 01–50** (`dummy-12575` through `dummy-12624`) are
+classified exclusively as football mirrors. They use cleaned fixture titles,
+London kickoff times, `Upcoming Match`, a 2.5-hour match listing, and `Match
+ended` through GMT midnight. Empty, unparseable or past-date fixtures show
+`No match today`, rather than `No event today`.
+
 ## One-time setup
 
 1. Add `clean_epg.py`, `requirements.txt`, `football_mirror_channel_ids.txt`,
