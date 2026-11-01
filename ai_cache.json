@@ -7,12 +7,25 @@
       "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
       "title": "Millwall FC vs Derby County"
     },
+    "012634a50f2bf6124c3cf2449eef211fbf64611c5d4537cf1584134439f8abb3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T09:33:39.843891+00:00"
+    },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770312+00:00",
       "kind": "event-description",
       "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
       "title": "Crewe Alexandra FC vs Barnet FC"
+    },
+    "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
+      "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843938+00:00",
+      "kind": "event-description",
+      "result": "Idaho Vandals face Portland State Vikings in a men's college basketball match.",
+      "title": "Idaho vs. Portland State"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -218,6 +231,13 @@
       "result": "Princeton men's ice hockey faces Columbia men's ice hockey in an ECAC regular‑season match.",
       "title": "Princeton vs. Columbia"
     },
+    "29950b1bfc0a56d465ac7bb46d768a3c89e697e4358b1aaa39c20d73c6202fdb": {
+      "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
+      "created_at": "2026-11-01T09:25:26.843945+00:00",
+      "kind": "event-description",
+      "result": "Calgary Flames host Colorado Avalanche in an NHL regular‑season game.",
+      "title": "Calgary Flames vs. Colorado Avalanche"
+    },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770340+00:00",
@@ -342,6 +362,12 @@
         "raw": "Pitch 9B | Day 3: Afternoon Session"
       }
     },
+    "3645a4fa1e2140be23450520aecb32c22c11b092d74dcd1a984608fae9b9f2d7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T09:33:39.843891+00:00"
+    },
     "3712e3205b245dda3cb5ff83bbcffbabbc73b67e777fd50f2339b8f392286e50": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
       "created_at": "2026-10-29T03:25:48.898610+00:00",
@@ -399,6 +425,13 @@
       "kind": "event-description",
       "result": "Partido de la temporada regular de MLS: Charlotte FC contra Orlando City, sábado 31 oct 2026, inicio a las 12:00 p.m. local (16:55 GMT)【1†L12-L13】",
       "title": "| Charlotte FC vs Orlando City (Spanish)"
+    },
+    "3ff295c893ee7d0c989f7db3aab8d190e06d30d7a80c2b40caba10137274261c": {
+      "context": "MAX UK event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843941+00:00",
+      "kind": "event-description",
+      "result": "Essendon Bombers compete against Collingwood Magpies in AFLW Round 12.",
+      "title": "AFLW | Round 12: Essendon - Collingwood"
     },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -510,10 +543,11 @@
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
     "4cd32d771817f84b35a6506c75bf41a54100ba895e455bc7e3573d2681ee79f6": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843916+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+      "result": "Utah Valley Wolverines host Cal State Bakersfield Roadrunners in a women's college basketball game.",
+      "title": "Utah Valley vs. Cal State Bakersfield"
     },
     "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -928,6 +962,13 @@
         "raw": "Canucks @ Ducks"
       }
     },
+    "8e37074aabcf02094bc665de072a6b1e6d7bf124e51f3717cf13f48e8aa93195": {
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843934+00:00",
+      "kind": "event-description",
+      "result": "UC Riverside Highlanders play Cal Poly Mustangs in a men's college basketball game.",
+      "title": "UC Riverside vs. Cal Poly"
+    },
     "8e62094a957c9a92a7cea04ac83f6b4b36e69e997d92781ae4adf68b5822381e": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
       "created_at": "2026-10-27T03:17:18.770324+00:00",
@@ -955,6 +996,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
+    },
+    "9365221734def5ec544523d08864da507b5e31bb4818a9bb37c0cd18e85e1cfb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T09:33:39.843891+00:00"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -1087,6 +1134,19 @@
       "result": "Disney+ event 'Long Beach State vs. Utah Valley' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Long Beach State vs. Utah Valley"
     },
+    "a8e7491db6f462f6b3cbce0cea72668370a55486477447bc29c375e7b144c762": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T09:33:39.843891+00:00"
+    },
+    "a8fb53a1a3ea34ef88f5125db1f14556d3ac891c47033fd9e7a60a36cabae93d": {
+      "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
+      "created_at": "2026-11-01T09:25:26.843948+00:00",
+      "kind": "event-description",
+      "result": "Calgary Flames play Colorado Avalanche in the same NHL game, broadcast on Avalanche’s channel.",
+      "title": "Calgary Flames vs. Colorado Avalanche (Avalanche Broadcast)"
+    },
     "a9cdd7eb1d48ed335adbc24e9cf1e973ec59311503b55a86189e757a3ccd7174": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
       "created_at": "2026-10-31T16:22:16.312208+00:00",
@@ -1116,6 +1176,12 @@
       "kind": "event-description",
       "result": "MLS match between Nashville SC and Philadelphia Union scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "6 | Nashville SC vs Philadelphia Union (Spanish)"
+    },
+    "af7015e1285b79a006a7ae94ce26400da600807931bd42a64e6a883cd8adf6ed": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T09:33:39.843891+00:00"
     },
     "afded0b941398c5df6b2413d4c801296224a02b3541f99fadebc4608dde51224": {
       "created_at": "2026-10-26T19:21:40.738715+00:00",
@@ -1160,10 +1226,11 @@
       "title": "UAB vs. Missouri State"
     },
     "b635bb2639a0ff95efcda92aee2ba9645dee490e2cd3342c8599d4bc3fa0fe65": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843922+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+      "result": "Texas State Bobcats play No. 20 Boise State Broncos in an NCAA college football matchup.",
+      "title": "Texas State vs. #20 Boise State"
     },
     "b7d59dc94f52d5d4ea10d37ac9caa2b0c055d595ed23158d08b9dbd538ed8ca3": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -1238,10 +1305,11 @@
       "result": "Mon, 10/26 - The Rich Eisen Show."
     },
     "bdb64942ea24ed0cf2e5ea8c3aec67792d1c38315810ec6324384a244d804122": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843932+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+      "result": "Denver Pioneers compete against Santa Clara Broncos in a men's college soccer match.",
+      "title": "Denver vs. Santa Clara"
     },
     "be1e58600a70495f510036d489aaa4ae65f06dcd658626647e5b66ce57e516f9": {
       "created_at": "2026-10-26T19:21:40.738726+00:00",
@@ -1587,10 +1655,11 @@
       "title": "Wolverhampton Wanderers vs Cardiff City"
     },
     "e653fd14e55dadb2a0e25ee5ce284bc3babbd88ac4aee7fdcbdcfe58608b313f": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843926+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+      "result": "Cal State Northridge Matadors visit UC Santa Barbara Gauchos in a men's college basketball contest.",
+      "title": "Cal State Northridge vs. UC Santa Barbara"
     },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
@@ -1600,10 +1669,11 @@
       "title": "Plymouth Argyle vs Reading FC"
     },
     "e7c91ba4a5f8e672ae1894d07af385902338a0b17684162acbb2998490f812f6": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T09:25:26.843929+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+      "result": "Portland Pilots face Pacific Tigers in a men's college basketball game.",
+      "title": "#12 Portland vs. Pacific"
     },
     "e98ced1e4d10275fdcb0778226f3981284d438f3aecdea271e4c65e730087e1f": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
@@ -1732,7 +1802,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-01T12:23:10.684551+00:00",
-    "groq": "2026-11-01T06:23:53.067180+00:00"
+    "groq": "2026-11-01T09:33:39.843891+00:00"
   },
   "version": 1
 }
