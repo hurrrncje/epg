@@ -400,24 +400,6 @@
       "result": "Partido de la temporada regular de MLS: Charlotte FC contra Orlando City, sábado 31 oct 2026, inicio a las 12:00 p.m. local (16:55 GMT)【1†L12-L13】",
       "title": "| Charlotte FC vs Orlando City (Spanish)"
     },
-    "3e6db40cf75e528ca5817d6367098ae1845ee38cd5f0f522f312264faffd1e8f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T21:16:14.334850+00:00"
-    },
-    "3ee7da3768419d83eb56ed0a14a1aca6af70214f530a56babdcbdcb6c2324262": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T21:16:14.334850+00:00"
-    },
-    "3ff2b4e94bee02fb15b6f744187e7aedf338d00327abec3d2a7e194217386874": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T21:16:14.334850+00:00"
-    },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
       "created_at": "2026-10-29T06:23:30.006230+00:00",
@@ -527,12 +509,32 @@
       "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
+    "4cd32d771817f84b35a6506c75bf41a54100ba895e455bc7e3573d2681ee79f6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+    },
+    "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
+      "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T06:23:52.067240+00:00",
+      "kind": "event-description",
+      "result": "NCAA Division I men’s soccer match: San Diego vs. Seattle U at Championship Field",
+      "title": "San Diego vs. Seattle U"
+    },
     "4eef478580ecb325758b8dab4f8554ab37fe501915e36c97657df7b5fb1c4049": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
       "created_at": "2026-10-31T16:22:16.312222+00:00",
       "kind": "event-description",
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
+    },
+    "4fd7a0684ab2cedf460919c7b33ae3577206867f85275e40842378fd1f7efdf8": {
+      "context": "Disney+ Events event scheduled 01/11/2026 03:30 GMT",
+      "created_at": "2026-11-01T06:23:52.067220+00:00",
+      "kind": "event-description",
+      "result": "NYC Marathon countdown event featuring a live countdown to the starting line, 3:30 pm GMT.",
+      "title": "NYC Marathon: Countdown to the Starting Line"
     },
     "5577fac0d12e94cbb22bac44e8fc5c6bf3e4ab8f70c06e1503342c206fa96ca4": {
       "context": "Paramount+ event scheduled 28/10/2026 17:20 GMT",
@@ -898,6 +900,13 @@
         "raw": "Islanders @ Predators"
       }
     },
+    "89e8e0a5828bd4847b53c6b5639b8764be7ebf78652bf66702e70cd6e8415cc1": {
+      "context": "MAX UK event scheduled 01/11/2026 03:00 GMT",
+      "created_at": "2026-11-01T06:23:52.067230+00:00",
+      "kind": "event-description",
+      "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
+      "title": "Race: Moto3 | Round 19 | Malaysia"
+    },
     "8c51708c9d0a5550aef6a35279cfcd111e0ef1f36333968a80d815c07a45dc14": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770320+00:00",
@@ -940,11 +949,12 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
     },
-    "902f4d58b5a11f54e2a53fac1360e26fc34b1179302ce1d201539a722ae2de66": {
-      "failed": true,
-      "failure_policy": 2,
+    "90b4da78d70f6f059a149f4101c7ac904629686ff06d9cad0df3e97fb5d46c3a": {
+      "context": "DAZN UK event scheduled 01/11/2026 02:00 GMT",
+      "created_at": "2026-11-01T06:23:52.067236+00:00",
       "kind": "event-description",
-      "retry_after": "2026-10-31T21:16:14.334850+00:00"
+      "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
+      "title": "Flames @ Avalanche"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -968,6 +978,13 @@
       "kind": "event-description",
       "result": "Partido de la temporada regular de MLS: FC Cincinnati contra Philadelphia Union, sábado 31 oct 2026, inicio a las 2:00 p.m. local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (Spanish)"
+    },
+    "99b3f883c4801cb34d93c773b0df0f220d12a2bb3aab62e90b0ef462873fc3f9": {
+      "context": "Disney+ Events event scheduled 01/11/2026 03:55 GMT",
+      "created_at": "2026-11-01T06:23:52.067213+00:00",
+      "kind": "event-description",
+      "result": "A-League Women match between Canberra United and Western Sydney Wanderers at Campbelltown Stadium, 3:00 pm AEDT.",
+      "title": "Canberra United vs. Western Sydney Wanderers FC"
     },
     "9a29dbc83801d05e9ace97dcdf2dd9d514ad8b2c397d3e01609d0286452db6b1": {
       "created_at": "2026-10-26T19:21:40.738711+00:00",
@@ -1142,6 +1159,12 @@
       "result": "Disney+ event 'UAB vs. Missouri State' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "UAB vs. Missouri State"
     },
+    "b635bb2639a0ff95efcda92aee2ba9645dee490e2cd3342c8599d4bc3fa0fe65": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+    },
     "b7d59dc94f52d5d4ea10d37ac9caa2b0c055d595ed23158d08b9dbd538ed8ca3": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569531+00:00",
@@ -1213,6 +1236,12 @@
       "created_at": "2026-10-26T12:30:58.030820+00:00",
       "kind": "event-description",
       "result": "Mon, 10/26 - The Rich Eisen Show."
+    },
+    "bdb64942ea24ed0cf2e5ea8c3aec67792d1c38315810ec6324384a244d804122": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T06:23:53.067180+00:00"
     },
     "be1e58600a70495f510036d489aaa4ae65f06dcd658626647e5b66ce57e516f9": {
       "created_at": "2026-10-26T19:21:40.738726+00:00",
@@ -1321,16 +1350,24 @@
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
-    "c9fc0a834f600792fdae81ecdf2e5fc9924008440944847171b135166677b894": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-10-31T21:16:14.334850+00:00"
-    },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
       "kind": "event-description",
       "result": "Minnesota State vs. Boston College."
+    },
+    "cc00d3477ea269d2eaa58ee4d706450415f1d379cd5f3605edc0845b63960bf0": {
+      "context": "Disney+ Events event scheduled 01/11/2026 03:00 GMT",
+      "created_at": "2026-11-01T06:23:52.067227+00:00",
+      "kind": "event-description",
+      "result": "Tauihi Basketball Aotearoa Round 6: Southern Hoiho vs. Tokomanawa Queens",
+      "title": "Southern Hoiho vs. Tokomanawa Queens (Round 6)"
+    },
+    "ce94b0bcce33854ad3970a356a4ca455a8a713c2455a99cb4f25429a850483d3": {
+      "context": "MAX UK event scheduled 01/11/2026 02:30 GMT",
+      "created_at": "2026-11-01T06:23:52.067233+00:00",
+      "kind": "event-description",
+      "result": "Petronas Grand Prix of Malaysia MotoGP warm‑up session at Sepang International Circuit",
+      "title": "Warm Up: MotoGP | Round 19 | Malaysia"
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -1338,6 +1375,13 @@
       "kind": "event-description",
       "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
       "title": "Colchester United FC vs Walsall FC"
+    },
+    "d17e66cbb01141ac04129de50d38006b2904117ebcd5d26afb6d275e36c07a75": {
+      "context": "MAX UK event scheduled 01/11/2026 03:45 GMT",
+      "created_at": "2026-11-01T06:23:52.067217+00:00",
+      "kind": "event-description",
+      "result": "A-League Men match between Melbourne Victory and Central Coast Mariners at AAMI Park, 3:00 pm AEDT.",
+      "title": "A-League: Melbourne Victory - Central Coast Mariners"
     },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
@@ -1514,12 +1558,26 @@
       "result": "MLS regular‑season match: Columbus Crew vs D.C. United, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【10†L6-L8】",
       "title": "| Columbus Crew vs D.C. United (English)"
     },
+    "e3cf558ebadfedccfbb1741cb2811fa2159ffa6731c1dcff0112894c7286f9b1": {
+      "context": "Disney+ Events event scheduled 01/11/2026 03:55 GMT",
+      "created_at": "2026-11-01T06:23:52.067205+00:00",
+      "kind": "event-description",
+      "result": "A-League Men match between Melbourne Victory and Central Coast Mariners at AAMI Park, 3:00 pm AEDT.",
+      "title": "Melbourne Victory vs. Central Coast Mariners FC"
+    },
     "e3f992e4c1825fda74a60376d3cd433d0374f4e5e6734dd523f5ecd509940de2": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
       "created_at": "2026-10-29T06:23:30.006215+00:00",
       "kind": "event-description",
       "result": "Calgary Flames vs Edmonton Oilers NHL game at Rogers Place, Edmonton, Oct 28 2026, Oilers shut out Flames 4‑0.",
       "title": "Calgary Flames vs. Edmonton Oilers"
+    },
+    "e481761c60bf61ee6ecbb7e53639456d882038a5cbd237cd0749e62b54be8e5d": {
+      "context": "Paramount+ event scheduled 01/11/2026 03:00 GMT",
+      "created_at": "2026-11-01T06:23:52.067224+00:00",
+      "kind": "event-description",
+      "result": "cbssportshq Scoreboard Final broadcast, 3:00 pm GMT.",
+      "title": "cbssportshq: Scoreboard Final"
     },
     "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
@@ -1528,12 +1586,24 @@
       "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
       "title": "Wolverhampton Wanderers vs Cardiff City"
     },
+    "e653fd14e55dadb2a0e25ee5ce284bc3babbd88ac4aee7fdcbdcfe58608b313f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T06:23:53.067180+00:00"
+    },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
       "created_at": "2026-10-27T03:17:18.770324+00:00",
       "kind": "event-description",
       "result": "EFL Championship clash between Plymouth Argyle and Reading at 12:30 GMT on 31 Oct 2026.",
       "title": "Plymouth Argyle vs Reading FC"
+    },
+    "e7c91ba4a5f8e672ae1894d07af385902338a0b17684162acbb2998490f812f6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-01T06:23:53.067180+00:00"
     },
     "e98ced1e4d10275fdcb0778226f3981284d438f3aecdea271e4c65e730087e1f": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
@@ -1661,8 +1731,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-01T00:36:42.118705+00:00",
-    "groq": "2026-10-31T21:16:14.334850+00:00"
+    "gemini": "2026-11-01T12:23:10.684551+00:00",
+    "groq": "2026-11-01T06:23:53.067180+00:00"
   },
   "version": 1
 }
