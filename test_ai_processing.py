@@ -190,6 +190,55 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(self.client.models.generate_content.call_count, 1)
         self.requests.post.assert_not_called()
 
+    def test_sky_sports_plus_london_time_handles_summer_and_winter(self):
+        parse = self.ns['_parse_mirrored_start']
+        date = self.ns['datetime']
+        summer = parse('Sky Sports + 01: Tennis A v B @ 1 Jul 06:30 PM London', date(2026, 7, 1).date())
+        winter = parse('Sky Sports + 01: Tennis A v B @ 1 Nov 06:30 PM London', date(2026, 11, 1).date())
+        self.assertEqual(summer.hour, 17)
+        self.assertEqual(winter.hour, 18)
+        self.assertEqual(self.ns['_clean_mirrored_event_title']('Sky Sports + 09: NFL Ravens @ Bills @ 1 Nov 05:25 PM London'), 'NFL Ravens @ Bills')
+
+    def test_sky_sports_plus_event_schedule_and_manifest(self):
+        import xml.etree.ElementTree as ET
+        labels = [
+            'Sky Sports + 01: Tennis A v B @ 1 Nov 06:30 PM London',
+            'Sky Sports + 02: Tennis C v D @ 1 Nov 10:00 AM London',
+            'Sky Sports + 03: NO EVENT',
+            'Sky Sports + 04: Old fixture @ 31 Oct 06:30 PM London',
+            'Sky Sports+',
+        ]
+        folder = self.prepare_process(labels)
+        (folder / 'events.txt').write_text('c0\nc1\nc2\nc3\n')
+        root = ET.fromstring(self.requests.get.return_value.content)
+        for i, label in enumerate(labels):
+            programme = ET.SubElement(root, 'programme', channel=f'c{i}', start='20261101000000 +0000', stop='20261102000000 +0000')
+            ET.SubElement(programme, 'title').text = label if i < 4 else 'Original linear schedule'
+        self.requests.get.return_value.content = ET.tostring(root)
+        real_datetime = self.ns['datetime']
+        utc = self.ns['UTC']
+        class FrozenDatetime(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 11, 1, 12, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        self.assertEqual(result.find("channel[@id='c0']/display-name").text, 'Sky Sports+ 01')
+        upcoming = result.find("programme[@channel='c0']")
+        self.assertEqual(upcoming.findtext('title'), 'Upcoming Event: Tennis A v B at 6.30pm')
+        self.assertEqual(upcoming.get('stop'), '20261101183000 +0000')
+        active = result.find("programme[@channel='c1']")
+        self.assertEqual(active.findtext('title'), 'Tennis C v D')
+        self.assertEqual(active.get('stop'), '20261102000000 +0000')
+        self.assertEqual(result.find("programme[@channel='c2']/title").text, 'No event today')
+        self.assertEqual(result.find("programme[@channel='c3']/title").text, 'No event today')
+        self.assertEqual(result.find("programme[@channel='c4']/title").text, 'Original linear schedule')
+        self.requests.post.assert_not_called()
+        manifest = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
+        self.assertTrue({f'dummy-{i}' for i in range(1412, 1472)} <= manifest)
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -200,3 +249,4 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

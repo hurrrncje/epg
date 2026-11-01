@@ -111,6 +111,14 @@ If a parsed event or match date is earlier than the current GMT date, the
 listing for that channel becomes an all-day `No event today` or `No match today`
 entry, respectively; past events are skipped when collecting Gemini descriptions.
 
+UK **Sky Sports+ 01–60** (`dummy-1412` through `dummy-1471`) are included in
+Event Changes. Their EPG channel names become `Sky Sports+ NN`; programme titles
+drop the channel prefix and timestamp. London kickoff times use UK daylight
+saving rules, with `Upcoming Event` before the start and the event listing until
+midnight GMT. Explicit no-event or past-date labels show `No event today`.
+These use the existing deterministic mirrored-event handling. The regular
+linear Sky Sports+ channel is not changed by this numbered-channel rule.
+
 ## One-time setup
 
 1. Add `clean_epg.py`, `requirements.txt`, `football_mirror_channel_ids.txt`,

@@ -416,7 +416,8 @@ def _parse_mirrored_start(raw_title: str, today: Any) -> datetime | None:
     zone_name = (match.group("zone") or "ET").upper()
     zone_aliases = {"ET": "America/New_York", "EDT": "America/New_York", "EST": "America/New_York",
                     "AEST": "Australia/Sydney", "AEDT": "Australia/Sydney",
-                    "BST": "Europe/London", "UK": "Europe/London", "GMT": "UTC"}
+                    "BST": "Europe/London", "UK": "Europe/London",
+                    "LONDON": "Europe/London", "GMT": "UTC"}
     zone = zone_aliases.get(zone_name, zone_name)
     try:
         local_start = datetime.combine(local_date, local_clock, tzinfo=ZoneInfo(zone))
@@ -2403,8 +2404,12 @@ def process_epg() -> None:
             r"^((?=[^:]*[A-Za-z])[^:]{1,48}\d{1,3})\s*:\s*.+$", raw_title
         )
         if prefix:
+            stable_name = prefix.group(1).strip()
+            sky_number = re.fullmatch(r"Sky\s+Sports\s*\+\s*(\d{1,3})", stable_name, re.I)
+            if sky_number:
+                stable_name = f"Sky Sports+ {int(sky_number.group(1)):02d}"
             for display_el in channel.findall("display-name"):
-                display_el.text = prefix.group(1).strip()
+                display_el.text = stable_name
 
     mirror_ids_to_replace = set(mirrored_football_targets) | set(mirrored_event_targets)
     for programme in list(root.iter("programme")):
@@ -2577,6 +2582,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 
