@@ -239,6 +239,55 @@ class AIProcessingTests(unittest.TestCase):
         manifest = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
         self.assertTrue({f'dummy-{i}' for i in range(1412, 1472)} <= manifest)
 
+    def test_fa_cup_pipe_labels_parse_fixture_and_empty_channels(self):
+        parse = self.ns['_parse_european_league_label']
+        today = self.ns['datetime'](2026, 5, 16).date()
+        fixture = parse('FA Cup 01 | Chelsea 15:00 Manchester City 16/05', today)
+        self.assertEqual(fixture['title'], 'Chelsea vs Manchester City')
+        self.assertEqual(fixture['start_utc'].isoformat(), '2026-05-16T14:00:00+00:00')
+        self.assertEqual(parse('FA Cup 02 |', today)['title'], '')
+        self.assertEqual(parse('FA Cup 20 | NO EVENT', today)['title'], '')
+        self.assertIsNone(parse('FA Cup 21 |', today))
+        winter = parse('FA Cup 01 | Chelsea 15:00 Manchester City 01/11', self.ns['datetime'](2026, 11, 1).date())
+        self.assertEqual(winter['start_utc'].hour, 15)
+
+    def test_fa_cup_mirror_schedule_has_clean_match_names(self):
+        import xml.etree.ElementTree as ET
+        labels = [
+            'FA Cup 01 | Chelsea 15:00 Manchester City 16/05',
+            'FA Cup 02 |',
+            'FA Cup 03 | Old Club 15:00 Other Club 15/05',
+        ]
+        folder = self.prepare_process(labels)
+        root = ET.fromstring(self.requests.get.return_value.content)
+        ids = [f'dummy-{i}' for i in range(12375, 12378)]
+        for channel, channel_id, label in zip(root.findall('channel'), ids, labels):
+            channel.set('id', channel_id)
+            row = ET.SubElement(root, 'programme', channel=channel_id, start='20260516000000 +0000', stop='20260517000000 +0000')
+            ET.SubElement(row, 'title').text = label
+        self.requests.get.return_value.content = ET.tostring(root)
+        (folder / 'football.txt').write_text('\n'.join(ids))
+        real_datetime, utc = self.ns['datetime'], self.ns['UTC']
+        class FrozenDatetime(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 5, 16, 12, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        programmes = result.findall("programme[@channel='dummy-12375']")
+        self.assertEqual([p.findtext('title') for p in programmes], [
+            'Upcoming Match: Chelsea vs Manchester City at 2pm',
+            'Chelsea vs Manchester City', 'Match ended',
+        ])
+        self.assertEqual(programmes[1].get('start'), '20260516140000 +0000')
+        self.assertEqual(programmes[1].get('stop'), '20260516163000 +0000')
+        self.assertEqual(result.find("programme[@channel='dummy-12376']/title").text, 'No match today')
+        self.assertEqual(result.find("programme[@channel='dummy-12377']/title").text, 'No match today')
+        manifest = set(Path(__file__).with_name('football_mirror_channel_ids.txt').read_text().splitlines())
+        self.assertTrue({f'dummy-{i}' for i in range(12375, 12395)} <= manifest)
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -249,4 +298,5 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 

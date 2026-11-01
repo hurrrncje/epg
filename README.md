@@ -119,6 +119,14 @@ midnight GMT. Explicit no-event or past-date labels show `No event today`.
 These use the existing deterministic mirrored-event handling. The regular
 linear Sky Sports+ channel is not changed by this numbered-channel rule.
 
+**FA Cup 01–20** (`dummy-12375` through `dummy-12394`) are included in the
+football mirror manifest. Pipe-separated labels such as `FA Cup 01 | Chelsea
+15:00 Manchester City 16/05` use the fixture parser and produce `Chelsea vs
+Manchester City`, with London kickoff conversion, `Upcoming Match`, the
+2.5-hour match slot, and `Match ended`. Empty or past fixtures show `No match
+today`; channel numbers, pipe separators, source clocks and dates do not
+appear in match names.
+
 ## One-time setup
 
 1. Add `clean_epg.py`, `requirements.txt`, `football_mirror_channel_ids.txt`,

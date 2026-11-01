@@ -577,6 +577,9 @@ def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
 
 def _parse_european_league_label(label: str, today: Any) -> dict[str, Any] | None:
     """Parse numbered football competition labels used for League Changes."""
+    # FA Cup mirrors use a pipe instead of the usual colon. Route them through
+    # fixture parsing so the clock between the teams becomes "vs", not a gap.
+    label = re.sub(r"^(FA\s+Cup\s*\d{1,2})\s*\|", r"\1:", label.strip(), flags=re.I)
     channel_match = EUROPEAN_LEAGUE_CHANNEL_PATTERN.match(label.strip())
     if not channel_match:
         return None
@@ -2582,6 +2585,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 
