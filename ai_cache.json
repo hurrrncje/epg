@@ -161,12 +161,6 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Maple Leafs, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Maple Leafs Broadcast)"
     },
-    "14cd44b7ae13488e9f92e47fb5824785eff0fcb4521e0104656d03145e1d2c4a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T22:30:41.520534+00:00"
-    },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
       "created_at": "2026-10-28T18:24:17.569507+00:00",
@@ -203,12 +197,6 @@
       "kind": "event-description",
       "result": "CBS Sports HQ What 2 Watch, a sports analysis program on Paramount+ scheduled for 28 October 2026 at 15:00 GMT.",
       "title": "cbssportshq: What 2 Watch"
-    },
-    "1cd10580876277b9122d20d2c27188da209e6da3a1618077e6d25a642f5d224e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T22:30:41.520534+00:00"
     },
     "1d5885836d3c5417e0092762f7379890b842964adc477e76f32c9740567ee319": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -692,6 +680,12 @@
         "raw": "Canadiens @ Blues"
       }
     },
+    "42b5fb86a14250eefaa86e6c7abff2414a28bc9aee76e764ca90a8d678b3945a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T23:28:58.822633+00:00"
+    },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
       "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006271+00:00",
@@ -705,6 +699,12 @@
       "kind": "event-description",
       "result": "USL Championship quarterfinal: Charlotte Independence vs. FC Naples.",
       "title": "Charlotte Independence vs. FC Naples (Quarterfinal)"
+    },
+    "44532a89edae098cdb68433065ea970337bee431f82ef9d9c38919652dfc24b3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T23:28:58.822633+00:00"
     },
     "449ab7a579f3e1bbd756553ca52247120c10c6668d243dc8c99e10e6e1a7b5ff": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -835,6 +835,13 @@
       "kind": "event-description",
       "result": "University of Georgia women's volleyball vs No. 14 Texas Longhorns at Gregory Gym, Austin, Oct 28 2026, SEC Network.",
       "title": "Georgia vs. #14 Texas"
+    },
+    "4bc1956e6aa26ea275dea3829229e1923dd2c071acceb25e86bf1dc539971a63": {
+      "context": "ESPN+ event scheduled 02/11/2026 23:30 GMT",
+      "created_at": "2026-11-02T23:19:21.822659+00:00",
+      "kind": "event-description",
+      "result": "NHL regular‑season game: Detroit Red Wings host Florida Panthers at Amway Center, Nov 2 2026.",
+      "title": "Detroit Red Wings vs. Florida Panthers"
     },
     "4c48d6e8f72cad4cf43bd9b7afd4c1cd2d2bc2f987106b174036ed347a521308": {
       "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
@@ -1008,6 +1015,13 @@
       "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
+    "60c502ca357d1a0e09eb624fffd93db668165da14408856159b0bac0d0f86dd4": {
+      "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
+      "created_at": "2026-11-02T23:19:21.822678+00:00",
+      "kind": "event-description",
+      "result": "NCAA men’s basketball: Duquesne Dukes play Tennessee Volunteers at PPG Bank Arena, Feb 11 2026.",
+      "title": "Duquesne vs. Tennessee"
+    },
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "created_at": "2026-10-26T12:30:58.030774+00:00",
       "kind": "event-description",
@@ -1077,6 +1091,13 @@
       "kind": "event-description",
       "result": "EFL Championship clash between West Ham United and West Bromwich Albion at 15:00 GMT on 31 Oct 2026.",
       "title": "West Ham United vs West Bromwich Albion"
+    },
+    "6d5c5fde8a523d6534077c258549a20cd8b1ab63b6c98bd9743c4e1acd91fe11": {
+      "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
+      "created_at": "2026-11-02T23:19:21.822670+00:00",
+      "kind": "event-description",
+      "result": "NCAA men’s basketball: Central Connecticut State Blue Devils face Temple Owls at John E. Worthen Arena, Feb 11 2026.",
+      "title": "Central Connecticut vs. Temple"
     },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -1192,12 +1213,6 @@
       "kind": "event-description",
       "result": "Pacific men's ice hockey takes on Denver men's ice hockey in an NCAA Division I regular‑season match.",
       "title": "Pacific vs. Denver"
-    },
-    "785ebb1fc315db9c1856b6848f377380fbcea41abd4708fa74f6d1d37faf2d5a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T22:30:41.520534+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -1373,6 +1388,13 @@
       "kind": "event-description",
       "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
       "title": "Race: Moto3 | Round 19 | Malaysia"
+    },
+    "8b15dac58905ae85790173ae5594213eb129fae305cce25769535bd6fbb726ee": {
+      "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
+      "created_at": "2026-11-02T23:19:21.822666+00:00",
+      "kind": "event-description",
+      "result": "NCAA men’s basketball: Army Black Knights play Duke Blue Devils at Cameron Indoor Stadium, Nov 2 2026.",
+      "title": "Army vs. #2 Duke"
     },
     "8b86a5deb973100e9caa383ded08dfed90c5e76cb01f7b64fe5e6928af41e68c": {
       "context": "MAX UK event scheduled 02/11/2026 17:25 GMT",
@@ -1694,6 +1716,13 @@
       "result": "MLS regular‑season match: Charlotte FC vs Orlando City, Saturday 31 Oct 2026, kickoff 12:00 PM local (16:55 GMT)【1†L12-L13】",
       "title": "| Charlotte FC vs Orlando City (English)"
     },
+    "a9e397f7c0c7387b83fc865a3824cefb3d649d642afb28ca2b5a02e64612436d": {
+      "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
+      "created_at": "2026-11-02T23:19:21.822675+00:00",
+      "kind": "event-description",
+      "result": "NCAA men’s basketball: Arkansas State Red Wolves host Ball State Cardinals at John E. Worthen Arena, Feb 11 2026.",
+      "title": "Arkansas State vs. Ball State"
+    },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569466+00:00",
@@ -1772,6 +1801,12 @@
       "kind": "event-description",
       "result": "Texas State Bobcats play No. 20 Boise State Broncos in an NCAA college football matchup.",
       "title": "Texas State vs. #20 Boise State"
+    },
+    "b73cf25fa1f33b75d47d8de1156030275024d8459c39bf7fa18ac89cff56e204": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T23:28:58.822633+00:00"
     },
     "b7d59dc94f52d5d4ea10d37ac9caa2b0c055d595ed23158d08b9dbd538ed8ca3": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -1958,12 +1993,6 @@
       "result": "MLS match between Minnesota United and Sporting Kansas City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "1 | Minnesota United vs Sporting Kansas City (English)"
     },
-    "c47a1b19b21f82a03bbbc0a26e101f3272164a069894216d306d899d211c2a7e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T22:30:41.520534+00:00"
-    },
     "c488b2c8dd1ce195e949fbb3850d4673ee1025acc9ae48cb9c241cd03c94c1ce": {
       "created_at": "2026-10-26T19:21:40.738749+00:00",
       "kind": "live-title",
@@ -2060,6 +2089,12 @@
       "kind": "event-description",
       "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
       "title": "Colchester United FC vs Walsall FC"
+    },
+    "cf18278503367e6000980b5a5ba9c7be12c5b9ed2466ecebe02d043b2aacc3c9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T23:28:58.822633+00:00"
     },
     "cf73f4924c2102c63f6613b7b31770345c9b8f4632582cc087f853df096f5345": {
       "context": "ESPN+ event scheduled 02/11/2026 21:30 GMT",
@@ -2215,12 +2250,6 @@
       "created_at": "2026-10-26T12:30:58.030742+00:00",
       "kind": "event-description",
       "result": "League Two match: Walsall vs Salford City, scheduled 26 Oct 2026 20:00 GMT."
-    },
-    "db297c582e268f132dd549fe1dbbd71e693c49cff2dfd482ff97150258b9c120": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T22:30:41.520534+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -2473,6 +2502,12 @@
       "result": "MLB World Series Game 5: Milwaukee Brewers vs Tampa Bay Rays scheduled for Oct 29 2026.",
       "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
     },
+    "f8d7abb003919bed43c49977f783127caa4cc365cf5366970c1f7f86722d7ed6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T23:28:58.822633+00:00"
+    },
     "f8d814f120901a0f9225fc98838a2447b460c88260ee389411089f15ff723bb2": {
       "context": "Paramount+ event scheduled 01/11/2026 12:20 GMT",
       "created_at": "2026-11-01T12:11:17.877027+00:00",
@@ -2536,8 +2571,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T22:30:41.520534+00:00"
+    "gemini": "2026-11-03T05:18:58.949159+00:00",
+    "groq": "2026-11-02T23:28:58.822633+00:00"
   },
   "version": 1
 }
