@@ -102,6 +102,13 @@
       "result": "EFL League One match between Peterborough United and Luton Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Peterborough United FC vs Luton Town"
     },
+    "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
+      "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
+      "created_at": "2026-11-02T16:40:59.690102+00:00",
+      "kind": "event-description",
+      "result": "K.C. Keeler weekly press conference for the University of Central Florida football program.",
+      "title": "K.C. Keeler Weekly Press Conference"
+    },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
       "kind": "event-description",
@@ -176,6 +183,13 @@
       "kind": "event-description",
       "result": "Men's basketball game between Saint Mary's Gaels and Pacific Tigers scheduled for Oct 29 2026.",
       "title": "Saint Mary's vs. Pacific"
+    },
+    "1e3caf10bc522072714f1fc543ce8800d229271e78c67897c0447b3120bb0d51": {
+      "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690120+00:00",
+      "kind": "event-description",
+      "result": "Women's college basketball: Maryland Terrapins vs. South Carolina Gamecocks.",
+      "title": "#20 Maryland vs. #1 South Carolina"
     },
     "1fc62bfb261279c82b543745e8586a572238840a7cb66ba4c13a99319c355514": {
       "created_at": "2026-10-28T00:12:37.428457+00:00",
@@ -344,6 +358,13 @@
       "result": "FC Thun vs. Heart of Midlothian – a UEFA Conference League group‑stage match played at Visana Stadion on 5 Nov 2026.",
       "title": "FC Thun vs Heart of Midlothian"
     },
+    "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690115+00:00",
+      "kind": "event-description",
+      "result": "Weekly press conference with UTSA soccer head coach Derek Pittman discussing the season.",
+      "title": "UTSA Weekly Soccer Press Conference"
+    },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770340+00:00",
@@ -357,6 +378,13 @@
       "kind": "event-description",
       "result": "MLS match between Chicago Fire FC and Orlando City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "5 | Chicago Fire FC vs Orlando City (English)"
+    },
+    "2b928ca9fa21d18d24670afe24105caa9eaa84e8b8231a2df7584003ee1c39b0": {
+      "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
+      "created_at": "2026-11-02T16:40:59.690094+00:00",
+      "kind": "event-description",
+      "result": "Fisk University football vs. Middle Tennessee State University football.",
+      "title": "Fisk vs. Middle Tennessee"
     },
     "2b964365640da98a7d726c7802664095318ae6094100cdecb81ff70b9c7c4dca": {
       "created_at": "2026-10-26T19:21:40.738720+00:00",
@@ -389,6 +417,13 @@
       "kind": "event-description",
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks.",
       "title": "Ottawa Senators vs. Anaheim Ducks"
+    },
+    "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690113+00:00",
+      "kind": "event-description",
+      "result": "Press conference with NC State head coach Collin Klein discussing the upcoming season.",
+      "title": "Collin Klein Press Conference"
     },
     "2e1c16dd18e2c76509a98a0d269730f58a635a13893222ea9f6ed556a4302a73": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
@@ -554,12 +589,25 @@
       "result": "Partido de la temporada regular de MLS: Charlotte FC contra Orlando City, sábado 31 oct 2026, inicio a las 12:00 p.m. local (16:55 GMT)【1†L12-L13】",
       "title": "| Charlotte FC vs Orlando City (Spanish)"
     },
+    "3eb8927769d1b730491e54c723add1c9f43f17948689e543b80d3717f79751ae": {
+      "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690130+00:00",
+      "kind": "event-description",
+      "result": "Women's college basketball: Mississippi Christian vs. Southern Miss Golden Eagles.",
+      "title": "Mississippi Christian vs. Southern Miss"
+    },
     "3ff295c893ee7d0c989f7db3aab8d190e06d30d7a80c2b40caba10137274261c": {
       "context": "MAX UK event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843941+00:00",
       "kind": "event-description",
       "result": "Essendon Bombers compete against Collingwood Magpies in AFLW Round 12.",
       "title": "AFLW | Round 12: Essendon - Collingwood"
+    },
+    "402d1b4aedfc7e5d179a1cdf4eb1a141edf68262705900c6cd4ebc6da55e9782": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T16:48:43.690070+00:00"
     },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -940,11 +988,11 @@
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
     },
-    "6c786800ca90c8791216df4348b8cce3c314e2fc21d68d9508dab769c60e93b7": {
+    "6b9d90c023a23f1da78e620689fb114120f8315dce94f869415c6b5b7b46a8b4": {
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T12:41:25.950950+00:00"
+      "retry_after": "2026-11-02T16:48:43.690070+00:00"
     },
     "6ca4669c5186e02bf70ba41172929cd3d4f94db87d15ddb3ff0dfa368e0f3ad3": {
       "context": "DAZN UK event scheduled 31/10/2026 21:00 GMT",
@@ -1046,12 +1094,6 @@
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
-    },
-    "76ceb733d6a56381c1d5f160d1697ae2344e0b30e67a7651749466516012aa79": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T12:41:25.950950+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1298,6 +1340,19 @@
       "result": "MLS match: Los Angeles FC visit Minnesota United at BMO Stadium.",
       "title": "| Los Angeles Football Club vs Minnesota United (English)"
     },
+    "92484ba06a9fb83b0b8a7a8690fd18d3e34453b26772c258d1079e44d86e1b8a": {
+      "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690123+00:00",
+      "kind": "event-description",
+      "result": "Women's college basketball: Lipscomb Bisons vs. Vanderbilt Commodores.",
+      "title": "Lipscomb vs. #8 Vanderbilt"
+    },
+    "937bcfc95534ce8e82a187bc9febe8a61322e2cee63ab6dac39ef5c7219b4a6e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T16:48:43.690070+00:00"
+    },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
       "created_at": "2026-11-01T21:19:10.371131+00:00",
@@ -1327,6 +1382,13 @@
       "kind": "event-description",
       "result": "College football regular‑season game between Sam Houston State Bearkats and Missouri State Bears, part of the 2026‑27 NCAA season.",
       "title": "Sam Houston @ Missouri State"
+    },
+    "97c3e636ee9b779c1619f52293754b580a15f9154a1b19d7dd68fdb2658fec59": {
+      "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
+      "created_at": "2026-11-02T16:40:59.690105+00:00",
+      "kind": "event-description",
+      "result": "Georgia Southern University football interview with head coach Clay Helton.",
+      "title": "Inside Georgia Southern Football with Clay Helton"
     },
     "98ade4384a0d539dc2f23cfd330a002f08aebbec329f35e33f71705f68122654": {
       "context": "Disney+ Events event scheduled 02/11/2026 15:00 GMT",
@@ -1434,6 +1496,13 @@
         "raw": "Sam Houston @ Missouri State"
       }
     },
+    "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
+      "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690125+00:00",
+      "kind": "event-description",
+      "result": "Women's college basketball: Radford Highlanders vs. Clemson Tigers.",
+      "title": "Radford vs. Clemson"
+    },
     "a2cb255499ce764a1395c648e8a25dbf3d9fece89d3817172286d5657ff685fd": {
       "created_at": "2026-10-26T19:21:40.738751+00:00",
       "kind": "live-title",
@@ -1459,6 +1528,13 @@
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "8 | San Jose Earthquakes vs Colorado Rapids (Spanish)"
     },
+    "a566d1211e5ce197df424ed89ec0f57ca9235cd8249f7271b5970c39e67a6710": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690110+00:00",
+      "kind": "event-description",
+      "result": "Press conference with UCF football head coach discussing the upcoming season.",
+      "title": "UCF Football Press Conference"
+    },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
       "kind": "event-description",
@@ -1477,12 +1553,6 @@
       "kind": "event-description",
       "result": "Disney+ event 'Long Beach State vs. Utah Valley' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Long Beach State vs. Utah Valley"
-    },
-    "a8c2396c3a32a0758e17177ad550be3b1d485a2f93a00cb904cf989d2d987f55": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T12:41:25.950950+00:00"
     },
     "a8fb53a1a3ea34ef88f5125db1f14556d3ac891c47033fd9e7a60a36cabae93d": {
       "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
@@ -1609,6 +1679,20 @@
       "kind": "event-description",
       "result": "Scottish Premiership match between Heart of Midlothian and Rangers at 20:00 GMT on 28 Oct 2026.",
       "title": "Heart of Midlothian vs Rangers"
+    },
+    "bac9b2d3ef1a87af589572c6924f63a500effc2eec32f429eaf123d67268ae0b": {
+      "context": "ESPN+ event scheduled 02/11/2026 16:45 GMT",
+      "created_at": "2026-11-02T16:40:59.690088+00:00",
+      "kind": "event-description",
+      "result": "Florida Atlantic University football weekly press conference.",
+      "title": "Florida Atlantic Weekly Press Conference"
+    },
+    "bb99e3fac467cdfe3710fee6d72bde0688e73f48b9a9a511e2bf6ff39711e83d": {
+      "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
+      "created_at": "2026-11-02T16:40:59.690098+00:00",
+      "kind": "event-description",
+      "result": "Oklahoma Christian University football vs. East Texas A&M University football.",
+      "title": "Oklahoma Christian vs. East Texas A&M"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -1784,16 +1868,24 @@
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
-    "c84a7f650051c5c3f9de3ee19c5d4f9859d8c7040f267ba3631b3118aa2ca052": {
-      "failed": true,
-      "failure_policy": 2,
+    "c8a4d0afc13b2d4cf46eebf71499bb038c32b401b28adde3f907e732faa0b42c": {
+      "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690128+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T12:41:25.950950+00:00"
+      "result": "Women's college basketball: North American Stallions vs. Nicholls State Colonels.",
+      "title": "North American vs. Nicholls"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
       "kind": "event-description",
       "result": "Minnesota State vs. Boston College."
+    },
+    "cafdc9decc069a8032eb4c70d536d23df8b029c0629ad916c8e508edb09f3a57": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690107+00:00",
+      "kind": "event-description",
+      "result": "Sports talk show featuring interviews and analysis hosted by Rich Eisen.",
+      "title": "Mon, 11/2 - The Rich Eisen Show"
     },
     "cb56d6f101eeb7dd07789f349f71819fa6a09b480eddd0142279faf9fca22ad0": {
       "context": "Disney+ Events event scheduled 02/11/2026 10:00 GMT",
@@ -2024,6 +2116,18 @@
       "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
       "title": "Aston Villa vs Fulham"
     },
+    "e24e0e0cfe9d144d95fb523d7206012a4770a081cd345a7a51b5ea9e2dd3cb0b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T16:48:43.690070+00:00"
+    },
+    "e2e8e6670e8e57f4d13e848ae67641a78b7fc52230377ee832fa8d36c0502cdb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T16:48:43.690070+00:00"
+    },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
       "kind": "live-title",
@@ -2175,12 +2279,6 @@
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
     },
-    "f460e69788ca41e75cc4e48feb5daf15cde59daa5419931235409d28bbe5a506": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T12:41:25.950950+00:00"
-    },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
       "kind": "event-description",
@@ -2240,6 +2338,13 @@
       "result": "Dundee United vs. Motherwell – a Scottish Premiership league match scheduled for 7 Nov 2026.",
       "title": "Dundee United vs Motherwell"
     },
+    "fe82471131a60600f0aab5b948d7e21b991568d0181c447c2caa02b3dfe17420": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
+      "created_at": "2026-11-02T16:40:59.690118+00:00",
+      "kind": "event-description",
+      "result": "Sports comedy talk show hosted by former NFL player Pat McAfee.",
+      "title": "The Pat McAfee Show"
+    },
     "fef06759bb10b50bb6dda33f8ec5f8bb4d36b1b4207159a82338d52e8a12a42d": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770333+00:00",
@@ -2256,8 +2361,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-02T12:41:25.950950+00:00",
-    "groq": "2026-11-02T12:50:54.274206+00:00"
+    "gemini": "2026-11-02T22:40:08.208973+00:00",
+    "groq": "2026-11-02T16:48:43.690070+00:00"
   },
   "version": 1
 }
