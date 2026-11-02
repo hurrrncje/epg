@@ -49,6 +49,12 @@
       "result": "A placement match for 9th place in the Messi Cup 2026.",
       "title": "Messi Cup 2026 (9th Place Match)"
     },
+    "0699bdf6d50a8d18dfc468ad8500d6ad849f4b8df243b38dc4419ddaa6122378": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T19:41:52.986031+00:00"
+    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -167,6 +173,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game between the Vancouver Canucks and Anaheim Ducks, part of the 2026‑27 NHL season.",
       "title": "Canucks @ Ducks"
+    },
+    "168f62d8c9c3742f49c821aac8a711c566a33143a4a52ecf748a2a363e9a80df": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T19:41:52.986031+00:00"
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -603,12 +615,6 @@
       "result": "CBS Sports HQ Morning Boxscore recap is streamed on Paramount+.",
       "title": "cbssportshq: Morning Boxscore"
     },
-    "3bd647696f6336271485b3f98a718ce0f99a356d8fe0470c08f19d8fe325bf38": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T18:40:53.178686+00:00"
-    },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770320+00:00",
@@ -706,6 +712,12 @@
       "kind": "event-description",
       "result": "English League One fixture: Milton Keynes Dons host Doncaster Rovers at Stadium mk on 31 October 2026, kickoff 15:00 GMT.",
       "title": "Milton Keynes Dons FC vs Doncaster Rovers FC"
+    },
+    "44f0716e8804eb313c81232a5229b8c5863eb6b2635ebda751dae7f71cc2ac00": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T19:41:52.986031+00:00"
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -1060,6 +1072,13 @@
         "raw": "Canucks @ Ducks"
       }
     },
+    "6f25a69da99fe4756948d4efe65b317d88e059dc427cdc8d8c9dea8aaf7777c4": {
+      "context": "MAX UK event scheduled 02/11/2026 19:30 GMT",
+      "created_at": "2026-11-02T19:33:48.986065+00:00",
+      "kind": "event-description",
+      "result": "Atalanta play Parma in Serie A on 2 Nov 2026.",
+      "title": "Serie A: Atalanta - Parma"
+    },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
       "kind": "event-description",
@@ -1085,6 +1104,13 @@
       "kind": "event-description",
       "result": "NFL game between the Philadelphia Eagles and the Washington Commanders.",
       "title": "Eagles @ Commanders (Spanish Broadcast)"
+    },
+    "72beecea77a55c9dd3df1ad60fc38deeb7b394ab971d9a8adc253eb37ff75f93": {
+      "context": "DAZN UK event scheduled 02/11/2026 19:45 GMT",
+      "created_at": "2026-11-02T19:33:48.986068+00:00",
+      "kind": "event-description",
+      "result": "Atalanta play Parma in Serie A on 2 Nov 2026.",
+      "title": "Atalanta vs. Parma"
     },
     "7306f5e34c44fe5d739e8a0f994206a43d9df1be5caf4eaa1414ce550036335e": {
       "created_at": "2026-10-26T12:30:58.030771+00:00",
@@ -1137,12 +1163,6 @@
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
-    },
-    "769f8367bb90dc79f6564faad5bb62bfe4a170d708452279f47ac080d0b2378b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T18:40:53.178686+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1257,6 +1277,13 @@
       "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
+    "82e97287ef87112704639c9bc3450035896d628e41af49b79149e2aff4c86a8c": {
+      "context": "La Liga fixture scheduled 02/11/2026 19:48 GMT",
+      "created_at": "2026-11-02T19:33:48.986076+00:00",
+      "kind": "event-description",
+      "result": "Deportivo de A Coruña play CA Osasuna in La Liga on 2 Nov 2026.",
+      "title": "Deportivo vs Osasuna"
+    },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
       "created_at": "2026-11-01T18:15:10.922575+00:00",
@@ -1286,6 +1313,12 @@
       "kind": "event-description",
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
+    },
+    "87999a6e96b8f6b6af7fc4dbb57db3d15b105519c4be055853e141db02dcbe55": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T19:41:52.986031+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1590,18 +1623,19 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
-    "a6a1acf2375a0131ae4ad7b4450f961171a46b52b7962dbc862e310a82e9d176": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T18:40:53.178686+00:00"
-    },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
       "created_at": "2026-11-02T06:42:29.061739+00:00",
       "kind": "event-description",
       "result": "Celtic FC vs. Beşiktaş – a UEFA Europa League match at Celtic Park on 5 Nov 2026.",
       "title": "Celtic vs Beşiktaş"
+    },
+    "a781939c864e72dde296a4b46b074f2d8e88eb26a8e1225fc8a272b37817b7ca": {
+      "context": "Disney+ Events event scheduled 02/11/2026 19:30 GMT",
+      "created_at": "2026-11-02T19:33:48.986062+00:00",
+      "kind": "event-description",
+      "result": "Oklahoma Sooners women play North Carolina Tar Heels women in NCAA women's basketball on 2 Nov 2026.",
+      "title": "#21 Oklahoma vs. #12 North Carolina"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1646,6 +1680,12 @@
       "kind": "event-description",
       "result": "Hofstra women's basketball plays Georgia Tech in a collegiate game.",
       "title": "Hofstra vs. Georgia Tech"
+    },
+    "ade5206d7b60a8ddf0925aebaf4673789179c2e6746178dec1cd0380a6bbefd1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T19:41:52.986031+00:00"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -1827,6 +1867,13 @@
         "description": "No reliable information is available about this game.",
         "raw": "Kings @ Rangers"
       }
+    },
+    "bf22fbf25979b29237b296d168014fce4315e16cb3b06cd1fc08dc2ca06cbd3d": {
+      "context": "DAZN UK event scheduled 02/11/2026 19:30 GMT",
+      "created_at": "2026-11-02T19:33:48.986056+00:00",
+      "kind": "event-description",
+      "result": "ACF Fiorentina women face Juventus women in Serie A on 2 Nov 2026.",
+      "title": "Fiorentina vs. Juventus"
     },
     "c020d584a91ca87946d1de0f4f5deb17bcf5d2eddc8eacb500a8964cf070ac8d": {
       "created_at": "2026-10-28T00:12:37.428452+00:00",
@@ -2121,12 +2168,6 @@
         "raw": "Pitch 1A | Day 3: Afternoon Session"
       }
     },
-    "dc522a1956b7d16f1f3731d2b44adc94ee2050ef5f8709e855a075346ed50e4b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T18:40:53.178686+00:00"
-    },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
       "kind": "live-title",
@@ -2184,12 +2225,6 @@
       "kind": "event-description",
       "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
       "title": "Aston Villa vs Fulham"
-    },
-    "e27ede96ecccd126f100305c31b45614aba07d4b8dfde253175127e5d3be0acd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T18:40:53.178686+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -2432,7 +2467,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T18:40:53.178686+00:00"
+    "groq": "2026-11-02T19:41:52.986031+00:00"
   },
   "version": 1
 }
