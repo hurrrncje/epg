@@ -53,7 +53,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T19:41:52.986031+00:00"
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
@@ -178,7 +178,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T19:41:52.986031+00:00"
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -717,7 +717,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T19:41:52.986031+00:00"
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -1235,6 +1235,12 @@
       "result": "Scottish Premiership game: St. Mirren vs Rangers at The Marbill Coaches Stadium, 7 November 2026, 20:00 GMT.",
       "title": "St Mirren vs Rangers"
     },
+    "804ee3b23770907915adfc7bd90a024c00f0e79b4968f4315542763ef8e276bb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+    },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
       "kind": "event-description",
@@ -1318,7 +1324,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T19:41:52.986031+00:00"
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1604,6 +1610,12 @@
         "raw": "Chiefs @ Seahawks (US., French, German, Japanese, Portuguese Game Commentary Available)"
       }
     },
+    "a4bb086aac6ff56ddab5f52e65a0c875c070d0c68d9e7268e1ec3b9ef6f51ead": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+    },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898636+00:00",
@@ -1685,7 +1697,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T19:41:52.986031+00:00"
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -2053,6 +2065,12 @@
       "result": "EFL League Two match between Stockport County and AFC Wimbledon at 15:00 GMT on 31 Oct 2026.",
       "title": "Stockport County vs AFC Wimbledon"
     },
+    "d294161dd36b3db466cfcf3e791eeab1a74e2839f829f19eeec0727dfae3eac5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+    },
     "d31d9a08516f35215d67ee084313594e976d376dd07fda9bb469c878427cec4a": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770333+00:00",
@@ -2291,6 +2309,12 @@
       "result": "Cal State Northridge Matadors visit UC Santa Barbara Gauchos in a men's college basketball contest.",
       "title": "Cal State Northridge vs. UC Santa Barbara"
     },
+    "e65f9336fa52970f0145065f6159566cbb066f7a9aacdccfb9c73f4f8329c55b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+    },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
       "created_at": "2026-10-27T03:17:18.770324+00:00",
@@ -2384,6 +2408,12 @@
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
     },
+    "f5355e42d58b940335871bc08a7fd2724b90c721ff818a606c0f525044a78486": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+    },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
       "kind": "event-description",
@@ -2467,7 +2497,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T19:41:52.986031+00:00"
+    "groq": "2026-11-02T20:33:07.102862+00:00"
   },
   "version": 1
 }
