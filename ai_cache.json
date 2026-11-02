@@ -14,6 +14,20 @@
       "result": "CBS Sports HQ Postgame recap of recent sports events.",
       "title": "cbssportshq: The Postgame"
     },
+    "015f33362acb1190d086383a376970fca54b67ac0e4b707bd5ff0746bc5ceae0": {
+      "context": "ESPN+ event scheduled 02/11/2026 19:00 GMT",
+      "created_at": "2026-11-02T18:31:30.178736+00:00",
+      "kind": "event-description",
+      "result": "ESPN+ airs the “Coordinators Corner” sports discussion program.",
+      "title": "Coordinators Corner"
+    },
+    "01faa93456a18151d9ee557e30881a2d7dbbf845e18b4a943e3017b3fb1a613b": {
+      "context": "ESPN+ event scheduled 02/11/2026 18:30 GMT",
+      "created_at": "2026-11-02T18:31:30.178722+00:00",
+      "kind": "event-description",
+      "result": "UTSA Athletics hosts a weekly press conference.",
+      "title": "UTSA Weekly Press Conference"
+    },
     "024a8f384ce131a4fe8c49223ef8964848ac58e4b57f8a53a6730668d0a777e8": {
       "context": "MAX UK event scheduled 01/11/2026 15:25 GMT",
       "created_at": "2026-11-01T15:17:06.400733+00:00",
@@ -126,11 +140,12 @@
       "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
       "title": "Fulham vs Crystal Palace"
     },
-    "1483c88a25c6b326fd2bf96796790d96ca79e05e6432856c16e264975bbfadeb": {
-      "failed": true,
-      "failure_policy": 2,
+    "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
+      "context": "DAZN UK event scheduled 02/11/2026 18:30 GMT",
+      "created_at": "2026-11-02T18:31:30.178715+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T17:41:12.705938+00:00"
+      "result": "Onze Créateurs play CS Bamako in the Malian Première Division.",
+      "title": "Onze Créateurs vs. CS Bamako"
     },
     "14b7fa2c54ca958bc3cc0d2a6670ba2a183f5b8f7d9ebaa21bda474fa899f7a9": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
@@ -528,6 +543,13 @@
       "result": "MLS match: Portland Timbers host Houston Dynamo at Providence Park.",
       "title": "2 | Portland Timbers vs Houston Dynamo FC (Spanish)"
     },
+    "35344f8b11c8a2f6386f46701b349e877dab6b28a10976c8f27e3e74d7f12057": {
+      "context": "Paramount+ event scheduled 02/11/2026 18:20 GMT",
+      "created_at": "2026-11-02T18:31:30.178729+00:00",
+      "kind": "event-description",
+      "result": "Serie A match: Sassuolo face Fiorentina at the Stadio Ennio Tardini.",
+      "title": "Serie A: Sassuolo vs. Fiorentina"
+    },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
       "kind": "live-title",
@@ -580,6 +602,12 @@
       "kind": "event-description",
       "result": "CBS Sports HQ Morning Boxscore recap is streamed on Paramount+.",
       "title": "cbssportshq: Morning Boxscore"
+    },
+    "3bd647696f6336271485b3f98a718ce0f99a356d8fe0470c08f19d8fe325bf38": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T18:40:53.178686+00:00"
     },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
@@ -717,12 +745,6 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 10A | Day 3: Afternoon Session"
       }
-    },
-    "47a91bcf5fbb059484f354079c126ae2485816f6f6be3b21025f6065e8b2e1ec": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T17:41:12.705938+00:00"
     },
     "48c3cba40aa32d6fc175fdf8cd45ed8958fd7e0d990a77a6a6b51bf72d85f811": {
       "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
@@ -893,12 +915,6 @@
       "kind": "event-description",
       "result": "College football game Virginia Tech Hokies vs Clemson Tigers scheduled for Oct 29 2026.",
       "title": "Virginia Tech vs. Clemson"
-    },
-    "5a6d4f61adecddbd67112de708804580317037acf548acce0ed56fee9b043459": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T17:41:12.705938+00:00"
     },
     "5b6962dbad410f402105dddf3167989356112cc51c675380c0467afa237a2117": {
       "created_at": "2026-10-28T06:20:34.001552+00:00",
@@ -1121,6 +1137,12 @@
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
+    },
+    "769f8367bb90dc79f6564faad5bb62bfe4a170d708452279f47ac080d0b2378b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T18:40:53.178686+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1346,12 +1368,6 @@
       "result": "NHL regular‑season game between the Colorado Avalanche and Minnesota Wild, part of the 2026‑27 NHL season.",
       "title": "Wild @ Mammoth"
     },
-    "8f82158d3c7ea574ee2c3d42a8d457dd2ce53ad7146cfa2ff6ff977b3a567bb8": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T17:41:12.705938+00:00"
-    },
     "8fc5122b3deeed7a1d16651ccf9d96d14297b583fbb7e94a74a9ca07cb8fff39": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006246+00:00",
@@ -1574,6 +1590,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
+    "a6a1acf2375a0131ae4ad7b4450f961171a46b52b7962dbc862e310a82e9d176": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T18:40:53.178686+00:00"
+    },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
       "created_at": "2026-11-02T06:42:29.061739+00:00",
@@ -1761,6 +1783,13 @@
       "kind": "event-description",
       "result": "Scottish Premiership match: Heart of Midlothian vs Falkirk at Tynecastle Park, 8 November 2026, 15:00 GMT.",
       "title": "Heart of Midlothian vs Falkirk"
+    },
+    "bcd237f9af11b9f63ed91df7e50882a93ff3498ff1b4861fb3265cf6d02a77e6": {
+      "context": "DAZN UK event scheduled 02/11/2026 18:15 GMT",
+      "created_at": "2026-11-02T18:31:30.178733+00:00",
+      "kind": "event-description",
+      "result": "Leumit League game: Sektzia Nes Tziona take on Shimshon Tel Aviv.",
+      "title": "Sektzya Ness Ziona vs. Shimshon Tel Aviv"
     },
     "bd10825e93b8a5500b9cc437ba8c9b10ceb1af6b1b689efe152adb8835763415": {
       "context": "DAZN UK event scheduled 28/10/2026 02:30 GMT",
@@ -2092,6 +2121,12 @@
         "raw": "Pitch 1A | Day 3: Afternoon Session"
       }
     },
+    "dc522a1956b7d16f1f3731d2b44adc94ee2050ef5f8709e855a075346ed50e4b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T18:40:53.178686+00:00"
+    },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
       "kind": "live-title",
@@ -2129,12 +2164,6 @@
       "result": "2026 Concacaf Central American Cup semi‑final second leg: CD Olimpia vs CS Cartaginés, scheduled for 29 Oct 2026 at 02:50 GMT.",
       "title": "Concacaf Champions Cup: Club Olimpia vs. CS Cartaginés"
     },
-    "e03153a838fe3bfd6d6a2008130c45bf84bf0ece1aae448b7510a4244b7488ec": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T17:41:12.705938+00:00"
-    },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
       "created_at": "2026-10-29T06:23:30.006220+00:00",
@@ -2155,6 +2184,12 @@
       "kind": "event-description",
       "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
       "title": "Aston Villa vs Fulham"
+    },
+    "e27ede96ecccd126f100305c31b45614aba07d4b8dfde253175127e5d3be0acd": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T18:40:53.178686+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -2397,7 +2432,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T17:41:12.705938+00:00"
+    "groq": "2026-11-02T18:40:53.178686+00:00"
   },
   "version": 1
 }
