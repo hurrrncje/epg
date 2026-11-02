@@ -231,9 +231,9 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(upcoming.get('stop'), '20261101183000 +0000')
         active = result.find("programme[@channel='c1']")
         self.assertEqual(active.findtext('title'), 'Tennis C v D')
-        self.assertEqual(active.get('stop'), '20261102000000 +0000')
+        self.assertEqual(active.get('stop'), '20261101140000 +0000')
         self.assertEqual(result.find("programme[@channel='c2']/title").text, 'No event today')
-        self.assertEqual(result.find("programme[@channel='c3']/title").text, 'No event today')
+        self.assertEqual(result.find("programme[@channel='c3']/title").text, 'No further event scheduled')
         self.assertEqual(result.find("programme[@channel='c4']/title").text, 'Original linear schedule')
         self.requests.post.assert_not_called()
         manifest = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
@@ -343,6 +343,99 @@ class AIProcessingTests(unittest.TestCase):
         self.assertTrue(ids <= football)
         self.assertFalse(ids & events)
 
+    def test_event_duration_rules_and_specific_overrides(self):
+        duration = self.ns['_estimated_event_duration']
+        for title, hours in [
+            ('Premier League: A vs B', 2.5), ('Football: A vs B', 2.5),
+            ('NBA basketball: A vs B', 3), ('MLB baseball: A vs B', 4),
+            ('NFL American football: A vs B', 4), ('College football: A vs B', 4),
+            ('PGA Golf', 6), ('Cricket T20', 6),
+            ('Cincinnati Football Press Conference', 2), ('The Pat McAfee Show', 2),
+            ('The Golics', 2), ('Unidentified A vs B', 4),
+        ]:
+            with self.subTest(title=title):
+                self.assertEqual(duration(title).total_seconds(), hours * 3600)
+
+    def test_event_bounds_preserve_source_end_and_cap_next_start(self):
+        ET, dt, utc = self.ns['ET'], self.ns['datetime'], self.ns['UTC']
+        def event(start, stop, title, channel='c0'):
+            row = ET.Element('programme', channel=channel, start=start, stop=stop)
+            ET.SubElement(row, 'title').text = title
+            ET.SubElement(row, 'desc').text = 'Original description'
+            return row
+        # Actual source end wins over the four-hour fallback, and the next
+        # known start wins over even an overlapping actual source end.
+        first = event('20261102080000 +0000', '20261103000000 +0000', 'Morning event')
+        second = event('20261102110000 +0000', '20261103000000 +0000', 'NBA basketball')
+        third = event('20261102130000 +0000', '20261103000000 +0000', 'Afternoon event')
+        source = [event('20261102080000 +0000', '20261102093000 +0000', 'Morning event'),
+                  event('20261102110000 +0000', '20261102150000 +0000', 'NBA basketball')]
+        rows = [first, second, third]
+        self.ns['_bound_event_programmes'](rows, [first, second, third], source, dt(2026, 11, 2, 23, tzinfo=utc))
+        self.assertEqual(first.get('stop'), '20261102093000 +0000')
+        self.assertEqual(second.get('stop'), '20261102130000 +0000')
+        self.assertEqual(third.get('stop'), '20261102170000 +0000')
+        self.assertNotIn('estimated', first.findtext('desc'))
+        self.assertIn('End time estimated.', third.findtext('desc'))
+        notices = [r for r in rows if r.findtext('title') == 'No further event scheduled']
+        self.assertEqual([(r.get('start'), r.get('stop')) for r in notices], [
+            ('20261102093000 +0000', '20261102110000 +0000'),
+            ('20261102170000 +0000', '20261103000000 +0000'),
+        ])
+
+    def test_event_estimate_crosses_midnight_and_ignores_source_placeholders(self):
+        ET, dt, utc = self.ns['ET'], self.ns['datetime'], self.ns['UTC']
+        event = ET.Element('programme', channel='c0', start='20261102230000 +0000', stop='20261103000000 +0000')
+        ET.SubElement(event, 'title').text = 'Unidentified event'
+        placeholder = ET.Element('programme', channel='c0', start=event.get('start'), stop='20261103000000 +0000')
+        ET.SubElement(placeholder, 'title').text = 'No event today'
+        rows = [event]
+        self.ns['_bound_event_programmes'](rows, [event], [placeholder], dt(2026, 11, 3, 1, tzinfo=utc))
+        self.assertEqual(event.get('stop'), '20261103030000 +0000')
+        self.assertEqual(rows[1].get('start'), '20261103030000 +0000')
+        self.assertEqual(rows[1].get('stop'), '20261104000000 +0000')
+        self.assertIn('End time estimated.', event.findtext('desc'))
+
+    def test_generic_provider_events_expire_in_published_xml_without_ai(self):
+        ET = self.ns['ET']
+        labels = [
+            'ESPN+ 01: Unknown event @ 2 Nov 08:00AM London',
+            'Disney+ Events 01: NBA basketball @ 2 Nov 08:00AM London',
+            'DAZN UK 01: Football: A vs B @ 2 Nov 08:00 AM London',
+            'MAX UK 01: PGA Golf @ 2 Nov 08:00AM London',
+            'Paramount+ 01: Press Conference @ 2 Nov 03:00AM ET',
+            'ESPN+ 02: Overnight event @ 1 Nov 11:00PM London',
+            'LIVE EVENT 02 - 3AM Unknown event',
+            'LIVE EVENT 01',
+        ]
+        folder = self.prepare_process(labels)
+        real_datetime, utc = self.ns['datetime'], self.ns['UTC']
+        class FrozenDatetime(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 11, 2, 23, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        root = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for i, stop in enumerate(['120000', '110000', '103000', '140000', '100000']):
+            rows = root.findall(f"programme[@channel='c{i}']")
+            self.assertEqual(rows[0].get('stop'), f'20261102{stop} +0000')
+            self.assertIn('End time estimated.', rows[0].findtext('desc'))
+            self.assertEqual(rows[1].findtext('title'), 'No further event scheduled')
+        overnight = root.findall("programme[@channel='c5']")
+        self.assertEqual(overnight[0].get('stop'), '20261102030000 +0000')
+        self.assertEqual(overnight[1].findtext('title'), 'No further event scheduled')
+        live = root.findall("programme[@channel='c6']")
+        self.assertEqual(live[0].get('stop'), '20261102120000 +0000')
+        self.assertEqual(live[1].findtext('title'), 'No further event scheduled')
+        continuous = root.findall("programme[@channel='c7']")
+        self.assertEqual(len(continuous), 1)
+        self.assertEqual(continuous[0].findtext('title'), 'UFC Special Feed')
+        self.assertNotIn('estimated', continuous[0].findtext('desc'))
+        self.requests.post.assert_not_called()
+        self.client.models.generate_content.assert_not_called()
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -353,6 +446,7 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 
 

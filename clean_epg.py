@@ -243,6 +243,109 @@ def _format_title_event_name(title: str) -> str:
     return cleaned.strip()
 
 
+# Ordered rules: specific formats take precedence over the broader sport names.
+# Durations are deliberately editable here and never require an AI request.
+EVENT_DURATION_RULES = (
+    (r"\b(?:press conference|the golics|rich eisen|pat mcafee|talk show|highlights?|sportscenter|sec now)\b", 2),
+    (r"\b(?:golf|pga|lpga|ryder cup|cricket|test match|t20|odi)\b", 6),
+    (r"\b(?:american football|nfl|ncaaf|college football|baseball|mlb|softball)\b", 4),
+    (r"\b(?:basketball|nba|wnba|ncaab)\b", 3),
+    (r"\b(?:football|soccer|premier league|champions league|europa league|la liga|laliga|bundesliga|serie a|ligue 1|fa cup|efl|mls)\b", 2.5),
+)
+DEFAULT_EVENT_DURATION = timedelta(hours=4)
+
+
+def _estimated_event_duration(title: str) -> timedelta:
+    for pattern, hours in EVENT_DURATION_RULES:
+        if re.search(pattern, title, re.I):
+            return timedelta(hours=hours)
+    # Team names alone do not reliably identify a sport. Use the generic limit.
+    return DEFAULT_EVENT_DURATION
+
+
+def _bound_event_programmes(
+    generated: list[ET.Element],
+    events: list[ET.Element],
+    source_programmes: list[ET.Element],
+    now_utc: datetime,
+) -> None:
+    """Bound timed generic events, preserving matching source programme end times."""
+    def timestamp(value: str | None) -> datetime | None:
+        try:
+            return datetime.strptime(value or "", "%Y%m%d%H%M%S %z").astimezone(UTC)
+        except ValueError:
+            return None
+
+    def title_key(title: str) -> str:
+        title = re.sub(r"\s*\(Started [^)]+\)$", "", title, flags=re.I)
+        return " ".join(title.split()).casefold()
+
+    source_ends: dict[tuple[str | None, datetime, str], datetime] = {}
+    event_channels = {event.get("channel") for event in events}
+    for programme in source_programmes:
+        if programme.get("channel") not in event_channels:
+            continue
+        title = title_key(programme.findtext("title", ""))
+        start = timestamp(programme.get("start"))
+        end = timestamp(programme.get("stop"))
+        # A repeated channel label or "No event today" is not a timed listing
+        # for the generated event. Require the same event title and start time.
+        if title and start is not None and end is not None and end > start:
+            key = (programme.get("channel"), start, title)
+            source_ends[key] = min(end, source_ends.get(key, end))
+
+    slot_starts: dict[str | None, list[datetime]] = {}
+    for slot in generated:
+        slot_start = timestamp(slot.get("start"))
+        if slot_start is not None:
+            slot_starts.setdefault(slot.get("channel"), []).append(slot_start)
+    by_channel: dict[str | None, list[ET.Element]] = {}
+    for event in events:
+        by_channel.setdefault(event.get("channel"), []).append(event)
+    for channel, channel_events in by_channel.items():
+        channel_events.sort(key=lambda event: event.get("start", ""))
+        for index, event in enumerate(channel_events):
+            start = timestamp(event.get("start"))
+            if start is None:
+                continue
+            title = event.findtext("title", "")
+            source_end = source_ends.get((channel, start, title_key(title)))
+            end = source_end or (start + _estimated_event_duration(title))
+            next_start = (timestamp(channel_events[index + 1].get("start"))
+                          if index + 1 < len(channel_events) else None)
+            if next_start is not None:
+                end = min(end, next_start)
+            if end <= start:
+                # Duplicate start times cannot form a positive programme slot.
+                generated.remove(event)
+                continue
+            event.set("stop", end.strftime("%Y%m%d%H%M%S %z"))
+            if source_end is None:
+                desc = event.find("desc")
+                if desc is None:
+                    desc = ET.SubElement(event, "desc")
+                desc.text = (desc.text or title) + "\n\nEnd time estimated."
+            notice_start = max(end, datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC))
+            notice_end = next_start or datetime.combine(
+                max(end.date(), now_utc.date()) + timedelta(days=1), datetime_time.min, tzinfo=UTC
+            )
+            # Do not overlap an existing upcoming slot on a subsequent day.
+            for slot_start in slot_starts.get(channel, []):
+                if notice_start <= slot_start < notice_end:
+                    notice_end = slot_start
+            if end <= datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC):
+                generated.remove(event)
+            if notice_start < notice_end:
+                notice = ET.Element("programme", {
+                    "channel": channel or "",
+                    "start": notice_start.strftime("%Y%m%d%H%M%S %z"),
+                    "stop": notice_end.strftime("%Y%m%d%H%M%S %z"),
+                })
+                ET.SubElement(notice, "title").text = "No further event scheduled"
+                ET.SubElement(notice, "desc").text = "No further event scheduled"
+                generated.append(notice)
+
+
 def _read_channel_id_manifest(path: Path) -> set[str]:
     """Read one XMLTV channel ID per line from an optional target manifest."""
     try:
@@ -2032,7 +2135,9 @@ def process_epg() -> None:
                 display_el.text = item["channel_name"]
 
     # Replace provider placeholder rows on these channels with generated listings.
+    source_programmes = list(root.iter("programme"))
     generated: list[ET.Element] = []
+    bounded_events: list[ET.Element] = []
     now_utc = datetime.now(UTC)
 
     def add_all_day_notice(channel_id: str, title: str) -> None:
@@ -2107,6 +2212,7 @@ def process_epg() -> None:
             ET.SubElement(programme, "title").text = result["clean_title"]
             ET.SubElement(programme, "desc").text = result["description"]
             generated.append(programme)
+            bounded_events.append(programme)
 
         # Fill the gap before kickoff so UHF has an upcoming listing instead of
         # showing "No information". The pre-event slot ends exactly at kickoff.
@@ -2146,9 +2252,6 @@ def process_epg() -> None:
         if not raw_title or start_utc is None:
             print(f"No scheduled listing for {item['channel_name']} (no event or unparsed label).")
             continue
-        if start_utc.date() < now_utc.date():
-            add_all_day_notice(ch_id, "No event today")
-            continue
 
         result = cleaned_mapping.get(raw_title, {
             "clean_title": raw_title,
@@ -2183,6 +2286,7 @@ def process_epg() -> None:
         ET.SubElement(event, "title").text = started_title
         ET.SubElement(event, "desc").text = description
         generated.append(event)
+        bounded_events.append(event)
 
     # Replace repeating source placeholders on the dynamic football event channels.
     dynamic_football_targets = {**epl_targets, **european_league_targets}
@@ -2279,9 +2383,6 @@ def process_epg() -> None:
         if not title or start_utc is None:
             print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
             continue
-        if start_utc.date() < now_utc.date():
-            add_all_day_notice(ch_id, "No event today")
-            continue
         end_utc = datetime.combine(
             start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
         )
@@ -2309,6 +2410,7 @@ def process_epg() -> None:
         ET.SubElement(fixture_programme, "title").text = title
         ET.SubElement(fixture_programme, "desc").text = description
         generated.append(fixture_programme)
+        bounded_events.append(fixture_programme)
 
     sports_event_targets = {
         **disney_event_targets,
@@ -2350,9 +2452,6 @@ def process_epg() -> None:
                 "(no event or unparsed label)."
             )
             continue
-        if start_utc.date() < now_utc.date():
-            add_all_day_notice(ch_id, "No event today")
-            continue
 
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
@@ -2380,6 +2479,7 @@ def process_epg() -> None:
         ET.SubElement(event, "title").text = title
         ET.SubElement(event, "desc").text = description
         generated.append(event)
+        bounded_events.append(event)
 
     handled_channel_ids = (
         set(targets) | set(epl_targets) | set(european_league_targets)
@@ -2438,7 +2538,7 @@ def process_epg() -> None:
         title = _clean_mirrored_event_title(raw_title)
         no_event = bool(re.search(r"\b(?:NO\s+EVENT|NO\s+MATCH|NO\s+GAME)\b", raw_title, re.I))
         start_utc = _parse_mirrored_start(raw_title, mirror_today)
-        if no_event or (start_utc and start_utc.date() < mirror_now_utc.date()):
+        if no_event:
             add_mirror_notice(ch_id, "No event today")
             continue
         if not title:
@@ -2474,6 +2574,7 @@ def process_epg() -> None:
         ET.SubElement(event, "title").text = title
         ET.SubElement(event, "desc").text = title
         generated.append(event)
+        bounded_events.append(event)
 
     for ch_id, raw_title in mirrored_football_targets.items():
         title = _clean_mirrored_event_title(raw_title)
@@ -2519,6 +2620,8 @@ def process_epg() -> None:
         f"Applied League Changes to {len(mirrored_football_targets)} mirrored football channel(s) "
         f"and Event Changes to {len(mirrored_event_targets)} mirrored event channel(s)."
     )
+
+    _bound_event_programmes(generated, bounded_events, source_programmes, now_utc)
 
     first_programme_index = next(
         (index for index, element in enumerate(root) if element.tag == "programme"),
@@ -2585,6 +2688,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 
