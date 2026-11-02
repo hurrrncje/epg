@@ -126,6 +126,12 @@
       "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
       "title": "Fulham vs Crystal Palace"
     },
+    "1483c88a25c6b326fd2bf96796790d96ca79e05e6432856c16e264975bbfadeb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T17:41:12.705938+00:00"
+    },
     "14b7fa2c54ca958bc3cc0d2a6670ba2a183f5b8f7d9ebaa21bda474fa899f7a9": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
       "created_at": "2026-11-02T06:42:29.061694+00:00",
@@ -257,6 +263,13 @@
       "kind": "event-description",
       "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
       "title": "Leicester City vs Wigan Athletic"
+    },
+    "23fda2f37975b9efee5e5a3c3713c85280da2f110614612d27f31f3888f3b62b": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
+      "created_at": "2026-11-02T17:31:56.705965+00:00",
+      "kind": "event-description",
+      "result": "UTSA weekly volleyball press conference on 02/11/2026 at 17:30 GMT.",
+      "title": "UTSA Weekly Volleyball Press Conference"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -575,6 +588,13 @@
       "result": "EFL League One fixture between Accrington Stanley and Northampton Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Accrington Stanley FC vs Northampton Town FC"
     },
+    "3d878bae5743dde267ae4c097d25766324d6d7abd59b84b73a0818241d8d3fb0": {
+      "context": "Serie A fixture scheduled 02/11/2026 17:30 GMT",
+      "created_at": "2026-11-02T17:31:56.705953+00:00",
+      "kind": "event-description",
+      "result": "Sassuolo play Fiorentina in Serie A at 17:30 GMT on 02/11/2026.",
+      "title": "Sassuolo vs Fiorentina"
+    },
     "3dc28e193e149eaa31c366c40595e4e1f13002e4e07630aae6af7f106c75f04c": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
       "created_at": "2026-10-31T16:22:16.312233+00:00",
@@ -602,12 +622,6 @@
       "kind": "event-description",
       "result": "Essendon Bombers compete against Collingwood Magpies in AFLW Round 12.",
       "title": "AFLW | Round 12: Essendon - Collingwood"
-    },
-    "402d1b4aedfc7e5d179a1cdf4eb1a141edf68262705900c6cd4ebc6da55e9782": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T16:48:43.690070+00:00"
     },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -703,6 +717,12 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 10A | Day 3: Afternoon Session"
       }
+    },
+    "47a91bcf5fbb059484f354079c126ae2485816f6f6be3b21025f6065e8b2e1ec": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T17:41:12.705938+00:00"
     },
     "48c3cba40aa32d6fc175fdf8cd45ed8958fd7e0d990a77a6a6b51bf72d85f811": {
       "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
@@ -874,6 +894,12 @@
       "result": "College football game Virginia Tech Hokies vs Clemson Tigers scheduled for Oct 29 2026.",
       "title": "Virginia Tech vs. Clemson"
     },
+    "5a6d4f61adecddbd67112de708804580317037acf548acce0ed56fee9b043459": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T17:41:12.705938+00:00"
+    },
     "5b6962dbad410f402105dddf3167989356112cc51c675380c0467afa237a2117": {
       "created_at": "2026-10-28T06:20:34.001552+00:00",
       "kind": "live-title",
@@ -988,12 +1014,6 @@
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
     },
-    "6b9d90c023a23f1da78e620689fb114120f8315dce94f869415c6b5b7b46a8b4": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T16:48:43.690070+00:00"
-    },
     "6ca4669c5186e02bf70ba41172929cd3d4f94db87d15ddb3ff0dfa368e0f3ad3": {
       "context": "DAZN UK event scheduled 31/10/2026 21:00 GMT",
       "created_at": "2026-10-31T21:16:12.334893+00:00",
@@ -1080,6 +1100,13 @@
       "kind": "event-description",
       "result": "EFL League One fixture between Luton Town and Doncaster Rovers at 19:45 GMT on 27 Oct 2026.",
       "title": "Luton Town vs Doncaster Rovers FC"
+    },
+    "74ea81a8792b20ef88a8fffdb1b60db8e4ed865e2fbcc56d721b2ce31df9cecd": {
+      "context": "DAZN UK event scheduled 02/11/2026 17:30 GMT",
+      "created_at": "2026-11-02T17:31:56.705959+00:00",
+      "kind": "event-description",
+      "result": "KF Teuta face FK Partizani in the Albanian Superliga at 17:30 GMT on 02/11/2026.",
+      "title": "KF Teuta vs. FK Partizani"
     },
     "752b9d85d0a5d2cb34655ce0b80e9f7133c0b42763f893d03de3d19260dc69c7": {
       "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
@@ -1270,6 +1297,13 @@
       "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
       "title": "Race: Moto3 | Round 19 | Malaysia"
     },
+    "8b86a5deb973100e9caa383ded08dfed90c5e76cb01f7b64fe5e6928af41e68c": {
+      "context": "MAX UK event scheduled 02/11/2026 17:25 GMT",
+      "created_at": "2026-11-02T17:31:56.705967+00:00",
+      "kind": "event-description",
+      "result": "Men’s group stage match between Senegal and Argentina in the Dakar 2026 tournament at 17:25 GMT on 02/11/2026.",
+      "title": "Men | Group Stage | Dakar 2026: Senegal - Argentina"
+    },
     "8c51708c9d0a5550aef6a35279cfcd111e0ef1f36333968a80d815c07a45dc14": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770320+00:00",
@@ -1312,6 +1346,12 @@
       "result": "NHL regular‑season game between the Colorado Avalanche and Minnesota Wild, part of the 2026‑27 NHL season.",
       "title": "Wild @ Mammoth"
     },
+    "8f82158d3c7ea574ee2c3d42a8d457dd2ce53ad7146cfa2ff6ff977b3a567bb8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T17:41:12.705938+00:00"
+    },
     "8fc5122b3deeed7a1d16651ccf9d96d14297b583fbb7e94a74a9ca07cb8fff39": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006246+00:00",
@@ -1346,12 +1386,6 @@
       "kind": "event-description",
       "result": "Women's college basketball: Lipscomb Bisons vs. Vanderbilt Commodores.",
       "title": "Lipscomb vs. #8 Vanderbilt"
-    },
-    "937bcfc95534ce8e82a187bc9febe8a61322e2cee63ab6dac39ef5c7219b4a6e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T16:48:43.690070+00:00"
     },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
@@ -2095,6 +2129,12 @@
       "result": "2026 Concacaf Central American Cup semi‑final second leg: CD Olimpia vs CS Cartaginés, scheduled for 29 Oct 2026 at 02:50 GMT.",
       "title": "Concacaf Champions Cup: Club Olimpia vs. CS Cartaginés"
     },
+    "e03153a838fe3bfd6d6a2008130c45bf84bf0ece1aae448b7510a4244b7488ec": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T17:41:12.705938+00:00"
+    },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
       "created_at": "2026-10-29T06:23:30.006220+00:00",
@@ -2115,18 +2155,6 @@
       "kind": "event-description",
       "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
       "title": "Aston Villa vs Fulham"
-    },
-    "e24e0e0cfe9d144d95fb523d7206012a4770a081cd345a7a51b5ea9e2dd3cb0b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T16:48:43.690070+00:00"
-    },
-    "e2e8e6670e8e57f4d13e848ae67641a78b7fc52230377ee832fa8d36c0502cdb": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T16:48:43.690070+00:00"
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -2171,6 +2199,13 @@
       "kind": "event-description",
       "result": "Florida Atlantic Owls vs. UAB Blazers – a college basketball matchup streamed on Disney+.",
       "title": "Florida Atlantic vs. UAB"
+    },
+    "e5688a5fd47ef5ca9c774cf9effed740130fce780a68a7d7726fad39847d3bf4": {
+      "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
+      "created_at": "2026-11-02T17:31:56.705962+00:00",
+      "kind": "event-description",
+      "result": "Georgia Southern football press conference on 02/11/2026 at 17:30 GMT.",
+      "title": "Georgia Southern Football Press Conference"
     },
     "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
@@ -2362,7 +2397,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T16:48:43.690070+00:00"
+    "groq": "2026-11-02T17:41:12.705938+00:00"
   },
   "version": 1
 }
