@@ -28,12 +28,6 @@
       "result": "A placement match for 9th place in the Messi Cup 2026.",
       "title": "Messi Cup 2026 (9th Place Match)"
     },
-    "044fde8a131eed4de7b9d50e58c84990a26b9e59e01c5458b16ba5a337a921c3": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T21:16:28.835611+00:00"
-    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -47,12 +41,6 @@
       "kind": "event-description",
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
-    },
-    "0970f90c0239501be01f0655912e0a18af502d561a8b0a25c776f2be0820db1b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T21:16:28.835611+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -193,12 +181,25 @@
         "raw": "Devils @ Stars"
       }
     },
+    "2030ad3fbcef9ed9d592d2eeee0a629bdc0203976791663169594a175328eab1": {
+      "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
+      "created_at": "2026-11-02T00:12:44.516358+00:00",
+      "kind": "event-description",
+      "result": "College basketball game: Florida International University vs. Temple University.",
+      "title": "Florida International vs. Temple"
+    },
     "20a8f5d15430981dafce7b4579a11bcb7bebb1d27d82a78bc4a5d723b4b1f3ab": {
       "context": "DAZN UK event scheduled 01/11/2026 15:30 GMT",
       "created_at": "2026-11-01T15:17:06.400745+00:00",
       "kind": "event-description",
       "result": "Domestic basketball game between Saint Quentin and ASVEL scheduled for 1 Nov 2026 at 15:30 GMT.",
       "title": "Saint Quentin vs. ASVEL"
+    },
+    "20da66415575ffdd4f9d8df32fe4e44b251f3cb1458c50958925110b17072ba2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T00:22:33.516317+00:00"
     },
     "22103c58608d5cb547d89bb348bcc22d84cdd3fbfabefb443a2d8c926a6c1694": {
       "created_at": "2026-10-26T12:30:58.030791+00:00",
@@ -220,12 +221,6 @@
       "kind": "event-description",
       "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
       "title": "Leicester City vs Wigan Athletic"
-    },
-    "2380a59a10e77340556ce466fffc9664b18e37d8e4b0b0d02bd60986c506172d": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T21:16:28.835611+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -359,6 +354,12 @@
         "raw": "Canadiens @ Blues"
       }
     },
+    "2c24c87defdd9d20a282a9ee03d90a6721fa9288bb1c2f08b71dce2055da3067": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T00:22:33.516317+00:00"
+    },
     "2e1c16dd18e2c76509a98a0d269730f58a635a13893222ea9f6ed556a4302a73": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
       "created_at": "2026-10-31T16:22:16.312208+00:00",
@@ -390,6 +391,13 @@
       "kind": "event-description",
       "result": "MLS match between FC Dallas and Columbus Crew scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
+    },
+    "310e3a693c48be79873f6bf902ec18c5aa920c18bbe584492ec56f47dbe3b8eb": {
+      "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
+      "created_at": "2026-11-02T00:12:44.516362+00:00",
+      "kind": "event-description",
+      "result": "College basketball game: Memphis Tigers vs. Tulsa Golden Hurricane.",
+      "title": "Memphis vs. Tulsa"
     },
     "316d542016dfa0ebb5f947ff9b1ce11efbc3e76122fb74cd85ad6dded26adcd8": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -544,6 +552,13 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
+    "444f0a328d06497dce5b298dbd17c6d2fc29fd2a9afffafedb0c9ee3f70cb232": {
+      "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
+      "created_at": "2026-11-02T00:12:44.516370+00:00",
+      "kind": "event-description",
+      "result": "USL Championship quarterfinal: Charlotte Independence vs. FC Naples.",
+      "title": "Charlotte Independence vs. FC Naples (Quarterfinal)"
+    },
     "44c9cf203728cadbb0a6a68c9267443898a81044fb0a5642674cecd5e8dc31b4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
       "created_at": "2026-11-01T21:19:10.371150+00:00",
@@ -617,6 +632,12 @@
       "kind": "event-description",
       "result": "2026 Concacaf Central American Cup play‑in second leg: Deportivo Saprissa vs CD Luis Ángel Firpo, scheduled for 29 Oct 2026 at 00:20 GMT.",
       "title": "Concacaf Champions Cup: Saprissa vs. LA Firpo"
+    },
+    "4a0085a9eed3443af7d31a20e22443f9276514cf2167e6fefe22efe92f304296": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T00:22:33.516317+00:00"
     },
     "4a5d8645083f8f2264faf9e7f90de8787a5882a6b2781d27175a0a22d32ce8a7": {
       "context": "Paramount+ event scheduled 28/10/2026 16:00 GMT",
@@ -1076,12 +1097,6 @@
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
     },
-    "875ccc1b750aec4c529feece3c74a807d2deb5de3e86765d4a45060930a874b0": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T21:16:28.835611+00:00"
-    },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
       "kind": "live-title",
@@ -1268,12 +1283,6 @@
       "kind": "event-description",
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
-    },
-    "9fa6cce7346a86a8108fad178df9000c3a3d214219e44a5081737db3205d5c74": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-01T21:16:28.835611+00:00"
     },
     "9fe1ab77335deb1c461b825fdf33457fd766c4d48da97d51cea127b6c0ba472a": {
       "context": "Paramount+ event scheduled 01/11/2026 12:00 GMT",
@@ -1640,6 +1649,13 @@
       "result": "A-League Men match between Melbourne Victory and Central Coast Mariners at AAMI Park, 3:00 pm AEDT.",
       "title": "A-League: Melbourne Victory - Central Coast Mariners"
     },
+    "d186b41779fb631e9b312b8703d6b321d7ebc3976bf2df25a36c0b09f6feee53": {
+      "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
+      "created_at": "2026-11-02T00:12:44.516366+00:00",
+      "kind": "event-description",
+      "result": "College basketball game: Bucknell Bison vs. Iowa State Cyclones.",
+      "title": "Bucknell vs. Iowa State"
+    },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770337+00:00",
@@ -1694,6 +1710,13 @@
       "kind": "event-description",
       "result": "NHL regular‑season game between the Boston Bruins and Carolina Hurricanes, part of the 2026‑27 NHL season.",
       "title": "Bruins @ Hurricanes"
+    },
+    "d625e3124181fd89a86ebe54d08d16d6ba51605673733be32ba8a6189af902ac": {
+      "context": "MLS fixture scheduled 02/11/2026 00:25 GMT",
+      "created_at": "2026-11-02T00:12:44.516350+00:00",
+      "kind": "event-description",
+      "result": "MLS match: New England Revolution host Inter Miami CF at Gillette Stadium.",
+      "title": "| New England Revolution vs Inter Miami CF (Spanish)"
     },
     "d7a677f53190a3558cd2ea2a4e2d399a102b207ec4dcb48be846642d201dc918": {
       "context": "Paramount+ event scheduled 28/10/2026 17:20 GMT",
@@ -1843,6 +1866,12 @@
       "result": "cbssportshq Scoreboard Final broadcast, 3:00 pm GMT.",
       "title": "cbssportshq: Scoreboard Final"
     },
+    "e4b2f0181ea9879dfbb2888a6e0cff7eb1c62c76924594dbb2a0b73871e6a2f7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T00:22:33.516317+00:00"
+    },
     "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770307+00:00",
@@ -1976,6 +2005,12 @@
       "result": "Como vs Venezia in Italian Serie A.",
       "title": "Serie A: Como vs. Venezia"
     },
+    "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T00:22:33.516317+00:00"
+    },
     "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
       "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770315+00:00",
@@ -2011,8 +2046,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-01T21:16:28.835611+00:00",
-    "groq": "2026-11-01T21:27:27.371090+00:00"
+    "gemini": "2026-11-02T06:12:33.170145+00:00",
+    "groq": "2026-11-02T00:22:33.516317+00:00"
   },
   "version": 1
 }
