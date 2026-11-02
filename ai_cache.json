@@ -105,6 +105,12 @@
       "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
       "title": "Fulham vs Crystal Palace"
     },
+    "14b7fa2c54ca958bc3cc0d2a6670ba2a183f5b8f7d9ebaa21bda474fa899f7a9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+    },
     "14cb3c2a2495c51870bc90c6e88633410d0cf77df3fdeaa826e4ac549d57fbed": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006249+00:00",
@@ -194,12 +200,6 @@
       "kind": "event-description",
       "result": "Domestic basketball game between Saint Quentin and ASVEL scheduled for 1 Nov 2026 at 15:30 GMT.",
       "title": "Saint Quentin vs. ASVEL"
-    },
-    "20da66415575ffdd4f9d8df32fe4e44b251f3cb1458c50958925110b17072ba2": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T00:22:33.516317+00:00"
     },
     "22103c58608d5cb547d89bb348bcc22d84cdd3fbfabefb443a2d8c926a6c1694": {
       "created_at": "2026-10-26T12:30:58.030791+00:00",
@@ -354,12 +354,6 @@
         "raw": "Canadiens @ Blues"
       }
     },
-    "2c24c87defdd9d20a282a9ee03d90a6721fa9288bb1c2f08b71dce2055da3067": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T00:22:33.516317+00:00"
-    },
     "2e1c16dd18e2c76509a98a0d269730f58a635a13893222ea9f6ed556a4302a73": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
       "created_at": "2026-10-31T16:22:16.312208+00:00",
@@ -442,6 +436,13 @@
       "kind": "event-description",
       "result": "Navy men's ice hockey competes against Bucknell men's ice hockey in an ECAC regular‑season game.",
       "title": "Navy vs. Bucknell"
+    },
+    "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
+      "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
+      "created_at": "2026-11-02T03:33:22.316096+00:00",
+      "kind": "event-description",
+      "result": "MLS match: Portland Timbers host Houston Dynamo at Providence Park.",
+      "title": "2 | Portland Timbers vs Houston Dynamo FC (Spanish)"
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -633,11 +634,11 @@
       "result": "2026 Concacaf Central American Cup play‑in second leg: Deportivo Saprissa vs CD Luis Ángel Firpo, scheduled for 29 Oct 2026 at 00:20 GMT.",
       "title": "Concacaf Champions Cup: Saprissa vs. LA Firpo"
     },
-    "4a0085a9eed3443af7d31a20e22443f9276514cf2167e6fefe22efe92f304296": {
+    "49d4d8d935f9c8a460447fa52bd826de3f924fbfd080f53de31e719c1fa37921": {
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T00:22:33.516317+00:00"
+      "retry_after": "2026-11-02T03:41:20.316076+00:00"
     },
     "4a5d8645083f8f2264faf9e7f90de8787a5882a6b2781d27175a0a22d32ce8a7": {
       "context": "Paramount+ event scheduled 28/10/2026 16:00 GMT",
@@ -837,6 +838,13 @@
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "8 | Austin FC vs Real Salt Lake (Spanish)"
     },
+    "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
+      "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
+      "created_at": "2026-11-02T03:33:22.316107+00:00",
+      "kind": "event-description",
+      "result": "USL Championship Western Conference quarter‑final: Sacramento Republic FC play FC Tulsa.",
+      "title": "Sacramento Republic FC vs. FC Tulsa (Western Conference Quarterfinal)"
+    },
     "64f614a36bdb5f986aa5075a08ec09257e6b4ad7ba828977e2326709cc281b94": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898642+00:00",
@@ -915,6 +923,12 @@
       "kind": "event-description",
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "7 | Austin FC vs Real Salt Lake (English)"
+    },
+    "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T03:41:20.316076+00:00"
     },
     "7306f5e34c44fe5d739e8a0f994206a43d9df1be5caf4eaa1414ce550036335e": {
       "created_at": "2026-10-26T12:30:58.030771+00:00",
@@ -1185,12 +1199,26 @@
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
     },
+    "91728f8bb2ff85f62a3b7947f05546361a5e833a6a4e5805c880b304a1519199": {
+      "context": "MLS fixture scheduled 02/11/2026 02:25 GMT",
+      "created_at": "2026-11-02T03:33:22.316102+00:00",
+      "kind": "event-description",
+      "result": "MLS match: Los Angeles FC visit Minnesota United at BMO Stadium.",
+      "title": "| Los Angeles Football Club vs Minnesota United (English)"
+    },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
       "created_at": "2026-11-01T21:19:10.371131+00:00",
       "kind": "event-description",
       "result": "Los Angeles Chargers visit Los Angeles Rams for an NFL regular‑season matchup at SoFi Stadium.",
       "title": "Chargers @ Rams"
+    },
+    "950912c08a636581baf45b4f0c424c340fbeddde1b65d1bfedd30275c83e307c": {
+      "context": "Disney+ Events event scheduled 02/11/2026 01:30 GMT",
+      "created_at": "2026-11-02T03:33:22.316109+00:00",
+      "kind": "event-description",
+      "result": "MLB awards ceremony: 2026 Rawlings Gold Glove Awards presented by Dick's Sporting Goods.",
+      "title": "The Rawlings Gold Glove Awards Presented by Dick's Sporting Goods"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -1290,6 +1318,12 @@
       "kind": "event-description",
       "result": "CBS Sports HQ scoreboard final for the day's games.",
       "title": "cbssportshq: Scoreboard Final"
+    },
+    "a1a864ca09d2ab51429cbd2cacc533d4516ee559d1b782e1e614369525d53f8b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T03:41:20.316076+00:00"
     },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
@@ -1538,6 +1572,13 @@
         "raw": "Pitch 5B | Day 3: Afternoon Session"
       }
     },
+    "c19196fa5381e8d09b4332ead7b8fedb6e6ab249d3b3fb825208d4de75dc0950": {
+      "context": "MAX UK event scheduled 02/11/2026 01:30 GMT",
+      "created_at": "2026-11-02T03:33:22.316112+00:00",
+      "kind": "event-description",
+      "result": "Snooker event: International Championship Round 2 at the SNC National Fitness Center in Nanjing, China.",
+      "title": "International Championship | Round 2: Snooker"
+    },
     "c248a78d0b5e347ce7587ce82f6f5d2c0be85bf43049524e3ebf19e2fe21d38c": {
       "created_at": "2026-10-26T19:21:40.738705+00:00",
       "kind": "live-title",
@@ -1725,6 +1766,12 @@
       "result": "Serie A match between AC Milan and Bologna, part of the 2026‑27 Serie A season, scheduled for 28 October 2026 at 17:20 GMT.",
       "title": "Serie A: Milan vs. Bologna"
     },
+    "d7d61cee03543db49f9c7841dba06c447af8dbb3b299e77e53176094f9e75ef3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+    },
     "d7ff3ac6ea3873863c9b6fec265292dae795c1246dd07db31b362fcc49fa84ef": {
       "created_at": "2026-10-26T19:21:40.738758+00:00",
       "kind": "live-title",
@@ -1866,12 +1913,6 @@
       "result": "cbssportshq Scoreboard Final broadcast, 3:00 pm GMT.",
       "title": "cbssportshq: Scoreboard Final"
     },
-    "e4b2f0181ea9879dfbb2888a6e0cff7eb1c62c76924594dbb2a0b73871e6a2f7": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T00:22:33.516317+00:00"
-    },
     "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770307+00:00",
@@ -2005,12 +2046,6 @@
       "result": "Como vs Venezia in Italian Serie A.",
       "title": "Serie A: Como vs. Venezia"
     },
-    "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T00:22:33.516317+00:00"
-    },
     "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
       "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770315+00:00",
@@ -2047,7 +2082,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T06:12:33.170145+00:00",
-    "groq": "2026-11-02T00:22:33.516317+00:00"
+    "groq": "2026-11-02T03:41:20.316076+00:00"
   },
   "version": 1
 }
