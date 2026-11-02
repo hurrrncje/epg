@@ -161,6 +161,12 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Maple Leafs, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Maple Leafs Broadcast)"
     },
+    "14cd44b7ae13488e9f92e47fb5824785eff0fcb4521e0104656d03145e1d2c4a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T22:30:41.520534+00:00"
+    },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
       "created_at": "2026-10-28T18:24:17.569507+00:00",
@@ -197,6 +203,12 @@
       "kind": "event-description",
       "result": "CBS Sports HQ What 2 Watch, a sports analysis program on Paramount+ scheduled for 28 October 2026 at 15:00 GMT.",
       "title": "cbssportshq: What 2 Watch"
+    },
+    "1cd10580876277b9122d20d2c27188da209e6da3a1618077e6d25a642f5d224e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T22:30:41.520534+00:00"
     },
     "1d5885836d3c5417e0092762f7379890b842964adc477e76f32c9740567ee319": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -271,12 +283,6 @@
         "description": "Toronto Maple Leafs vs. Calgary Flames game on 26 October 2026 at 08:30 PM EST in the Scotiabank Saddledome. The game is broadcast on Sportsnet+【11†L9-L16】.",
         "raw": "Maple Leafs @ Flames"
       }
-    },
-    "22d39408bb915103bc29ece7cacf8c2e3a057440b1e9e0793829d32092c17776": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T21:34:17.985765+00:00"
     },
     "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
       "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
@@ -579,6 +585,13 @@
       "result": "EFL League Two match between Stockport County and AFC Wimbledon at 15:00 GMT on 31 Oct 2026.",
       "title": "Stockport County vs AFC Wimbledon"
     },
+    "37466b10226367431e41ab7036ff9363eaf27ac3a5796bd210cf4c764b77191f": {
+      "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
+      "created_at": "2026-11-02T22:22:39.520578+00:00",
+      "kind": "event-description",
+      "result": "Texas Southern plays Tulane in an NCAA women's basketball regular‑season game.",
+      "title": "Texas Southern vs. Tulane"
+    },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569495+00:00",
@@ -686,18 +699,19 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
-    "4448f297044d5ad6e4d8e77ca61d41921398ccc6b6a68a23a54304bc456fe1f1": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T21:34:17.985765+00:00"
-    },
     "444f0a328d06497dce5b298dbd17c6d2fc29fd2a9afffafedb0c9ee3f70cb232": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
       "created_at": "2026-11-02T00:12:44.516370+00:00",
       "kind": "event-description",
       "result": "USL Championship quarterfinal: Charlotte Independence vs. FC Naples.",
       "title": "Charlotte Independence vs. FC Naples (Quarterfinal)"
+    },
+    "449ab7a579f3e1bbd756553ca52247120c10c6668d243dc8c99e10e6e1a7b5ff": {
+      "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
+      "created_at": "2026-11-02T22:22:39.520582+00:00",
+      "kind": "event-description",
+      "result": "Furman competes against South Florida in an NCAA women's basketball regular‑season game.",
+      "title": "Furman vs. South Florida"
     },
     "44c9cf203728cadbb0a6a68c9267443898a81044fb0a5642674cecd5e8dc31b4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -721,6 +735,13 @@
         "description": "No reliable information is available about the 2026 Ballon d'Or ceremony.",
         "raw": "Ballon d'Or 2026 Ceremony"
       }
+    },
+    "463a9680a6d1a4787fc7bb29feaccc8e0ab9264a21924aeb8eb5bb86be08f756": {
+      "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
+      "created_at": "2026-11-02T22:22:39.520576+00:00",
+      "kind": "event-description",
+      "result": "St. Francis (Ill.) faces UIC in an NCAA men's basketball regular‑season game.",
+      "title": "St. Francis (Ill.) vs. UIC"
     },
     "46824aba36dc3b2ffde6ca463a679d6a58b9de14b2eeae362ae83c8337ef4999": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:55 GMT",
@@ -1020,12 +1041,6 @@
       "result": "MLS match between Seattle Sounders FC and Houston Dynamo FC scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "0 | Seattle Sounders FC vs Houston Dynamo FC (Spanish)"
     },
-    "664713d3d4556ce6890a42aca9121ca7e1b27e9e1e92c5df888f2ed1b0b0c6ca": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T21:34:17.985765+00:00"
-    },
     "6691d9ecbef9262e52e874fbe5d124089ab5113060583999fe1acc214cc3e97f": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569536+00:00",
@@ -1177,6 +1192,12 @@
       "kind": "event-description",
       "result": "Pacific men's ice hockey takes on Denver men's ice hockey in an NCAA Division I regular‑season match.",
       "title": "Pacific vs. Denver"
+    },
+    "785ebb1fc315db9c1856b6848f377380fbcea41abd4708fa74f6d1d37faf2d5a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T22:30:41.520534+00:00"
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -1580,6 +1601,13 @@
         "raw": "Sam Houston @ Missouri State"
       }
     },
+    "a2308211614ebdea5ec6444313eb7d62bbf93ca339019e1c4b2c0b3af4c5a5a1": {
+      "context": "Disney+ Events event scheduled 02/11/2026 22:30 GMT",
+      "created_at": "2026-11-02T22:22:39.520563+00:00",
+      "kind": "event-description",
+      "result": "Maryville (MO) competes against Missouri in an NCAA wrestling match.",
+      "title": "Maryville (MO) vs. Missouri"
+    },
     "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690125+00:00",
@@ -1930,6 +1958,12 @@
       "result": "MLS match between Minnesota United and Sporting Kansas City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "1 | Minnesota United vs Sporting Kansas City (English)"
     },
+    "c47a1b19b21f82a03bbbc0a26e101f3272164a069894216d306d899d211c2a7e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T22:30:41.520534+00:00"
+    },
     "c488b2c8dd1ce195e949fbb3850d4673ee1025acc9ae48cb9c241cd03c94c1ce": {
       "created_at": "2026-10-26T19:21:40.738749+00:00",
       "kind": "live-title",
@@ -2161,12 +2195,6 @@
       "result": "College basketball game UC San Diego Tritons vs Cal State Bakersfield Roadrunners scheduled for Oct 29 2026.",
       "title": "UC San Diego vs. Cal State Bakersfield"
     },
-    "d885cdc814ac47f221d59b0e3c1b33c61c19bb10c16def07a1eac50032873390": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T21:34:17.985765+00:00"
-    },
     "d976699edce009e76f1eb177fb11f79dd297fd873c7fd20ad2a8d8647c4aac95": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
       "created_at": "2026-10-28T18:24:17.569542+00:00",
@@ -2187,6 +2215,12 @@
       "created_at": "2026-10-26T12:30:58.030742+00:00",
       "kind": "event-description",
       "result": "League Two match: Walsall vs Salford City, scheduled 26 Oct 2026 20:00 GMT."
+    },
+    "db297c582e268f132dd549fe1dbbd71e693c49cff2dfd482ff97150258b9c120": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T22:30:41.520534+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -2348,6 +2382,13 @@
       "result": "English League One fixture: Milton Keynes Dons host Doncaster Rovers at Stadium mk on 31 October 2026, kickoff 15:00 GMT.",
       "title": "Milton Keynes Dons FC vs Doncaster Rovers FC"
     },
+    "eaa22c6c76afbd485cf2b67c1ec8414956adad34a3a8b159ef1fa3d4badf8571": {
+      "context": "Paramount+ event scheduled 02/11/2026 22:00 GMT",
+      "created_at": "2026-11-02T22:22:39.520571+00:00",
+      "kind": "event-description",
+      "result": "CBS Sports HQ Spotlight airs a sports news recap.",
+      "title": "cbssportshq: CBS Sports HQ Spotlight"
+    },
     "eb633b5101e1ca5c73623933f3fdb7b025b1932b621a9c032dde7bd8e02119cb": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569492+00:00",
@@ -2412,12 +2453,6 @@
       "kind": "event-description",
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
-    },
-    "f5355e42d58b940335871bc08a7fd2724b90c721ff818a606c0f525044a78486": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T21:34:17.985765+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -2502,7 +2537,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T21:34:17.985765+00:00"
+    "groq": "2026-11-02T22:30:41.520534+00:00"
   },
   "version": 1
 }
