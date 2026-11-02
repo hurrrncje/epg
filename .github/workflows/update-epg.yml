@@ -2,8 +2,8 @@ name: Update cleaned EPG
 
 on:
   schedule:
-    # Every three hours from 14:45 UK time. GitHub may delay scheduled runs.
-    - cron: "45 2-23/3 * * *"
+    # Every hour at 45 minutes past. GitHub may delay scheduled runs.
+    - cron: "45 * * * *"
       timezone: "Europe/London"
   workflow_dispatch:
 
