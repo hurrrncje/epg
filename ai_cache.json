@@ -49,12 +49,6 @@
       "result": "A placement match for 9th place in the Messi Cup 2026.",
       "title": "Messi Cup 2026 (9th Place Match)"
     },
-    "0699bdf6d50a8d18dfc468ad8500d6ad849f4b8df243b38dc4419ddaa6122378": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
-    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -174,12 +168,6 @@
       "result": "NHL regular‑season game between the Vancouver Canucks and Anaheim Ducks, part of the 2026‑27 NHL season.",
       "title": "Canucks @ Ducks"
     },
-    "168f62d8c9c3742f49c821aac8a711c566a33143a4a52ecf748a2a363e9a80df": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
-    },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
       "created_at": "2026-10-28T18:24:17.569548+00:00",
@@ -283,6 +271,12 @@
         "description": "Toronto Maple Leafs vs. Calgary Flames game on 26 October 2026 at 08:30 PM EST in the Scotiabank Saddledome. The game is broadcast on Sportsnet+【11†L9-L16】.",
         "raw": "Maple Leafs @ Flames"
       }
+    },
+    "22d39408bb915103bc29ece7cacf8c2e3a057440b1e9e0793829d32092c17776": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T21:34:17.985765+00:00"
     },
     "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
       "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
@@ -692,6 +686,12 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
+    "4448f297044d5ad6e4d8e77ca61d41921398ccc6b6a68a23a54304bc456fe1f1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T21:34:17.985765+00:00"
+    },
     "444f0a328d06497dce5b298dbd17c6d2fc29fd2a9afffafedb0c9ee3f70cb232": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
       "created_at": "2026-11-02T00:12:44.516370+00:00",
@@ -712,12 +712,6 @@
       "kind": "event-description",
       "result": "English League One fixture: Milton Keynes Dons host Doncaster Rovers at Stadium mk on 31 October 2026, kickoff 15:00 GMT.",
       "title": "Milton Keynes Dons FC vs Doncaster Rovers FC"
-    },
-    "44f0716e8804eb313c81232a5229b8c5863eb6b2635ebda751dae7f71cc2ac00": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -928,6 +922,13 @@
       "result": "College football game Virginia Tech Hokies vs Clemson Tigers scheduled for Oct 29 2026.",
       "title": "Virginia Tech vs. Clemson"
     },
+    "5b690e651162f883f83381733d3dbf47869cf9cb10f5a844ac521b022d29d1e7": {
+      "context": "Paramount+ event scheduled 02/11/2026 21:00 GMT",
+      "created_at": "2026-11-02T21:24:45.985794+00:00",
+      "kind": "event-description",
+      "result": "CBS Sports HQ presents a news segment titled \"This Just In\" covering recent sports updates.",
+      "title": "cbssportshq: This Just In"
+    },
     "5b6962dbad410f402105dddf3167989356112cc51c675380c0467afa237a2117": {
       "created_at": "2026-10-28T06:20:34.001552+00:00",
       "kind": "live-title",
@@ -1018,6 +1019,12 @@
       "kind": "event-description",
       "result": "MLS match between Seattle Sounders FC and Houston Dynamo FC scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "0 | Seattle Sounders FC vs Houston Dynamo FC (Spanish)"
+    },
+    "664713d3d4556ce6890a42aca9121ca7e1b27e9e1e92c5df888f2ed1b0b0c6ca": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T21:34:17.985765+00:00"
     },
     "6691d9ecbef9262e52e874fbe5d124089ab5113060583999fe1acc214cc3e97f": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -1235,12 +1242,6 @@
       "result": "Scottish Premiership game: St. Mirren vs Rangers at The Marbill Coaches Stadium, 7 November 2026, 20:00 GMT.",
       "title": "St Mirren vs Rangers"
     },
-    "804ee3b23770907915adfc7bd90a024c00f0e79b4968f4315542763ef8e276bb": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
-    },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
       "kind": "event-description",
@@ -1319,12 +1320,6 @@
       "kind": "event-description",
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
-    },
-    "87999a6e96b8f6b6af7fc4dbb57db3d15b105519c4be055853e141db02dcbe55": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1610,11 +1605,12 @@
         "raw": "Chiefs @ Seahawks (US., French, German, Japanese, Portuguese Game Commentary Available)"
       }
     },
-    "a4bb086aac6ff56ddab5f52e65a0c875c070d0c68d9e7268e1ec3b9ef6f51ead": {
-      "failed": true,
-      "failure_policy": 2,
+    "a3b4dc90bb2e568b404f0c5c36b349ff39cb51588f66bd623747531de22e7f03": {
+      "context": "Disney+ Events event scheduled 02/11/2026 21:00 GMT",
+      "created_at": "2026-11-02T21:24:45.985797+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+      "result": "Carnegie Mellon University women's basketball team competes against Princeton.",
+      "title": "Carnegie Mellon University vs. Princeton"
     },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -1692,12 +1688,6 @@
       "kind": "event-description",
       "result": "Hofstra women's basketball plays Georgia Tech in a collegiate game.",
       "title": "Hofstra vs. Georgia Tech"
-    },
-    "ade5206d7b60a8ddf0925aebaf4673789179c2e6746178dec1cd0380a6bbefd1": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -2037,6 +2027,13 @@
       "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
       "title": "Colchester United FC vs Walsall FC"
     },
+    "cf73f4924c2102c63f6613b7b31770345c9b8f4632582cc087f853df096f5345": {
+      "context": "ESPN+ event scheduled 02/11/2026 21:30 GMT",
+      "created_at": "2026-11-02T21:24:45.985784+00:00",
+      "kind": "event-description",
+      "result": "Morgan Scalley announces upcoming season plans in a press conference.",
+      "title": "Morgan Scalley Press Conference"
+    },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
       "created_at": "2026-11-02T09:40:06.869222+00:00",
@@ -2065,11 +2062,19 @@
       "result": "EFL League Two match between Stockport County and AFC Wimbledon at 15:00 GMT on 31 Oct 2026.",
       "title": "Stockport County vs AFC Wimbledon"
     },
-    "d294161dd36b3db466cfcf3e791eeab1a74e2839f829f19eeec0727dfae3eac5": {
-      "failed": true,
-      "failure_policy": 2,
+    "d23e12f591996b2874521d4b5895524d5920781212aa411a2e830ef674de4c61": {
+      "context": "Disney+ Events event scheduled 02/11/2026 21:30 GMT",
+      "created_at": "2026-11-02T21:24:45.985790+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+      "result": "Elms College women's basketball team faces Yale in a regular‑season game.",
+      "title": "Elms College vs. Yale"
+    },
+    "d294161dd36b3db466cfcf3e791eeab1a74e2839f829f19eeec0727dfae3eac5": {
+      "context": "Disney+ Events event scheduled 02/11/2026 21:00 GMT",
+      "created_at": "2026-11-02T21:24:45.985799+00:00",
+      "kind": "event-description",
+      "result": "Saint Anselm College women's basketball team plays UMass Lowell.",
+      "title": "Saint Anselm vs. UMass Lowell"
     },
     "d31d9a08516f35215d67ee084313594e976d376dd07fda9bb469c878427cec4a": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
@@ -2155,6 +2160,12 @@
       "kind": "event-description",
       "result": "College basketball game UC San Diego Tritons vs Cal State Bakersfield Roadrunners scheduled for Oct 29 2026.",
       "title": "UC San Diego vs. Cal State Bakersfield"
+    },
+    "d885cdc814ac47f221d59b0e3c1b33c61c19bb10c16def07a1eac50032873390": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T21:34:17.985765+00:00"
     },
     "d976699edce009e76f1eb177fb11f79dd297fd873c7fd20ad2a8d8647c4aac95": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -2309,12 +2320,6 @@
       "result": "Cal State Northridge Matadors visit UC Santa Barbara Gauchos in a men's college basketball contest.",
       "title": "Cal State Northridge vs. UC Santa Barbara"
     },
-    "e65f9336fa52970f0145065f6159566cbb066f7a9aacdccfb9c73f4f8329c55b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
-    },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
       "created_at": "2026-10-27T03:17:18.770324+00:00",
@@ -2412,7 +2417,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T20:33:07.102862+00:00"
+      "retry_after": "2026-11-02T21:34:17.985765+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -2497,7 +2502,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T22:40:08.208973+00:00",
-    "groq": "2026-11-02T20:33:07.102862+00:00"
+    "groq": "2026-11-02T21:34:17.985765+00:00"
   },
   "version": 1
 }
