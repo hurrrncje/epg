@@ -7,6 +7,13 @@
       "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
       "title": "Millwall FC vs Derby County"
     },
+    "00474045440fc7294f809ecdb5f966361ecaae45083bad7930718bc44618fa71": {
+      "context": "Paramount+ event scheduled 02/11/2026 01:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061705+00:00",
+      "kind": "event-description",
+      "result": "CBS Sports HQ Postgame recap of recent sports events.",
+      "title": "cbssportshq: The Postgame"
+    },
     "024a8f384ce131a4fe8c49223ef8964848ac58e4b57f8a53a6730668d0a777e8": {
       "context": "MAX UK event scheduled 01/11/2026 15:25 GMT",
       "created_at": "2026-11-01T15:17:06.400733+00:00",
@@ -63,6 +70,13 @@
       "result": "CBS Sports HQ Morning Boxscore, a sports recap show on Paramount+ scheduled for 28 October 2026 at 13:00 GMT.",
       "title": "cbssportshq: Morning Boxscore"
     },
+    "0b5f2c528ef20576407380a1cfd09308c35f3cd62e0584e2cb1d25530ca681af": {
+      "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061708+00:00",
+      "kind": "event-description",
+      "result": "NHL game: Ottawa Senators vs. Anaheim Ducks, broadcast by the Senators.",
+      "title": "Ottawa Senators vs. Anaheim Ducks (Senators Broadcast)"
+    },
     "0ba95f0c6038f88b161a1fd8465beeeef87546ad8a66cd8386dd8becaac12d32": {
       "created_at": "2026-10-26T19:21:40.738724+00:00",
       "kind": "live-title",
@@ -106,10 +120,11 @@
       "title": "Fulham vs Crystal Palace"
     },
     "14b7fa2c54ca958bc3cc0d2a6670ba2a183f5b8f7d9ebaa21bda474fa899f7a9": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
+      "created_at": "2026-11-02T06:42:29.061694+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+      "result": "NFL game between the Philadelphia Eagles and the Washington Commanders.",
+      "title": "Eagles @ Commanders"
     },
     "14cb3c2a2495c51870bc90c6e88633410d0cf77df3fdeaa826e4ac549d57fbed": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -200,6 +215,13 @@
       "kind": "event-description",
       "result": "Domestic basketball game between Saint Quentin and ASVEL scheduled for 1 Nov 2026 at 15:30 GMT.",
       "title": "Saint Quentin vs. ASVEL"
+    },
+    "20da66415575ffdd4f9d8df32fe4e44b251f3cb1458c50958925110b17072ba2": {
+      "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061712+00:00",
+      "kind": "event-description",
+      "result": "USL League One quarterfinal: Athletic Club Boise vs. One Knoxville SC.",
+      "title": "Athletic Club Boise vs. One Knoxville SC (Quarterfinal)"
     },
     "22103c58608d5cb547d89bb348bcc22d84cdd3fbfabefb443a2d8c926a6c1694": {
       "created_at": "2026-10-26T12:30:58.030791+00:00",
@@ -315,6 +337,13 @@
       "result": "Calgary Flames host Colorado Avalanche in an NHL regular‑season game.",
       "title": "Calgary Flames vs. Colorado Avalanche"
     },
+    "29d2785bf2a6e70c48eaf902509154d9004b6b8faa29a5c87a2f8d5c885817c8": {
+      "context": "HeartofMidlothian.spfl; Next Game: FC Thun vs Heart of Midlothian on 05/11/2026 at 18:45 GMT",
+      "created_at": "2026-11-02T06:42:29.061736+00:00",
+      "kind": "event-description",
+      "result": "FC Thun vs. Heart of Midlothian – a UEFA Conference League group‑stage match played at Visana Stadion on 5 Nov 2026.",
+      "title": "FC Thun vs Heart of Midlothian"
+    },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770340+00:00",
@@ -353,6 +382,13 @@
         "description": "NHL regular season game between the Montreal Canadiens and the St. Louis Blues, scheduled for Wednesday, October 28, 2026 at the Enterprise Center in St. Louis, MO. 【8†L25-L26】",
         "raw": "Canadiens @ Blues"
       }
+    },
+    "2c24c87defdd9d20a282a9ee03d90a6721fa9288bb1c2f08b71dce2055da3067": {
+      "context": "ESPN+ event scheduled 02/11/2026 01:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061721+00:00",
+      "kind": "event-description",
+      "result": "NHL game: Ottawa Senators vs. Anaheim Ducks.",
+      "title": "Ottawa Senators vs. Anaheim Ducks"
     },
     "2e1c16dd18e2c76509a98a0d269730f58a635a13893222ea9f6ed556a4302a73": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
@@ -635,10 +671,18 @@
       "title": "Concacaf Champions Cup: Saprissa vs. LA Firpo"
     },
     "49d4d8d935f9c8a460447fa52bd826de3f924fbfd080f53de31e719c1fa37921": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
+      "created_at": "2026-11-02T06:42:29.061689+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+      "result": "NFL game between the Philadelphia Eagles and the Washington Commanders.",
+      "title": "Eagles @ Commanders (US., French, German, Japanese, Portuguese Game Commentary Available)"
+    },
+    "4a0085a9eed3443af7d31a20e22443f9276514cf2167e6fefe22efe92f304296": {
+      "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061716+00:00",
+      "kind": "event-description",
+      "result": "NHL game: Ottawa Senators vs. Anaheim Ducks, broadcast by the Ducks.",
+      "title": "Ottawa Senators vs. Anaheim Ducks (Ducks Broadcast)"
     },
     "4a5d8645083f8f2264faf9e7f90de8787a5882a6b2781d27175a0a22d32ce8a7": {
       "context": "Paramount+ event scheduled 28/10/2026 16:00 GMT",
@@ -776,6 +820,12 @@
         "description": "Boston Bruins played the Carolina Hurricanes at the Hurricanes’ home on Oct 27 2026, losing 2‑1 in a game where Pyotr Kochetkov made a career‑high 46‑save shutout【1†L10-L20】.",
         "raw": "Bruins @ Hurricanes"
       }
+    },
+    "5b9dfa11af46c5c1329f8e3e1519fabc02ee5b82da1508fc9271140cfdbd1631": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T06:51:35.061658+00:00"
     },
     "5c56e76e89c2109224adac1b49b2568e7b7bb6cfc06935c726f4ab4a26c25926": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -925,10 +975,11 @@
       "title": "7 | Austin FC vs Real Salt Lake (English)"
     },
     "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
+      "created_at": "2026-11-02T06:42:29.061698+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+      "result": "NFL game between the Philadelphia Eagles and the Washington Commanders.",
+      "title": "Eagles @ Commanders (Spanish Broadcast)"
     },
     "7306f5e34c44fe5d739e8a0f994206a43d9df1be5caf4eaa1414ce550036335e": {
       "created_at": "2026-10-26T12:30:58.030771+00:00",
@@ -1038,6 +1089,12 @@
       "kind": "event-description",
       "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
       "title": "Wolverhampton Wanderers vs Cardiff City"
+    },
+    "7fd1ad87be5f9f88a68be39b8b0fc721d242d634f4a5e25bb8ad7d498ef7602b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T06:51:35.061658+00:00"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -1320,10 +1377,11 @@
       "title": "cbssportshq: Scoreboard Final"
     },
     "a1a864ca09d2ab51429cbd2cacc533d4516ee559d1b782e1e614369525d53f8b": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 02/11/2026 01:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061702+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+      "result": "NHL game between the Ottawa Senators and the Anaheim Ducks.",
+      "title": "Senators @ Ducks"
     },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
@@ -1363,6 +1421,13 @@
       "created_at": "2026-10-26T12:30:58.030796+00:00",
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
+    },
+    "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
+      "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061739+00:00",
+      "kind": "event-description",
+      "result": "Celtic FC vs. Beşiktaş – a UEFA Europa League match at Celtic Park on 5 Nov 2026.",
+      "title": "Celtic vs Beşiktaş"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -1516,6 +1581,12 @@
         "description": "No reliable information is available about the 2026 Ballon d'Or ceremony in Portuguese.",
         "raw": "Ballon d'Or 2026 Ceremony (in Portuguese)"
       }
+    },
+    "bcd1d3c06c6deedf938de1ed2e926eca8b45b3281dfc9d7947759e8da7a6900b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T06:51:35.061658+00:00"
     },
     "bd10825e93b8a5500b9cc437ba8c9b10ceb1af6b1b689efe152adb8835763415": {
       "context": "DAZN UK event scheduled 28/10/2026 02:30 GMT",
@@ -1683,6 +1754,12 @@
       "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
       "title": "Colchester United FC vs Walsall FC"
     },
+    "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T06:51:35.061658+00:00"
+    },
     "d17e66cbb01141ac04129de50d38006b2904117ebcd5d26afb6d275e36c07a75": {
       "context": "MAX UK event scheduled 01/11/2026 03:45 GMT",
       "created_at": "2026-11-01T06:23:52.067217+00:00",
@@ -1767,10 +1844,11 @@
       "title": "Serie A: Milan vs. Bologna"
     },
     "d7d61cee03543db49f9c7841dba06c447af8dbb3b299e77e53176094f9e75ef3": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 02/11/2026 06:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061681+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T03:41:20.316076+00:00"
+      "result": "Round 2 of the 2026 International Championship snooker ranking event.",
+      "title": "Round 2: International Championship"
     },
     "d7ff3ac6ea3873863c9b6fec265292dae795c1246dd07db31b362fcc49fa84ef": {
       "created_at": "2026-10-26T19:21:40.738758+00:00",
@@ -1913,6 +1991,13 @@
       "result": "cbssportshq Scoreboard Final broadcast, 3:00 pm GMT.",
       "title": "cbssportshq: Scoreboard Final"
     },
+    "e4b2f0181ea9879dfbb2888a6e0cff7eb1c62c76924594dbb2a0b73871e6a2f7": {
+      "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061732+00:00",
+      "kind": "event-description",
+      "result": "Florida Atlantic Owls vs. UAB Blazers – a college basketball matchup streamed on Disney+.",
+      "title": "Florida Atlantic vs. UAB"
+    },
     "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770307+00:00",
@@ -1968,6 +2053,12 @@
       "kind": "event-description",
       "result": "Disney+ event 'Memphis vs. Arkansas (Exhibition)' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Memphis vs. Arkansas (Exhibition)"
+    },
+    "ed22b9d76a73534a1f5f8e1ea1252b6dee36015d9236909b13f12f826bbfed00": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T06:51:35.061658+00:00"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
@@ -2046,6 +2137,13 @@
       "result": "Como vs Venezia in Italian Serie A.",
       "title": "Serie A: Como vs. Venezia"
     },
+    "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
+      "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
+      "created_at": "2026-11-02T06:42:29.061726+00:00",
+      "kind": "event-description",
+      "result": "NFL Primetime Presented by Mucinex – an NFL regular‑season game streamed on ESPN+.",
+      "title": "NFL Primetime Presented by Mucinex"
+    },
     "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
       "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770315+00:00",
@@ -2065,6 +2163,13 @@
       "kind": "event-description",
       "result": "Collin Klein Press Conference."
     },
+    "fdad6ca1b7e0f11aae0a2e238ba28e1de64516382371476acb906fe2060b7317": {
+      "context": "Motherwell.spfl; Next Game: Dundee United vs Motherwell on 07/11/2026 at 15:00 GMT",
+      "created_at": "2026-11-02T06:42:29.061743+00:00",
+      "kind": "event-description",
+      "result": "Dundee United vs. Motherwell – a Scottish Premiership league match scheduled for 7 Nov 2026.",
+      "title": "Dundee United vs Motherwell"
+    },
     "fef06759bb10b50bb6dda33f8ec5f8bb4d36b1b4207159a82338d52e8a12a42d": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770333+00:00",
@@ -2081,8 +2186,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-02T06:12:33.170145+00:00",
-    "groq": "2026-11-02T03:41:20.316076+00:00"
+    "gemini": "2026-11-02T12:41:25.950950+00:00",
+    "groq": "2026-11-02T06:51:35.061658+00:00"
   },
   "version": 1
 }
