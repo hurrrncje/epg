@@ -754,6 +754,13 @@
       "result": "Notre Dame women's soccer faces Stanford women's soccer at Edwards Stadium in Berkeley, CA on Sunday, November 1 2026.",
       "title": "#9 Notre Dame vs. #13 Stanford"
     },
+    "516409835a1bd4e95ef1bb86dd54826eff2fe4a91d09f777c98dd2e5a66809cc": {
+      "context": "EPL fixture scheduled 02/11/2026 20:00 GMT",
+      "created_at": "2026-11-02T09:40:06.869215+00:00",
+      "kind": "event-description",
+      "result": "Premier League match: Newcastle United vs Everton at St. James' Park, 2 November 2026, 20:00 GMT.",
+      "title": "Newcastle Utd vs Everton"
+    },
     "546ad59c97359ccc424bcde17f05527f1032d948907c24fc038699f0cb4077a4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
       "created_at": "2026-11-01T21:19:10.371137+00:00",
@@ -822,10 +829,11 @@
       }
     },
     "5b9dfa11af46c5c1329f8e3e1519fabc02ee5b82da1508fc9271140cfdbd1631": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Hibernian.spfl; Next Game: Aberdeen vs Hibernian on 07/11/2026 at 17:45 GMT",
+      "created_at": "2026-11-02T09:40:06.869226+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T06:51:35.061658+00:00"
+      "result": "Scottish Premiership clash: Aberdeen vs Hibernian at Pittodrie Stadium, 7 November 2026, 17:45 GMT.",
+      "title": "Aberdeen vs Hibernian"
     },
     "5c56e76e89c2109224adac1b49b2568e7b7bb6cfc06935c726f4ab4a26c25926": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -1091,10 +1099,11 @@
       "title": "Wolverhampton Wanderers vs Cardiff City"
     },
     "7fd1ad87be5f9f88a68be39b8b0fc721d242d634f4a5e25bb8ad7d498ef7602b": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Rangers.spfl; Next Game: St Mirren vs Rangers on 07/11/2026 at 20:00 GMT",
+      "created_at": "2026-11-02T09:40:06.869230+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T06:51:35.061658+00:00"
+      "result": "Scottish Premiership game: St. Mirren vs Rangers at The Marbill Coaches Stadium, 7 November 2026, 20:00 GMT.",
+      "title": "St Mirren vs Rangers"
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -1583,10 +1592,11 @@
       }
     },
     "bcd1d3c06c6deedf938de1ed2e926eca8b45b3281dfc9d7947759e8da7a6900b": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Falkirk.spfl; Next Game: Heart of Midlothian vs Falkirk on 08/11/2026 at 15:00 GMT",
+      "created_at": "2026-11-02T09:40:06.869235+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T06:51:35.061658+00:00"
+      "result": "Scottish Premiership match: Heart of Midlothian vs Falkirk at Tynecastle Park, 8 November 2026, 15:00 GMT.",
+      "title": "Heart of Midlothian vs Falkirk"
     },
     "bd10825e93b8a5500b9cc437ba8c9b10ceb1af6b1b689efe152adb8835763415": {
       "context": "DAZN UK event scheduled 28/10/2026 02:30 GMT",
@@ -1755,10 +1765,11 @@
       "title": "Colchester United FC vs Walsall FC"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
+      "created_at": "2026-11-02T09:40:06.869222+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-02T06:51:35.061658+00:00"
+      "result": "Scottish Premiership fixture: St. Johnstone vs Dundee FC at McDiarmid Park, 7 November 2026, 15:00 GMT.",
+      "title": "St. Johnstone vs Dundee FC"
     },
     "d17e66cbb01141ac04129de50d38006b2904117ebcd5d26afb6d275e36c07a75": {
       "context": "MAX UK event scheduled 01/11/2026 03:45 GMT",
@@ -2058,7 +2069,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-02T06:51:35.061658+00:00"
+      "retry_after": "2026-11-02T09:50:24.869190+00:00"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
@@ -2187,7 +2198,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T12:41:25.950950+00:00",
-    "groq": "2026-11-02T06:51:35.061658+00:00"
+    "groq": "2026-11-02T09:50:24.869190+00:00"
   },
   "version": 1
 }
