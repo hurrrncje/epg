@@ -526,6 +526,13 @@
         "raw": "Pitch 5A | Day 3: Afternoon Session"
       }
     },
+    "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
+      "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
+      "created_at": "2026-11-02T12:36:29.274232+00:00",
+      "kind": "event-description",
+      "result": "CBS Sports HQ Morning Boxscore recap is streamed on Paramount+.",
+      "title": "cbssportshq: Morning Boxscore"
+    },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770320+00:00",
@@ -933,6 +940,12 @@
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
     },
+    "6c786800ca90c8791216df4348b8cce3c314e2fc21d68d9508dab769c60e93b7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T12:41:25.950950+00:00"
+    },
     "6ca4669c5186e02bf70ba41172929cd3d4f94db87d15ddb3ff0dfa368e0f3ad3": {
       "context": "DAZN UK event scheduled 31/10/2026 21:00 GMT",
       "created_at": "2026-10-31T21:16:12.334893+00:00",
@@ -1033,6 +1046,12 @@
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
+    },
+    "76ceb733d6a56381c1d5f160d1697ae2344e0b30e67a7651749466516012aa79": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T12:41:25.950950+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1258,6 +1277,13 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
     },
+    "900161061280ddb5ec8f9377c8cc9ef4357e3bf93982f3080e0bf2acb4ded85a": {
+      "context": "Disney+ Events event scheduled 02/11/2026 10:00 GMT",
+      "created_at": "2026-11-02T12:36:29.274235+00:00",
+      "kind": "event-description",
+      "result": "South Carolina men's basketball faces Oklahoma in an SEC tournament game.",
+      "title": "South Carolina vs. Oklahoma"
+    },
     "90b4da78d70f6f059a149f4101c7ac904629686ff06d9cad0df3e97fb5d46c3a": {
       "context": "DAZN UK event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T06:23:52.067236+00:00",
@@ -1301,6 +1327,13 @@
       "kind": "event-description",
       "result": "College football regular‑season game between Sam Houston State Bearkats and Missouri State Bears, part of the 2026‑27 NCAA season.",
       "title": "Sam Houston @ Missouri State"
+    },
+    "98ade4384a0d539dc2f23cfd330a002f08aebbec329f35e33f71705f68122654": {
+      "context": "Disney+ Events event scheduled 02/11/2026 15:00 GMT",
+      "created_at": "2026-11-02T12:36:29.274225+00:00",
+      "kind": "event-description",
+      "result": "ESPN’s The Golics podcast airs on Disney+.",
+      "title": "The Golics"
     },
     "992b130f1e8e33e070a72507ed786ed424f7ab07900fce0c5b7e8d3948d75ad9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -1445,6 +1478,12 @@
       "result": "Disney+ event 'Long Beach State vs. Utah Valley' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Long Beach State vs. Utah Valley"
     },
+    "a8c2396c3a32a0758e17177ad550be3b1d485a2f93a00cb904cf989d2d987f55": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T12:41:25.950950+00:00"
+    },
     "a8fb53a1a3ea34ef88f5125db1f14556d3ac891c47033fd9e7a60a36cabae93d": {
       "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
       "created_at": "2026-11-01T09:25:26.843948+00:00",
@@ -1474,6 +1513,13 @@
         "description": "NHL regular season game between the New Jersey Devils and the Dallas Stars, scheduled for Wednesday, October 28, 2026 at the American Airlines Center in Dallas, TX. 【8†L21-L22】",
         "raw": "Devils @ Stars"
       }
+    },
+    "ac78aa13b21b532481b58aa2aa42a2c738ddc923dda4375173cb289dbbe23920": {
+      "context": "Disney+ Events event scheduled 02/11/2026 15:30 GMT",
+      "created_at": "2026-11-02T12:36:29.274242+00:00",
+      "kind": "event-description",
+      "result": "Hofstra women's basketball plays Georgia Tech in a collegiate game.",
+      "title": "Hofstra vs. Georgia Tech"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -1738,10 +1784,23 @@
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
+    "c84a7f650051c5c3f9de3ee19c5d4f9859d8c7040f267ba3631b3118aa2ca052": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T12:41:25.950950+00:00"
+    },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
       "kind": "event-description",
       "result": "Minnesota State vs. Boston College."
+    },
+    "cb56d6f101eeb7dd07789f349f71819fa6a09b480eddd0142279faf9fca22ad0": {
+      "context": "Disney+ Events event scheduled 02/11/2026 10:00 GMT",
+      "created_at": "2026-11-02T12:36:29.274239+00:00",
+      "kind": "event-description",
+      "result": "The 2026 National Putting Tour hosts The Putting Zone Shootout competition.",
+      "title": "2026 National Putting Tour's \"The Putting Zone Shootout\""
     },
     "cc00d3477ea269d2eaa58ee4d706450415f1d379cd5f3605edc0845b63960bf0": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:00 GMT",
@@ -2065,12 +2124,6 @@
       "result": "Disney+ event 'Memphis vs. Arkansas (Exhibition)' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Memphis vs. Arkansas (Exhibition)"
     },
-    "ed22b9d76a73534a1f5f8e1ea1252b6dee36015d9236909b13f12f826bbfed00": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T09:50:24.869190+00:00"
-    },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
       "kind": "event-description",
@@ -2121,6 +2174,12 @@
       "kind": "event-description",
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
+    },
+    "f460e69788ca41e75cc4e48feb5daf15cde59daa5419931235409d28bbe5a506": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-02T12:41:25.950950+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -2198,7 +2257,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-02T12:41:25.950950+00:00",
-    "groq": "2026-11-02T09:50:24.869190+00:00"
+    "groq": "2026-11-02T12:50:54.274206+00:00"
   },
   "version": 1
 }
