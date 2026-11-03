@@ -112,6 +112,12 @@
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks, broadcast by the Senators.",
       "title": "Ottawa Senators vs. Anaheim Ducks (Senators Broadcast)"
     },
+    "0b8ac4992940a8fedb43bff12383b55a2421943d9da73e7cb6de41f5343e7f53": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T07:59:44.440662+00:00"
+    },
     "0b90f4430d06a1b754d2ea765346a1fb218637114f0ef1d52a922382d1d2e216": {
       "context": "DAZN UK event scheduled 03/11/2026 00:00 GMT",
       "created_at": "2026-11-03T00:14:13.691107+00:00",
@@ -563,10 +569,11 @@
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
     },
     "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T07:52:42.440681+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+      "result": "Chicago Bears host Seattle Seahawks in Monday Night Football, presented by the Manningcast.",
+      "title": "Manningcast | MNF with Peyton & Eli: Bears @ Seahawks"
     },
     "310e3a693c48be79873f6bf902ec18c5aa920c18bbe584492ec56f47dbe3b8eb": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
@@ -662,6 +669,12 @@
       "kind": "event-description",
       "result": "Texas Southern plays Tulane in an NCAA women's basketball regular‑season game.",
       "title": "Texas Southern vs. Tulane"
+    },
+    "379c335a095cb1731f9ce4da4b1c0b0a84fa6e5a6a99ea970a8d324f10f9f21c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T07:59:44.440662+00:00"
     },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -1518,10 +1531,11 @@
       "title": "Deportivo vs Osasuna"
     },
     "82f8b36b5e6fcd127906bfd70b2708dc0a9c0493580adeee6fbb92c2342712ed": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T07:52:42.440690+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+      "result": "Arkansas‑Pine Bluff faces Texas A&M in a college football matchup.",
+      "title": "Arkansas-Pine Bluff vs. Texas A&M"
     },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
@@ -1670,10 +1684,11 @@
       "title": "Flames @ Avalanche"
     },
     "90c5f4abb31193ffe9f869b983b3f6f7bc04a28ee319a3911603677dc58be3d9": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T07:52:42.440693+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+      "result": "Lane University competes against Austin Peay in a college football contest.",
+      "title": "Lane vs. Austin Peay"
     },
     "90ffc09633f9f2d971fb525f670bce7f3520cf6b47f21c8e1980a011c3b19021": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -1720,10 +1735,11 @@
       }
     },
     "95dee3434ff4d143403b6649b25e180e5b526377a6e81cea5056b0c53580bbb9": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T07:52:42.440687+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+      "result": "University of Toledo football team plays Arkansas State in a regular‑season college game.",
+      "title": "Toledo vs. Arkansas State"
     },
     "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
       "context": "ESPN+ event scheduled 03/11/2026 03:00 GMT",
@@ -2066,6 +2082,12 @@
       "result": "Chicago Bears play Seattle Seahawks in the 2026 NFL Week 8 matchup at Lumen Field.",
       "title": "Chicago Bears vs. Seattle Seahawks"
     },
+    "b56098f699e4259324993a11d30efcb43146d3e7cb4d990e624521555a270e48": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T07:59:44.440662+00:00"
+    },
     "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
       "created_at": "2026-11-03T04:31:24.766739+00:00",
@@ -2135,10 +2157,11 @@
       "title": "Oklahoma Christian vs. East Texas A&M"
     },
     "bbaf747bb1a515249bd14ca0bfb8ea6dab81a3cfcbdf1ccbc0c9b994255f2e41": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T07:52:42.440695+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+      "result": "Maryville (MO) plays Southern Illinois in a college football game.",
+      "title": "Maryville (MO) vs. Southern Illinois"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -2493,6 +2516,12 @@
         "raw": "Chiefs @ Seahawks (Spanish Broadcast)"
       }
     },
+    "d593e4ee46e56aff4c77c339af01ffe92f3b020d5ecd6c1ff224e26971cfedab": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T07:59:44.440662+00:00"
+    },
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569480+00:00",
@@ -2589,6 +2618,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game between the Toronto Maple Leafs and Nashville Predators, part of the 2026‑27 NHL season.",
       "title": "Islanders @ Predators"
+    },
+    "dee25794b4d61888a71673ee276238ef0cdf02f07f5e05d1e60e68b56fe2b332": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T07:59:44.440662+00:00"
     },
     "df52a722a45f697c83d74b5067c42d1f28bcb88ac8a9024e7561bf3a427697b7": {
       "context": "Paramount+ event scheduled 29/10/2026 03:00 GMT",
@@ -2922,7 +2957,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T11:31:03.496416+00:00",
-    "groq": "2026-11-03T06:45:18.695503+00:00"
+    "groq": "2026-11-03T07:59:44.440662+00:00"
   },
   "version": 1
 }
