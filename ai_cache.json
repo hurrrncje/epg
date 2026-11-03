@@ -42,6 +42,13 @@
       "result": "Women’s Group Stage match between Colombia and Ukraine in the Dakar 2026 Youth Olympic Futsal Tournament.",
       "title": "Women | Group Stage | Dakar 2026: Colombia - Ukraine"
     },
+    "036f171d2ee723a244db79cb03a49998c03052cb7dbdc84a29d9282028e7d6a9": {
+      "context": "Disney+ Events event scheduled 03/11/2026 08:00 GMT",
+      "created_at": "2026-11-03T09:30:27.039526+00:00",
+      "kind": "event-description",
+      "result": "Virginia Cavaliers host No. 14 Wake Forest Demon Deacons in ACC football.",
+      "title": "Virginia vs. #14 Wake Forest"
+    },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770312+00:00",
@@ -111,12 +118,6 @@
       "kind": "event-description",
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks, broadcast by the Senators.",
       "title": "Ottawa Senators vs. Anaheim Ducks (Senators Broadcast)"
-    },
-    "0b8ac4992940a8fedb43bff12383b55a2421943d9da73e7cb6de41f5343e7f53": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T07:59:44.440662+00:00"
     },
     "0b90f4430d06a1b754d2ea765346a1fb218637114f0ef1d52a922382d1d2e216": {
       "context": "DAZN UK event scheduled 03/11/2026 00:00 GMT",
@@ -513,6 +514,12 @@
       "result": "NHL game New Jersey Devils vs Colorado Avalanche broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "New Jersey Devils vs. Colorado Avalanche"
     },
+    "2bd63ddd6982ae8af65e96ee068f56e04caad55ac1ba8452477e0ff034dc21e7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T09:38:22.039503+00:00"
+    },
     "2be64ba92ecd146af8dcfadd8b92c37c0a141e8574af99f1f32d89b75e7d80f6": {
       "created_at": "2026-10-28T00:12:37.428434+00:00",
       "kind": "live-title",
@@ -669,12 +676,6 @@
       "kind": "event-description",
       "result": "Texas Southern plays Tulane in an NCAA women's basketball regular‑season game.",
       "title": "Texas Southern vs. Tulane"
-    },
-    "379c335a095cb1731f9ce4da4b1c0b0a84fa6e5a6a99ea970a8d324f10f9f21c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T07:59:44.440662+00:00"
     },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -1053,6 +1054,12 @@
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
     },
+    "571fdfe3cdb13fd631a5dc8c3de4499890443e2bc88702a1bef90d0e53f31b4e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T09:38:22.039503+00:00"
+    },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
       "kind": "live-title",
@@ -1215,6 +1222,12 @@
       "kind": "event-description",
       "result": "UEFA Women’s Champions League match between Bayern Munich and Real Madrid, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
+    },
+    "671b527f5879ba640c6e3a87f17d7d5cf7bc611cd4a5114ba49c65681590e25c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T09:38:22.039503+00:00"
     },
     "675e0ebe01566e0fc4340964197be0822a5976b61e6f89d35d23b4940396a331": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -1574,6 +1587,12 @@
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
     },
+    "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T09:38:22.039503+00:00"
+    },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
       "kind": "live-title",
@@ -1747,6 +1766,20 @@
       "kind": "event-description",
       "result": "Willamette University vs. University of Portland men's basketball game on ESPN+.",
       "title": "Willamette vs. Portland"
+    },
+    "963b05b12348d305c770da9750ab55f3d5fee2230b42fafae75830cfdad4bd49": {
+      "context": "Disney+ Events event scheduled 03/11/2026 07:00 GMT",
+      "created_at": "2026-11-03T09:30:27.039541+00:00",
+      "kind": "event-description",
+      "result": "No. 23 Missouri Tigers play Arkansas Razorbacks in SEC football.",
+      "title": "#23 Missouri vs. Arkansas"
+    },
+    "972288b0957b42a3823e2ccc47c96368e38134797f2de5597f9937d0e4e175cd": {
+      "context": "Disney+ Events event scheduled 03/11/2026 07:14 GMT",
+      "created_at": "2026-11-03T09:30:27.039537+00:00",
+      "kind": "event-description",
+      "result": "Stanford Cardinal host Louisville Cardinals in FBS football.",
+      "title": "Stanford vs. Louisville"
     },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -2081,12 +2114,6 @@
       "kind": "event-description",
       "result": "Chicago Bears play Seattle Seahawks in the 2026 NFL Week 8 matchup at Lumen Field.",
       "title": "Chicago Bears vs. Seattle Seahawks"
-    },
-    "b56098f699e4259324993a11d30efcb43146d3e7cb4d990e624521555a270e48": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T07:59:44.440662+00:00"
     },
     "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -2516,12 +2543,6 @@
         "raw": "Chiefs @ Seahawks (Spanish Broadcast)"
       }
     },
-    "d593e4ee46e56aff4c77c339af01ffe92f3b020d5ecd6c1ff224e26971cfedab": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T07:59:44.440662+00:00"
-    },
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569480+00:00",
@@ -2619,12 +2640,6 @@
       "result": "NHL regular‑season game between the Toronto Maple Leafs and Nashville Predators, part of the 2026‑27 NHL season.",
       "title": "Islanders @ Predators"
     },
-    "dee25794b4d61888a71673ee276238ef0cdf02f07f5e05d1e60e68b56fe2b332": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T07:59:44.440662+00:00"
-    },
     "df52a722a45f697c83d74b5067c42d1f28bcb88ac8a9024e7561bf3a427697b7": {
       "context": "Paramount+ event scheduled 29/10/2026 03:00 GMT",
       "created_at": "2026-10-29T03:25:48.898659+00:00",
@@ -2638,6 +2653,13 @@
       "kind": "event-description",
       "result": "2026 Concacaf Central American Cup semi‑final second leg: CD Olimpia vs CS Cartaginés, scheduled for 29 Oct 2026 at 02:50 GMT.",
       "title": "Concacaf Champions Cup: Club Olimpia vs. CS Cartaginés"
+    },
+    "e038f069a1678cb539c284cee4e71484b6477f0c37398cf29749fd89319db2f2": {
+      "context": "Disney+ Events event scheduled 03/11/2026 08:00 GMT",
+      "created_at": "2026-11-03T09:30:27.039533+00:00",
+      "kind": "event-description",
+      "result": "New York Green Apples face Dallas Pandas in the 2026 Big League Wiffle Ball World Series championship at Disney’s ESPN Wide World of Sports Complex.",
+      "title": "2026 Big League Wiffle Ball World Series"
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -2668,6 +2690,13 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 1B | Day 3: Afternoon Session"
       }
+    },
+    "e3be8fe6ddca837a7cbcf6b7c89ce8a5f2aa5d8ef2f1e86287670e8e6fbf2b7a": {
+      "context": "Disney+ Events event scheduled 03/11/2026 15:00 GMT",
+      "created_at": "2026-11-03T09:30:27.039545+00:00",
+      "kind": "event-description",
+      "result": "Stanford Cardinal compete against No. 10 North Carolina Tar Heels in the NCAA men’s basketball quarterfinals.",
+      "title": "Stanford vs. #10 North Carolina (Quarterfinals)"
     },
     "e3c18cef8d511bd978de57b7e9a5c66b5299c0d470b65d9b5af9d7f6fafb16ae": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -2794,6 +2823,12 @@
       "kind": "event-description",
       "result": "Schreiner vs. Lamar college baseball game.",
       "title": "Schreiner vs. Lamar"
+    },
+    "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T09:38:22.039503+00:00"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
@@ -2957,7 +2992,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T11:31:03.496416+00:00",
-    "groq": "2026-11-03T07:59:44.440662+00:00"
+    "groq": "2026-11-03T09:38:22.039503+00:00"
   },
   "version": 1
 }
