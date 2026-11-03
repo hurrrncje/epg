@@ -562,6 +562,12 @@
       "result": "MLS match between FC Dallas and Columbus Crew scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
     },
+    "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+    },
     "310e3a693c48be79873f6bf902ec18c5aa920c18bbe584492ec56f47dbe3b8eb": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
       "created_at": "2026-11-02T00:12:44.516362+00:00",
@@ -1000,10 +1006,11 @@
       "title": "Alcorn State vs. Ole Miss"
     },
     "54576623fdc26f8f1d61224beb498cee650b1df77b5c431aa5ab1a532a9dd3b0": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 03/11/2026 01:15 GMT",
+      "created_at": "2026-11-03T06:34:50.695529+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T05:39:31.941171+00:00"
+      "result": "Chicago Bears host Seattle Seahawks in Week 8 of the 2026 NFL season at Lumen Field.",
+      "title": "Bears @ Seahawks"
     },
     "546ad59c97359ccc424bcde17f05527f1032d948907c24fc038699f0cb4077a4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -1071,10 +1078,11 @@
       "title": "Virginia Tech vs. Clemson"
     },
     "5a5a17a78e4f55c644801e44b53dc6af39a62365eb89f817566012241b30945a": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:15 GMT",
+      "created_at": "2026-11-03T06:34:50.695542+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T05:39:31.941171+00:00"
+      "result": "NFL Monday Night Football features the Chicago Bears versus Seattle Seahawks in Week 8 of the 2026 season at Lumen Field.",
+      "title": "MNF with Peyton and Eli-Chicago Bears vs. Seattle Seahawks"
     },
     "5b690e651162f883f83381733d3dbf47869cf9cb10f5a844ac521b022d29d1e7": {
       "context": "Paramount+ event scheduled 02/11/2026 21:00 GMT",
@@ -1203,10 +1211,11 @@
       "title": "Lamar vs. Houston Christian"
     },
     "68357972cdca664c458aac52c276f5ca6bdd8c0595118d841e000db1b4d341f1": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T06:34:50.695550+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T05:39:31.941171+00:00"
+      "result": "Colorado Avalanche defeat Chicago Blackhawks 5‑2 in an NHL game on November 2, 2026 at United Center.",
+      "title": "Avalanche @ Blackhawks"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -1508,6 +1517,12 @@
       "result": "Deportivo de A Coruña play CA Osasuna in La Liga on 2 Nov 2026.",
       "title": "Deportivo vs Osasuna"
     },
+    "82f8b36b5e6fcd127906bfd70b2708dc0a9c0493580adeee6fbb92c2342712ed": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+    },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
       "created_at": "2026-11-01T18:15:10.922575+00:00",
@@ -1654,6 +1669,12 @@
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
     },
+    "90c5f4abb31193ffe9f869b983b3f6f7bc04a28ee319a3911603677dc58be3d9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T06:45:18.695503+00:00"
+    },
     "90ffc09633f9f2d971fb525f670bce7f3520cf6b47f21c8e1980a011c3b19021": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
       "created_at": "2026-11-03T04:31:24.766744+00:00",
@@ -1697,6 +1718,12 @@
         "description": "Buffalo Sabres shut out the San Jose Sharks 2‑0 on Oct 27 2026, with Colten Ellis making 23 saves【14†L10-L22】.",
         "raw": "Sabres @ Sharks"
       }
+    },
+    "95dee3434ff4d143403b6649b25e180e5b526377a6e81cea5056b0c53580bbb9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T06:45:18.695503+00:00"
     },
     "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
       "context": "ESPN+ event scheduled 03/11/2026 03:00 GMT",
@@ -2033,10 +2060,11 @@
       "title": "UAB vs. Missouri State"
     },
     "b4d7051e890819abf7e4e575a909b5aa46d13352228251e982291ac6e9df2c19": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:15 GMT",
+      "created_at": "2026-11-03T06:34:50.695536+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T05:39:31.941171+00:00"
+      "result": "Chicago Bears play Seattle Seahawks in the 2026 NFL Week 8 matchup at Lumen Field.",
+      "title": "Chicago Bears vs. Seattle Seahawks"
     },
     "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -2105,6 +2133,12 @@
       "kind": "event-description",
       "result": "Oklahoma Christian University football vs. East Texas A&M University football.",
       "title": "Oklahoma Christian vs. East Texas A&M"
+    },
+    "bbaf747bb1a515249bd14ca0bfb8ea6dab81a3cfcbdf1ccbc0c9b994255f2e41": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T06:45:18.695503+00:00"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -2316,10 +2350,11 @@
       "title": "North American vs. Nicholls"
     },
     "c93b9253d00e24aeb34edce786621d5a61c17e8dc60edd6ef7fcacd79cd0d012": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
+      "created_at": "2026-11-03T06:34:50.695545+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T05:39:31.941171+00:00"
+      "result": "Fairleigh Dickinson Knights visit Illinois Fighting Illini in a men's college basketball game on November 2, 2026.",
+      "title": "Fairleigh Dickinson @ Illinois"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -2887,7 +2922,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T11:31:03.496416+00:00",
-    "groq": "2026-11-03T05:39:31.941171+00:00"
+    "groq": "2026-11-03T06:45:18.695503+00:00"
   },
   "version": 1
 }
