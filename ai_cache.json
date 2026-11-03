@@ -116,7 +116,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "0b5f2c528ef20576407380a1cfd09308c35f3cd62e0584e2cb1d25530ca681af": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
@@ -303,10 +303,11 @@
       "title": "#20 Maryland vs. #1 South Carolina"
     },
     "1ea5587b39f53f242c85248ab932f2471008f88a29fa5ef5a3124c4ebace1f8c": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:15 GMT",
+      "created_at": "2026-11-03T17:30:31.771875+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "result": "Oklahoma State Cowboys football press conference.",
+      "title": "Cowboy Football Press Conference"
     },
     "1f3c7489b4e8c18f453e4056678ca53faebde8edb4c09c02ed913df07e0a4109": {
       "context": "MAX UK event scheduled 03/11/2026 17:40 GMT",
@@ -532,10 +533,11 @@
       "title": "UTSA Weekly Soccer Press Conference"
     },
     "2b0507be811f9e9049341f5b5b771abff135d48336cc839b21d6c38c8418b014": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 17:25 GMT",
+      "created_at": "2026-11-03T17:30:31.771872+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "result": "Youth Olympic Futsal Women’s Group A match: Senegal vs. Venezuela.",
+      "title": "Women | Group Stage | Dakar 2026: Senegal - Venezuela"
     },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
@@ -928,7 +930,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "478ff6638e059f84ce1672fd12f19112b38206da069cd14b30bc005133cd895e": {
       "created_at": "2026-10-26T19:21:40.738732+00:00",
@@ -1457,12 +1459,6 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
-    "74b05605deaebe8e565d08ec71adaa1936d1dd9081056d89e03dc8c0b495a52a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
-    },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
       "created_at": "2026-10-27T03:17:18.770317+00:00",
@@ -1495,7 +1491,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1595,10 +1591,11 @@
       "title": "Swindon Town FC vs Rotherham United FC"
     },
     "8121a00fa1464bee79f117c5ceea7e93ed92473cb7eb755d15eb8d74d19d1a29": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:55 GMT",
+      "created_at": "2026-11-03T17:30:31.771878+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "result": "Iowa State Cowboys football press conference.",
+      "title": "Iowa State Football Press Conference"
     },
     "815003016c15ff9bb60a56af95cf0aefac2f75d7b793907ed151fac3ef38a6a5": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:15 GMT",
@@ -2328,10 +2325,11 @@
       "title": "Maryville (MO) vs. Southern Illinois"
     },
     "bbcdbf605426bc26f59349bc6c169db91fb7af369df3286e5473cb52111ede3a": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 17:30 GMT",
+      "created_at": "2026-11-03T17:30:31.771869+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "result": "ACC Women’s Basketball quarterfinal between Louisville and Syracuse.",
+      "title": "Louisville vs. #13 Syracuse (Quarterfinals)"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -2672,6 +2670,12 @@
       "kind": "event-description",
       "result": "College basketball game: Bucknell Bison vs. Iowa State Cyclones.",
       "title": "Bucknell vs. Iowa State"
+    },
+    "d18f44135cfed2b73f507fff26b0bd0c8690f73f7201aa4dc9cbcc8f5e9ff678": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
@@ -3096,10 +3100,11 @@
       "title": "Simpson (CA) vs. Pacific"
     },
     "f2f06e69e04993031646d4ef08f6c63abdb13016fcc045f21d6093861a14f9d4": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 17:30 GMT",
+      "created_at": "2026-11-03T17:30:31.771863+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "result": "NCAA Men's Soccer first‑round match between Mercer and VMI.",
+      "title": "Mercer vs. VMI (First Round)"
     },
     "f3108ddf51761fd3a8e0a6af6ad0eeafb244b46bf05be45d1c6b1feb626f3e3e": {
       "context": "Paramount+ event scheduled 28/10/2026 18:00 GMT",
@@ -3126,7 +3131,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -3232,7 +3237,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T18:30:46.011302+00:00",
-    "groq": "2026-11-03T17:18:52.066290+00:00"
+    "groq": "2026-11-03T17:39:25.771839+00:00"
   },
   "version": 1
 }
