@@ -190,10 +190,11 @@
       "title": "Fulham vs Crystal Palace"
     },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T16:30:41.541207+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T15:34:03.327504+00:00"
+      "result": "Sports news recap show covering the latest sports stories.",
+      "title": "cbssportshq: What 2 Watch"
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
       "context": "DAZN UK event scheduled 02/11/2026 18:30 GMT",
@@ -294,6 +295,12 @@
       "kind": "event-description",
       "result": "Women's college basketball: Maryland Terrapins vs. South Carolina Gamecocks.",
       "title": "#20 Maryland vs. #1 South Carolina"
+    },
+    "1ea5587b39f53f242c85248ab932f2471008f88a29fa5ef5a3124c4ebace1f8c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T16:41:52.541143+00:00"
     },
     "1fc62bfb261279c82b543745e8586a572238840a7cb66ba4c13a99319c355514": {
       "created_at": "2026-10-28T00:12:37.428457+00:00",
@@ -510,6 +517,12 @@
       "kind": "event-description",
       "result": "Weekly press conference with UTSA soccer head coach Derek Pittman discussing the season.",
       "title": "UTSA Weekly Soccer Press Conference"
+    },
+    "2b0507be811f9e9049341f5b5b771abff135d48336cc839b21d6c38c8418b014": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T16:41:52.541143+00:00"
     },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
@@ -1418,6 +1431,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
+    "74b05605deaebe8e565d08ec71adaa1936d1dd9081056d89e03dc8c0b495a52a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+    },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
       "created_at": "2026-10-27T03:17:18.770317+00:00",
@@ -1991,10 +2010,11 @@
       "title": "Houston Christian vs. Rice"
     },
     "a2e6fba76bd106d67bd15102e3848a6f3cb201f897d5239a15946f8ab2e2bc38": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T16:30:41.541189+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T15:34:03.327504+00:00"
+      "result": "Press conference for the Cincinnati Bearcats football team.",
+      "title": "Cincinnati Football Press Conference"
     },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
       "created_at": "2026-10-26T12:06:58.198973+00:00",
@@ -2125,10 +2145,11 @@
       "title": "6 | Nashville SC vs Philadelphia Union (Spanish)"
     },
     "af651217bf2aaa6a31b5802835caa4a8d5dc79efd1b5effe684427dd7e8b4ff4": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T16:30:41.541203+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T15:34:03.327504+00:00"
+      "result": "Studio program covering SEC football news and highlights.",
+      "title": "SEC Now: Open Mic Presented by Lodge Cast Iron"
     },
     "afded0b941398c5df6b2413d4c801296224a02b3541f99fadebc4608dde51224": {
       "created_at": "2026-10-26T19:21:40.738715+00:00",
@@ -2260,6 +2281,12 @@
       "kind": "event-description",
       "result": "Maryville (MO) plays Southern Illinois in a college football game.",
       "title": "Maryville (MO) vs. Southern Illinois"
+    },
+    "bbcdbf605426bc26f59349bc6c169db91fb7af369df3286e5473cb52111ede3a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T16:41:52.541143+00:00"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -2430,10 +2457,11 @@
       }
     },
     "c4c8ae86c46fe9f2ac7b34f470eaa199ed1687200b549d4c7550eaac715bb480": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T16:30:41.541200+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T15:34:03.327504+00:00"
+      "result": "Grand Slam of Curling Masters tournament featuring men's and women's draws.",
+      "title": "Grand Slam of Curling: Masters"
     },
     "c550dc9c942a771dc1372384c70d9cd35c893fa55d400c7fdef87ad167734ad9": {
       "created_at": "2026-10-26T12:06:58.198950+00:00",
@@ -2524,10 +2552,11 @@
       "title": "2026 National Putting Tour's \"The Putting Zone Shootout\""
     },
     "cbfb56ce05d089fb15faadc1ab5f7d9fbe134a8797c6b12e7684db01e454dbce": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T16:30:41.541196+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T15:34:03.327504+00:00"
+      "result": "Sports talk show featuring interviews, analysis, and comedy.",
+      "title": "The Pat McAfee Show"
     },
     "cc00d3477ea269d2eaa58ee4d706450415f1d379cd5f3605edc0845b63960bf0": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:00 GMT",
@@ -3014,6 +3043,12 @@
       "result": "Simpson College (CA) vs. Pacific men's basketball game on Disney+ Events.",
       "title": "Simpson (CA) vs. Pacific"
     },
+    "f2f06e69e04993031646d4ef08f6c63abdb13016fcc045f21d6093861a14f9d4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+    },
     "f3108ddf51761fd3a8e0a6af6ad0eeafb244b46bf05be45d1c6b1feb626f3e3e": {
       "context": "Paramount+ event scheduled 28/10/2026 18:00 GMT",
       "created_at": "2026-10-28T18:24:17.569539+00:00",
@@ -3132,7 +3167,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T18:30:46.011302+00:00",
-    "groq": "2026-11-03T15:34:03.327504+00:00"
+    "groq": "2026-11-03T16:41:52.541143+00:00"
   },
   "version": 1
 }
