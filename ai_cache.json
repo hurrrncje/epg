@@ -49,6 +49,12 @@
       "result": "Virginia Cavaliers host No. 14 Wake Forest Demon Deacons in ACC football.",
       "title": "Virginia vs. #14 Wake Forest"
     },
+    "037c5e965139a2555645451eba87edb0d393ae72b12da1507b6b1706abe6b271": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+    },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770312+00:00",
@@ -77,12 +83,24 @@
       "result": "Idaho Vandals face Portland State Vikings in a men's college basketball match.",
       "title": "Idaho vs. Portland State"
     },
+    "07f3b67f582802fc344c38662a2a902049e89e3580e187843d4c7180602330d7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
     "08ab0d32bedc92ca1a8f891dffbf0953de3118644f615fa6c0018f084ab752ed": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
       "created_at": "2026-11-01T18:15:10.922570+00:00",
       "kind": "event-description",
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
+    },
+    "0a64b353720d7a68e8e99a901a66915951fa11ed8611b8ff8db98cd3a4410a80": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -111,12 +129,6 @@
       "kind": "event-description",
       "result": "CBS Sports HQ Morning Boxscore, a sports recap show on Paramount+ scheduled for 28 October 2026 at 13:00 GMT.",
       "title": "cbssportshq: Morning Boxscore"
-    },
-    "0b51bd4f21ef53a2e4db89534db6c0d91102d15e7db33b54e501feb23a829848": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "0b5f2c528ef20576407380a1cfd09308c35f3cd62e0584e2cb1d25530ca681af": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
@@ -397,6 +409,15 @@
       "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
       "title": "Leicester City vs Wigan Athletic"
     },
+    "23e50178c555e64cec4bf77d3fab90591b6d75c067a9874748e6bd10d500d419": {
+      "created_at": "2026-11-03T17:53:06.054626+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Unicaja vs. Pallacanestro Reggiana",
+        "description": "Coverage of Unicaja against Pallacanestro Reggiana.",
+        "raw": "Unicaja vs. Pallacanestro Reggiana"
+      }
+    },
     "23fda2f37975b9efee5e5a3c3713c85280da2f110614612d27f31f3888f3b62b": {
       "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
       "created_at": "2026-11-02T17:31:56.705965+00:00",
@@ -423,6 +444,12 @@
       "result": "North Carolina Courage play Denver Summit in the National Women’s Soccer League on 01/11/2026 at 22:00 GMT.",
       "title": "NWSL: North Carolina Courage - Denver Summit"
     },
+    "25259006be28b54e09c2b95fc6734caf5ab75799e9c5cad770381a4a09013b23": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+    },
     "253642a0155a1d1a5ce417c30a73330271972de3d9ea5e526826b3add6cb2f98": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
       "created_at": "2026-11-01T21:19:10.371123+00:00",
@@ -443,6 +470,15 @@
       "kind": "event-description",
       "result": "UEFA Women’s Champions League match between Chelsea and Roma, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Chelsea vs. Roma"
+    },
+    "26c92390d9a318d3ecb5563b3ebd9a2c5cdfb7d9a3200ed29aa80e43fdc243d9": {
+      "created_at": "2026-11-03T17:53:06.054602+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Salon Vilpas vs. Windrose Giants Antwerp",
+        "description": "Coverage of Salon Vilpas against Windrose Giants Antwerp.",
+        "raw": "Salon Vilpas vs. Windrose Giants Antwerp"
+      }
     },
     "270aa0148b68307d4d9010f54f726b6a62f431487e35641f162b6ba0bd97efe9": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -466,6 +502,21 @@
       "kind": "event-description",
       "result": "NHL regular‑season match between the Calgary Flames and the San Jose Sharks.",
       "title": "Calgary Flames vs. San Jose Sharks"
+    },
+    "275d7f95062d0ae51a6622f4781b85e14d3c504313abbde49ea8ab3b4e8c1294": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
+    "27e722ae63398f218e60a116ea2fef31276712d40608786d28ea2e5c07e05669": {
+      "created_at": "2026-11-03T17:53:06.054622+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sumqayıt FK vs. İmişli PFK",
+        "description": "Coverage of Sumqayıt FK against İmişli PFK.",
+        "raw": "Sumqayıt FK vs. İmişli PFK"
+      }
     },
     "2866c7ff2830283b5de4c751d8eb886ee475094f2f5c606f42e1582d700afc9c": {
       "created_at": "2026-10-26T19:21:40.738747+00:00",
@@ -524,6 +575,12 @@
       "kind": "event-description",
       "result": "FC Thun vs. Heart of Midlothian – a UEFA Conference League group‑stage match played at Visana Stadion on 5 Nov 2026.",
       "title": "FC Thun vs Heart of Midlothian"
+    },
+    "29e743183ad0ca94831f33cd6666439cf52cdf4259788de4e22b7d72e027a2b2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -592,12 +649,27 @@
         "raw": "Canadiens @ Blues"
       }
     },
+    "2c10bc41309b963feee1a23cec86a30fd99dc6eb3774e0efb8db6aa0469806fd": {
+      "created_at": "2026-11-03T17:53:06.054628+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Wild vs. Flyers",
+        "description": "Coverage of Wild against Flyers.",
+        "raw": "Wild @ Flyers"
+      }
+    },
     "2c24c87defdd9d20a282a9ee03d90a6721fa9288bb1c2f08b71dce2055da3067": {
       "context": "ESPN+ event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061721+00:00",
       "kind": "event-description",
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks.",
       "title": "Ottawa Senators vs. Anaheim Ducks"
+    },
+    "2d4cb758f0a19c00286c9f35dbe0c05d2c35796ecf978c1908f4cfcd4e9ccdc3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -637,6 +709,12 @@
       "kind": "event-description",
       "result": "MLS match between FC Dallas and Columbus Crew scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
+    },
+    "2fbe43a866c61962db1bd95fb799f550ae9a6295622ea1742b69e54e454bc921": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -926,12 +1004,6 @@
       "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
-    "473fe7ddfff46fb8a16b90cee6e79a4295c7186ae78c4693dec78d7b20dce31e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T17:39:25.771839+00:00"
-    },
     "478ff6638e059f84ce1672fd12f19112b38206da069cd14b30bc005133cd895e": {
       "created_at": "2026-10-26T19:21:40.738732+00:00",
       "kind": "live-title",
@@ -1052,6 +1124,12 @@
       "kind": "event-description",
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
+    },
+    "4f32c7f2f8bce07defb10a442a61136efa88a89f5623d12bb95eca4aa55c91f9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
     },
     "4fd7a0684ab2cedf460919c7b33ae3577206867f85275e40842378fd1f7efdf8": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:30 GMT",
@@ -1220,6 +1298,12 @@
         "raw": "Wild @ Mammoth"
       }
     },
+    "5c75e9481f7475db7beb06bac6500a826f691c15dfa6b0a0906deb5ba3b30f40": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
     "5d9a2b0b69511c104a4e7e1efa5b38b0c8ca7c34749544af294ede2afe82c5b8": {
       "created_at": "2026-10-26T12:30:58.030780+00:00",
       "kind": "event-description",
@@ -1285,6 +1369,12 @@
       "kind": "event-description",
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "8 | Austin FC vs Real Salt Lake (Spanish)"
+    },
+    "62b508d415269c4ca4ac50467c1acd9f4a3031e297c60275ba6ad5bc3a8bacad": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
       "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
@@ -1414,6 +1504,12 @@
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "7 | Austin FC vs Real Salt Lake (English)"
     },
+    "71422143c11990c4f7a4f113ba0a6c1d5f6213acf8e74b8048dd98a5242afc2a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+    },
     "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
       "created_at": "2026-11-02T06:42:29.061698+00:00",
@@ -1480,18 +1576,18 @@
       "result": "Scottish Premiership fixture between Dundee United and Heart of Midlothian at 15:00 GMT on 31 Oct 2026.",
       "title": "Dundee United vs Heart of Midlothian"
     },
+    "75545b474e1e59e9f830f3286c7451802ff9e54a6bbec49df44a1e51226d9016": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
     "7602144183d6ba2bc27e7d7f35ab68f058c2425bb6d0cafa1482c271fdb2aea8": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T03:25:48.898662+00:00",
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
-    },
-    "7772112305630bc1d92c2983a6ab64c6665b48e6d99f7b63e330586937edbb04": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T17:39:25.771839+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1504,6 +1600,15 @@
       "created_at": "2026-10-26T12:30:58.030817+00:00",
       "kind": "event-description",
       "result": "UTSA Weekly Soccer Press Conference."
+    },
+    "79073dc793be2862e63d4ef99fc80cfcfbf30eca08e3ebe10cc0adada35a4189": {
+      "created_at": "2026-11-03T17:53:06.054624+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UFC Fight Night: Moicano vs. Nolan",
+        "description": "Coverage of UFC Fight Night: Moicano against Nolan.",
+        "raw": "UFC Fight Night Moicano v Nolan (Special Feed)"
+      }
     },
     "79e1b2f08758361c1d4654cbd407507cac8943ad4d371db7ecc300a483827460": {
       "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
@@ -2093,6 +2198,12 @@
       "result": "Same NHL game as e1, but broadcast on the Sharks’ channel.",
       "title": "Calgary Flames vs. San Jose Sharks (Sharks Broadcast)"
     },
+    "a675dc81bb32a02f51c4488331eb04a22fc6bb0a0f4cdcac8041172e551c92e3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
       "created_at": "2026-11-02T06:42:29.061739+00:00",
@@ -2106,6 +2217,12 @@
       "kind": "event-description",
       "result": "Oklahoma Sooners women play North Carolina Tar Heels women in NCAA women's basketball on 2 Nov 2026.",
       "title": "#21 Oklahoma vs. #12 North Carolina"
+    },
+    "a83658420964304738cf072b147e158d80b3051df16d4ada4037ca7d79f79a9c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2220,6 +2337,12 @@
       "kind": "event-description",
       "result": "EFL League One fixture between Wigan Athletic and Bromley at 15:00 GMT on 31 Oct 2026.",
       "title": "Wigan Athletic vs Bromley FC"
+    },
+    "b36fc770f7f0a8d20ae0bd24baa6ec2e82f50e9740a746cac4121e104d3dfd81": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2671,12 +2794,6 @@
       "result": "College basketball game: Bucknell Bison vs. Iowa State Cyclones.",
       "title": "Bucknell vs. Iowa State"
     },
-    "d18f44135cfed2b73f507fff26b0bd0c8690f73f7201aa4dc9cbcc8f5e9ff678": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T17:39:25.771839+00:00"
-    },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770337+00:00",
@@ -2738,6 +2855,12 @@
         "description": "Spanish‑language broadcast of the Week 7 NFL game between the Kansas City Chiefs and the Seattle Seahawks, played on October 25, 2026.",
         "raw": "Chiefs @ Seahawks (Spanish Broadcast)"
       }
+    },
+    "d6018c51bf2325ea98e321eb589e9f54b5704d6fdd170a9de760e462ae78e4e2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -2936,6 +3059,15 @@
       "result": "Florida Atlantic Owls vs. UAB Blazers – a college basketball matchup streamed on Disney+.",
       "title": "Florida Atlantic vs. UAB"
     },
+    "e4fdf7689ca41869df369019e66245400c007bb1afd9d336f5903b63a04f7b60": {
+      "created_at": "2026-11-03T17:53:06.054618+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Stars vs. Capitals",
+        "description": "Coverage of Stars against Capitals.",
+        "raw": "Stars @ Capitals"
+      }
+    },
     "e5688a5fd47ef5ca9c774cf9effed740130fce780a68a7d7726fad39847d3bf4": {
       "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
       "created_at": "2026-11-02T17:31:56.705962+00:00",
@@ -3034,6 +3166,12 @@
       "result": "Schreiner vs. Lamar college baseball game.",
       "title": "Schreiner vs. Lamar"
     },
+    "ee1adbe35aa03fc716c48e2b38c739b16870216911d0aa490426781661dea351": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
     "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
       "context": "Disney+ Events event scheduled 03/11/2026 15:00 GMT",
       "created_at": "2026-11-03T12:31:31.234452+00:00",
@@ -3085,6 +3223,12 @@
       "result": "Iowa State Cyclones visit the Memphis Tigers for an NCAA men’s basketball matchup.",
       "title": "Memphis vs. Iowa State"
     },
+    "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+    },
     "f1e4ec933fb7648f8a8ed573e91329fe9b047ee670a05913a6db3ee74b6b365b": {
       "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770305+00:00",
@@ -3127,12 +3271,6 @@
       "result": "College basketball game between George Fox and Idaho.",
       "title": "George Fox vs. Idaho"
     },
-    "f528020f91a19f81c8671b779bafecc0f9ce36194f272842728eb05f0cee21d1": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T17:39:25.771839+00:00"
-    },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
       "kind": "event-description",
@@ -3172,6 +3310,12 @@
       "kind": "event-description",
       "result": "Shakhtar Donetsk host Sporting CP at Stamford Bridge for a Champions League league‑stage match on 3 Nov 2026.",
       "title": "UEFA Champions League | League Phase: Shakhtar Donetsk - Sporting CP"
+    },
+    "fac2c38ed021ab11e12dff0c53017e00487e4a586478786bfe41d90d81218299": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-03T18:07:41.688625+00:00"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
@@ -3236,8 +3380,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-03T18:30:46.011302+00:00",
-    "groq": "2026-11-03T17:39:25.771839+00:00"
+    "gemini": "2026-11-03T18:30:46.011302+00:00"
   },
   "version": 1
 }
