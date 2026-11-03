@@ -218,10 +218,11 @@
       "title": "UEFA Women's Champions League: Arsenal vs. Benfica"
     },
     "18d39778df6b9d22bd8aef03a45cbce42bbd3c80600b96eae541e86558c29a9c": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 15:00 GMT",
+      "created_at": "2026-11-03T12:31:31.234448+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+      "result": "UEFA Youth League match: Barcelona U19 vs. Aston Villa U19.",
+      "title": "UEFA Youth League: Barcelona U19 - Aston Villa U19"
     },
     "1a0441dc70a5752684928e36368a5a91af7492aecabd0cd887460846e0e7844f": {
       "created_at": "2026-10-26T19:21:40.738756+00:00",
@@ -314,10 +315,11 @@
       "title": "Florida International vs. Temple"
     },
     "2047a0e4fe9a3118d911e628f52deb43132eaa5f062a35b0250d0d211b238f56": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 03/11/2026 13:45 GMT",
+      "created_at": "2026-11-03T12:31:31.234436+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+      "result": "Muzinga FC vs. Aigle Noir CS, a Burundi Premier League football match.",
+      "title": "Muzinga vs. Aigle Noir"
     },
     "20a8f5d15430981dafce7b4579a11bcb7bebb1d27d82a78bc4a5d723b4b1f3ab": {
       "context": "DAZN UK event scheduled 01/11/2026 15:30 GMT",
@@ -533,6 +535,13 @@
       "result": "NHL game New Jersey Devils vs Colorado Avalanche broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "New Jersey Devils vs. Colorado Avalanche"
     },
+    "2bd63ddd6982ae8af65e96ee068f56e04caad55ac1ba8452477e0ff034dc21e7": {
+      "context": "Paramount+ event scheduled 03/11/2026 15:00 GMT",
+      "created_at": "2026-11-03T12:31:31.234456+00:00",
+      "kind": "event-description",
+      "result": "Morning Boxscore recap of recent baseball games on Paramount+.",
+      "title": "cbssportshq: Morning Boxscore"
+    },
     "2be64ba92ecd146af8dcfadd8b92c37c0a141e8574af99f1f32d89b75e7d80f6": {
       "created_at": "2026-10-28T00:12:37.428434+00:00",
       "kind": "live-title",
@@ -643,7 +652,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+      "retry_after": "2026-11-03T12:40:38.234405+00:00"
     },
     "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1080,6 +1089,12 @@
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
     },
+    "571fdfe3cdb13fd631a5dc8c3de4499890443e2bc88702a1bef90d0e53f31b4e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T12:40:38.234405+00:00"
+    },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
       "kind": "live-title",
@@ -1242,6 +1257,12 @@
       "kind": "event-description",
       "result": "UEFA Women’s Champions League match between Bayern Munich and Real Madrid, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
+    },
+    "671b527f5879ba640c6e3a87f17d7d5cf7bc611cd4a5114ba49c65681590e25c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T12:40:38.234405+00:00"
     },
     "675e0ebe01566e0fc4340964197be0822a5976b61e6f89d35d23b4940396a331": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -1600,6 +1621,12 @@
       "kind": "event-description",
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
+    },
+    "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T12:40:38.234405+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -2667,6 +2694,12 @@
         "raw": "Pitch 1A | Day 3: Afternoon Session"
       }
     },
+    "dca93ba843bcb034c224506ca1402dbd4ba95e998e166dd53666e350d6d900a7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T12:40:38.234405+00:00"
+    },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
       "kind": "live-title",
@@ -2840,10 +2873,11 @@
       "title": "#12 Portland vs. Pacific"
     },
     "e96677bfcbc6282bb2f49cafa962384ad8cd6e2a7c5d3bdcd78d27436cd845df": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 14:55 GMT",
+      "created_at": "2026-11-03T12:31:31.234443+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+      "result": "Afternoon swimming session at the 2026 Youth Olympic Games in Dakar.",
+      "title": "Day 3 | Afternoon Session | Dakar 2026: Swimming"
     },
     "e98ced1e4d10275fdcb0778226f3981284d438f3aecdea271e4c65e730087e1f": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
@@ -2881,10 +2915,11 @@
       "title": "Schreiner vs. Lamar"
     },
     "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 15:00 GMT",
+      "created_at": "2026-11-03T12:31:31.234452+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+      "result": "Mike Golic Sr. and Mike Golic Jr. discuss football on Disney+.",
+      "title": "The Golics"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
@@ -3061,8 +3096,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-03T11:31:03.496416+00:00",
-    "groq": "2026-11-03T11:40:47.073483+00:00"
+    "gemini": "2026-11-03T18:30:46.011302+00:00",
+    "groq": "2026-11-03T12:40:38.234405+00:00"
   },
   "version": 1
 }
