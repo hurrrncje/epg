@@ -136,10 +136,11 @@
       }
     },
     "0c54c1863ec90cd190a92818c50ac5a380ea1410a620abff9e1dc70dcc0a24e6": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T15:25:28.327543+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "result": "LALIGA Highlight Show episode, 3 Nov 2026, 17:00 GMT.",
+      "title": "Tue, 11/3 - LALIGA Highlight Show"
     },
     "0cdc92132774720aa93f0fb3fa91a46a33b1d4986085aa12484a88acff4fa767": {
       "created_at": "2026-10-28T06:20:34.001580+00:00",
@@ -192,7 +193,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "retry_after": "2026-11-03T15:34:03.327504+00:00"
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
       "context": "DAZN UK event scheduled 02/11/2026 18:30 GMT",
@@ -1096,10 +1097,11 @@
       "title": "Sheffield United vs Wrexham AFC"
     },
     "571fdfe3cdb13fd631a5dc8c3de4499890443e2bc88702a1bef90d0e53f31b4e": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
+      "created_at": "2026-11-03T15:25:28.327540+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "result": "The Rich Eisen Show episode, 3 Nov 2026, 17:00 GMT.",
+      "title": "Tue, 11/3 - The Rich Eisen Show"
     },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
@@ -1265,10 +1267,11 @@
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
     },
     "671b527f5879ba640c6e3a87f17d7d5cf7bc611cd4a5114ba49c65681590e25c": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 16:30 GMT",
+      "created_at": "2026-11-03T15:25:28.327535+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "result": "UTSA Weekly Press Conference for NCAA football, 3 Nov 2026, 16:30 GMT.",
+      "title": "UTSA Weekly Press Conference"
     },
     "675e0ebe01566e0fc4340964197be0822a5976b61e6f89d35d23b4940396a331": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -1629,10 +1632,11 @@
       "title": "Seattle U vs. Portland"
     },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
+      "created_at": "2026-11-03T15:25:28.327531+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "result": "Women’s college basketball game: Charleston Southern vs. East Carolina at Williams Arena, 3 Nov 2026, 16:00 GMT.",
+      "title": "Charleston Southern vs. East Carolina"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1990,7 +1994,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "retry_after": "2026-11-03T15:34:03.327504+00:00"
     },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
       "created_at": "2026-10-26T12:06:58.198973+00:00",
@@ -2124,7 +2128,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "retry_after": "2026-11-03T15:34:03.327504+00:00"
     },
     "afded0b941398c5df6b2413d4c801296224a02b3541f99fadebc4608dde51224": {
       "created_at": "2026-10-26T19:21:40.738715+00:00",
@@ -2429,7 +2433,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "retry_after": "2026-11-03T15:34:03.327504+00:00"
     },
     "c550dc9c942a771dc1372384c70d9cd35c893fa55d400c7fdef87ad167734ad9": {
       "created_at": "2026-10-26T12:06:58.198950+00:00",
@@ -2523,7 +2527,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "retry_after": "2026-11-03T15:34:03.327504+00:00"
     },
     "cc00d3477ea269d2eaa58ee4d706450415f1d379cd5f3605edc0845b63960bf0": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:00 GMT",
@@ -2725,10 +2729,11 @@
       }
     },
     "dca93ba843bcb034c224506ca1402dbd4ba95e998e166dd53666e350d6d900a7": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 15:25 GMT",
+      "created_at": "2026-11-03T15:25:28.327524+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+      "result": "Youth Olympic Futsal Women’s Group A match: Ukraine vs. Fiji in Dakar, 3 Nov 2026, 10:30 GMT.",
+      "title": "Women | Group Stage | Dakar 2026: Ukraine - Fiji"
     },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
@@ -3127,7 +3132,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T18:30:46.011302+00:00",
-    "groq": "2026-11-03T13:58:43.232704+00:00"
+    "groq": "2026-11-03T15:34:03.327504+00:00"
   },
   "version": 1
 }
