@@ -1,6 +1,9 @@
 name: Update cleaned EPG
 
 on:
+  push:
+    branches: [main]
+    paths: [clean_epg.py]
   schedule:
     # Every hour at 45 minutes past. GitHub may delay scheduled runs.
     - cron: "45 * * * *"

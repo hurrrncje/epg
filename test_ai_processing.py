@@ -436,6 +436,56 @@ class AIProcessingTests(unittest.TestCase):
         self.requests.post.assert_not_called()
         self.client.models.generate_content.assert_not_called()
 
+    def test_programme_date_labels_remove_only_separated_metadata(self):
+        clean = self.ns['_clean_programme_date_labels']
+        for raw, expected in [
+            ('Tue, 11/3 - LALIGA Highlight Show', 'LALIGA Highlight Show'),
+            ('Tue 11/3, The Rich Eisen Show', 'The Rich Eisen Show'),
+            ('11/3 - LALIGA Highlight Show', 'LALIGA Highlight Show'),
+            ('Tuesday, 03/11/2026 | Football', 'Football'),
+            ('2026-11-03: Tennis', 'Tennis'),
+            ('Football - Tue, 11/3', 'Football'),
+            ('Upcoming Event: Tue, 11/3 - Show at 5pm', 'Upcoming Event: Show at 5pm'),
+            ('Formula 1 2026', 'Formula 1 2026'),
+            ('The 11/3 Story', 'The 11/3 Story'),
+            ('November 3: A Documentary', 'November 3: A Documentary'),
+            ('30 for 30', '30 for 30'),
+            ('Tue, 11/3', 'Tue, 11/3'),
+        ]:
+            with self.subTest(raw=raw):
+                self.assertEqual(clean(raw), expected)
+                self.assertEqual(clean(clean(raw)), expected)
+
+    def test_date_cleanup_in_published_xml_preserves_schedule_and_channel_ids(self):
+        ET = self.ns['ET']
+        folder = self.prepare_process([
+            'ESPN+ 07: Tue, 11/3 - LALIGA Highlight Show @ Nov 03 12:00PM ET',
+            'ESPN+ 08: Tue, 11/3 - The Rich Eisen Show @ Nov 03 12:00PM ET',
+            'Ordinary channel',
+        ])
+        source = ET.fromstring(self.requests.get.return_value.content)
+        row = ET.SubElement(source, 'programme', channel='c2', start='20261103170000 +0000', stop='20261103180000 +0000')
+        ET.SubElement(row, 'title').text = 'Tue 11/3, Retained provider show'
+        self.requests.get.return_value.content = ET.tostring(source)
+        real_datetime, utc = self.ns['datetime'], self.ns['UTC']
+        class FrozenDatetime(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 11, 3, 16, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for i, title in enumerate(['LALIGA Highlight Show', 'The Rich Eisen Show']):
+            rows = result.findall(f"programme[@channel='c{i}']")
+            self.assertEqual(rows[0].findtext('title'), f'Upcoming Event: {title} at 5pm')
+            self.assertEqual(rows[1].findtext('title'), title)
+            self.assertEqual(rows[1].get('start'), '20261103170000 +0000')
+        retained = result.find("programme[@channel='c2']")
+        self.assertEqual(retained.findtext('title'), 'Retained provider show')
+        self.assertEqual(retained.get('stop'), '20261103180000 +0000')
+        self.requests.post.assert_not_called()
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -446,6 +496,7 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 
 

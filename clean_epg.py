@@ -213,12 +213,26 @@ def _is_no_event_title(title: str) -> bool:
     return cleaned in {"", "no event", "no match", "no game", "no event today"}
 
 
+def _clean_programme_date_labels(title: str) -> str:
+    """Remove separated scheduling dates, preserving dates within event names."""
+    weekday = r"(?:Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|Thu(?:rsday)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?)"
+    number = r"(?:0?[1-9]|[12]\d|3[01])"
+    date = rf"(?:{number}/{number}(?:/(?:\d{{4}}|\d{{2}}))?|\d{{4}}-\d{{2}}-\d{{2}})"
+    label = rf"(?:{weekday}\.?\s*,?\s*)?{date}"
+    # Include dates after generated Upcoming Event/Match prefixes as well.
+    prefix = re.match(r"^(Upcoming (?:Event|Match):\s*)(.*)$", title, re.I)
+    heading, cleaned = (prefix.group(1), prefix.group(2)) if prefix else ("", title.strip())
+    cleaned = re.sub(rf"^(?:{label})\s*[,|:–—-]\s*(?=\S)", "", cleaned, flags=re.I)
+    cleaned = re.sub(rf"\s+[-–—|]\s*(?:{label})\s*$", "", cleaned, flags=re.I)
+    return heading + (cleaned.strip() or title.strip())
+
+
 def _clean_live_event_title(title: str) -> str:
     """Remove a dynamic channel label and kickoff clock from an event title."""
     cleaned = LIVE_EVENT_PREFIX_PATTERN.sub("", title.strip(), count=1)
     cleaned = DAZN_LABEL_PREFIX_PATTERN.sub("", cleaned, count=1)
     cleaned = LEADING_EVENT_TIME_PATTERN.sub("", cleaned, count=1)
-    return cleaned.strip(" -:–—")
+    return _clean_programme_date_labels(cleaned.strip(" -:–—"))
 
 
 def _format_gmt_time(value: datetime) -> str:
@@ -278,6 +292,7 @@ def _bound_event_programmes(
 
     def title_key(title: str) -> str:
         title = re.sub(r"\s*\(Started [^)]+\)$", "", title, flags=re.I)
+        title = _clean_programme_date_labels(title)
         return " ".join(title.split()).casefold()
 
     source_ends: dict[tuple[str | None, datetime, str], datetime] = {}
@@ -409,7 +424,7 @@ def _clean_mirrored_event_title(raw_title: str) -> str:
     )
     title = re.sub(r"\s+\([^)]*(?:feed|broadcast)[^)]*\)\s*$", "", title, flags=re.I)
     title = re.sub(r"\s+", " ", title).strip(" -:–—|.")
-    return title
+    return _clean_programme_date_labels(title)
 
 
 def _parse_mirrored_start(raw_title: str, today: Any) -> datetime | None:
@@ -2676,6 +2691,13 @@ def process_epg() -> None:
                 if title_element.text:
                     title_element.text = _clean_mls_programme_title(title_element.text)
 
+    # Clean both generated and retained provider programme rows. Timing remains
+    # in the XMLTV start/stop attributes, independent of the displayed title.
+    for programme in root.iter("programme"):
+        for title_element in programme.findall("title"):
+            if title_element.text:
+                title_element.text = _clean_programme_date_labels(title_element.text)
+
     tree = ET.ElementTree(root)
     with gzip.open(
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL
@@ -2688,6 +2710,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 
