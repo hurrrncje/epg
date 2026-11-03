@@ -53,7 +53,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
@@ -103,7 +103,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -451,7 +451,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "253642a0155a1d1a5ce417c30a73330271972de3d9ea5e526826b3add6cb2f98": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -678,7 +678,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -723,7 +723,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -1389,7 +1389,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
       "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
@@ -1523,7 +1523,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
@@ -2243,7 +2243,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2884,7 +2884,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -3345,7 +3345,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T20:42:56.450085+00:00"
+      "retry_after": "2026-11-03T21:39:57.132466+00:00"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
