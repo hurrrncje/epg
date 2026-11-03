@@ -135,6 +135,12 @@
         "raw": "MNF Playbook | Cowboys @ Eagles"
       }
     },
+    "0c54c1863ec90cd190a92818c50ac5a380ea1410a620abff9e1dc70dcc0a24e6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+    },
     "0cdc92132774720aa93f0fb3fa91a46a33b1d4986085aa12484a88acff4fa767": {
       "created_at": "2026-10-28T06:20:34.001580+00:00",
       "kind": "live-title",
@@ -181,6 +187,12 @@
       "kind": "event-description",
       "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
       "title": "Fulham vs Crystal Palace"
+    },
+    "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
       "context": "DAZN UK event scheduled 02/11/2026 18:30 GMT",
@@ -648,12 +660,6 @@
         "raw": "Wild @ Mammoth"
       }
     },
-    "33d5c1e9ef713614e960d23a1d8435facaee2f4425a323d9450b59c1251ace59": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T12:40:38.234405+00:00"
-    },
     "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
       "created_at": "2026-10-31T21:16:12.334909+00:00",
@@ -1093,7 +1099,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T12:40:38.234405+00:00"
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
@@ -1262,7 +1268,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T12:40:38.234405+00:00"
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "675e0ebe01566e0fc4340964197be0822a5976b61e6f89d35d23b4940396a331": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -1626,7 +1632,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T12:40:38.234405+00:00"
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -1980,6 +1986,12 @@
       "result": "Houston Christian University men's basketball team visits Rice University in a regular‑season NCAA Division I game.",
       "title": "Houston Christian vs. Rice"
     },
+    "a2e6fba76bd106d67bd15102e3848a6f3cb201f897d5239a15946f8ab2e2bc38": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+    },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
       "created_at": "2026-10-26T12:06:58.198973+00:00",
       "kind": "live-title",
@@ -2107,6 +2119,12 @@
       "kind": "event-description",
       "result": "MLS match between Nashville SC and Philadelphia Union scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "6 | Nashville SC vs Philadelphia Union (Spanish)"
+    },
+    "af651217bf2aaa6a31b5802835caa4a8d5dc79efd1b5effe684427dd7e8b4ff4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "afded0b941398c5df6b2413d4c801296224a02b3541f99fadebc4608dde51224": {
       "created_at": "2026-10-26T19:21:40.738715+00:00",
@@ -2407,6 +2425,12 @@
         "raw": "Pitch 4A | Day 3: Afternoon Session"
       }
     },
+    "c4c8ae86c46fe9f2ac7b34f470eaa199ed1687200b549d4c7550eaac715bb480": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
+    },
     "c550dc9c942a771dc1372384c70d9cd35c893fa55d400c7fdef87ad167734ad9": {
       "created_at": "2026-10-26T12:06:58.198950+00:00",
       "kind": "live-title",
@@ -2494,6 +2518,12 @@
       "kind": "event-description",
       "result": "The 2026 National Putting Tour hosts The Putting Zone Shootout competition.",
       "title": "2026 National Putting Tour's \"The Putting Zone Shootout\""
+    },
+    "cbfb56ce05d089fb15faadc1ab5f7d9fbe134a8797c6b12e7684db01e454dbce": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "cc00d3477ea269d2eaa58ee4d706450415f1d379cd5f3605edc0845b63960bf0": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:00 GMT",
@@ -2698,7 +2728,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T12:40:38.234405+00:00"
+      "retry_after": "2026-11-03T13:58:43.232704+00:00"
     },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
@@ -3097,7 +3127,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T18:30:46.011302+00:00",
-    "groq": "2026-11-03T12:40:38.234405+00:00"
+    "groq": "2026-11-03T13:58:43.232704+00:00"
   },
   "version": 1
 }
