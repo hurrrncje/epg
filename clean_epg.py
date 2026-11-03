@@ -269,6 +269,108 @@ EVENT_DURATION_RULES = (
 DEFAULT_EVENT_DURATION = timedelta(hours=4)
 
 
+def _normalize_cbs_sports_hq_text(text: str) -> str:
+    return re.sub(r"cbssportshq", "CBS Sports HQ", text, flags=re.I)
+
+
+def _local_event_description(title: str, context: str = "") -> str:
+    """Use explicit title/context clues only; never infer a sport from teams."""
+    title = _normalize_cbs_sports_hq_text(_clean_programme_date_labels(title)).strip()
+    shows = (
+        (r"^LALIGA Highlight Show$", "Highlights from Spanish LaLiga football."),
+        (r"^The Pat McAfee Show$", "Sports discussion and interviews on The Pat McAfee Show."),
+        (r"^The Rich Eisen Show$", "Sports discussion and interviews on The Rich Eisen Show."),
+        (r"^The Golics$", "Sports discussion on The Golics."),
+        (r"^Futbol Americas$", "Football discussion and analysis on Futbol Americas."),
+    )
+    for pattern, description in shows:
+        if re.fullmatch(pattern, title, re.I):
+            return description
+    press = re.fullmatch(r"(.+?)\s+(?:Weekly\s+)?Press Conference", title, re.I)
+    if press:
+        return f"Press conference covering {press.group(1)}."
+    if re.search(r"\bGrand Slam of Curling\s*:\s*Masters\b", title, re.I):
+        return "Coverage of the Masters event in the Grand Slam of Curling."
+    sport = ""
+    for pattern, name in (
+        (r"\b(?:curling)\b", "curling"),
+        (r"\b(?:snooker|International Championship)\b", "snooker"),
+        (r"\b(?:basketball|NBA|WNBA)\b", "basketball"),
+        (r"\b(?:American football|NFL)\b", "American football"),
+        (r"\b(?:baseball|MLB)\b", "baseball"),
+        (r"\b(?:ice hockey|NHL)\b", "ice hockey"),
+        (r"\b(?:golf|PGA|LPGA)\b", "golf"),
+        (r"\bcricket\b", "cricket"),
+        (r"\b(?:soccer|football|UEFA|LaLiga|Premier League|FA Cup|MLS|EFL|EPL|Bundesliga|Serie A|Ligue 1|National League TV)\b", "football"),
+    ):
+        if re.search(pattern, title + " " + context, re.I):
+            sport = name
+            break
+    matchup = re.search(r"\s+(?:vs\.?|v|@)\s+", title, re.I)
+    if matchup:
+        fixture = title[:matchup.start()] + " against " + title[matchup.end():]
+        return f"{sport.capitalize() + ' coverage' if sport else 'Coverage'} of {fixture}."
+    return f"Coverage of {title}."
+
+
+def _apply_local_event_descriptions(
+    programmes: list[ET.Element], source: list[ET.Element], contexts: dict[str, str],
+) -> None:
+    """Retain useful descriptions only from matching source event/time slots."""
+    notices = {"No event today", "No match today", "Match ended", "No further event scheduled"}
+
+    def key(title: str) -> str:
+        return " ".join(_normalize_cbs_sports_hq_text(
+            _clean_mirrored_event_title(title)).split()).casefold()
+
+    def timestamp(value: str | None) -> datetime | None:
+        try:
+            return datetime.strptime(value or "", "%Y%m%d%H%M%S %z").astimezone(UTC)
+        except ValueError:
+            return None
+
+    source_by_title: dict[tuple[str | None, str], list[ET.Element]] = {}
+    generated_channels = {row.get("channel") for row in programmes}
+    for row in source:
+        if row.get("channel") not in generated_channels:
+            continue
+        source_by_title.setdefault((row.get("channel"), key(row.findtext("title", ""))), []).append(row)
+    preserved = local = 0
+    for row in programmes:
+        title = row.findtext("title", "")
+        if title in notices or not title:
+            continue
+        upcoming = re.match(r"^Upcoming (?:Event|Match):\s*(.*?) at \d{1,2}(?:\.\d{2})?[ap]m$", title, re.I)
+        event_title = upcoming.group(1) if upcoming else title
+        when = timestamp(row.get("stop") if upcoming else row.get("start"))
+        description = ""
+        for original in source_by_title.get((row.get("channel"), key(event_title)), []):
+            start, end = timestamp(original.get("start")), timestamp(original.get("stop"))
+            candidate = (original.findtext("desc") or "").strip()
+            if (when is not None and start is not None and end is not None and start <= when < end
+                and len(candidate) >= 10 and key(candidate) != key(event_title)
+                and candidate.casefold() not in {"live event", "no event today", "no match today"}
+                and not re.search(r"\b(?:same .* as e\d+|no (?:information|description) available)\b", candidate, re.I)):
+                description = candidate
+                break
+        if description:
+            preserved += 1
+        else:
+            description = _local_event_description(event_title, contexts.get(row.get("channel", ""), ""))
+            local += 1
+        # All-day rows can represent an event with no parsed start time.
+        # Do not present their midnight placeholder as a real scheduled start.
+        all_day = (not upcoming and row.get("start", "")[8:14] == "000000"
+                   and timestamp(row.get("stop")) == (when + timedelta(days=1) if when else None))
+        if when is not None and not all_day:
+            description += f"\n\nScheduled start: {when:%d/%m/%Y %H:%M} GMT."
+        element = row.find("desc")
+        if element is None:
+            element = ET.SubElement(row, "desc")
+        element.text = description
+    print(f"Local description summary: {local} template descriptions; {preserved} provider descriptions preserved; 0 description API calls.")
+
+
 def _estimated_event_duration(title: str) -> timedelta:
     for pattern, hours in EVENT_DURATION_RULES:
         if re.search(pattern, title, re.I):
@@ -1361,8 +1463,8 @@ def ai_clean_sport_titles(
             continue
         prompt = """Clean these sports event labels. Use search briefly to verify the
 specific events. Return only a JSON array of objects with string fields raw,
-clean_title, description. Preserve raw exactly. Use a short title and one factual
-sentence. If search cannot identify the event, use only the supplied label.
+clean_title. Preserve raw exactly. Return only the cleaned title, without a description.
+If search cannot identify the event, use only the supplied label.
 Do not invent details or return search notes.
 
 Input titles (JSON):
@@ -1383,102 +1485,14 @@ Input titles (JSON):
             for item in _parse_json_array(text):
                 if (isinstance(item, dict) and isinstance(item.get("raw"), str) and item.get("raw") in remaining
                     and all(isinstance(item.get(field), str) and item[field].strip()
-                            for field in ("raw", "clean_title", "description"))):
+                            for field in ("raw", "clean_title"))):
+                    item["description"] = _local_event_description(item["clean_title"])
                     mapping[item["raw"]] = item
             print(f"{provider.title()} returned {len(mapping)} usable title result(s) so far.")
         except Exception as exc:
             provider_state.record_failure(provider, exc)
             print(f"{provider.title()} title cleanup failed: {exc}")
     return mapping
-
-
-def ai_describe_events(
-    events: list[dict[str, str]], client: genai.Client | None, groq_api_key: str | None = None,
-    provider_state: AIProviderState | None = None,
-) -> dict[str, str]:
-    """Generate short grounded descriptions, retaining partial batch successes."""
-    provider_state = provider_state or AIProviderState()
-    descriptions: dict[str, str] = {}
-    for start in range(0, len(events), DESCRIPTION_BATCH_SIZE):
-        if not provider_state.available(client, groq_api_key):
-            print("No AI provider available; leaving unattempted descriptions pending.")
-            break
-        batch = events[start:start + DESCRIPTION_BATCH_SIZE]
-        for provider in ("gemini", "groq"):
-            remaining = [event for event in batch if event["key"] not in descriptions]
-            if not remaining:
-                break
-            if provider in provider_state.exhausted:
-                continue
-            if (provider == "gemini" and client is None) or (provider == "groq" and not groq_api_key):
-                continue
-            # Long internal cache keys repeat titles and dates; send compact keys instead.
-            aliases = {f"e{i}": event for i, event in enumerate(remaining)}
-            payload = [{"key": alias, "title": _neutral_event_title(event["title"]), "context": event["context"]}
-                       for alias, event in aliases.items()]
-            prompt = """Write one concise, factual EPG sentence per sports event.
-Use a brief web search to verify the specific event and competition. Do not
-research background histories. If results are unclear, use only the supplied
-title/context; never invent facts. Describe the event, not the feed language.
-Return only a JSON array with string fields
-key and description, preserving each key. Do not include search notes.
-
-Events (JSON):
-""" + json.dumps(payload, ensure_ascii=False)
-            provider_state.attempted_descriptions.update(event["key"] for event in remaining)
-            try:
-                if provider == "gemini":
-                    response = client.models.generate_content(
-                        model=GEMINI_MODEL, contents=prompt,
-                        config=types.GenerateContentConfig(
-                            temperature=0.1, response_mime_type="application/json",
-                            tools=[types.Tool(google_search=types.GoogleSearch())],
-                        ),
-                    )
-                    text = getattr(response, "text", None) or ""
-                else:
-                    text = _groq_generate_text(prompt, groq_api_key, provider_state)
-                for item in _parse_json_array(text):
-                    if not isinstance(item, dict):
-                        continue
-                    event = aliases.get(item.get("key")) if isinstance(item.get("key"), str) else None
-                    description = item.get("description")
-                    if event and isinstance(description, str) and description.strip():
-                        descriptions[event["key"]] = description.strip()
-                        print(f"Generated event description for: {event['title']} [{event['context']}] ({provider})")
-            except Exception as exc:
-                provider_state.record_failure(provider, exc)
-                print(f"{provider.title()} event-description batch failed: {exc}")
-    return descriptions
-
-
-def _neutral_event_title(title: str) -> str:
-    title = _clean_mls_programme_title(title)
-    return re.sub(r"\s*\((?:English|Spanish)\)\s*$", "", title, flags=re.I)
-
-
-def _shared_description_key(event: dict[str, str]) -> str:
-    """Share a description only for the same title and explicit GMT kickoff."""
-    kickoff = re.search(r"(\d{2}/\d{2}/\d{4})(?:\s+at)?\s+(\d{2}:\d{2})\s+GMT", event["context"])
-    if not kickoff:
-        return _make_ai_cache_key("event-description", event)
-    title = _neutral_event_title(event["title"])
-    title = re.sub(r"\bvs\.", "vs", title, flags=re.I).casefold()
-    return _make_ai_cache_key("shared-event-description", {
-        "title": title, "kickoff": " ".join(kickoff.groups()),
-    })
-
-
-def _description_priority(event: dict[str, str]) -> tuple[int, float]:
-    kickoff = re.search(r"(\d{2}/\d{2}/\d{4})(?:\s+at)?\s+(\d{2}:\d{2})\s+GMT", event["context"])
-    if kickoff:
-        try:
-            when = datetime.strptime(" ".join(kickoff.groups()), "%d/%m/%Y %H:%M").replace(tzinfo=UTC)
-            now = datetime.now(UTC)
-            return max(0, (when.date() - now.date()).days), abs((when - now).total_seconds())
-        except ValueError:
-            pass
-    return 0, float("inf")
 
 
 def _make_ai_cache_key(kind: str, payload: dict[str, str]) -> str:
@@ -1845,135 +1859,7 @@ def process_epg() -> None:
 
     _correct_ligue1_kickoff_times(european_league_targets)
 
-    # Collect distinct fixture events for grounded descriptions. Static EPL/EFL
-    # team channels carry their next fixture in the programme description.
     current_utc_date = datetime.now(UTC).date()
-    description_events: dict[str, dict[str, str]] = {}
-    epl_description_keys: dict[str, str] = {}
-    european_league_description_keys: dict[str, str] = {}
-    dazn_description_keys: dict[str, str] = {}
-    paramount_description_keys: dict[str, str] = {}
-    disney_event_description_keys: dict[str, str] = {}
-    espn_event_description_keys: dict[str, str] = {}
-    max_uk_description_keys: dict[str, str] = {}
-    football_programme_description_keys: dict[int, str] = {}
-
-    def add_description_event(key: str, title: str, context: str) -> None:
-        if title:
-            description_events.setdefault(
-                key, {"key": key, "title": title, "context": context}
-            )
-
-    for ch_id, item in epl_targets.items():
-        if (
-            item["title"]
-            and item["start_utc"]
-            and item["start_utc"].date() >= current_utc_date
-        ):
-            start_utc = item["start_utc"]
-            key = f"epl-dynamic:{start_utc:%Y%m%d%H%M}:{item['title']}"
-            epl_description_keys[ch_id] = key
-            add_description_event(
-                key,
-                item["title"],
-                f"{item['league']} fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
-            )
-
-    for ch_id, item in european_league_targets.items():
-        if (
-            item["title"]
-            and item["start_utc"]
-            and item["start_utc"].date() >= current_utc_date
-        ):
-            start_utc = item["start_utc"]
-            key = f"{item['league'].casefold()}:{start_utc:%Y%m%d%H%M}:{item['title']}"
-            european_league_description_keys[ch_id] = key
-            add_description_event(
-                key,
-                item["title"],
-                f"{item['league']} fixture scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
-            )
-
-    for ch_id, item in dazn_targets.items():
-        if (
-            item["title"]
-            and item["start_utc"]
-            and item["start_utc"].date() >= current_utc_date
-        ):
-            start_utc = item["start_utc"]
-            key = f"dazn:{start_utc:%Y%m%d%H%M}:{item['title']}"
-            dazn_description_keys[ch_id] = key
-            add_description_event(
-                key,
-                item["title"],
-                f"DAZN UK event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
-            )
-
-    for ch_id, item in paramount_targets.items():
-        if (
-            item["title"]
-            and item["start_utc"]
-            and item["start_utc"].date() >= current_utc_date
-        ):
-            start_utc = item["start_utc"]
-            key = f"paramount:{start_utc:%Y%m%d%H%M}:{item['title']}"
-            paramount_description_keys[ch_id] = key
-            add_description_event(
-                key,
-                item["title"],
-                f"Paramount+ event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
-            )
-
-    for provider, targets_for_provider, key_map in (
-        ("Disney+ Events", disney_event_targets, disney_event_description_keys),
-        ("ESPN+", espn_event_targets, espn_event_description_keys),
-        ("MAX UK", max_uk_targets, max_uk_description_keys),
-    ):
-        for ch_id, item in targets_for_provider.items():
-            if (
-                item["title"]
-                and item["start_utc"]
-                and item["start_utc"].date() >= current_utc_date
-            ):
-                start_utc = item["start_utc"]
-                key = f"sports-event:{start_utc:%Y%m%d%H%M}:{item['title']}"
-                key_map[ch_id] = key
-                add_description_event(
-                    key,
-                    item["title"],
-                    f"{provider} event scheduled {start_utc.strftime('%d/%m/%Y %H:%M GMT')}",
-                )
-
-    football_channel_ids = {
-        channel.get("id")
-        for channel in root.iter("channel")
-        if (
-            (channel.get("id") or "").upper().startswith(("EPL", "EFL"))
-            or "spfl" in (channel.get("id") or "").casefold()
-            or channel.get("id") in european_league_targets
-        )
-    }
-    for programme in root.iter("programme"):
-        ch_id = programme.get("channel")
-        if ch_id not in football_channel_ids:
-            continue
-        desc = programme.findtext("desc") or ""
-        desc = re.sub(
-            r"\\u([0-9a-fA-F]{4})",
-            lambda match: chr(int(match.group(1), 16)),
-            desc,
-        )
-        fixture_match = NEXT_GAME_PATTERN.search(desc)
-        if not fixture_match:
-            continue
-        formatted = _format_next_game(fixture_match)
-        if not formatted:
-            continue
-        event_title = f"{fixture_match.group('home').strip()} vs {fixture_match.group('away').strip()}"
-        key = f"team-fixture:{formatted}"
-        football_programme_description_keys[id(programme)] = key
-        add_description_event(key, event_title, f"{ch_id}; {formatted}")
-
     event_date = datetime.now(EASTERN).date()
     dazn_event_titles = {
         item["title"] for item in dazn_targets.values()
@@ -2001,81 +1887,7 @@ def process_epg() -> None:
         f"and {len(active_titles)} Event Changes title(s) with parseable start times."
     )
 
-    event_descriptions: dict[str, str] = {}
-    description_groups: dict[str, list[dict[str, str]]] = {}
-    for event in sorted(description_events.values(), key=_description_priority):
-        description_groups.setdefault(_shared_description_key(event), []).append(event)
-    events_to_describe: list[dict[str, str]] = []
-    description_cache_keys: dict[str, str] = {}
-    cached_description_groups = 0
-    cached_description_failures = 0
-    for cache_key, group in description_groups.items():
-        candidates = [ai_cache_entries.get(cache_key, {})]
-        # Migrate valid existing results without discarding the successful cache.
-        candidates.extend(ai_cache_entries.get(_make_ai_cache_key(
-            "event-description", {"key": event["key"], "title": event["title"], "context": event["context"]}
-        ), {}) for event in group)
-        successful = next((entry for entry in candidates if isinstance(entry, dict)
-                           and isinstance(entry.get("result"), str) and entry["result"].strip()
-                           and not (len(group) > 1 and re.search(r"\b(?:English|Spanish)[ -]language\b", entry["result"], re.I))), None)
-        if successful:
-            ai_cache_entries[cache_key] = dict(successful)
-            cached_description_groups += 1
-            for event in group:
-                event_descriptions[event["key"]] = successful["result"]
-        elif any(_cache_failure_is_active(entry) for entry in candidates):
-            cached_description_failures += 1
-        else:
-            representative = group[0]
-            events_to_describe.append(representative)
-            description_cache_keys[representative["key"]] = cache_key
-    print(
-        f"Reusing {cached_description_groups} cached unique event description(s); "
-        f"{cached_description_failures} attempted failure(s) cooling down; "
-        f"{len(events_to_describe)} unique events pending AI descriptions "
-        f"({len(description_events)} event labels before sharing)."
-    )
-    new_descriptions: dict[str, str] = {}
-    if events_to_describe:
-        gemini_client = get_client()
-        if provider_state.available(gemini_client, groq_api_key):
-            new_descriptions = ai_describe_events(events_to_describe, gemini_client, groq_api_key, provider_state)
-            for event in events_to_describe:
-                cache_key = description_cache_keys[event["key"]]
-                description = new_descriptions.get(event["key"])
-                if description:
-                    ai_cache_entries[cache_key] = {
-                        "kind": "event-description",
-                        "created_at": datetime.now(UTC).isoformat(),
-                        "title": event["title"], "context": event["context"],
-                        "result": description,
-                    }
-                    for member in description_groups[cache_key]:
-                        event_descriptions[member["key"]] = description
-                elif event["key"] in provider_state.attempted_descriptions:
-                    ai_cache_entries[cache_key] = {
-                        "kind": "event-description", "failed": True,
-                        "failure_policy": AI_FAILURE_POLICY,
-                        "retry_after": provider_state.item_retry_after(),
-                    }
-    unattempted = sum(event["key"] not in provider_state.attempted_descriptions
-                      for event in events_to_describe)
-    print(
-        f"AI description summary: {len(new_descriptions)} newly generated; "
-        f"{cached_description_groups} reused from cache; "
-        f"{len(provider_state.attempted_descriptions) - len(new_descriptions)} attempted but unsuccessful; "
-        f"{unattempted} unattempted and still pending; "
-        f"{cached_description_failures} cooling down. "
-        f"Descriptions available for {len(event_descriptions)} of {len(description_events)} event labels."
-    )
-
-
     cleaned_mapping: dict[str, dict[str, str]] = {}
-    dazn_reusable_descriptions = {
-        item["title"]: event_descriptions[dazn_description_keys[ch_id]]
-        for ch_id, item in dazn_targets.items()
-        if dazn_description_keys.get(ch_id) in event_descriptions
-    }
     live_cache_keys = {
         title: _make_ai_cache_key(
             "live-title",
@@ -2095,11 +1907,6 @@ def process_epg() -> None:
             and isinstance(result.get("description"), str)
         ):
             cleaned_mapping[title] = result
-        elif title in dazn_reusable_descriptions:
-            cleaned_mapping[title] = {
-                "raw": title, "clean_title": _format_title_event_name(title),
-                "description": dazn_reusable_descriptions[title],
-            }
         elif _cache_failure_is_active(cache_entry):
             cached_failures += 1
         else:
@@ -2273,8 +2080,7 @@ def process_epg() -> None:
             "description": "Live event",
         })
         clean_title = _format_title_event_name(result["clean_title"])
-        description_key = dazn_description_keys.get(ch_id, "")
-        description = event_descriptions.get(description_key, result["description"])
+        description = _local_event_description(clean_title)
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
 
@@ -2339,8 +2145,7 @@ def process_epg() -> None:
         event_end = min(start_utc + EPL_EVENT_DURATION, day_end)
         upcoming_start = day_start
         upcoming_title = f"Upcoming Match: {title} at {_format_gmt_time(start_utc)}"
-        description_key = epl_description_keys.get(ch_id) or european_league_description_keys.get(ch_id, "")
-        description = event_descriptions.get(description_key, title)
+        description = _local_event_description(title, item.get("league", "Football"))
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
@@ -2403,9 +2208,7 @@ def process_epg() -> None:
         )
         upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
-        description = event_descriptions.get(
-            paramount_description_keys.get(ch_id, ""), title
-        )
+        description = _local_event_description(title)
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
@@ -2431,11 +2234,6 @@ def process_epg() -> None:
         **disney_event_targets,
         **espn_event_targets,
         **max_uk_targets,
-    }
-    sports_event_description_keys = {
-        **disney_event_description_keys,
-        **espn_event_description_keys,
-        **max_uk_description_keys,
     }
     for channel in root.iter("channel"):
         item = sports_event_targets.get(channel.get("id"))
@@ -2470,9 +2268,7 @@ def process_epg() -> None:
 
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
-        description = event_descriptions.get(
-            sports_event_description_keys.get(ch_id, ""), title
-        )
+        description = _local_event_description(title)
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
         if day_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
@@ -2636,6 +2432,12 @@ def process_epg() -> None:
         f"and Event Changes to {len(mirrored_event_targets)} mirrored event channel(s)."
     )
 
+    description_context = {
+        channel_id: item.get("league", "Football")
+        for channel_id, item in {**epl_targets, **european_league_targets}.items()
+    }
+    description_context.update({channel_id: "Football" for channel_id in mirrored_football_targets})
+    _apply_local_event_descriptions(generated, source_programmes, description_context)
     _bound_event_programmes(generated, bounded_events, source_programmes, now_utc)
 
     first_programme_index = next(
@@ -2666,14 +2468,6 @@ def process_epg() -> None:
                 element.text = _rewrite_football_text(element.text)
                 if tag == "title":
                     element.text = _replace_game_with_match(element.text)
-        desc_el = programme.find("desc")
-        description_key = football_programme_description_keys.get(id(programme))
-        generated_description = event_descriptions.get(description_key or "")
-        if desc_el is not None and generated_description:
-            existing = (desc_el.text or "").strip()
-            if generated_description not in existing:
-                desc_el.text = f"{existing}\n\n{generated_description}" if existing else generated_description
-
     _normalize_paramount_branding(root, set(paramount_targets))
 
     # Apply after schedule generation so provider rows and Upcoming Match
@@ -2710,6 +2504,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 

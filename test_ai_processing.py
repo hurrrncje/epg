@@ -130,17 +130,20 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(json.loads(payload['messages'][0]['content'].split('Input titles (JSON):\n')[1]), ['B'])
         self.assertEqual(payload['reasoning_effort'], 'low')
 
-    def test_compact_keys_partial_descriptions_and_usage(self):
-        events = [{'key': 'long-internal-key-A', 'title': 'A', 'context': 'today'},
-                  {'key': 'long-internal-key-B', 'title': 'B', 'context': 'today'}]
-        self.client.models.generate_content.return_value = types.SimpleNamespace(text='[{"key":"e0","description":"A description"},{"key":"e1","description":" "}]')
-        self.requests.post.return_value = groq_result([{'key': 'e0', 'description': 'B description'}])
-        state = self.ns['AIProviderState']()
-        result = self.ns['ai_describe_events'](events, self.client, 'key', state)
-        self.assertEqual(result, {'long-internal-key-A': 'A description', 'long-internal-key-B': 'B description'})
-        prompt = self.requests.post.call_args.kwargs['json']['messages'][0]['content']
-        self.assertNotIn('long-internal-key', prompt)
-        self.assertEqual(state.groq_tokens, 123)
+    def test_local_templates_use_explicit_clues_without_guessing_team_sport(self):
+        describe = self.ns['_local_event_description']
+        for title, expected in [
+            ('Cincinnati Football Press Conference', 'Press conference covering Cincinnati Football.'),
+            ('Grand Slam of Curling: Masters', 'Coverage of the Masters event in the Grand Slam of Curling.'),
+            ('Tue, 11/3 - LALIGA Highlight Show', 'Highlights from Spanish LaLiga football.'),
+            ('Unknown University vs. Other College', 'Coverage of Unknown University against Other College.'),
+        ]:
+            with self.subTest(title=title):
+                self.assertEqual(describe(title), expected)
+        self.assertIn('Football coverage', describe('Barcelona U19 vs. Aston Villa U19', 'UEFA Youth League'))
+        self.assertIn('snooker', describe('International Championship: Mark Williams vs. John Higgins').lower())
+        self.requests.post.assert_not_called()
+        self.client.models.generate_content.assert_not_called()
 
     def prepare_process(self, labels):
         temporary = tempfile.TemporaryDirectory()
@@ -153,42 +156,59 @@ class AIProcessingTests(unittest.TestCase):
         self.requests.get.return_value = Response(content=xml.encode())
         return folder
 
-    def test_unattempted_items_are_not_failure_cached(self):
+    def test_description_generation_ignores_ai_keys_and_legacy_cache(self):
         today = self.ns['datetime'].now(self.ns['EASTERN']).strftime('%b %d')
-        folder = self.prepare_process([f'ESPN+ {i:02d}: Event {i} @ {today} 7:00PM ET' for i in range(1, 8)])
-        self.client.models.generate_content.side_effect = RuntimeError('429 RESOURCE_EXHAUSTED')
-        self.requests.post.return_value = Response(status=429, text='quota', headers={'retry-after': '120'})
+        folder = self.prepare_process([f'ESPN+ 01: The Pat McAfee Show @ {today} 7:00PM ET'])
+        (folder / 'ai_cache.json').write_text(json.dumps({'version': 1, 'entries': {
+            'old-result': {'kind': 'event-description', 'created_at': self.ns['datetime'].now(self.ns['UTC']).isoformat(), 'result': 'Same NHL game as e1'},
+        }}))
         with patch.dict(os.environ, {'GEMINI_API_KEY': 'key', 'GROQ_API_KEY': 'key'}):
             self.ns['process_epg']()
-            cache = json.loads((folder / 'ai_cache.json').read_text())
-            self.assertEqual(sum(bool(x.get('failed')) for x in cache['entries'].values()), 5)
-            self.assertTrue((folder / 'guide.gz').exists())
-            self.ns['process_epg']()
-        self.assertEqual(self.requests.post.call_count, 1)
-        self.assertEqual(self.client.models.generate_content.call_count, 1)
-        self.assertIn('2 unattempted and still pending', self.output.getvalue())
-
-    def test_same_fixture_languages_share_description_and_cache(self):
-        today = self.ns['datetime'].now(self.ns['EASTERN']).strftime('%b %d')
-        folder = self.prepare_process([f'ESPN+ {i:02d}: A vs B ({language}) @ {today} 7:00PM ET' for i, language in [(1, 'English'), (2, 'Spanish')]])
-        self.client.models.generate_content.return_value = types.SimpleNamespace(text='[{"key":"e0","description":"Verified fixture description"}]')
-        with patch.dict(os.environ, {'GEMINI_API_KEY': 'key', 'GROQ_API_KEY': 'key'}):
-            self.ns['process_epg']()
-            xml = gzip.decompress((folder / 'guide.gz').read_bytes()).decode()
-            self.assertGreaterEqual(xml.count('Verified fixture description'), 2)
-            self.ns['process_epg']()
-        self.assertEqual(self.client.models.generate_content.call_count, 1)
+        xml = gzip.decompress((folder / 'guide.gz').read_bytes()).decode()
+        self.assertIn('Sports discussion and interviews on The Pat McAfee Show.', xml)
+        self.assertNotIn('Same NHL game as e1', xml)
+        self.assertIn('0 description API calls', self.output.getvalue())
         self.requests.post.assert_not_called()
-        self.assertIn('1 newly generated', self.output.getvalue())
+        self.client.models.generate_content.assert_not_called()
 
-    def test_dazn_description_does_not_trigger_second_title_request(self):
+    def test_matching_provider_description_wins_without_leaking_other_events(self):
+        ET = self.ns['ET']
+        def row(title, start, stop, desc=None):
+            item = ET.Element('programme', channel='c0', start=start, stop=stop)
+            ET.SubElement(item, 'title').text = title
+            if desc is not None:
+                ET.SubElement(item, 'desc').text = desc
+            return item
+        source = [
+            row('Team A vs. Team B', '20261103170000 +0000', '20261103190000 +0000', 'Provider coverage with original commentary and interviews.'),
+            row('Different event', '20261103190000 +0000', '20261103210000 +0000', 'Do not copy this unrelated description.'),
+        ]
+        rows = [row('Upcoming Event: Team A vs. Team B at 5pm', '20261103000000 +0000', '20261103170000 +0000'),
+                row('Team A vs. Team B', '20261103170000 +0000', '20261103190000 +0000'),
+                row('Team A vs. Team B', '20261104170000 +0000', '20261104190000 +0000'),
+                row('No event today', '20261103000000 +0000', '20261104000000 +0000', 'No event today')]
+        self.ns['_apply_local_event_descriptions'](rows, source, {})
+        for item in rows[:2]:
+            self.assertIn('Provider coverage with original commentary', item.findtext('desc'))
+            self.assertIn('Scheduled start: 03/11/2026 17:00 GMT.', item.findtext('desc'))
+        self.assertNotIn('Provider coverage', rows[2].findtext('desc'))
+        self.assertNotIn('unrelated description', rows[2].findtext('desc'))
+        self.assertEqual(rows[3].findtext('desc'), 'No event today')
+
+    def test_title_cleanup_requests_titles_only_and_discards_ai_description(self):
         today = self.ns['datetime'].now(self.ns['LONDON']).strftime('%d %b')
-        self.prepare_process([f'DAZN UK 01: A vs B @ {today} 07:00 PM London'])
-        self.client.models.generate_content.return_value = types.SimpleNamespace(text='[{"key":"e0","description":"Verified fixture description"}]')
+        folder = self.prepare_process([f'DAZN UK 01: A vs B @ {today} 07:00 PM London'])
+        self.client.models.generate_content.return_value = types.SimpleNamespace(text=json.dumps([
+            {'raw': 'A vs B', 'clean_title': 'A vs B', 'description': 'Invented AI description'}]))
         with patch.dict(os.environ, {'GEMINI_API_KEY': 'key', 'GROQ_API_KEY': 'key'}):
             self.ns['process_epg']()
         self.assertEqual(self.client.models.generate_content.call_count, 1)
         self.requests.post.assert_not_called()
+        prompt = self.client.models.generate_content.call_args.kwargs['contents']
+        self.assertIn('without a description', prompt)
+        xml = gzip.decompress((folder / 'guide.gz').read_bytes()).decode()
+        self.assertIn('Coverage of A against B.', xml)
+        self.assertNotIn('Invented AI description', xml)
 
     def test_sky_sports_plus_london_time_handles_summer_and_winter(self):
         parse = self.ns['_parse_mirrored_start']
@@ -496,6 +516,7 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 
 
