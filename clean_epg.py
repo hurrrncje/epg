@@ -1979,6 +1979,10 @@ def process_epg() -> None:
     generated: list[ET.Element] = []
     bounded_events: list[ET.Element] = []
     now_utc = datetime.now(UTC)
+    # Upcoming slots must include today even when the event starts tomorrow.
+    # Starting at the event day's midnight left a gap, or no slot at all for
+    # events whose kickoff was exactly midnight.
+    guide_day_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
 
     def add_all_day_notice(channel_id: str, title: str) -> None:
         day_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
@@ -2057,7 +2061,7 @@ def process_epg() -> None:
         # Fill the gap before kickoff so UHF has an upcoming listing instead of
         # showing "No information". The pre-event slot ends exactly at kickoff.
         first_start = min(scheduled_starts)
-        upcoming_start = datetime.combine(first_start.date(), datetime_time.min, tzinfo=UTC)
+        upcoming_start = guide_day_start
         upcoming_title = (
             f"Upcoming Event: {result['clean_title']} at {_format_gmt_time(first_start)}"
         )
@@ -2105,7 +2109,7 @@ def process_epg() -> None:
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
 
-        upcoming_start = datetime.combine(now_utc.date(), datetime_time.min, tzinfo=UTC)
+        upcoming_start = guide_day_start
         if upcoming_start < start_utc and now_utc < start_utc:
             upcoming_title = (
                 f"Upcoming Event: {clean_title} at {_format_gmt_time(start_utc)}"
@@ -2230,7 +2234,7 @@ def process_epg() -> None:
         end_utc = datetime.combine(
             start_utc.date() + timedelta(days=1), datetime_time.min, tzinfo=UTC
         )
-        upcoming_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
+        upcoming_start = guide_day_start
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
         description = _local_event_description(title)
         if upcoming_start < start_utc and now_utc < start_utc:
@@ -2293,10 +2297,11 @@ def process_epg() -> None:
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
         description = _local_event_description(title)
+        upcoming_start = guide_day_start
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
-        if day_start < start_utc and now_utc < start_utc:
+        if upcoming_start < start_utc and now_utc < start_utc:
             upcoming = ET.Element("programme", {
-                "start": day_start.strftime("%Y%m%d%H%M%S %z"),
+                "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
                 "channel": ch_id,
             })
@@ -2393,7 +2398,7 @@ def process_epg() -> None:
         event_day_end = event_day_start + timedelta(days=1)
         if mirror_now_utc < start_utc:
             upcoming = ET.Element("programme", {
-                "start": event_day_start.strftime("%Y%m%d%H%M%S %z"),
+                "start": mirror_day_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
                 "channel": ch_id,
             })
@@ -2528,6 +2533,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 

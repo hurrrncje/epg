@@ -565,6 +565,54 @@ class AIProcessingTests(unittest.TestCase):
         for i in range(len(labels)):
             self.assertEqual(result.find(f"programme[@channel='c{i}']/title").text, 'Provider tennis coverage')
 
+    def check_tomorrow_upcoming_slots(self, minute):
+        ET, dt, utc = self.ns['ET'], self.ns['datetime'], self.ns['UTC']
+        clock = f'12:{minute:02d}AM'
+        labels = [
+            f'Disney+ Events 57: Jacksonville vs. Florida International @ Nov 04 {clock} London',
+            f'ESPN+ 57: Event ESPN @ Nov 04 {clock} London',
+            f'MAX UK 57: Event MAX @ Nov 04 {clock} London',
+            f'DAZN UK 57: Event DAZN @ 04 Nov {clock} London',
+            f'Paramount+ 57: Event Paramount @ 03 Nov 07:{minute:02d}PM ET',
+            f'General Feed 57: Event Mirror @ 04 Nov {clock} London',
+            f'LIVE EVENT 02 - 7:{minute:02d}PM Event Live',
+        ]
+        folder = self.prepare_process(labels)
+        (folder / 'events.txt').write_text('c5\n')
+        source = ET.fromstring(self.requests.get.return_value.content)
+        for i, label in enumerate(labels):
+            row = ET.SubElement(source, 'programme', channel=f'c{i}',
+                start='20261103000000 +0000', stop='20261105000000 +0000')
+            ET.SubElement(row, 'title').text = label
+        self.requests.get.return_value.content = ET.tostring(source)
+        class FrozenDatetime(dt):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 11, 3, 23, 28, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for i in range(len(labels)):
+            with self.subTest(channel=labels[i], minute=minute):
+                rows = result.findall(f"programme[@channel='c{i}']")
+                upcoming = [r for r in rows if r.findtext('title', '').startswith('Upcoming Event:')]
+                self.assertEqual(len(upcoming), 1)
+                self.assertEqual(upcoming[0].get('start'), '20261103000000 +0000')
+                self.assertEqual(upcoming[0].get('stop'), f'2026110400{minute:02d}00 +0000')
+                active = [r for r in rows if r.get('start') == upcoming[0].get('stop')]
+                self.assertEqual(len(active), 1)
+                self.assertIn('Scheduled start: 04/11/2026 00:', upcoming[0].findtext('desc'))
+                self.assertFalse(any(r.findtext('title') == 'No event today' for r in rows))
+        self.requests.post.assert_not_called()
+        self.client.models.generate_content.assert_not_called()
+
+    def test_tomorrow_midnight_events_have_upcoming_programme_today(self):
+        self.check_tomorrow_upcoming_slots(0)
+
+    def test_tomorrow_after_midnight_events_have_continuous_upcoming_programme(self):
+        self.check_tomorrow_upcoming_slots(30)
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -575,6 +623,7 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 
 
