@@ -14,12 +14,6 @@
       "result": "CBS Sports HQ Postgame recap of recent sports events.",
       "title": "cbssportshq: The Postgame"
     },
-    "01434a3f44fe7397315f03e056c454f7b895bc951cd133ad5000191280cf910b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T02:37:44.191721+00:00"
-    },
     "015f33362acb1190d086383a376970fca54b67ac0e4b707bd5ff0746bc5ceae0": {
       "context": "ESPN+ event scheduled 02/11/2026 19:00 GMT",
       "created_at": "2026-11-02T18:31:30.178736+00:00",
@@ -142,6 +136,12 @@
       "kind": "event-description",
       "result": "EFL League One match between Peterborough United and Luton Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Peterborough United FC vs Luton Town"
+    },
+    "0db41eaae42462ce1c3e7e53203fb6fa6bd0740422cb5aed44ff1d3dbfc30403": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T03:39:37.914181+00:00"
     },
     "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
@@ -292,6 +292,13 @@
       "result": "Domestic basketball game between Saint Quentin and ASVEL scheduled for 1 Nov 2026 at 15:30 GMT.",
       "title": "Saint Quentin vs. ASVEL"
     },
+    "20aefbe5d281507c5318523c7f17987fa543d58d9c7ce1660bfe81193bce210b": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914266+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between Nevada and Loyola Marymount.",
+      "title": "Nevada vs. Loyola Marymount"
+    },
     "20da66415575ffdd4f9d8df32fe4e44b251f3cb1458c50958925110b17072ba2": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061712+00:00",
@@ -332,6 +339,13 @@
       "kind": "event-description",
       "result": "The Pat McAfee Show."
     },
+    "247a5388be6ef030f0910ba91f1d1825646bc280c8882e98fa77c9700cec30e6": {
+      "context": "DAZN UK event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914244+00:00",
+      "kind": "event-description",
+      "result": "Men’s college basketball: Montana Grizzlies visit Oregon Ducks.",
+      "title": "Montana @ Oregon"
+    },
     "24ebd9192f9f8fb597e1fa64b9d5987870724af0dbda302b194851312b167dce": {
       "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
       "created_at": "2026-11-01T21:19:10.371171+00:00",
@@ -359,6 +373,13 @@
       "kind": "event-description",
       "result": "UEFA Women’s Champions League match between Chelsea and Roma, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Chelsea vs. Roma"
+    },
+    "270aa0148b68307d4d9010f54f726b6a62f431487e35641f162b6ba0bd97efe9": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914257+00:00",
+      "kind": "event-description",
+      "result": "Men’s college basketball: La Verne Matadors host UC Riverside Highlanders.",
+      "title": "La Verne vs. UC Riverside"
     },
     "270be99e90987e506740da34743fcd9974711473b486bfadd8a7b2962b4e9546": {
       "created_at": "2026-10-26T12:06:58.198975+00:00",
@@ -651,6 +672,12 @@
       "result": "CBS Sports HQ Morning Boxscore recap is streamed on Paramount+.",
       "title": "cbssportshq: Morning Boxscore"
     },
+    "3d22be5f1397b41de4690030c2fcdda9aa47a8acb27aa18229e3daf497daad13": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T03:39:37.914181+00:00"
+    },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770320+00:00",
@@ -808,6 +835,13 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 10A | Day 3: Afternoon Session"
       }
+    },
+    "47d064dcf43c0be2ebcaf99d7aac7ea7f6bf8e03ebba9ad3dba1363d78849368": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914269+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between Pepperdine and Portland State.",
+      "title": "Pepperdine vs. Portland State"
     },
     "48c3cba40aa32d6fc175fdf8cd45ed8958fd7e0d990a77a6a6b51bf72d85f811": {
       "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
@@ -1058,6 +1092,13 @@
       "result": "NHL regular‑season game between the Ottawa Senators and Vegas Golden Knights, part of the 2026‑27 NHL season.",
       "title": "Senators @ Golden Knights"
     },
+    "5e500ebb6eda468b219bbae2cadc44fbd780ef4937af35dc02a970522e08e0d0": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914263+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between Radford and San Francisco.",
+      "title": "Radford vs. San Francisco"
+    },
     "5f2dc18fbdff71fd2b8ff63ab1be2d43662106fe1a5658644faa41c267f73662": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898633+00:00",
@@ -1162,6 +1203,12 @@
       "kind": "event-description",
       "result": "Texas A&M‑Kingsville vs. UT Rio Grande Valley college basketball game.",
       "title": "Texas A&M-Kingsville vs. UT Rio Grande Valley"
+    },
+    "6e1be0478e16d4ef39c358cb56e4f21393395367b42e653d96d052a99efa1fb8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T03:39:37.914181+00:00"
     },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -1304,6 +1351,13 @@
       "result": "Yale men's ice hockey plays Harvard men's ice hockey in an ECAC regular‑season contest.",
       "title": "Yale vs. Harvard"
     },
+    "7a33eed814d533b9a47b80445c24001ce96aa3c009253dcce9b4963945d11ec7": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:30 GMT",
+      "created_at": "2026-11-03T03:31:18.914235+00:00",
+      "kind": "event-description",
+      "result": "Men’s college basketball: Cal State San Marcos Cougars host Cal Poly Mustangs.",
+      "title": "CSU San Marcos vs. Cal Poly"
+    },
     "7b6106ed24ba7e370461d9186ea54ebab7e67ece185f7f6d0c77b7725796fe83": {
       "created_at": "2026-10-26T12:30:58.030825+00:00",
       "kind": "event-description",
@@ -1391,6 +1445,13 @@
       "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
       "title": "Wycombe Wanderers FC vs Burton Albion FC"
     },
+    "81c64623d6283b0002d5036dbcc162344b07cc86fc860e92bd4d357417c77c9f": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914272+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between William Jessup and Sacramento State.",
+      "title": "William Jessup vs. Sacramento State"
+    },
     "81d43a7a643146f633a4f3fce959dd9db8c18baa3f9fa997f04a1c534a70be4e": {
       "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770302+00:00",
@@ -1420,6 +1481,12 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 9A | Day 3: Afternoon Session"
       }
+    },
+    "8508a1fb93f1d6fba5c9e5e4cd953eca801fadaa7c82e51b9bf9d2271654fa73": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T03:39:37.914181+00:00"
     },
     "8542753b7db80df4a9e070acbb107a184b81503ae0df0192d1752f7e42edef2d": {
       "context": "MAX UK event scheduled 01/11/2026 15:30 GMT",
@@ -1581,12 +1648,6 @@
         "raw": "Sabres @ Sharks"
       }
     },
-    "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T02:37:44.191721+00:00"
-    },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569489+00:00",
@@ -1637,6 +1698,13 @@
       "kind": "event-description",
       "result": "Serie A match between Venezia and Inter Milan, part of the 2026‑27 Serie A season, scheduled for 28 October 2026 at 17:20 GMT.",
       "title": "Serie A: Venezia vs. Inter"
+    },
+    "9ba945eef9db9718a92ffd8c7a346cfd92444e573aaba0a83faec627d31d4831": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914250+00:00",
+      "kind": "event-description",
+      "result": "Men’s college basketball: Illinois State Redbirds host Saint Mary’s Gaels.",
+      "title": "Illinois State vs. Saint Mary's"
     },
     "9bb9c6a0596f15589f8fecfc275302b774aca1c4f5f08ee99216ccd143964e4a": {
       "context": "EPLTottenhamHotspur.uk; Next Game: Tottenham Hotspur vs Crystal Palace on 31/10/2026 at 17:30 GMT",
@@ -1892,12 +1960,6 @@
       "kind": "event-description",
       "result": "Disney+ event 'UAB vs. Missouri State' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "UAB vs. Missouri State"
-    },
-    "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T02:37:44.191721+00:00"
     },
     "b635bb2639a0ff95efcda92aee2ba9645dee490e2cd3342c8599d4bc3fa0fe65": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -2482,6 +2544,13 @@
       "result": "Georgia Southern football press conference on 02/11/2026 at 17:30 GMT.",
       "title": "Georgia Southern Football Press Conference"
     },
+    "e6080b157193a53e461e96c0bf9f38c15df6620e159b2defaed29482a85f9a2f": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914254+00:00",
+      "kind": "event-description",
+      "result": "Men’s college basketball: Towson Tigers visit Santa Clara Broncos.",
+      "title": "Towson vs. Santa Clara"
+    },
     "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
       "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770307+00:00",
@@ -2610,18 +2679,19 @@
       "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
       "title": "Wycombe Wanderers FC vs Burton Albion FC"
     },
-    "f297635eb8eb2e9789629aafdb08fbc6c97d024e0d08a544a351a6cf2afae28a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T02:37:44.191721+00:00"
-    },
     "f3108ddf51761fd3a8e0a6af6ad0eeafb244b46bf05be45d1c6b1feb626f3e3e": {
       "context": "Paramount+ event scheduled 28/10/2026 18:00 GMT",
       "created_at": "2026-10-28T18:24:17.569539+00:00",
       "kind": "event-description",
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
+    },
+    "f3e295ae8dacfbd8da4e9eb2f07100f8971f1d43451580069658927fdd989b83": {
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T03:31:18.914260+00:00",
+      "kind": "event-description",
+      "result": "College basketball game between George Fox and Idaho.",
+      "title": "George Fox vs. Idaho"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -2646,7 +2716,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T02:37:44.191721+00:00"
+      "retry_after": "2026-11-03T03:39:37.914181+00:00"
     },
     "f8d814f120901a0f9225fc98838a2447b460c88260ee389411089f15ff723bb2": {
       "context": "Paramount+ event scheduled 01/11/2026 12:20 GMT",
@@ -2712,7 +2782,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T05:18:58.949159+00:00",
-    "groq": "2026-11-03T02:37:44.191721+00:00"
+    "groq": "2026-11-03T03:39:37.914181+00:00"
   },
   "version": 1
 }
