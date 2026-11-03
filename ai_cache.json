@@ -14,6 +14,13 @@
       "result": "CBS Sports HQ Postgame recap of recent sports events.",
       "title": "cbssportshq: The Postgame"
     },
+    "01434a3f44fe7397315f03e056c454f7b895bc951cd133ad5000191280cf910b": {
+      "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766735+00:00",
+      "kind": "event-description",
+      "result": "San Francisco State vs. UC Santa Barbara men's basketball game on Disney+ Events.",
+      "title": "San Francisco State vs. UC Santa Barbara"
+    },
     "015f33362acb1190d086383a376970fca54b67ac0e4b707bd5ff0746bc5ceae0": {
       "context": "ESPN+ event scheduled 02/11/2026 19:00 GMT",
       "created_at": "2026-11-02T18:31:30.178736+00:00",
@@ -138,10 +145,11 @@
       "title": "Peterborough United FC vs Luton Town"
     },
     "0db41eaae42462ce1c3e7e53203fb6fa6bd0740422cb5aed44ff1d3dbfc30403": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766716+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T03:39:37.914181+00:00"
+      "result": "Eastern Washington Eagles vs. Stanford Cardinal college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
+      "title": "Eastern Washington vs. Stanford"
     },
     "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
@@ -389,6 +397,12 @@
         "description": "NHL regular‑season game between the Minnesota Wild and the Vancouver Canucks, played on October 25, 2026.",
         "raw": "Wild @ Canucks"
       }
+    },
+    "2744ff202ca3e7e3e38c33d64a8b2492a9e3070ed75e14cbe6348c25bc38f5fe": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T04:40:35.766680+00:00"
     },
     "2866c7ff2830283b5de4c751d8eb886ee475094f2f5c606f42e1582d700afc9c": {
       "created_at": "2026-10-26T19:21:40.738747+00:00",
@@ -673,10 +687,11 @@
       "title": "cbssportshq: Morning Boxscore"
     },
     "3d22be5f1397b41de4690030c2fcdda9aa47a8acb27aa18229e3daf497daad13": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766720+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T03:39:37.914181+00:00"
+      "result": "East Tennessee State Buccaneers vs. Arizona State Sun Devils college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
+      "title": "East Tennessee State vs. Arizona State"
     },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
@@ -955,6 +970,12 @@
       "result": "NYC Marathon countdown event featuring a live countdown to the starting line, 3:30 pm GMT.",
       "title": "NYC Marathon: Countdown to the Starting Line"
     },
+    "507017db681b3700c38d3bdaba657ed4764faf391aa308646438e26b3be76c83": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+    },
     "511b3690f2b7f3cf1935e4c2c73cac83cb4e8a224e37940e77a970891ee11649": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
       "created_at": "2026-11-01T21:19:10.371165+00:00",
@@ -1205,10 +1226,11 @@
       "title": "Texas A&M-Kingsville vs. UT Rio Grande Valley"
     },
     "6e1be0478e16d4ef39c358cb56e4f21393395367b42e653d96d052a99efa1fb8": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766724+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T03:39:37.914181+00:00"
+      "result": "Whittier Poets vs. UC San Diego Tritons college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
+      "title": "Whittier vs. UC San Diego"
     },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -1483,10 +1505,11 @@
       }
     },
     "8508a1fb93f1d6fba5c9e5e4cd953eca801fadaa7c82e51b9bf9d2271654fa73": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766708+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T03:39:37.914181+00:00"
+      "result": "Washington State Cougars vs. California Golden Bears college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
+      "title": "Washington State vs. California"
     },
     "8542753b7db80df4a9e070acbb107a184b81503ae0df0192d1752f7e42edef2d": {
       "context": "MAX UK event scheduled 01/11/2026 15:30 GMT",
@@ -1611,6 +1634,13 @@
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
     },
+    "90ffc09633f9f2d971fb525f670bce7f3520cf6b47f21c8e1980a011c3b19021": {
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T04:31:24.766744+00:00",
+      "kind": "event-description",
+      "result": "LaGrange vs. Jacksonville State men's basketball game on Disney+ Events.",
+      "title": "LaGrange vs. Jacksonville State"
+    },
     "91728f8bb2ff85f62a3b7947f05546361a5e833a6a4e5805c880b304a1519199": {
       "context": "MLS fixture scheduled 02/11/2026 02:25 GMT",
       "created_at": "2026-11-02T03:33:22.316102+00:00",
@@ -1647,6 +1677,13 @@
         "description": "Buffalo Sabres shut out the San Jose Sharks 2‑0 on Oct 27 2026, with Colten Ellis making 23 saves【14†L10-L22】.",
         "raw": "Sabres @ Sharks"
       }
+    },
+    "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
+      "context": "ESPN+ event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766732+00:00",
+      "kind": "event-description",
+      "result": "Willamette University vs. University of Portland men's basketball game on ESPN+.",
+      "title": "Willamette vs. Portland"
     },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -1698,6 +1735,12 @@
       "kind": "event-description",
       "result": "Serie A match between Venezia and Inter Milan, part of the 2026‑27 Serie A season, scheduled for 28 October 2026 at 17:20 GMT.",
       "title": "Serie A: Venezia vs. Inter"
+    },
+    "9a775bbf219fb801ff94956fcf439962766c357f901b7fbd902277860c47848c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T04:40:35.766680+00:00"
     },
     "9ba945eef9db9718a92ffd8c7a346cfd92444e573aaba0a83faec627d31d4831": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -1840,6 +1883,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
+    "a664cb868c53d5596724dc934d87869d23e598bfd25ab1c1256f5f0294deead5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+    },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
       "created_at": "2026-11-02T06:42:29.061739+00:00",
@@ -1961,6 +2010,13 @@
       "result": "Disney+ event 'UAB vs. Missouri State' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "UAB vs. Missouri State"
     },
+    "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
+      "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766739+00:00",
+      "kind": "event-description",
+      "result": "Chattanooga vs. #11 Louisville men's basketball game on Disney+ Events.",
+      "title": "Chattanooga vs. #11 Louisville"
+    },
     "b635bb2639a0ff95efcda92aee2ba9645dee490e2cd3342c8599d4bc3fa0fe65": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843922+00:00",
@@ -2007,6 +2063,12 @@
       "kind": "event-description",
       "result": "Florida Atlantic University football weekly press conference.",
       "title": "Florida Atlantic Weekly Press Conference"
+    },
+    "bad841194a61962d3deac9fc9ac926620f75ecc11e6d1495e90390ad08bca373": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T04:40:35.766680+00:00"
     },
     "bb99e3fac467cdfe3710fee6d72bde0688e73f48b9a9a511e2bf6ff39711e83d": {
       "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
@@ -2679,6 +2741,13 @@
       "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
       "title": "Wycombe Wanderers FC vs Burton Albion FC"
     },
+    "f297635eb8eb2e9789629aafdb08fbc6c97d024e0d08a544a351a6cf2afae28a": {
+      "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766741+00:00",
+      "kind": "event-description",
+      "result": "Simpson College (CA) vs. Pacific men's basketball game on Disney+ Events.",
+      "title": "Simpson (CA) vs. Pacific"
+    },
     "f3108ddf51761fd3a8e0a6af6ad0eeafb244b46bf05be45d1c6b1feb626f3e3e": {
       "context": "Paramount+ event scheduled 28/10/2026 18:00 GMT",
       "created_at": "2026-10-28T18:24:17.569539+00:00",
@@ -2713,10 +2782,11 @@
       "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
     },
     "f8ccc2cea7fff07b3a8045f0f53f54832a6d2e0d7984f281043dbcb68dd3ef75": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
+      "created_at": "2026-11-03T04:31:24.766728+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T03:39:37.914181+00:00"
+      "result": "West Coast Baptist Tigers vs. Southern Utah Thunderbirds college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
+      "title": "West Coast Baptist vs. Southern Utah"
     },
     "f8d814f120901a0f9225fc98838a2447b460c88260ee389411089f15ff723bb2": {
       "context": "Paramount+ event scheduled 01/11/2026 12:20 GMT",
@@ -2782,7 +2852,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T05:18:58.949159+00:00",
-    "groq": "2026-11-03T03:39:37.914181+00:00"
+    "groq": "2026-11-03T04:40:35.766680+00:00"
   },
   "version": 1
 }
