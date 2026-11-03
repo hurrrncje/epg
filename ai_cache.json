@@ -261,6 +261,12 @@
       "result": "Florida A&M vs. Florida State college baseball game.",
       "title": "Florida A&M vs. Florida State"
     },
+    "1e36828b1457a799552a72a1ff6332c466c1f3d7baa0d97a058dc8b83b3ab845": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+    },
     "1e3caf10bc522072714f1fc543ce8800d229271e78c67897c0447b3120bb0d51": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690120+00:00",
@@ -514,12 +520,6 @@
       "result": "NHL game New Jersey Devils vs Colorado Avalanche broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "New Jersey Devils vs. Colorado Avalanche"
     },
-    "2bd63ddd6982ae8af65e96ee068f56e04caad55ac1ba8452477e0ff034dc21e7": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T09:38:22.039503+00:00"
-    },
     "2be64ba92ecd146af8dcfadd8b92c37c0a141e8574af99f1f32d89b75e7d80f6": {
       "created_at": "2026-10-28T00:12:37.428434+00:00",
       "kind": "live-title",
@@ -625,6 +625,12 @@
         "description": "NHL regular season game between the Minnesota Wild and the Utah Mammoth, scheduled for Wednesday, October 28, 2026 at the Delta Center in Salt Lake City, UT. 【8†L27-L28】",
         "raw": "Wild @ Mammoth"
       }
+    },
+    "33d5c1e9ef713614e960d23a1d8435facaee2f4425a323d9450b59c1251ace59": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T10:41:58.962517+00:00"
     },
     "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -998,6 +1004,12 @@
       "result": "Live broadcast of the second episode of the Spanish‑language series “Futbol Americas.”",
       "title": "Mon, 11/2 - Futbol Americas"
     },
+    "50794ede8c7d1e48ea99facbdd9795e03fd5d8f915bd21d65810e29228b92d77": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+    },
     "511b3690f2b7f3cf1935e4c2c73cac83cb4e8a224e37940e77a970891ee11649": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
       "created_at": "2026-11-01T21:19:10.371165+00:00",
@@ -1053,12 +1065,6 @@
       "kind": "event-description",
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
-    },
-    "571fdfe3cdb13fd631a5dc8c3de4499890443e2bc88702a1bef90d0e53f31b4e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T09:38:22.039503+00:00"
     },
     "5756bc107358ff7e98f61c1402dd58a5518ae31185fa1ffe7ae7860202e46599": {
       "created_at": "2026-10-26T19:21:40.738766+00:00",
@@ -1222,12 +1228,6 @@
       "kind": "event-description",
       "result": "UEFA Women’s Champions League match between Bayern Munich and Real Madrid, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
-    },
-    "671b527f5879ba640c6e3a87f17d7d5cf7bc611cd4a5114ba49c65681590e25c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T09:38:22.039503+00:00"
     },
     "675e0ebe01566e0fc4340964197be0822a5976b61e6f89d35d23b4940396a331": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -1586,12 +1586,6 @@
       "kind": "event-description",
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
-    },
-    "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T09:38:22.039503+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -2045,6 +2039,12 @@
         "raw": "Devils @ Stars"
       }
     },
+    "abf529027d4ef9ac0da0e55f110af4c2e66ea079e6271028b1e2cb65e1ba26d3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+    },
     "ac78aa13b21b532481b58aa2aa42a2c738ddc923dda4375173cb289dbbe23920": {
       "context": "Disney+ Events event scheduled 02/11/2026 15:30 GMT",
       "created_at": "2026-11-02T12:36:29.274242+00:00",
@@ -2176,6 +2176,13 @@
       "result": "College basketball game between Southwestern Christian University and the University of North Texas.",
       "title": "Southwestern Christian vs. North Texas"
     },
+    "bb58e85bb03542d57877380861c16c8aac2c6d22230affdbf72008e97a55bcd6": {
+      "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
+      "created_at": "2026-11-03T10:33:39.962572+00:00",
+      "kind": "event-description",
+      "result": "World Snooker Tour match between Fan Zhengyi and Liam Davies.",
+      "title": "International Championship | Round 4: Fan Zhengyi - Liam Davies"
+    },
     "bb99e3fac467cdfe3710fee6d72bde0688e73f48b9a9a511e2bf6ff39711e83d": {
       "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
       "created_at": "2026-11-02T16:40:59.690098+00:00",
@@ -2198,6 +2205,13 @@
         "description": "NHL regular season game between the Florida Panthers and the Winnipeg Jets, scheduled for Wednesday, October 28, 2026 at the Canada Life Centre in Winnipeg, MB. 【8†L15-L16】",
         "raw": "Panthers @ Jets"
       }
+    },
+    "bc3d499a90e00bcbbad0fdbe3c330a6aa35176bccd24f9e2b79eb9c63484ac9b": {
+      "context": "MAX UK event scheduled 03/11/2026 09:55 GMT",
+      "created_at": "2026-11-03T10:33:39.962568+00:00",
+      "kind": "event-description",
+      "result": "Group B match of the Women’s Youth Olympic Futsal Tournament in Dakar between Italy and Costa Rica.",
+      "title": "Women | Group Stage | Dakar 2026: Italy - Costa Rica"
     },
     "bc49da2a28a3b5f30984ace76324ceb6c49f95c7eb59b9f15f35e2cd3134ff0e": {
       "created_at": "2026-10-26T19:21:40.738730+00:00",
@@ -2274,6 +2288,13 @@
       "kind": "event-description",
       "result": "ACF Fiorentina women face Juventus women in Serie A on 2 Nov 2026.",
       "title": "Fiorentina vs. Juventus"
+    },
+    "bf64f1d9a748d4a1acab081c84656075701293f798af5eafe057a3c57841711b": {
+      "context": "MAX UK event scheduled 03/11/2026 09:55 GMT",
+      "created_at": "2026-11-03T10:33:39.962562+00:00",
+      "kind": "event-description",
+      "result": "Morning heats of swimming at the 2026 Youth Olympic Games in Dakar.",
+      "title": "Day 3 | Morning Session | Dakar 2026: Swimming"
     },
     "c020d584a91ca87946d1de0f4f5deb17bcf5d2eddc8eacb500a8964cf070ac8d": {
       "created_at": "2026-10-28T00:12:37.428452+00:00",
@@ -2405,6 +2426,13 @@
       "kind": "event-description",
       "result": "Fairleigh Dickinson Knights visit Illinois Fighting Illini in a men's college basketball game on November 2, 2026.",
       "title": "Fairleigh Dickinson @ Illinois"
+    },
+    "c948adb1a5ff40a1af6019f6c235a2ec910b24da18c9c7b35a99ff133bbd2ea4": {
+      "context": "MAX UK event scheduled 03/11/2026 11:00 GMT",
+      "created_at": "2026-11-03T10:33:39.962549+00:00",
+      "kind": "event-description",
+      "result": "Official presentation of the 2027 Giro d’Italia and Giro d’Italia Women routes in Rome.",
+      "title": "Route Presentation | 2027: Giro d'Italia"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -2824,12 +2852,6 @@
       "result": "Schreiner vs. Lamar college baseball game.",
       "title": "Schreiner vs. Lamar"
     },
-    "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T09:38:22.039503+00:00"
-    },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
       "kind": "event-description",
@@ -2895,6 +2917,12 @@
       "result": "CBS Sports HQ Set, Hut!, a sports show on Paramount+ scheduled for 28 October 2026 at 18:00 GMT.",
       "title": "cbssportshq: Set, Hut!"
     },
+    "f3b048293ac321c26209116f3733bf680a4c8c7ce8cefe17694c4e34d9b5f390": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+    },
     "f3e295ae8dacfbd8da4e9eb2f07100f8971f1d43451580069658927fdd989b83": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T03:31:18.914260+00:00",
@@ -2956,6 +2984,13 @@
       "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
       "title": "Crewe Alexandra FC vs Barnet FC"
     },
+    "fd612b3a7bf006fa5f2dfceeaeed57a66435e10ba3e612d0a71ee17d2f7a1d4c": {
+      "context": "DAZN UK event scheduled 03/11/2026 10:00 GMT",
+      "created_at": "2026-11-03T10:33:39.962557+00:00",
+      "kind": "event-description",
+      "result": "Premier League Round 11 match between Sumqayıt FK and İmişli PFK.",
+      "title": "Sumqayıt FK vs. İmişli PFK"
+    },
     "fd7ee8056112ef8ca8641fa114d80dd1ec86f0cb1f995e2da234ff7c8124a2ab": {
       "created_at": "2026-10-26T12:30:58.030809+00:00",
       "kind": "event-description",
@@ -2992,7 +3027,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T11:31:03.496416+00:00",
-    "groq": "2026-11-03T09:38:22.039503+00:00"
+    "groq": "2026-11-03T10:41:58.962517+00:00"
   },
   "version": 1
 }
