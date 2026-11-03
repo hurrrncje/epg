@@ -217,6 +217,12 @@
       "result": "UEFA Women’s Champions League match between Arsenal and Benfica, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 19:00 GMT.",
       "title": "UEFA Women's Champions League: Arsenal vs. Benfica"
     },
+    "18d39778df6b9d22bd8aef03a45cbce42bbd3c80600b96eae541e86558c29a9c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+    },
     "1a0441dc70a5752684928e36368a5a91af7492aecabd0cd887460846e0e7844f": {
       "created_at": "2026-10-26T19:21:40.738756+00:00",
       "kind": "live-title",
@@ -262,10 +268,11 @@
       "title": "Florida A&M vs. Florida State"
     },
     "1e36828b1457a799552a72a1ff6332c466c1f3d7baa0d97a058dc8b83b3ab845": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
+      "created_at": "2026-11-03T11:30:53.073515+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+      "result": "International Championship Round 4: Mark Williams vs. John Higgins – 03/11/2026 11:30 GMT",
+      "title": "International Championship | Round 4: Mark Williams - John Higgins"
     },
     "1e3caf10bc522072714f1fc543ce8800d229271e78c67897c0447b3120bb0d51": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -305,6 +312,12 @@
       "kind": "event-description",
       "result": "College basketball game: Florida International University vs. Temple University.",
       "title": "Florida International vs. Temple"
+    },
+    "2047a0e4fe9a3118d911e628f52deb43132eaa5f062a35b0250d0d211b238f56": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T11:31:03.496416+00:00"
     },
     "20a8f5d15430981dafce7b4579a11bcb7bebb1d27d82a78bc4a5d723b4b1f3ab": {
       "context": "DAZN UK event scheduled 01/11/2026 15:30 GMT",
@@ -630,7 +643,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+      "retry_after": "2026-11-03T11:31:03.496416+00:00"
     },
     "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1005,10 +1018,11 @@
       "title": "Mon, 11/2 - Futbol Americas"
     },
     "50794ede8c7d1e48ea99facbdd9795e03fd5d8f915bd21d65810e29228b92d77": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 11:55 GMT",
+      "created_at": "2026-11-03T11:30:53.073519+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+      "result": "Women Group Stage Dakar 2026: Iran vs. Cameroon – 03/11/2026 11:55 GMT",
+      "title": "Women | Group Stage | Dakar 2026: Iran - Cameroon"
     },
     "511b3690f2b7f3cf1935e4c2c73cac83cb4e8a224e37940e77a970891ee11649": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -2040,10 +2054,11 @@
       }
     },
     "abf529027d4ef9ac0da0e55f110af4c2e66ea079e6271028b1e2cb65e1ba26d3": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
+      "created_at": "2026-11-03T11:30:53.073512+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+      "result": "International Championship Round 4: Wang Xinbo vs. Marco Fu – 03/11/2026 11:30 GMT",
+      "title": "International Championship | Round 4: Wang Xinbo - Marco Fu"
     },
     "ac78aa13b21b532481b58aa2aa42a2c738ddc923dda4375173cb289dbbe23920": {
       "context": "Disney+ Events event scheduled 02/11/2026 15:30 GMT",
@@ -2460,6 +2475,13 @@
       "result": "Tauihi Basketball Aotearoa Round 6: Southern Hoiho vs. Tokomanawa Queens",
       "title": "Southern Hoiho vs. Tokomanawa Queens (Round 6)"
     },
+    "cce1ecbe771e82e67e28f35846c6ddb5342a360615ad4a7cdce9b1bb44ebef48": {
+      "context": "MAX UK event scheduled 03/11/2026 13:00 GMT",
+      "created_at": "2026-11-03T11:30:53.073523+00:00",
+      "kind": "event-description",
+      "result": "UEFA Youth League Group Stage: Manchester United U19 vs. Roma U19 – 03/11/2026 13:00 GMT",
+      "title": "UEFA Youth League: Manchester United U19 - Roma U19"
+    },
     "ce94b0bcce33854ad3970a356a4ca455a8a713c2455a99cb4f25429a850483d3": {
       "context": "MAX UK event scheduled 01/11/2026 02:30 GMT",
       "created_at": "2026-11-01T06:23:52.067233+00:00",
@@ -2817,6 +2839,12 @@
       "result": "Portland Pilots face Pacific Tigers in a men's college basketball game.",
       "title": "#12 Portland vs. Pacific"
     },
+    "e96677bfcbc6282bb2f49cafa962384ad8cd6e2a7c5d3bdcd78d27436cd845df": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T11:31:03.496416+00:00"
+    },
     "e98ced1e4d10275fdcb0778226f3981284d438f3aecdea271e4c65e730087e1f": {
       "context": "EFLDoncasterRovers.uk; Next Game: Milton Keynes Dons FC vs Doncaster Rovers FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-31T18:12:52.526252+00:00",
@@ -2851,6 +2879,12 @@
       "kind": "event-description",
       "result": "Schreiner vs. Lamar college baseball game.",
       "title": "Schreiner vs. Lamar"
+    },
+    "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T11:31:03.496416+00:00"
     },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
@@ -2918,10 +2952,11 @@
       "title": "cbssportshq: Set, Hut!"
     },
     "f3b048293ac321c26209116f3733bf680a4c8c7ce8cefe17694c4e34d9b5f390": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
+      "created_at": "2026-11-03T11:30:53.073505+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T10:41:58.962517+00:00"
+      "result": "International Championship Round 4: Stephen Maguire vs. Ding Junhui – 03/11/2026 11:30 GMT",
+      "title": "International Championship | Round 4: Stephen Maguire - Ding Junhui"
     },
     "f3e295ae8dacfbd8da4e9eb2f07100f8971f1d43451580069658927fdd989b83": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -3027,7 +3062,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T11:31:03.496416+00:00",
-    "groq": "2026-11-03T10:41:58.962517+00:00"
+    "groq": "2026-11-03T11:40:47.073483+00:00"
   },
   "version": 1
 }
