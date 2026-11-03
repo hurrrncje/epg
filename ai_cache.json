@@ -130,12 +130,6 @@
       "result": "K.C. Keeler weekly press conference for the University of Central Florida football program.",
       "title": "K.C. Keeler Weekly Press Conference"
     },
-    "0fb2d5b8705e2fa713ddb58647be77b84d30c10c58f984dcc778ba89e2685a19": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T00:24:56.691084+00:00"
-    },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
       "kind": "event-description",
@@ -217,6 +211,13 @@
       "kind": "event-description",
       "result": "Men's basketball game between Saint Mary's Gaels and Pacific Tigers scheduled for Oct 29 2026.",
       "title": "Saint Mary's vs. Pacific"
+    },
+    "1dd39e87cf6ff1cec568e45f6b9f62ec75dd0447acdfe333dda672baf000e021": {
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T01:44:47.524621+00:00",
+      "kind": "event-description",
+      "result": "Florida A&M vs. Florida State college baseball game.",
+      "title": "Florida A&M vs. Florida State"
     },
     "1e3caf10bc522072714f1fc543ce8800d229271e78c67897c0447b3120bb0d51": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -340,6 +341,12 @@
         "description": "NHL regular‑season game between the Minnesota Wild and the Vancouver Canucks, played on October 25, 2026.",
         "raw": "Wild @ Canucks"
       }
+    },
+    "2744ff202ca3e7e3e38c33d64a8b2492a9e3070ed75e14cbe6348c25bc38f5fe": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T01:53:41.524582+00:00"
     },
     "2866c7ff2830283b5de4c751d8eb886ee475094f2f5c606f42e1582d700afc9c": {
       "created_at": "2026-10-26T19:21:40.738747+00:00",
@@ -886,6 +893,12 @@
       "result": "NYC Marathon countdown event featuring a live countdown to the starting line, 3:30 pm GMT.",
       "title": "NYC Marathon: Countdown to the Starting Line"
     },
+    "507017db681b3700c38d3bdaba657ed4764faf391aa308646438e26b3be76c83": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T01:53:41.524582+00:00"
+    },
     "511b3690f2b7f3cf1935e4c2c73cac83cb4e8a224e37940e77a970891ee11649": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
       "created_at": "2026-11-01T21:19:10.371165+00:00",
@@ -899,6 +912,13 @@
       "kind": "event-description",
       "result": "Premier League match: Newcastle United vs Everton at St. James' Park, 2 November 2026, 20:00 GMT.",
       "title": "Newcastle Utd vs Everton"
+    },
+    "5359621773e3dfa90b50080a8bac624bfa8b766152e5317e36a42a19739d6b03": {
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T01:44:47.524615+00:00",
+      "kind": "event-description",
+      "result": "Alcorn State vs. Ole Miss college baseball game.",
+      "title": "Alcorn State vs. Ole Miss"
     },
     "546ad59c97359ccc424bcde17f05527f1032d948907c24fc038699f0cb4077a4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -1030,12 +1050,6 @@
       "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
-    "6012238330a7eab8690a7a9889668bd299c8330703850ff8dfab350881710716": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T00:24:56.691084+00:00"
-    },
     "60c502ca357d1a0e09eb624fffd93db668165da14408856159b0bac0d0f86dd4": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
       "created_at": "2026-11-02T23:19:21.822678+00:00",
@@ -1120,6 +1134,13 @@
       "result": "NCAA men’s basketball: Central Connecticut State Blue Devils face Temple Owls at John E. Worthen Arena, Feb 11 2026.",
       "title": "Central Connecticut vs. Temple"
     },
+    "6d641ccdfe20ba1a827e4167fe3bd15a1fc88be6c98e5bc2ec8da4af34d54dc9": {
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T01:44:47.524612+00:00",
+      "kind": "event-description",
+      "result": "Texas A&M‑Kingsville vs. UT Rio Grande Valley college basketball game.",
+      "title": "Texas A&M-Kingsville vs. UT Rio Grande Valley"
+    },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006251+00:00",
@@ -1168,6 +1189,13 @@
       "kind": "event-description",
       "result": "NFL game between the Philadelphia Eagles and the Washington Commanders.",
       "title": "Eagles @ Commanders (Spanish Broadcast)"
+    },
+    "7264440f2b08d711afceba388b6c536bf12f9367612985cf5cf9b1398c712aaa": {
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T01:44:47.524606+00:00",
+      "kind": "event-description",
+      "result": "Oral Roberts vs. Central Arkansas college baseball game.",
+      "title": "Oral Roberts vs. Central Arkansas"
     },
     "72beecea77a55c9dd3df1ad60fc38deeb7b394ab971d9a8adc253eb37ff75f93": {
       "context": "DAZN UK event scheduled 02/11/2026 19:45 GMT",
@@ -1378,12 +1406,6 @@
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
     },
-    "867967eb57d670d9b7ea3c6e8539e75b3c579e4986c292faf75cfec1a15c46f0": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T00:24:56.691084+00:00"
-    },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
       "kind": "live-title",
@@ -1415,12 +1437,6 @@
       "kind": "event-description",
       "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
       "title": "Race: Moto3 | Round 19 | Malaysia"
-    },
-    "8a162195f08a5bee9fe3c32f9f9a1b873037a5f62fbaec6f5dc1a83545480d94": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T00:24:56.691084+00:00"
     },
     "8b15dac58905ae85790173ae5594213eb129fae305cce25769535bd6fbb726ee": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
@@ -1498,6 +1514,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Calgary Flames vs. Colorado Avalanche at Ball Arena",
       "title": "Flames @ Avalanche"
+    },
+    "90ffc09633f9f2d971fb525f670bce7f3520cf6b47f21c8e1980a011c3b19021": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T01:53:41.524582+00:00"
     },
     "91728f8bb2ff85f62a3b7947f05546361a5e833a6a4e5805c880b304a1519199": {
       "context": "MLS fixture scheduled 02/11/2026 02:25 GMT",
@@ -1714,6 +1736,12 @@
       "kind": "event-description",
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
+    "a664cb868c53d5596724dc934d87869d23e598bfd25ab1c1256f5f0294deead5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T01:53:41.524582+00:00"
+    },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
       "created_at": "2026-11-02T06:42:29.061739+00:00",
@@ -1807,12 +1835,6 @@
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
     },
-    "b16486a288f402b68cc9d166dedaa7f57cf78d8155feda33f8cd316c3e385a7b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-03T00:24:56.691084+00:00"
-    },
     "b2808e741bf6f9a0aba78ffb40f624fad698631e4917321cfecd993d0b157d36": {
       "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
       "created_at": "2026-10-27T03:17:18.770326+00:00",
@@ -1880,6 +1902,12 @@
       "kind": "event-description",
       "result": "Florida Atlantic University football weekly press conference.",
       "title": "Florida Atlantic Weekly Press Conference"
+    },
+    "bad841194a61962d3deac9fc9ac926620f75ecc11e6d1495e90390ad08bca373": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T01:53:41.524582+00:00"
     },
     "bb99e3fac467cdfe3710fee6d72bde0688e73f48b9a9a511e2bf6ff39711e83d": {
       "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
@@ -2466,6 +2494,13 @@
       "result": "Disney+ event 'Memphis vs. Arkansas (Exhibition)' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Memphis vs. Arkansas (Exhibition)"
     },
+    "ee156506549482cd8755056617d4a564ed81c48a81fac3624b00f04591ee6192": {
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T01:44:47.524618+00:00",
+      "kind": "event-description",
+      "result": "Schreiner vs. Lamar college baseball game.",
+      "title": "Schreiner vs. Lamar"
+    },
     "eec2f1ad297f9d1596f0f69a6e4d869639e0ffef5a05e6a3adc7e9319d5adf86": {
       "created_at": "2026-10-26T12:30:58.030763+00:00",
       "kind": "event-description",
@@ -2607,7 +2642,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T05:18:58.949159+00:00",
-    "groq": "2026-11-03T00:24:56.691084+00:00"
+    "groq": "2026-11-03T01:53:41.524582+00:00"
   },
   "version": 1
 }
