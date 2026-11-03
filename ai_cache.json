@@ -112,6 +112,12 @@
       "result": "CBS Sports HQ Morning Boxscore, a sports recap show on Paramount+ scheduled for 28 October 2026 at 13:00 GMT.",
       "title": "cbssportshq: Morning Boxscore"
     },
+    "0b51bd4f21ef53a2e4db89534db6c0d91102d15e7db33b54e501feb23a829848": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+    },
     "0b5f2c528ef20576407380a1cfd09308c35f3cd62e0584e2cb1d25530ca681af": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061708+00:00",
@@ -300,7 +306,14 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+    },
+    "1f3c7489b4e8c18f453e4056678ca53faebde8edb4c09c02ed913df07e0a4109": {
+      "context": "MAX UK event scheduled 03/11/2026 17:40 GMT",
+      "created_at": "2026-11-03T17:08:47.066366+00:00",
+      "kind": "event-description",
+      "result": "UEFA Champions League multiview coverage of the league‑stage matches scheduled for 3 Nov 2026.",
+      "title": "UEFA Champions League | Tuesday: Multiview"
     },
     "1fc62bfb261279c82b543745e8586a572238840a7cb66ba4c13a99319c355514": {
       "created_at": "2026-10-28T00:12:37.428457+00:00",
@@ -522,7 +535,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
@@ -911,6 +924,12 @@
       "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
+    "473fe7ddfff46fb8a16b90cee6e79a4295c7186ae78c4693dec78d7b20dce31e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
+    },
     "478ff6638e059f84ce1672fd12f19112b38206da069cd14b30bc005133cd895e": {
       "created_at": "2026-10-26T19:21:40.738732+00:00",
       "kind": "live-title",
@@ -1232,6 +1251,13 @@
       "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
+    "608a44b9e1cacae0cfd25fdb3cc7b4fbf0ede9f3dc04c595d2d60e8cc8f28b7e": {
+      "context": "MAX UK event scheduled 03/11/2026 17:45 GMT",
+      "created_at": "2026-11-03T17:08:47.066370+00:00",
+      "kind": "event-description",
+      "result": "Galatasaray play VfB Stuttgart at Rams Park, Istanbul in the Champions League league‑phase on 3 Nov 2026.",
+      "title": "UEFA Champions League | League Phase: Galatasaray - VfB Stuttgart"
+    },
     "60c502ca357d1a0e09eb624fffd93db668165da14408856159b0bac0d0f86dd4": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
       "created_at": "2026-11-02T23:19:21.822678+00:00",
@@ -1435,7 +1461,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -1464,6 +1490,12 @@
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
+    },
+    "7772112305630bc1d92c2983a6ab64c6665b48e6d99f7b63e330586937edbb04": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1561,6 +1593,12 @@
       "kind": "event-description",
       "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
       "title": "Swindon Town FC vs Rotherham United FC"
+    },
+    "8121a00fa1464bee79f117c5ceea7e93ed92473cb7eb755d15eb8d74d19d1a29": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "815003016c15ff9bb60a56af95cf0aefac2f75d7b793907ed151fac3ef38a6a5": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:15 GMT",
@@ -2268,6 +2306,13 @@
       "result": "World Snooker Tour match between Fan Zhengyi and Liam Davies.",
       "title": "International Championship | Round 4: Fan Zhengyi - Liam Davies"
     },
+    "bb6b9837069e25fb44ede207a40b6b255b5abb17446f3453382a8a99857056ce": {
+      "context": "DAZN UK event scheduled 03/11/2026 17:30 GMT",
+      "created_at": "2026-11-03T17:08:47.066360+00:00",
+      "kind": "event-description",
+      "result": "Salon Vilpas hosts Windrose Giants Antwerp in a Basketball Champions League regular‑season match at Kupittaa Hall, Turku.",
+      "title": "Salon Vilpas vs. Windrose Giants Antwerp"
+    },
     "bb99e3fac467cdfe3710fee6d72bde0688e73f48b9a9a511e2bf6ff39711e83d": {
       "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
       "created_at": "2026-11-02T16:40:59.690098+00:00",
@@ -2286,7 +2331,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
       "created_at": "2026-10-28T00:12:37.428449+00:00",
@@ -2599,6 +2644,13 @@
       "kind": "event-description",
       "result": "CBS Sports HQ airs its Primetime Pregame LIVE segment.",
       "title": "cbssportshq: Primetime Pregame LIVE"
+    },
+    "d07a12190350c4ff9245048b5b11bc712f5069a85b52842cf1025ef3c9ea31d6": {
+      "context": "Disney+ Events event scheduled 03/11/2026 17:50 GMT",
+      "created_at": "2026-11-03T17:08:47.066378+00:00",
+      "kind": "event-description",
+      "result": "CD Anaitasuna face Deportivo Alavés in the first round of the Copa del Rey at Campo Txerloia on 3 Nov 2026.",
+      "title": "CD Anaitasuna vs. D. Alaves (Round 1) (Copa del Rey)"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -3047,7 +3099,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "event-description",
-      "retry_after": "2026-11-03T16:41:52.541143+00:00"
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "f3108ddf51761fd3a8e0a6af6ad0eeafb244b46bf05be45d1c6b1feb626f3e3e": {
       "context": "Paramount+ event scheduled 28/10/2026 18:00 GMT",
@@ -3069,6 +3121,12 @@
       "kind": "event-description",
       "result": "College basketball game between George Fox and Idaho.",
       "title": "George Fox vs. Idaho"
+    },
+    "f528020f91a19f81c8671b779bafecc0f9ce36194f272842728eb05f0cee21d1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T17:18:52.066290+00:00"
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -3102,6 +3160,13 @@
       "kind": "event-description",
       "result": "Como vs Venezia in Italian Serie A.",
       "title": "Serie A: Como vs. Venezia"
+    },
+    "f91c719994fcd6d1747697865cc3e5ced5bb1a5de4957535240915a2caff3506": {
+      "context": "MAX UK event scheduled 03/11/2026 17:45 GMT",
+      "created_at": "2026-11-03T17:08:47.066374+00:00",
+      "kind": "event-description",
+      "result": "Shakhtar Donetsk host Sporting CP at Stamford Bridge for a Champions League league‑stage match on 3 Nov 2026.",
+      "title": "UEFA Champions League | League Phase: Shakhtar Donetsk - Sporting CP"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
@@ -3167,7 +3232,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T18:30:46.011302+00:00",
-    "groq": "2026-11-03T16:41:52.541143+00:00"
+    "groq": "2026-11-03T17:18:52.066290+00:00"
   },
   "version": 1
 }
