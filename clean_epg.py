@@ -210,7 +210,10 @@ def _event_number_and_suffix(display_name: str) -> tuple[str, str] | None:
 
 def _is_no_event_title(title: str) -> bool:
     cleaned = _clean_live_event_title(title).strip(" []-:–—").casefold()
-    return cleaned in {"", "no event", "no match", "no game", "no event today"}
+    return not cleaned or bool(re.fullmatch(
+        r"no\s+(?:live\s+)?(?:events?|matches?|games?)(?:\s+(?:today|scheduled|available))?",
+        cleaned, re.I,
+    ))
 
 
 def _clean_programme_date_labels(title: str) -> str:
@@ -1100,9 +1103,11 @@ def _parse_dazn_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
         "channel_name": f"DAZN UK {number:02d}",
         "title": "",
         "start_utc": None,
+        "no_event": False,
     }
     details = channel_match.group("details").strip()
-    if not details or details.casefold() in {"no event", "no match", "no game"}:
+    if _is_no_event_title(details):
+        result["no_event"] = True
         return result
 
     fixture = DAZN_FIXTURE_PATTERN.match(details)
@@ -1147,7 +1152,11 @@ def _parse_paramount_dynamic_label(label: str, today: Any) -> dict[str, Any] | N
         "channel_name": f"Paramount+ {number:02d}",
         "title": "",
         "start_utc": None,
+        "no_event": False,
     }
+    if _is_no_event_title(details):
+        result["no_event"] = True
+        return result
     fixture = PARAMOUNT_FIXTURE_PATTERN.match(details)
     if not fixture:
         return result
@@ -1671,6 +1680,8 @@ def process_epg() -> None:
                 core, suffix = parsed_name
                 permanent_title = "UFC Special Feed" if core == "LIVE EVENT 01" else ""
                 no_event = _is_no_event_title(suffix)
+                if suffix and no_event:
+                    permanent_title = ""
                 event_title = permanent_title or next(
                     (name for name in display_names
                      if not _event_number_and_suffix(name)
@@ -1712,6 +1723,13 @@ def process_epg() -> None:
         for ch_id, counts in mirrored_title_counts.items()
         if counts
     }
+    # An explicit empty-event alias is sufficient even when the provider has
+    # omitted programme rows entirely. Only reviewed event channels qualify.
+    for ch_id in event_mirror_ids:
+        for name in display_names_by_id.get(ch_id, []):
+            if _is_no_event_title(_clean_mirrored_event_title(name)):
+                mirrored_titles.setdefault(ch_id, name)
+                break
 
     epl_today = datetime.now(LONDON).date()
     mls_today = datetime.now(EASTERN).date()
@@ -2058,7 +2076,7 @@ def process_epg() -> None:
     # Normalize DAZN UK 01–100 names and replace their provider placeholders.
     dazn_replace_ids = {
         ch_id for ch_id, item in dazn_targets.items()
-        if item["title"] and item["start_utc"] is not None
+        if (item["title"] and item["start_utc"] is not None) or item.get("no_event")
     }
     programmes_to_remove = [
         programme
@@ -2071,6 +2089,9 @@ def process_epg() -> None:
     for ch_id, item in dazn_targets.items():
         raw_title = item["title"]
         start_utc = item["start_utc"]
+        if item.get("no_event"):
+            add_all_day_notice(ch_id, "No event today")
+            continue
         if not raw_title or start_utc is None:
             print(f"No scheduled listing for {item['channel_name']} (no event or unparsed label).")
             continue
@@ -2187,7 +2208,7 @@ def process_epg() -> None:
                 display_el.text = item["channel_name"]
     paramount_replace_ids = {
         ch_id for ch_id, item in paramount_targets.items()
-        if item["title"] and item["start_utc"] is not None
+        if (item["title"] and item["start_utc"] is not None) or item.get("no_event")
     }
     programmes_to_remove = [
         programme
@@ -2200,6 +2221,9 @@ def process_epg() -> None:
     for ch_id, item in paramount_targets.items():
         title = item["title"]
         start_utc = item["start_utc"]
+        if item.get("no_event"):
+            add_all_day_notice(ch_id, "No event today")
+            continue
         if not title or start_utc is None:
             print(f"No fixture listing for {item['channel_name']} (empty or unparsed label).")
             continue
@@ -2243,7 +2267,7 @@ def process_epg() -> None:
     sports_event_replace_ids = {
         ch_id for ch_id, item in sports_event_targets.items()
         if (item["title"] and item["start_utc"] is not None)
-        or (item.get("provider") == "ESPN+" and item.get("no_event"))
+        or item.get("no_event")
     }
     programmes_to_remove = [
         programme
@@ -2257,7 +2281,7 @@ def process_epg() -> None:
         title = item["title"]
         start_utc = item["start_utc"]
         if not title or start_utc is None:
-            if item.get("provider") == "ESPN+" and item.get("no_event"):
+            if item.get("no_event"):
                 add_all_day_notice(ch_id, "No event today")
                 continue
             print(
@@ -2347,7 +2371,7 @@ def process_epg() -> None:
 
     for ch_id, raw_title in mirrored_event_targets.items():
         title = _clean_mirrored_event_title(raw_title)
-        no_event = bool(re.search(r"\b(?:NO\s+EVENT|NO\s+MATCH|NO\s+GAME)\b", raw_title, re.I))
+        no_event = _is_no_event_title(title)
         start_utc = _parse_mirrored_start(raw_title, mirror_today)
         if no_event:
             add_mirror_notice(ch_id, "No event today")
@@ -2504,6 +2528,7 @@ def process_epg() -> None:
 
 if __name__ == "__main__":
     process_epg()
+
 
 
 

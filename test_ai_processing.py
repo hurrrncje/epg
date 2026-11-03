@@ -207,7 +207,7 @@ class AIProcessingTests(unittest.TestCase):
         prompt = self.client.models.generate_content.call_args.kwargs['contents']
         self.assertIn('without a description', prompt)
         xml = gzip.decompress((folder / 'guide.gz').read_bytes()).decode()
-        self.assertIn('Coverage of A against B.', xml)
+        self.assertIn('Coverage of A against B', xml)
         self.assertNotIn('Invented AI description', xml)
 
     def test_sky_sports_plus_london_time_handles_summer_and_winter(self):
@@ -506,6 +506,65 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(retained.get('stop'), '20261103180000 +0000')
         self.requests.post.assert_not_called()
 
+    def test_all_general_event_groups_replace_empty_provider_rows(self):
+        ET = self.ns['ET']
+        labels = [
+            'DAZN UK 30: NO EVENT', 'DAZN UK 31: ',
+            'Paramount+ 30: NO EVENT TODAY', 'Paramount+ 31: ',
+            'Disney+ Events 30: NO EVENTS SCHEDULED', 'Disney+ Events 31: ',
+            'ESPN+ 30: NO EVENT', 'ESPN+ 31: ',
+            'MAX UK 30: NO GAME', 'MAX UK 31: ',
+            'LIVE EVENT 01 - NO EVENT', '[PPV EVENT 37] - NO EVENT',
+            'General Feed 01: NO EVENTS SCHEDULED',
+            'General Feed 02: NO EVENT',
+        ]
+        folder = self.prepare_process(labels)
+        (folder / 'events.txt').write_text('c12\nc13\n')
+        root = ET.fromstring(self.requests.get.return_value.content)
+        for i, label in enumerate(labels[:-1]):
+            for hour in (18, 20):
+                row = ET.SubElement(root, 'programme', channel=f'c{i}',
+                    start=f'20261103{hour:02d}0000 +0000', stop=f'20261103{hour+2:02d}0000 +0000')
+                ET.SubElement(row, 'title').text = label
+        self.requests.get.return_value.content = ET.tostring(root)
+        dt, utc = self.ns['datetime'], self.ns['UTC']
+        class FrozenDatetime(dt):
+            @classmethod
+            def now(cls, tz=None):
+                value = cls(2026, 11, 3, 19, tzinfo=utc)
+                return value.astimezone(tz) if tz else value.replace(tzinfo=None)
+        with patch.dict(self.ns, {'datetime': FrozenDatetime}), patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for i in range(len(labels)):
+            with self.subTest(channel=labels[i]):
+                rows = result.findall(f"programme[@channel='c{i}']")
+                self.assertEqual(len(rows), 1)
+                self.assertEqual(rows[0].findtext('title'), 'No event today')
+                self.assertEqual(rows[0].findtext('desc'), 'No event today')
+                self.assertEqual(rows[0].get('start'), '20261103000000 +0000')
+                self.assertEqual(rows[0].get('stop'), '20261104000000 +0000')
+        self.requests.post.assert_not_called()
+        self.client.models.generate_content.assert_not_called()
+
+    def test_unparsed_event_is_not_mistaken_for_empty_schedule(self):
+        ET = self.ns['ET']
+        labels = ['DAZN UK 30: Tennis special (time TBC)',
+                  'Paramount+ 30: Tennis special (time TBC)',
+                  'Disney+ Events 30: Tennis special (time TBC)',
+                  'MAX UK 30: Tennis special (time TBC)']
+        folder = self.prepare_process(labels)
+        root = ET.fromstring(self.requests.get.return_value.content)
+        for i in range(len(labels)):
+            row = ET.SubElement(root, 'programme', channel=f'c{i}', start='20261103180000 +0000', stop='20261103200000 +0000')
+            ET.SubElement(row, 'title').text = 'Provider tennis coverage'
+        self.requests.get.return_value.content = ET.tostring(root)
+        with patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for i in range(len(labels)):
+            self.assertEqual(result.find(f"programme[@channel='c{i}']/title").text, 'Provider tennis coverage')
+
     def test_migration_keeps_success_and_removes_blanket_failures(self):
         now = self.ns['datetime'].now(self.ns['UTC'])
         cache = {'entries': {'success': {'result': 'Keep me', 'created_at': now.isoformat()},
@@ -516,6 +575,7 @@ class AIProcessingTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 
 
