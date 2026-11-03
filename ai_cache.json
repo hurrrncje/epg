@@ -91,6 +91,13 @@
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks, broadcast by the Senators.",
       "title": "Ottawa Senators vs. Anaheim Ducks (Senators Broadcast)"
     },
+    "0b90f4430d06a1b754d2ea765346a1fb218637114f0ef1d52a922382d1d2e216": {
+      "context": "DAZN UK event scheduled 03/11/2026 00:00 GMT",
+      "created_at": "2026-11-03T00:14:13.691107+00:00",
+      "kind": "event-description",
+      "result": "Detroit Red Wings host the Florida Panthers in an NHL regular‑season game.",
+      "title": "Red Wings @ Panthers"
+    },
     "0ba95f0c6038f88b161a1fd8465beeeef87546ad8a66cd8386dd8becaac12d32": {
       "created_at": "2026-10-26T19:21:40.738724+00:00",
       "kind": "live-title",
@@ -122,6 +129,12 @@
       "kind": "event-description",
       "result": "K.C. Keeler weekly press conference for the University of Central Florida football program.",
       "title": "K.C. Keeler Weekly Press Conference"
+    },
+    "0fb2d5b8705e2fa713ddb58647be77b84d30c10c58f984dcc778ba89e2685a19": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T00:24:56.691084+00:00"
     },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
@@ -680,12 +693,6 @@
         "raw": "Canadiens @ Blues"
       }
     },
-    "42b5fb86a14250eefaa86e6c7abff2414a28bc9aee76e764ca90a8d678b3945a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T23:28:58.822633+00:00"
-    },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
       "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006271+00:00",
@@ -699,12 +706,6 @@
       "kind": "event-description",
       "result": "USL Championship quarterfinal: Charlotte Independence vs. FC Naples.",
       "title": "Charlotte Independence vs. FC Naples (Quarterfinal)"
-    },
-    "44532a89edae098cdb68433065ea970337bee431f82ef9d9c38919652dfc24b3": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T23:28:58.822633+00:00"
     },
     "449ab7a579f3e1bbd756553ca52247120c10c6668d243dc8c99e10e6e1a7b5ff": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -857,6 +858,13 @@
       "result": "Utah Valley Wolverines host Cal State Bakersfield Roadrunners in a women's college basketball game.",
       "title": "Utah Valley vs. Cal State Bakersfield"
     },
+    "4d37a870c2316a7ebd39676c9a8419dbb9a6a00f6106513855e67467fec5eee1": {
+      "context": "Disney+ Events event scheduled 03/11/2026 00:00 GMT",
+      "created_at": "2026-11-03T00:14:13.691123+00:00",
+      "kind": "event-description",
+      "result": "Rivier Raiders play the UMass Lowell River Hawks in a men’s college basketball game.",
+      "title": "Rivier vs. UMass Lowell"
+    },
     "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T06:23:52.067240+00:00",
@@ -928,6 +936,13 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 8B | Day 3: Afternoon Session"
       }
+    },
+    "581c62e1cf18f15c13e49d413f0bb1b210b301bd4f9d5af1032355a9500166b4": {
+      "context": "Disney+ Events event scheduled 03/11/2026 00:00 GMT",
+      "created_at": "2026-11-03T00:14:13.691126+00:00",
+      "kind": "event-description",
+      "result": "Presbyterian Blue Hose host the St. Thomas (MN) Tommies in an NCAA men’s basketball contest.",
+      "title": "St. Thomas (MN) vs. Presbyterian"
     },
     "58be4ffa91b48a8b412ee122603ab45c299f78272077d72bd741f9fd5a7e4529": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1014,6 +1029,12 @@
       "kind": "event-description",
       "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
       "title": "Oldham Athletic AFC vs Crawley Town FC"
+    },
+    "6012238330a7eab8690a7a9889668bd299c8330703850ff8dfab350881710716": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T00:24:56.691084+00:00"
     },
     "60c502ca357d1a0e09eb624fffd93db668165da14408856159b0bac0d0f86dd4": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
@@ -1357,6 +1378,12 @@
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
     },
+    "867967eb57d670d9b7ea3c6e8539e75b3c579e4986c292faf75cfec1a15c46f0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T00:24:56.691084+00:00"
+    },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
       "kind": "live-title",
@@ -1388,6 +1415,12 @@
       "kind": "event-description",
       "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
       "title": "Race: Moto3 | Round 19 | Malaysia"
+    },
+    "8a162195f08a5bee9fe3c32f9f9a1b873037a5f62fbaec6f5dc1a83545480d94": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T00:24:56.691084+00:00"
     },
     "8b15dac58905ae85790173ae5594213eb129fae305cce25769535bd6fbb726ee": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
@@ -1774,6 +1807,12 @@
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
     },
+    "b16486a288f402b68cc9d166dedaa7f57cf78d8155feda33f8cd316c3e385a7b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T00:24:56.691084+00:00"
+    },
     "b2808e741bf6f9a0aba78ffb40f624fad698631e4917321cfecd993d0b157d36": {
       "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
       "created_at": "2026-10-27T03:17:18.770326+00:00",
@@ -1801,12 +1840,6 @@
       "kind": "event-description",
       "result": "Texas State Bobcats play No. 20 Boise State Broncos in an NCAA college football matchup.",
       "title": "Texas State vs. #20 Boise State"
-    },
-    "b73cf25fa1f33b75d47d8de1156030275024d8459c39bf7fa18ac89cff56e204": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T23:28:58.822633+00:00"
     },
     "b7d59dc94f52d5d4ea10d37ac9caa2b0c055d595ed23158d08b9dbd538ed8ca3": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -2090,18 +2123,19 @@
       "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
       "title": "Colchester United FC vs Walsall FC"
     },
-    "cf18278503367e6000980b5a5ba9c7be12c5b9ed2466ecebe02d043b2aacc3c9": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T23:28:58.822633+00:00"
-    },
     "cf73f4924c2102c63f6613b7b31770345c9b8f4632582cc087f853df096f5345": {
       "context": "ESPN+ event scheduled 02/11/2026 21:30 GMT",
       "created_at": "2026-11-02T21:24:45.985784+00:00",
       "kind": "event-description",
       "result": "Morgan Scalley announces upcoming season plans in a press conference.",
       "title": "Morgan Scalley Press Conference"
+    },
+    "d03b8f92fdf269d8abf9959f0e189b986525faff76438ce528ec7ff5d77b72c4": {
+      "context": "Paramount+ event scheduled 03/11/2026 00:00 GMT",
+      "created_at": "2026-11-03T00:14:13.691119+00:00",
+      "kind": "event-description",
+      "result": "CBS Sports HQ airs its Primetime Pregame LIVE segment.",
+      "title": "cbssportshq: Primetime Pregame LIVE"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -2469,6 +2503,13 @@
         "raw": "Kings @ Blackhawks"
       }
     },
+    "f0f645fa8d6fb893ac9428cdb951c328daa8c4c5fb84650853d1d9ccbdecf652": {
+      "context": "DAZN UK event scheduled 03/11/2026 00:00 GMT",
+      "created_at": "2026-11-03T00:14:13.691115+00:00",
+      "kind": "event-description",
+      "result": "Iowa State Cyclones visit the Memphis Tigers for an NCAA men’s basketball matchup.",
+      "title": "Memphis vs. Iowa State"
+    },
     "f1e4ec933fb7648f8a8ed573e91329fe9b047ee670a05913a6db3ee74b6b365b": {
       "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770305+00:00",
@@ -2501,12 +2542,6 @@
       "kind": "event-description",
       "result": "MLB World Series Game 5: Milwaukee Brewers vs Tampa Bay Rays scheduled for Oct 29 2026.",
       "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
-    },
-    "f8d7abb003919bed43c49977f783127caa4cc365cf5366970c1f7f86722d7ed6": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "event-description",
-      "retry_after": "2026-11-02T23:28:58.822633+00:00"
     },
     "f8d814f120901a0f9225fc98838a2447b460c88260ee389411089f15ff723bb2": {
       "context": "Paramount+ event scheduled 01/11/2026 12:20 GMT",
@@ -2572,7 +2607,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-03T05:18:58.949159+00:00",
-    "groq": "2026-11-02T23:28:58.822633+00:00"
+    "groq": "2026-11-03T00:24:56.691084+00:00"
   },
   "version": 1
 }
