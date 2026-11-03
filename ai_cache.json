@@ -399,10 +399,11 @@
       }
     },
     "2744ff202ca3e7e3e38c33d64a8b2492a9e3070ed75e14cbe6348c25bc38f5fe": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T05:31:42.941194+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+      "result": "NHL regular‑season match between the Calgary Flames and the San Jose Sharks.",
+      "title": "Calgary Flames vs. San Jose Sharks"
     },
     "2866c7ff2830283b5de4c751d8eb886ee475094f2f5c606f42e1582d700afc9c": {
       "created_at": "2026-10-26T19:21:40.738747+00:00",
@@ -971,10 +972,11 @@
       "title": "NYC Marathon: Countdown to the Starting Line"
     },
     "507017db681b3700c38d3bdaba657ed4764faf391aa308646438e26b3be76c83": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "ESPN+ event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T05:31:42.941201+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+      "result": "Live broadcast of the second episode of the Spanish‑language series “Futbol Americas.”",
+      "title": "Mon, 11/2 - Futbol Americas"
     },
     "511b3690f2b7f3cf1935e4c2c73cac83cb4e8a224e37940e77a970891ee11649": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -996,6 +998,12 @@
       "kind": "event-description",
       "result": "Alcorn State vs. Ole Miss college baseball game.",
       "title": "Alcorn State vs. Ole Miss"
+    },
+    "54576623fdc26f8f1d61224beb498cee650b1df77b5c431aa5ab1a532a9dd3b0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T05:39:31.941171+00:00"
     },
     "546ad59c97359ccc424bcde17f05527f1032d948907c24fc038699f0cb4077a4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -1061,6 +1069,12 @@
       "kind": "event-description",
       "result": "College football game Virginia Tech Hokies vs Clemson Tigers scheduled for Oct 29 2026.",
       "title": "Virginia Tech vs. Clemson"
+    },
+    "5a5a17a78e4f55c644801e44b53dc6af39a62365eb89f817566012241b30945a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T05:39:31.941171+00:00"
     },
     "5b690e651162f883f83381733d3dbf47869cf9cb10f5a844ac521b022d29d1e7": {
       "context": "Paramount+ event scheduled 02/11/2026 21:00 GMT",
@@ -1187,6 +1201,12 @@
       "kind": "event-description",
       "result": "Lamar University competes against Houston Christian University in a college football game streamed on Disney+ Events.",
       "title": "Lamar vs. Houston Christian"
+    },
+    "68357972cdca664c458aac52c276f5ca6bdd8c0595118d841e000db1b4d341f1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T05:39:31.941171+00:00"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -1737,10 +1757,11 @@
       "title": "Serie A: Venezia vs. Inter"
     },
     "9a775bbf219fb801ff94956fcf439962766c357f901b7fbd902277860c47848c": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "DAZN UK event scheduled 03/11/2026 01:15 GMT",
+      "created_at": "2026-11-03T05:31:42.941205+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+      "result": "NFL regular‑season game featuring the Chicago Bears against the Seattle Seahawks, shown in Spanish on DAZN UK.",
+      "title": "Bears @ Seahawks (Spanish Broadcast)"
     },
     "9ba945eef9db9718a92ffd8c7a346cfd92444e573aaba0a83faec627d31d4831": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -1884,10 +1905,11 @@
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
     "a664cb868c53d5596724dc934d87869d23e598bfd25ab1c1256f5f0294deead5": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T05:31:42.941198+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+      "result": "Same NHL game as e1, but broadcast on the Sharks’ channel.",
+      "title": "Calgary Flames vs. San Jose Sharks (Sharks Broadcast)"
     },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
@@ -2010,6 +2032,12 @@
       "result": "Disney+ event 'UAB vs. Missouri State' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "UAB vs. Missouri State"
     },
+    "b4d7051e890819abf7e4e575a909b5aa46d13352228251e982291ac6e9df2c19": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T05:39:31.941171+00:00"
+    },
     "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
       "created_at": "2026-11-03T04:31:24.766739+00:00",
@@ -2065,10 +2093,11 @@
       "title": "Florida Atlantic Weekly Press Conference"
     },
     "bad841194a61962d3deac9fc9ac926620f75ecc11e6d1495e90390ad08bca373": {
-      "failed": true,
-      "failure_policy": 2,
+      "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
+      "created_at": "2026-11-03T05:31:42.941188+00:00",
       "kind": "event-description",
-      "retry_after": "2026-11-03T04:40:35.766680+00:00"
+      "result": "College basketball game between Southwestern Christian University and the University of North Texas.",
+      "title": "Southwestern Christian vs. North Texas"
     },
     "bb99e3fac467cdfe3710fee6d72bde0688e73f48b9a9a511e2bf6ff39711e83d": {
       "context": "Disney+ Events event scheduled 02/11/2026 16:30 GMT",
@@ -2285,6 +2314,12 @@
       "kind": "event-description",
       "result": "Women's college basketball: North American Stallions vs. Nicholls State Colonels.",
       "title": "North American vs. Nicholls"
+    },
+    "c93b9253d00e24aeb34edce786621d5a61c17e8dc60edd6ef7fcacd79cd0d012": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "event-description",
+      "retry_after": "2026-11-03T05:39:31.941171+00:00"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -2851,8 +2886,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-03T05:18:58.949159+00:00",
-    "groq": "2026-11-03T04:40:35.766680+00:00"
+    "gemini": "2026-11-03T11:31:03.496416+00:00",
+    "groq": "2026-11-03T05:39:31.941171+00:00"
   },
   "version": 1
 }
