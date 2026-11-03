@@ -53,7 +53,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
@@ -84,10 +84,13 @@
       "title": "Idaho vs. Portland State"
     },
     "07f3b67f582802fc344c38662a2a902049e89e3580e187843d4c7180602330d7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345686+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "Ducks vs. Canucks",
+        "description": "Coverage of Ducks against Canucks.",
+        "raw": "Ducks @ Canucks"
+      }
     },
     "08ab0d32bedc92ca1a8f891dffbf0953de3118644f615fa6c0018f084ab752ed": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
@@ -100,7 +103,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -448,7 +451,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "253642a0155a1d1a5ce417c30a73330271972de3d9ea5e526826b3add6cb2f98": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -504,10 +507,13 @@
       "title": "Calgary Flames vs. San Jose Sharks"
     },
     "275d7f95062d0ae51a6622f4781b85e14d3c504313abbde49ea8ab3b4e8c1294": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345691+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "FC Schaan II vs. FC Vaduz",
+        "description": "Coverage of FC Schaan II against FC Vaduz.",
+        "raw": "FC Schaan II vs. FC Vaduz"
+      }
     },
     "27e722ae63398f218e60a116ea2fef31276712d40608786d28ea2e5c07e05669": {
       "created_at": "2026-11-03T17:53:06.054622+00:00",
@@ -577,10 +583,13 @@
       "title": "FC Thun vs Heart of Midlothian"
     },
     "29e743183ad0ca94831f33cd6666439cf52cdf4259788de4e22b7d72e027a2b2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345663+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "Avalanche vs. Blue Jackets",
+        "description": "Coverage of Avalanche against Blue Jackets.",
+        "raw": "Avalanche @ Blue Jackets"
+      }
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -669,7 +678,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -714,7 +723,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -1126,10 +1135,13 @@
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
     "4f32c7f2f8bce07defb10a442a61136efa88a89f5623d12bb95eca4aa55c91f9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345692+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "Golden Knights vs. Penguins",
+        "description": "Coverage of Golden Knights against Penguins.",
+        "raw": "Golden Knights @ Penguins"
+      }
     },
     "4fd7a0684ab2cedf460919c7b33ae3577206867f85275e40842378fd1f7efdf8": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:30 GMT",
@@ -1299,10 +1311,13 @@
       }
     },
     "5c75e9481f7475db7beb06bac6500a826f691c15dfa6b0a0906deb5ba3b30f40": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345699+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "Jets vs. Canadiens",
+        "description": "Coverage of Jets against Canadiens.",
+        "raw": "Jets @ Canadiens"
+      }
     },
     "5d9a2b0b69511c104a4e7e1efa5b38b0c8ca7c34749544af294ede2afe82c5b8": {
       "created_at": "2026-10-26T12:30:58.030780+00:00",
@@ -1374,7 +1389,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
       "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
@@ -1508,7 +1523,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
@@ -1577,10 +1592,13 @@
       "title": "Dundee United vs Heart of Midlothian"
     },
     "75545b474e1e59e9f830f3286c7451802ff9e54a6bbec49df44a1e51226d9016": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345694+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "HYPE Italy: Covington vs. Rosas",
+        "description": "Coverage of HYPE Italy: Covington against Rosas.",
+        "raw": "HYPE Italy: Covington vs. Rosas"
+      }
     },
     "7602144183d6ba2bc27e7d7f35ab68f058c2425bb6d0cafa1482c271fdb2aea8": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2199,10 +2217,13 @@
       "title": "Calgary Flames vs. San Jose Sharks (Sharks Broadcast)"
     },
     "a675dc81bb32a02f51c4488331eb04a22fc6bb0a0f4cdcac8041172e551c92e3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345680+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "BC Juventus Utena vs. BK KVIS Pardubice",
+        "description": "Coverage of BC Juventus Utena against BK KVIS Pardubice.",
+        "raw": "BC Juventus Utena vs. BK KVIS Pardubice"
+      }
     },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
@@ -2222,7 +2243,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2339,10 +2360,13 @@
       "title": "Wigan Athletic vs Bromley FC"
     },
     "b36fc770f7f0a8d20ae0bd24baa6ec2e82f50e9740a746cac4121e104d3dfd81": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345688+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "FC Porto vs. Asisa Joventut",
+        "description": "Coverage of FC Porto against Asisa Joventut.",
+        "raw": "FC Porto vs. Asisa Joventut"
+      }
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2860,7 +2884,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -3167,10 +3191,13 @@
       "title": "Schreiner vs. Lamar"
     },
     "ee1adbe35aa03fc716c48e2b38c739b16870216911d0aa490426781661dea351": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345683+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "Cholet vs. Paris",
+        "description": "Coverage of Cholet against Paris.",
+        "raw": "Cholet vs. Paris"
+      }
     },
     "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
       "context": "Disney+ Events event scheduled 03/11/2026 15:00 GMT",
@@ -3224,10 +3251,13 @@
       "title": "Memphis vs. Iowa State"
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-03T18:24:18.345696+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:40.913611+00:00"
+      "result": {
+        "clean_title": "Hurricanes vs. Predators",
+        "description": "Coverage of Hurricanes against Predators.",
+        "raw": "Hurricanes @ Predators"
+      }
     },
     "f1e4ec933fb7648f8a8ed573e91329fe9b047ee670a05913a6db3ee74b6b365b": {
       "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
@@ -3315,7 +3345,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-03T18:07:41.688625+00:00"
+      "retry_after": "2026-11-03T18:30:46.011302+00:00"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
@@ -3380,7 +3410,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-03T18:30:46.011302+00:00"
+    "gemini": "2026-11-03T18:30:46.011302+00:00",
+    "groq": "2026-11-03T18:33:53.452309+00:00"
   },
   "version": 1
 }
