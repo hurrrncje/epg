@@ -233,10 +233,13 @@
       "title": "cbssportshq: What 2 Watch"
     },
     "11f72d7d15b4686ee5ea92f35c776c67cdfd2319847bf51b7d64b0d839072814": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992646+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 2, Draw 8",
+        "description": "Coverage of Medicine Hat, AB - Day 2, Draw 8.",
+        "raw": "Medicine Hat, AB - Day 2, Draw 8"
+      }
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
       "context": "DAZN UK event scheduled 02/11/2026 18:30 GMT",
@@ -418,10 +421,13 @@
       "result": "#15 Stanford vs. #23 North Carolina."
     },
     "228644c5c5b57b04a1f240468245e712c2dac61206b1540a2b2e138498908af2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992679+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Telekom Baskets Bonn vs. Bnei Penlink Herzliya",
+        "description": "Coverage of Telekom Baskets Bonn against Bnei Penlink Herzliya.",
+        "raw": "Telekom Baskets Bonn vs. Bnei Penlink Herzliya"
+      }
     },
     "22b2b3e8e917209262b0b8b6e577d1b57f6ca35dd415365cb078dd542aaba2d6": {
       "created_at": "2026-10-26T19:21:40.738728+00:00",
@@ -1524,10 +1530,13 @@
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
     },
     "66fc2319dba418f740d37e5b76d25169903cdd92d9a003287dc62a53a46d7595": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992671+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Rukinzo vs. Inter Star",
+        "description": "Coverage of Rukinzo against Inter Star.",
+        "raw": "Rukinzo vs. Inter Star"
+      }
     },
     "671b527f5879ba640c6e3a87f17d7d5cf7bc611cd4a5114ba49c65681590e25c": {
       "context": "ESPN+ event scheduled 03/11/2026 16:30 GMT",
@@ -2104,10 +2113,13 @@
       "title": "LaGrange vs. Jacksonville State"
     },
     "91096fa487e5b0ae56a2efb26c5f0f4ce478be962c759d3fc3bcf7ce9e31b923": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992669+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Panthere Noir vs. Vital'O",
+        "description": "Coverage of Panthere Noir against Vital'O.",
+        "raw": "Panthere Noir vs. Vital'O"
+      }
     },
     "91728f8bb2ff85f62a3b7947f05546361a5e833a6a4e5805c880b304a1519199": {
       "context": "MLS fixture scheduled 02/11/2026 02:25 GMT",
@@ -2311,10 +2323,13 @@
       "title": "cbssportshq: Scoreboard Final"
     },
     "a06025cb51c1c098ffc4088d372715dacfd9dd7b365928c9cacf1776f786afdb": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992676+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Sharks vs. Kings",
+        "description": "Coverage of Sharks against Kings.",
+        "raw": "Sharks @ Kings"
+      }
     },
     "a1a864ca09d2ab51429cbd2cacc533d4516ee559d1b782e1e614369525d53f8b": {
       "context": "DAZN UK event scheduled 02/11/2026 01:00 GMT",
@@ -2421,10 +2436,13 @@
       "title": "Calgary Flames vs. San Jose Sharks (Sharks Broadcast)"
     },
     "a674c9b7c83ccc16d59e7627920dff2ae4237d114cfa35bcd4cc387df7109007": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992665+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Never Give Up vs. Kayanza United",
+        "description": "Coverage of Never Give Up against Kayanza United.",
+        "raw": "Never Give Up vs. Kayanza United"
+      }
     },
     "a675dc81bb32a02f51c4488331eb04a22fc6bb0a0f4cdcac8041172e551c92e3": {
       "created_at": "2026-11-03T18:24:18.345680+00:00",
@@ -2443,10 +2461,13 @@
       "title": "Celtic vs Beşiktaş"
     },
     "a715daef4de05550ad3ee9ba1748ab10ef5d5d1a6870caa088092fcb06c0d7de": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992680+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Watanga FC vs. Discoveries FC",
+        "description": "Coverage of Watanga FC against Discoveries FC.",
+        "raw": "Watanga FC vs. Discoveries FC"
+      }
     },
     "a781939c864e72dde296a4b46b074f2d8e88eb26a8e1225fc8a272b37817b7ca": {
       "context": "Disney+ Events event scheduled 02/11/2026 19:30 GMT",
@@ -2669,10 +2690,13 @@
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
     },
     "b8e46e240e86f3556ebbe31a43dde038a1d1565173b7978a93ff0b2dab50174a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992674+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Senators vs. Sabres",
+        "description": "Coverage of Senators against Sabres.",
+        "raw": "Senators @ Sabres"
+      }
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -2974,10 +2998,13 @@
       "title": "Northwestern State vs. Baylor"
     },
     "c783b04fb6a48e4da2bd7a5fd9dfb5b60ef293eb9e017a769361f9f556e8c803": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992661+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Musongati vs. Young Star",
+        "description": "Coverage of Musongati against Young Star.",
+        "raw": "Musongati vs. Young Star"
+      }
     },
     "c82194d0355b709c4af5aed70f56b767e45eafe9387ba8415b6b76343e2acbf9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -3348,10 +3375,13 @@
       "title": "Aston Villa vs Fulham"
     },
     "e1dc467da9c22fa72cc9495e189b87acbd117a12fdcfbbf4dd0448016384d3c2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T15:31:01.992667+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+      "result": {
+        "clean_title": "Olympic Star vs. Flambeau du Centre",
+        "description": "Coverage of Olympic Star against Flambeau du Centre.",
+        "raw": "Olympic Star vs. Flambeau du Centre"
+      }
     },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
@@ -3770,8 +3800,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-04T19:50:26.469768+00:00",
-    "groq": "2026-11-04T13:50:59.322317+00:00"
+    "gemini": "2026-11-04T19:50:26.469768+00:00"
   },
   "version": 1
 }
