@@ -79,6 +79,15 @@
       "result": "NCAA Division I men's basketball: Colorado Buffaloes vs Abilene Christian Wildcats.",
       "title": "Abilene Christian vs. Colorado"
     },
+    "05743992cece6fa9aa4e0d5ecf2f474ebbffdd424936cb3b65871788d930f04d": {
+      "created_at": "2026-11-04T05:36:14.786990+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Penguins vs Golden Knights",
+        "description": "Coverage of Penguins against Golden Knights.",
+        "raw": "Golden Knights @ Penguins"
+      }
+    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -460,12 +469,30 @@
       "result": "Gotham FC play Utah Royals FC in a women’s soccer match on the Disney+ Events platform.",
       "title": "Gotham FC vs. Utah Royals FC"
     },
+    "256b6673f74d1c4c788b797ce1552d6dc85d6f66bbafd85c39ef5548bc9b798d": {
+      "created_at": "2026-11-04T05:36:14.786992+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Predators vs Hurricanes",
+        "description": "Coverage of Predators against Hurricanes.",
+        "raw": "Hurricanes @ Predators"
+      }
+    },
     "26624a2a499c000baaa17b6c03d9e4e0dba0a6dc88e1b46d025fd18506122b05": {
       "context": "Disney+ Events event scheduled 01/11/2026 22:00 GMT",
       "created_at": "2026-11-01T21:19:10.371177+00:00",
       "kind": "event-description",
       "result": "The En Español‑NWSL on ESPN Presented by Ally broadcast features NWSL games in Spanish on 01/11/2026 at 22:00 GMT.",
       "title": "En Español-NWSL on ESPN Presented by Ally"
+    },
+    "269aee26b7a8dce4574763159ce44494b7b2b5ed833b6c21e45f335761fa462a": {
+      "created_at": "2026-11-04T05:36:14.787002+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Akron vs Ohio",
+        "description": "Coverage of Akron against Ohio.",
+        "raw": "Ohio @ Akron"
+      }
     },
     "26a7feed44d29891614573f7a62456cc9d01f3d49fdb4244a1dce3903a8fee19": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -715,6 +742,15 @@
         "raw": "Pitch 2B | Day 3: Afternoon Session"
       }
     },
+    "2eefb884d2df0ba85b0a00fc41f81dc749cff729e3bcb5f3567fc96f8d798a53": {
+      "created_at": "2026-11-04T05:36:14.787003+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Devils vs Oilers",
+        "description": "Coverage of Devils against Oilers.",
+        "raw": "Oilers @ Devils"
+      }
+    },
     "2f547a5aec5d9789b477df40216557b1bcb1819425af283f661fdcc032b7739e": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
       "created_at": "2026-10-29T03:25:48.898606+00:00",
@@ -737,6 +773,15 @@
       "kind": "event-description",
       "result": "Chicago Bears host Seattle Seahawks in Monday Night Football, presented by the Manningcast.",
       "title": "Manningcast | MNF with Peyton & Eli: Bears @ Seahawks"
+    },
+    "302cc41495717d9e7b2c74feba1a4b3a8a45ab3b144cd595d239ea1052892a92": {
+      "created_at": "2026-11-04T05:36:14.786971+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Blue Jackets vs Avalanche",
+        "description": "Coverage of Blue Jackets against Avalanche.",
+        "raw": "Avalanche @ Blue Jackets"
+      }
     },
     "310e3a693c48be79873f6bf902ec18c5aa920c18bbe584492ec56f47dbe3b8eb": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
@@ -856,6 +901,15 @@
         "raw": "Pitch 5A | Day 3: Afternoon Session"
       }
     },
+    "3a7e32b0f80906d6f324fcda292ef81e7eb420ad7bb2015d6ddddb8dea01fb46": {
+      "created_at": "2026-11-04T05:36:14.786996+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Iowa vs Lipscomb",
+        "description": "Coverage of Iowa against Lipscomb.",
+        "raw": "Lipscomb @ Iowa"
+      }
+    },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
       "created_at": "2026-11-02T12:36:29.274232+00:00",
@@ -930,6 +984,15 @@
       "kind": "event-description",
       "result": "Colorado College men's basketball team plays Northern Colorado in a regular‑season NCAA Division III contest.",
       "title": "Colorado College vs. Northern Colorado"
+    },
+    "422ef005709ada939fd138b3af91e6252a32b370a51e35d43b8361f44d165f1f": {
+      "created_at": "2026-11-04T05:36:14.787000+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 1 - Draw 4",
+        "description": "Coverage of Medicine Hat, AB - Day 1 - Draw 4.",
+        "raw": "Medicine Hat, AB - Day 1 - Draw 4"
+      }
     },
     "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
@@ -1242,6 +1305,15 @@
         "raw": "Pitch 8B | Day 3: Afternoon Session"
       }
     },
+    "57cdcd14019228d01e00f635a216ff99541d2e8d64c01425f1b85aafcf750501": {
+      "created_at": "2026-11-04T05:36:22.113089+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Red Wings vs Lightning",
+        "description": "Coverage of Red Wings against Lightning.",
+        "raw": "Red Wings @ Lightning"
+      }
+    },
     "581c62e1cf18f15c13e49d413f0bb1b210b301bd4f9d5af1032355a9500166b4": {
       "context": "Disney+ Events event scheduled 03/11/2026 00:00 GMT",
       "created_at": "2026-11-03T00:14:13.691126+00:00",
@@ -1440,6 +1512,15 @@
         "clean_title": "Pitch 8A – Day 3 Afternoon Session",
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 8A | Day 3: Afternoon Session"
+      }
+    },
+    "6c8c4446f81956e8186ed1f3d00a453c7f04ab88dcfc91d8337cb089cdb7351b": {
+      "created_at": "2026-11-04T05:36:14.786994+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Canadiens vs Jets",
+        "description": "Coverage of Canadiens against Jets.",
+        "raw": "Jets @ Canadiens"
       }
     },
     "6ca4669c5186e02bf70ba41172929cd3d4f94db87d15ddb3ff0dfa368e0f3ad3": {
@@ -1794,6 +1875,15 @@
       "kind": "event-description",
       "result": "2026 TCS New York City Marathon, a full‑distance road race held on 1 Nov 2026.",
       "title": "2026: New York City Marathon"
+    },
+    "85f1ef8c278ea22491f290e817dbcc7496c72897ba325dda93c06ceac6fd8741": {
+      "created_at": "2026-11-04T05:36:14.786998+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Maple Leafs vs Mammoth",
+        "description": "Coverage of Maple Leafs against Mammoth.",
+        "raw": "Mammoth @ Maple Leafs"
+      }
     },
     "860f3190b53bd49683aad58e81b75c6df6c5896af42489fa66ed15651084f69b": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -2391,6 +2481,15 @@
       "result": "UEFA Women’s Champions League match between Servette and OH Leuven, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Servette vs. OH Leuven"
     },
+    "b838437caf8f86ab05aadadc60c0368835c2cd70c36003db6a5a919543985f97": {
+      "created_at": "2026-11-04T05:36:22.113110+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Wild vs Flyers",
+        "description": "Coverage of Wild against Flyers.",
+        "raw": "Wild @ Flyers"
+      }
+    },
     "b859e325fa416e1341487bfd803a4850cab8f36260a3f86077ad78816156c050": {
       "context": "EFLStockportCounty.uk; Next Game: Oxford United vs Stockport County on 27/10/2026 at 19:45 GMT",
       "created_at": "2026-10-27T03:17:18.770334+00:00",
@@ -2409,6 +2508,15 @@
       "created_at": "2026-10-26T12:30:58.030778+00:00",
       "kind": "event-description",
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
+    },
+    "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
+      "created_at": "2026-11-04T05:36:14.786986+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Canucks vs Ducks",
+        "description": "Coverage of Canucks against Ducks.",
+        "raw": "Ducks @ Canucks"
+      }
     },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
       "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
@@ -2473,6 +2581,15 @@
         "clean_title": "Florida Panthers vs Winnipeg Jets",
         "description": "NHL regular season game between the Florida Panthers and the Winnipeg Jets, scheduled for Wednesday, October 28, 2026 at the Canada Life Centre in Winnipeg, MB. 【8†L15-L16】",
         "raw": "Panthers @ Jets"
+      }
+    },
+    "bc31708f8d5c94ebd2eb9ca2b736091300af707a2e09933e532d6afa76febd92": {
+      "created_at": "2026-11-04T05:36:22.113108+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UFC Fight Night: Moicano vs Nolan (Special Feed)",
+        "description": "Coverage of UFC Fight Night: Moicano against Nolan (Special Feed).",
+        "raw": "UFC Fight Night Moicano v Nolan (Special Feed)"
       }
     },
     "bc3d499a90e00bcbbad0fdbe3c330a6aa35176bccd24f9e2b79eb9c63484ac9b": {
@@ -2665,6 +2782,15 @@
       "kind": "event-description",
       "result": "Kansas City Chiefs host Denver Broncos in an NFL regular‑season game at Empower Field at Mile High.",
       "title": "Chiefs @ Broncos"
+    },
+    "c6f75927c737a4366e422720677a0904daa0791e764c58c8dad11288d9bf41db": {
+      "created_at": "2026-11-04T05:36:22.113105+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Stars vs Capitals",
+        "description": "Coverage of Stars against Capitals.",
+        "raw": "Stars @ Capitals"
+      }
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -3403,6 +3529,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-04T11:36:12.077277+00:00"
+  },
   "version": 1
 }
