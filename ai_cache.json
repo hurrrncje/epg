@@ -50,10 +50,13 @@
       "title": "Virginia vs. #14 Wake Forest"
     },
     "037c5e965139a2555645451eba87edb0d393ae72b12da1507b6b1706abe6b271": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T00:18:05.294008+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
+      "result": {
+        "clean_title": "Mammoth vs Maple Leafs",
+        "description": "Coverage of Mammoth against Maple Leafs.",
+        "raw": "Mammoth @ Maple Leafs"
+      }
     },
     "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
       "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
@@ -98,12 +101,6 @@
       "kind": "event-description",
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
-    },
-    "0a64b353720d7a68e8e99a901a66915951fa11ed8611b8ff8db98cd3a4410a80": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -448,10 +445,13 @@
       "title": "NWSL: North Carolina Courage - Denver Summit"
     },
     "25259006be28b54e09c2b95fc6734caf5ab75799e9c5cad770381a4a09013b23": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T00:18:05.294018+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
+      "result": {
+        "clean_title": "Red Wings vs Lightning",
+        "description": "Coverage of Red Wings against Lightning.",
+        "raw": "Red Wings @ Lightning"
+      }
     },
     "253642a0155a1d1a5ce417c30a73330271972de3d9ea5e526826b3add6cb2f98": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:30 GMT",
@@ -675,10 +675,13 @@
       "title": "Ottawa Senators vs. Anaheim Ducks"
     },
     "2d4cb758f0a19c00286c9f35dbe0c05d2c35796ecf978c1908f4cfcd4e9ccdc3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T00:18:05.294016+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
+      "result": {
+        "clean_title": "Oilers vs Devils",
+        "description": "Coverage of Oilers against Devils.",
+        "raw": "Oilers @ Devils"
+      }
     },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -720,10 +723,13 @@
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
     },
     "2fbe43a866c61962db1bd95fb799f550ae9a6295622ea1742b69e54e454bc921": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T00:18:05.294012+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
+      "result": {
+        "clean_title": "Medicine Hat AB Day 1 Draw 4",
+        "description": "Coverage of Medicine Hat AB Day 1 Draw 4.",
+        "raw": "Medicine Hat, AB - Day 1 - Draw 4"
+      }
     },
     "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -1385,12 +1391,6 @@
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "8 | Austin FC vs Real Salt Lake (Spanish)"
     },
-    "62b508d415269c4ca4ac50467c1acd9f4a3031e297c60275ba6ad5bc3a8bacad": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
-    },
     "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
       "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
       "created_at": "2026-11-02T03:33:22.316107+00:00",
@@ -1518,12 +1518,6 @@
       "kind": "event-description",
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "7 | Austin FC vs Real Salt Lake (English)"
-    },
-    "71422143c11990c4f7a4f113ba0a6c1d5f6213acf8e74b8048dd98a5242afc2a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
     },
     "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
@@ -2239,12 +2233,6 @@
       "result": "Oklahoma Sooners women play North Carolina Tar Heels women in NCAA women's basketball on 2 Nov 2026.",
       "title": "#21 Oklahoma vs. #12 North Carolina"
     },
-    "a83658420964304738cf072b147e158d80b3051df16d4ada4037ca7d79f79a9c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
-    },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T03:25:48.898671+00:00",
@@ -2881,10 +2869,13 @@
       }
     },
     "d6018c51bf2325ea98e321eb589e9f54b5704d6fdd170a9de760e462ae78e4e2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T00:18:05.293989+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
+      "result": {
+        "clean_title": "Lipscomb vs Iowa",
+        "description": "Coverage of Lipscomb against Iowa.",
+        "raw": "Lipscomb @ Iowa"
+      }
     },
     "d6065d8bb7a64c9235aa2c1ef9a5db9453aec4789268b3b931a74ad327583bd7": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -3342,10 +3333,13 @@
       "title": "UEFA Champions League | League Phase: Shakhtar Donetsk - Sporting CP"
     },
     "fac2c38ed021ab11e12dff0c53017e00487e4a586478786bfe41d90d81218299": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-04T00:18:05.294014+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-03T23:38:35.821098+00:00"
+      "result": {
+        "clean_title": "Ohio vs Akron",
+        "description": "Coverage of Ohio against Akron.",
+        "raw": "Ohio @ Akron"
+      }
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
