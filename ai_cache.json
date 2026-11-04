@@ -88,6 +88,15 @@
         "raw": "Golden Knights @ Penguins"
       }
     },
+    "0732eb261507769a61f9d13b3ec2434b9ea73f81fb07e6899f67b681b331bce1": {
+      "created_at": "2026-11-04T13:50:28.840967+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bumamuru vs Vision FC",
+        "description": "Coverage of Bumamuru against Vision FC.",
+        "raw": "Bumamuru vs. Vision FC"
+      }
+    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -222,6 +231,12 @@
       "kind": "event-description",
       "result": "Sports news recap show covering the latest sports stories.",
       "title": "cbssportshq: What 2 Watch"
+    },
+    "11f72d7d15b4686ee5ea92f35c776c67cdfd2319847bf51b7d64b0d839072814": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
       "context": "DAZN UK event scheduled 02/11/2026 18:30 GMT",
@@ -401,6 +416,12 @@
       "created_at": "2026-10-26T12:30:58.030791+00:00",
       "kind": "event-description",
       "result": "#15 Stanford vs. #23 North Carolina."
+    },
+    "228644c5c5b57b04a1f240468245e712c2dac61206b1540a2b2e138498908af2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
     },
     "22b2b3e8e917209262b0b8b6e577d1b57f6ca35dd415365cb078dd542aaba2d6": {
       "created_at": "2026-10-26T19:21:40.738728+00:00",
@@ -789,6 +810,15 @@
       "kind": "event-description",
       "result": "College basketball game: Memphis Tigers vs. Tulsa Golden Hurricane.",
       "title": "Memphis vs. Tulsa"
+    },
+    "3148d984d9a396a507c60c7ee1e2a3c63dfce3f083c0581ee0952f0fa647f667": {
+      "created_at": "2026-11-04T13:50:28.840974+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Downtown FC vs Wologisi FC",
+        "description": "Coverage of Downtown FC against Wologisi FC.",
+        "raw": "Downtown FC vs. Wologisi FC"
+      }
     },
     "316d542016dfa0ebb5f947ff9b1ce11efbc3e76122fb74cd85ad6dded26adcd8": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -1463,6 +1493,15 @@
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "8 | Austin FC vs Real Salt Lake (Spanish)"
     },
+    "62cad3d6e46d9c840de4048292de6214b2172d46cf9052342632afdd264df3b5": {
+      "created_at": "2026-11-04T13:50:28.840962+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Black Man Warriors vs Paynesville FC",
+        "description": "Coverage of Black Man Warriors against Paynesville FC.",
+        "raw": "Black Man Warriors vs. Paynesville FC"
+      }
+    },
     "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
       "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
       "created_at": "2026-11-02T03:33:22.316107+00:00",
@@ -1483,6 +1522,12 @@
       "kind": "event-description",
       "result": "UEFA Women’s Champions League match between Bayern Munich and Real Madrid, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 17:30 GMT.",
       "title": "UEFA Women's Champions League: Bayern vs. Real Madrid"
+    },
+    "66fc2319dba418f740d37e5b76d25169903cdd92d9a003287dc62a53a46d7595": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
     },
     "671b527f5879ba640c6e3a87f17d7d5cf7bc611cd4a5114ba49c65681590e25c": {
       "context": "ESPN+ event scheduled 03/11/2026 16:30 GMT",
@@ -1529,6 +1574,15 @@
       "kind": "event-description",
       "result": "Football match between Esgueira and CA Queluz.",
       "title": "Esgueira vs. CA Queluz"
+    },
+    "6d3fb6aeac2abec52fad927d72a3daac870393abe1400251f3b61ec4e7557a5e": {
+      "created_at": "2026-11-04T13:50:28.840957+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Auckland United vs West Coast Rangers",
+        "description": "Coverage of Auckland United against West Coast Rangers.",
+        "raw": "Auckland United vs. West Coast Rangers"
+      }
     },
     "6d48c33762f2d36f4b5d1b11917acee569aa1738219e4eeb11d3d843d6016c84": {
       "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
@@ -1688,6 +1742,15 @@
       "kind": "event-description",
       "result": "Pacific men's ice hockey takes on Denver men's ice hockey in an NCAA Division I regular‑season match.",
       "title": "Pacific vs. Denver"
+    },
+    "786eb04cbe6bbf1d0a7923f79a66846a0d240a50497020f9421a3552c8a57be8": {
+      "created_at": "2026-11-04T13:50:28.840965+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Brazil U17 vs Nigeria U17",
+        "description": "Coverage of Brazil U17 against Nigeria U17.",
+        "raw": "Brazil U17 vs. Nigeria U17"
+      }
     },
     "7874b9a157b4f91bdc538b0e8dda7f619a5bfa711dc220645d52b18356c9f36a": {
       "created_at": "2026-10-26T12:30:58.030817+00:00",
@@ -1924,12 +1987,30 @@
         "raw": "Islanders @ Predators"
       }
     },
+    "89b26e3e7674daf132fa00e4cff9b688cf547444728b33208bf790f242a1afef": {
+      "created_at": "2026-11-04T13:50:50.158570+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 2, Draw 6",
+        "description": "Coverage of Medicine Hat, AB - Day 2, Draw 6.",
+        "raw": "Medicine Hat, AB - Day 2, Draw 6"
+      }
+    },
     "89e8e0a5828bd4847b53c6b5639b8764be7ebf78652bf66702e70cd6e8415cc1": {
       "context": "MAX UK event scheduled 01/11/2026 03:00 GMT",
       "created_at": "2026-11-01T06:23:52.067230+00:00",
       "kind": "event-description",
       "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
       "title": "Race: Moto3 | Round 19 | Malaysia"
+    },
+    "8afe4b8db8dc73498ce99635872ceff7e7c5181edf16f13c0763142d90f7870b": {
+      "created_at": "2026-11-04T13:50:28.840969+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Central Michigan vs Eastern Michigan",
+        "description": "Coverage of Central Michigan against Eastern Michigan.",
+        "raw": "Central Michigan @ Eastern Michigan"
+      }
     },
     "8b15dac58905ae85790173ae5594213eb129fae305cce25769535bd6fbb726ee": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
@@ -2022,6 +2103,12 @@
       "result": "LaGrange vs. Jacksonville State men's basketball game on Disney+ Events.",
       "title": "LaGrange vs. Jacksonville State"
     },
+    "91096fa487e5b0ae56a2efb26c5f0f4ce478be962c759d3fc3bcf7ce9e31b923": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+    },
     "91728f8bb2ff85f62a3b7947f05546361a5e833a6a4e5805c880b304a1519199": {
       "context": "MLS fixture scheduled 02/11/2026 02:25 GMT",
       "created_at": "2026-11-02T03:33:22.316102+00:00",
@@ -2035,6 +2122,24 @@
       "kind": "event-description",
       "result": "Women's college basketball: Lipscomb Bisons vs. Vanderbilt Commodores.",
       "title": "Lipscomb vs. #8 Vanderbilt"
+    },
+    "92a4740702467daf391ddf41de31e04c8a47b5ab39af34eeee5308d7713d6be4": {
+      "created_at": "2026-11-04T13:50:28.840971+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Coronie Boys vs Transvaal",
+        "description": "Coverage of Coronie Boys against Transvaal.",
+        "raw": "Coronie Boys vs. Transvaal"
+      }
+    },
+    "930c80e6b8c906fc3d33fa3c0e0aa868648d5158f1d271f59458c07d5b03fb75": {
+      "created_at": "2026-11-04T13:50:50.158538+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "FK Gintra vs. FA Šiauliai",
+        "description": "Coverage of FK Gintra against FA Šiauliai.",
+        "raw": "FK Gintra vs. FA Šiauliai"
+      }
     },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
@@ -2205,6 +2310,12 @@
       "result": "CBS Sports HQ scoreboard final for the day's games.",
       "title": "cbssportshq: Scoreboard Final"
     },
+    "a06025cb51c1c098ffc4088d372715dacfd9dd7b365928c9cacf1776f786afdb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+    },
     "a1a864ca09d2ab51429cbd2cacc533d4516ee559d1b782e1e614369525d53f8b": {
       "context": "DAZN UK event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061702+00:00",
@@ -2281,6 +2392,15 @@
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "8 | San Jose Earthquakes vs Colorado Rapids (Spanish)"
     },
+    "a52f4bf24adb9c01c7e241b48643737bcedcb0906dd4ef68c41703e73a071f3c": {
+      "created_at": "2026-11-04T13:50:50.158562+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Freeport FC vs. Heaven Eleven FC",
+        "description": "Coverage of Freeport FC against Heaven Eleven FC.",
+        "raw": "Freeport FC vs. Heaven Eleven FC"
+      }
+    },
     "a566d1211e5ce197df424ed89ec0f57ca9235cd8249f7271b5970c39e67a6710": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690110+00:00",
@@ -2300,6 +2420,12 @@
       "result": "Same NHL game as e1, but broadcast on the Sharks’ channel.",
       "title": "Calgary Flames vs. San Jose Sharks (Sharks Broadcast)"
     },
+    "a674c9b7c83ccc16d59e7627920dff2ae4237d114cfa35bcd4cc387df7109007": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+    },
     "a675dc81bb32a02f51c4488331eb04a22fc6bb0a0f4cdcac8041172e551c92e3": {
       "created_at": "2026-11-03T18:24:18.345680+00:00",
       "kind": "live-title",
@@ -2315,6 +2441,12 @@
       "kind": "event-description",
       "result": "Celtic FC vs. Beşiktaş – a UEFA Europa League match at Celtic Park on 5 Nov 2026.",
       "title": "Celtic vs Beşiktaş"
+    },
+    "a715daef4de05550ad3ee9ba1748ab10ef5d5d1a6870caa088092fcb06c0d7de": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
     },
     "a781939c864e72dde296a4b46b074f2d8e88eb26a8e1225fc8a272b37817b7ca": {
       "context": "Disney+ Events event scheduled 02/11/2026 19:30 GMT",
@@ -2374,12 +2506,30 @@
       "result": "International Championship Round 4: Wang Xinbo vs. Marco Fu – 03/11/2026 11:30 GMT",
       "title": "International Championship | Round 4: Wang Xinbo - Marco Fu"
     },
+    "ac48505e1b562ed88b840d47c86619809d0421c738a89e403ff17eb3f1137a84": {
+      "created_at": "2026-11-04T13:50:50.158554+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "FK Tauras vs. FK Minija",
+        "description": "Coverage of FK Tauras against FK Minija.",
+        "raw": "FK Tauras vs. FK Minija"
+      }
+    },
     "ac78aa13b21b532481b58aa2aa42a2c738ddc923dda4375173cb289dbbe23920": {
       "context": "Disney+ Events event scheduled 02/11/2026 15:30 GMT",
       "created_at": "2026-11-02T12:36:29.274242+00:00",
       "kind": "event-description",
       "result": "Hofstra women's basketball plays Georgia Tech in a collegiate game.",
       "title": "Hofstra vs. Georgia Tech"
+    },
+    "ad113bfdca80a8cfabe804e11c4b990228d085758937527df4e8137e216f09e5": {
+      "created_at": "2026-11-04T13:50:50.158560+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Flames @ Kraken",
+        "description": "Coverage of Flames against Kraken.",
+        "raw": "Flames @ Kraken"
+      }
     },
     "ad5c1cc7bec8b037595279cbe6146adb8769e30e2d7bae65957a931e33e742fe": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:30 GMT",
@@ -2422,6 +2572,15 @@
       "created_at": "2026-10-26T12:30:58.030767+00:00",
       "kind": "event-description",
       "result": "MLS regular‑season game: Los Angeles FC vs LA Galaxy, scheduled 26 Oct 2026 00:25 GMT."
+    },
+    "b1f75b357b99ba92066ad34b9092df245b01c6f3aa3e7e40fc58f1b095bca1a4": {
+      "created_at": "2026-11-04T13:50:50.158558+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Falco-Vulcano Szombathely vs. AEK BC",
+        "description": "Coverage of Falco-Vulcano Szombathely against AEK BC.",
+        "raw": "Falco-Vulcano Szombathely vs. AEK BC"
+      }
     },
     "b2808e741bf6f9a0aba78ffb40f624fad698631e4917321cfecd993d0b157d36": {
       "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
@@ -2508,6 +2667,12 @@
       "created_at": "2026-10-26T12:30:58.030778+00:00",
       "kind": "event-description",
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
+    },
+    "b8e46e240e86f3556ebbe31a43dde038a1d1565173b7978a93ff0b2dab50174a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -2808,6 +2973,12 @@
       "result": "Northwestern State University men's basketball team visits Baylor University in a regular‑season NCAA Division I matchup.",
       "title": "Northwestern State vs. Baylor"
     },
+    "c783b04fb6a48e4da2bd7a5fd9dfb5b60ef293eb9e017a769361f9f556e8c803": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+    },
     "c82194d0355b709c4af5aed70f56b767e45eafe9387ba8415b6b76343e2acbf9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
       "created_at": "2026-10-31T16:22:16.312222+00:00",
@@ -2821,6 +2992,15 @@
       "kind": "event-description",
       "result": "Women's college basketball: North American Stallions vs. Nicholls State Colonels.",
       "title": "North American vs. Nicholls"
+    },
+    "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
+      "created_at": "2026-11-04T13:50:50.158564+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Gardnersville FC vs. NPA Anchors",
+        "description": "Coverage of Gardnersville FC against NPA Anchors.",
+        "raw": "Gardnersville FC vs. NPA Anchors"
+      }
     },
     "c93b9253d00e24aeb34edce786621d5a61c17e8dc60edd6ef7fcacd79cd0d012": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -3017,6 +3197,15 @@
       "result": "MLS match: New England Revolution host Inter Miami CF at Gillette Stadium.",
       "title": "| New England Revolution vs Inter Miami CF (Spanish)"
     },
+    "d740499b0d358d8234112dd4e4597761a35621b02f41c7276e044ab0b69537ce": {
+      "created_at": "2026-11-04T13:50:50.158567+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Japan U17 vs. Korea DPR U17",
+        "description": "Coverage of Japan U17 against Korea DPR U17.",
+        "raw": "Japan U17 vs. Korea DPR U17"
+      }
+    },
     "d7a677f53190a3558cd2ea2a4e2d399a102b207ec4dcb48be846642d201dc918": {
       "context": "Paramount+ event scheduled 28/10/2026 17:20 GMT",
       "created_at": "2026-10-28T18:24:17.569522+00:00",
@@ -3067,6 +3256,15 @@
       "created_at": "2026-10-26T12:30:58.030742+00:00",
       "kind": "event-description",
       "result": "League Two match: Walsall vs Salford City, scheduled 26 Oct 2026 20:00 GMT."
+    },
+    "dbd02d2973fd3c492abec2c673f9f70191f7f32dac9b49729030b7f4f5bd54e7": {
+      "created_at": "2026-11-04T13:50:50.158573+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 2, Draw 7",
+        "description": "Coverage of Medicine Hat, AB - Day 2, Draw 7.",
+        "raw": "Medicine Hat, AB - Day 2, Draw 7"
+      }
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -3149,6 +3347,12 @@
       "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
       "title": "Aston Villa vs Fulham"
     },
+    "e1dc467da9c22fa72cc9495e189b87acbd117a12fdcfbbf4dd0448016384d3c2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-04T13:50:59.322317+00:00"
+    },
     "e329a3648cf6e01de582d99fe1215d9547c0d6d42687c2fe047a425856fca189": {
       "created_at": "2026-10-26T19:21:40.738739+00:00",
       "kind": "live-title",
@@ -3192,6 +3396,15 @@
       "kind": "event-description",
       "result": "cbssportshq Scoreboard Final broadcast, 3:00 pm GMT.",
       "title": "cbssportshq: Scoreboard Final"
+    },
+    "e4857b1fd37557d597260da35e73f59edaef75656e1f21a84f473a2ca05514c2": {
+      "created_at": "2026-11-04T13:50:28.840938+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AM Laâyoune vs RS Berkane",
+        "description": "Coverage of AM Laâyoune against RS Berkane.",
+        "raw": "AM Laâyoune vs. RS Berkane"
+      }
     },
     "e4b2f0181ea9879dfbb2888a6e0cff7eb1c62c76924594dbb2a0b73871e6a2f7": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
@@ -3299,6 +3512,15 @@
       "kind": "event-description",
       "result": "Disney+ event 'Memphis vs. Arkansas (Exhibition)' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Memphis vs. Arkansas (Exhibition)"
+    },
+    "edab4e1bdce2507918060f7ec7348cce6f6c4d7d5ad2a6f6a6641867ba27d399": {
+      "created_at": "2026-11-04T13:50:50.158568+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Legia Warszawa vs. Galatasaray MCT Technic",
+        "description": "Coverage of Legia Warszawa against Galatasaray MCT Technic.",
+        "raw": "Legia Warszawa vs. Galatasaray MCT Technic"
+      }
     },
     "ee156506549482cd8755056617d4a564ed81c48a81fac3624b00f04591ee6192": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -3418,6 +3640,15 @@
       "result": "College basketball game between George Fox and Idaho.",
       "title": "George Fox vs. Idaho"
     },
+    "f579c8d4db49af0828901fbe64c267b8607f264b4a2c351135a3f0f62dee3ad5": {
+      "created_at": "2026-11-04T13:50:28.840959+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bea Mountain FC vs LISCR FC",
+        "description": "Coverage of Bea Mountain FC against LISCR FC.",
+        "raw": "Bea Mountain FC vs. LISCR FC"
+      }
+    },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
       "kind": "event-description",
@@ -3474,6 +3705,15 @@
       "result": "NFL Primetime Presented by Mucinex – an NFL regular‑season game streamed on ESPN+.",
       "title": "NFL Primetime Presented by Mucinex"
     },
+    "fc3b1cca3708724643456068905e0cc08c20ffe848922414e9971c562648f8f5": {
+      "created_at": "2026-11-04T13:50:28.840976+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "FC Fassell vs LPRC Oilers",
+        "description": "Coverage of FC Fassell against LPRC Oilers.",
+        "raw": "FC Fassell vs. LPRC Oilers"
+      }
+    },
     "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
       "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770315+00:00",
@@ -3529,6 +3769,9 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-04T19:50:26.469768+00:00",
+    "groq": "2026-11-04T13:50:59.322317+00:00"
+  },
   "version": 1
 }
