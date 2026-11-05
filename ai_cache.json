@@ -1047,10 +1047,13 @@
       }
     },
     "42c74259f938a2fd5b480242c189bb207ca2078520fda3aee1c50cf9f4722a73": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T01:50:57.853663+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T00:36:28.889953+00:00"
+      "result": {
+        "clean_title": "AEW Dynamite: Blood & Guts",
+        "description": "Coverage of AEW Dynamite: Blood & Guts.",
+        "raw": "AEW Dynamite Blood and Guts (Commercial Free)"
+      }
     },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
       "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
