@@ -76,7 +76,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "04dd547744db4512fc80b60565a01748408395067f1bbad99c29f67058b121f1": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -306,7 +306,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -481,7 +481,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
       "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
@@ -522,7 +522,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "24ebd9192f9f8fb597e1fa64b9d5987870724af0dbda302b194851312b167dce": {
       "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
@@ -1309,7 +1309,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "4d37a870c2316a7ebd39676c9a8419dbb9a6a00f6106513855e67467fec5eee1": {
       "context": "Disney+ Events event scheduled 03/11/2026 00:00 GMT",
@@ -1648,7 +1648,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "64f3b8f81fa49c47e706bf4afc167c0131064976b1131bb9aa8b994f27a63ca6": {
       "created_at": "2026-11-05T13:54:36.011723+00:00",
@@ -2678,7 +2678,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2834,7 +2834,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -3417,7 +3417,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -4056,7 +4056,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T20:42:21.863207+00:00"
+      "retry_after": "2026-11-05T21:39:53.859017+00:00"
     },
     "fac2c38ed021ab11e12dff0c53017e00487e4a586478786bfe41d90d81218299": {
       "created_at": "2026-11-04T00:18:05.294014+00:00",
