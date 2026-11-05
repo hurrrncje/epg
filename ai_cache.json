@@ -76,7 +76,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "04dd547744db4512fc80b60565a01748408395067f1bbad99c29f67058b121f1": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -220,10 +220,13 @@
       "result": "CBS Sports HQ: Scoreboard Final."
     },
     "0fdea9d516b13ab2f18acb9b7352e23e06f8ace6fba4abc609ffa2edddd410be": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508134+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Toledo @ Michigan State",
+        "description": "Coverage of Toledo against Michigan State.",
+        "raw": "Toledo @ Michigan State"
+      }
     },
     "10499bc14c01c013d282951940a10aaf4435fae34b0b0a830c5b7ff307c0fe8c": {
       "created_at": "2026-10-26T12:30:58.030823+00:00",
@@ -275,16 +278,22 @@
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Maple Leafs Broadcast)"
     },
     "1546148bdd7bfe43d6003d58e5dee117120305f6339ecbdf407838f3a34b48a3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508127+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Predators @ Avalanche",
+        "description": "Coverage of Predators against Avalanche.",
+        "raw": "Predators @ Avalanche"
+      }
     },
     "15ff985d899eff7f9074f0450a684cdf534767e20ab6d7c3af12cfe7945d5de1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508123+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 3, Draw 12",
+        "description": "Coverage of Medicine Hat, AB - Day 3, Draw 12.",
+        "raw": "Medicine Hat, AB - Day 3, Draw 12"
+      }
     },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
@@ -297,7 +306,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -472,7 +481,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
       "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
@@ -513,7 +522,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "24ebd9192f9f8fb597e1fa64b9d5987870724af0dbda302b194851312b167dce": {
       "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
@@ -945,10 +954,13 @@
       }
     },
     "361fb84060f15e374364b5b1cc750abff09a9d5087e2ddad73a35daf10f10152": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508136+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "UConn @ Michigan",
+        "description": "Coverage of UConn against Michigan.",
+        "raw": "UConn @ Michigan"
+      }
     },
     "3712e3205b245dda3cb5ff83bbcffbabbc73b67e777fd50f2339b8f392286e50": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -1072,10 +1084,13 @@
       "result": "NHL regular‑season game: Minnesota Wild vs Vancouver Canucks, scheduled 26 Oct 2026 02:00 GMT."
     },
     "41b675e591213d6e82af52decde36f55704f532f9bcf864aaa57ad222a2fff85": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508129+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "St. Louis FC vs. PTL Bazar Brothers FC",
+        "description": "Coverage of St. Louis FC against PTL Bazar Brothers FC.",
+        "raw": "St. Louis FC vs. PTL Bazar Brothers FC"
+      }
     },
     "42245a0e3258161803aeaf24d856d9b6850d8f9198e14619529508f0e10bd542": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:30 GMT",
@@ -1294,7 +1309,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "4d37a870c2316a7ebd39676c9a8419dbb9a6a00f6106513855e67467fec5eee1": {
       "context": "Disney+ Events event scheduled 03/11/2026 00:00 GMT",
@@ -1311,10 +1326,13 @@
       "title": "San Diego vs. Seattle U"
     },
     "4ea47b58f76d41404f434ae4a0dac8ee85420550ad7ce24ad36af9b38fc8229b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011732+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "James Madison @ Southern Miss",
+        "description": "Coverage of James Madison against Southern Miss.",
+        "raw": "James Madison @ Southern Miss"
+      }
     },
     "4eef478580ecb325758b8dab4f8554ab37fe501915e36c97657df7b5fb1c4049": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -1333,10 +1351,13 @@
       }
     },
     "4fb1d15f11fc8d7e3f3789657f90705a406a9af01af5e0710b5233f8f72ba026": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011730+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "4fd7a0684ab2cedf460919c7b33ae3577206867f85275e40842378fd1f7efdf8": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:30 GMT",
@@ -1374,10 +1395,13 @@
       "title": "Newcastle Utd vs Everton"
     },
     "52207a301160264d8ff86551944882b730bb514b39129ce3ffd72e8073860a6f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508119+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 3, Draw 11",
+        "description": "Coverage of Medicine Hat, AB - Day 3, Draw 11.",
+        "raw": "Medicine Hat, AB - Day 3, Draw 11"
+      }
     },
     "5359621773e3dfa90b50080a8bac624bfa8b766152e5317e36a42a19739d6b03": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -1454,10 +1478,13 @@
       "title": "St. Thomas (MN) vs. Presbyterian"
     },
     "5857eace185135ee72369777731e4771bd5419b5234f3cbb9bdbf78e855629ab": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011725+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens (Prime Vision with Next Gen Stats)"
+      }
     },
     "58be4ffa91b48a8b412ee122603ab45c299f78272077d72bd741f9fd5a7e4529": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1621,13 +1648,16 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "64f3b8f81fa49c47e706bf4afc167c0131064976b1131bb9aa8b994f27a63ca6": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011723+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens"
+      }
     },
     "64f614a36bdb5f986aa5075a08ec09257e6b4ad7ba828977e2326709cc281b94": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -1799,10 +1829,13 @@
       "title": "Atalanta vs. Parma"
     },
     "72c6472317788b834205cbbde4c22e9179841cac449a63fc289779acb610a09d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508116+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 3, Draw 10",
+        "description": "Coverage of Medicine Hat, AB - Day 3, Draw 10.",
+        "raw": "Medicine Hat, AB - Day 3, Draw 10"
+      }
     },
     "72e65cf2b111b51153685a89cf012ff1af38695a43d0b15411ca6bc1d6d19c74": {
       "created_at": "2026-11-05T05:40:32.979999+00:00",
@@ -2034,10 +2067,13 @@
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
     "8238e018b4dc90451a2a644f609c9bf28eee67c1224fc41f5828876849ba999e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011721+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Inside The Ring - Nov 5",
+        "description": "Coverage of Inside The Ring - Nov 5.",
+        "raw": "Inside The Ring - Nov 5"
+      }
     },
     "82e97287ef87112704639c9bc3450035896d628e41af49b79149e2aff4c86a8c": {
       "context": "La Liga fixture scheduled 02/11/2026 19:48 GMT",
@@ -2298,10 +2334,13 @@
       }
     },
     "93a3f2fc00f2f5bc8c9593bf8c7d81cf424b0d48d782bd940449f5d3a217406b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011714+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Golden Knights @ Red Wings",
+        "description": "Coverage of Golden Knights against Red Wings.",
+        "raw": "Golden Knights @ Red Wings"
+      }
     },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
@@ -2639,7 +2678,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2795,7 +2834,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -3061,10 +3100,13 @@
       }
     },
     "c0a7399286aae862a991749c71487e9bf0cf74606b73059ecde59e18e68b3051": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011696+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "EFC 139: Mkhwanazi vs. Hinda",
+        "description": "Coverage of EFC 139: Mkhwanazi against Hinda.",
+        "raw": "EFC 139: Mkhwanazi vs. Hinda"
+      }
     },
     "c19196fa5381e8d09b4332ead7b8fedb6e6ab249d3b3fb825208d4de75dc0950": {
       "context": "MAX UK event scheduled 02/11/2026 01:30 GMT",
@@ -3074,10 +3116,13 @@
       "title": "International Championship | Round 2: Snooker"
     },
     "c1eeda5fca2c5a7e812b999c8c4760d6bb01c3468beb945c2bcde663bd343447": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508100+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Media Fight Night 2026",
+        "description": "Coverage of Media Fight Night 2026.",
+        "raw": "Media Fight Night 2026"
+      }
     },
     "c248a78d0b5e347ce7587ce82f6f5d2c0be85bf43049524e3ebf19e2fe21d38c": {
       "created_at": "2026-10-26T19:21:40.738705+00:00",
@@ -3115,10 +3160,13 @@
       "title": "1 | Minnesota United vs Sporting Kansas City (English)"
     },
     "c3e2eedbacae01dc1f6f2cfb96f1c43ab7758034930899be839835313e1cca03": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508131+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Stars @ Blue Jackets",
+        "description": "Coverage of Stars against Blue Jackets.",
+        "raw": "Stars @ Blue Jackets"
+      }
     },
     "c488b2c8dd1ce195e949fbb3850d4673ee1025acc9ae48cb9c241cd03c94c1ce": {
       "created_at": "2026-10-26T19:21:40.738749+00:00",
@@ -3369,7 +3417,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -3710,10 +3758,13 @@
       "title": "Plymouth Argyle vs Reading FC"
     },
     "e69d4621f5c6b9a858980df52ddada1f1f4d28a1f685a9c5139885fab9bcacdc": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011718+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Hurricanes @ Islanders",
+        "description": "Coverage of Hurricanes against Islanders.",
+        "raw": "Hurricanes @ Islanders"
+      }
     },
     "e6f12aadecce5be279ced56a351ca00761910d7c65811947d2f2df9bd969bb0c": {
       "context": "Disney+ Events event scheduled 01/11/2026 15:30 GMT",
@@ -3850,10 +3901,13 @@
       }
     },
     "f0a2bfd8d46bdc04cc1838121884cf599719bcda12b56adf45ecc4d77329962a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011728+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens (Spanish Broadcast)"
+      }
     },
     "f0b6ac5064ae88e1a8f427e548791c4c4e1cb115836becba2cfc902f6bee510e": {
       "created_at": "2026-10-28T00:12:37.428446+00:00",
@@ -3916,10 +3970,13 @@
       "title": "International Championship | Round 4: Stephen Maguire - Ding Junhui"
     },
     "f3ccd2aad247e1cf2787a06ff5e1ee9bf8e240034371ba1edfedde55827a431d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:40.508125+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:40.088586+00:00"
+      "result": {
+        "clean_title": "Penn @ Illinois",
+        "description": "Coverage of Penn against Illinois.",
+        "raw": "Penn @ Illinois"
+      }
     },
     "f3e295ae8dacfbd8da4e9eb2f07100f8971f1d43451580069658927fdd989b83": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -3966,10 +4023,13 @@
       "title": "MLB | World Series | Game 5: Milwaukee Brewers @ Tampa Bay Rays"
     },
     "f85a0bacb950ef54eb64319547505eaaf8a4e8ac5af1242dad29a4bbf460f7ba": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-05T13:54:36.011735+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:39.329685+00:00"
+      "result": {
+        "clean_title": "Mammoth @ Canadiens",
+        "description": "Coverage of Mammoth against Canadiens.",
+        "raw": "Mammoth @ Canadiens"
+      }
     },
     "f8ccc2cea7fff07b3a8045f0f53f54832a6d2e0d7984f281043dbcb68dd3ef75": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -3996,7 +4056,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-05T12:50:38.321095+00:00"
+      "retry_after": "2026-11-05T14:09:33.562433+00:00"
     },
     "fac2c38ed021ab11e12dff0c53017e00487e4a586478786bfe41d90d81218299": {
       "created_at": "2026-11-04T00:18:05.294014+00:00",
