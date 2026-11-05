@@ -737,6 +737,15 @@
         "raw": "Oilers @ Devils"
       }
     },
+    "2d7877c43f8bd59a18724d44a8879b3be3d6a0c80d141d762a7d392bf24c6d34": {
+      "created_at": "2026-11-05T05:40:32.979997+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Flames vs Kraken",
+        "description": "Coverage of Flames against Kraken.",
+        "raw": "Flames @ Kraken"
+      }
+    },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690113+00:00",
@@ -1693,6 +1702,15 @@
       "result": "Atalanta play Parma in Serie A on 2 Nov 2026.",
       "title": "Atalanta vs. Parma"
     },
+    "72e65cf2b111b51153685a89cf012ff1af38695a43d0b15411ca6bc1d6d19c74": {
+      "created_at": "2026-11-05T05:40:32.979999+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Medicine Hat AB Day 2 Draw 8",
+        "description": "Coverage of Medicine Hat AB Day 2 Draw 8.",
+        "raw": "Medicine Hat, AB - Day 2, Draw 8"
+      }
+    },
     "7306f5e34c44fe5d739e8a0f994206a43d9df1be5caf4eaa1414ce550036335e": {
       "created_at": "2026-10-26T12:30:58.030771+00:00",
       "kind": "event-description",
@@ -2044,6 +2062,15 @@
       "result": "Men’s group stage match between Senegal and Argentina in the Dakar 2026 tournament at 17:25 GMT on 02/11/2026.",
       "title": "Men | Group Stage | Dakar 2026: Senegal - Argentina"
     },
+    "8b8a847c093ea9a878d2e69c7a089724b5d8ab229c255f0fe30414c71bee4302": {
+      "created_at": "2026-11-05T05:40:32.979992+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Auckland United vs West Coast Rangers",
+        "description": "Coverage of Auckland United against West Coast Rangers.",
+        "raw": "Auckland United vs. West Coast Rangers"
+      }
+    },
     "8c51708c9d0a5550aef6a35279cfcd111e0ef1f36333968a80d815c07a45dc14": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770320+00:00",
@@ -2240,6 +2267,15 @@
       "kind": "event-description",
       "result": "Partido de la temporada regular de MLS: FC Cincinnati contra Philadelphia Union, sábado 31 oct 2026, inicio a las 2:00 p.m. local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (Spanish)"
+    },
+    "99338c77dfab3ae212109609aa532332f98ee2e149e3304cb750fb7b54edb179": {
+      "created_at": "2026-11-05T05:40:32.979976+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Dynamite Blood and Guts",
+        "description": "Coverage of AEW Dynamite Blood and Guts.",
+        "raw": "AEW Dynamite Blood and Guts (Commercial Free)"
+      }
     },
     "99b3f883c4801cb34d93c773b0df0f220d12a2bb3aab62e90b0ef462873fc3f9": {
       "context": "Disney+ Events event scheduled 01/11/2026 03:55 GMT",
@@ -3148,6 +3184,15 @@
       "result": "College basketball game: Bucknell Bison vs. Iowa State Cyclones.",
       "title": "Bucknell vs. Iowa State"
     },
+    "d194cc0c565bb3f40e66cb6aa042c345d95a9f65a327900d4d8324032fc28d23": {
+      "created_at": "2026-11-05T05:40:32.980004+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UFC Fight Night Moicano vs Nolan",
+        "description": "Coverage of UFC Fight Night Moicano against Nolan.",
+        "raw": "UFC Fight Night Moicano v Nolan (Special Feed)"
+      }
+    },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770337+00:00",
@@ -3503,6 +3548,15 @@
       "result": "3. Liga match between Rot‑Weiss Essen and SG Sonnenhof Großaspach scheduled for 1 Nov 2026 at 15:30 GMT.",
       "title": "Rot-Weiss Essen vs. Sonnenhof Grossaspach"
     },
+    "e713b9531535b24119a32a2c6559e31c4d85dd76a9c96f1a5066f74afb0372d1": {
+      "created_at": "2026-11-05T05:40:32.980001+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Senators vs Sabres",
+        "description": "Coverage of Senators against Sabres.",
+        "raw": "Senators @ Sabres"
+      }
+    },
     "e7587961b12ed69e4c9ba0af97f3bde22e5845f49d30c168d48de8cccec72323": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
       "created_at": "2026-11-03T02:30:26.191780+00:00",
@@ -3551,6 +3605,15 @@
       "kind": "event-description",
       "result": "Disney+ event 'Memphis vs. Arkansas (Exhibition)' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Memphis vs. Arkansas (Exhibition)"
+    },
+    "ec9c59c63414e55b898a8f38d831c2fdc5e25dc6f949b6b1aece2949f30662a7": {
+      "created_at": "2026-11-05T05:40:32.979995+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Central Michigan vs Eastern Michigan",
+        "description": "Coverage of Central Michigan against Eastern Michigan.",
+        "raw": "Central Michigan @ Eastern Michigan"
+      }
     },
     "edab4e1bdce2507918060f7ec7348cce6f6c4d7d5ad2a6f6a6641867ba27d399": {
       "created_at": "2026-11-04T13:50:50.158568+00:00",
@@ -3678,6 +3741,15 @@
       "kind": "event-description",
       "result": "College basketball game between George Fox and Idaho.",
       "title": "George Fox vs. Idaho"
+    },
+    "f41e9db043921314e226c8f0d12e41c9f9668dd2e60847a54a9630d946258139": {
+      "created_at": "2026-11-05T05:40:32.980002+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sharks vs Kings",
+        "description": "Coverage of Sharks against Kings.",
+        "raw": "Sharks @ Kings"
+      }
     },
     "f579c8d4db49af0828901fbe64c267b8607f264b4a2c351135a3f0f62dee3ad5": {
       "created_at": "2026-11-04T13:50:28.840959+00:00",
@@ -3809,7 +3881,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-05T05:24:59.519947+00:00"
+    "gemini": "2026-11-05T11:40:18.863941+00:00"
   },
   "version": 1
 }
