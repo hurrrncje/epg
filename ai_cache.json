@@ -76,7 +76,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T00:34:43.188133+00:00"
+      "retry_after": "2026-11-06T02:07:22.303576+00:00"
     },
     "04dd547744db4512fc80b60565a01748408395067f1bbad99c29f67058b121f1": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -475,7 +475,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T00:34:43.188133+00:00"
+      "retry_after": "2026-11-06T02:07:22.303576+00:00"
     },
     "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
       "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
@@ -516,7 +516,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T00:34:43.188133+00:00"
+      "retry_after": "2026-11-06T02:07:22.303576+00:00"
     },
     "24ebd9192f9f8fb597e1fa64b9d5987870724af0dbda302b194851312b167dce": {
       "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
@@ -1636,7 +1636,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T00:34:43.188133+00:00"
+      "retry_after": "2026-11-06T02:07:22.303576+00:00"
     },
     "64f3b8f81fa49c47e706bf4afc167c0131064976b1131bb9aa8b994f27a63ca6": {
       "created_at": "2026-11-05T13:54:36.011723+00:00",
@@ -2816,7 +2816,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T00:34:43.188133+00:00"
+      "retry_after": "2026-11-06T02:07:22.303576+00:00"
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -4032,7 +4032,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T00:34:43.188133+00:00"
+      "retry_after": "2026-11-06T02:07:22.303576+00:00"
     },
     "fac2c38ed021ab11e12dff0c53017e00487e4a586478786bfe41d90d81218299": {
       "created_at": "2026-11-04T00:18:05.294014+00:00",
@@ -4115,7 +4115,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-06T01:34:15.638305+00:00"
+    "gemini": "2026-11-06T07:52:21.796448+00:00"
   },
   "version": 1
 }
