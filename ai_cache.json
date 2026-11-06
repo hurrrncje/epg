@@ -292,7 +292,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
       "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
@@ -2032,7 +2032,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -2254,7 +2254,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -2304,7 +2304,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "7fd1ad87be5f9f88a68be39b8b0fc721d242d634f4a5e25bb8ad7d498ef7602b": {
       "context": "Rangers.spfl; Next Game: St Mirren vs Rangers on 07/11/2026 at 20:00 GMT",
@@ -2405,7 +2405,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
@@ -2877,7 +2877,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "9c23f2bd399882462b2619b0017478763b08d208d432b2b21013ca00f813a46a": {
       "created_at": "2026-11-06T13:50:32.471811+00:00",
@@ -3052,7 +3052,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "a474d65e7bd65047b2c5d4eae135bebe10c38f9fc3ec42a6411daa28c3e54def": {
       "created_at": "2026-11-06T05:37:42.631716+00:00",
@@ -3108,7 +3108,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:15.244786+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -3773,7 +3773,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "c5c7a028de0dedfe148ad521f27f08c5e1c0cab3db24af47091302aaa6d241fb": {
       "created_at": "2026-10-26T12:06:58.198967+00:00",
@@ -4428,7 +4428,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "e5688a5fd47ef5ca9c774cf9effed740130fce780a68a7d7726fad39847d3bf4": {
       "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
@@ -4751,7 +4751,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T19:50:29.840470+00:00"
+      "retry_after": "2026-11-06T20:41:14.930144+00:00"
     },
     "f4b8a8c367dc49f7ea537b3fc49440572d9cc5db7a1fc408fe767ec9279307e6": {
       "created_at": "2026-11-06T13:50:44.090570+00:00",
@@ -4937,7 +4937,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-06T19:50:29.840470+00:00"
+    "gemini": "2026-11-07T02:26:14.130866+00:00"
   },
   "version": 1
 }
