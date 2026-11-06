@@ -319,6 +319,15 @@
       "result": "UEFA Youth League match: Barcelona U19 vs. Aston Villa U19.",
       "title": "UEFA Youth League: Barcelona U19 - Aston Villa U19"
     },
+    "192bf157aab192ba42876991e3168a9bcd66f591557a51b878730c34d245afd4": {
+      "created_at": "2026-11-06T04:37:05.962192+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "IFL 5: Sumit vs Paalee",
+        "description": "Coverage of IFL 5: Sumit against Paalee.",
+        "raw": "IFL 5 Sumit v Paalee"
+      }
+    },
     "1a0441dc70a5752684928e36368a5a91af7492aecabd0cd887460846e0e7844f": {
       "created_at": "2026-10-26T19:21:40.738756+00:00",
       "kind": "live-title",
@@ -661,6 +670,15 @@
       "kind": "event-description",
       "result": "Domestic league match between Liberte FC and JS Tahoua scheduled for 1 Nov 2026 at 15:15 GMT.",
       "title": "Liberté FC vs. JS Tahoua"
+    },
+    "292baa88bdce00ae6d4a0aac5c8a7ec1078e81274c11b5cfaeefae0881fcbe7e": {
+      "created_at": "2026-11-06T04:37:05.962194+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "LUX 064",
+        "description": "Coverage of LUX 064.",
+        "raw": "LUX 064"
+      }
     },
     "29614e3384635443ac74fb142da0ca6866f052f0c52e11319194a0631091d8c7": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -1024,6 +1042,15 @@
       "kind": "event-description",
       "result": "CBS Sports HQ Morning Boxscore recap is streamed on Paramount+.",
       "title": "cbssportshq: Morning Boxscore"
+    },
+    "3c552e4e70871dbb0360ab41ca51921a55b82e59a4171fd9013db07c2c75e141": {
+      "created_at": "2026-11-06T04:37:05.962177+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "GCW: Dead on Arrival",
+        "description": "Coverage of GCW: Dead on Arrival.",
+        "raw": "GCW Dead on Arrival"
+      }
     },
     "3d22be5f1397b41de4690030c2fcdda9aa47a8acb27aa18229e3daf497daad13": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -1598,6 +1625,15 @@
       "kind": "event-description",
       "result": "Galatasaray play VfB Stuttgart at Rams Park, Istanbul in the Champions League league‑phase on 3 Nov 2026.",
       "title": "UEFA Champions League | League Phase: Galatasaray - VfB Stuttgart"
+    },
+    "60bbf4384e38cf8c740615178c6aad4a33361e7717120cc43f194e83eed283df": {
+      "created_at": "2026-11-06T04:37:05.962197+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Samourai MMA 2",
+        "description": "Coverage of Samourai MMA 2.",
+        "raw": "Samourai MMA 2"
+      }
     },
     "60c502ca357d1a0e09eb624fffd93db668165da14408856159b0bac0d0f86dd4": {
       "context": "Disney+ Events event scheduled 02/11/2026 23:30 GMT",
@@ -2355,6 +2391,15 @@
       "kind": "event-description",
       "result": "MLB awards ceremony: 2026 Rawlings Gold Glove Awards presented by Dick's Sporting Goods.",
       "title": "The Rawlings Gold Glove Awards Presented by Dick's Sporting Goods"
+    },
+    "95c123d06d2c185fbb574e79f84a67c2a0aaeb35b16eaf86783de01cbdc2b7f5": {
+      "created_at": "2026-11-06T04:37:05.962200+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "The Dirt Track at Charlotte",
+        "description": "Coverage of The Dirt Track at Charlotte.",
+        "raw": "The Dirt Track at Charlotte"
+      }
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -3323,6 +3368,15 @@
       "result": "The 2026 National Putting Tour hosts The Putting Zone Shootout competition.",
       "title": "2026 National Putting Tour's \"The Putting Zone Shootout\""
     },
+    "cb9f35f618499d205bc5968b48c2a9569e536b7b833637316dfee4851c36927a": {
+      "created_at": "2026-11-06T04:37:05.962196+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "ONE Fight Night 49: Gabriel vs Rasulov",
+        "description": "Coverage of ONE Fight Night 49: Gabriel against Rasulov.",
+        "raw": "ONE Fight Night 49 Gabriel v Rasulov"
+      }
+    },
     "cbfb56ce05d089fb15faadc1ab5f7d9fbe134a8797c6b12e7684db01e454dbce": {
       "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
       "created_at": "2026-11-03T16:30:41.541196+00:00",
@@ -3436,6 +3490,15 @@
       "kind": "event-description",
       "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
       "title": "Leicester City vs Stevenage FC"
+    },
+    "d37b7186f35ff42f767a56f32e162914373468a16878294c8dc164c531f2f562": {
+      "created_at": "2026-11-06T04:37:05.962199+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Southern Thunder Super Dirt Series",
+        "description": "Coverage of Southern Thunder Super Dirt Series.",
+        "raw": "Southern Thunder Super Dirt Series"
+      }
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
