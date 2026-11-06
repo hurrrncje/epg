@@ -97,6 +97,15 @@
         "raw": "Golden Knights @ Penguins"
       }
     },
+    "05b12773e84564ccd8c9cd7a8bf0f8f8fef8b5f5d876f35033811db1fe724681": {
+      "created_at": "2026-11-06T05:37:50.696322+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Penn vs Illinois",
+        "description": "Coverage of Penn against Illinois.",
+        "raw": "Penn @ Illinois"
+      }
+    },
     "0732eb261507769a61f9d13b3ec2434b9ea73f81fb07e6899f67b681b331bce1": {
       "created_at": "2026-11-04T13:50:28.840967+00:00",
       "kind": "live-title",
@@ -257,6 +266,15 @@
         "clean_title": "Medicine Hat, AB - Day 2, Draw 8",
         "description": "Coverage of Medicine Hat, AB - Day 2, Draw 8.",
         "raw": "Medicine Hat, AB - Day 2, Draw 8"
+      }
+    },
+    "1365135376c92fec2f4832d894334f04400c0a833ef8dc3621688aa99cd60a14": {
+      "created_at": "2026-11-06T05:37:50.696335+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "The Dirt Track at Charlotte",
+        "description": "Coverage of The Dirt Track at Charlotte.",
+        "raw": "The Dirt Track at Charlotte"
       }
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
@@ -761,6 +779,15 @@
         "raw": "FC Tevragh-Zeina vs. AS Armée"
       }
     },
+    "2bb2b3af8dea4980ee68ef7feadb31d07453fd290aa26e1f98742b5cf0e191ee": {
+      "created_at": "2026-11-06T05:37:50.696334+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Stars vs Blue Jackets",
+        "description": "Coverage of Stars against Blue Jackets.",
+        "raw": "Stars @ Blue Jackets"
+      }
+    },
     "2bd23c3bd005cb6a32a07e0fec2649fafc20b8da3abe086a7f42a4c05f557a40": {
       "context": "ESPN+ event scheduled 29/10/2026 00:30 GMT",
       "created_at": "2026-10-29T06:23:30.006268+00:00",
@@ -791,6 +818,15 @@
         "clean_title": "Wild vs. Flyers",
         "description": "Coverage of Wild against Flyers.",
         "raw": "Wild @ Flyers"
+      }
+    },
+    "2c1861f8e56d5320f541be6d02116f1d3d423db22062e84f994e5867768cf666": {
+      "created_at": "2026-11-06T05:37:42.631720+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "GCW Dead on Arrival",
+        "description": "Coverage of GCW Dead on Arrival.",
+        "raw": "GCW Dead on Arrival"
       }
     },
     "2c24c87defdd9d20a282a9ee03d90a6721fa9288bb1c2f08b71dce2055da3067": {
@@ -950,6 +986,15 @@
       "kind": "event-description",
       "result": "Navy men's ice hockey competes against Bucknell men's ice hockey in an ECAC regular‑season game.",
       "title": "Navy vs. Bucknell"
+    },
+    "344f23e334072c8a4c1724521659dc6aa3c35248440249ba385a4aa6b0bad71f": {
+      "created_at": "2026-11-06T05:37:48.861289+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens"
+      }
     },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
@@ -1264,6 +1309,15 @@
       "kind": "event-description",
       "result": "Army plays Colgate in a college basketball contest.",
       "title": "Army vs. Colgate"
+    },
+    "49613929e2cbf87149de1f8ac339675e37782e8fe3323c57210099a8ba9db191": {
+      "created_at": "2026-11-06T05:37:42.631712+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Blues vs Devils",
+        "description": "Coverage of Blues against Devils.",
+        "raw": "Blues @ Devils"
+      }
     },
     "49af132424a4e6e4e7fb00a14d5b88fe45b3db9747a58606c218b511c4be584b": {
       "context": "Paramount+ event scheduled 29/10/2026 00:20 GMT",
@@ -1605,12 +1659,30 @@
       "result": "College basketball game between Radford and San Francisco.",
       "title": "Radford vs. San Francisco"
     },
+    "5e5b169bbd367693ebb6e583fa72329c58674111c54304cf68885f6095966207": {
+      "created_at": "2026-11-06T05:37:48.861309+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "James Madison @ Southern Miss",
+        "description": "Coverage of James Madison against Southern Miss.",
+        "raw": "James Madison @ Southern Miss"
+      }
+    },
     "5f2dc18fbdff71fd2b8ff63ab1be2d43662106fe1a5658644faa41c267f73662": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898633+00:00",
       "kind": "event-description",
       "result": "MLS match between San Jose Earthquakes and Colorado Rapids scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "7 | San Jose Earthquakes vs Colorado Rapids (English)"
+    },
+    "5fa770637def1eabe1b30d74757f425389c423e61c0c2eff2504e93f47effa08": {
+      "created_at": "2026-11-06T05:37:48.861312+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Medicine Hat, AB - Day 3, Draw 12",
+        "description": "Coverage of Medicine Hat, AB - Day 3, Draw 12.",
+        "raw": "Medicine Hat, AB - Day 3, Draw 12"
+      }
     },
     "5faad55d2170a94f7aa7dae0d48b3da08bde726a8679d9abf8d8b89bf58769b7": {
       "context": "EFLOldhamAthletic.uk; Next Game: Oldham Athletic AFC vs Crawley Town FC on 31/10/2026 at 15:00 GMT",
@@ -1843,6 +1915,15 @@
       "result": "MLS match between Austin FC and Real Salt Lake scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "7 | Austin FC vs Real Salt Lake (English)"
     },
+    "71c876dacfd1dd6334f8f31a82993fa1c25fdda90e9a90df74dfe99659e88651": {
+      "created_at": "2026-11-06T05:37:50.696332+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Southern Thunder Super Dirt Series",
+        "description": "Coverage of Southern Thunder Super Dirt Series.",
+        "raw": "Southern Thunder Super Dirt Series"
+      }
+    },
     "71d8e37909acac651cbf39671dee716ef0f0de77ebf952b792430a22086e4782": {
       "context": "DAZN UK event scheduled 02/11/2026 01:20 GMT",
       "created_at": "2026-11-02T06:42:29.061698+00:00",
@@ -1880,6 +1961,15 @@
         "clean_title": "Medicine Hat AB Day 2 Draw 8",
         "description": "Coverage of Medicine Hat AB Day 2 Draw 8.",
         "raw": "Medicine Hat, AB - Day 2, Draw 8"
+      }
+    },
+    "72ff740852f04ce3fd183c0cf177d6972b4a89a4fcb82c6108b6ee9f8ed21554": {
+      "created_at": "2026-11-06T05:37:48.861314+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "ONE Friday Fights Isannuea v Jack",
+        "description": "Coverage of ONE Friday Fights Isannuea against Jack.",
+        "raw": "ONE Friday Fights Isannuea v Jack"
       }
     },
     "7306f5e34c44fe5d739e8a0f994206a43d9df1be5caf4eaa1414ce550036335e": {
@@ -1949,6 +2039,15 @@
       "kind": "event-description",
       "result": "Pacific men's ice hockey takes on Denver men's ice hockey in an NCAA Division I regular‑season match.",
       "title": "Pacific vs. Denver"
+    },
+    "784d0fd888134bfa28dde0645df55df59ab005a2b01678517f0f65aafe7a08c8": {
+      "created_at": "2026-11-06T05:37:48.861306+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens (Spanish Broadcast)"
+      }
     },
     "786eb04cbe6bbf1d0a7923f79a66846a0d240a50497020f9421a3552c8a57be8": {
       "created_at": "2026-11-04T13:50:28.840965+00:00",
@@ -2171,6 +2270,15 @@
       "result": "Men's soccer match between Seattle U Redhawks and Portland Pilots scheduled for Oct 29 2026.",
       "title": "Seattle U vs. Portland"
     },
+    "86362155f0618ac1c96019f6c7aaa9304845cab2b09772a575e62fe0c3caaf09": {
+      "created_at": "2026-11-06T05:37:42.631700+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Blackhawks vs Lightning",
+        "description": "Coverage of Blackhawks against Lightning.",
+        "raw": "Blackhawks @ Lightning"
+      }
+    },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
       "created_at": "2026-11-03T15:25:28.327531+00:00",
@@ -2299,6 +2407,15 @@
       "kind": "event-description",
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
+    },
+    "8ff77e6e2b40fbf0c95d0408e458f72fc20f9fb108aeb4b3c479d35b61b81511": {
+      "created_at": "2026-11-06T05:37:48.861310+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "LUX 064",
+        "description": "Coverage of LUX 064.",
+        "raw": "LUX 064"
+      }
     },
     "900161061280ddb5ec8f9377c8cc9ef4357e3bf93982f3080e0bf2acb4ded85a": {
       "context": "Disney+ Events event scheduled 02/11/2026 10:00 GMT",
@@ -2528,6 +2645,15 @@
       "result": "Premier League match Tottenham Hotspur vs Crystal Palace scheduled for Oct 31 2026 at 17:30 GMT.",
       "title": "Tottenham Hotspur vs Crystal Palace"
     },
+    "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
+      "created_at": "2026-11-06T05:37:48.861304+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens (Prime Vision with Next Gen Stats)"
+      }
+    },
     "9d90e64b12ffbb894866057ef9c813fcf02dc93f17149483e314d7ae44dba86a": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
       "created_at": "2026-10-28T18:24:17.569545+00:00",
@@ -2592,12 +2718,30 @@
         "raw": "Sharks @ Kings"
       }
     },
+    "a145c6bf09813f183d448b19127ee53a18cecf52e236ffb2c7c90b4f95f2caf9": {
+      "created_at": "2026-11-06T05:37:50.696329+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Predators vs Avalanche",
+        "description": "Coverage of Predators against Avalanche.",
+        "raw": "Predators @ Avalanche"
+      }
+    },
     "a1a864ca09d2ab51429cbd2cacc533d4516ee559d1b782e1e614369525d53f8b": {
       "context": "DAZN UK event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061702+00:00",
       "kind": "event-description",
       "result": "NHL game between the Ottawa Senators and the Anaheim Ducks.",
       "title": "Senators @ Ducks"
+    },
+    "a1ba155c462c5accefc757a622a8e359fac4aeee82f120dc769bf36575c26948": {
+      "created_at": "2026-11-06T05:37:42.631719+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Ducks vs Oilers",
+        "description": "Coverage of Ducks against Oilers.",
+        "raw": "Ducks @ Oilers"
+      }
     },
     "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
       "created_at": "2026-10-28T00:12:37.428454+00:00",
@@ -2661,6 +2805,15 @@
       "result": "Carnegie Mellon University women's basketball team competes against Princeton.",
       "title": "Carnegie Mellon University vs. Princeton"
     },
+    "a474d65e7bd65047b2c5d4eae135bebe10c38f9fc3ec42a6411daa28c3e54def": {
+      "created_at": "2026-11-06T05:37:42.631716+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Canucks vs Jets",
+        "description": "Coverage of Canucks against Jets.",
+        "raw": "Canucks @ Jets"
+      }
+    },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898636+00:00",
@@ -2675,6 +2828,15 @@
         "clean_title": "Freeport FC vs. Heaven Eleven FC",
         "description": "Coverage of Freeport FC against Heaven Eleven FC.",
         "raw": "Freeport FC vs. Heaven Eleven FC"
+      }
+    },
+    "a53318edab8f4580f40a134c2aafab64297138fb834ae4a6ef5ff2e6c237e784": {
+      "created_at": "2026-11-06T05:37:42.631717+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Coastal Carolina vs Duke",
+        "description": "Coverage of Coastal Carolina against Duke.",
+        "raw": "Coastal Carolina @ Duke"
       }
     },
     "a566d1211e5ce197df424ed89ec0f57ca9235cd8249f7271b5970c39e67a6710": {
@@ -2819,6 +2981,24 @@
       "kind": "event-description",
       "result": "Biola University men's basketball team hosts the University of San Diego in a regular‑season NCAA Division III game.",
       "title": "Biola vs. San Diego"
+    },
+    "ae0eb9b6965fd8ad884db6f31bbecf3665f4c604bd3aa907a199c35418759870": {
+      "created_at": "2026-11-06T05:37:50.696331+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Samourai MMA 2",
+        "description": "Coverage of Samourai MMA 2.",
+        "raw": "Samourai MMA 2"
+      }
+    },
+    "ae8b77bf30273efb0d4c1ad0bae23e2c75ee411b24fcb9341f49481316c90033": {
+      "created_at": "2026-11-06T05:37:42.631714+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bruins vs Penguins",
+        "description": "Coverage of Bruins against Penguins.",
+        "raw": "Bruins @ Penguins"
+      }
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -3205,6 +3385,15 @@
       "kind": "event-description",
       "result": "North Texas Football Press Conference."
     },
+    "c35e5b70bcf3b9ab74e8aa791f4703000bd68409e87087d0ea03b766635fc3d9": {
+      "created_at": "2026-11-06T05:37:50.696337+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Toledo vs Michigan State",
+        "description": "Coverage of Toledo against Michigan State.",
+        "raw": "Toledo @ Michigan State"
+      }
+    },
     "c365c6941d3f223c92a43953685abbdaaa6e753c4b7d4164127e189ee0dff196": {
       "context": "DAZN UK event scheduled 03/11/2026 02:00 GMT",
       "created_at": "2026-11-03T02:30:26.191768+00:00",
@@ -3426,6 +3615,15 @@
       "result": "CBS Sports HQ airs its Primetime Pregame LIVE segment.",
       "title": "cbssportshq: Primetime Pregame LIVE"
     },
+    "d04ef09d8e1fc528971c0ae8b13e671034f17c60c633dc4e6143713e1d7cae39": {
+      "created_at": "2026-11-06T05:37:42.631723+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Hurricanes vs Islanders",
+        "description": "Coverage of Hurricanes against Islanders.",
+        "raw": "Hurricanes @ Islanders"
+      }
+    },
     "d07a12190350c4ff9245048b5b11bc712f5069a85b52842cf1025ef3c9ea31d6": {
       "context": "Disney+ Events event scheduled 03/11/2026 17:50 GMT",
       "created_at": "2026-11-03T17:08:47.066378+00:00",
@@ -3612,6 +3810,15 @@
       "result": "Carabao Cup match between Fulham and Crystal Palace, part of the 2026‑27 Carabao Cup, scheduled for 28 October 2026 at 19:00 GMT.",
       "title": "Carabao Cup: Fulham vs. Crystal Palace"
     },
+    "d9e68e5508ed4d112ebea00783aa7219896529574643b1c3c77d9d63aa64d04a": {
+      "created_at": "2026-11-06T05:37:48.861313+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "ONE Fight Night 49 Gabriel v Rasulov",
+        "description": "Coverage of ONE Fight Night 49 Gabriel against Rasulov.",
+        "raw": "ONE Fight Night 49 Gabriel v Rasulov"
+      }
+    },
     "da0566176861644787f1520a0e23ad8341394624dde872285e009d504d7e61a6": {
       "created_at": "2026-10-28T00:12:37.428443+00:00",
       "kind": "live-title",
@@ -3625,6 +3832,24 @@
       "created_at": "2026-10-26T12:30:58.030742+00:00",
       "kind": "event-description",
       "result": "League Two match: Walsall vs Salford City, scheduled 26 Oct 2026 20:00 GMT."
+    },
+    "dac6eb0ab3cc1a3dc4a3e91a1d7804f0cad2bc8b48ef07e6082dabf43b06e02a": {
+      "created_at": "2026-11-06T05:37:48.861311+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Mammoth @ Canadiens",
+        "description": "Coverage of Mammoth against Canadiens.",
+        "raw": "Mammoth @ Canadiens"
+      }
+    },
+    "dad1606c078f34a88881bf5a4c464bdb3445e7d41b2917074d9a0b648d2c6fbe": {
+      "created_at": "2026-11-06T05:37:42.631724+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "IFL 5: Sumit Bhyan vs Paalee Sathishwer",
+        "description": "Coverage of IFL 5: Sumit Bhyan against Paalee Sathishwer.",
+        "raw": "IFL 5 Sumit v Paalee"
+      }
     },
     "dbd02d2973fd3c492abec2c673f9f70191f7f32dac9b49729030b7f4f5bd54e7": {
       "created_at": "2026-11-04T13:50:50.158573+00:00",
@@ -3810,6 +4035,15 @@
       "result": "Georgia Southern football press conference on 02/11/2026 at 17:30 GMT.",
       "title": "Georgia Southern Football Press Conference"
     },
+    "e57c49136191cd9d5724568d64504b94f96a54cb1b08487000bc30591de3c289": {
+      "created_at": "2026-11-06T05:37:50.696338+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UTSA vs Florida Atlantic",
+        "description": "Coverage of UTSA against Florida Atlantic.",
+        "raw": "UTSA @ Florida Atlantic"
+      }
+    },
     "e6080b157193a53e461e96c0bf9f38c15df6620e159b2defaed29482a85f9a2f": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T03:31:18.914254+00:00",
@@ -3944,6 +4178,15 @@
         "clean_title": "Cholet vs. Paris",
         "description": "Coverage of Cholet against Paris.",
         "raw": "Cholet vs. Paris"
+      }
+    },
+    "ee1cc0d81e81cd2e0cfe3ba95edcb4546a59569ff3d4becc538adae1b02acd9a": {
+      "created_at": "2026-11-06T05:37:48.861308+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Jaguars @ Ravens",
+        "description": "Coverage of Jaguars against Ravens.",
+        "raw": "Jaguars @ Ravens (US., French, German, Japanese, Portuguese Game Commentary Available)"
       }
     },
     "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
@@ -4149,6 +4392,15 @@
         "clean_title": "Ohio vs Akron",
         "description": "Coverage of Ohio against Akron.",
         "raw": "Ohio @ Akron"
+      }
+    },
+    "fb08487a9d8668ebb9fc237404359cf80c195b499c897446daa1a2afe8628c4a": {
+      "created_at": "2026-11-06T05:37:42.631721+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Golden Knights vs Red Wings",
+        "description": "Coverage of Golden Knights against Red Wings.",
+        "raw": "Golden Knights @ Red Wings"
       }
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
