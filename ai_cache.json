@@ -73,10 +73,13 @@
       "title": "Messi Cup 2026 (9th Place Match)"
     },
     "044310d7aab93438b58d836d132cbe52f7620c2d61b3f2b5668f313901433835": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T03:30:23.708947+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T02:07:22.303576+00:00"
+      "result": {
+        "clean_title": "Coastal Carolina vs Duke",
+        "description": "Coverage of Coastal Carolina against Duke.",
+        "raw": "Coastal Carolina @ Duke"
+      }
     },
     "04dd547744db4512fc80b60565a01748408395067f1bbad99c29f67058b121f1": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -472,10 +475,13 @@
       }
     },
     "22ef576d40fc7fef3f54a973fd2ca7f16fda65f6da5c02489a2aea08575c1c46": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T03:30:23.708949+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T02:07:22.303576+00:00"
+      "result": {
+        "clean_title": "Ducks vs Oilers",
+        "description": "Coverage of Ducks against Oilers.",
+        "raw": "Ducks @ Oilers"
+      }
     },
     "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
       "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
@@ -513,10 +519,13 @@
       "title": "Montana @ Oregon"
     },
     "24c92da902575504bf5f407dc274ca9e0ea460664ac2ffc2e10f55a855d685d8": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T03:30:23.708929+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T02:07:22.303576+00:00"
+      "result": {
+        "clean_title": "Bruins vs Penguins",
+        "description": "Coverage of Bruins against Penguins.",
+        "raw": "Bruins @ Penguins"
+      }
     },
     "24ebd9192f9f8fb597e1fa64b9d5987870724af0dbda302b194851312b167dce": {
       "context": "MAX UK event scheduled 01/11/2026 22:00 GMT",
@@ -1633,10 +1642,13 @@
       "title": "Sacramento Republic FC vs. FC Tulsa (Western Conference Quarterfinal)"
     },
     "6410c0bc33e92c806e5d6fbf584eb89119b6f3e81096cf26429457a97f772cce": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T03:30:23.708931+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T02:07:22.303576+00:00"
+      "result": {
+        "clean_title": "Canucks vs Jets",
+        "description": "Coverage of Canucks against Jets.",
+        "raw": "Canucks @ Jets"
+      }
     },
     "64f3b8f81fa49c47e706bf4afc167c0131064976b1131bb9aa8b994f27a63ca6": {
       "created_at": "2026-11-05T13:54:36.011723+00:00",
@@ -2388,6 +2400,15 @@
       "result": "College football regular‑season game between Sam Houston State Bearkats and Missouri State Bears, part of the 2026‑27 NCAA season.",
       "title": "Sam Houston @ Missouri State"
     },
+    "978a4acc62513f7568bdcd5359b598515fc79f042e1abdea92a7cfb3c1a1a875": {
+      "created_at": "2026-11-06T03:30:23.708927+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Gallen vs Asofa-Solomona (Prelims)",
+        "description": "Coverage of Gallen against Asofa-Solomona (Prelims).",
+        "raw": "Boxing Gallen v Asofa-Solomona Prelims"
+      }
+    },
     "97c3e636ee9b779c1619f52293754b580a15f9154a1b19d7dd68fdb2658fec59": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
       "created_at": "2026-11-02T16:40:59.690105+00:00",
@@ -2500,6 +2521,15 @@
       "kind": "event-description",
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
+    },
+    "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
+      "created_at": "2026-11-06T03:30:23.708951+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Isannuea vs Jack (ONE Friday Fights)",
+        "description": "Coverage of Isannuea against Jack (ONE Friday Fights).",
+        "raw": "ONE Friday Fights Isannuea v Jack"
+      }
     },
     "9fe1ab77335deb1c461b825fdf33457fd766c4d48da97d51cea127b6c0ba472a": {
       "context": "Paramount+ event scheduled 01/11/2026 12:00 GMT",
@@ -2813,10 +2843,13 @@
       }
     },
     "b3ccd46ad5ef56f4ace102b972663246ef6e34b428a0ef3a8649cb3cc4429aec": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T03:30:23.708922+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T02:07:22.303576+00:00"
+      "result": {
+        "clean_title": "Blues vs Devils",
+        "description": "Coverage of Blues against Devils.",
+        "raw": "Blues @ Devils"
+      }
     },
     "b49a16bb86de8abbda6a6e12f8b929e6979e869edd51ffd0cc45608606c3d5d6": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -3231,6 +3264,15 @@
       "kind": "event-description",
       "result": "MLS regular‑season match: FC Cincinnati vs Philadelphia Union, Saturday 31 Oct 2026, kickoff 2:00 PM local (17:55 GMT)【13†L22-L27】",
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
+    },
+    "c867c4fd908060bed43701369fb3adb5569efa585a290d8d68535673676fce07": {
+      "created_at": "2026-11-06T03:30:23.708925+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Gallen vs Asofa-Solomona (Main Card)",
+        "description": "Coverage of Gallen against Asofa-Solomona (Main Card).",
+        "raw": "Boxing Gallen v Asofa-Solomona Main Card"
+      }
     },
     "c8a4d0afc13b2d4cf46eebf71499bb038c32b401b28adde3f907e732faa0b42c": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -4029,10 +4071,13 @@
       "title": "UEFA Champions League | League Phase: Shakhtar Donetsk - Sporting CP"
     },
     "f9c400901935f8e871a9881a0c55a6e018b53428d42d2983561f08f6706a6859": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T03:30:23.708906+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T02:07:22.303576+00:00"
+      "result": {
+        "clean_title": "Blackhawks vs Lightning",
+        "description": "Coverage of Blackhawks against Lightning.",
+        "raw": "Blackhawks @ Lightning"
+      }
     },
     "fac2c38ed021ab11e12dff0c53017e00487e4a586478786bfe41d90d81218299": {
       "created_at": "2026-11-04T00:18:05.294014+00:00",
