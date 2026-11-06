@@ -51,6 +51,15 @@
       "result": "Women’s Group Stage match between Colombia and Ukraine in the Dakar 2026 Youth Olympic Futsal Tournament.",
       "title": "Women | Group Stage | Dakar 2026: Colombia - Ukraine"
     },
+    "03663ea411c598375019bbac257f498127d69350ae965852715c5f3b3f042b41": {
+      "created_at": "2026-11-06T16:30:46.812808+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Wellington Olympic vs Auckland United",
+        "description": "Coverage of Wellington Olympic against Auckland United.",
+        "raw": "Wellington Olympic vs. Auckland United"
+      }
+    },
     "036f171d2ee723a244db79cb03a49998c03052cb7dbdc84a29d9282028e7d6a9": {
       "context": "Disney+ Events event scheduled 03/11/2026 08:00 GMT",
       "created_at": "2026-11-03T09:30:27.039526+00:00",
@@ -178,10 +187,13 @@
       "title": "Eyewitness News: Marathon Sunday"
     },
     "0b18888fa39149c25a9d3a66e340a21b33fffc5eecbaec43db4b8f13ff459c34": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696010+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "St. Thomas vs Minnesota",
+        "description": "Coverage of St. Thomas against Minnesota.",
+        "raw": "St. Thomas @ Minnesota"
+      }
     },
     "0b35a70595b5a0f42a9f2115270432066d8606448429f8731e3640ccc37f4b59": {
       "context": "Paramount+ event scheduled 28/10/2026 13:00 GMT",
@@ -280,7 +292,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
       "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
@@ -296,6 +308,15 @@
         "clean_title": "Medicine Hat, AB - Day 2, Draw 8",
         "description": "Coverage of Medicine Hat, AB - Day 2, Draw 8.",
         "raw": "Medicine Hat, AB - Day 2, Draw 8"
+      }
+    },
+    "12998588bc9258c7842e9e44c29620b694cbc18b7d3cf58915939589a21928f1": {
+      "created_at": "2026-11-06T16:30:46.812805+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Venezuela U23 vs South Africa U23",
+        "description": "Coverage of Venezuela U23 against South Africa U23.",
+        "raw": "Venezuela U23 vs. South Africa U23"
       }
     },
     "1365135376c92fec2f4832d894334f04400c0a833ef8dc3621688aa99cd60a14": {
@@ -574,6 +595,15 @@
         "raw": "Unicaja vs. Pallacanestro Reggiana"
       }
     },
+    "23f0f1145aabe75cc1d54542176e1c6deb3ef468c8150b494b3b8d463c0f20f9": {
+      "created_at": "2026-11-06T16:30:46.812802+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Venezia vs Udinese",
+        "description": "Coverage of Venezia against Udinese.",
+        "raw": "Venezia vs. Udinese"
+      }
+    },
     "23fda2f37975b9efee5e5a3c3713c85280da2f110614612d27f31f3888f3b62b": {
       "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
       "created_at": "2026-11-02T17:31:56.705965+00:00",
@@ -635,10 +665,13 @@
       }
     },
     "260c634544b9b10064d5274a0cf58e98c4b3679750e5d0d185682e9bb13fa141": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696001+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "RCA vs Britannia",
+        "description": "Coverage of RCA against Britannia.",
+        "raw": "RCA vs. Britannia"
+      }
     },
     "26624a2a499c000baaa17b6c03d9e4e0dba0a6dc88e1b46d025fd18506122b05": {
       "context": "Disney+ Events event scheduled 01/11/2026 22:00 GMT",
@@ -664,10 +697,13 @@
       "title": "UEFA Women's Champions League: Chelsea vs. Roma"
     },
     "26c0a45e5b896b126a62a8921d05520112f8fcf748faf1f036bfb4db087e9fb0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696009+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "South Florida vs East Carolina",
+        "description": "Coverage of South Florida against East Carolina.",
+        "raw": "South Florida @ East Carolina"
+      }
     },
     "26c92390d9a318d3ecb5563b3ebd9a2c5cdfb7d9a3200ed29aa80e43fdc243d9": {
       "created_at": "2026-11-03T17:53:06.054602+00:00",
@@ -1719,10 +1755,13 @@
       }
     },
     "5c89c505646eb27d3324db0050c8c5337a0136815987c1f25b33dfe5e6a3cb67": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696007+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "Sharks vs Wild",
+        "description": "Coverage of Sharks against Wild.",
+        "raw": "Sharks @ Wild"
+      }
     },
     "5d9a2b0b69511c104a4e7e1efa5b38b0c8ca7c34749544af294ede2afe82c5b8": {
       "created_at": "2026-10-26T12:30:58.030780+00:00",
@@ -1750,6 +1789,15 @@
         "clean_title": "James Madison @ Southern Miss",
         "description": "Coverage of James Madison against Southern Miss.",
         "raw": "James Madison @ Southern Miss"
+      }
+    },
+    "5e6ba2a4c064594114228e558c335929978d6c9031080e2215fd2a712701096a": {
+      "created_at": "2026-11-06T16:30:46.812806+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Virginia Tech vs SMU",
+        "description": "Coverage of Virginia Tech against SMU.",
+        "raw": "Virginia Tech @ SMU"
       }
     },
     "5f2dc18fbdff71fd2b8ff63ab1be2d43662106fe1a5658644faa41c267f73662": {
@@ -1984,7 +2032,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -2206,7 +2254,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -2256,7 +2304,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "7fd1ad87be5f9f88a68be39b8b0fc721d242d634f4a5e25bb8ad7d498ef7602b": {
       "context": "Rangers.spfl; Next Game: St Mirren vs Rangers on 07/11/2026 at 20:00 GMT",
@@ -2357,7 +2405,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
@@ -2534,10 +2582,13 @@
       }
     },
     "8dc5c537a5ad76564e0440ecbfc69e9f0088f7f6fb4dfb8f868cf573c3880158": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696006+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "Saint Louis vs Missouri",
+        "description": "Coverage of Saint Louis against Missouri.",
+        "raw": "Saint Louis vs. Missouri"
+      }
     },
     "8e37074aabcf02094bc665de072a6b1e6d7bf124e51f3717cf13f48e8aa93195": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -2826,7 +2877,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "9c23f2bd399882462b2619b0017478763b08d208d432b2b21013ca00f813a46a": {
       "created_at": "2026-11-06T13:50:32.471811+00:00",
@@ -3001,7 +3052,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "a474d65e7bd65047b2c5d4eae135bebe10c38f9fc3ec42a6411daa28c3e54def": {
       "created_at": "2026-11-06T05:37:42.631716+00:00",
@@ -3057,7 +3108,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "retry_after": "2026-11-06T16:45:24.696023+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -3118,6 +3169,15 @@
       "kind": "event-description",
       "result": "Disney+ event 'Long Beach State vs. Utah Valley' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Long Beach State vs. Utah Valley"
+    },
+    "a89b2770f234de48022630f4fc4cee73ac1ae1f95211166f437b1f00b0171caf": {
+      "created_at": "2026-11-06T16:30:46.812785+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Valparaiso vs Purdue",
+        "description": "Coverage of Valparaiso against Purdue.",
+        "raw": "Valparaiso @ Purdue"
+      }
     },
     "a8fb53a1a3ea34ef88f5125db1f14556d3ac891c47033fd9e7a60a36cabae93d": {
       "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
@@ -3182,10 +3242,13 @@
       "title": "International Championship | Round 4: Wang Xinbo - Marco Fu"
     },
     "ac413d410473b1a024ff3ffe5a1188af2a68f504472dc806a662657b2bcb777b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.695984+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "Puerto Rico vs Panama",
+        "description": "Coverage of Puerto Rico against Panama.",
+        "raw": "Puerto Rico U23 vs. Panama U23"
+      }
     },
     "ac48505e1b562ed88b840d47c86619809d0421c738a89e403ff17eb3f1137a84": {
       "created_at": "2026-11-04T13:50:50.158554+00:00",
@@ -3710,7 +3773,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "c5c7a028de0dedfe148ad521f27f08c5e1c0cab3db24af47091302aaa6d241fb": {
       "created_at": "2026-10-26T12:06:58.198967+00:00",
@@ -4183,10 +4246,13 @@
       "title": "Women | Group Stage | Dakar 2026: Ukraine - Fiji"
     },
     "dcd48d5494780d578fccaebcd03a94411df52856dbb64e143afb973e63989c85": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696012+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "TCU vs Arizona",
+        "description": "Coverage of TCU against Arizona.",
+        "raw": "TCU @ Arizona"
+      }
     },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
@@ -4362,7 +4428,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "e5688a5fd47ef5ca9c774cf9effed740130fce780a68a7d7726fad39847d3bf4": {
       "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
@@ -4441,10 +4507,13 @@
       "title": "Long Beach State vs. Utah"
     },
     "e7b062f1df817869c462fc8d7816aeabe0cffdca6ee14bfa18e70f274effcc3e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696013+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "USFAS vs Afrique Football Elite",
+        "description": "Football coverage of USFAS against Afrique Football Elite.",
+        "raw": "USFAS vs. Afrique Football Élite"
+      }
     },
     "e7c91ba4a5f8e672ae1894d07af385902338a0b17684162acbb2998490f812f6": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -4682,7 +4751,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:40:04.362503+00:00"
+      "retry_after": "2026-11-06T16:44:57.481386+00:00"
     },
     "f4b8a8c367dc49f7ea537b3fc49440572d9cc5db7a1fc408fe767ec9279307e6": {
       "created_at": "2026-11-06T13:50:44.090570+00:00",
@@ -4703,10 +4772,13 @@
       }
     },
     "f62cab3844d70488bb994a66c496d2424825c949f7db95e6d537f040f02beb84": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-06T16:30:24.696004+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-06T15:25:29.259411+00:00"
+      "result": {
+        "clean_title": "South Korea vs Cuba",
+        "description": "Coverage of South Korea against Cuba.",
+        "raw": "Republic of Korea 23 vs. Cuba U23"
+      }
     },
     "f66f064a4931ea7e4f4d268db42218500bf1c9851ea240a5b481a619a21277d6": {
       "created_at": "2026-10-26T12:30:58.030804+00:00",
@@ -4865,8 +4937,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-06T19:50:29.840470+00:00",
-    "groq": "2026-11-06T15:25:29.259411+00:00"
+    "gemini": "2026-11-06T19:50:29.840470+00:00"
   },
   "version": 1
 }
