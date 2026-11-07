@@ -137,7 +137,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "05743992cece6fa9aa4e0d5ecf2f474ebbffdd424936cb3b65871788d930f04d": {
       "created_at": "2026-11-04T05:36:14.786990+00:00",
@@ -161,13 +161,13 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "06b4788e335b4bb78c035e672c82acf76ceb309c90b3f7e4bab73f14a693cd7e": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "071651edf36b9ac6d4222ea75b2e90ce540e78f74c6e6beb4002f8eaad9c4e56": {
       "created_at": "2026-11-07T15:17:20.541508+00:00",
@@ -223,13 +223,13 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "0a423149cef57430e310fbf152318c7305ca6e4a2fca6fc18ee3e4d185691cf9": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -467,7 +467,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "1546148bdd7bfe43d6003d58e5dee117120305f6339ecbdf407838f3a34b48a3": {
       "created_at": "2026-11-05T13:54:40.508127+00:00",
@@ -571,7 +571,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "1c122e99f10cf4008b37bcf9a5492c65390f908fbbb848552b4bf9dab803edaa": {
       "context": "Paramount+ event scheduled 28/10/2026 15:00 GMT",
@@ -979,7 +979,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -1231,7 +1231,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "310e3a693c48be79873f6bf902ec18c5aa920c18bbe584492ec56f47dbe3b8eb": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
@@ -1383,10 +1383,13 @@
       "title": "Texas Southern vs. Tulane"
     },
     "379f154575f25ce42af65c749d1d84600e7b69f358dcd442cfc6d31cd583251e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T19:26:01.018345+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:14.093178+00:00"
+      "result": {
+        "clean_title": "Vanderbilt vs Mississippi State",
+        "description": "Coverage of Vanderbilt against Mississippi State.",
+        "raw": "Vanderbilt @ Mississippi State"
+      }
     },
     "37fdfa4a7e2dc67386db1700f6a76836e18a42d2d5bbebcfa3e87ce268ebe55c": {
       "created_at": "2026-11-07T15:17:20.541521+00:00",
@@ -1492,7 +1495,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
@@ -1526,7 +1529,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "3e3b8e1081314077639e929d5f3ff4ec06a45759ecd4aae9eaa8172d51082748": {
       "created_at": "2026-11-07T14:24:37.317144+00:00",
@@ -1706,7 +1709,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "463a9680a6d1a4787fc7bb29feaccc8e0ab9264a21924aeb8eb5bb86be08f756": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -1839,7 +1842,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "4b9fcc5e1889cc0c494d143cb978ca27e390967f6db9cddad528f13f380027db": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2100,7 +2103,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "59706ef2f429eb9f26d1d6c0c96a4307715101d329c52f691e0fff66fe3cdb9a": {
       "context": "DAZN UK event scheduled 01/11/2026 12:00 GMT",
@@ -2168,7 +2171,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "5c11cec2a3e4193bb0dec5b6ceb8878d927c29e4793688d2d67ead835cfe3fa1": {
       "created_at": "2026-11-07T14:24:25.648911+00:00",
@@ -2293,7 +2296,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "60bbf4384e38cf8c740615178c6aad4a33361e7717120cc43f194e83eed283df": {
       "created_at": "2026-11-06T04:37:05.962197+00:00",
@@ -2519,7 +2522,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
@@ -2684,7 +2687,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "73cc929e4c1550e483c384dc615d080bd068df3e7d64d30fa7b6171bda5144bf": {
       "created_at": "2026-11-07T14:24:37.317155+00:00",
@@ -2699,7 +2702,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -2825,7 +2828,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "7bd583b1e3ae7d7ca28b932a354c89367f40e31fe93f11b8e57d68815a49989b": {
       "created_at": "2026-10-26T12:30:58.030813+00:00",
@@ -2854,7 +2857,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "7d8e8f1e7b95319251efba661c064f4181c70df2c672bb5a03852f10577d78ab": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -3355,7 +3358,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "91728f8bb2ff85f62a3b7947f05546361a5e833a6a4e5805c880b304a1519199": {
       "context": "MLS fixture scheduled 02/11/2026 02:25 GMT",
@@ -3384,7 +3387,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "930c80e6b8c906fc3d33fa3c0e0aa868648d5158f1d271f59458c07d5b03fb75": {
       "created_at": "2026-11-04T13:50:50.158538+00:00",
@@ -3599,6 +3602,15 @@
         "raw": "Bayern Munich vs. Werder Bremen"
       }
     },
+    "9c7281cadb9610a48903a96521ecd19f1ef6de0367718d9f4054ad37abaa49a3": {
+      "created_at": "2026-11-07T19:26:01.018328+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UFC Fight Night: Acosta vs Walker",
+        "description": "Coverage of UFC Fight Night: Acosta against Walker.",
+        "raw": "UFC Fight Night Acosta v Walker - Special Feed"
+      }
+    },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
       "kind": "live-title",
@@ -3744,7 +3756,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -4045,7 +4057,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "ae0eb9b6965fd8ad884db6f31bbecf3665f4c604bd3aa907a199c35418759870": {
       "created_at": "2026-11-06T05:37:50.696331+00:00",
@@ -4078,7 +4090,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -4123,7 +4135,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "b0f064a0e97c54fb17717c155f9ea875f5ed2a4bae77c178020a8ac76158e8b5": {
       "created_at": "2026-11-06T15:25:20.143355+00:00",
@@ -4841,7 +4853,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.104509+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "cce1ecbe771e82e67e28f35846c6ddb5342a360615ad4a7cdce9b1bb44ebef48": {
       "context": "MAX UK event scheduled 03/11/2026 13:00 GMT",
@@ -5891,7 +5903,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:12.938863+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "f579c8d4db49af0828901fbe64c267b8607f264b4a2c351135a3f0f62dee3ad5": {
       "created_at": "2026-11-04T13:50:28.840959+00:00",
@@ -5906,7 +5918,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-07T18:28:13.679413+00:00"
+      "retry_after": "2026-11-07T19:33:03.049208+00:00"
     },
     "f62cab3844d70488bb994a66c496d2424825c949f7db95e6d537f040f02beb84": {
       "created_at": "2026-11-06T16:30:24.696004+00:00",
