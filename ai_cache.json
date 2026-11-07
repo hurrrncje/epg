@@ -289,10 +289,13 @@
       "title": "Fulham vs Crystal Palace"
     },
     "118abd909606d3cf942d0d0456e8ee3f34abca60551753edca6a05fe9f7bc31c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T02:27:15.103073+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T01:56:45.311867+00:00"
+      "result": {
+        "clean_title": "Lodge Patriots vs Newtown United",
+        "description": "Coverage of Lodge Patriots against Newtown United.",
+        "raw": "Lodge Patriots vs. Newtown United"
+      }
     },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
       "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
@@ -1468,6 +1471,15 @@
       "result": "#22 Florida State takes on Miami in a college basketball game.",
       "title": "#22 Florida State vs. Miami"
     },
+    "4af095635f51f5fef4f410a10c4a33d0792e4573dcbc21e8a5b8df6a308d6a19": {
+      "created_at": "2026-11-07T02:27:15.103052+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Southern Thunder Super Dirt Series",
+        "description": "Coverage of Southern Thunder Super Dirt Series.",
+        "raw": "CANCELLED 7pm Southern Thunder Super Dirt Series"
+      }
+    },
     "4b3a74c0a4ae71573bf923189a52878ce29fa92327c4456b63181627180aa4c6": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
       "created_at": "2026-10-29T03:25:48.898648+00:00",
@@ -2245,10 +2257,13 @@
       "result": "UCF Football Press Conference."
     },
     "7be6b10c48a1152395b317a6c71cf4fdee59fcf05dceeab330b1f8c6e395adfe": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T02:27:15.103066+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T01:56:45.311867+00:00"
+      "result": {
+        "clean_title": "Eastern Illinois vs Iowa",
+        "description": "Coverage of Eastern Illinois against Iowa.",
+        "raw": "Eastern Illinois @ Iowa"
+      }
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -2856,10 +2871,13 @@
       "title": "Tottenham Hotspur vs Crystal Palace"
     },
     "9c1b2ad831c58a6c9c67bce273cf395f4a40ce583ad8e3103b9114df30b3318f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T02:27:15.103068+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T01:56:45.311867+00:00"
+      "result": {
+        "clean_title": "Ferrymead Bays vs Wellington Phoenix Reserves",
+        "description": "Coverage of Ferrymead Bays against Wellington Phoenix Reserves.",
+        "raw": "Ferrymead Bays vs. Wellington Phoenix Reserves"
+      }
     },
     "9c23f2bd399882462b2619b0017478763b08d208d432b2b21013ca00f813a46a": {
       "created_at": "2026-11-06T13:50:32.471811+00:00",
@@ -4389,10 +4407,13 @@
       }
     },
     "e50f13c841bb4038070cbdf078bc17103c2f9308052bb3a0721bad64dfe32366": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T02:27:15.103063+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T01:56:45.311867+00:00"
+      "result": {
+        "clean_title": "Ducks vs Flames",
+        "description": "Coverage of Ducks against Flames.",
+        "raw": "Ducks @ Flames"
+      }
     },
     "e5688a5fd47ef5ca9c774cf9effed740130fce780a68a7d7726fad39847d3bf4": {
       "context": "ESPN+ event scheduled 02/11/2026 17:30 GMT",
@@ -4712,10 +4733,13 @@
       }
     },
     "f423d467ecdd6e2c19ec0c252e7b9f0a7b83f768dd814dbbabd10ca558d85f79": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T02:27:15.103070+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T01:56:45.311867+00:00"
+      "result": {
+        "clean_title": "Japan U23 vs Great Britain U23",
+        "description": "Coverage of Japan U23 against Great Britain U23.",
+        "raw": "Japan U23 vs. Great Britain U23"
+      }
     },
     "f4b8a8c367dc49f7ea537b3fc49440572d9cc5db7a1fc408fe767ec9279307e6": {
       "created_at": "2026-11-06T13:50:44.090570+00:00",
