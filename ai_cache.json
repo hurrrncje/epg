@@ -297,6 +297,12 @@
         "raw": "Lodge Patriots vs. Newtown United"
       }
     },
+    "118bc2cb1fa3f763565579244d324a9899872c2dcd42b8fd58eda1bd277764b4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
+    },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
       "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
       "created_at": "2026-11-03T16:30:41.541207+00:00",
@@ -749,6 +755,12 @@
         "raw": "FC Schaan II vs. FC Vaduz"
       }
     },
+    "276cb05eeba8fc885c5b27ed442c921bc50cbfd712e8063e92719056c10e8411": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.606723+00:00"
+    },
     "27e722ae63398f218e60a116ea2fef31276712d40608786d28ea2e5c07e05669": {
       "created_at": "2026-11-03T17:53:06.054622+00:00",
       "kind": "live-title",
@@ -840,6 +852,12 @@
       "kind": "event-description",
       "result": "Weekly press conference with UTSA soccer head coach Derek Pittman discussing the season.",
       "title": "UTSA Weekly Soccer Press Conference"
+    },
+    "2a52ccb6ea12eaad82339e41c24d090bb2e66e9b200e5830cb8d15d77c552f30": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
     },
     "2b0507be811f9e9049341f5b5b771abff135d48336cc839b21d6c38c8418b014": {
       "context": "MAX UK event scheduled 03/11/2026 17:25 GMT",
@@ -934,6 +952,12 @@
       "kind": "event-description",
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks.",
       "title": "Ottawa Senators vs. Anaheim Ducks"
+    },
+    "2c811530d6b29f550608e741acffd076d60688a1787575ba1f00a090471e757d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
     },
     "2d342084041aff1e0e51bb484acd06ae7f095904754c1b7210e7d36b36b77dbe": {
       "created_at": "2026-11-06T13:50:44.090590+00:00",
@@ -1180,6 +1204,18 @@
         "raw": "Pitch 5A | Day 3: Afternoon Session"
       }
     },
+    "396b0e67a645fb562c21920b6ff7c447d4906ff19aa87b996b2a5e7256dcff6b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
+    },
+    "39a0697a92f50bb54f279f649493019cf3728600c90c2314ea5dcb6a1bacad4f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
+    },
     "3a7e32b0f80906d6f324fcda292ef81e7eb420ad7bb2015d6ddddb8dea01fb46": {
       "created_at": "2026-11-04T05:36:14.786996+00:00",
       "kind": "live-title",
@@ -1203,6 +1239,15 @@
         "clean_title": "GCW: Dead on Arrival",
         "description": "Coverage of GCW: Dead on Arrival.",
         "raw": "GCW Dead on Arrival"
+      }
+    },
+    "3c76c4201d44fc22d74eccbe275c7ba8704e8ce3e9cb4a7c98749f15cca08d69": {
+      "created_at": "2026-11-07T05:28:43.411731+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Japan U23 vs Great Britain U23",
+        "description": "Coverage of Japan U23 against Great Britain U23.",
+        "raw": "Japan U23 vs. Great Britain U23"
       }
     },
     "3d22be5f1397b41de4690030c2fcdda9aa47a8acb27aa18229e3daf497daad13": {
@@ -1457,6 +1502,12 @@
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks, broadcast by the Ducks.",
       "title": "Ottawa Senators vs. Anaheim Ducks (Ducks Broadcast)"
     },
+    "4a442317130fb8e5780c5dc51b8e10a169fa053447d673a61adf15b0642d5b6f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
+    },
     "4a5d8645083f8f2264faf9e7f90de8787a5882a6b2781d27175a0a22d32ce8a7": {
       "context": "Paramount+ event scheduled 28/10/2026 16:00 GMT",
       "created_at": "2026-10-28T18:24:17.569520+00:00",
@@ -1590,6 +1641,15 @@
       "kind": "event-description",
       "result": "Notre Dame women's soccer faces Stanford women's soccer at Edwards Stadium in Berkeley, CA on Sunday, November 1 2026.",
       "title": "#9 Notre Dame vs. #13 Stanford"
+    },
+    "5138c62dbbaba78753223880848da38ff883c67866404810aedfda0aaf22bb03": {
+      "created_at": "2026-11-07T05:28:43.411748+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Opening Ceremony",
+        "description": "Coverage of Opening Ceremony.",
+        "raw": "Opening Ceremony"
+      }
     },
     "516409835a1bd4e95ef1bb86dd54826eff2fe4a91d09f777c98dd2e5a66809cc": {
       "context": "EPL fixture scheduled 02/11/2026 20:00 GMT",
@@ -1948,6 +2008,12 @@
       "result": "Lamar University competes against Houston Christian University in a college football game streamed on Disney+ Events.",
       "title": "Lamar vs. Houston Christian"
     },
+    "67868b2fb509b6953feb3f2d7bb487c939dd54030775aaa63238c72207c3933f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.606723+00:00"
+    },
     "68357972cdca664c458aac52c276f5ca6bdd8c0595118d841e000db1b4d341f1": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
       "created_at": "2026-11-03T06:34:50.695550+00:00",
@@ -1963,6 +2029,12 @@
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
+    },
+    "6c283c4a4c110980896184317afdf5598ff0357b16670a5f6c90832f03437e2c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
     },
     "6c8c4446f81956e8186ed1f3d00a453c7f04ab88dcfc91d8337cb089cdb7351b": {
       "created_at": "2026-11-04T05:36:14.786994+00:00",
@@ -2039,6 +2111,12 @@
       "kind": "event-description",
       "result": "Atalanta play Parma in Serie A on 2 Nov 2026.",
       "title": "Serie A: Atalanta - Parma"
+    },
+    "6f6d4667846146587c990edfbfb38be4f02a98410ab2af0c539888e145d99b7d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -2176,6 +2254,12 @@
       "kind": "event-description",
       "result": "Disney+ event 'Charlotte vs. Memphis' scheduled for 29 Oct 2026 at 00:00 GMT.",
       "title": "Charlotte vs. Memphis"
+    },
+    "762969a4cdf7fb42f13ed652078b405c8bae189cf465ad6b372e9301344a315d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -2483,6 +2567,12 @@
       "kind": "event-description",
       "result": "Women’s college basketball game: Charleston Southern vs. East Carolina at Williams Arena, 3 Nov 2026, 16:00 GMT.",
       "title": "Charleston Southern vs. East Carolina"
+    },
+    "88996184bcb58bd5512dcff13b9ebdd8eb4585e4ec97d11a01df9283b85f6cee": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
     },
     "88a618d3735b438f0473cd110480a5de32480285086c1786579cd54799386783": {
       "created_at": "2026-10-26T19:21:40.738760+00:00",
@@ -2952,6 +3042,15 @@
       "result": "CBS Sports HQ scoreboard final for the day's games.",
       "title": "cbssportshq: Scoreboard Final"
     },
+    "a021abafa5eca96e6714b8d445489f2e6fb463b2f2d0f9b2fa008ae9ac9136be": {
+      "created_at": "2026-11-07T05:28:43.411745+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "North Florida @ UCLA",
+        "description": "Coverage of North Florida against UCLA.",
+        "raw": "North Florida @ UCLA"
+      }
+    },
     "a06025cb51c1c098ffc4088d372715dacfd9dd7b365928c9cacf1776f786afdb": {
       "created_at": "2026-11-04T15:31:01.992676+00:00",
       "kind": "live-title",
@@ -2969,6 +3068,12 @@
         "description": "Coverage of Predators against Avalanche.",
         "raw": "Predators @ Avalanche"
       }
+    },
+    "a178616f2f4907215543520ee44c0923fb7c61e390d395015c72d0515c1d5212": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
     },
     "a1a864ca09d2ab51429cbd2cacc533d4516ee559d1b782e1e614369525d53f8b": {
       "context": "DAZN UK event scheduled 02/11/2026 01:00 GMT",
@@ -3150,6 +3255,12 @@
       "kind": "event-description",
       "result": "Oklahoma Sooners women play North Carolina Tar Heels women in NCAA women's basketball on 2 Nov 2026.",
       "title": "#21 Oklahoma vs. #12 North Carolina"
+    },
+    "a7deb17edb71e2931841d85e23a40fdd49547ae9a7d994756cc304a41e9e72ed": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -3419,6 +3530,12 @@
       "result": "Texas State Bobcats play No. 20 Boise State Broncos in an NCAA college football matchup.",
       "title": "Texas State vs. #20 Boise State"
     },
+    "b6a8a0c372dc3c458022ab43d73e51c5c28a026bdc92ba5bd3300ee2af32887a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
+    },
     "b7d59dc94f52d5d4ea10d37ac9caa2b0c055d595ed23158d08b9dbd538ed8ca3": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569531+00:00",
@@ -3492,6 +3609,12 @@
       "kind": "event-description",
       "result": "College basketball game between Southwestern Christian University and the University of North Texas.",
       "title": "Southwestern Christian vs. North Texas"
+    },
+    "bb330504a8a48582442b263357fb60779d607b23b8521b9763a78ff9b8d012ff": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
     },
     "bb58e85bb03542d57877380861c16c8aac2c6d22230affdbf72008e97a55bcd6": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -3613,6 +3736,15 @@
         "raw": "Manningcast | MNF with Peyton & Eli: Cowboys @ Eagles"
       }
     },
+    "be5c41321eac1d2e0f267271c5ba7a9b22d101a592722d20268f408e253d15f3": {
+      "created_at": "2026-11-07T05:28:43.411737+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Lodge Patriots vs Newtown United",
+        "description": "Coverage of Lodge Patriots against Newtown United.",
+        "raw": "Lodge Patriots vs. Newtown United"
+      }
+    },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
       "kind": "live-title",
@@ -3700,6 +3832,15 @@
       "kind": "event-description",
       "result": "North Texas Football Press Conference."
     },
+    "c2f284c73335f11ab3c34cf84fc26eb609a2f9894406108a1d51fa5ecb7df803": {
+      "created_at": "2026-11-07T05:28:43.411739+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Medicine Hat, AB Day 4 Draw 16",
+        "description": "Coverage of Medicine Hat, AB Day 4 Draw 16.",
+        "raw": "Medicine Hat, AB - Day 4, Draw 16"
+      }
+    },
     "c35e5b70bcf3b9ab74e8aa791f4703000bd68409e87087d0ea03b766635fc3d9": {
       "created_at": "2026-11-06T05:37:50.696337+00:00",
       "kind": "live-title",
@@ -3730,6 +3871,15 @@
         "clean_title": "Stars @ Blue Jackets",
         "description": "Coverage of Stars against Blue Jackets.",
         "raw": "Stars @ Blue Jackets"
+      }
+    },
+    "c469d04ca7a039aa15696e3dbd78138bbd25d9e38b64cf591aace05bd2bcfba5": {
+      "created_at": "2026-11-07T05:28:43.411716+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "GCW: Dead on Arrival",
+        "description": "Coverage of GCW: Dead on Arrival.",
+        "raw": "GCW Dead on Arrival"
       }
     },
     "c488b2c8dd1ce195e949fbb3850d4673ee1025acc9ae48cb9c241cd03c94c1ce": {
@@ -3816,6 +3966,12 @@
         "raw": "Musongati vs. Young Star"
       }
     },
+    "c7dcebe4d952f248f4387ea63b7e34d3cc2a7930f50851322157e564bc15c881": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
+    },
     "c82194d0355b709c4af5aed70f56b767e45eafe9387ba8415b6b76343e2acbf9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
       "created_at": "2026-10-31T16:22:16.312222+00:00",
@@ -3830,6 +3986,15 @@
         "clean_title": "Gallen vs Asofa-Solomona (Main Card)",
         "description": "Coverage of Gallen against Asofa-Solomona (Main Card).",
         "raw": "Boxing Gallen v Asofa-Solomona Main Card"
+      }
+    },
+    "c88a3f6aa5e9ac079476de4824ade19fffe05a002be27df734ebd993a3b43867": {
+      "created_at": "2026-11-07T05:28:43.411747+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "ONE Fight Night 49: Gabriel vs Rasulov",
+        "description": "Coverage of ONE Fight Night 49: Gabriel against Rasulov.",
+        "raw": "ONE Fight Night 49 Gabriel v Rasulov"
       }
     },
     "c8a4d0afc13b2d4cf46eebf71499bb038c32b401b28adde3f907e732faa0b42c": {
@@ -3917,6 +4082,15 @@
       "kind": "event-description",
       "result": "Petronas Grand Prix of Malaysia MotoGP warm‑up session at Sepang International Circuit",
       "title": "Warm Up: MotoGP | Round 19 | Malaysia"
+    },
+    "cea9e55cfc702e84a7fa756ce361764b1cffebd90244d5d34f361971b0d916fd": {
+      "created_at": "2026-11-07T05:28:43.411741+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Middle Tennessee @ Kansas",
+        "description": "Coverage of Middle Tennessee against Kansas.",
+        "raw": "Middle Tennessee @ Kansas"
+      }
     },
     "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -4106,6 +4280,12 @@
       "result": "MLS match: New England Revolution host Inter Miami CF at Gillette Stadium.",
       "title": "| New England Revolution vs Inter Miami CF (Spanish)"
     },
+    "d66756460fe2ed35658d831a0a0875a76b1e5d4c5f211dfc12b90233356d4f46": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
+    },
     "d740499b0d358d8234112dd4e4597761a35621b02f41c7276e044ab0b69537ce": {
       "created_at": "2026-11-04T13:50:50.158567+00:00",
       "kind": "live-title",
@@ -4153,6 +4333,12 @@
       "kind": "event-description",
       "result": "College basketball game UC San Diego Tritons vs Cal State Bakersfield Roadrunners scheduled for Oct 29 2026.",
       "title": "UC San Diego vs. Cal State Bakersfield"
+    },
+    "d87394e43f4b467c1029864309e9d5d6a9a417914f696d3ccca242583e1237b0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:44.348302+00:00"
     },
     "d976699edce009e76f1eb177fb11f79dd297fd873c7fd20ad2a8d8647c4aac95": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -4406,6 +4592,15 @@
         "raw": "Stars @ Capitals"
       }
     },
+    "e5079dbac94d53193fa5bc9eabfbc6813ab5ec584b6aeaf4ad0586a706101b11": {
+      "created_at": "2026-11-07T05:28:43.411743+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Nebraska @ Illinois",
+        "description": "Coverage of Nebraska against Illinois.",
+        "raw": "Nebraska @ Illinois"
+      }
+    },
     "e50f13c841bb4038070cbdf078bc17103c2f9308052bb3a0721bad64dfe32366": {
       "created_at": "2026-11-07T02:27:15.103063+00:00",
       "kind": "live-title",
@@ -4528,6 +4723,12 @@
       "result": "CBS Sports HQ Spotlight airs a sports news recap.",
       "title": "cbssportshq: CBS Sports HQ Spotlight"
     },
+    "eb4fae5325f96f128283bedbbfa99c391c451275ca0ed45de2252299c6e06897": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
+    },
     "eb633b5101e1ca5c73623933f3fdb7b025b1932b621a9c032dde7bd8e02119cb": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569492+00:00",
@@ -4560,6 +4761,15 @@
         "raw": "Legia Warszawa vs. Galatasaray MCT Technic"
       }
     },
+    "edf13b03b13f111df9a9386242d6ed94cc814b30f9515ca9cf91ff16568b02d0": {
+      "created_at": "2026-11-07T05:28:43.411734+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "LUX 064",
+        "description": "Coverage of LUX 064.",
+        "raw": "LUX 064"
+      }
+    },
     "ee156506549482cd8755056617d4a564ed81c48a81fac3624b00f04591ee6192": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
       "created_at": "2026-11-03T01:44:47.524618+00:00",
@@ -4584,6 +4794,12 @@
         "description": "Coverage of Jaguars against Ravens.",
         "raw": "Jaguars @ Ravens (US., French, German, Japanese, Portuguese Game Commentary Available)"
       }
+    },
+    "ee2ec15d051fa735ded5d80e4d8bf288e857bd2c805308046567e4b091f55913": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
     },
     "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
       "context": "Disney+ Events event scheduled 03/11/2026 15:00 GMT",
@@ -4722,6 +4938,12 @@
       "kind": "event-description",
       "result": "College basketball game between George Fox and Idaho.",
       "title": "George Fox vs. Idaho"
+    },
+    "f3e43439684b579ff8505d305e752c58988e9d2bfe80ea8259a0dfbbcf69cd5e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-07T05:43:40.305581+00:00"
     },
     "f41e9db043921314e226c8f0d12e41c9f9668dd2e60847a54a9630d946258139": {
       "created_at": "2026-11-05T05:40:32.980002+00:00",
@@ -4924,6 +5146,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-07T11:28:39.651354+00:00"
+  },
   "version": 1
 }
