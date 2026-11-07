@@ -347,6 +347,15 @@
       "result": "Onze Créateurs play CS Bamako in the Malian Première Division.",
       "title": "Onze Créateurs vs. CS Bamako"
     },
+    "14a0256b499e1c5915543a18fb3e417f78d4d498a5c0661192baf4f2dce5a806": {
+      "created_at": "2026-11-07T07:42:06.081836+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Crown Vic Nationals",
+        "description": "Coverage of Crown Vic Nationals.",
+        "raw": "Crown Vic Nationals Caraway"
+      }
+    },
     "14b2b98551296cbe98abc5300fdf99f32efe8068ac76adf9004ef18a756c6c15": {
       "created_at": "2026-11-06T15:25:20.143359+00:00",
       "kind": "live-title",
@@ -759,10 +768,13 @@
       }
     },
     "276cb05eeba8fc885c5b27ed442c921bc50cbfd712e8063e92719056c10e8411": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T07:42:20.029330+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T06:27:47.905282+00:00"
+      "result": {
+        "clean_title": "WWE Crown Jewel",
+        "description": "Coverage of WWE Crown Jewel.",
+        "raw": "WWE Crown Jewel"
+      }
     },
     "27e722ae63398f218e60a116ea2fef31276712d40608786d28ea2e5c07e05669": {
       "created_at": "2026-11-03T17:53:06.054622+00:00",
@@ -855,6 +867,15 @@
       "kind": "event-description",
       "result": "Weekly press conference with UTSA soccer head coach Derek Pittman discussing the season.",
       "title": "UTSA Weekly Soccer Press Conference"
+    },
+    "2a52ccb6ea12eaad82339e41c24d090bb2e66e9b200e5830cb8d15d77c552f30": {
+      "created_at": "2026-11-07T07:42:20.029322+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "The Dirt Track at Charlotte",
+        "description": "Coverage of The Dirt Track at Charlotte.",
+        "raw": "The Dirt Track at Charlotte"
+      }
     },
     "2b0507be811f9e9049341f5b5b771abff135d48336cc839b21d6c38c8418b014": {
       "context": "MAX UK event scheduled 03/11/2026 17:25 GMT",
@@ -1214,10 +1235,13 @@
       }
     },
     "39a0697a92f50bb54f279f649493019cf3728600c90c2314ea5dcb6a1bacad4f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T07:42:06.081867+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T06:27:47.905282+00:00"
+      "result": {
+        "clean_title": "St. Thomas vs Minnesota",
+        "description": "Coverage of St. Thomas against Minnesota.",
+        "raw": "St. Thomas @ Minnesota"
+      }
     },
     "3a7e32b0f80906d6f324fcda292ef81e7eb420ad7bb2015d6ddddb8dea01fb46": {
       "created_at": "2026-11-04T05:36:14.786996+00:00",
@@ -1294,6 +1318,15 @@
       "kind": "event-description",
       "result": "Women's college basketball: Mississippi Christian vs. Southern Miss Golden Eagles.",
       "title": "Mississippi Christian vs. Southern Miss"
+    },
+    "3ef5abca0167b032a54e544e9cb83d58938b638211bacbc0c2d7684cdd6f7a29": {
+      "created_at": "2026-11-07T07:42:06.081841+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "GCW The Crossroads",
+        "description": "Coverage of GCW The Crossroads.",
+        "raw": "GCW The Crossroads"
+      }
     },
     "3ff295c893ee7d0c989f7db3aab8d190e06d30d7a80c2b40caba10137274261c": {
       "context": "MAX UK event scheduled 01/11/2026 02:00 GMT",
@@ -1710,6 +1743,15 @@
       "result": "Serie A match between Parma and Udinese, part of the 2026‑27 Serie A season, scheduled for 28 October 2026 at 17:20 GMT.",
       "title": "Serie A: Parma vs. Udinese"
     },
+    "559d13281f2c9213d48a9ff912e4887bb9ebeb0d1f3fdf66182b59e73ff4be20": {
+      "created_at": "2026-11-07T07:42:06.081839+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Fall Brawl",
+        "description": "Coverage of Fall Brawl.",
+        "raw": "Fall Brawl Hickory"
+      }
+    },
     "563e41db6705aefe2c3d547dc1b5068e41ca12ff5cd496b9affb496c43fd679b": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569466+00:00",
@@ -2024,10 +2066,13 @@
       "title": "Lamar vs. Houston Christian"
     },
     "67868b2fb509b6953feb3f2d7bb487c939dd54030775aaa63238c72207c3933f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T07:42:20.029332+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T06:27:47.905282+00:00"
+      "result": {
+        "clean_title": "Wellington Olympic vs. Auckland United",
+        "description": "Coverage of Wellington Olympic against Auckland United.",
+        "raw": "Wellington Olympic vs. Auckland United"
+      }
     },
     "68357972cdca664c458aac52c276f5ca6bdd8c0595118d841e000db1b4d341f1": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -2183,6 +2228,15 @@
       "result": "NFL game between the Philadelphia Eagles and the Washington Commanders.",
       "title": "Eagles @ Commanders (Spanish Broadcast)"
     },
+    "71e77cfa73e4a4791d40a9935970a4ce2038d318bb0f7f02dcfb7cbf0655140b": {
+      "created_at": "2026-11-07T07:42:06.081849+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Perez v Rivera",
+        "description": "Coverage of Perez against Rivera.",
+        "raw": "Perez v Rivera"
+      }
+    },
     "7264440f2b08d711afceba388b6c536bf12f9367612985cf5cf9b1398c712aaa": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
       "created_at": "2026-11-03T01:44:47.524606+00:00",
@@ -2286,10 +2340,13 @@
       "title": "Charlotte vs. Memphis"
     },
     "762969a4cdf7fb42f13ed652078b405c8bae189cf465ad6b372e9301344a315d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T07:42:20.029305+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T06:27:47.905282+00:00"
+      "result": {
+        "clean_title": "TCU vs Arizona",
+        "description": "Coverage of TCU against Arizona.",
+        "raw": "TCU @ Arizona"
+      }
     },
     "783c85e8e46d29d6e139a1120ca0397036b8a17cee730b5a9f0757cfa4a92c2d": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -2394,6 +2451,15 @@
       "kind": "event-description",
       "result": "College basketball game UC Santa Barbara Gauchos vs Cal State Northridge Matadors scheduled for Oct 29 2026.",
       "title": "UC Santa Barbara vs. Cal State Northridge"
+    },
+    "7de13d392b52d957c1c856fedbedda4e7c57c741e5b492d7fd24006d0a8d3c5f": {
+      "created_at": "2026-11-07T07:42:20.029326+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "USAC WS Midgets Ventura",
+        "description": "Coverage of USAC WS Midgets Ventura.",
+        "raw": "USAC WS Midgets Ventura"
+      }
     },
     "7e05a11d1623a3ca228de7b81e007f33f4ca079f3a2ca9d530c1bb9e4bb64a85": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -2543,6 +2609,15 @@
         "raw": "Pitch 9A | Day 3: Afternoon Session"
       }
     },
+    "8474d5073322d0aa8104def0e2ff30066d1a76f1ba2076bc7cc669ec58214ac2": {
+      "created_at": "2026-11-07T07:42:06.081844+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "GNCC Buckwheat 100",
+        "description": "Coverage of GNCC Buckwheat 100.",
+        "raw": "GNCC Buckwheat 100"
+      }
+    },
     "84d9d767ece8599f1c2df2f5722eee309f8523e4210276b1730e2986167b0d08": {
       "created_at": "2026-11-06T15:25:20.143350+00:00",
       "kind": "live-title",
@@ -2597,6 +2672,15 @@
       "kind": "event-description",
       "result": "Women’s college basketball game: Charleston Southern vs. East Carolina at Williams Arena, 3 Nov 2026, 16:00 GMT.",
       "title": "Charleston Southern vs. East Carolina"
+    },
+    "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
+      "created_at": "2026-11-07T07:42:06.081847+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "PFC 55",
+        "description": "Coverage of PFC 55.",
+        "raw": "PFC 55"
+      }
     },
     "88996184bcb58bd5512dcff13b9ebdd8eb4585e4ec97d11a01df9283b85f6cee": {
       "created_at": "2026-11-07T06:27:35.762105+00:00",
@@ -2761,6 +2845,15 @@
         "clean_title": "Newcastle Eagles vs Bristol Flyers",
         "description": "Coverage of Newcastle Eagles against Bristol Flyers.",
         "raw": "Newcastle Eagles vs. Bristol Flyers"
+      }
+    },
+    "9034d4cde2fb74dbc55769150c91e3fdc6d3ee396d22d42044c8bded5faf5af3": {
+      "created_at": "2026-11-07T07:42:06.081865+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Southern Thunder Super Dirt Series",
+        "description": "Coverage of Southern Thunder Super Dirt Series.",
+        "raw": "Southern Thunder Super Dirt Series"
       }
     },
     "90b4da78d70f6f059a149f4101c7ac904629686ff06d9cad0df3e97fb5d46c3a": {
@@ -3302,10 +3395,13 @@
       "title": "#21 Oklahoma vs. #12 North Carolina"
     },
     "a7deb17edb71e2931841d85e23a40fdd49547ae9a7d994756cc304a41e9e72ed": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T07:42:20.029328+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T06:27:47.905282+00:00"
+      "result": {
+        "clean_title": "Virginia Tech vs SMU",
+        "description": "Coverage of Virginia Tech against SMU.",
+        "raw": "Virginia Tech @ SMU"
+      }
     },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -4018,10 +4114,13 @@
       }
     },
     "c7dcebe4d952f248f4387ea63b7e34d3cc2a7930f50851322157e564bc15c881": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-07T07:42:06.081851+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T06:27:47.905282+00:00"
+      "result": {
+        "clean_title": "South Florida vs East Carolina",
+        "description": "Coverage of South Florida against East Carolina.",
+        "raw": "South Florida @ East Carolina"
+      }
     },
     "c82194d0355b709c4af5aed70f56b767e45eafe9387ba8415b6b76343e2acbf9": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -4692,6 +4791,15 @@
         "raw": "UTSA @ Florida Atlantic"
       }
     },
+    "e5e502071fbac1ea9ba2511c550593742341a2a770e483ccc8cdb1c82e4cc7cd": {
+      "created_at": "2026-11-07T07:42:06.081818+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AMA EnduroCross",
+        "description": "Coverage of AMA EnduroCross.",
+        "raw": "AMA EnduroCross Salt Lake"
+      }
+    },
     "e6080b157193a53e461e96c0bf9f38c15df6620e159b2defaed29482a85f9a2f": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T03:31:18.914254+00:00",
@@ -5231,8 +5339,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-07T11:28:39.651354+00:00",
-    "groq": "2026-11-07T06:27:47.905282+00:00"
+    "gemini": "2026-11-07T11:28:39.651354+00:00"
   },
   "version": 1
 }
