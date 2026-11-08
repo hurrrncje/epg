@@ -241,7 +241,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -254,7 +254,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "0af6b1d43eeebbb0ce5ecf5130acc6184c6df0c9aa6c431e519167ca490f82de": {
       "context": "DAZN UK event scheduled 03/11/2026 02:00 GMT",
@@ -338,7 +338,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "0cdc92132774720aa93f0fb3fa91a46a33b1d4986085aa12484a88acff4fa767": {
       "created_at": "2026-10-28T06:20:34.001580+00:00",
@@ -1553,7 +1553,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "333dbea7839f106931e37490e6312741e1abff296ac043ab614ef1c8aadbbdc2": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -2268,7 +2268,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "4eef478580ecb325758b8dab4f8554ab37fe501915e36c97657df7b5fb1c4049": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -2299,7 +2299,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "4fb1d15f11fc8d7e3f3789657f90705a406a9af01af5e0710b5233f8f72ba026": {
       "created_at": "2026-11-05T13:54:36.011730+00:00",
@@ -2689,7 +2689,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "5e6ba2a4c064594114228e558c335929978d6c9031080e2215fd2a712701096a": {
       "created_at": "2026-11-06T16:30:46.812806+00:00",
@@ -2873,7 +2873,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "6691d9ecbef9262e52e874fbe5d124089ab5113060583999fe1acc214cc3e97f": {
       "context": "Paramount+ event scheduled 28/10/2026 17:30 GMT",
@@ -2925,13 +2925,13 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "68f43f43b6640ab5d47b59ade44e70fa9236b76c493b0be85bc314928fe37365": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "69176581175a5aa4c8a3e83d9d3507a2bf897919725edc455bc597234e7031c8": {
       "created_at": "2026-11-08T05:29:32.514151+00:00",
@@ -3046,7 +3046,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "6e1be0478e16d4ef39c358cb56e4f21393395367b42e653d96d052a99efa1fb8": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -3155,7 +3155,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "71c876dacfd1dd6334f8f31a82993fa1c25fdda90e9a90df74dfe99659e88651": {
       "created_at": "2026-11-06T05:37:50.696332+00:00",
@@ -3287,7 +3287,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -3704,7 +3704,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "858c0a29840c41956c4af9772af5934f4bd55710b770a609743cccadc1d67f5a": {
       "created_at": "2026-11-07T15:17:20.541514+00:00",
@@ -4219,7 +4219,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "99923a286f78e3aa7dd4c9cd77f728ab27ec54f48c5dc124416f12d3f6b74a4c": {
       "created_at": "2026-11-08T14:21:22.621314+00:00",
@@ -5599,7 +5599,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "c488b2c8dd1ce195e949fbb3850d4673ee1025acc9ae48cb9c241cd03c94c1ce": {
       "created_at": "2026-10-26T19:21:40.738749+00:00",
@@ -5888,7 +5888,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "cf2e27d422ad19798986aa13b0485847d2eb1997e7b45a9d409e1c67b72c85da": {
       "created_at": "2026-11-06T13:50:32.471813+00:00",
@@ -6689,7 +6689,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "e69d4621f5c6b9a858980df52ddada1f1f4d28a1f685a9c5139885fab9bcacdc": {
       "created_at": "2026-11-05T13:54:36.011718+00:00",
@@ -6919,7 +6919,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:03.261509+00:00"
+      "retry_after": "2026-11-08T18:28:42.178751+00:00"
     },
     "f0009b6d2e9f07a2006a71e5f055a905564f8493ad73cfde7ea73f111dd31725": {
       "created_at": "2026-11-08T14:22:17.311556+00:00",
@@ -6977,7 +6977,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T17:31:02.462578+00:00"
+      "retry_after": "2026-11-08T18:28:41.556016+00:00"
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
