@@ -197,10 +197,13 @@
       }
     },
     "078a985a434841175420ac63caba102f227afc2ac58e61797ce4ae5fa3a166f8": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003432+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Hall of Fame Tip-Off: Providence vs. Nebraska",
+        "description": "Coverage of Hall of Fame Tip-Off: Providence against Nebraska.",
+        "raw": "Hall of Fame Tip-Off: Providence vs. Nebraska"
+      }
     },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
@@ -808,12 +811,6 @@
       "result": "Gotham FC play Utah Royals FC in a women’s soccer match on the Disney+ Events platform.",
       "title": "Gotham FC vs. Utah Royals FC"
     },
-    "2566072f021579948cfefd530957b5705c862e3ed0e14028153a97a1d43fe0fd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-08T05:30:11.679403+00:00"
-    },
     "256b6673f74d1c4c788b797ce1552d6dc85d6f66bbafd85c39ef5548bc9b798d": {
       "created_at": "2026-11-04T05:36:14.786992+00:00",
       "kind": "live-title",
@@ -1000,10 +997,13 @@
       }
     },
     "29e8d6f3a36f43db779bf7c93bad7ebfa2b796c69d3828362226efb196ee9530": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003428+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Georgia vs. Ole Miss",
+        "description": "Coverage of Georgia against Ole Miss.",
+        "raw": "Georgia @ Ole Miss"
+      }
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -2365,7 +2365,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:30:11.679403+00:00"
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
     },
     "5f2dc18fbdff71fd2b8ff63ab1be2d43662106fe1a5658644faa41c267f73662": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -2676,6 +2676,12 @@
       "result": "Atalanta play Parma in Serie A on 2 Nov 2026.",
       "title": "Serie A: Atalanta - Parma"
     },
+    "6f63f33086f3bfce5e0bc4663b0a77387ceb0193066c18d6dd913669225bafbd": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+    },
     "6f6d4667846146587c990edfbfb38be4f02a98410ab2af0c539888e145d99b7d": {
       "created_at": "2026-11-07T06:27:35.762087+00:00",
       "kind": "live-title",
@@ -2689,7 +2695,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:30:11.679403+00:00"
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -2867,10 +2873,13 @@
       }
     },
     "757e0d46f604aee4f79c9b3426ed5396d63a553c03624bb5916f1011fdca339e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003430+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Great Britain U23 vs. Venezuela U23",
+        "description": "Coverage of Great Britain U23 against Venezuela U23.",
+        "raw": "Great Britain U23 vs. Venezuela U23"
+      }
     },
     "7602144183d6ba2bc27e7d7f35ab68f058c2425bb6d0cafa1482c271fdb2aea8": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -3055,10 +3064,13 @@
       }
     },
     "804161894592806a851c5b676bf5656c20f3ae9f43bd991c05d9c055dc2b864e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003434+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Hawai'i vs. UTEP",
+        "description": "Coverage of Hawai'i against UTEP.",
+        "raw": "Hawai'i @ UTEP"
+      }
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -3189,6 +3201,15 @@
         "clean_title": "Middle Tennessee vs Kansas",
         "description": "Coverage of Middle Tennessee against Kansas.",
         "raw": "Middle Tennessee @ Kansas"
+      }
+    },
+    "84dcbe7750b170cebb83e896dd086cc1142140656750dfebae37fe500fb6a024": {
+      "created_at": "2026-11-08T06:28:44.003426+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "GNCC Buckwheat 100",
+        "description": "Coverage of GNCC Buckwheat 100.",
+        "raw": "GNCC Buckwheat 100"
       }
     },
     "8508a1fb93f1d6fba5c9e5e4cd953eca801fadaa7c82e51b9bf9d2271654fa73": {
@@ -3377,10 +3398,13 @@
       }
     },
     "8d2093d3d8c7a149eb1a066f102539a7e0d2db4866b7d670fdfb8de18e9dbc95": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003437+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Japan U23 vs. Republic of Korea U23",
+        "description": "Coverage of Japan U23 against Republic of Korea U23.",
+        "raw": "Japan U23 vs. Republic of Korea U23"
+      }
     },
     "8dc5c537a5ad76564e0440ecbfc69e9f0088f7f6fb4dfb8f868cf573c3880158": {
       "created_at": "2026-11-06T16:30:24.696006+00:00",
@@ -4131,6 +4155,12 @@
       "result": "Calgary Flames play Colorado Avalanche in the same NHL game, broadcast on Avalanche’s channel.",
       "title": "Calgary Flames vs. Colorado Avalanche (Avalanche Broadcast)"
     },
+    "a9108942c7e792a18a4622f1e327974d7b12da992add8c9ee5d46d4299e37341": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+    },
     "a93f566543b8cfd272ef8814dd3667dba6a5ed44f0cb507a9de625579f0ed7a0": {
       "created_at": "2026-11-06T13:50:44.090574+00:00",
       "kind": "live-title",
@@ -4403,10 +4433,13 @@
       }
     },
     "b458b9d9c9318f0fcebbc0633c00976beb4fa41a549e28e95785e0326a2c42fc": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003423+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "GCW The Crossroads",
+        "description": "Coverage of GCW The Crossroads.",
+        "raw": "GCW The Crossroads"
+      }
     },
     "b46accb6e1aba9a9efbd3f6bf0e74acd7e418fc7ce0f80790d64739fae1b65fe": {
       "created_at": "2026-11-07T13:33:23.422101+00:00",
@@ -4547,7 +4580,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
     },
     "b8e46e240e86f3556ebbe31a43dde038a1d1565173b7978a93ff0b2dab50174a": {
       "created_at": "2026-11-04T15:31:01.992674+00:00",
@@ -4557,6 +4590,12 @@
         "description": "Coverage of Senators against Sabres.",
         "raw": "Senators @ Sabres"
       }
+    },
+    "b95454ce713d09a6587c63ac7c2c9c1557961bf8fd4ca791c89f98bdd0fc0fe9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -5565,7 +5604,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:30:11.679403+00:00"
+      "retry_after": "2026-11-08T06:43:52.698527+00:00"
     },
     "deefb8ca00b874ec7f254376a83f2bec201a93422632f1a121c3a5d3cc1afc9a": {
       "created_at": "2026-11-07T06:27:35.762100+00:00",
@@ -5646,10 +5685,13 @@
       "title": "Aston Villa vs Fulham"
     },
     "e1ce8f995b71cd69c093652cf01196af63194c994e927de7719f117a4f7635b3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003435+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Iowa vs. Northwestern",
+        "description": "Coverage of Iowa against Northwestern.",
+        "raw": "Iowa @ Northwestern"
+      }
     },
     "e1dc467da9c22fa72cc9495e189b87acbd117a12fdcfbbf4dd0448016384d3c2": {
       "created_at": "2026-11-04T15:31:01.992667+00:00",
@@ -5725,10 +5767,13 @@
       }
     },
     "e454e1dcf743df3e5905e9ee9c1fe36143b2679d8e49b2be6568d37dda3c34c0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003405+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Fall Brawl",
+        "description": "Coverage of Fall Brawl.",
+        "raw": "Fall Brawl Hickory"
+      }
     },
     "e481761c60bf61ee6ecbb7e53639456d882038a5cbd237cd0749e62b54be8e5d": {
       "context": "Paramount+ event scheduled 01/11/2026 03:00 GMT",
@@ -6308,10 +6353,13 @@
       }
     },
     "f80912adbe6f3c34caf73ce967a0276eaa02815dc384504604b7854245039218": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T06:28:44.003438+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T05:44:33.445612+00:00"
+      "result": {
+        "clean_title": "Lightning vs. Wild",
+        "description": "Coverage of Lightning against Wild.",
+        "raw": "Lightning @ Wild"
+      }
     },
     "f82527d48461a011c2cee053eedfa7d73edc6dac2748f620ff73cc06690209bc": {
       "context": "MAX UK event scheduled 29/10/2026 00:00 GMT",
@@ -6512,8 +6560,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-08T11:29:25.957055+00:00",
-    "groq": "2026-11-08T05:30:11.679403+00:00"
+    "gemini": "2026-11-08T11:29:25.957055+00:00"
   },
   "version": 1
 }
