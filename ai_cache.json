@@ -2362,10 +2362,13 @@
       }
     },
     "5f0d9b3ecec9435ea07f1e2a04610f8f22cfcf49a558a905c23306b5caa0884e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T07:43:01.987198+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+      "result": {
+        "clean_title": "UGA vs MISS, MSU vs UM, COL vs ASU, OU vs UF",
+        "description": "Coverage of UGA against MISS, MSU vs UM, COL vs ASU, OU vs UF.",
+        "raw": "UGA @ MISS, MSU @ UM, COL @ ASU, OU @ UF"
+      }
     },
     "5f2dc18fbdff71fd2b8ff63ab1be2d43662106fe1a5658644faa41c267f73662": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -2677,10 +2680,13 @@
       "title": "Serie A: Atalanta - Parma"
     },
     "6f63f33086f3bfce5e0bc4663b0a77387ceb0193066c18d6dd913669225bafbd": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T07:43:01.987200+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+      "result": {
+        "clean_title": "Veterans Race of Remembrance",
+        "description": "Coverage of Veterans Race of Remembrance.",
+        "raw": "Veterans Race Rememberance"
+      }
     },
     "6f6d4667846146587c990edfbfb38be4f02a98410ab2af0c539888e145d99b7d": {
       "created_at": "2026-11-07T06:27:35.762087+00:00",
@@ -2690,12 +2696,6 @@
         "description": "Coverage of Eastern Illinois Panthers against Iowa Hawkeyes.",
         "raw": "Eastern Illinois @ Iowa"
       }
-    },
-    "6fdad54d292db4c9b3bf5762ce7e3da3c82b5210a7e3ffd919c985cf55c09c82": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -4156,10 +4156,13 @@
       "title": "Calgary Flames vs. Colorado Avalanche (Avalanche Broadcast)"
     },
     "a9108942c7e792a18a4622f1e327974d7b12da992add8c9ee5d46d4299e37341": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T07:43:01.987192+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+      "result": {
+        "clean_title": "MVPW 07 Turhan vs Baumgardner",
+        "description": "Coverage of MVPW 07 Turhan against Baumgardner.",
+        "raw": "MVPW 07 Turhan v Baumgardner"
+      }
     },
     "a93f566543b8cfd272ef8814dd3667dba6a5ed44f0cb507a9de625579f0ed7a0": {
       "created_at": "2026-11-06T13:50:44.090574+00:00",
@@ -4577,10 +4580,13 @@
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
     },
     "b8c1b4dcdeb293f2e3e1a9b3097a511bbb72b3f0b7416adb2eead8aeb46e75f9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T07:43:01.987190+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+      "result": {
+        "clean_title": "Louisville vs Georgia Tech",
+        "description": "Coverage of Louisville against Georgia Tech.",
+        "raw": "Louisville @ Georgia Tech"
+      }
     },
     "b8e46e240e86f3556ebbe31a43dde038a1d1565173b7978a93ff0b2dab50174a": {
       "created_at": "2026-11-04T15:31:01.992674+00:00",
@@ -4592,10 +4598,13 @@
       }
     },
     "b95454ce713d09a6587c63ac7c2c9c1557961bf8fd4ca791c89f98bdd0fc0fe9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T07:43:01.987195+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+      "result": {
+        "clean_title": "Prelims MVPW 07 Turhan vs Baumgardner",
+        "description": "Coverage of Prelims MVPW 07 Turhan against Baumgardner.",
+        "raw": "Prelims MVPW 07 Turhan v Baumgardner"
+      }
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -5411,6 +5420,15 @@
       "result": "MLS match: New England Revolution host Inter Miami CF at Gillette Stadium.",
       "title": "| New England Revolution vs Inter Miami CF (Spanish)"
     },
+    "d672ec22da8dd17f828a3e03d7dea8789a6f42fb2efefe5a35d0b0c8add98dbf": {
+      "created_at": "2026-11-08T07:43:01.987176+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Fury Challenger Series 17",
+        "description": "Coverage of Fury Challenger Series 17.",
+        "raw": "Fury Challenger Series 17"
+      }
+    },
     "d740499b0d358d8234112dd4e4597761a35621b02f41c7276e044ab0b69537ce": {
       "created_at": "2026-11-04T13:50:50.158567+00:00",
       "kind": "live-title",
@@ -5601,10 +5619,13 @@
       "title": "Islanders @ Predators"
     },
     "de8f65e206d712fc5ef7857e4f04ea3a726d2af2c2166c448848d9a02289b3d2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T07:43:01.987199+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-08T06:43:52.698527+00:00"
+      "result": {
+        "clean_title": "UGA vs MISS, MSU vs UM, IOWA vs NU, OU vs UF",
+        "description": "Coverage of UGA against MISS, MSU vs UM, IOWA vs NU, OU vs UF.",
+        "raw": "UGA @ MISS, MSU @ UM, IOWA @ NU, OU @ UF"
+      }
     },
     "deefb8ca00b874ec7f254376a83f2bec201a93422632f1a121c3a5d3cc1afc9a": {
       "created_at": "2026-11-07T06:27:35.762100+00:00",
@@ -5718,6 +5739,15 @@
         "clean_title": "Pitch 1B – Day 3 Afternoon Session",
         "description": "No reliable information is available about this session.",
         "raw": "Pitch 1B | Day 3: Afternoon Session"
+      }
+    },
+    "e347d751b6cd0fe4953bc22fff4b2415388314d0ff23530470b43b0b4958e88b": {
+      "created_at": "2026-11-08T07:43:01.987196+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Shooto Brazil 141",
+        "description": "Coverage of Shooto Brazil 141.",
+        "raw": "Shooto Brazil 141"
       }
     },
     "e38e188cae4715182544d846c792bbcc21adc212fadefa4199cb38cb9b5dcf2e": {
