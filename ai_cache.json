@@ -133,12 +133,6 @@
       "result": "NCAA Division I men's basketball: Colorado Buffaloes vs Abilene Christian Wildcats.",
       "title": "Abilene Christian vs. Colorado"
     },
-    "04e08999b988f766d44fb51be0e88d534d1a78f8dd91de0996480aded36379c4": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
-    },
     "05743992cece6fa9aa4e0d5ecf2f474ebbffdd424936cb3b65871788d930f04d": {
       "created_at": "2026-11-04T05:36:14.786990+00:00",
       "kind": "live-title",
@@ -156,12 +150,6 @@
         "description": "Coverage of Penn against Illinois.",
         "raw": "Penn @ Illinois"
       }
-    },
-    "06a2bf8fdc639f743bf300f25ddad964e6915bd88912c5cf6dce79965c9be713": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
     },
     "06b4788e335b4bb78c035e672c82acf76ceb309c90b3f7e4bab73f14a693cd7e": {
       "created_at": "2026-11-07T22:16:07.678306+00:00",
@@ -221,12 +209,6 @@
       "kind": "event-description",
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
-    },
-    "09d7b0625a35635b3cf81aceea1d9ecdfbe3591c05afb338e8b2d1923cda612f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
     },
     "0a423149cef57430e310fbf152318c7305ca6e4a2fca6fc18ee3e4d185691cf9": {
       "created_at": "2026-11-07T21:15:51.916432+00:00",
@@ -986,12 +968,6 @@
         "description": "Coverage of Avalanche against Blue Jackets.",
         "raw": "Avalanche @ Blue Jackets"
       }
-    },
-    "2a41a026dad3eba3133ba71542b0a24db24b2c127aaad169d6d8888df79dfa86": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -2325,12 +2301,6 @@
       "result": "Galatasaray play VfB Stuttgart at Rams Park, Istanbul in the Champions League league‑phase on 3 Nov 2026.",
       "title": "UEFA Champions League | League Phase: Galatasaray - VfB Stuttgart"
     },
-    "609fd27a024591f6253443dcd128bcb4ba39c4336ce32c4e3f051da5d7839bbf": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
-    },
     "60bbf4384e38cf8c740615178c6aad4a33361e7717120cc43f194e83eed283df": {
       "created_at": "2026-11-06T04:37:05.962197+00:00",
       "kind": "live-title",
@@ -2551,12 +2521,6 @@
         "raw": "Alabama @ LSU"
       }
     },
-    "6e653a4ac73271618aed43be7c5cdc9149226a584acb7a13c6072dc7b57f8970": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.606377+00:00"
-    },
     "6e9eccd4c36fb87751f7d4e0a3f17daead6ffd98d5647526bd250ee1900428d1": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006251+00:00",
@@ -2734,12 +2698,6 @@
         "raw": "Nanterre 92 vs. Élan Chalon"
       }
     },
-    "74b1d507b8905bd269f8f0a89a2ef257d4dd69622125da82cc3e1d26a09b726f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
-    },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
       "created_at": "2026-10-27T03:17:18.770317+00:00",
@@ -2859,12 +2817,6 @@
       "created_at": "2026-10-26T12:30:58.030825+00:00",
       "kind": "event-description",
       "result": "Georgia Southern Football Press Conference."
-    },
-    "7b6c61ca6319d60ddce597405563cd08411ec7da4a1f10074e92c5a719e2d367": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
     },
     "7bd583b1e3ae7d7ca28b932a354c89367f40e31fe93f11b8e57d68815a49989b": {
       "created_at": "2026-10-26T12:30:58.030813+00:00",
@@ -3797,12 +3749,6 @@
       "result": "Maryville (MO) competes against Missouri in an NCAA wrestling match.",
       "title": "Maryville (MO) vs. Missouri"
     },
-    "a297571129b35e81a7d5c8a9df6a7626208180446400b33c36a86ccf7426f6d4": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
-    },
     "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690125+00:00",
@@ -4181,12 +4127,6 @@
       "kind": "event-description",
       "result": "College basketball game between Gardner‑Webb and South Carolina Upstate.",
       "title": "Gardner-Webb vs. South Carolina Upstate"
-    },
-    "b0a01fdadd7a629bc220df6e5179381040c4958aa01c2137618740b2e6abce79": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
     },
     "b0f064a0e97c54fb17717c155f9ea875f5ed2a4bae77c178020a8ac76158e8b5": {
       "created_at": "2026-11-06T15:25:20.143355+00:00",
@@ -5981,10 +5921,13 @@
       }
     },
     "f62af70b04163c0f5f54f0ee590be46c24d4704599f7413cf45e482b25e94482": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-08T00:12:59.117960+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-07T23:28:33.207372+00:00"
+      "result": {
+        "clean_title": "San Jose Sharks vs Dallas Stars",
+        "description": "Coverage of San Jose Sharks against Dallas Stars.",
+        "raw": "Sharks @ Stars"
+      }
     },
     "f62cab3844d70488bb994a66c496d2424825c949f7db95e6d537f040f02beb84": {
       "created_at": "2026-11-06T16:30:24.696004+00:00",
