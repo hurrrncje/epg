@@ -1548,7 +1548,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1609,7 +1609,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
@@ -1638,7 +1638,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -1787,7 +1787,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -1932,7 +1932,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
       "created_at": "2026-11-08T17:16:11.697732+00:00",
@@ -2442,7 +2442,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "532997183f6cb224ea7197dc37bdcf5a5ecc320ea771263c6d6d7ead66f41d76": {
       "created_at": "2026-11-08T05:29:51.590118+00:00",
@@ -2884,7 +2884,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "61f7a549c8eb2d431b00a3d8e06d4ff35438ef30ff2e342ac871ca96284d55b0": {
       "created_at": "2026-11-07T14:24:34.772815+00:00",
@@ -3365,7 +3365,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -3532,7 +3532,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -3949,7 +3949,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "8b59eeeef9f1363df269595a9805566e3a085e11544fd00e2785b1adfbe1791a": {
       "created_at": "2026-11-07T14:24:25.648904+00:00",
@@ -4220,7 +4220,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -5555,7 +5555,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.987075+00:00"
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -5886,7 +5886,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
@@ -5924,7 +5924,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -6113,7 +6113,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -6627,7 +6627,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "e2bdadea28e21a03e6ae02f5bdf7bccf445c14b1ca2b627510f7fd7b48454fec": {
       "created_at": "2026-11-06T13:50:44.090588+00:00",
@@ -7148,7 +7148,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T15:41:23.137022+00:00"
+      "retry_after": "2026-11-09T16:58:31.313893+00:00"
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
@@ -7601,7 +7601,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-09T15:41:23.137022+00:00"
+    "gemini": "2026-11-09T22:43:29.448480+00:00"
   },
   "version": 1
 }
