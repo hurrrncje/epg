@@ -160,6 +160,12 @@
         "raw": "Penn @ Illinois"
       }
     },
+    "06820ace8029c3509826eab5754928ac50d2a43b1fb5b11d5bcee1c489e7ed40": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
+    },
     "06b4788e335b4bb78c035e672c82acf76ceb309c90b3f7e4bab73f14a693cd7e": {
       "created_at": "2026-11-07T22:16:07.678306+00:00",
       "kind": "live-title",
@@ -1508,6 +1514,12 @@
       "result": "Men's basketball game between Denver Pioneers and Loyola Marymount Lions scheduled for Oct 29 2026.",
       "title": "Denver vs. Loyola Marymount"
     },
+    "31a502713d456163a6175aaffa2756fa9eed46c0bdd093a064b36b0f425209b0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
+    },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
       "created_at": "2026-10-31T21:16:12.334902+00:00",
@@ -1971,6 +1983,12 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken broadcast by ESPN+, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
+    "43b67b9ebeab6c5b14ee61a040985380486fbe949fdffa23d6c776466ead20b8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
+    },
     "43df81343ba104c15dce33f307200b2bdfb8f7016b21a54704d677d72c9fdf34": {
       "created_at": "2026-11-07T16:17:32.146922+00:00",
       "kind": "live-title",
@@ -2017,6 +2035,12 @@
         "raw": "Petrosyan Mania Gold Edition"
       }
     },
+    "45c5ca44b373d6722b1202392062ece731946a4f2334b828cd0884fa99683180": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
+    },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
       "kind": "live-title",
@@ -2050,6 +2074,15 @@
       "kind": "event-description",
       "result": "St. Francis (Ill.) faces UIC in an NCAA men's basketball regular‑season game.",
       "title": "St. Francis (Ill.) vs. UIC"
+    },
+    "465821036af54ff5d6e86789b47e9f95979b6ecac1842bece81beddd2469d8b1": {
+      "created_at": "2026-11-09T05:40:49.350359+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Venezuela U23 vs Republic of Korea U23",
+        "description": "Coverage of Venezuela U23 against Republic of Korea U23.",
+        "raw": "Venezuela U23 vs. Republic of Korea U23"
+      }
     },
     "46824aba36dc3b2ffde6ca463a679d6a58b9de14b2eeae362ae83c8337ef4999": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:55 GMT",
@@ -2264,12 +2297,6 @@
         "description": "Coverage of Mammoth against Ottawa Senators.",
         "raw": "Mammoth @ Senators"
       }
-    },
-    "4f780ea3d3e101ac481f496d42c325b0aebf4bd5bd587e3a8c9d2718d4ab3985": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-09T04:58:25.064107+00:00"
     },
     "4fb1d15f11fc8d7e3f3789657f90705a406a9af01af5e0710b5233f8f72ba026": {
       "created_at": "2026-11-05T13:54:36.011730+00:00",
@@ -2565,6 +2592,12 @@
       "kind": "event-description",
       "result": "Scottish Premiership clash: Aberdeen vs Hibernian at Pittodrie Stadium, 7 November 2026, 17:45 GMT.",
       "title": "Aberdeen vs Hibernian"
+    },
+    "5be6a04be3caa12e7ba4434b1716469fedbca7273f6b680344fdbe38b18fa2bc": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
     },
     "5bf6d94e35133b1c8446270c8a52476aedd28abc00481f9b1cf61869e9d8c9ec": {
       "created_at": "2026-11-07T21:15:51.916435+00:00",
@@ -2896,6 +2929,12 @@
         "description": "Coverage of Michigan State against Michigan.",
         "raw": "Michigan State @ Michigan"
       }
+    },
+    "694a9396bb1645ceb34e007a51e0f5caa95bbd3c8af62c11564900480b2a31fc": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -3736,6 +3775,12 @@
       "kind": "event-description",
       "result": "Petronas Grand Prix of Malaysia Moto3 race at Sepang International Circuit",
       "title": "Race: Moto3 | Round 19 | Malaysia"
+    },
+    "8a52a7f08e9baf658b4f5dbd9d5064356d2bca142fb4896552daa8b23ee09c37": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
     },
     "8ada65a1a917c1f4f6a76e564c19f7f96b219af9e626830db6f5f4887909c950": {
       "created_at": "2026-11-08T17:16:11.697739+00:00",
@@ -5406,6 +5451,12 @@
         "raw": "EFC 139: Mkhwanazi vs. Hinda"
       }
     },
+    "c112ae59b1732003ba871f80562e0c773a3831c0a114143160eae39375307040": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
+    },
     "c18c1ab9088f3237f592df96493d626c4460dc6de16f6085bbf2a03f8edd0b69": {
       "created_at": "2026-11-08T05:29:32.514162+00:00",
       "kind": "live-title",
@@ -5686,6 +5737,12 @@
       "result": "Official presentation of the 2027 Giro d’Italia and Giro d’Italia Women routes in Rome.",
       "title": "Route Presentation | 2027: Giro d'Italia"
     },
+    "c96b8dc6ac8cb0b96b0efff79df2847bd990fa8eb88df0f0da1c101303b64cab": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
+    },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
       "kind": "event-description",
@@ -5793,12 +5850,6 @@
         "description": "Coverage of BKFC 96: Weigh-In.",
         "raw": "BKFC 96: Weigh-In"
       }
-    },
-    "ced673a9ab7e15684c323ba10c54b7b85f44eed821549359d125c635d1cb56d8": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-09T04:58:25.064107+00:00"
     },
     "cf2e27d422ad19798986aa13b0485847d2eb1997e7b45a9d409e1c67b72c85da": {
       "created_at": "2026-11-06T13:50:32.471813+00:00",
@@ -6052,6 +6103,12 @@
         "description": "Coverage of Fury Challenger Series 17.",
         "raw": "Fury Challenger Series 17"
       }
+    },
+    "d713d4ca17085984c8ed273eed8401735306b77bf0de3437c2a368a743b3f2ad": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-09T05:55:47.294962+00:00"
     },
     "d740499b0d358d8234112dd4e4597761a35621b02f41c7276e044ab0b69537ce": {
       "created_at": "2026-11-04T13:50:50.158567+00:00",
@@ -6594,12 +6651,6 @@
       "kind": "event-description",
       "result": "EFL Championship clash between Plymouth Argyle and Reading at 12:30 GMT on 31 Oct 2026.",
       "title": "Plymouth Argyle vs Reading FC"
-    },
-    "e693f5ca02a2109026fbcb76f119d65aaae8ecceb159d1fb90d52f29a27f941f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-09T04:58:25.064107+00:00"
     },
     "e69d4621f5c6b9a858980df52ddada1f1f4d28a1f685a9c5139885fab9bcacdc": {
       "created_at": "2026-11-05T13:54:36.011718+00:00",
