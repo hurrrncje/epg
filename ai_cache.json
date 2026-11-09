@@ -238,10 +238,13 @@
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
     },
     "0a39256e61793ba9c40eba853e7cbc0b1395f60bd9b9365dd98e8841c824aff6": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820093+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Illinois State @ Purdue",
+        "description": "Coverage of Illinois State against Purdue.",
+        "raw": "Illinois State @ Purdue"
+      }
     },
     "0a423149cef57430e310fbf152318c7305ca6e4a2fca6fc18ee3e4d185691cf9": {
       "created_at": "2026-11-07T21:15:51.916432+00:00",
@@ -386,10 +389,13 @@
       }
     },
     "0f6c996873797bf6dee7ef7b6656ee935415de44640aa56adeac9aa4f8de0ddb": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820105+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Marshall @ Ohio State",
+        "description": "Coverage of Marshall against Ohio State.",
+        "raw": "Marshall @ Ohio State"
+      }
     },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
@@ -1542,7 +1548,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1603,7 +1609,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
@@ -1632,7 +1638,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -1781,7 +1787,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -1880,10 +1886,13 @@
       }
     },
     "3e1e2972f561d4832ff8308d1df04e992f1611964faeb99389b0e465dcf27b3a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820099+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "KFF Mitrovica vs KFF Dukagjini",
+        "description": "Coverage of KFF Mitrovica against KFF Dukagjini.",
+        "raw": "KFF Mitrovica vs. KFF Dukagjini"
+      }
     },
     "3e3b8e1081314077639e929d5f3ff4ec06a45759ecd4aae9eaa8172d51082748": {
       "created_at": "2026-11-07T14:24:37.317144+00:00",
@@ -1923,7 +1932,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
       "created_at": "2026-11-08T17:16:11.697732+00:00",
@@ -2433,7 +2442,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "532997183f6cb224ea7197dc37bdcf5a5ecc320ea771263c6d6d7ead66f41d76": {
       "created_at": "2026-11-08T05:29:51.590118+00:00",
@@ -2767,10 +2776,13 @@
       }
     },
     "5e8ac495f74e66e464bf1a54d0a5fc911b80e11a7aa3d8e178e957bce2c03465": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820103+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "MNF Playbook | Bills @ Vikings",
+        "description": "Coverage of MNF Playbook | Bills against Vikings.",
+        "raw": "MNF Playbook | Bills @ Vikings"
+      }
     },
     "5ec898b6628ee37e5dc4a88ef30f2491c7ae46e65b1cf022546a68666c64eb22": {
       "created_at": "2026-11-07T16:17:32.146918+00:00",
@@ -2823,10 +2835,13 @@
       "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
     "5fcc625ca15bf1f50de98ea8bda866047f7f48b9b707e2e20034b2ca606ef8e4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820107+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Mississippi Valley State @ Washington",
+        "description": "Coverage of Mississippi Valley State against Washington.",
+        "raw": "Mississippi Valley State @ Washington"
+      }
     },
     "608a44b9e1cacae0cfd25fdb3cc7b4fbf0ede9f3dc04c595d2d60e8cc8f28b7e": {
       "context": "MAX UK event scheduled 03/11/2026 17:45 GMT",
@@ -2869,7 +2884,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "61f7a549c8eb2d431b00a3d8e06d4ff35438ef30ff2e342ac871ca96284d55b0": {
       "created_at": "2026-11-07T14:24:34.772815+00:00",
@@ -3350,7 +3365,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -3517,7 +3532,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -3690,10 +3705,13 @@
       }
     },
     "82a4754294ea78093a7aad267e7662cb25723dd96842f0b6fb7ae492679d3497": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820077+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Honduras U19 vs El Salvador U19",
+        "description": "Coverage of Honduras U19 against El Salvador U19.",
+        "raw": "Honduras U19 vs. El Salvador U19"
+      }
     },
     "82e97287ef87112704639c9bc3450035896d628e41af49b79149e2aff4c86a8c": {
       "context": "La Liga fixture scheduled 02/11/2026 19:48 GMT",
@@ -3931,7 +3949,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "8b59eeeef9f1363df269595a9805566e3a085e11544fd00e2785b1adfbe1791a": {
       "created_at": "2026-11-07T14:24:25.648904+00:00",
@@ -4202,7 +4220,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -4377,10 +4395,13 @@
       }
     },
     "9c2c9779c83f92b8243bcefe00b94af020da8e12b1285fb39eaff38612ec3957": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820108+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Panama U19 vs Belize U19",
+        "description": "Coverage of Panama U19 against Belize U19.",
+        "raw": "Panama U19 vs. Belize U19"
+      }
     },
     "9c7281cadb9610a48903a96521ecd19f1ef6de0367718d9f4054ad37abaa49a3": {
       "created_at": "2026-11-07T19:26:01.018328+00:00",
@@ -4920,10 +4941,13 @@
       "title": "Hofstra vs. Georgia Tech"
     },
     "acf33545ab6692184d23843c9803e4b3853e4e0109ceb2f22e46d5111ebb0a4d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820110+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Panama U23 vs Nicaragua U23",
+        "description": "Coverage of Panama U23 against Nicaragua U23.",
+        "raw": "Panama U23 vs. Nicaragua U23"
+      }
     },
     "ad113bfdca80a8cfabe804e11c4b990228d085758937527df4e8137e216f09e5": {
       "created_at": "2026-11-04T13:50:50.158560+00:00",
@@ -5531,7 +5555,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.631865+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -5862,7 +5886,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
@@ -5900,7 +5924,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -5933,10 +5957,13 @@
       "title": "Mon, 11/2 - The Rich Eisen Show"
     },
     "cb318f65f005e92eb16b392982eb7dd5170270546aa6669ac78dc596b861813c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820097+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Islanders @ Sharks",
+        "description": "Coverage of Islanders against Sharks.",
+        "raw": "Islanders @ Sharks"
+      }
     },
     "cb56d6f101eeb7dd07789f349f71819fa6a09b480eddd0142279faf9fca22ad0": {
       "context": "Disney+ Events event scheduled 02/11/2026 10:00 GMT",
@@ -6086,7 +6113,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -6235,10 +6262,13 @@
       }
     },
     "d56a8159c1f241944755a4dd39021d9e1a62753ce99eb3be4b2a1206439ace03": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T15:34:57.820101+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:46.074720+00:00"
+      "result": {
+        "clean_title": "Köln vs Leipzig",
+        "description": "Coverage of Köln against Leipzig.",
+        "raw": "Köln vs. Leipzig"
+      }
     },
     "d5ca28a5ef77fbee30178e0c8224b7f5f45aea042cfbbb40b69e898a240e3b44": {
       "created_at": "2026-11-07T14:24:34.772810+00:00",
@@ -6597,7 +6627,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "e2bdadea28e21a03e6ae02f5bdf7bccf445c14b1ca2b627510f7fd7b48454fec": {
       "created_at": "2026-11-06T13:50:44.090588+00:00",
@@ -7118,7 +7148,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T14:08:45.295180+00:00"
+      "retry_after": "2026-11-09T15:41:23.137022+00:00"
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
