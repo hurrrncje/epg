@@ -1609,10 +1609,13 @@
       }
     },
     "348c6166a52e840a65637c9de6021f8ad13c89e768305818963dcb68f55d30eb": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057748+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Bills vs Vikings",
+        "description": "Coverage of Bills against Vikings.",
+        "raw": "Bills @ Vikings"
+      }
     },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
@@ -1938,10 +1941,13 @@
       }
     },
     "3f488f2c1e136fc55c4164d7356fe9ea13d8918b010cf136164b360320e8990f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057780+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Flyers vs Canucks",
+        "description": "Coverage of Flyers against Canucks.",
+        "raw": "Flyers @ Canucks"
+      }
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
       "created_at": "2026-11-08T17:16:11.697732+00:00",
@@ -3377,10 +3383,13 @@
       }
     },
     "7438b4ec5e6ffd8a7d15f355415eb7db500e7b08013dc586ba69027677c2ceff": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057773+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Chinese Taipei U23 vs Australia U23",
+        "description": "Coverage of Chinese Taipei U23 against Australia U23.",
+        "raw": "Chinese Taipei U23 vs. Australia U23"
+      }
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -3544,10 +3553,13 @@
       }
     },
     "7c0ee94712d3bb83bcbcee3a32588e79ead3a1177a88e7455413ba91eafef014": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057771+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Cercle de Joachim vs Vacoas-Phoenix",
+        "description": "Coverage of Cercle de Joachim against Vacoas-Phoenix.",
+        "raw": "Cercle de Joachim vs. Vacoas-Phoenix"
+      }
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -3961,10 +3973,13 @@
       "title": "Army vs. #2 Duke"
     },
     "8b4190bdf1bd5e4c34f1a47a0ef74ef2b27b802a339d0abde8612263272c1c07": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057768+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Boston University vs Northwestern",
+        "description": "Coverage of Boston University against Northwestern.",
+        "raw": "Boston University @ Northwestern"
+      }
     },
     "8b59eeeef9f1363df269595a9805566e3a085e11544fd00e2785b1adfbe1791a": {
       "created_at": "2026-11-07T14:24:25.648904+00:00",
@@ -5904,10 +5919,13 @@
       "title": "North American vs. Nicholls"
     },
     "c8dc5313f070167746914db571a4e15387ab780fb6c8e85745eaa5faa99951d5": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057775+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Costa Rica U19 vs Cuba U19",
+        "description": "Coverage of Costa Rica U19 against Cuba U19.",
+        "raw": "Costa Rica U19 vs. Cuba U19"
+      }
     },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
@@ -5942,10 +5960,13 @@
       }
     },
     "c9ab2b8e833b753b44d9d81a72dfeebeaa376c18b2ad9969360235a113564f92": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057783+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Grambling vs Texas",
+        "description": "Coverage of Grambling against Texas.",
+        "raw": "Grambling @ Texas"
+      }
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -6131,10 +6152,13 @@
       "title": "CD Anaitasuna vs. D. Alaves (Round 1) (Copa del Rey)"
     },
     "d09f1ac0ac5fb83f075e0d31a19db1139577eb14f0083046aad3271352306880": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057764+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Bills vs Vikings",
+        "description": "Coverage of Bills against Vikings.",
+        "raw": "Bills @ Vikings (Spanish Broadcast)"
+      }
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -6645,10 +6669,13 @@
       }
     },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057785+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Guatemala U19 vs Nicaragua U19",
+        "description": "Coverage of Guatemala U19 against Nicaragua U19.",
+        "raw": "Guatemala U19 vs. Nicaragua U19"
+      }
     },
     "e2bdadea28e21a03e6ae02f5bdf7bccf445c14b1ca2b627510f7fd7b48454fec": {
       "created_at": "2026-11-06T13:50:44.090588+00:00",
@@ -7166,10 +7193,13 @@
       }
     },
     "f12549febfebea5e2a9ffcdf88af04299fff344d071fed1d8ccd1fcbbe552072": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T22:26:26.057778+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T21:46:34.590476+00:00"
+      "result": {
+        "clean_title": "Bills vs Vikings",
+        "description": "Coverage of Bills against Vikings.",
+        "raw": "Field Pass with The Pat McAfee Show: Bills @ Vikings"
+      }
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
