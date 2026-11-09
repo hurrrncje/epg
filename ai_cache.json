@@ -1545,10 +1545,13 @@
       }
     },
     "324ddc19e42de738af1def7ace4eade46aae9428d9fc1aeedfc91cce51ef3f5e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464130+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "Syracuse @ Indiana",
+        "description": "Coverage of Syracuse against Indiana.",
+        "raw": "Syracuse @ Indiana"
+      }
     },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1609,7 +1612,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
@@ -1635,10 +1638,13 @@
       "title": "Serie A: Sassuolo vs. Fiorentina"
     },
     "358daba3d057ac05e946fbb96ec07f827faa458c3601b4b6428d74868b40843f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464132+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "Venezuela U23 vs Cuba U23",
+        "description": "Coverage of Venezuela U23 against Cuba U23.",
+        "raw": "Venezuela U23 vs. Cuba U23"
+      }
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -1784,10 +1790,13 @@
       }
     },
     "3b1f5b6607e42599716247db6ef8628a701030d4358ccac213a5d9ce7b33580a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464129+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "South Africa U23 vs Japan U23",
+        "description": "Coverage of South Africa U23 against Japan U23.",
+        "raw": "South Africa U23 vs. Japan U23"
+      }
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -1932,7 +1941,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
       "created_at": "2026-11-08T17:16:11.697732+00:00",
@@ -2439,10 +2448,13 @@
       }
     },
     "52cfa91ce72cd2505550fb55203ea98b4f1ff209e041b0ade0bd928f3846f978": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464125+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "Republic of Korea U23 vs Great Britain U23",
+        "description": "Coverage of Republic of Korea U23 against Great Britain U23.",
+        "raw": "Republic of Korea U23 vs. Great Britain U23"
+      }
     },
     "532997183f6cb224ea7197dc37bdcf5a5ecc320ea771263c6d6d7ead66f41d76": {
       "created_at": "2026-11-08T05:29:51.590118+00:00",
@@ -2881,10 +2893,13 @@
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
     },
     "61c45b1c4d64a73bc76ace7cfb80d5bf63afa9cb89df2b74c63fba6459e741ca": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464105+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "Phoenix Marrakesh vs SC Casablanca",
+        "description": "Coverage of Phoenix Marrakesh against SC Casablanca.",
+        "raw": "Phoenix Marrakesh vs. SC Casablanca"
+      }
     },
     "61f7a549c8eb2d431b00a3d8e06d4ff35438ef30ff2e342ac871ca96284d55b0": {
       "created_at": "2026-11-07T14:24:34.772815+00:00",
@@ -3365,7 +3380,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -3532,7 +3547,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -3949,7 +3964,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "8b59eeeef9f1363df269595a9805566e3a085e11544fd00e2785b1adfbe1791a": {
       "created_at": "2026-11-07T14:24:25.648904+00:00",
@@ -4217,10 +4232,13 @@
       }
     },
     "95cc1c15c2cb0208415836772e2e8f10aa6d5ee898fc89cf225ba0a74afc4743": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464127+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "River Plate Aruba vs Nacional",
+        "description": "Coverage of River Plate Aruba against Nacional.",
+        "raw": "River Plate Aruba vs. Nacional"
+      }
     },
     "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
       "created_at": "2026-10-28T06:20:34.001582+00:00",
@@ -5552,10 +5570,13 @@
       }
     },
     "be9c3d1f6ba97ff8d8a1801e395a4b812ff2a0eef177e08d62ab775fa3964cc3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T18:28:25.464121+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.983615+00:00"
+      "result": {
+        "clean_title": "Puerto Rico U23 vs Czechia U23",
+        "description": "Coverage of Puerto Rico U23 against Czechia U23.",
+        "raw": "Puerto Rico U23 vs. Czechia U23"
+      }
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -5886,7 +5907,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
@@ -5924,7 +5945,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -6113,7 +6134,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -6627,7 +6648,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "e2bdadea28e21a03e6ae02f5bdf7bccf445c14b1ca2b627510f7fd7b48454fec": {
       "created_at": "2026-11-06T13:50:44.090588+00:00",
@@ -7148,7 +7169,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T17:53:06.425487+00:00"
+      "retry_after": "2026-11-09T18:43:08.358644+00:00"
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
