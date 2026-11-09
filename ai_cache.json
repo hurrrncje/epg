@@ -161,10 +161,13 @@
       }
     },
     "06820ace8029c3509826eab5754928ac50d2a43b1fb5b11d5bcee1c489e7ed40": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797826+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Flyers vs. Flames",
+        "description": "Coverage of Flyers against Flames.",
+        "raw": "Flyers @ Flames"
+      }
     },
     "06b4788e335b4bb78c035e672c82acf76ceb309c90b3f7e4bab73f14a693cd7e": {
       "created_at": "2026-11-07T22:16:07.678306+00:00",
@@ -1515,10 +1518,13 @@
       "title": "Denver vs. Loyola Marymount"
     },
     "31a502713d456163a6175aaffa2756fa9eed46c0bdd093a064b36b0f425209b0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797823+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Buccaneers vs. Bears (US., French, German, Japanese, Portuguese Game Commentary Available)",
+        "description": "Coverage of Buccaneers against Bears (US., French, German, Japanese, Portuguese Game Commentary Available).",
+        "raw": "Buccaneers @ Bears (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -1984,10 +1990,13 @@
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
     "43b67b9ebeab6c5b14ee61a040985380486fbe949fdffa23d6c776466ead20b8": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797830+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Great Britain U23 vs. South Africa U23",
+        "description": "Coverage of Great Britain U23 against South Africa U23.",
+        "raw": "Great Britain U23 vs. South Africa U23"
+      }
     },
     "43df81343ba104c15dce33f307200b2bdfb8f7016b21a54704d677d72c9fdf34": {
       "created_at": "2026-11-07T16:17:32.146922+00:00",
@@ -2036,10 +2045,13 @@
       }
     },
     "45c5ca44b373d6722b1202392062ece731946a4f2334b828cd0884fa99683180": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797842+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Penn State vs. Pittsburgh",
+        "description": "Coverage of Penn State against Pittsburgh.",
+        "raw": "Penn State vs. Pittsburgh"
+      }
     },
     "45e530db64ca76d4e0d89b495ae4d7c9a595b4acb65f0c97ac05c96ee6723902": {
       "created_at": "2026-10-26T19:21:40.738686+00:00",
@@ -2594,10 +2606,13 @@
       "title": "Aberdeen vs Hibernian"
     },
     "5be6a04be3caa12e7ba4434b1716469fedbca7273f6b680344fdbe38b18fa2bc": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797795+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Buccaneers vs. Bears",
+        "description": "Coverage of Buccaneers against Bears.",
+        "raw": "Buccaneers @ Bears"
+      }
     },
     "5bf6d94e35133b1c8446270c8a52476aedd28abc00481f9b1cf61869e9d8c9ec": {
       "created_at": "2026-11-07T21:15:51.916435+00:00",
@@ -2931,10 +2946,13 @@
       }
     },
     "694a9396bb1645ceb34e007a51e0f5caa95bbd3c8af62c11564900480b2a31fc": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797848+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Utah State vs. USC",
+        "description": "Coverage of Utah State against USC.",
+        "raw": "Utah State @ USC"
+      }
     },
     "69500e12222efa22c5944ae50cdf1ca9af8e9395799be96f1db2261535542d58": {
       "created_at": "2026-10-26T19:21:40.738764+00:00",
@@ -3777,10 +3795,13 @@
       "title": "Race: Moto3 | Round 19 | Malaysia"
     },
     "8a52a7f08e9baf658b4f5dbd9d5064356d2bca142fb4896552daa8b23ee09c37": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797838+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Penguins vs. Ducks",
+        "description": "Coverage of Penguins against Ducks.",
+        "raw": "Penguins @ Ducks"
+      }
     },
     "8ada65a1a917c1f4f6a76e564c19f7f96b219af9e626830db6f5f4887909c950": {
       "created_at": "2026-11-08T17:16:11.697739+00:00",
@@ -5452,10 +5473,13 @@
       }
     },
     "c112ae59b1732003ba871f80562e0c773a3831c0a114143160eae39375307040": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797845+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "UFC Fight Night Acosta v Walker - Special Feed",
+        "description": "Coverage of UFC Fight Night Acosta against Walker - Special Feed.",
+        "raw": "UFC Fight Night Acosta v Walker - Special Feed"
+      }
     },
     "c18c1ab9088f3237f592df96493d626c4460dc6de16f6085bbf2a03f8edd0b69": {
       "created_at": "2026-11-08T05:29:32.514162+00:00",
@@ -5738,10 +5762,13 @@
       "title": "Route Presentation | 2027: Giro d'Italia"
     },
     "c96b8dc6ac8cb0b96b0efff79df2847bd990fa8eb88df0f0da1c101303b64cab": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797833+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Nicaragua U23 vs. Puerto Rico U23",
+        "description": "Coverage of Nicaragua U23 against Puerto Rico U23.",
+        "raw": "Nicaragua U23 vs. Puerto Rico U23"
+      }
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -6105,10 +6132,13 @@
       }
     },
     "d713d4ca17085984c8ed273eed8401735306b77bf0de3437c2a368a743b3f2ad": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-09T09:41:25.797818+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-09T08:17:02.912151+00:00"
+      "result": {
+        "clean_title": "Buccaneers vs. Bears (Spanish Broadcast)",
+        "description": "Coverage of Buccaneers against Bears (Spanish Broadcast).",
+        "raw": "Buccaneers @ Bears (Spanish Broadcast)"
+      }
     },
     "d740499b0d358d8234112dd4e4597761a35621b02f41c7276e044ab0b69537ce": {
       "created_at": "2026-11-04T13:50:50.158567+00:00",
@@ -7379,7 +7409,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-09T09:31:11.274561+00:00"
+    "gemini": "2026-11-09T15:41:23.137022+00:00"
   },
   "version": 1
 }
