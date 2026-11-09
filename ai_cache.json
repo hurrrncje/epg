@@ -1612,7 +1612,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
@@ -1941,7 +1941,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
       "created_at": "2026-11-08T17:16:11.697732+00:00",
@@ -3380,7 +3380,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
       "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
@@ -3547,7 +3547,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -3964,7 +3964,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "8b59eeeef9f1363df269595a9805566e3a085e11544fd00e2785b1adfbe1791a": {
       "created_at": "2026-11-07T14:24:25.648904+00:00",
@@ -5907,7 +5907,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
@@ -5945,7 +5945,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "ca1896020a898820102683ea0bd2d368e9c6dd67cb8e553d5fc269204cac2dd2": {
       "created_at": "2026-10-26T12:30:58.030801+00:00",
@@ -6134,7 +6134,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "d100f09acb6c3f27942b781ce061c4e204815c78077d7504813d627024ba480d": {
       "context": "DundeeFC.spfl; Next Game: St. Johnstone vs Dundee FC on 07/11/2026 at 15:00 GMT",
@@ -6648,7 +6648,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "e2bdadea28e21a03e6ae02f5bdf7bccf445c14b1ca2b627510f7fd7b48454fec": {
       "created_at": "2026-11-06T13:50:44.090588+00:00",
@@ -7169,7 +7169,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-09T20:46:13.249443+00:00"
+      "retry_after": "2026-11-09T21:46:34.590476+00:00"
     },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
