@@ -27,8 +27,8 @@ from google.genai import types
 EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
 POLISH_EPG_CHANNELS_FILE = Path(__file__).with_name("polish_epg_channels.tsv")
 POLISH_EPG_URLS = (
-    "https://epg.polishteam.one/guide.xml.gz",
     "https://epg.ovh/pl.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_PL1.xml.gz",
 )
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
 FOOTBALL_MIRROR_IDS_FILE = Path("football_mirror_channel_ids.txt")
