@@ -398,10 +398,13 @@
       "title": "K.C. Keeler Weekly Press Conference"
     },
     "0ec5dcf4707f7845e9445d56ffc2055f02eaa4de97c45381ab3825b4931a4bb1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547993+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Predators vs. Kings",
+        "description": "Coverage of Predators against Kings.",
+        "raw": "Predators @ Kings"
+      }
     },
     "0f18f972db92d0f9326c7a54915b77b1144aeb7cbf93d50c28d3a5e85973950a": {
       "created_at": "2026-11-08T15:17:34.680484+00:00",
@@ -413,10 +416,13 @@
       }
     },
     "0f61c2bbba276059c482b30c3b5bb701a779decd698f59475cfd50a471206681": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325083+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Champions Classic: Kansas vs. Kentucky",
+        "description": "Coverage of Champions Classic: Kansas against Kentucky.",
+        "raw": "2026 Champions Classic: Kansas vs. Kentucky"
+      }
     },
     "0f6c996873797bf6dee7ef7b6656ee935415de44640aa56adeac9aa4f8de0ddb": {
       "created_at": "2026-11-09T15:34:57.820105+00:00",
@@ -699,7 +705,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:31.705724+00:00"
+      "retry_after": "2026-11-10T16:31:03.767849+00:00"
     },
     "1726380ace56567c609288cc29b5d446ae5156d20c5612bf83af719d1caca6f9": {
       "created_at": "2026-11-08T14:21:58.625442+00:00",
@@ -1260,10 +1266,13 @@
       "title": "Calgary Flames vs. Colorado Avalanche"
     },
     "2997384c320dea216ddc289ff13b776a3dfd71dcc882c633056842e0691c221a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547996+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Red Wings vs. Blues",
+        "description": "Coverage of Red Wings against Blues.",
+        "raw": "Red Wings @ Blues"
+      }
     },
     "29bf95c193e4d273b2de20dbbedea0112cda88a72b8eb626f02dc7cffaaefb90": {
       "created_at": "2026-11-10T13:47:32.391033+00:00",
@@ -2012,10 +2021,13 @@
       }
     },
     "3e9d743731ae7c813d095ed222b7aee1263a092f7214deb6804ad92a6e7f430d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325116+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Fairfield vs Wisconsin",
+        "description": "Coverage of Fairfield against Wisconsin.",
+        "raw": "Fairfield @ Wisconsin"
+      }
     },
     "3eb8927769d1b730491e54c723add1c9f43f17948689e543b80d3717f79751ae": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -2052,10 +2064,13 @@
       }
     },
     "3fc94beb2dfa634850e08505f720f085d5fa86b333e05ed82759d8c3119e6020": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325111+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Creighton vs Kansas State",
+        "description": "Coverage of Creighton against Kansas State.",
+        "raw": "Creighton @ Kansas State"
+      }
     },
     "3ff295c893ee7d0c989f7db3aab8d190e06d30d7a80c2b40caba10137274261c": {
       "context": "MAX UK event scheduled 01/11/2026 02:00 GMT",
@@ -2507,10 +2522,13 @@
       "title": "NYC Marathon: Countdown to the Starting Line"
     },
     "5021d033d4dd199a7184270bd3b7d832c77959be5747c172d733e62f04c6dd92": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.548000+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Spartak Office Shoes vs. Cholet Basket",
+        "description": "Coverage of Spartak Office Shoes against Cholet Basket.",
+        "raw": "Spartak Office Shoes vs. Cholet Basket"
+      }
     },
     "507017db681b3700c38d3bdaba657ed4764faf391aa308646438e26b3be76c83": {
       "context": "ESPN+ event scheduled 03/11/2026 01:30 GMT",
@@ -2577,10 +2595,13 @@
       }
     },
     "5320859dc2d17303448d156dbebd433d37300ca832440762b9a4357588b42a43": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325113+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Cuba U23 vs. Great Britain U23",
+        "description": "Coverage of Cuba U23 against Great Britain U23.",
+        "raw": "Cuba U23 vs. Great Britain U23"
+      }
     },
     "532997183f6cb224ea7197dc37bdcf5a5ecc320ea771263c6d6d7ead66f41d76": {
       "created_at": "2026-11-08T05:29:51.590118+00:00",
@@ -3313,7 +3334,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:31.705724+00:00"
+      "retry_after": "2026-11-10T16:31:03.767849+00:00"
     },
     "6e006b60d92450fc312d8964012e6f6a286e5c84fb0998ef07e590e537dfbb43": {
       "created_at": "2026-11-08T15:17:14.088515+00:00",
@@ -3698,10 +3719,13 @@
       "title": "Yale vs. Harvard"
     },
     "7a128b645fe45e8b668a0bfd7b7772ee4307e9e490ecbb0f692ecc46ce8cab96": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547995+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Puerto Rico U23 vs. Chinese Taipei U23",
+        "description": "Coverage of Puerto Rico U23 against Chinese Taipei U23.",
+        "raw": "Puerto Rico U23 vs. Chinese Taipei U23"
+      }
     },
     "7a33eed814d533b9a47b80445c24001ce96aa3c009253dcce9b4963945d11ec7": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:30 GMT",
@@ -3888,10 +3912,13 @@
       }
     },
     "81738332a764df173af3ff58680b979f8c8d49a1e5391120c772c0a75d7f6088": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325110+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "College Football Playoff Rankings Show - Nov 10",
+        "description": "Coverage of College Football Playoff Rankings Show - Nov 10.",
+        "raw": "College Football Playoff Rankings Show - Nov 10"
+      }
     },
     "81b033cf73709e12c47795ee6ebf21dff6d26899e18e25f21da74d0ffa195f63": {
       "created_at": "2026-11-06T13:50:44.090581+00:00",
@@ -3963,10 +3990,13 @@
       "title": "Vikings @ Lions"
     },
     "83e84cf7e6a816f085f531d3f1ee0c084c16289a3081b270bdf2228aff5edba0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.548001+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Surne Bilbao vs. ALBA BERLIN",
+        "description": "Coverage of Surne Bilbao against ALBA BERLIN.",
+        "raw": "Surne Bilbao vs. ALBA BERLIN"
+      }
     },
     "8442d0dcf79fede802975928111c960cc735ecef1011bd034798d9a12774bd4c": {
       "created_at": "2026-11-06T13:50:32.471804+00:00",
@@ -4223,10 +4253,13 @@
       "title": "Men | Group Stage | Dakar 2026: Senegal - Argentina"
     },
     "8b8925499c088aad7710287fbd3d1dbe534f314d3cf69755fd3b694285ceb233": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325107+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Capitals vs Senators",
+        "description": "Coverage of Capitals against Senators.",
+        "raw": "Capitals @ Senators"
+      }
     },
     "8b8a847c093ea9a878d2e69c7a089724b5d8ab229c255f0fe30414c71bee4302": {
       "created_at": "2026-11-05T05:40:32.979992+00:00",
@@ -4517,10 +4550,13 @@
       "title": "#23 Missouri vs. Arkansas"
     },
     "965bbc253891cbc714bb031c692b1aa3ffd4a7a05c2c279cf5bcd8060a088806": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325104+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Avalanche vs Maple Leafs",
+        "description": "Coverage of Avalanche against Maple Leafs.",
+        "raw": "Avalanche @ Maple Leafs"
+      }
     },
     "972288b0957b42a3823e2ccc47c96368e38134797f2de5597f9937d0e4e175cd": {
       "context": "Disney+ Events event scheduled 03/11/2026 07:14 GMT",
@@ -4760,10 +4796,13 @@
       }
     },
     "9e8cc9b0d2a9eb876c485ef3cf71749e77e0347c5e4b9688bb96bed8a68454f1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547972+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Ohio vs. Miami (OH)",
+        "description": "Coverage of Ohio against Miami (OH).",
+        "raw": "Ohio @ Miami (OH)"
+      }
     },
     "9ea2b703aff783b94733bb3b81034b31c3adfe5cb0ca904bebe15d0e46beab82": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -4975,10 +5014,13 @@
       }
     },
     "a4f27687dc86163fe79183839f885f95a1276441fe3c015d35b61d172ae3948d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547998+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Republic of Korea U23 vs. South Africa U23",
+        "description": "Coverage of Republic of Korea U23 against South Africa U23.",
+        "raw": "Republic of Korea 23 vs. South Africa U23"
+      }
     },
     "a5217a9412ba6f99ba6df8135372378b94f90a9e193b5aeaa48c27779452645c": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -5268,10 +5310,13 @@
       }
     },
     "ad27f86e214ca7dc09e8d71251477c599c76ceb50aacbb708cb9e54d09ecabf7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325102+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Champions Classic: Michigan State vs. Duke",
+        "description": "Coverage of Champions Classic: Michigan State against Duke.",
+        "raw": "2026 Champions Classic: Michigan State vs. Duke"
+      }
     },
     "ad5c1cc7bec8b037595279cbe6146adb8769e30e2d7bae65957a931e33e742fe": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:30 GMT",
@@ -5415,10 +5460,13 @@
       }
     },
     "b22a5fe4aa05011e4f52b1ad383bedf8a79d880877341bdbd2da1695d1fa0f94": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547988+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Panama U23 vs. Australia U23",
+        "description": "Coverage of Panama U23 against Australia U23.",
+        "raw": "Panama U23 vs. Australia U23"
+      }
     },
     "b2808e741bf6f9a0aba78ffb40f624fad698631e4917321cfecd993d0b157d36": {
       "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
@@ -5444,10 +5492,13 @@
       "title": "Wigan Athletic vs Bromley FC"
     },
     "b3225572b49a58b91ec00c2ebbd45191070a2891f10acb9d2e720f3cefcd639e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547999+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Sabah BC vs. Trabzonspor",
+        "description": "Coverage of Sabah BC against Trabzonspor.",
+        "raw": "Sabah BC vs. Trabzonspor"
+      }
     },
     "b36fc770f7f0a8d20ae0bd24baa6ec2e82f50e9740a746cac4121e104d3dfd81": {
       "created_at": "2026-11-03T18:24:18.345688+00:00",
@@ -5675,10 +5726,13 @@
       }
     },
     "b8cad8b610b690d740e7cb0d1028d93eb4519120eb10b49a549d936b05e6f7f3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325114+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Devils vs Jets",
+        "description": "Coverage of Devils against Jets.",
+        "raw": "Devils @ Jets"
+      }
     },
     "b8e46e240e86f3556ebbe31a43dde038a1d1565173b7978a93ff0b2dab50174a": {
       "created_at": "2026-11-04T15:31:01.992674+00:00",
@@ -6734,10 +6788,13 @@
       }
     },
     "d800d8635f39ce6c1531cac629accca22ac95bb8c7fed4e3b56baf5e996ec496": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:55.547991+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:30.811604+00:00"
+      "result": {
+        "clean_title": "Panthers vs. Blue Jackets",
+        "description": "Coverage of Panthers against Blue Jackets.",
+        "raw": "Panthers @ Blue Jackets"
+      }
     },
     "d84240efa4d4c5cc0d6a514e39a12116de815c9082fc2e90fcfc4fdf9b9620b6": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -7908,10 +7965,13 @@
       "title": "Crewe Alexandra FC vs Barnet FC"
     },
     "fd5b8aa24769fd3c3cbda3f693cc47bd4a98977ecf51915741f5a5949feaa0fe": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T16:30:33.325108+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T15:40:29.900382+00:00"
+      "result": {
+        "clean_title": "Charleston vs USC",
+        "description": "Coverage of Charleston against USC.",
+        "raw": "Charleston @ USC"
+      }
     },
     "fd612b3a7bf006fa5f2dfceeaeed57a66435e10ba3e612d0a71ee17d2f7a1d4c": {
       "context": "DAZN UK event scheduled 03/11/2026 10:00 GMT",
@@ -8009,7 +8069,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-10T18:31:58.550583+00:00"
+    "gemini": "2026-11-10T18:31:58.550583+00:00",
+    "groq": "2026-11-10T16:31:03.767849+00:00"
   },
   "version": 1
 }
