@@ -702,10 +702,13 @@
       "title": "Canucks @ Ducks"
     },
     "167ddd0ccf8731646704c07b882eb9f6909a251172bdcbeb6f026a45a0e71578": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T17:29:35.650976+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T16:31:03.767849+00:00"
+      "result": {
+        "clean_title": "Village Superstars vs. Conaree FC",
+        "description": "Coverage of Village Superstars against Conaree FC.",
+        "raw": "Village Superstars vs. Conaree FC"
+      }
     },
     "1726380ace56567c609288cc29b5d446ae5156d20c5612bf83af719d1caca6f9": {
       "created_at": "2026-11-08T14:21:58.625442+00:00",
@@ -3331,10 +3334,13 @@
       }
     },
     "6dfb48272f4e9b84947057dbf33329d4a63c5d0afcc565c4370b2d3e83932f66": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-10T17:29:35.650992+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-10T16:31:03.767849+00:00"
+      "result": {
+        "clean_title": "Virginia Tech vs. Iowa",
+        "description": "Coverage of Virginia Tech against Iowa.",
+        "raw": "Virginia Tech vs. Iowa"
+      }
     },
     "6e006b60d92450fc312d8964012e6f6a286e5c84fb0998ef07e590e537dfbb43": {
       "created_at": "2026-11-08T15:17:14.088515+00:00",
@@ -8069,8 +8075,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-10T18:31:58.550583+00:00",
-    "groq": "2026-11-10T16:31:03.767849+00:00"
+    "gemini": "2026-11-10T18:31:58.550583+00:00"
   },
   "version": 1
 }
