@@ -11,6 +11,7 @@ import re
 import time
 import unicodedata
 from collections import Counter
+from copy import deepcopy
 from datetime import datetime, time as datetime_time, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
@@ -24,6 +25,11 @@ from google.genai import types
 
 
 EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
+POLISH_EPG_CHANNELS_FILE = Path(__file__).with_name("polish_epg_channels.tsv")
+POLISH_EPG_URLS = (
+    "https://epg.polishteam.one/guide.xml.gz",
+    "https://epg.ovh/pl.gz",
+)
 OUTPUT_GZ_FILE = Path("cleaned_epg.xml.gz")
 FOOTBALL_MIRROR_IDS_FILE = Path("football_mirror_channel_ids.txt")
 EVENT_MIRROR_IDS_FILE = Path("event_mirror_channel_ids.txt")
@@ -1614,6 +1620,81 @@ def _download_epg_root() -> ET.Element:
     raise RuntimeError("No EPG download attempts configured")
 
 
+def _fill_polish_epg_gaps(root: ET.Element, now: datetime) -> None:
+    """Fill missing schedules under the editor's exact playlist channel IDs."""
+    if not POLISH_EPG_CHANNELS_FILE.is_file():
+        return
+    mappings = [
+        line.split("\t")
+        for line in POLISH_EPG_CHANNELS_FILE.read_text(encoding="utf-8").splitlines()
+        if line and not line.startswith("#")
+    ]
+    missing = {playlist_id for playlist_id, *_ in mappings}
+
+    def is_current_or_future(programme: ET.Element) -> bool:
+        timestamp = programme.get("stop") or programme.get("start", "")
+        if len(timestamp) == 14:
+            timestamp += " +0000"
+        try:
+            return datetime.strptime(timestamp, "%Y%m%d%H%M%S %z") > now
+        except ValueError:
+            return False
+
+    for programme in root.iter("programme"):
+        channel_id = programme.get("channel")
+        if channel_id in missing and is_current_or_future(programme):
+            missing.remove(channel_id)
+
+    existing_channels = {channel.get("id") for channel in root.iter("channel")}
+    added_channels = []
+    for source_column, url in enumerate(POLISH_EPG_URLS, start=1):
+        destinations_by_source: dict[str, list[str]] = {}
+        for row in mappings:
+            if row[0] in missing and row[source_column] != "-":
+                destinations_by_source.setdefault(row[source_column], []).append(row[0])
+        if not destinations_by_source:
+            continue
+        try:
+            with requests.get(url, timeout=(10, 40)) as response:
+                response.raise_for_status()
+                data = response.content
+            backup = ET.fromstring(gzip.decompress(data) if data.startswith(b"\x1f\x8b") else data)
+            if backup.tag != "tv":
+                raise ValueError("Expected an XMLTV document")
+        except (requests.exceptions.RequestException, OSError, EOFError, ET.ParseError, ValueError) as exc:
+            print(f"Polish EPG source {url} unavailable ({type(exc).__name__}).")
+            continue
+
+        channels = {channel.get("id"): channel for channel in backup.iter("channel")}
+        filled = set()
+        seen_starts = set()
+        for programme in backup.iter("programme"):
+            source_id = programme.get("channel")
+            destinations = destinations_by_source.get(source_id)
+            start = programme.get("start")
+            key = (source_id, start)
+            if not destinations or source_id not in channels or not start or key in seen_starts:
+                continue
+            if not programme.findtext("title") or not is_current_or_future(programme):
+                continue
+            seen_starts.add(key)
+            for channel_id in destinations:
+                if channel_id not in existing_channels:
+                    channel = deepcopy(channels[source_id])
+                    channel.set("id", channel_id)
+                    added_channels.append(channel)
+                    existing_channels.add(channel_id)
+                listing = deepcopy(programme)
+                listing.set("channel", channel_id)
+                root.append(listing)
+                filled.add(channel_id)
+        missing.difference_update(filled)
+        print(f"Polish EPG source {url} filled {len(filled)} channel(s).")
+
+    first_programme = next((i for i, item in enumerate(root) if item.tag == "programme"), len(root))
+    root[first_programme:first_programme] = added_channels
+
+
 def _normalize_paramount_branding(
     root: ET.Element, channel_ids: set[str]
 ) -> None:
@@ -2521,6 +2602,7 @@ def process_epg() -> None:
             if title_element.text:
                 title_element.text = _clean_programme_date_labels(title_element.text)
 
+    _fill_polish_epg_gaps(root, datetime.now(UTC))
     tree = ET.ElementTree(root)
     with gzip.open(
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL
