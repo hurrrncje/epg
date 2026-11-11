@@ -103,6 +103,15 @@
       "result": "Virginia Cavaliers host No. 14 Wake Forest Demon Deacons in ACC football.",
       "title": "Virginia vs. #14 Wake Forest"
     },
+    "03717fb0caaca653d282f18b2d478f63a74aa82adc31136e37c103cd1763d4f5": {
+      "created_at": "2026-11-11T15:28:35.367618+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UCAM Murcia vs BMA365 Bamberg Baskets",
+        "description": "Coverage of UCAM Murcia against BMA365 Bamberg Baskets.",
+        "raw": "UCAM Murcia vs. BMA365 Bamberg Baskets"
+      }
+    },
     "037c5e965139a2555645451eba87edb0d393ae72b12da1507b6b1706abe6b271": {
       "created_at": "2026-11-04T00:18:05.294008+00:00",
       "kind": "live-title",
@@ -277,7 +286,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "0a39256e61793ba9c40eba853e7cbc0b1395f60bd9b9365dd98e8841c824aff6": {
       "created_at": "2026-11-09T15:34:57.820093+00:00",
@@ -389,6 +398,15 @@
         "clean_title": "Panthers vs Jets",
         "description": "Florida Panthers defeated the Winnipeg Jets 5‑1 on Oct 27 2026, with Matthew Tkachuk recording four assists and Brady Tkachuk scoring【12†L10-L20】.",
         "raw": "Panthers @ Jets"
+      }
+    },
+    "0d1fb841ea07e86a3eecda9b7053d5f284c809460e1ac32e7022add0123a8b83": {
+      "created_at": "2026-11-11T15:28:35.367597+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Rytas Vilnius vs Nanterre 92",
+        "description": "Coverage of Rytas Vilnius against Nanterre 92.",
+        "raw": "Rytas Vilnius vs. Nanterre 92"
       }
     },
     "0d9061dc38829cca8fef26aa970967045dd26f0b1b074d7130796454261511f8": {
@@ -841,6 +859,15 @@
         "clean_title": "Rukinzo vs. Bumamuru",
         "description": "Coverage of Rukinzo against Bumamuru.",
         "raw": "Rukinzo vs. Bumamuru"
+      }
+    },
+    "1c110cb8ea0b70bc4193f8c3029a30fc842b78afc915e389cec0b4f426e349f4": {
+      "created_at": "2026-11-11T15:28:35.367615+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "SK Slavia Praha ERA NBK vs Igokea m:tel",
+        "description": "Coverage of SK Slavia Praha ERA NBK against Igokea m:tel.",
+        "raw": "SK Slavia Praha ERA NBK vs. Igokea m:tel"
       }
     },
     "1c122e99f10cf4008b37bcf9a5492c65390f908fbbb848552b4bf9dab803edaa": {
@@ -2146,7 +2173,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "4070c4f671e2bc7f71136d586b38227932ada6d86b49b626e72e63f765ee2ec9": {
       "created_at": "2026-11-06T15:25:20.143353+00:00",
@@ -3156,7 +3183,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "6042d4bc964626027912d939d76cfa0aeb03962ad53b76352debd82cd159ad7d": {
       "created_at": "2026-11-11T06:38:48.807934+00:00",
@@ -3943,7 +3970,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "7c0ee94712d3bb83bcbcee3a32588e79ead3a1177a88e7455413ba91eafef014": {
       "created_at": "2026-11-09T22:26:26.057771+00:00",
@@ -4558,7 +4585,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "9034d4cde2fb74dbc55769150c91e3fdc6d3ee396d22d42044c8bded5faf5af3": {
       "created_at": "2026-11-07T07:42:06.081865+00:00",
@@ -5683,7 +5710,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "b0f064a0e97c54fb17717c155f9ea875f5ed2a4bae77c178020a8ac76158e8b5": {
       "created_at": "2026-11-06T15:25:20.143355+00:00",
@@ -7128,7 +7155,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "d976699edce009e76f1eb177fb11f79dd297fd873c7fd20ad2a8d8647c4aac95": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -7164,7 +7191,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "da5d8b8a8c53f2d9f25f0161b92c2a17d52594a43a6d158fd836f832c2d0aa21": {
       "created_at": "2026-11-07T14:24:34.772808+00:00",
@@ -7191,6 +7218,15 @@
         "clean_title": "IFL 5: Sumit Bhyan vs Paalee Sathishwer",
         "description": "Coverage of IFL 5: Sumit Bhyan against Paalee Sathishwer.",
         "raw": "IFL 5 Sumit v Paalee"
+      }
+    },
+    "db080963972f2d822d2a22b9370685fa4a4b5b38e38622db5da709e46caf9421": {
+      "created_at": "2026-11-11T15:28:35.367619+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Zamora B vs Deportivo Lara",
+        "description": "Coverage of Zamora B against Deportivo Lara.",
+        "raw": "Zamora B vs. Deportivo Lara"
       }
     },
     "dbb96d3137aba880d275e95801288ffcbe6a905fa05b98d40bdcb0c5259cf51c": {
@@ -7336,11 +7372,20 @@
         "raw": "Croatia vs. Germany"
       }
     },
+    "dfdc4e072c8892f2792a1f6c8fd7d4e8a771418c916b1f72ff3ac56e26ad10d3": {
+      "created_at": "2026-11-11T15:28:35.367617+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sacramento State vs Central Michigan",
+        "description": "Coverage of Sacramento State against Central Michigan.",
+        "raw": "Sacramento State @ Central Michigan"
+      }
+    },
     "e0067012e836dddca13400646dcdc25fe863c36f0a69e66142f1a10b10f5acb6": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "e038f069a1678cb539c284cee4e71484b6477f0c37398cf29749fd89319db2f2": {
       "context": "Disney+ Events event scheduled 03/11/2026 08:00 GMT",
@@ -7777,7 +7822,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-11T13:53:25.556092+00:00"
+      "retry_after": "2026-11-11T15:43:23.658652+00:00"
     },
     "ec9c59c63414e55b898a8f38d831c2fdc5e25dc6f949b6b1aece2949f30662a7": {
       "created_at": "2026-11-05T05:40:32.979995+00:00",
@@ -8405,8 +8450,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-11T18:37:17.924709+00:00",
-    "groq": "2026-11-11T13:53:25.556092+00:00"
+    "gemini": "2026-11-11T18:37:17.924709+00:00"
   },
   "version": 1
 }
