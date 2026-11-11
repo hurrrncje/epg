@@ -1749,10 +1749,13 @@
       }
     },
     "359d554feb7c6ab460ce19208752d355054d21769a880f11225e03a73f1de234": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807927+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Panama U23 vs. Australia U23",
+        "description": "Coverage of Panama U23 against Australia U23.",
+        "raw": "Panama U23 vs. Australia U23"
+      }
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
       "created_at": "2026-10-26T19:21:40.738770+00:00",
@@ -2423,10 +2426,13 @@
       }
     },
     "4b026b3012da2b149776c7de9febb350b6ce1998e5b25fef16ca0b75e1a4ddf4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807905+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Nicaragua U23 vs. Czechia U23",
+        "description": "Coverage of Nicaragua U23 against Czechia U23.",
+        "raw": "Nicaragua U23 vs. Czechia U23"
+      }
     },
     "4b1492c70a82a9c652ccaa16f5d6fbb4202836143b880a9df1d91e309bffdc78": {
       "created_at": "2026-11-11T05:37:07.446828+00:00",
@@ -2897,10 +2903,13 @@
       "title": "Aberdeen vs Hibernian"
     },
     "5bc2e06e603436986daa587ac4727afc9c1323564e62782ea3eb3702907fd751": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807929+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Panthers vs. Blue Jackets",
+        "description": "Coverage of Panthers against Blue Jackets.",
+        "raw": "Panthers @ Blue Jackets"
+      }
     },
     "5be6a04be3caa12e7ba4434b1716469fedbca7273f6b680344fdbe38b18fa2bc": {
       "created_at": "2026-11-09T09:41:25.797795+00:00",
@@ -3078,10 +3087,13 @@
       }
     },
     "6042d4bc964626027912d939d76cfa0aeb03962ad53b76352debd82cd159ad7d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807934+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Red Wings vs. Blues",
+        "description": "Coverage of Red Wings against Blues.",
+        "raw": "Red Wings @ Blues"
+      }
     },
     "608a44b9e1cacae0cfd25fdb3cc7b4fbf0ede9f3dc04c595d2d60e8cc8f28b7e": {
       "context": "MAX UK event scheduled 03/11/2026 17:45 GMT",
@@ -3705,10 +3717,13 @@
       }
     },
     "782e69bfcd909dfde1d57d71b55ff8142c6a192aaebf5adf09fb663cd626c8d7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807936+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Republic of Korea U23 vs. South Africa U23",
+        "description": "Coverage of Republic of Korea U23 against South Africa U23.",
+        "raw": "Republic of Korea 23 vs. South Africa U23"
+      }
     },
     "783359ff11c23fec8d27ec0da3e58223e53f8f27bbe09d8ae859d5865b64105b": {
       "created_at": "2026-11-08T15:17:34.680491+00:00",
@@ -4023,10 +4038,13 @@
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
     "822117156979fad9d03660f82035094e1ec62084f4046ea6adc631713a722600": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807932+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Predators vs. Kings",
+        "description": "Coverage of Predators against Kings.",
+        "raw": "Predators @ Kings"
+      }
     },
     "8238e018b4dc90451a2a644f609c9bf28eee67c1224fc41f5828876849ba999e": {
       "created_at": "2026-11-05T13:54:36.011721+00:00",
@@ -4575,10 +4593,13 @@
       }
     },
     "947b74113506670c0db49c3263254d13a4d869ff364c2114a755d6ca4e60be9d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807943+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Virginia Tech vs. Iowa",
+        "description": "Coverage of Virginia Tech against Iowa.",
+        "raw": "Virginia Tech vs. Iowa"
+      }
     },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
@@ -4723,10 +4744,13 @@
       }
     },
     "993848d514814db7a432c9dc0f8c025882dbd2fdd0cda7ce1703f8861d70629d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807938+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "UFC Fight Night: Acosta vs. Walker",
+        "description": "Coverage of UFC Fight Night: Acosta against Walker.",
+        "raw": "UFC Fight Night Acosta v Walker - Special Feed"
+      }
     },
     "99923a286f78e3aa7dd4c9cd77f728ab27ec54f48c5dc124416f12d3f6b74a4c": {
       "created_at": "2026-11-08T14:21:22.621314+00:00",
@@ -4868,10 +4892,13 @@
       }
     },
     "9df08e92d75216fa263cbf9ec7d8ff583306b668eb35be2464a6e65114f2fed5": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807941+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Village Superstars vs. Conaree FC",
+        "description": "Coverage of Village Superstars against Conaree FC.",
+        "raw": "Village Superstars vs. Conaree FC"
+      }
     },
     "9e6daa7c5ce8b398f9124bbfa359c55faf4a69fcb95038442766acf09ff6b164": {
       "created_at": "2026-10-26T19:21:40.738745+00:00",
@@ -6071,10 +6098,13 @@
       }
     },
     "bec0e8cbc0bb4e72d7a07b9711e1dafd5de60154b2d38f55aa4ec0bcdd4c9d9c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-11T06:38:48.807923+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-11T05:37:18.580988+00:00"
+      "result": {
+        "clean_title": "Ohio vs. Miami (OH)",
+        "description": "Coverage of Ohio against Miami (OH).",
+        "raw": "Ohio @ Miami (OH)"
+      }
     },
     "bed401d145de24ec5e5dcfb575eef1e9e0fc3d63639665c9c765ff2506cac67a": {
       "created_at": "2026-10-26T19:21:40.738722+00:00",
@@ -8225,8 +8255,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-11T11:36:51.400778+00:00",
-    "groq": "2026-11-11T05:37:18.580988+00:00"
+    "gemini": "2026-11-11T11:36:51.400778+00:00"
   },
   "version": 1
 }
