@@ -1263,10 +1263,13 @@
       }
     },
     "27825751e9b326ec9b79a3f92fd59ad2c5b6d289cdf9a6e1d41be6ee1596ae52": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034837+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Marquette vs Michigan",
+        "description": "Coverage of Marquette against Michigan.",
+        "raw": "Marquette @ Michigan"
+      }
     },
     "27e722ae63398f218e60a116ea2fef31276712d40608786d28ea2e5c07e05669": {
       "created_at": "2026-11-03T17:53:06.054622+00:00",
@@ -2318,10 +2321,13 @@
       "title": "Charlotte Independence vs. FC Naples (Quarterfinal)"
     },
     "446a1f831d51d95660fc3f34abe16bbd035ae1f370eac4470153c6426dfd9c8c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034840+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Penguins vs Sharks",
+        "description": "Coverage of Penguins against Sharks.",
+        "raw": "Penguins @ Sharks"
+      }
     },
     "449ab7a579f3e1bbd756553ca52247120c10c6668d243dc8c99e10e6e1a7b5ff": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -2381,10 +2387,13 @@
       }
     },
     "45f493e9b24f25b30c77b9bcef9aa5d4ec797cd5cf9e1f47e86133445cb45f43": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034844+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Rangers vs Flames",
+        "description": "Coverage of Rangers against Flames.",
+        "raw": "Rangers @ Flames"
+      }
     },
     "45f5a0dd0621a4762941a6b1a1d064288ebfd1b3c12f45f58f748ce5587ed4ad": {
       "created_at": "2026-11-07T22:16:07.678309+00:00",
@@ -2635,10 +2644,13 @@
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
     "4f12fd1f4d7fbfd013a4ddc531da7fafc8440a2fd8b8d079ec4dc9452efb349b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034832+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Flyers vs Oilers",
+        "description": "Coverage of Flyers against Oilers.",
+        "raw": "Flyers @ Oilers"
+      }
     },
     "4f32c7f2f8bce07defb10a442a61136efa88a89f5623d12bb95eca4aa55c91f9": {
       "created_at": "2026-11-03T18:24:18.345692+00:00",
@@ -3447,10 +3459,13 @@
       }
     },
     "6a968f77b63aa1b78fd724a2bca859db5c7674b3cd3d413a619dba2949dd7044": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034834+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Lindenwood vs Nebraska",
+        "description": "Coverage of Lindenwood against Nebraska.",
+        "raw": "Lindenwood @ Nebraska"
+      }
     },
     "6bd5f0ba5ddd76b32dffc9c146eaa0f26075c13807c9e34be624d3bcb33ceb3e": {
       "created_at": "2026-11-07T06:27:19.927201+00:00",
@@ -4033,10 +4048,13 @@
       }
     },
     "7d6289f58a18e8467c2ff605251c417b49abbb6e0d441ce16d259a1ce84b95a7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034836+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Mammoth vs Golden Knights",
+        "description": "Coverage of Mammoth against Golden Knights.",
+        "raw": "Mammoth @ Golden Knights"
+      }
     },
     "7d8257b693af2e7ef5ae70272bb34af55add7c656168f381703724a19a00fb67": {
       "created_at": "2026-11-07T21:15:51.916438+00:00",
@@ -4241,10 +4259,13 @@
       "title": "Arkansas-Pine Bluff vs. Texas A&M"
     },
     "837e710a946466076ac25f14688dcc08d2afdd8e4f7c6e54bd13d455dfd15b89": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034839+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "New Zealand vs India",
+        "description": "Coverage of New Zealand against India.",
+        "raw": "New Zealand vs. India"
+      }
     },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
@@ -4971,10 +4992,13 @@
       "title": "Serie A: Venezia vs. Inter"
     },
     "9a56ef7fbd6227ffd355de1494aa04a7fa773c8bd01889a1c93af9cb4125efcf": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034842+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Predators vs Ducks",
+        "description": "Coverage of Predators against Ducks.",
+        "raw": "Predators @ Ducks"
+      }
     },
     "9a775bbf219fb801ff94956fcf439962766c357f901b7fbd902277860c47848c": {
       "context": "DAZN UK event scheduled 03/11/2026 01:15 GMT",
@@ -5929,10 +5953,13 @@
       "title": "Chicago Bears vs. Seattle Seahawks"
     },
     "b4e64f43a7e3b09a799f07318505785fe2faabb6ff0067ae1d7f2b55fa35c71a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034843+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Provo United SC vs Beaches FC",
+        "description": "Coverage of Provo United SC against Beaches FC.",
+        "raw": "Provo United SC vs. Beaches FC"
+      }
     },
     "b57b530df382bca47fd384b21704b873f6c5c2e85b9019520724eed5925e6c2e": {
       "created_at": "2026-11-08T05:30:03.515482+00:00",
@@ -7335,10 +7362,13 @@
       }
     },
     "dc494eda702c58e0160f7ebd2fa91b8edb9fa4aac6008f6e4c1a24d73369b7f5": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-12T09:36:23.034814+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T08:12:17.571545+00:00"
+      "result": {
+        "clean_title": "Arkansas-Pine Bluff vs UCLA",
+        "description": "Coverage of Arkansas-Pine Bluff against UCLA.",
+        "raw": "Arkansas-Pine Bluff @ UCLA"
+      }
     },
     "dca93ba843bcb034c224506ca1402dbd4ba95e998e166dd53666e350d6d900a7": {
       "context": "MAX UK event scheduled 03/11/2026 15:25 GMT",
