@@ -1266,7 +1266,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "27e722ae63398f218e60a116ea2fef31276712d40608786d28ea2e5c07e05669": {
       "created_at": "2026-11-03T17:53:06.054622+00:00",
@@ -2321,7 +2321,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "449ab7a579f3e1bbd756553ca52247120c10c6668d243dc8c99e10e6e1a7b5ff": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -2384,7 +2384,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "45f5a0dd0621a4762941a6b1a1d064288ebfd1b3c12f45f58f748ce5587ed4ad": {
       "created_at": "2026-11-07T22:16:07.678309+00:00",
@@ -2638,7 +2638,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "4f32c7f2f8bce07defb10a442a61136efa88a89f5623d12bb95eca4aa55c91f9": {
       "created_at": "2026-11-03T18:24:18.345692+00:00",
@@ -3450,7 +3450,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "6bd5f0ba5ddd76b32dffc9c146eaa0f26075c13807c9e34be624d3bcb33ceb3e": {
       "created_at": "2026-11-07T06:27:19.927201+00:00",
@@ -4036,7 +4036,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "7d8257b693af2e7ef5ae70272bb34af55add7c656168f381703724a19a00fb67": {
       "created_at": "2026-11-07T21:15:51.916438+00:00",
@@ -4244,7 +4244,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "83a9eee92cf0a0382d454fc6fe854fa8bc417ed15c3086986b3d8fe77fe1a397": {
       "context": "DAZN UK event scheduled 01/11/2026 18:00 GMT",
@@ -4974,7 +4974,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "9a775bbf219fb801ff94956fcf439962766c357f901b7fbd902277860c47848c": {
       "context": "DAZN UK event scheduled 03/11/2026 01:15 GMT",
@@ -5932,7 +5932,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "b57b530df382bca47fd384b21704b873f6c5c2e85b9019520724eed5925e6c2e": {
       "created_at": "2026-11-08T05:30:03.515482+00:00",
@@ -7338,7 +7338,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T05:53:46.897675+00:00"
+      "retry_after": "2026-11-12T06:55:00.701766+00:00"
     },
     "dca93ba843bcb034c224506ca1402dbd4ba95e998e166dd53666e350d6d900a7": {
       "context": "MAX UK event scheduled 03/11/2026 15:25 GMT",
