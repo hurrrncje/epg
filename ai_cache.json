@@ -671,6 +671,15 @@
       "result": "Onze Créateurs play CS Bamako in the Malian Première Division.",
       "title": "Onze Créateurs vs. CS Bamako"
     },
+    "142be6eca3c9e7e3a49d281db641adc10fb04171bb4535ff7eb13c2b464c9aba": {
+      "created_at": "2026-11-13T15:26:51.536010+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Australia U23 vs Republic of Korea U23",
+        "description": "Coverage of Australia U23 against Republic of Korea U23.",
+        "raw": "Australia U23 vs. Republic of Korea U23"
+      }
+    },
     "1446c3102681ee3ac902817cd4f5f2dff5767fa1773975a63493c6e66f36239e": {
       "created_at": "2026-11-08T14:21:22.621307+00:00",
       "kind": "live-title",
@@ -757,6 +766,12 @@
         "raw": "Medicine Hat, AB - Day 3, Draw 12"
       }
     },
+    "1610c02278b4fd98ac91ae5b2529008cb026f628596f577189c45ac9f8d07cf6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+    },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
       "created_at": "2026-10-28T18:24:17.569507+00:00",
@@ -790,6 +805,12 @@
         "description": "Coverage of LAR against WAS, NYG vs PHI, NYJ vs KC, RedZone.",
         "raw": "LAR @ WAS, NYG @ PHI, NYJ @ KC, RedZone"
       }
+    },
+    "1756a2698748228b88e721f7ed78ddb4c655470fd0df252293bb538b41eb9974": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -839,6 +860,15 @@
       "result": "Premier League match Tottenham Hotspur vs Crystal Palace scheduled for Oct 31 2026 at 17:30 GMT.",
       "title": "Tottenham Hotspur vs Crystal Palace"
     },
+    "1a3e397fd3d08e5e04d90d0e03906bf664bad3e7022754adcd869584a2f4d60a": {
+      "created_at": "2026-11-13T15:26:51.536016+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Belize U19 vs Honduras U19",
+        "description": "Coverage of Belize U19 against Honduras U19.",
+        "raw": "Belize U19 vs. Honduras U19"
+      }
+    },
     "1a55fdaa95b4b341037dd7708cdffdb19e2fd1389b555d7277fd6a7089f8c53c": {
       "created_at": "2026-11-08T14:22:17.311537+00:00",
       "kind": "live-title",
@@ -855,6 +885,15 @@
         "clean_title": "NHRL 2026 World Championship Pro Tour Round 3 Primetime",
         "description": "Coverage of NHRL 2026 World Championship Pro Tour Round 3 Primetime.",
         "raw": "NHRL 2026 World Championship Pro Tour - Round 3 - Primetime"
+      }
+    },
+    "1aca4d8d2f456555fc4210da47adcf298f7ba3d7455c51428097c10a878120ec": {
+      "created_at": "2026-11-13T15:26:57.908649+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Japan U23 vs Chinese Taipei U23",
+        "description": "Coverage of Japan U23 against Chinese Taipei U23.",
+        "raw": "Japan U23 vs. Chinese Taipei U23"
       }
     },
     "1b507ece069ca901ac5a229d7d05d312b85bcc90439e55e8fc3d9a779b2d8814": {
@@ -944,6 +983,15 @@
       "result": "Women's college basketball: Maryland Terrapins vs. South Carolina Gamecocks.",
       "title": "#20 Maryland vs. #1 South Carolina"
     },
+    "1e71b30f64d0321ab7215e89bc310dc1c14ba599e34128c3ee05a9c7550f1702": {
+      "created_at": "2026-11-13T15:27:17.807877+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Riley vs Coupe Weigh-In",
+        "description": "Coverage of Riley against Coupe Weigh-In.",
+        "raw": "Riley vs. Coupe: Weigh-In"
+      }
+    },
     "1ea5587b39f53f242c85248ab932f2471008f88a29fa5ef5a3124c4ebace1f8c": {
       "context": "ESPN+ event scheduled 03/11/2026 17:15 GMT",
       "created_at": "2026-11-03T17:30:31.771875+00:00",
@@ -978,12 +1026,39 @@
         "raw": "KFF Malisheva vs. KFV Prishtina"
       }
     },
+    "1f0edd1dc9633214f2a1110d99cb4913b1c16dd89219e378b8096605783225f7": {
+      "created_at": "2026-11-13T15:26:54.247632+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Georgia vs North Carolina",
+        "description": "Coverage of Georgia against North Carolina.",
+        "raw": "Georgia @ North Carolina"
+      }
+    },
+    "1f2e30633817a354be5bc75819b7ece2f23b4a6d894283f58a406ee925b302b7": {
+      "created_at": "2026-11-13T15:27:17.807879+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Round 3",
+        "description": "Coverage of Round 3.",
+        "raw": "Round 3"
+      }
+    },
     "1f3c7489b4e8c18f453e4056678ca53faebde8edb4c09c02ed913df07e0a4109": {
       "context": "MAX UK event scheduled 03/11/2026 17:40 GMT",
       "created_at": "2026-11-03T17:08:47.066366+00:00",
       "kind": "event-description",
       "result": "UEFA Champions League multiview coverage of the league‑stage matches scheduled for 3 Nov 2026.",
       "title": "UEFA Champions League | Tuesday: Multiview"
+    },
+    "1f772297c27c9aadb432decc3cf99131cc7484d6b241fc75f40f9abed76e0bdd": {
+      "created_at": "2026-11-13T15:26:54.247631+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Georgetown vs Clemson",
+        "description": "Coverage of Georgetown against Clemson.",
+        "raw": "Georgetown @ Clemson"
+      }
     },
     "1fc62bfb261279c82b543745e8586a572238840a7cb66ba4c13a99319c355514": {
       "created_at": "2026-10-28T00:12:37.428457+00:00",
@@ -1077,6 +1152,12 @@
         "raw": "Maple Leafs @ Flames"
       }
     },
+    "22ec38be7c5b6fa03c761f91ba344e140e6a083f0043227b68f4c467ccfab9a7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+    },
     "22ef576d40fc7fef3f54a973fd2ca7f16fda65f6da5c02489a2aea08575c1c46": {
       "created_at": "2026-11-06T03:30:23.708949+00:00",
       "kind": "live-title",
@@ -1092,6 +1173,15 @@
       "kind": "event-description",
       "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
       "title": "Leicester City vs Wigan Athletic"
+    },
+    "23b48df915a75361b545f4f59d98f3c63ac2d14368527fdefeae0cb213112644": {
+      "created_at": "2026-11-13T15:26:57.908646+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Illinois vs UCLA",
+        "description": "Coverage of Illinois against UCLA.",
+        "raw": "Illinois @ UCLA"
+      }
     },
     "23e50178c555e64cec4bf77d3fab90591b6d75c067a9874748e6bd10d500d419": {
       "created_at": "2026-11-03T17:53:06.054626+00:00",
@@ -1359,6 +1449,12 @@
       "kind": "event-description",
       "result": "Princeton men's ice hockey faces Columbia men's ice hockey in an ECAC regular‑season match.",
       "title": "Princeton vs. Columbia"
+    },
+    "2974e0ab8a41409e98e295da093b3e86a5177ee3d88f5c2c412495675dac774d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:27:25.933206+00:00"
     },
     "29950b1bfc0a56d465ac7bb46d768a3c89e697e4358b1aaa39c20d73c6202fdb": {
       "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
@@ -1633,6 +1729,12 @@
         "raw": "Oilers @ Devils"
       }
     },
+    "2f00a5a8e058502fbe9eeea5251acb6cc6d97db3dff676f9aa54c2b7f399479d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:27:25.933206+00:00"
+    },
     "2f4d50c5142955479d412c1d1f8e66d89f6897e330587826ce164762b10dae86": {
       "created_at": "2026-11-08T14:22:17.311549+00:00",
       "kind": "live-title",
@@ -1865,6 +1967,12 @@
         "raw": "UConn @ Michigan"
       }
     },
+    "363d80385a8570f925ccde5471626a43717cd1aced716b63970f07de2ab01acc": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+    },
     "36c2fe58cb81112e07baac970fd8d542916b68e9ffb925299c2465f247938834": {
       "created_at": "2026-11-08T05:29:32.514158+00:00",
       "kind": "live-title",
@@ -1873,6 +1981,12 @@
         "description": "Coverage of Canucks against Oilers.",
         "raw": "Canucks @ Oilers"
       }
+    },
+    "36c8dd97a8e15e8f8125ff04522e754608b170f5a65c490da031f69957519234": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
     },
     "36d43be6d45affb0d4e7bf28ab80fd05ea025ee52a87310580ef8b639a0c775e": {
       "created_at": "2026-11-07T13:33:23.422104+00:00",
@@ -1906,6 +2020,15 @@
         "clean_title": "Montmelo Race 1",
         "description": "Coverage of Montmelo Race 1.",
         "raw": "Montmelo: Race 1"
+      }
+    },
+    "37203bd5a2da3770cd8943922e74a1a09958ba126d9092f540e7e99f2b367eb5": {
+      "created_at": "2026-11-13T15:26:57.908661+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "London Lions vs Surrey 89ers",
+        "description": "Coverage of London Lions against Surrey 89ers.",
+        "raw": "London Lions vs. Surrey 89ers"
       }
     },
     "37395df1f6ae7b4b23b9ebfac30dec92d4331ed5d39137a4e9dfdc6c10d060a9": {
@@ -2058,6 +2181,15 @@
         "clean_title": "Japan U23 vs Great Britain U23",
         "description": "Coverage of Japan U23 against Great Britain U23.",
         "raw": "Japan U23 vs. Great Britain U23"
+      }
+    },
+    "3ce8aa443db625e4cc87566ad12184fe4eae4d6a58d17d490f29e002d30bd45f": {
+      "created_at": "2026-11-13T15:26:57.908657+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Le Castellet Qualifying",
+        "description": "Coverage of Le Castellet Qualifying.",
+        "raw": "Le Castellet: Qualifying"
       }
     },
     "3d22be5f1397b41de4690030c2fcdda9aa47a8acb27aa18229e3daf497daad13": {
@@ -2786,6 +2918,12 @@
       "result": "Premier League match: Newcastle United vs Everton at St. James' Park, 2 November 2026, 20:00 GMT.",
       "title": "Newcastle Utd vs Everton"
     },
+    "51a1fa375934667236c0cafc05ad9bfd45f9749a07787a5c9a94ffd1f588154b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+    },
     "521407fa1844618c07ac05afa782e6364b278a548b7592ee4ffd602c487f7c3e": {
       "created_at": "2026-11-07T16:17:32.146912+00:00",
       "kind": "live-title",
@@ -2868,6 +3006,15 @@
         "clean_title": "Nicaragua U23 vs Czechia U23",
         "description": "Coverage of Nicaragua U23 against Czechia U23.",
         "raw": "Nicaragua U23 vs. Czechia U23"
+      }
+    },
+    "54f473851639fd2da92dc17e4a355d10bbfaa942980df1a3b71e2e5342eeb35e": {
+      "created_at": "2026-11-13T15:26:57.908651+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "KFF Malisheva vs KFF Mitrovica",
+        "description": "Coverage of KFF Malisheva against KFF Mitrovica.",
+        "raw": "KFF Malisheva vs. KFF Mitrovica"
       }
     },
     "5561195955f02ebd3e59e2d9964f432653509e75bd096334e05cc3f22e3740d5": {
@@ -3009,6 +3156,15 @@
         "clean_title": "OKTAGON 97: Severino vs Holzer",
         "description": "Coverage of OKTAGON 97: Severino against Holzer.",
         "raw": "OKTAGON 97: Severino vs. Holzer"
+      }
+    },
+    "59121317f2e55b0b2fa1f3e55fb1175ebe5faff6835a9363203c14982cec229b": {
+      "created_at": "2026-11-13T15:26:57.908663+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "MLTT Week 5 Florida Crocs vs Portland Paddlers",
+        "description": "Coverage of MLTT Week 5 Florida Crocs against Portland Paddlers.",
+        "raw": "MLTT - Week 5: Florida Crocs vs. Portland Paddlers"
       }
     },
     "59524160b0deac857f0336256ffa4424c97c6066e2d6f37799651d6b1abdddb7": {
@@ -3423,6 +3579,15 @@
       "result": "USL Championship Western Conference quarter‑final: Sacramento Republic FC play FC Tulsa.",
       "title": "Sacramento Republic FC vs. FC Tulsa (Western Conference Quarterfinal)"
     },
+    "638b4399ddc65423feeadcdf52ef1be6f1ffc5a1735d41a266981a81c5013f05": {
+      "created_at": "2026-11-13T15:26:51.536026+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "DePaul vs Northwestern",
+        "description": "Coverage of DePaul against Northwestern.",
+        "raw": "DePaul @ Northwestern"
+      }
+    },
     "6410c0bc33e92c806e5d6fbf584eb89119b6f3e81096cf26429457a97f772cce": {
       "created_at": "2026-11-06T03:30:23.708931+00:00",
       "kind": "live-title",
@@ -3548,6 +3713,15 @@
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
     },
+    "69acec9e68c77dfe180ff4d77f91f8c97bc9a3053241207fea2f00dd8727e28f": {
+      "created_at": "2026-11-13T15:27:17.807874+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Prince Mohammed Bin Saud Alkabeer Cup",
+        "description": "Coverage of Prince Mohammed Bin Saud Alkabeer Cup.",
+        "raw": "Prince Mohammed Bin Saud Alkabeer Cup"
+      }
+    },
     "69cf0c22af94f0dbece0d9e86b43d428317e5444e3b979aa6697d9dba400cc24": {
       "created_at": "2026-11-13T12:37:26.138307+00:00",
       "kind": "live-title",
@@ -3564,6 +3738,15 @@
         "clean_title": "Lindenwood vs Nebraska",
         "description": "Coverage of Lindenwood against Nebraska.",
         "raw": "Lindenwood @ Nebraska"
+      }
+    },
+    "6ae19d52f46ec457735fa1763b3794dc10858d8a11adc1b8e12657f41935826d": {
+      "created_at": "2026-11-13T15:26:54.247634+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Germany U21 vs Belgium U21",
+        "description": "Coverage of Germany U21 against Belgium U21.",
+        "raw": "Germany U21 vs. Belgium U21"
       }
     },
     "6bd5f0ba5ddd76b32dffc9c146eaa0f26075c13807c9e34be624d3bcb33ceb3e": {
@@ -4136,6 +4319,15 @@
         "raw": "Kent State @ Bowling Green"
       }
     },
+    "7aeb74781667cd7b5371bbf123fbf00f658ef417b4bdb92384f08ef490feb091": {
+      "created_at": "2026-11-13T15:26:51.536018+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "CF Waterside Karori vs Auckland United",
+        "description": "Coverage of CF Waterside Karori against Auckland United.",
+        "raw": "CF Waterside Karori vs. Auckland United"
+      }
+    },
     "7b6106ed24ba7e370461d9186ea54ebab7e67ece185f7f6d0c77b7725796fe83": {
       "created_at": "2026-10-26T12:30:58.030825+00:00",
       "kind": "event-description",
@@ -4180,6 +4372,15 @@
         "clean_title": "Cercle de Joachim vs Vacoas-Phoenix",
         "description": "Coverage of Cercle de Joachim against Vacoas-Phoenix.",
         "raw": "Cercle de Joachim vs. Vacoas-Phoenix"
+      }
+    },
+    "7cce2a2e781ef794d85cf78efd4812b380579b8f8ffc97a41a4a07d939b7ea8a": {
+      "created_at": "2026-11-13T15:27:17.807882+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Shaita FC vs NPA Anchors",
+        "description": "Coverage of Shaita FC against NPA Anchors.",
+        "raw": "Shaita FC vs. NPA Anchors"
       }
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
@@ -4667,6 +4868,15 @@
         "raw": "Penguins @ Ducks"
       }
     },
+    "8a966af5e5c7cd65bf9c0931ddb92334eb99a7d2cbc09f14a505de9fd5ad5927": {
+      "created_at": "2026-11-13T15:26:54.247624+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Florida State vs Pittsburgh",
+        "description": "Coverage of Florida State against Pittsburgh.",
+        "raw": "Florida State @ Pittsburgh"
+      }
+    },
     "8ada65a1a917c1f4f6a76e564c19f7f96b219af9e626830db6f5f4887909c950": {
       "created_at": "2026-11-08T17:16:11.697739+00:00",
       "kind": "live-title",
@@ -5006,6 +5216,15 @@
         "raw": "Golden Knights @ Red Wings"
       }
     },
+    "9439223143542f945218c4e56b84df63dfdcb593b3a162905f9337e835b4d5fd": {
+      "created_at": "2026-11-13T15:26:54.247605+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Deportivo Lara vs Zamora B",
+        "description": "Coverage of Deportivo Lara against Zamora B.",
+        "raw": "Deportivo Lara vs. Zamora B"
+      }
+    },
     "947b74113506670c0db49c3263254d13a4d869ff364c2114a755d6ca4e60be9d": {
       "created_at": "2026-11-11T06:38:48.807943+00:00",
       "kind": "live-title",
@@ -5021,6 +5240,15 @@
       "kind": "event-description",
       "result": "Los Angeles Chargers visit Los Angeles Rams for an NFL regular‑season matchup at SoFi Stadium.",
       "title": "Chargers @ Rams"
+    },
+    "94dcdb32454275f224c42ad7265faabc1bbfb81da69ab4ad02e22bc6af39c069": {
+      "created_at": "2026-11-13T15:26:51.536022+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Costa Rica U19 vs Guatemala U19",
+        "description": "Coverage of Costa Rica U19 against Guatemala U19.",
+        "raw": "Costa Rica U19 vs. Guatemala U19"
+      }
     },
     "950912c08a636581baf45b4f0c424c340fbeddde1b65d1bfedd30275c83e307c": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:30 GMT",
@@ -5062,6 +5290,15 @@
       "kind": "event-description",
       "result": "University of Toledo football team plays Arkansas State in a regular‑season college game.",
       "title": "Toledo vs. Arkansas State"
+    },
+    "960924cb3c59f742e52c8724bff67429aea11f2c62fedad4c97c2649c044ee01": {
+      "created_at": "2026-11-13T15:26:57.908659+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Le Castellet Race 1",
+        "description": "Coverage of Le Castellet Race 1.",
+        "raw": "Le Castellet: Race 1"
+      }
     },
     "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
       "context": "ESPN+ event scheduled 03/11/2026 03:00 GMT",
@@ -5392,6 +5629,15 @@
       "kind": "event-description",
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
+    },
+    "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
+      "created_at": "2026-11-13T15:27:17.807884+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Star Sport Academy vs Old Edwardians FC",
+        "description": "Coverage of Star Sport Academy against Old Edwardians FC.",
+        "raw": "Star Sport Academy vs. Old Edwardians FC"
+      }
     },
     "9f1d35fefcc9ff799aac9b69735dbc3ba4ceb198a2cdd365a0f9d8ff52d79319": {
       "created_at": "2026-11-08T15:17:34.680495+00:00",
@@ -5752,6 +5998,15 @@
         "raw": "Virginia Tech @ SMU"
       }
     },
+    "a8075595c720705f7d2dfd415e36bf63ee5d1182cea4aa3c52b75e2a4a9b55ca": {
+      "created_at": "2026-11-13T15:26:57.908643+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Houston vs Colorado",
+        "description": "Coverage of Houston against Colorado.",
+        "raw": "Houston @ Colorado"
+      }
+    },
     "a8961c6ac39a5e84e230cfab798068fb5868059c002672215fa7bde35a2b1ce3": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T03:25:48.898671+00:00",
@@ -5858,6 +6113,15 @@
       "kind": "event-description",
       "result": "Scottish Cup fifth‑round match between Celtic and Dundee, scheduled for 7 February 2027 at 17:30 GMT.",
       "title": "Celtic vs Dundee"
+    },
+    "aa45f09ca13f10359a0d4a831755a5b57fff3cfe39801c3d2d65692092874574": {
+      "created_at": "2026-11-13T15:26:54.247636+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Great Britain U23 vs Nicaragua U23",
+        "description": "Coverage of Great Britain U23 against Nicaragua U23.",
+        "raw": "Great Britain U23 vs. Nicaragua U23"
+      }
     },
     "aac351831c051f11cacf529aff3c0371468d2e579a3296c219910b742c305798": {
       "created_at": "2026-11-07T15:17:20.541505+00:00",
@@ -6054,6 +6318,15 @@
         "raw": "Mammoth @ Golden Knights"
       }
     },
+    "b0885ac4e1ee86605a65f46aa566307227384dfe12e51c932fe88c64c4f3af23": {
+      "created_at": "2026-11-13T15:26:51.536020+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Central Castries vs Dennery",
+        "description": "Coverage of Central Castries against Dennery.",
+        "raw": "Central Castries vs. Dennery"
+      }
+    },
     "b09c43e2c9b36b27b9d930e36989b6173388c658c5c852c733f05bf204a374b7": {
       "created_at": "2026-11-11T19:41:56.553359+00:00",
       "kind": "live-title",
@@ -6145,6 +6418,15 @@
         "raw": "FC Porto vs. Asisa Joventut"
       }
     },
+    "b383854491988fc97963673fb769fd6953426c4c45c3a973f745e44ff660c392": {
+      "created_at": "2026-11-13T15:26:51.536013+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bea Mountain FC vs Paynesville FC",
+        "description": "Coverage of Bea Mountain FC against Paynesville FC.",
+        "raw": "Bea Mountain FC vs. Paynesville FC"
+      }
+    },
     "b3be9f0bf20a144d0a49ea8c2bfac91951736e9d3efc09a97011faa7839558fa": {
       "created_at": "2026-11-08T15:17:14.088538+00:00",
       "kind": "live-title",
@@ -6230,6 +6512,12 @@
         "description": "Coverage of UGA against MISS, MSU vs UM, COL vs ASU, LOU vs GT.",
         "raw": "UGA @ MISS, MSU @ UM, COL @ ASU, LOU @ GT"
       }
+    },
+    "b5a33f2d8227ec0c6e2982b6ca7a42e8be61207821b39e6f91c43f2668d50132": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
     },
     "b5ada815eb6e6723bf850b883ab5e7246c56204739ae46df9af48ed6e8c6a36e": {
       "created_at": "2026-11-07T14:24:34.772812+00:00",
@@ -6532,6 +6820,12 @@
         "raw": "Medicine Hat, AB - Day 6, Men’s Final"
       }
     },
+    "bc636bc9503fc6ab59346565e9adbfc1b98ec7ce7f603f7816c02831a0c3a733": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+    },
     "bc76d9ca59ded8007ab9bf5bcc070ec35f0e69653090b7a6c324eed4d5afa934": {
       "created_at": "2026-10-26T19:21:40.738708+00:00",
       "kind": "live-title",
@@ -6819,6 +7113,15 @@
         "raw": "Pitch 4A | Day 3: Afternoon Session"
       }
     },
+    "c49d2210fa06e6acf30ea5b9e9b442f87dacbeaadab69ac590451d4c11065481": {
+      "created_at": "2026-11-13T15:26:54.247629+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Freestyle Friday #20",
+        "description": "Coverage of Freestyle Friday #20.",
+        "raw": "Freestyle Friday #20"
+      }
+    },
     "c4c8ae86c46fe9f2ac7b34f470eaa199ed1687200b549d4c7550eaac715bb480": {
       "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
       "created_at": "2026-11-03T16:30:41.541200+00:00",
@@ -7021,6 +7324,15 @@
         "raw": "Nicaragua U23 vs. Puerto Rico U23"
       }
     },
+    "c9a9a8cf029a15034dfe3bfd57c394dcb98e5090081fdca4e6e7ab1171dee71b": {
+      "created_at": "2026-11-13T15:26:57.908654+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "La Cure Waves vs Cercle de Joachim",
+        "description": "Coverage of La Cure Waves against Cercle de Joachim.",
+        "raw": "La Cure Waves vs. Cercle de Joachim"
+      }
+    },
     "c9ab2b8e833b753b44d9d81a72dfeebeaa376c18b2ad9969360235a113564f92": {
       "created_at": "2026-11-09T22:26:26.057783+00:00",
       "kind": "live-title",
@@ -7042,6 +7354,24 @@
         "clean_title": "Cholet vs Dijon",
         "description": "Coverage of Cholet against Dijon.",
         "raw": "Cholet vs. Dijon"
+      }
+    },
+    "ca67bb441150319bf185c002f3264db047064505ee33140226ed07f6e6ac9853": {
+      "created_at": "2026-11-13T15:26:51.536024+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Czechia U23 vs South Africa U23",
+        "description": "Coverage of Czechia U23 against South Africa U23.",
+        "raw": "Czechia U23 vs. South Africa U23"
+      }
+    },
+    "ca8e36d1c567f0ab7cd1a8f3291e730f1eaf532b368717e205e000d29ac68b53": {
+      "created_at": "2026-11-13T15:26:51.535993+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AS Police vs Liberté FC",
+        "description": "Coverage of AS Police against Liberté FC.",
+        "raw": "AS Police vs Liberté FC"
       }
     },
     "caa960aa4cc32c151cd5e9a6d79730cb056399cbbc56b22512d09cb205b27f69": {
@@ -7115,6 +7445,15 @@
         "clean_title": "Oregon vs Ohio State",
         "description": "Coverage of Oregon against Ohio State.",
         "raw": "Oregon @ Ohio State"
+      }
+    },
+    "cc47b6b7d1eae7b2b0d8558607c6d84afbc8f4974002f2b30ebef97b62abdf9d": {
+      "created_at": "2026-11-13T15:27:17.807888+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Vitória Guimarães vs Porto",
+        "description": "Coverage of Vitória Guimarães against Porto.",
+        "raw": "Vitória Guimarães vs. Porto"
       }
     },
     "cc8bebe2b72fc9c0e535e112784dac66e3cd1c1e70ecc7a320a11171a678d137": {
@@ -7395,6 +7734,12 @@
         "raw": "Chiefs @ Seahawks (Spanish Broadcast)"
       }
     },
+    "d4a5aa7396d15e9397dfed471a0974ea5133800656ac7f2076e569eefe141de3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+    },
     "d4fce04baf58d1dfdfb04ac5e6450ed6126b8f7dd507d4b8b9ded8ac5cf3a34d": {
       "created_at": "2026-11-07T15:17:20.541512+00:00",
       "kind": "live-title",
@@ -7411,6 +7756,15 @@
         "clean_title": "Malaga Marathon",
         "description": "Coverage of Malaga Marathon.",
         "raw": "Malaga Marathon"
+      }
+    },
+    "d5409c02841fded4a3ee40319a94268388ffec1b84ccc68ece5f20ac837f7c6f": {
+      "created_at": "2026-11-13T15:26:54.247638+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Greenbrier Tip-Off: Mississippi State vs Xavier",
+        "description": "Coverage of Greenbrier Tip-Off: Mississippi State against Xavier.",
+        "raw": "Greenbrier Tip-Off: Mississippi State vs. Xavier"
       }
     },
     "d56a8159c1f241944755a4dd39021d9e1a62753ce99eb3be4b2a1206439ace03": {
@@ -7453,6 +7807,15 @@
       "kind": "event-description",
       "result": "MLS match: New England Revolution host Inter Miami CF at Gillette Stadium.",
       "title": "| New England Revolution vs Inter Miami CF (Spanish)"
+    },
+    "d6544f2d3a654777a9769719a997b71e0ba480c42b68533101e39852e38f563b": {
+      "created_at": "2026-11-13T15:27:17.807886+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Virginia vs Maryland",
+        "description": "Coverage of Virginia against Maryland.",
+        "raw": "Virginia @ Maryland"
+      }
     },
     "d672ec22da8dd17f828a3e03d7dea8789a6f42fb2efefe5a35d0b0c8add98dbf": {
       "created_at": "2026-11-08T07:43:01.987176+00:00",
@@ -7726,6 +8089,21 @@
       "result": "Angel City FC host Boston Legacy in an NWSL match on 01/11/2026 at 22:00 GMT.",
       "title": "NWSL: Angel City FC - Boston Legacy"
     },
+    "dd5a40ca7ad5fc45b025e720c2d2e77588139c6028855fd84cb657e776983cfb": {
+      "created_at": "2026-11-13T15:26:51.536007+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Arizona vs Auburn",
+        "description": "Coverage of Arizona against Auburn.",
+        "raw": "Arizona @ Auburn"
+      }
+    },
+    "dd8e5cfac5e6e83a046ec39febe3d743996f6af5f764f6fa7fd0ead6c5a6cc98": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:42:17.807899+00:00"
+    },
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569501+00:00",
@@ -7749,6 +8127,15 @@
         "clean_title": "UGA vs MISS, MSU vs UM, IOWA vs NU, OU vs UF",
         "description": "Coverage of UGA against MISS, MSU vs UM, IOWA vs NU, OU vs UF.",
         "raw": "UGA @ MISS, MSU @ UM, IOWA @ NU, OU @ UF"
+      }
+    },
+    "dec3443742d756e994959813b138918a3fb2ca038ac6782898d157a8491e21bc": {
+      "created_at": "2026-11-13T15:26:57.908627+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Hamburg vs Mainz",
+        "description": "Coverage of Hamburg against Mainz.",
+        "raw": "Hamburg vs. Mainz"
       }
     },
     "deefb8ca00b874ec7f254376a83f2bec201a93422632f1a121c3a5d3cc1afc9a": {
@@ -7882,6 +8269,12 @@
         "description": "Coverage of Olympic Star against Flambeau du Centre.",
         "raw": "Olympic Star vs. Flambeau du Centre"
       }
+    },
+    "e1e75f495e727fdb488b9d1693b29f1bbf2b0685c885882599fa71e26e2ab4eb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T15:41:58.665265+00:00"
     },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
       "created_at": "2026-11-09T22:26:26.057785+00:00",
@@ -8116,6 +8509,15 @@
       "kind": "event-description",
       "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
       "title": "Wolverhampton Wanderers vs Cardiff City"
+    },
+    "e63023ed9749ebcaf55bf0946c10d6b458313d2f9f2c60d78cd4895025da78b0": {
+      "created_at": "2026-11-13T15:26:54.247621+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Ennis vs. Kelly: Press Conference + Pacheco vs. Fulghum: Weigh-In",
+        "description": "Coverage of Ennis against Kelly: Press Conference + Pacheco vs. Fulghum: Weigh-In.",
+        "raw": "Ennis vs. Kelly: Press Conference + Pacheco vs. Fulghum: Weigh-In"
+      }
     },
     "e653fd14e55dadb2a0e25ee5ce284bc3babbd88ac4aee7fdcbdcfe58608b313f": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -8611,6 +9013,15 @@
         "raw": "BKFC 96 Cohoon v Weir"
       }
     },
+    "f53132fb5f2c5c07a617b5efcce7d95bdf1a6fbd1b062a8582b7a921d8d2c181": {
+      "created_at": "2026-11-13T15:27:17.807858+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Predators vs Golden Knights",
+        "description": "Coverage of Predators against Golden Knights.",
+        "raw": "Predators @ Golden Knights"
+      }
+    },
     "f544bbc77f8b5f92ba5e0c9c17582782219e1e8cabd7624d3949838423ec358f": {
       "created_at": "2026-11-07T22:16:07.678294+00:00",
       "kind": "live-title",
@@ -8627,6 +9038,15 @@
         "clean_title": "Bea Mountain FC vs LISCR FC",
         "description": "Coverage of Bea Mountain FC against LISCR FC.",
         "raw": "Bea Mountain FC vs. LISCR FC"
+      }
+    },
+    "f5ec12a0c566d0b531ac4282cc4b768a4ab4f442c4f245aff83760d6eba06bcd": {
+      "created_at": "2026-11-13T15:27:17.807890+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Watanga FC vs Golden Dream FC",
+        "description": "Coverage of Watanga FC against Golden Dream FC.",
+        "raw": "Watanga FC vs. Golden Dream FC"
       }
     },
     "f62af70b04163c0f5f54f0ee590be46c24d4704599f7413cf45e482b25e94482": {
@@ -8930,6 +9350,15 @@
       "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
       "title": "Leicester City vs Stevenage FC"
     },
+    "ff4d4bf43d62e20b6c18052f53487d12ad17783bfcdfdd1ca722a890ded4ddb4": {
+      "created_at": "2026-11-13T15:26:54.247626+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Freeport FC vs Wologisi FC",
+        "description": "Coverage of Freeport FC against Wologisi FC.",
+        "raw": "Freeport FC vs. Wologisi FC"
+      }
+    },
     "ff796f8b655d3a9c5d51f86aac2c3876a9e4b6e589138c38979ee573c81cd381": {
       "created_at": "2026-11-07T15:17:20.541500+00:00",
       "kind": "live-title",
@@ -8948,7 +9377,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-13T17:33:06.432402+00:00"
+    "gemini": "2026-11-13T17:33:06.432402+00:00",
+    "groq": "2026-11-13T15:27:25.933206+00:00"
   },
   "version": 1
 }
