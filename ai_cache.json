@@ -64,7 +64,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "02f0fe6b23122f2ca504520f69c1b8a761fa86339b9be65648e7de21ad6b9117": {
       "created_at": "2026-11-07T14:24:25.648905+00:00",
@@ -74,6 +74,12 @@
         "description": "Coverage of BKFC 96: Weir against Cohoon.",
         "raw": "BKFC 96: Weir vs. Cohoon"
       }
+    },
+    "030c2e08743c3bc4e46c395fa71a8024949f305afd0d6501da0cca62d97610d2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "031881f8c2a23927e0e7f64051b8d780c8bb75911314f613dd0a22bcbd8753da": {
       "created_at": "2026-11-07T14:24:37.317148+00:00",
@@ -1982,7 +1988,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "3a44f46052227ff49761f60a7ebc2c0eace5a94e636725b06208cadf6b59ca4a": {
       "created_at": "2026-11-10T05:32:33.153351+00:00",
@@ -2356,6 +2362,15 @@
       "kind": "event-description",
       "result": "Furman competes against South Florida in an NCAA women's basketball regular‑season game.",
       "title": "Furman vs. South Florida"
+    },
+    "449cfa55e1ff513e333f24479bb130fc25ade2a84ff4ae7605c36e988c075aa1": {
+      "created_at": "2026-11-13T04:38:32.086499+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "NARA Nationals at Southern Illinois Center",
+        "description": "Coverage of NARA Nationals at Southern Illinois Center.",
+        "raw": "NARA Nationals Southern Illinois"
+      }
     },
     "44c9cf203728cadbb0a6a68c9267443898a81044fb0a5642674cecd5e8dc31b4": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -3510,7 +3525,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "6a968f77b63aa1b78fd724a2bca859db5c7674b3cd3d413a619dba2949dd7044": {
       "created_at": "2026-11-12T09:36:23.034834+00:00",
@@ -4054,6 +4069,15 @@
       "kind": "event-description",
       "result": "Men’s college basketball: Cal State San Marcos Cougars host Cal Poly Mustangs.",
       "title": "CSU San Marcos vs. Cal Poly"
+    },
+    "7a90ffc76e9904af2a9241ba83960785db7e2e2e59b47484cf6e2c4693b9aa8d": {
+      "created_at": "2026-11-13T04:38:32.086501+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Erron Peterson vs. Miguel Angel Hernandez",
+        "description": "Coverage of Erron Peterson against Miguel Angel Hernandez.",
+        "raw": "Peterson v Hernandez"
+      }
     },
     "7aa2b04fd4bbca4a3e22d8ef1a4b81e395fd271fc7d470f4622e9b4b7af40c4a": {
       "created_at": "2026-11-06T15:25:20.143361+00:00",
@@ -4837,6 +4861,15 @@
         "raw": "Derby Académie vs. AS Kayes"
       }
     },
+    "9238ccd842b5a145f87015c8768bf52c605d792a12c53edde65be5eafb463e6e": {
+      "created_at": "2026-11-13T04:38:32.086504+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Toughman Contest",
+        "description": "Coverage of Toughman Contest.",
+        "raw": "Toughman Contest"
+      }
+    },
     "92484ba06a9fb83b0b8a7a8690fd18d3e34453b26772c258d1079e44d86e1b8a": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690123+00:00",
@@ -5373,7 +5406,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -5646,6 +5679,15 @@
         "raw": "MVPW 07 Turhan v Baumgardner"
       }
     },
+    "a919bdf4c00cf3306d45a44058c45ed0230538da532e14d785680e16da800d96": {
+      "created_at": "2026-11-13T04:38:32.086482+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "FloRacing Night in America at Senoia Raceway",
+        "description": "Coverage of FloRacing Night in America at Senoia Raceway.",
+        "raw": "FloRacing Night In America Senoia"
+      }
+    },
     "a93f566543b8cfd272ef8814dd3667dba6a5ed44f0cb507a9de625579f0ed7a0": {
       "created_at": "2026-11-06T13:50:44.090574+00:00",
       "kind": "live-title",
@@ -5911,7 +5953,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "b0f064a0e97c54fb17717c155f9ea875f5ed2a4bae77c178020a8ac76158e8b5": {
       "created_at": "2026-11-06T15:25:20.143355+00:00",
@@ -6168,10 +6210,13 @@
       }
     },
     "b7816bbc2778885ff26496ff088341a81baf5a1f5ec2db6a5bf5e0b1888b45b3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T04:38:32.086496+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "result": {
+        "clean_title": "Islanders at Kings",
+        "description": "Coverage of Islanders at Kings.",
+        "raw": "Islanders @ Kings"
+      }
     },
     "b7b9f3a586d19b3370e04e83e1bf3756304efee691c3175ab481d79e0d316f9c": {
       "created_at": "2026-11-08T15:17:34.680498+00:00",
@@ -6257,7 +6302,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -6892,7 +6937,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "caa960aa4cc32c151cd5e9a6d79730cb056399cbbc56b22512d09cb205b27f69": {
       "created_at": "2026-11-08T17:16:11.697723+00:00",
@@ -7267,7 +7312,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "d5ca28a5ef77fbee30178e0c8224b7f5f45aea042cfbbb40b69e898a240e3b44": {
       "created_at": "2026-11-07T14:24:34.772810+00:00",
@@ -8069,7 +8114,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T03:47:18.705367+00:00"
+      "retry_after": "2026-11-13T04:53:20.187588+00:00"
     },
     "eb4fae5325f96f128283bedbbfa99c391c451275ca0ed45de2252299c6e06897": {
       "created_at": "2026-11-07T06:27:35.762069+00:00",
@@ -8747,7 +8792,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-13T04:26:58.055303+00:00"
+    "gemini": "2026-11-13T10:38:19.387065+00:00"
   },
   "version": 1
 }
