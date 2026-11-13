@@ -64,7 +64,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "02f0fe6b23122f2ca504520f69c1b8a761fa86339b9be65648e7de21ad6b9117": {
       "created_at": "2026-11-07T14:24:25.648905+00:00",
@@ -165,12 +165,6 @@
       "kind": "event-description",
       "result": "NCAA Division I men's basketball: Colorado Buffaloes vs Abilene Christian Wildcats.",
       "title": "Abilene Christian vs. Colorado"
-    },
-    "0545b5c120568e92789ae0fc0cee238f74bbd240ca75d4ad52b88c6396d35600": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
     },
     "05743992cece6fa9aa4e0d5ecf2f474ebbffdd424936cb3b65871788d930f04d": {
       "created_at": "2026-11-04T05:36:14.786990+00:00",
@@ -1004,18 +998,6 @@
         "raw": "Devils @ Stars"
       }
     },
-    "201fd8fbdf05dad5aec6df00f4d38530cefd324dd1baddb0e24718a09ef6cbed": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
-    },
-    "202090a70fa1181a59bd337895b80b25cc7973941293305a37b8232fd62ebfe7": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
-    },
     "2030ad3fbcef9ed9d592d2eeee0a629bdc0203976791663169594a175328eab1": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
       "created_at": "2026-11-02T00:12:44.516358+00:00",
@@ -1819,12 +1801,6 @@
       "result": "MLS match: Portland Timbers host Houston Dynamo at Providence Park.",
       "title": "2 | Portland Timbers vs Houston Dynamo FC (Spanish)"
     },
-    "34c5a7b4a40c852f6f292f45642dd8c57cf84510815a6b91cd364dd1a66d80bc": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
-    },
     "3515caa20ede4ad12bcada38ab40b03bbce41fd41f0fac24328ef79e5e9771bc": {
       "created_at": "2026-11-07T14:24:37.317152+00:00",
       "kind": "live-title",
@@ -2006,7 +1982,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "3a44f46052227ff49761f60a7ebc2c0eace5a94e636725b06208cadf6b59ca4a": {
       "created_at": "2026-11-10T05:32:33.153351+00:00",
@@ -2307,10 +2283,13 @@
       }
     },
     "427d494551d8c13c06577d24d4156fed15be0925acd5c12e66cb8d852459714d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T00:24:26.882199+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
+      "result": {
+        "clean_title": "Northern Iowa Panthers @ Iowa Hawkeyes",
+        "description": "Coverage of Northern Iowa Panthers against Iowa Hawkeyes.",
+        "raw": "Northern Iowa @ Iowa"
+      }
     },
     "42af88a85baf93b5d3391a02b86c1449e8aea7c115ddfdd8747602c9d5f4af28": {
       "created_at": "2026-10-28T06:20:34.001570+00:00",
@@ -3223,10 +3202,13 @@
       }
     },
     "5ee5256dc58e0b6f71b5259ec7385eed28286bce6cb465df5a4687887c72dff1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T00:24:26.882192+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
+      "result": {
+        "clean_title": "Louisiana Ragin' Cajuns @ UL Monroe Warhawks",
+        "description": "Coverage of Louisiana Ragin' Cajuns against UL Monroe Warhawks.",
+        "raw": "Louisiana @ UL Monroe"
+      }
     },
     "5f0d9b3ecec9435ea07f1e2a04610f8f22cfcf49a558a905c23306b5caa0884e": {
       "created_at": "2026-11-08T07:43:01.987198+00:00",
@@ -3334,10 +3316,13 @@
       "result": "NFL Week 7 game: Kansas City Chiefs vs Seattle Seahawks, scheduled 26 Oct 2026 00:20 GMT."
     },
     "61b096f07c0052420c2612a052fc24e9f5e741ae7fb2044e71be7fed373f66d1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T00:24:26.882169+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
+      "result": {
+        "clean_title": "Winnipeg Jets @ Dallas Stars",
+        "description": "Coverage of Winnipeg Jets against Dallas Stars.",
+        "raw": "Jets @ Stars"
+      }
     },
     "61c45b1c4d64a73bc76ace7cfb80d5bf63afa9cb89df2b74c63fba6459e741ca": {
       "created_at": "2026-11-09T18:28:25.464105+00:00",
@@ -3525,7 +3510,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "6a968f77b63aa1b78fd724a2bca859db5c7674b3cd3d413a619dba2949dd7044": {
       "created_at": "2026-11-12T09:36:23.034834+00:00",
@@ -3571,10 +3556,13 @@
       "title": "Esgueira vs. CA Queluz"
     },
     "6cf212ea4f9ce4c013bc8f8d25a953729a768aac67bc786286f68567f5cf7f1f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T00:24:26.882203+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
+      "result": {
+        "clean_title": "Detroit Red Wings @ Florida Panthers",
+        "description": "Coverage of Detroit Red Wings against Florida Panthers.",
+        "raw": "Red Wings @ Panthers"
+      }
     },
     "6d3fb6aeac2abec52fad927d72a3daac870393abe1400251f3b61ec4e7557a5e": {
       "created_at": "2026-11-04T13:50:28.840957+00:00",
@@ -4005,12 +3993,6 @@
         "raw": "Jaguars @ Ravens (Spanish Broadcast)"
       }
     },
-    "785e2a2e10601040bd8fc02c17f581cceb6c8e13f02debdf2df351cb9654b8a3": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
-    },
     "786eb04cbe6bbf1d0a7923f79a66846a0d240a50497020f9421a3552c8a57be8": {
       "created_at": "2026-11-04T13:50:28.840965+00:00",
       "kind": "live-title",
@@ -4136,12 +4118,6 @@
         "description": "Coverage of Cercle de Joachim against Vacoas-Phoenix.",
         "raw": "Cercle de Joachim vs. Vacoas-Phoenix"
       }
-    },
-    "7ce0ef7632fb44f7fd990dc09ce8db7f7a7837313281d27a636e80fcf19d98ce": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -4584,12 +4560,6 @@
         "description": "Coverage of Medicine Hat, AB - Day 2, Draw 6.",
         "raw": "Medicine Hat, AB - Day 2, Draw 6"
       }
-    },
-    "89c1007848d7ec2635c50b4035e3d9b7769597c76f3a2a43af06bf480207b1cd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
     },
     "89e8e0a5828bd4847b53c6b5639b8764be7ebf78652bf66702e70cd6e8415cc1": {
       "context": "MAX UK event scheduled 01/11/2026 03:00 GMT",
@@ -5403,7 +5373,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -5434,12 +5404,6 @@
       "kind": "event-description",
       "result": "Press conference for the Cincinnati Bearcats football team.",
       "title": "Cincinnati Football Press Conference"
-    },
-    "a3200e44f237b9b0058923478f8ba1e0abd65c779161cbb377e39b07e5b36142": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
     },
     "a332929c054844b648e15e2ca860a96b4ca97aeca862c6a6dc6e06bb6c60cea8": {
       "created_at": "2026-10-26T12:06:58.198973+00:00",
@@ -5709,12 +5673,6 @@
         "raw": "Riley vs. Coupe: Press Conference"
       }
     },
-    "a9beb2edb6d6515771c9feb7d2d89612438ec88f34873672636ae244ec1fe773": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
-    },
     "a9cdd7eb1d48ed335adbc24e9cf1e973ec59311503b55a86189e757a3ccd7174": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
       "created_at": "2026-10-31T16:22:16.312208+00:00",
@@ -5953,7 +5911,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "b0f064a0e97c54fb17717c155f9ea875f5ed2a4bae77c178020a8ac76158e8b5": {
       "created_at": "2026-11-06T15:25:20.143355+00:00",
@@ -6213,7 +6171,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "b7b9f3a586d19b3370e04e83e1bf3756304efee691c3175ab481d79e0d316f9c": {
       "created_at": "2026-11-08T15:17:34.680498+00:00",
@@ -6299,7 +6257,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -6934,7 +6892,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "caa960aa4cc32c151cd5e9a6d79730cb056399cbbc56b22512d09cb205b27f69": {
       "created_at": "2026-11-08T17:16:11.697723+00:00",
@@ -6953,10 +6911,13 @@
       "title": "Mon, 11/2 - The Rich Eisen Show"
     },
     "cb1632a1a44526811caf77a291b66c28df3272e77d44fb49ae78a105113ec7cf": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T00:24:26.882187+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
+      "result": {
+        "clean_title": "Tampa Bay Lightning @ Columbus Blue Jackets",
+        "description": "Coverage of Tampa Bay Lightning against Columbus Blue Jackets.",
+        "raw": "Lightning @ Blue Jackets"
+      }
     },
     "cb318f65f005e92eb16b392982eb7dd5170270546aa6669ac78dc596b861813c": {
       "created_at": "2026-11-09T15:34:57.820097+00:00",
@@ -7007,10 +6968,13 @@
       }
     },
     "cc8bebe2b72fc9c0e535e112784dac66e3cd1c1e70ecc7a320a11171a678d137": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T00:24:26.882196+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
+      "result": {
+        "clean_title": "Memphis Tigers @ South Florida Bulls",
+        "description": "Coverage of Memphis Tigers against South Florida Bulls.",
+        "raw": "Memphis @ South Florida"
+      }
     },
     "cce1ecbe771e82e67e28f35846c6ddb5342a360615ad4a7cdce9b1bb44ebef48": {
       "context": "MAX UK event scheduled 03/11/2026 13:00 GMT",
@@ -7303,7 +7267,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "d5ca28a5ef77fbee30178e0c8224b7f5f45aea042cfbbb40b69e898a240e3b44": {
       "created_at": "2026-11-07T14:24:34.772810+00:00",
@@ -7456,12 +7420,6 @@
         "description": "Coverage of Marquette against Michigan.",
         "raw": "Marquette @ Michigan"
       }
-    },
-    "d9649be64b9641c3cbed8d900e465519c5c10da127d4c2cd7e0e5e886b8b2362": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
     },
     "d976699edce009e76f1eb177fb11f79dd297fd873c7fd20ad2a8d8647c4aac95": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -7940,12 +7898,6 @@
         "raw": "Inter vs. Como"
       }
     },
-    "e557fbbebefa303a6acec13d974bfb6043925223b7b52093014f058bdb60443f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
-    },
     "e5592892b9335b20c7d3bea7d15bba79a63e3e4dda3975b7b89a8cbc487c54ea": {
       "created_at": "2026-11-08T14:22:17.311547+00:00",
       "kind": "live-title",
@@ -8074,12 +8026,6 @@
       "result": "Portland Pilots face Pacific Tigers in a men's college basketball game.",
       "title": "#12 Portland vs. Pacific"
     },
-    "e7fd200a3dd2886e0f997226f40d119626a90124c13c7d05fea400b75f300c93": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.407315+00:00"
-    },
     "e8bd60b488c5d72e82d9e59cdda198cbb58f531acfc9108ac66960690790f81e": {
       "created_at": "2026-11-08T05:30:03.515481+00:00",
       "kind": "live-title",
@@ -8110,12 +8056,6 @@
       "result": "CBS Sports HQ Spotlight airs a sports news recap.",
       "title": "cbssportshq: CBS Sports HQ Spotlight"
     },
-    "eaab7dfdbf6143a143943feaebde39b7139e26aa5d0982a875e8c31217017fbd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:56.730970+00:00"
-    },
     "eae44b8d54c36c39c7bbd52d93923e0c7349b81b7095a2a3dd0f0d3bc675bece": {
       "created_at": "2026-11-10T13:47:32.391002+00:00",
       "kind": "live-title",
@@ -8129,7 +8069,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
+      "retry_after": "2026-11-13T00:39:16.164936+00:00"
     },
     "eb4fae5325f96f128283bedbbfa99c391c451275ca0ed45de2252299c6e06897": {
       "created_at": "2026-11-07T06:27:35.762069+00:00",
@@ -8687,12 +8627,6 @@
         "description": "Coverage of FC Fassell against LPRC Oilers.",
         "raw": "FC Fassell vs. LPRC Oilers"
       }
-    },
-    "fcaae90c77908885db8d63193d664ad9b02e777d7661afb3aedec91fafd6fd2a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-12T23:38:55.953139+00:00"
     },
     "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
       "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
