@@ -770,7 +770,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
@@ -810,7 +810,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -1156,7 +1156,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "22ef576d40fc7fef3f54a973fd2ca7f16fda65f6da5c02489a2aea08575c1c46": {
       "created_at": "2026-11-06T03:30:23.708949+00:00",
@@ -1451,10 +1451,13 @@
       "title": "Princeton vs. Columbia"
     },
     "2974e0ab8a41409e98e295da093b3e86a5177ee3d88f5c2c412495675dac774d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T16:33:13.684172+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:27:25.933206+00:00"
+      "result": {
+        "clean_title": "World Final Championship 2026 - Day 1",
+        "description": "Coverage of World Final Championship 2026 - Day 1.",
+        "raw": "World Final Championship 2026 - Day 1"
+      }
     },
     "29950b1bfc0a56d465ac7bb46d768a3c89e697e4358b1aaa39c20d73c6202fdb": {
       "context": "Disney+ Events event scheduled 01/11/2026 01:30 GMT",
@@ -1730,10 +1733,13 @@
       }
     },
     "2f00a5a8e058502fbe9eeea5251acb6cc6d97db3dff676f9aa54c2b7f399479d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T16:33:13.684170+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:27:25.933206+00:00"
+      "result": {
+        "clean_title": "Wellington Phoenix Reserves vs Auckland City FC",
+        "description": "Coverage of Wellington Phoenix Reserves against Auckland City FC.",
+        "raw": "Wellington Phoenix Reserves vs. Auckland City FC"
+      }
     },
     "2f4d50c5142955479d412c1d1f8e66d89f6897e330587826ce164762b10dae86": {
       "created_at": "2026-11-08T14:22:17.311549+00:00",
@@ -1971,7 +1977,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "36c2fe58cb81112e07baac970fd8d542916b68e9ffb925299c2465f247938834": {
       "created_at": "2026-11-08T05:29:32.514158+00:00",
@@ -1986,7 +1992,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "36d43be6d45affb0d4e7bf28ab80fd05ea025ee52a87310580ef8b639a0c775e": {
       "created_at": "2026-11-07T13:33:23.422104+00:00",
@@ -2922,7 +2928,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "521407fa1844618c07ac05afa782e6364b278a548b7592ee4ffd602c487f7c3e": {
       "created_at": "2026-11-07T16:17:32.146912+00:00",
@@ -6517,7 +6523,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "b5ada815eb6e6723bf850b883ab5e7246c56204739ae46df9af48ed6e8c6a36e": {
       "created_at": "2026-11-07T14:24:34.772812+00:00",
@@ -6824,7 +6830,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "bc76d9ca59ded8007ab9bf5bcc070ec35f0e69653090b7a6c324eed4d5afa934": {
       "created_at": "2026-10-26T19:21:40.738708+00:00",
@@ -7738,7 +7744,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "d4fce04baf58d1dfdfb04ac5e6450ed6126b8f7dd507d4b8b9ded8ac5cf3a34d": {
       "created_at": "2026-11-07T15:17:20.541512+00:00",
@@ -8099,10 +8105,13 @@
       }
     },
     "dd8e5cfac5e6e83a046ec39febe3d743996f6af5f764f6fa7fd0ead6c5a6cc98": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T16:33:13.684153+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:42:17.807899+00:00"
+      "result": {
+        "clean_title": "Venezuela U23 vs Puerto Rico U23",
+        "description": "Coverage of Venezuela U23 against Puerto Rico U23.",
+        "raw": "Venezuela U23 vs. Puerto Rico U23"
+      }
     },
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -8274,7 +8283,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T15:41:58.665265+00:00"
+      "retry_after": "2026-11-13T16:48:10.428435+00:00"
     },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
       "created_at": "2026-11-09T22:26:26.057785+00:00",
@@ -9377,8 +9386,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-13T17:33:06.432402+00:00",
-    "groq": "2026-11-13T15:27:25.933206+00:00"
+    "gemini": "2026-11-13T17:33:06.432402+00:00"
   },
   "version": 1
 }
