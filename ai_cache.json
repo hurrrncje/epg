@@ -523,10 +523,13 @@
       }
     },
     "1114f340a363c9fc49f140bec4320c991f504112f2504c6daf0f20d88e5d142c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138303+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Commanders @ Giants",
+        "description": "Coverage of Commanders against Giants.",
+        "raw": "Commanders @ Giants"
+      }
     },
     "1147bb5fa8eee0d77c670039bb4d16a57ec8ce9903cc025275387424e546a17d": {
       "created_at": "2026-11-08T15:17:14.088540+00:00",
@@ -3546,10 +3549,13 @@
       }
     },
     "69cf0c22af94f0dbece0d9e86b43d428317e5444e3b979aa6697d9dba400cc24": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138307+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Commanders @ Giants",
+        "description": "Coverage of Commanders against Giants.",
+        "raw": "Commanders @ Giants (Spanish Broadcast)"
+      }
     },
     "6a968f77b63aa1b78fd724a2bca859db5c7674b3cd3d413a619dba2949dd7044": {
       "created_at": "2026-11-12T09:36:23.034834+00:00",
@@ -3634,10 +3640,13 @@
       "title": "Texas A&M-Kingsville vs. UT Rio Grande Valley"
     },
     "6d72ea5398b65561b523ec01aa4e929ade68ee9e067f2638217f4354b4380dd6": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138295+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Avalanche @ Senators",
+        "description": "Coverage of Avalanche against Senators.",
+        "raw": "Avalanche @ Senators"
+      }
     },
     "6de6fc147a39c85755559d0d7791497e692d407d14b50fd570fa2b2347102bb9": {
       "created_at": "2026-11-08T05:29:51.590152+00:00",
@@ -4609,10 +4618,13 @@
       }
     },
     "88bade1606c02b1c86888e793522828276dfca82f6ea628a99f0355787088868": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138292+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Arizona @ UCLA",
+        "description": "Coverage of Arizona against UCLA.",
+        "raw": "Arizona @ UCLA"
+      }
     },
     "8935e620d6e89809a62114c301484830012310514fce90d7dc19e92eb8b9202d": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:35 GMT",
@@ -4665,10 +4677,13 @@
       }
     },
     "8adddc7f6613544642d9ac02442aa243358c6f44efe11a5d22cffe1b9c8ce76e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138273+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "AMA EnduroCross Idaho Falls",
+        "description": "Coverage of AMA EnduroCross Idaho Falls.",
+        "raw": "AMA EnduroCross Idaho Falls"
+      }
     },
     "8afe4b8db8dc73498ce99635872ceff7e7c5181edf16f13c0763142d90f7870b": {
       "created_at": "2026-11-04T13:50:28.840969+00:00",
@@ -5388,10 +5403,13 @@
       }
     },
     "9f85674dd7ab441469aad21aeb5fc20aafeb51d76a3b1b7ec48e838e6054482b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138305+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Commanders @ Giants",
+        "description": "Coverage of Commanders against Giants.",
+        "raw": "Commanders @ Giants (Prime Vision with Next Gen Stats)"
+      }
     },
     "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
       "created_at": "2026-11-06T03:30:23.708951+00:00",
@@ -6759,10 +6777,13 @@
       }
     },
     "c393e054d4cd0dc8551a0bca1fa17c81d93a90dcfa8b0805273830b5b5b0eef1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138301+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Capitals @ Devils",
+        "description": "Coverage of Capitals against Devils.",
+        "raw": "Capitals @ Devils"
+      }
     },
     "c39e65a105392c0a279396888d35b07bf56ad58c8806f7ef49e67cb98ce7243f": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -7323,10 +7344,13 @@
       }
     },
     "d38df2710958dbf7a7ccb1dc8f8d2a132dc15ff7b3e1b8f85999d0a2273f36a1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138308+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Commanders @ Giants",
+        "description": "Coverage of Commanders against Giants.",
+        "raw": "Commanders @ Giants (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "d3c04917fc519ca9d628a28a0d90fa6aad31a85b3bc7a620ac5f655b5041e545": {
       "created_at": "2026-11-07T14:24:37.317122+00:00",
@@ -7599,10 +7623,13 @@
       }
     },
     "dab2c5c71c79e8e5b47f01e3fe065f31e0b7867e8e6d0903ff4dbf50cad271b0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138299+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Canadiens @ Bruins",
+        "description": "Coverage of Canadiens against Bruins.",
+        "raw": "Canadiens @ Bruins"
+      }
     },
     "dac6eb0ab3cc1a3dc4a3e91a1d7804f0cad2bc8b48ef07e6082dabf43b06e02a": {
       "created_at": "2026-11-06T05:37:48.861311+00:00",
@@ -8460,10 +8487,13 @@
       "title": "Wycombe Wanderers FC vs Burton Albion FC"
     },
     "f214eb4c6e6d37bdeda43405e843785c03bc7d58b9432c6570c6b1cd04261b3f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T12:37:26.138298+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T11:48:07.537191+00:00"
+      "result": {
+        "clean_title": "Blues @ Mammoth",
+        "description": "Coverage of Blues against Mammoth.",
+        "raw": "Blues @ Mammoth"
+      }
     },
     "f297635eb8eb2e9789629aafdb08fbc6c97d024e0d08a544a351a6cf2afae28a": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
