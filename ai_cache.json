@@ -526,7 +526,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "1147bb5fa8eee0d77c670039bb4d16a57ec8ce9903cc025275387424e546a17d": {
       "created_at": "2026-11-08T15:17:14.088540+00:00",
@@ -3549,7 +3549,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "6a968f77b63aa1b78fd724a2bca859db5c7674b3cd3d413a619dba2949dd7044": {
       "created_at": "2026-11-12T09:36:23.034834+00:00",
@@ -3637,7 +3637,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "6de6fc147a39c85755559d0d7791497e692d407d14b50fd570fa2b2347102bb9": {
       "created_at": "2026-11-08T05:29:51.590152+00:00",
@@ -4612,7 +4612,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "8935e620d6e89809a62114c301484830012310514fce90d7dc19e92eb8b9202d": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:35 GMT",
@@ -4668,7 +4668,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "8afe4b8db8dc73498ce99635872ceff7e7c5181edf16f13c0763142d90f7870b": {
       "created_at": "2026-11-04T13:50:28.840969+00:00",
@@ -5391,7 +5391,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
       "created_at": "2026-11-06T03:30:23.708951+00:00",
@@ -6762,7 +6762,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "c39e65a105392c0a279396888d35b07bf56ad58c8806f7ef49e67cb98ce7243f": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -7326,7 +7326,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "d3c04917fc519ca9d628a28a0d90fa6aad31a85b3bc7a620ac5f655b5041e545": {
       "created_at": "2026-11-07T14:24:37.317122+00:00",
@@ -7602,7 +7602,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "dac6eb0ab3cc1a3dc4a3e91a1d7804f0cad2bc8b48ef07e6082dabf43b06e02a": {
       "created_at": "2026-11-06T05:37:48.861311+00:00",
@@ -8463,7 +8463,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-13T08:11:00.421119+00:00"
+      "retry_after": "2026-11-13T09:50:50.863190+00:00"
     },
     "f297635eb8eb2e9789629aafdb08fbc6c97d024e0d08a544a351a6cf2afae28a": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
