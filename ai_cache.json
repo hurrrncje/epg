@@ -767,10 +767,13 @@
       }
     },
     "1610c02278b4fd98ac91ae5b2529008cb026f628596f577189c45ac9f8d07cf6": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584683+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Panama U19 vs. El Salvador U19",
+        "description": "Coverage of Panama U19 against El Salvador U19.",
+        "raw": "Panama U19 vs. El Salvador U19"
+      }
     },
     "165fba3856d4dd6e8cd397950e3bec7d846dbe4959aef1de3d3867400facc834": {
       "context": "DAZN UK event scheduled 28/10/2026 02:00 GMT",
@@ -807,10 +810,13 @@
       }
     },
     "1756a2698748228b88e721f7ed78ddb4c655470fd0df252293bb538b41eb9974": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584672+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Miami Round 6 Group Stages",
+        "description": "Coverage of Miami Round 6 Group Stages.",
+        "raw": "Miami - Round 6, Group Stages"
+      }
     },
     "1774fe6c99a66a55ad2b951c1dd86bd3900394791033b617c74974fca2931003": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -1153,10 +1159,13 @@
       }
     },
     "22ec38be7c5b6fa03c761f91ba344e140e6a083f0043227b68f4c467ccfab9a7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584691+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Peterson vs. Hernandez",
+        "description": "Coverage of Peterson against Hernandez.",
+        "raw": "Peterson vs. Hernandez"
+      }
     },
     "22ef576d40fc7fef3f54a973fd2ca7f16fda65f6da5c02489a2aea08575c1c46": {
       "created_at": "2026-11-06T03:30:23.708949+00:00",
@@ -1974,10 +1983,13 @@
       }
     },
     "363d80385a8570f925ccde5471626a43717cd1aced716b63970f07de2ab01acc": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584687+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Panthère Noir vs. Never Give Up",
+        "description": "Coverage of Panthère Noir against Never Give Up.",
+        "raw": "Panthère Noir vs. Never Give Up"
+      }
     },
     "36c2fe58cb81112e07baac970fd8d542916b68e9ffb925299c2465f247938834": {
       "created_at": "2026-11-08T05:29:32.514158+00:00",
@@ -1989,10 +2001,13 @@
       }
     },
     "36c8dd97a8e15e8f8125ff04522e754608b170f5a65c490da031f69957519234": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584675+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Miami Round 6 Race Off",
+        "description": "Coverage of Miami Round 6 Race Off.",
+        "raw": "Miami - Round 6, Race Off"
+      }
     },
     "36d43be6d45affb0d4e7bf28ab80fd05ea025ee52a87310580ef8b639a0c775e": {
       "created_at": "2026-11-07T13:33:23.422104+00:00",
@@ -2925,10 +2940,13 @@
       "title": "Newcastle Utd vs Everton"
     },
     "51a1fa375934667236c0cafc05ad9bfd45f9749a07787a5c9a94ffd1f588154b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584657+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Princeton Revolution vs. Carolina Gold Rush",
+        "description": "Coverage of Princeton Revolution against Carolina Gold Rush.",
+        "raw": "MLTT - Week 5: Princeton Revolution vs. Carolina Gold Rush"
+      }
     },
     "521407fa1844618c07ac05afa782e6364b278a548b7592ee4ffd602c487f7c3e": {
       "created_at": "2026-11-07T16:17:32.146912+00:00",
@@ -6520,10 +6538,13 @@
       }
     },
     "b5a33f2d8227ec0c6e2982b6ca7a42e8be61207821b39e6f91c43f2668d50132": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584685+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Panama U23 vs. Cuba U23",
+        "description": "Coverage of Panama U23 against Cuba U23.",
+        "raw": "Panama U23 vs. Cuba U23"
+      }
     },
     "b5ada815eb6e6723bf850b883ab5e7246c56204739ae46df9af48ed6e8c6a36e": {
       "created_at": "2026-11-07T14:24:34.772812+00:00",
@@ -6827,10 +6848,13 @@
       }
     },
     "bc636bc9503fc6ab59346565e9adbfc1b98ec7ce7f603f7816c02831a0c3a733": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584680+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Northern Iowa vs. Michigan State",
+        "description": "Coverage of Northern Iowa against Michigan State.",
+        "raw": "Northern Iowa @ Michigan State"
+      }
     },
     "bc76d9ca59ded8007ab9bf5bcc070ec35f0e69653090b7a6c324eed4d5afa934": {
       "created_at": "2026-10-26T19:21:40.738708+00:00",
@@ -7741,10 +7765,13 @@
       }
     },
     "d4a5aa7396d15e9397dfed471a0974ea5133800656ac7f2076e569eefe141de3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584689+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Pau-Lacq-Orthez vs. Strasbourg",
+        "description": "Coverage of Pau-Lacq-Orthez against Strasbourg.",
+        "raw": "Pau-Lacq-Orthez vs. Strasbourg"
+      }
     },
     "d4fce04baf58d1dfdfb04ac5e6450ed6126b8f7dd507d4b8b9ded8ac5cf3a34d": {
       "created_at": "2026-11-07T15:17:20.541512+00:00",
@@ -8280,10 +8307,13 @@
       }
     },
     "e1e75f495e727fdb488b9d1693b29f1bbf2b0685c885882599fa71e26e2ab4eb": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-13T17:31:13.584678+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-13T16:48:10.428435+00:00"
+      "result": {
+        "clean_title": "Nicaragua U19 vs. Cuba U19",
+        "description": "Coverage of Nicaragua U19 against Cuba U19.",
+        "raw": "Nicaragua U19 vs. Cuba U19"
+      }
     },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
       "created_at": "2026-11-09T22:26:26.057785+00:00",
