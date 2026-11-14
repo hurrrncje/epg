@@ -376,7 +376,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -1913,6 +1913,12 @@
         "raw": "Flames @ Kraken"
       }
     },
+    "2d98fc5f9d696e71c6fc0e9bd8f6fa9cbaa12e9113cbbc417e2ae7051819782a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
+    },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690113+00:00",
@@ -2342,6 +2348,12 @@
       "result": "Texas Southern plays Tulane in an NCAA women's basketball regular‑season game.",
       "title": "Texas Southern vs. Tulane"
     },
+    "378590c4751e1755c0d215356b8c3f8e2d145a50c274d889a9ab33cdecd0ec14": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
+    },
     "379f154575f25ce42af65c749d1d84600e7b69f358dcd442cfc6d31cd583251e": {
       "created_at": "2026-11-07T19:26:01.018345+00:00",
       "kind": "live-title",
@@ -2738,7 +2750,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "40f068beac846fbcb0f928e820feab8c3e4270f2c13a6e03ab8f171dd52123ce": {
       "created_at": "2026-10-26T12:30:58.030794+00:00",
@@ -4533,7 +4545,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "6f25a69da99fe4756948d4efe65b317d88e059dc427cdc8d8c9dea8aaf7777c4": {
       "context": "MAX UK event scheduled 02/11/2026 19:30 GMT",
@@ -5586,7 +5598,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
@@ -7263,7 +7275,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "aff215f239fa4ba5ee9902aa1851ffd98efd9929992dfb56bdc6eb8531aba233": {
       "created_at": "2026-11-08T05:30:03.515473+00:00",
@@ -7326,7 +7338,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "b1c6eab7fa66bd00559bca1f9b0bc143be7296a3703846664d7d553ae0924df8": {
       "created_at": "2026-11-08T14:21:58.625408+00:00",
@@ -8470,7 +8482,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "cadb478bd3a1a300ffb5b63a45365416ef5b0822da8f3e60abf3121af1000bb8": {
       "created_at": "2026-11-14T06:30:58.331170+00:00",
@@ -8980,6 +8992,12 @@
         "description": "Coverage of Japan U17 against Korea DPR U17.",
         "raw": "Japan U17 vs. Korea DPR U17"
       }
+    },
+    "d742a6f34cc0e2f48b8afa09a55197ff912b0a6a08b212b4c111773553354105": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "d746f88501e87305043975545ccaba50a587ab7f0587d386c2c14728de5e30ef": {
       "created_at": "2026-11-10T05:32:33.153345+00:00",
@@ -9504,7 +9522,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "e38e188cae4715182544d846c792bbcc21adc212fadefa4199cb38cb9b5dcf2e": {
       "created_at": "2026-11-07T13:33:06.938277+00:00",
@@ -9931,7 +9949,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "eccfad99d3c9794cf442420977fa87b4f7aeeeb7fe20580e86c9f37823d9a763": {
       "created_at": "2026-11-07T13:33:23.422086+00:00",
@@ -10364,7 +10382,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T18:15:12.365740+00:00"
+      "retry_after": "2026-11-14T19:34:04.727516+00:00"
     },
     "f79b14657aa78be2bbd71031723831179413bfcf00a967d3b14fdf1a30f41114": {
       "created_at": "2026-11-08T05:29:51.590157+00:00",
@@ -10673,8 +10691,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-14T19:34:04.727516+00:00",
-    "groq": "2026-11-14T18:15:12.365740+00:00"
+    "gemini": "2026-11-14T19:34:04.727516+00:00"
   },
   "version": 1
 }
