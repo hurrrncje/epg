@@ -14,6 +14,12 @@
       "result": "CBS Sports HQ Postgame recap of recent sports events.",
       "title": "cbssportshq: The Postgame"
     },
+    "008c084c830d217f1db4375326c1b5cc7979eb90d765fa58af34d7531f212ef5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "01434a3f44fe7397315f03e056c454f7b895bc951cd133ad5000191280cf910b": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
       "created_at": "2026-11-03T04:31:24.766735+00:00",
@@ -259,6 +265,12 @@
         "raw": "Hall of Fame Tip-Off: Providence vs. Nebraska"
       }
     },
+    "078f89639981b13415410535dcf8ad5f2a8f3ca8be42f7b1e189fec93b7c9a6c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "07e83b2e2ddbdff0f0c0b79bd2d0b09b98a65d4706cc1159e6b5c6ad8cfeae50": {
       "context": "ESPN+ event scheduled 01/11/2026 02:00 GMT",
       "created_at": "2026-11-01T09:25:26.843938+00:00",
@@ -273,6 +285,15 @@
         "clean_title": "Ducks vs. Canucks",
         "description": "Coverage of Ducks against Canucks.",
         "raw": "Ducks @ Canucks"
+      }
+    },
+    "083aaad78d077c9f78034b0e36452769154830a03d40691c95b2b770e6ac56a1": {
+      "created_at": "2026-11-14T05:29:37.608179+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Houston vs. Colorado",
+        "description": "Coverage of Houston against Colorado.",
+        "raw": "Houston @ Colorado"
       }
     },
     "08ab0d32bedc92ca1a8f891dffbf0953de3118644f615fa6c0018f084ab752ed": {
@@ -1254,6 +1275,15 @@
       "result": "North Carolina Courage play Denver Summit in the National Women’s Soccer League on 01/11/2026 at 22:00 GMT.",
       "title": "NWSL: North Carolina Courage - Denver Summit"
     },
+    "251709f0aec90a1ea53840a9e4dc8e19b36101d11944adcb5881fe3c749d9f63": {
+      "created_at": "2026-11-14T05:29:37.608182+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Illinois vs. UCLA",
+        "description": "Coverage of Illinois against UCLA.",
+        "raw": "Illinois @ UCLA"
+      }
+    },
     "25259006be28b54e09c2b95fc6734caf5ab75799e9c5cad770381a4a09013b23": {
       "created_at": "2026-11-04T00:18:05.294018+00:00",
       "kind": "live-title",
@@ -1532,6 +1562,15 @@
         "clean_title": "The Dirt Track at Charlotte",
         "description": "Coverage of The Dirt Track at Charlotte.",
         "raw": "The Dirt Track at Charlotte"
+      }
+    },
+    "2a7adc846a983c8f320da70a9c0dd201c6195f86c9688f620e5c3d7fcfb0b977": {
+      "created_at": "2026-11-14T05:29:37.608184+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Japan U23 vs. Chinese Taipei U23",
+        "description": "Coverage of Japan U23 against Chinese Taipei U23.",
+        "raw": "Japan U23 vs. Chinese Taipei U23"
       }
     },
     "2a8f3020273d59a6a895294131ddb8a337169de0d44bf8cef5b6cf9912aacee5": {
@@ -2204,6 +2243,15 @@
         "raw": "Japan U23 vs. Great Britain U23"
       }
     },
+    "3ca098cf61555d0860d044dc7783b63e8d2fb8b4e61c86ccd71ea5ba8060ad95": {
+      "created_at": "2026-11-14T05:29:37.608188+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Princeton Revolution vs. Carolina Gold Rush",
+        "description": "Coverage of Princeton Revolution against Carolina Gold Rush.",
+        "raw": "MLTT - Week 5: Princeton Revolution vs. Carolina Gold Rush"
+      }
+    },
     "3ce8aa443db625e4cc87566ad12184fe4eae4d6a58d17d490f29e002d30bd45f": {
       "created_at": "2026-11-13T15:26:57.908657+00:00",
       "kind": "live-title",
@@ -2334,6 +2382,15 @@
         "clean_title": "Flyers vs Canucks",
         "description": "Coverage of Flyers against Canucks.",
         "raw": "Flyers @ Canucks"
+      }
+    },
+    "3f8c459b28264b2c85b1bd4d420c06476368b3791ecb5dde28d30b808904a46c": {
+      "created_at": "2026-11-14T05:29:37.608192+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Northern Iowa vs. Michigan State",
+        "description": "Coverage of Northern Iowa against Michigan State.",
+        "raw": "Northern Iowa @ Michigan State"
       }
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
@@ -2467,6 +2524,12 @@
         "description": "Montreal Canadiens defeated the St. Louis Blues 2‑0 at Enterprise Center on Oct 27 2026, with Jacob Fowler recording a career‑high 46‑save shutout【3†L10-L20】.",
         "raw": "Canadiens @ Blues"
       }
+    },
+    "42bfc9c12fb986a886605b7f6ecbf21cc2b4cbc796ec1e70bb4065cac91a39ee": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
     },
     "42c74259f938a2fd5b480242c189bb207ca2078520fda3aee1c50cf9f4722a73": {
       "created_at": "2026-11-05T01:50:57.853663+00:00",
@@ -2842,6 +2905,18 @@
         "description": "Coverage of James Madison against Southern Miss.",
         "raw": "James Madison @ Southern Miss"
       }
+    },
+    "4ed25c0c7d407c9cd5897346af467c79f649c4c954776629bcf673ea8185c2d4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
+    "4ed9eeb9ce612929aace0e6b364d7068490dbc2c56166d1618ecc79dd13cbaf5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:29:48.705118+00:00"
     },
     "4eef478580ecb325758b8dab4f8554ab37fe501915e36c97657df7b5fb1c4049": {
       "context": "MLS fixture scheduled 31/10/2026 17:55 GMT",
@@ -3596,6 +3671,12 @@
         "raw": "Black Man Warriors vs. Paynesville FC"
       }
     },
+    "633cba0bbc3c809c17ab0c88cf340f9f4b6224ed476f726e71a35a84d919084a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:29:48.705118+00:00"
+    },
     "63657ad0d5c30807979139084f1db86b17bb63cbec8ad3cd9d76d127e8598f05": {
       "context": "Disney+ Events event scheduled 02/11/2026 02:00 GMT",
       "created_at": "2026-11-02T03:33:22.316107+00:00",
@@ -3771,6 +3852,15 @@
         "clean_title": "Germany U21 vs Belgium U21",
         "description": "Coverage of Germany U21 against Belgium U21.",
         "raw": "Germany U21 vs. Belgium U21"
+      }
+    },
+    "6bcd7828a51181b840ef63b7a1bc13f9001045dc023fe5c984d42b42a1d89870": {
+      "created_at": "2026-11-14T05:29:37.608196+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Peterson vs. Hernandez",
+        "description": "Coverage of Peterson against Hernandez.",
+        "raw": "Peterson vs. Hernandez"
       }
     },
     "6bd5f0ba5ddd76b32dffc9c146eaa0f26075c13807c9e34be624d3bcb33ceb3e": {
@@ -4138,6 +4228,12 @@
         "raw": "Nanterre 92 vs. Élan Chalon"
       }
     },
+    "73fa4863d7f131a68bd67c42df8528147a2456f22f37b017e9bda72a9588a523": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "7438b4ec5e6ffd8a7d15f355415eb7db500e7b08013dc586ba69027677c2ceff": {
       "created_at": "2026-11-09T22:26:26.057773+00:00",
       "kind": "live-title",
@@ -4204,6 +4300,12 @@
         "raw": "LAR @ WAS, DET @ MIA, CLE @ NO, RedZone"
       }
     },
+    "75926a934832b0bf4ab935d39d0d6ae348e94f9e46cc14ddc22b1447f9260c12": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "7602144183d6ba2bc27e7d7f35ab68f058c2425bb6d0cafa1482c271fdb2aea8": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
       "created_at": "2026-10-29T03:25:48.898662+00:00",
@@ -4267,6 +4369,12 @@
       "created_at": "2026-10-26T12:30:58.030817+00:00",
       "kind": "event-description",
       "result": "UTSA Weekly Soccer Press Conference."
+    },
+    "7880a5f402df2b3b53ef13a74ba067aff0f0777e4cebda8979030184c0df656a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:29:48.705118+00:00"
     },
     "78a444d16b46517302b9a2dd71e9031804dbc8c24a3d008d9611ecacad8fc333": {
       "created_at": "2026-11-11T05:37:07.446849+00:00",
@@ -4332,6 +4440,15 @@
         "clean_title": "Opening Ceremony",
         "description": "Coverage of Opening Ceremony.",
         "raw": "Opening Ceremony"
+      }
+    },
+    "7aaff56b24f7e2d8be85765da9c969cdd758302a962a051f72b1e6bc6b86ab0e": {
+      "created_at": "2026-11-14T05:29:37.608160+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Mississippi State vs. Xavier",
+        "description": "Coverage of Mississippi State against Xavier.",
+        "raw": "Greenbrier Tip-Off: Mississippi State vs. Xavier"
       }
     },
     "7ac4c9219b1fa243fea775aedfae5d28e167a71a2717c5c9bd49b759d81e99a9": {
@@ -5017,6 +5134,15 @@
         "raw": "Japan U23 vs. Republic of Korea U23"
       }
     },
+    "8d4be924a88ccf252a50396050a09c897fa7ae57ddd23f5a1d5e9ac0f84c18c2": {
+      "created_at": "2026-11-14T05:29:37.608190+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "NARA Nationals at Southern Illinois",
+        "description": "Coverage of NARA Nationals at Southern Illinois.",
+        "raw": "NARA Nationals Southern Illinois"
+      }
+    },
     "8dc5c537a5ad76564e0440ecbfc69e9f0088f7f6fb4dfb8f868cf573c3880158": {
       "created_at": "2026-11-06T16:30:24.696006+00:00",
       "kind": "live-title",
@@ -5498,6 +5624,12 @@
       "result": "Premier League match Tottenham Hotspur vs Crystal Palace scheduled for Oct 31 2026 at 17:30 GMT.",
       "title": "Tottenham Hotspur vs Crystal Palace"
     },
+    "9c092675467c7b13b5741c37008b8feddf0df95f05a19d487690a65e54ad3c1a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "9c1b2ad831c58a6c9c67bce273cf395f4a40ce583ad8e3103b9114df30b3318f": {
       "created_at": "2026-11-07T02:27:15.103068+00:00",
       "kind": "live-title",
@@ -5847,6 +5979,12 @@
       "result": "Carnegie Mellon University women's basketball team competes against Princeton.",
       "title": "Carnegie Mellon University vs. Princeton"
     },
+    "a43585760fcf6ba117f55261628920701898e81de3df508327fcb370d4b56520": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "a474d65e7bd65047b2c5d4eae135bebe10c38f9fc3ec42a6411daa28c3e54def": {
       "created_at": "2026-11-06T05:37:42.631716+00:00",
       "kind": "live-title",
@@ -5923,6 +6061,12 @@
         "description": "Coverage of Grambling against Texas.",
         "raw": "Grambling @ Texas"
       }
+    },
+    "a61abb1b8731148206e293d50c78c6f85793c43416248f48494d92976feaf675": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:29:48.705118+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -6163,6 +6307,15 @@
         "clean_title": "New Jersey Devils vs Dallas Stars",
         "description": "NHL regular season game between the New Jersey Devils and the Dallas Stars, scheduled for Wednesday, October 28, 2026 at the American Airlines Center in Dallas, TX. 【8†L21-L22】",
         "raw": "Devils @ Stars"
+      }
+    },
+    "abdc25837cf0de4416521bf68ef8c4daabf394718478e853eaafe252b55c20c8": {
+      "created_at": "2026-11-14T05:29:37.608194+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Peterson vs. Hernandez",
+        "description": "Coverage of Peterson against Hernandez.",
+        "raw": "Peterson v Hernandez"
       }
     },
     "abf529027d4ef9ac0da0e55f110af4c2e66ea079e6271028b1e2cb65e1ba26d3": {
@@ -7036,6 +7189,12 @@
         "raw": "Media Fight Night 2026"
       }
     },
+    "c22e4ad5985a462d129aeae7833d011f5910adea29c2581bba9d6a56021e93e7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:29:48.705118+00:00"
+    },
     "c248a78d0b5e347ce7587ce82f6f5d2c0be85bf43049524e3ebf19e2fe21d38c": {
       "created_at": "2026-10-26T19:21:40.738705+00:00",
       "kind": "live-title",
@@ -7412,6 +7571,12 @@
         "description": "Coverage of Tenerife against Joventut.",
         "raw": "Tenerife vs. Joventut"
       }
+    },
+    "cadb478bd3a1a300ffb5b63a45365416ef5b0822da8f3e60abf3121af1000bb8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
     },
     "cafdc9decc069a8032eb4c70d536d23df8b029c0629ad916c8e508edb09f3a57": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -8622,6 +8787,12 @@
       "result": "NCAA Division I men's basketball: Utah Utes vs Long Beach State Beach.",
       "title": "Long Beach State vs. Utah"
     },
+    "e7a8c25f4caaf89b71566ce6ed505650536ec204b16053ff045c7ee54b83cc29": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-14T05:44:23.111579+00:00"
+    },
     "e7b062f1df817869c462fc8d7816aeabe0cffdca6ee14bfa18e70f274effcc3e": {
       "created_at": "2026-11-06T16:30:24.696013+00:00",
       "kind": "live-title",
@@ -8815,6 +8986,15 @@
       "kind": "event-description",
       "result": "MLS match between Seattle Sounders FC and Houston Dynamo FC scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "9 | Seattle Sounders FC vs Houston Dynamo FC (English)"
+    },
+    "ef1ab0c66b6b768cf1bab6153b1f0b42f3ef8d9519e48141c19c2c31c5579a7a": {
+      "created_at": "2026-11-14T05:29:37.608186+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Le Castellet Race 1",
+        "description": "Coverage of Le Castellet Race 1.",
+        "raw": "Le Castellet: Race 1"
+      }
     },
     "ef4af734f4be28015f06ad30713e2026be5bc7bead2c2ffc6a8de06785fc25ec": {
       "context": "EFLSheffieldWednesday.uk; Next Game: Sheffield Wednesday vs Cambridge United FC on 27/10/2026 at 19:45 GMT",
@@ -9415,6 +9595,9 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-14T11:29:22.392363+00:00",
+    "groq": "2026-11-14T05:29:48.705118+00:00"
+  },
   "version": 1
 }
