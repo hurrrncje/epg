@@ -376,7 +376,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
       "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
@@ -1051,10 +1051,13 @@
       }
     },
     "1bf90389b23f3425b0def891b7510f922de0be3215b3c24f601b3603ba5455f2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970967+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "Minnesota @ Penn State",
+        "description": "Coverage of Minnesota against Penn State.",
+        "raw": "Minnesota @ Penn State"
+      }
     },
     "1bfc4bf7bcd59fad17ee2248058c23f8a0affda1b8d3f7dcaf0e14211edf3ac7": {
       "created_at": "2026-11-07T22:16:07.678310+00:00",
@@ -1910,12 +1913,6 @@
         "raw": "Flames @ Kraken"
       }
     },
-    "2d98fc5f9d696e71c6fc0e9bd8f6fa9cbaa12e9113cbbc417e2ae7051819782a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
-    },
     "2df28203375b4c789619a2a680fba094cd6dac3aa6a36010cdec4c23de3bbaf2": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690113+00:00",
@@ -2175,6 +2172,15 @@
         "raw": "Senators @ Penguins"
       }
     },
+    "347d7a4f16bc5770869548802f5d3514d06e2b2dc0f99f8188856486d651b842": {
+      "created_at": "2026-11-14T18:14:59.970956+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "FC 334 Gane v Hokit",
+        "description": "Coverage of FC 334 Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
+      }
+    },
     "348c6166a52e840a65637c9de6021f8ad13c89e768305818963dcb68f55d30eb": {
       "created_at": "2026-11-09T22:26:26.057748+00:00",
       "kind": "live-title",
@@ -2335,12 +2341,6 @@
       "kind": "event-description",
       "result": "Texas Southern plays Tulane in an NCAA women's basketball regular‑season game.",
       "title": "Texas Southern vs. Tulane"
-    },
-    "378590c4751e1755c0d215356b8c3f8e2d145a50c274d889a9ab33cdecd0ec14": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
     },
     "379f154575f25ce42af65c749d1d84600e7b69f358dcd442cfc6d31cd583251e": {
       "created_at": "2026-11-07T19:26:01.018345+00:00",
@@ -2738,7 +2738,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "40f068beac846fbcb0f928e820feab8c3e4270f2c13a6e03ab8f171dd52123ce": {
       "created_at": "2026-10-26T12:30:58.030794+00:00",
@@ -2866,10 +2866,13 @@
       }
     },
     "43f99bc4679af4b2173cd3e7a17c5d907965924eecdfd4929a139cf8a556bbff": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970965+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "Michigan @ Oregon",
+        "description": "Coverage of Michigan against Oregon.",
+        "raw": "Michigan @ Oregon"
+      }
     },
     "444f0a328d06497dce5b298dbd17c6d2fc29fd2a9afffafedb0c9ee3f70cb232": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
@@ -4046,10 +4049,13 @@
       }
     },
     "61206856db23f74afac2a5e8943410de9bf9de5b663cb360892b539e7630bad2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970961+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "Miami - Round 7, Group Stages",
+        "description": "Coverage of Miami - Round 7, Group Stages.",
+        "raw": "Miami - Round 7, Group Stages"
+      }
     },
     "6141d004d52ba61211253ddf3be974667672d8cb4f7502638ed6938060edd9fd": {
       "created_at": "2026-10-26T12:30:58.030774+00:00",
@@ -4527,7 +4533,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "6f25a69da99fe4756948d4efe65b317d88e059dc427cdc8d8c9dea8aaf7777c4": {
       "context": "MAX UK event scheduled 02/11/2026 19:30 GMT",
@@ -4573,10 +4579,13 @@
       }
     },
     "6fcc9ce71595db31ddcf3cee98f2234746cf2273583fd33210279927aad42f42": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970971+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "NU @ OSU, WAKE @ SMU, SYR @ NCSU, NEB @ RUT",
+        "description": "Coverage of NU against OSU, WAKE @ SMU, SYR @ NCSU, NEB @ RUT.",
+        "raw": "NU @ OSU, WAKE @ SMU, SYR @ NCSU, NEB @ RUT"
+      }
     },
     "6fde61241a308e1f3ccfb20e9c1326d93c90e98c5817e7e3960c548c1d50a6e3": {
       "created_at": "2026-10-26T12:30:58.030789+00:00",
@@ -5577,7 +5586,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
@@ -7081,10 +7090,13 @@
       }
     },
     "ab88a683e86f5c1f4a895ebdf05e1039be6fdcca8b42d7c93bf156269f22f330": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970963+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "Miami - Round 7, Race Off",
+        "description": "Coverage of Miami - Round 7, Race Off.",
+        "raw": "Miami - Round 7, Race Off"
+      }
     },
     "abdc25837cf0de4416521bf68ef8c4daabf394718478e853eaafe252b55c20c8": {
       "created_at": "2026-11-14T05:29:37.608194+00:00",
@@ -7251,7 +7263,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "aff215f239fa4ba5ee9902aa1851ffd98efd9929992dfb56bdc6eb8531aba233": {
       "created_at": "2026-11-08T05:30:03.515473+00:00",
@@ -7314,7 +7326,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "b1c6eab7fa66bd00559bca1f9b0bc143be7296a3703846664d7d553ae0924df8": {
       "created_at": "2026-11-08T14:21:58.625408+00:00",
@@ -8458,7 +8470,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "cadb478bd3a1a300ffb5b63a45365416ef5b0822da8f3e60abf3121af1000bb8": {
       "created_at": "2026-11-14T06:30:58.331170+00:00",
@@ -8508,6 +8520,15 @@
         "clean_title": "ONE Fight Night 49: Gabriel vs Rasulov",
         "description": "Coverage of ONE Fight Night 49: Gabriel against Rasulov.",
         "raw": "ONE Fight Night 49 Gabriel v Rasulov"
+      }
+    },
+    "cbdd93976012538c50d2e0e1bf979b2be3438ba97f426d7f9bfc982540681cd8": {
+      "created_at": "2026-11-14T18:14:59.970935+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
       }
     },
     "cbfb56ce05d089fb15faadc1ab5f7d9fbe134a8797c6b12e7684db01e454dbce": {
@@ -8960,12 +8981,6 @@
         "raw": "Japan U17 vs. Korea DPR U17"
       }
     },
-    "d742a6f34cc0e2f48b8afa09a55197ff912b0a6a08b212b4c111773553354105": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
-    },
     "d746f88501e87305043975545ccaba50a587ab7f0587d386c2c14728de5e30ef": {
       "created_at": "2026-11-10T05:32:33.153345+00:00",
       "kind": "live-title",
@@ -8997,6 +9012,15 @@
       "kind": "event-description",
       "result": "Round 2 of the 2026 International Championship snooker ranking event.",
       "title": "Round 2: International Championship"
+    },
+    "d7f81704c31912e0695a0ec9e1aba4043c56ccf1d3c34e365255a791b1c63071": {
+      "created_at": "2026-11-14T18:14:59.970952+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "BKB 61 Selby v Ollie",
+        "description": "Coverage of BKB 61 Selby against Ollie.",
+        "raw": "BKB 61 Selby v Ollie"
+      }
     },
     "d7ff3ac6ea3873863c9b6fec265292dae795c1246dd07db31b362fcc49fa84ef": {
       "created_at": "2026-10-26T19:21:40.738758+00:00",
@@ -9480,7 +9504,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "e38e188cae4715182544d846c792bbcc21adc212fadefa4199cb38cb9b5dcf2e": {
       "created_at": "2026-11-07T13:33:06.938277+00:00",
@@ -9852,10 +9876,13 @@
       "title": "Devils @ Stars"
     },
     "eb71d0e009952da41e1ce385ccf441e9add9b8aeca94a6ec603d77d1f2625754": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970969+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "Missouri @ Georgia",
+        "description": "Coverage of Missouri against Georgia.",
+        "raw": "Missouri @ Georgia"
+      }
     },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
@@ -9904,7 +9931,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "eccfad99d3c9794cf442420977fa87b4f7aeeeb7fe20580e86c9f37823d9a763": {
       "created_at": "2026-11-07T13:33:23.422086+00:00",
@@ -10316,10 +10343,13 @@
       }
     },
     "f7262e2194a1e7eea9d4a86529a3a6ff3d49c0030dcb114efd4af56217c0356f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-14T18:14:59.970959+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:50.813418+00:00"
+      "result": {
+        "clean_title": "MNE @ PSU, TEX @ LSU, PUR @ IOWA, STAN @ VT",
+        "description": "Coverage of MNE against PSU, TEX @ LSU, PUR @ IOWA, STAN @ VT.",
+        "raw": "MNE @ PSU, TEX @ LSU, PUR @ IOWA, STAN @ VT"
+      }
     },
     "f7382a14f1f62d5fe499f0cedbc00fb6c4bb898dae5e8dc3c659cdd90d581cbb": {
       "created_at": "2026-11-08T15:17:55.840692+00:00",
@@ -10334,7 +10364,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-14T17:32:51.888993+00:00"
+      "retry_after": "2026-11-14T18:15:12.365740+00:00"
     },
     "f79b14657aa78be2bbd71031723831179413bfcf00a967d3b14fdf1a30f41114": {
       "created_at": "2026-11-08T05:29:51.590157+00:00",
@@ -10643,7 +10673,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-14T19:34:04.727516+00:00"
+    "gemini": "2026-11-14T19:34:04.727516+00:00",
+    "groq": "2026-11-14T18:15:12.365740+00:00"
   },
   "version": 1
 }
