@@ -803,7 +803,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "1306e338d72d883cd4772ef7065a92e36ef43214c3514d740758c94d25de611b": {
       "created_at": "2026-11-08T14:21:58.625431+00:00",
@@ -992,7 +992,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "1610c02278b4fd98ac91ae5b2529008cb026f628596f577189c45ac9f8d07cf6": {
       "created_at": "2026-11-13T17:31:13.584683+00:00",
@@ -1593,7 +1593,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -2163,7 +2163,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "2cd571018fbcf78d8fc8b55bc48c76fe39f69c890b15a10f8b1f71aac7b13969": {
       "created_at": "2026-11-15T05:33:11.434126+00:00",
@@ -2350,7 +2350,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "308b177cf09ba5dfd3071e87898cbff8a47270dc736e4c04e80e8b608d74c4df": {
       "created_at": "2026-11-07T22:16:07.678303+00:00",
@@ -3570,7 +3570,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "4a442317130fb8e5780c5dc51b8e10a169fa053447d673a61adf15b0642d5b6f": {
       "created_at": "2026-11-07T06:27:35.762103+00:00",
@@ -4507,7 +4507,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "5ee5256dc58e0b6f71b5259ec7385eed28286bce6cb465df5a4687887c72dff1": {
       "created_at": "2026-11-13T00:24:26.882192+00:00",
@@ -4699,7 +4699,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "61c45b1c4d64a73bc76ace7cfb80d5bf63afa9cb89df2b74c63fba6459e741ca": {
       "created_at": "2026-11-09T18:28:25.464105+00:00",
@@ -5224,7 +5224,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "6f6d4667846146587c990edfbfb38be4f02a98410ab2af0c539888e145d99b7d": {
       "created_at": "2026-11-07T06:27:35.762087+00:00",
@@ -5610,7 +5610,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "782e69bfcd909dfde1d57d71b55ff8142c6a192aaebf5adf09fb663cd626c8d7": {
       "created_at": "2026-11-11T06:38:48.807936+00:00",
@@ -6078,7 +6078,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "81738332a764df173af3ff58680b979f8c8d49a1e5391120c772c0a75d7f6088": {
       "created_at": "2026-11-10T16:30:33.325110+00:00",
@@ -6399,7 +6399,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
@@ -7266,7 +7266,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
@@ -8541,7 +8541,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "b7507c7557ceaab158a74fb8fde019c32f829146c416019022741218b250b262": {
       "created_at": "2026-11-08T16:16:24.705349+00:00",
@@ -8690,7 +8690,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
       "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
@@ -8726,7 +8726,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.824303+00:00"
     },
     "bb58e85bb03542d57877380861c16c8aac2c6d22230affdbf72008e97a55bcd6": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -9909,7 +9909,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -10148,7 +10148,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "d84240efa4d4c5cc0d6a514e39a12116de815c9082fc2e90fcfc4fdf9b9620b6": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -10471,7 +10471,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "df81ad007ae26602f10df1b62b3562455e307a7faf1c6923933a6af2e280ffd0": {
       "created_at": "2026-11-10T13:47:32.391021+00:00",
@@ -11612,7 +11612,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T19:36:27.311565+00:00"
+      "retry_after": "2026-11-15T20:33:22.115757+00:00"
     },
     "f79a4ce36321675ba737f86ee0d161bc8a3876ba700afd5181966a90484d54e5": {
       "created_at": "2026-11-14T20:15:15.573736+00:00",
@@ -11966,7 +11966,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-15T19:36:27.311565+00:00"
+    "gemini": "2026-11-16T02:18:20.808328+00:00"
   },
   "version": 1
 }
