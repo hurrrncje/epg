@@ -478,10 +478,13 @@
       }
     },
     "0c1adb05a459ae923f01c044652b1f5ae2d5b558dee67d140206aa6e60e5e886": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821279+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Red Wings vs Lightning",
+        "description": "Coverage of Red Wings against Lightning.",
+        "raw": "Red Wings @ Lightning"
+      }
     },
     "0c54c1863ec90cd190a92818c50ac5a380ea1410a620abff9e1dc70dcc0a24e6": {
       "context": "ESPN+ event scheduled 03/11/2026 17:00 GMT",
@@ -1733,10 +1736,13 @@
       "title": "Loyola Marymount vs. Portland"
     },
     "28bdd569970325ba72ae87640b24e311fa1097db64b55bb7861a303e0c314f01": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821297+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Texas Tech vs Oklahoma State",
+        "description": "Coverage of Texas Tech against Oklahoma State.",
+        "raw": "Texas Tech @ Oklahoma State"
+      }
     },
     "2925f743caec3f17a17714fd3597701b296c5629b69264d4908dccc6d55d79e4": {
       "context": "DAZN UK event scheduled 01/11/2026 15:15 GMT",
@@ -1837,10 +1843,13 @@
       }
     },
     "2a0363b759503cde8f1217b504bc35ae89bd48a998370c9b81599348cb571fc3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821287+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Sharks vs Mammoth",
+        "description": "Coverage of Sharks against Mammoth.",
+        "raw": "Sharks @ Mammoth"
+      }
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -3018,10 +3027,13 @@
       }
     },
     "433c3ae34e0695fd8871f61c32fd4659d4329253b6ae3e6343b6a8a9051a7155": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821295+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Texas vs LSU",
+        "description": "Coverage of Texas against LSU.",
+        "raw": "Texas @ LSU"
+      }
     },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
       "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
@@ -3031,10 +3043,13 @@
       "title": "Toronto Maple Leafs vs. Seattle Kraken"
     },
     "4390fc517909aa3a3f6adea76d92cd9ba49fafec561062b7c00512083801583c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821282+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Sabres vs Stars",
+        "description": "Coverage of Sabres against Stars.",
+        "raw": "Sabres @ Stars"
+      }
     },
     "43b67b9ebeab6c5b14ee61a040985380486fbe949fdffa23d6c776466ead20b8": {
       "created_at": "2026-11-09T09:41:25.797830+00:00",
@@ -4415,10 +4430,13 @@
       }
     },
     "657fe3dada9cb178faadee2b1422d6d23d966e3e02a0a7f7fefa2fccf1968f04": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821290+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "South Carolina vs Arkansas",
+        "description": "Coverage of South Carolina against Arkansas.",
+        "raw": "South Carolina @ Arkansas"
+      }
     },
     "65925cedba89369fc79628f1cdaf31a8512d91e3a8e895d2a9ee5745fa5a64a1": {
       "created_at": "2026-11-08T14:21:22.621299+00:00",
@@ -6954,10 +6972,13 @@
       "title": "Maryville (MO) vs. Missouri"
     },
     "a256e0fda23f671c4bce247ae04eb6770b040ae0e5cf6d974c45c457c8f52c5f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821284+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Senators vs Penguins",
+        "description": "Coverage of Senators against Penguins.",
+        "raw": "Senators @ Penguins"
+      }
     },
     "a2c4b439899598c0cc8f2dc1207a3a5f68c055b062d5f9d462d6485402c4fd60": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -7167,10 +7188,13 @@
       }
     },
     "a6d24cda6a711b1342da7a1d63dade59c0edeaed91f7ddb34b3b7d297bd4b6ef": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821293+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Texas vs LSU, Utah vs Arizona State, Purdue vs Iowa, South Carolina vs Arkansas",
+        "description": "Coverage of Texas against LSU, Utah vs Arizona State, Purdue vs Iowa, South Carolina vs Arkansas.",
+        "raw": "TEX @ LSU, UTA @ AZN, PUR @ IOWA, SC @ ARK"
+      }
     },
     "a6e4fc63de05276b0a4d878e809b4beb1bcad4dbc9f98c7a435e2420d39dfae9": {
       "context": "Celtic.spfl; Next Game: Celtic vs Beşiktaş on 05/11/2026 at 21:00 GMT",
@@ -7853,10 +7877,13 @@
       "title": "Chattanooga vs. #11 Louisville"
     },
     "b61ce9e9707e73001c1fae541666c1de346c0067319ec438a94fbc0fbc321078": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821292+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Stanford vs Virginia Tech",
+        "description": "Coverage of Stanford against Virginia Tech.",
+        "raw": "Stanford @ Virginia Tech"
+      }
     },
     "b635bb2639a0ff95efcda92aee2ba9645dee490e2cd3342c8599d4bc3fa0fe65": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -10107,10 +10134,13 @@
       }
     },
     "e6503008af080de6122bdc6cb5e0c29bc943153df651f1814ef343ab0618926c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T06:33:59.821262+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T05:48:24.252716+00:00"
+      "result": {
+        "clean_title": "Purdue vs Iowa",
+        "description": "Coverage of Purdue against Iowa.",
+        "raw": "Purdue @ Iowa"
+      }
     },
     "e653fd14e55dadb2a0e25ee5ce284bc3babbd88ac4aee7fdcbdcfe58608b313f": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
