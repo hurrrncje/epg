@@ -800,10 +800,13 @@
       }
     },
     "12ecd72dd19abc9d077f437d7f1b6b56cd290c68afa913d9191205af2876d974": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539430+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Jaguars @ Titans",
+        "description": "Coverage of Jaguars against Titans.",
+        "raw": "Jaguars @ Titans"
+      }
     },
     "1306e338d72d883cd4772ef7065a92e36ef43214c3514d740758c94d25de611b": {
       "created_at": "2026-11-08T14:21:58.625431+00:00",
@@ -989,10 +992,13 @@
       }
     },
     "160fa825c3020451b5d4fa36c0b4cc53319074bc9b516fd0b61098ff74897fdd": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539426+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Inter Wanica vs. Notch",
+        "description": "Coverage of Inter Wanica against Notch.",
+        "raw": "Inter Wanica vs. Notch"
+      }
     },
     "1610c02278b4fd98ac91ae5b2529008cb026f628596f577189c45ac9f8d07cf6": {
       "created_at": "2026-11-13T17:31:13.584683+00:00",
@@ -2163,10 +2169,13 @@
       }
     },
     "2c8b8e2b252f3d9dbd9ddf110aa62b066143f01304cf14d1b3cb45829e6999ef": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539406+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Gravelines-Dunkerque vs. Nancy",
+        "description": "Coverage of Gravelines-Dunkerque against Nancy.",
+        "raw": "Gravelines-Dunkerque vs. Nancy"
+      }
     },
     "2cd571018fbcf78d8fc8b55bc48c76fe39f69c890b15a10f8b1f71aac7b13969": {
       "created_at": "2026-11-15T05:33:11.434126+00:00",
@@ -5625,10 +5634,13 @@
       }
     },
     "773dcac8d5d4715efa7b21439c070675065f4523cd57a926cec79e7b30b59d9f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539435+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Kansas City Chiefs vs. Atlanta Falcons, Buffalo Bills vs. New York Jets, Houston Texans vs. Cleveland Browns, Miami Dolphins vs. Indianapolis Colts",
+        "description": "Coverage of Kansas City Chiefs against Atlanta Falcons, Buffalo Bills vs. New York Jets, Houston Texans vs. Cleveland Browns, Miami Dolphins vs. Indianapolis Colts.",
+        "raw": "KC @ ATL, BUF @ NYJ, HOU @ CLE, MIA @ IND"
+      }
     },
     "782e69bfcd909dfde1d57d71b55ff8142c6a192aaebf5adf09fb663cd626c8d7": {
       "created_at": "2026-11-11T06:38:48.807936+00:00",
@@ -6093,10 +6105,13 @@
       }
     },
     "8169bfb9f59f562f7b7745b0fc31a022b8c0386712fdc0577184ec7fc41c182a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539432+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Japan U23 vs. Chinese Taipei U23",
+        "description": "Coverage of Japan U23 against Chinese Taipei U23.",
+        "raw": "Japan U23 vs. Chinese Taipei U23"
+      }
     },
     "81738332a764df173af3ff58680b979f8c8d49a1e5391120c772c0a75d7f6088": {
       "created_at": "2026-11-10T16:30:33.325110+00:00",
@@ -6414,10 +6429,13 @@
       }
     },
     "87a591a610e76866c91cf20f52ff75b9e48bed00c2d3e6ac3a766f44dadfc211": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539433+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Jounieh FA vs. Jwaya SC",
+        "description": "Coverage of Jounieh FA against Jwaya SC.",
+        "raw": "Jounieh FA vs. Jwaya SC"
+      }
     },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
@@ -9936,10 +9954,13 @@
       }
     },
     "d3c9f750cc6954098892d43ab5223f722ad1ee4eb8545b55e4539a8ddf2ff6eb": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539428+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Inter vs. Juventus",
+        "description": "Coverage of Inter against Juventus.",
+        "raw": "Inter vs. Juventus"
+      }
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -10175,10 +10196,13 @@
       }
     },
     "d838ffc4a35996558e076c0f6117e2ea243e02f89e365297481bafd3b416471b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539423+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Inter Moengotapoe vs. Flora",
+        "description": "Coverage of Inter Moengotapoe against Flora.",
+        "raw": "Inter Moengotapoe vs. Flora"
+      }
     },
     "d84240efa4d4c5cc0d6a514e39a12116de815c9082fc2e90fcfc4fdf9b9620b6": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -10498,10 +10522,13 @@
       "title": "cbssportshq: Scoreboard Final"
     },
     "df64b806053c79bca53291029693942cbe35f36df95a4f3abefbc4d27a781f0b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539439+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Kansas City Chiefs vs. Atlanta Falcons, Carolina Panthers vs. New Orleans Saints, Jacksonville Jaguars vs. Tennessee Titans, Miami Dolphins vs. Indianapolis Colts",
+        "description": "Coverage of Kansas City Chiefs against Atlanta Falcons, Carolina Panthers vs. New Orleans Saints, Jacksonville Jaguars vs. Tennessee Titans, Miami Dolphins vs. Indianapolis Colts.",
+        "raw": "KC @ ATL, CAR @ NO, JAX @ TEN, MIA @ IND"
+      }
     },
     "df81ad007ae26602f10df1b62b3562455e307a7faf1c6923933a6af2e280ffd0": {
       "created_at": "2026-11-10T13:47:32.391021+00:00",
@@ -11639,10 +11666,13 @@
       }
     },
     "f7917796d7fe3991a40d0cf48d4a7d3bf16a4a3b4fd818dee78b06b18b0b8062": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T22:16:40.539437+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T21:33:47.048753+00:00"
+      "result": {
+        "clean_title": "Kansas City Chiefs vs. Atlanta Falcons, Buffalo Bills vs. New York Jets, Jacksonville Jaguars vs. Tennessee Titans, Houston Texans vs. Cleveland Browns",
+        "description": "Coverage of Kansas City Chiefs against Atlanta Falcons, Buffalo Bills vs. New York Jets, Jacksonville Jaguars vs. Tennessee Titans, Houston Texans vs. Cleveland Browns.",
+        "raw": "KC @ ATL, BUF @ NYJ, JAX @ TEN, HOU @ CLE"
+      }
     },
     "f79a4ce36321675ba737f86ee0d161bc8a3876ba700afd5181966a90484d54e5": {
       "created_at": "2026-11-14T20:15:15.573736+00:00",
