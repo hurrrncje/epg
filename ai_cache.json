@@ -653,7 +653,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "0fdb12d7f10934c238f49c18c6a06eaffa1c0ad47752b45355bb9ebd0e407b6d": {
       "created_at": "2026-10-26T12:30:58.030786+00:00",
@@ -800,7 +800,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "1306e338d72d883cd4772ef7065a92e36ef43214c3514d740758c94d25de611b": {
       "created_at": "2026-11-08T14:21:58.625431+00:00",
@@ -989,7 +989,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "1610c02278b4fd98ac91ae5b2529008cb026f628596f577189c45ac9f8d07cf6": {
       "created_at": "2026-11-13T17:31:13.584683+00:00",
@@ -1140,7 +1140,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "1b507ece069ca901ac5a229d7d05d312b85bcc90439e55e8fc3d9a779b2d8814": {
       "created_at": "2026-11-06T13:50:32.471818+00:00",
@@ -1223,7 +1223,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "1c5069b4b206123b489ec6fb13324b7c5f03131a734d1b538852f94bf42a322d": {
       "created_at": "2026-11-08T16:16:24.705343+00:00",
@@ -1454,10 +1454,13 @@
       }
     },
     "2153f327a3760c9bef0fd60413ed5d87682aa24a6804e2cfe39813386f0f3f20": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075647+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "BUF @ NYJ, CAR @ NO, HOU @ CLE",
+        "description": "Coverage of BUF against NYJ, CAR @ NO, HOU @ CLE.",
+        "raw": "BUF @ NYJ, CAR @ NO, HOU @ CLE, RedZone"
+      }
     },
     "21a95dfce523936413b10b85269e88957f17fe037edc87539efaba794a357f1a": {
       "created_at": "2026-11-08T17:16:11.697708+00:00",
@@ -1581,7 +1584,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "24374354fe94b135c1f1acff55a65cb76c17dae0d52eccb6c531b85f1c30760f": {
       "created_at": "2026-10-26T12:30:58.030815+00:00",
@@ -1649,7 +1652,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "256b6673f74d1c4c788b797ce1552d6dc85d6f66bbafd85c39ef5548bc9b798d": {
       "created_at": "2026-11-04T05:36:14.786992+00:00",
@@ -2148,7 +2151,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "2cd571018fbcf78d8fc8b55bc48c76fe39f69c890b15a10f8b1f71aac7b13969": {
       "created_at": "2026-11-15T05:33:11.434126+00:00",
@@ -2335,7 +2338,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "308b177cf09ba5dfd3071e87898cbff8a47270dc736e4c04e80e8b608d74c4df": {
       "created_at": "2026-11-07T22:16:07.678303+00:00",
@@ -2427,6 +2430,15 @@
       "kind": "event-description",
       "result": "Jacksonville State Gamecocks vs New Mexico State Aggies college football game at Las Cruces, Oct 28 2026, ESPN2.",
       "title": "Jacksonville State vs. New Mexico State"
+    },
+    "32ed802d711b42d28967791614cc4436645d7d1abcc9609f576416af516a82dd": {
+      "created_at": "2026-11-15T15:20:47.533718+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Steelers @ Bengals",
+        "description": "Coverage of Steelers against Bengals.",
+        "raw": "Steelers @ Bengals (Spanish Broadcast)"
+      }
     },
     "333dbea7839f106931e37490e6312741e1abff296ac043ab614ef1c8aadbbdc2": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -2844,7 +2856,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "3ce8aa443db625e4cc87566ad12184fe4eae4d6a58d17d490f29e002d30bd45f": {
       "created_at": "2026-11-13T15:26:57.908657+00:00",
@@ -3000,7 +3012,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "3f8c459b28264b2c85b1bd4d420c06476368b3791ecb5dde28d30b808904a46c": {
       "created_at": "2026-11-14T05:29:37.608192+00:00",
@@ -3081,6 +3093,12 @@
         "raw": "Chinese Taipei U23 vs. Nicaragua U23"
       }
     },
+    "409709f6a10a6a18e2eb76fa753491f7f03dbb43f0e93ebbcfcd135577a780c3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-15T15:35:48.109455+00:00"
+    },
     "40a9d4396342c64904db2d951876dc68cc82fd34d83ef01476d1c9780c6eea8f": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
       "created_at": "2026-10-29T06:23:30.006230+00:00",
@@ -3158,7 +3176,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
@@ -3229,6 +3247,12 @@
         "description": "Coverage of Texas against LSU.",
         "raw": "Texas @ LSU"
       }
+    },
+    "4354c67c4abcf25109498c73b3e13bff0d25069cd56c707867769a30e634af91": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-15T15:35:48.109455+00:00"
     },
     "435dbd0a8a04c011b08935c3d9c404673f7a3a9eab9673f2c6e045a4fda26737": {
       "context": "ESPN+ event scheduled 29/10/2026 01:30 GMT",
@@ -3323,7 +3347,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "4547856523fdcc5cf92e5f7caf5a588328a255b2224684551beaaa3823702323": {
       "created_at": "2026-11-07T06:27:35.762102+00:00",
@@ -3516,7 +3540,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "4a442317130fb8e5780c5dc51b8e10a169fa053447d673a61adf15b0642d5b6f": {
       "created_at": "2026-11-07T06:27:35.762103+00:00",
@@ -3633,10 +3657,13 @@
       "title": "Bolton Wanderers FC vs Bristol City FC"
     },
     "4c590bbebfcb3675d6f11aef76ea3f6741be67ed7fe313948f793b56d164c22a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075639+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "AM Laâyoune vs. Phoenix Marrakesh",
+        "description": "Coverage of AM Laâyoune against Phoenix Marrakesh.",
+        "raw": "AM Laâyoune vs. Phoenix Marrakesh"
+      }
     },
     "4cd32d771817f84b35a6506c75bf41a54100ba895e455bc7e3573d2681ee79f6": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -3718,6 +3745,15 @@
         "clean_title": "Golden Knights vs. Penguins",
         "description": "Coverage of Golden Knights against Penguins.",
         "raw": "Golden Knights @ Penguins"
+      }
+    },
+    "4f3fe6456ec66a33a947fbbbd751c1fa055479a42f201e386ffdaf1ed274eaba": {
+      "created_at": "2026-11-15T15:20:47.533749+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UE Santa Coloma vs. City Escaldes",
+        "description": "Coverage of UE Santa Coloma against City Escaldes.",
+        "raw": "UE Santa Coloma vs. City Escaldes"
       }
     },
     "4f4eeaca4ca462c11bb99551e253b29c24f304516a0e820a3280243e1f78449a": {
@@ -3834,6 +3870,15 @@
         "clean_title": "Medicine Hat, AB - Day 3, Draw 11",
         "description": "Coverage of Medicine Hat, AB - Day 3, Draw 11.",
         "raw": "Medicine Hat, AB - Day 3, Draw 11"
+      }
+    },
+    "52aac6a34f00324d0c34490828a96a800a925d17d5affd48f4e6be51e382bfb6": {
+      "created_at": "2026-11-15T15:20:47.533739+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Tanzania Prisons SC vs. KMC FC",
+        "description": "Coverage of Tanzania Prisons SC against KMC FC.",
+        "raw": "Tanzania Prisons SC vs. KMC FC"
       }
     },
     "52cfa91ce72cd2505550fb55203ea98b4f1ff209e041b0ade0bd928f3846f978": {
@@ -4117,6 +4162,15 @@
         "raw": "Girona vs. Bilbao"
       }
     },
+    "586f3427669f0cd47b19ffa21f6e0bc30ec801c7b1fb09776d22d2582fea6b30": {
+      "created_at": "2026-11-15T15:20:47.533751+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "USS Berkane vs. Wydad AC",
+        "description": "Coverage of USS Berkane against Wydad AC.",
+        "raw": "USS Berkane vs. Wydad AC"
+      }
+    },
     "58ba39064ece4ab833030fa7c2175887fe0a2bbdebd36680cfdb7e1bf256c96b": {
       "created_at": "2026-11-08T15:17:34.680496+00:00",
       "kind": "live-title",
@@ -4341,7 +4395,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "5d4cf5490cbdf02b18206e2cba182eac98ec11afd73536e575ded68d41e6213c": {
       "created_at": "2026-11-08T14:21:22.621310+00:00",
@@ -4420,7 +4474,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "5ee5256dc58e0b6f71b5259ec7385eed28286bce6cb465df5a4687887c72dff1": {
       "created_at": "2026-11-13T00:24:26.882192+00:00",
@@ -4494,7 +4548,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "5ffb37bc3a076d85dbd2d27ee5c935934c1d35b677fb62b906f348cef946b9db": {
       "created_at": "2026-11-11T19:41:56.553344+00:00",
@@ -4545,6 +4599,12 @@
         "description": "Coverage of RS Berkane against HA Nador.",
         "raw": "RS Berkane vs. HA Nador"
       }
+    },
+    "610d3cff01cef5dda580e8d8c87458dc449739ba9f971c9e18c9e5b27f81b9f3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-15T15:35:48.109455+00:00"
     },
     "61206856db23f74afac2a5e8943410de9bf9de5b663cb360892b539e7630bad2": {
       "created_at": "2026-11-14T18:14:59.970961+00:00",
@@ -4600,7 +4660,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "61c45b1c4d64a73bc76ace7cfb80d5bf63afa9cb89df2b74c63fba6459e741ca": {
       "created_at": "2026-11-09T18:28:25.464105+00:00",
@@ -4641,6 +4701,15 @@
         "clean_title": "Flyers vs Flames",
         "description": "Coverage of Flyers against Flames.",
         "raw": "Flyers @ Flames"
+      }
+    },
+    "626d27d76e0afe21436d10c843bf9fe5dcc777dc422091ea7a37ffca82f6b411": {
+      "created_at": "2026-11-15T15:20:47.533746+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Turrialbeñas vs. Somos La Unión",
+        "description": "Coverage of Turrialbeñas against Somos La Unión.",
+        "raw": "Turrialbeñas vs. Somos La Unión"
       }
     },
     "62cad3d6e46d9c840de4048292de6214b2172d46cf9052342632afdd264df3b5": {
@@ -4823,10 +4892,13 @@
       }
     },
     "67ef6d8922ce3bd083a8fc5c0ba04423fd121db4ee45d51383ac7b9d8465e48d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075646+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "Ayema FC vs. USS Kraké",
+        "description": "Coverage of Ayema FC against USS Kraké.",
+        "raw": "Ayema FC vs. USS Kraké"
+      }
     },
     "68357972cdca664c458aac52c276f5ca6bdd8c0595118d841e000db1b4d341f1": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
@@ -5113,7 +5185,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "6f6d4667846146587c990edfbfb38be4f02a98410ab2af0c539888e145d99b7d": {
       "created_at": "2026-11-07T06:27:35.762087+00:00",
@@ -5164,6 +5236,12 @@
         "description": "Coverage of Belize U19 against Cuba U19.",
         "raw": "Belize U19 vs. Cuba U19"
       }
+    },
+    "707bc2c40ada4b85a295e93e5719a414eeda294fb7e7b362befe6102f2d2eee6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-15T15:35:48.109455+00:00"
     },
     "70c9627580c4234da153280f6ef6f730ff08cb2563d39ec23d1b996ec6fb0925": {
       "context": "DAZN UK event scheduled 01/11/2026 12:15 GMT",
@@ -5490,7 +5568,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "782e69bfcd909dfde1d57d71b55ff8142c6a192aaebf5adf09fb663cd626c8d7": {
       "created_at": "2026-11-11T06:38:48.807936+00:00",
@@ -5725,10 +5803,13 @@
       }
     },
     "7cbf40d8f9d235f4c37789e49eaf7c0c74056df78f74149f19a3316c198d3fd7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075644+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "Anse La Raye vs. Canaries",
+        "description": "Coverage of Anse La Raye against Canaries.",
+        "raw": "Anse La Raye vs. Canaries"
+      }
     },
     "7cce2a2e781ef794d85cf78efd4812b380579b8f8ffc97a41a4a07d939b7ea8a": {
       "created_at": "2026-11-13T15:27:17.807882+00:00",
@@ -5797,6 +5878,15 @@
       "kind": "event-description",
       "result": "Eastern Washington University faces Portland State University in a college football contest on Disney+ Events.",
       "title": "Eastern Washington vs. Portland State"
+    },
+    "7e14ecde724844848506ce03e619a7666d96f3ff22adef41624fef6be8fd703e": {
+      "created_at": "2026-11-15T15:20:47.533742+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Teremoana vs. Ahio",
+        "description": "Coverage of Teremoana against Ahio.",
+        "raw": "Teremoana vs. Ahio: Press Conference"
+      }
     },
     "7e55bf0a4e62b778e1d291450baa1f4d90abe2d49d59e3fbdd92375e6b8cc602": {
       "created_at": "2026-11-08T16:16:24.705316+00:00",
@@ -5881,10 +5971,13 @@
       }
     },
     "80683c4e1ca0e8717ce73fc572e01bbd6dc013d09664f6bea3528f584a1cb460": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075649+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "BUF @ NYJ, CAR @ NO, MIA @ IND",
+        "description": "Coverage of BUF against NYJ, CAR @ NO, MIA @ IND.",
+        "raw": "BUF @ NYJ, CAR @ NO, MIA @ IND, RedZone"
+      }
     },
     "8089c9f599045bbf70c4459248cb3f1ef0b02f60afc8a29c17a7e55cc170b4e8": {
       "created_at": "2026-10-26T12:30:58.030807+00:00",
@@ -5906,10 +5999,13 @@
       "title": "Iowa State Football Press Conference"
     },
     "81488b32384a6acba8f46fe8b6740dba2bcb85c2aa97e09ac3e8f6819d6045ee": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075641+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "AS GNN vs. Espoir FC",
+        "description": "Coverage of AS GNN against Espoir FC.",
+        "raw": "AS GNN vs. Espoir FC"
+      }
     },
     "815003016c15ff9bb60a56af95cf0aefac2f75d7b793907ed151fac3ef38a6a5": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:15 GMT",
@@ -5940,7 +6036,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "81738332a764df173af3ff58680b979f8c8d49a1e5391120c772c0a75d7f6088": {
       "created_at": "2026-11-10T16:30:33.325110+00:00",
@@ -6018,10 +6114,13 @@
       }
     },
     "827a65a62ab344ab344abfb2f3d5a6a41711eac5d0d96f2cc389085c7bff8cb3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075636+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "49ers @ Cowboys",
+        "description": "Coverage of 49ers against Cowboys.",
+        "raw": "49ers @ Cowboys"
+      }
     },
     "82a4754294ea78093a7aad267e7662cb25723dd96842f0b6fb7ae492679d3497": {
       "created_at": "2026-11-09T15:34:57.820077+00:00",
@@ -6258,7 +6357,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
@@ -6765,10 +6864,13 @@
       }
     },
     "93a7a183f9bd9140b40f235a1f48f06b37d9d64bccff52b85b78e873565afb29": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075643+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "AS Sonabel vs. US Forces Armées",
+        "description": "Coverage of AS Sonabel against US Forces Armées.",
+        "raw": "AS Sonabel vs. US Forces Armées"
+      }
     },
     "9439223143542f945218c4e56b84df63dfdcb593b3a162905f9337e835b4d5fd": {
       "created_at": "2026-11-13T15:26:54.247605+00:00",
@@ -6777,6 +6879,15 @@
         "clean_title": "Deportivo Lara vs Zamora B",
         "description": "Coverage of Deportivo Lara against Zamora B.",
         "raw": "Deportivo Lara vs. Zamora B"
+      }
+    },
+    "945729dbbb99ca0b85d80f0868618debc328fe0f6c02e41788da96c782603e9c": {
+      "created_at": "2026-11-15T15:20:47.533736+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Steelers @ Bengals",
+        "description": "Coverage of Steelers against Bengals.",
+        "raw": "Steelers @ Bengals (US., French, German, Japanese, Portuguese Game Commentary Available)"
       }
     },
     "947b74113506670c0db49c3263254d13a4d869ff364c2114a755d6ca4e60be9d": {
@@ -6994,10 +7105,13 @@
       }
     },
     "9971f2dae8d449762fff2b80c84c5facffb4a865d33ca818436cb0f4d0878b2e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075633+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "113th Grey Cup: Montreal Alouettes vs. Edmonton Elks",
+        "description": "Coverage of 113th Grey Cup: Montreal Alouettes against Edmonton Elks.",
+        "raw": "113th Grey Cup: Montreal Alouettes vs. Edmonton Elks (French Broadcast)"
+      }
     },
     "99923a286f78e3aa7dd4c9cd77f728ab27ec54f48c5dc124416f12d3f6b74a4c": {
       "created_at": "2026-11-08T14:21:22.621314+00:00",
@@ -7110,7 +7224,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
@@ -7137,6 +7251,15 @@
         "clean_title": "KS Korabi vs Flamurtari FC",
         "description": "Coverage of KS Korabi against Flamurtari FC.",
         "raw": "KS Korabi vs. Flamurtari FC"
+      }
+    },
+    "9d504e773e85b421eda689d6a8ce550ba5cb20bb86cb85d1e8efe553c3819742": {
+      "created_at": "2026-11-15T15:20:47.533744+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Texans @ Browns",
+        "description": "Coverage of Texans against Browns.",
+        "raw": "Texans @ Browns"
       }
     },
     "9d5f7b6f35810d6836040c9ea492513d71a7952b7a34194d9e4aa700e6ff7150": {
@@ -7948,7 +8071,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "ae8b77bf30273efb0d4c1ad0bae23e2c75ee411b24fcb9341f49481316c90033": {
       "created_at": "2026-11-06T05:37:42.631714+00:00",
@@ -8201,7 +8324,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "b458b9d9c9318f0fcebbc0633c00976beb4fa41a549e28e95785e0326a2c42fc": {
       "created_at": "2026-11-08T06:28:44.003423+00:00",
@@ -8311,7 +8434,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "b6137e883db1b3c09303de0a4f45f33d3bc49d8e1747f762a0ec648af90dbd72": {
       "context": "Disney+ Events event scheduled 03/11/2026 02:00 GMT",
@@ -8367,7 +8490,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "b7507c7557ceaab158a74fb8fde019c32f829146c416019022741218b250b262": {
       "created_at": "2026-11-08T16:16:24.705349+00:00",
@@ -8516,7 +8639,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
       "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
@@ -8552,7 +8675,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:26:33.614722+00:00"
+      "retry_after": "2026-11-15T15:35:42.905944+00:00"
     },
     "bb58e85bb03542d57877380861c16c8aac2c6d22230affdbf72008e97a55bcd6": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -8919,10 +9042,13 @@
       "title": "Swindon Town FC vs Rotherham United FC"
     },
     "c27be6f954dcb7f0ba2f31210352efef190743fc19a397b26201275ddedc14f0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-15T15:20:39.075615+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:55.750403+00:00"
+      "result": {
+        "clean_title": "113th Grey Cup: Montreal Alouettes vs. Edmonton Elks",
+        "description": "Coverage of 113th Grey Cup: Montreal Alouettes against Edmonton Elks.",
+        "raw": "113th Grey Cup: Montreal Alouettes vs. Edmonton Elks"
+      }
     },
     "c2f21bd0d72058bb58707cdc8e928d5ca803d580897ea1c9a8bee1f42f0d75ac": {
       "created_at": "2026-10-26T12:30:58.030827+00:00",
@@ -9089,7 +9215,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "c6deb704865a67fc31361c6652db5c4dd4bd1cbccb169e374cc2c570bd4adf18": {
       "context": "DAZN UK event scheduled 01/11/2026 21:25 GMT",
@@ -9452,6 +9578,12 @@
         "raw": "Mississippi Valley State @ Washington"
       }
     },
+    "ce318246c2e5bd62597aa21e94c602b5802b89bd0a4231d5c915fc5759d3e193": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-15T15:35:48.109455+00:00"
+    },
     "ce94b0bcce33854ad3970a356a4ca455a8a713c2455a99cb4f25429a850483d3": {
       "context": "MAX UK event scheduled 01/11/2026 02:30 GMT",
       "created_at": "2026-11-01T06:23:52.067233+00:00",
@@ -9647,7 +9779,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
       "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
@@ -9717,7 +9849,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -9823,6 +9955,15 @@
       "result": "NHL regular‑season game between the Boston Bruins and Carolina Hurricanes, part of the 2026‑27 NHL season.",
       "title": "Bruins @ Hurricanes"
     },
+    "d616939e69b83b781a2ddd74922dd866aea9e5c6e6fb6e713204fc2a68aac492": {
+      "created_at": "2026-11-15T15:20:47.533753+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Ureña SC vs. Barquisimeto SC",
+        "description": "Coverage of Ureña SC against Barquisimeto SC.",
+        "raw": "Ureña SC vs. Barquisimeto SC"
+      }
+    },
     "d625e3124181fd89a86ebe54d08d16d6ba51605673733be32ba8a6189af902ac": {
       "context": "MLS fixture scheduled 02/11/2026 00:25 GMT",
       "created_at": "2026-11-02T00:12:44.516350+00:00",
@@ -9834,7 +9975,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "d6544f2d3a654777a9769719a997b71e0ba480c42b68533101e39852e38f563b": {
       "created_at": "2026-11-13T15:27:17.807886+00:00",
@@ -9944,7 +10085,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "d84240efa4d4c5cc0d6a514e39a12116de815c9082fc2e90fcfc4fdf9b9620b6": {
       "context": "Disney+ Events event scheduled 29/10/2026 02:00 GMT",
@@ -10215,7 +10356,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "dec3443742d756e994959813b138918a3fb2ca038ac6782898d157a8491e21bc": {
       "created_at": "2026-11-13T15:26:57.908627+00:00",
@@ -10264,7 +10405,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "df81ad007ae26602f10df1b62b3562455e307a7faf1c6923933a6af2e280ffd0": {
       "created_at": "2026-11-10T13:47:32.391021+00:00",
@@ -11006,7 +11147,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "eeee59829cb2e4883f1f40c3ff481307eeeffb54a8d75c7ed616f7ed6d15c2e0": {
       "context": "MLS fixture scheduled 29/10/2026 02:25 GMT",
@@ -11233,6 +11374,15 @@
         "raw": "CF Wellington United vs. Eastern Suburbs"
       }
     },
+    "f40754a59ebd761186ca842f3659db5071a5e465610222864e7a4672089189bd": {
+      "created_at": "2026-11-15T15:20:47.533754+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Valencia vs. Coruña",
+        "description": "Coverage of Valencia against Coruña.",
+        "raw": "Valencia vs. Coruña"
+      }
+    },
     "f41e9db043921314e226c8f0d12e41c9f9668dd2e60847a54a9630d946258139": {
       "created_at": "2026-11-05T05:40:32.980002+00:00",
       "kind": "live-title",
@@ -11393,7 +11543,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:57.529787+00:00"
+      "retry_after": "2026-11-15T15:35:40.933814+00:00"
     },
     "f79a4ce36321675ba737f86ee0d161bc8a3876ba700afd5181966a90484d54e5": {
       "created_at": "2026-11-14T20:15:15.573736+00:00",
@@ -11656,7 +11806,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:40:56.430355+00:00"
+      "retry_after": "2026-11-15T15:35:39.968362+00:00"
     },
     "fe82471131a60600f0aab5b948d7e21b991568d0181c447c2caa02b3dfe17420": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -11703,7 +11853,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-15T14:41:31.370320+00:00"
+      "retry_after": "2026-11-15T15:35:42.283723+00:00"
     },
     "ff4d4bf43d62e20b6c18052f53487d12ad17783bfcdfdd1ca722a890ded4ddb4": {
       "created_at": "2026-11-13T15:26:54.247626+00:00",
@@ -11741,8 +11891,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-15T19:36:27.311565+00:00",
-    "groq": "2026-11-15T14:26:33.614722+00:00"
+    "gemini": "2026-11-15T19:36:27.311565+00:00"
   },
   "version": 1
 }
