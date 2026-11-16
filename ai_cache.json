@@ -588,6 +588,15 @@
       "result": "Eastern Washington Eagles vs. Stanford Cardinal college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
       "title": "Eastern Washington vs. Stanford"
     },
+    "0dcb67df3761978a3cc4bf4440ea15f66fbfb6d19315c04c7af79cad840405a9": {
+      "created_at": "2026-11-16T05:06:06.607813+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "FC 334 Gane vs Hokit",
+        "description": "Coverage of FC 334 Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
+      }
+    },
     "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
       "created_at": "2026-11-02T16:40:59.690102+00:00",
@@ -1856,6 +1865,15 @@
         "raw": "Le Castellet: Race 2"
       }
     },
+    "2827a6e7a2b91362a6e048866c4dae0d447552736ab4fe76394a2fe50a0b992d": {
+      "created_at": "2026-11-16T05:06:06.607809+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Canucks @ Golden Knights",
+        "description": "Coverage of Canucks against Golden Knights.",
+        "raw": "Canucks @ Golden Knights"
+      }
+    },
     "2866c7ff2830283b5de4c751d8eb886ee475094f2f5c606f42e1582d700afc9c": {
       "created_at": "2026-10-26T19:21:40.738747+00:00",
       "kind": "live-title",
@@ -2714,6 +2732,15 @@
         "raw": "Iowa State @ Baylor"
       }
     },
+    "37ffcd37b83ba6f9e294ef7157364ee4dc7858abb278438e69a24aa49ce533b1": {
+      "created_at": "2026-11-16T05:06:06.607822+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Steelers @ Bengals",
+        "description": "Coverage of Steelers against Bengals.",
+        "raw": "Steelers @ Bengals (Spanish Broadcast)"
+      }
+    },
     "3877a450f9f65371fe26187f1e3f48a7ab87903362d00b75ed1a7ec4e758316d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569495+00:00",
@@ -3183,6 +3210,15 @@
         "raw": "Great Britain U23 vs. Czechia U23"
       }
     },
+    "41d4ced2aa796dea9e69957083ee001645c3d173212e6ddc3e832d033745b3d1": {
+      "created_at": "2026-11-16T05:06:06.607814+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Venezuela U23 vs Australia U23",
+        "description": "Coverage of Venezuela U23 against Australia U23.",
+        "raw": "Final | Venezuela U23 vs. Australia U23"
+      }
+    },
     "41ee5233372f38c9e583d2aff95f1090dd2cab8c53ce56f2a22b29d4a4d49172": {
       "created_at": "2026-11-11T13:53:16.395596+00:00",
       "kind": "live-title",
@@ -3590,6 +3626,15 @@
         "raw": "Steelers @ Bengals"
       }
     },
+    "4a3e53d034be3200f35bdf2bbbebe2872b267f7376011878dd45123190d051ec": {
+      "created_at": "2026-11-16T05:06:06.607819+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Predators @ Sharks",
+        "description": "Coverage of Predators against Sharks.",
+        "raw": "Predators @ Sharks"
+      }
+    },
     "4a442317130fb8e5780c5dc51b8e10a169fa053447d673a61adf15b0642d5b6f": {
       "created_at": "2026-11-07T06:27:35.762103+00:00",
       "kind": "live-title",
@@ -3918,6 +3963,15 @@
         "clean_title": "Medicine Hat, AB - Day 3, Draw 11",
         "description": "Coverage of Medicine Hat, AB - Day 3, Draw 11.",
         "raw": "Medicine Hat, AB - Day 3, Draw 11"
+      }
+    },
+    "528b295aef3d23be145b3665172e27c5c12f10b2d1eff67ef06f9ad378f53f74": {
+      "created_at": "2026-11-16T05:06:06.607821+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Steelers @ Bengals",
+        "description": "Coverage of Steelers against Bengals.",
+        "raw": "Steelers @ Bengals"
       }
     },
     "52aac6a34f00324d0c34490828a96a800a925d17d5affd48f4e6be51e382bfb6": {
@@ -5631,6 +5685,15 @@
         "clean_title": "TCU vs Arizona",
         "description": "Coverage of TCU against Arizona.",
         "raw": "TCU @ Arizona"
+      }
+    },
+    "76c49874494ea0bc1f40ba2e60b921584fa70176e62345ee4f94025aafe6f5c0": {
+      "created_at": "2026-11-16T05:06:06.607817+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Panthers @ Stars",
+        "description": "Coverage of Panthers against Stars.",
+        "raw": "Panthers @ Stars"
       }
     },
     "773dcac8d5d4715efa7b21439c070675065f4523cd57a926cec79e7b30b59d9f": {
@@ -7522,6 +7585,15 @@
         "clean_title": "Blackhawks vs Hurricanes",
         "description": "Coverage of Blackhawks against Hurricanes.",
         "raw": "Blackhawks @ Hurricanes"
+      }
+    },
+    "a0f90992d9bee171960f3d4c821166eec94721da9de26df4e39b5caa4deee6c9": {
+      "created_at": "2026-11-16T05:06:06.607811+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Coastal Carolina @ Wisconsin",
+        "description": "Coverage of Coastal Carolina against Wisconsin.",
+        "raw": "Coastal Carolina @ Wisconsin"
       }
     },
     "a145c6bf09813f183d448b19127ee53a18cecf52e236ffb2c7c90b4f95f2caf9": {
@@ -9446,6 +9518,15 @@
       "result": "Women's college basketball: North American Stallions vs. Nicholls State Colonels.",
       "title": "North American vs. Nicholls"
     },
+    "c8c47b6b42ebdfcc2b1407158553abca546471e4a2688c3e76a912bccbb5ba7c": {
+      "created_at": "2026-11-16T05:06:06.607816+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Flames @ Ducks",
+        "description": "Coverage of Flames against Ducks.",
+        "raw": "Flames @ Ducks"
+      }
+    },
     "c8dc5313f070167746914db571a4e15387ab780fb6c8e85745eaa5faa99951d5": {
       "created_at": "2026-11-09T22:26:26.057775+00:00",
       "kind": "live-title",
@@ -9772,6 +9853,12 @@
         "description": "Coverage of San Jose Sharks against Utah Mammoth.",
         "raw": "Sharks @ Mammoth"
       }
+    },
+    "cff0f8802158afb52ed82842f1b2f99baed2c6b35fae3f004c7288480e4c4d8f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-16T05:21:06.945829+00:00"
     },
     "d0183beb89e81c78b2a2a94cc49895dc7926d1e55bf99583f33045a0d3251692": {
       "created_at": "2026-11-06T13:50:32.471816+00:00",
@@ -10108,6 +10195,12 @@
         "description": "Coverage of Fury Challenger Series 17.",
         "raw": "Fury Challenger Series 17"
       }
+    },
+    "d67d956c951327ad5872f0bdb41e0a01c8a3b8c298ce5276127a159c91fba701": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-16T05:21:06.945829+00:00"
     },
     "d713d4ca17085984c8ed273eed8401735306b77bf0de3437c2a368a743b3f2ad": {
       "created_at": "2026-11-09T09:41:25.797818+00:00",
@@ -11853,6 +11946,15 @@
       "result": "NFL Primetime Presented by Mucinex – an NFL regular‑season game streamed on ESPN+.",
       "title": "NFL Primetime Presented by Mucinex"
     },
+    "fc15de91f53d0531f81a05f7fd4220be58dace03c8661610c93b89e3261f57c3": {
+      "created_at": "2026-11-16T05:06:06.607791+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
+      }
+    },
     "fc3b1cca3708724643456068905e0cc08c20ffe848922414e9971c562648f8f5": {
       "created_at": "2026-11-04T13:50:28.840976+00:00",
       "kind": "live-title",
@@ -12026,7 +12128,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-16T02:18:20.808328+00:00"
+    "gemini": "2026-11-16T11:06:01.017559+00:00"
   },
   "version": 1
 }
