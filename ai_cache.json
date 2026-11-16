@@ -9855,10 +9855,13 @@
       }
     },
     "cff0f8802158afb52ed82842f1b2f99baed2c6b35fae3f004c7288480e4c4d8f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-16T07:19:15.111733+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-16T05:21:06.945829+00:00"
+      "result": {
+        "clean_title": "Teremoana vs Hemi Ahio Press Conference",
+        "description": "Press conference covering Teremoana vs Hemi Ahio.",
+        "raw": "Teremoana vs. Ahio: Press Conference"
+      }
     },
     "d0183beb89e81c78b2a2a94cc49895dc7926d1e55bf99583f33045a0d3251692": {
       "created_at": "2026-11-06T13:50:32.471816+00:00",
@@ -10197,10 +10200,13 @@
       }
     },
     "d67d956c951327ad5872f0bdb41e0a01c8a3b8c298ce5276127a159c91fba701": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-16T07:19:15.111713+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-16T05:21:06.945829+00:00"
+      "result": {
+        "clean_title": "Steelers vs Bengals",
+        "description": "Coverage of Steelers against Bengals.",
+        "raw": "Steelers @ Bengals (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "d713d4ca17085984c8ed273eed8401735306b77bf0de3437c2a368a743b3f2ad": {
       "created_at": "2026-11-09T09:41:25.797818+00:00",
