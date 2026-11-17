@@ -696,10 +696,13 @@
       "result": "UTSA Weekly Volleyball Press Conference."
     },
     "10a889bb41cc155dbd18304f5daafa5b2a65057816ba02eef622770256663437": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527056+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Stars vs Golden Knights",
+        "description": "Coverage of Stars against Golden Knights.",
+        "raw": "Stars @ Golden Knights"
+      }
     },
     "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
       "context": "EPLFulham.uk; Next Game: Fulham vs Crystal Palace on 28/10/2026 at 19:45 GMT",
@@ -1917,10 +1920,13 @@
       }
     },
     "287287a0cb79d713b3dd7237802dcbe0f90ba9ddd5635171214823e26fb7eaef": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527058+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 1, Draw 2",
+        "description": "Coverage of Sydney, Nova Scotia - Day 1, Draw 2.",
+        "raw": "Sydney, Nova Scotia - Day 1, Draw 2"
+      }
     },
     "28a114fd4329a04497d496cb073c7ea7baa9d95c70ff27b9a195cfb530fb235e": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -2749,10 +2755,13 @@
       }
     },
     "371a59665131d6ed79feaef8657aec124ce11a32363371f8f6a017821719d2bb": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527051+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Sabres vs Flyers",
+        "description": "Coverage of Sabres against Flyers.",
+        "raw": "Sabres @ Flyers"
+      }
     },
     "37203bd5a2da3770cd8943922e74a1a09958ba126d9092f540e7e99f2b367eb5": {
       "created_at": "2026-11-13T15:26:57.908661+00:00",
@@ -3326,10 +3335,13 @@
       }
     },
     "423a57306d2f4dae3859b9ea43659a345f17c7f2fb8c5cffa70dabbde672d0f5": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527024+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Players Era 8 - Quarterfinal: Florida vs. Notre Dame",
+        "description": "Coverage of Players Era 8 - Quarterfinal: Florida against Notre Dame.",
+        "raw": "Players Era 8 - Quarterfinal: Florida vs. Notre Dame"
+      }
     },
     "42446361549c8badd647e859156bad4e8eabcd88ac57e89ab283dc4dd76d86f9": {
       "created_at": "2026-11-15T16:20:32.347294+00:00",
@@ -3757,10 +3769,13 @@
       }
     },
     "4a9054b98d6d9eb979596eeb66699adf9012d079835f6884d0ffab400c2f0556": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527054+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Skënderbeu Korçë vs Apolonia Fier",
+        "description": "Coverage of Skënderbeu Korçë against Apolonia Fier.",
+        "raw": "Skënderbeu Korçë vs. Apolonia Fier"
+      }
     },
     "4ab496e79c822b965e1d0a28fce42f8618b6f740d452595e6c69c2ab9b04c048": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -6164,10 +6179,13 @@
       "title": "UC Santa Barbara vs. Cal State Northridge"
     },
     "7db5ba3523b49074419d5ff049ebc4c2a55bfb1a39a3a48db236329de7e35b97": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527040+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Players Era 8 - Quarterfinal: Rutgers vs. Houston",
+        "description": "Coverage of Players Era 8 - Quarterfinal: Rutgers against Houston.",
+        "raw": "Players Era 8 - Quarterfinal: Rutgers vs. Houston"
+      }
     },
     "7de13d392b52d957c1c856fedbedda4e7c57c741e5b492d7fd24006d0a8d3c5f": {
       "created_at": "2026-11-07T07:42:20.029326+00:00",
@@ -8070,10 +8088,13 @@
       }
     },
     "a6c86fceb9bd64ab78f965bee51a6f903c64c95b6d649a143ef9c8f8db3044ab": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527047+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Players Era 8 - Quarterfinal: West Virginia vs. Auburn",
+        "description": "Coverage of Players Era 8 - Quarterfinal: West Virginia against Auburn.",
+        "raw": "Players Era 8 - Quarterfinal: West Virginia vs. Auburn"
+      }
     },
     "a6d24cda6a711b1342da7a1d63dade59c0edeaed91f7ddb34b3b7d297bd4b6ef": {
       "created_at": "2026-11-15T06:33:59.821293+00:00",
@@ -9097,10 +9118,13 @@
       }
     },
     "bc09819ad6d439a7f29c084fcb7a76986a8f05f557cd01bec697070b9c2f6686": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527049+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Predators vs Wild",
+        "description": "Coverage of Predators against Wild.",
+        "raw": "Predators @ Wild"
+      }
     },
     "bc31708f8d5c94ebd2eb9ca2b736091300af707a2e09933e532d6afa76febd92": {
       "created_at": "2026-11-04T05:36:22.113108+00:00",
@@ -9924,10 +9948,13 @@
       }
     },
     "cbc50e494bfaa64db50549daeaa2d100422e3c179a991e92640d8db86dd76f34": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527053+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Senators vs Jets",
+        "description": "Coverage of Senators against Jets.",
+        "raw": "Senators @ Jets"
+      }
     },
     "cbdd93976012538c50d2e0e1bf979b2be3438ba97f426d7f9bfc982540681cd8": {
       "created_at": "2026-11-14T18:14:59.970935+00:00",
@@ -12162,10 +12189,13 @@
       }
     },
     "fa7e528393e3ad6346584df2f7c261c2edc9ac7453da027b6005977c3fc2fbc7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T16:41:14.527044+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T15:32:19.662562+00:00"
+      "result": {
+        "clean_title": "Players Era 8 - Quarterfinal: UNLV vs. Kansas",
+        "description": "Coverage of Players Era 8 - Quarterfinal: UNLV against Kansas.",
+        "raw": "Players Era 8 - Quarterfinal: UNLV vs. Kansas"
+      }
     },
     "fa9f43f464654493cc130252c094f12ddbf1b8777cfc847a656d5692b3717d6e": {
       "created_at": "2026-11-08T14:21:39.960140+00:00",
@@ -12419,8 +12449,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-17T19:53:53.806151+00:00",
-    "groq": "2026-11-17T15:32:19.662562+00:00"
+    "gemini": "2026-11-17T19:53:53.806151+00:00"
   },
   "version": 1
 }
