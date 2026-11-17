@@ -699,7 +699,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
       "context": "EPLFulham.uk; Next Game: Fulham vs Crystal Palace on 28/10/2026 at 19:45 GMT",
@@ -1920,7 +1920,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "28a114fd4329a04497d496cb073c7ea7baa9d95c70ff27b9a195cfb530fb235e": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -2010,10 +2010,13 @@
       }
     },
     "29bcf0141e7d4722f7b013ade13471f08f7cab2074f519e250782d6e95ca5bb1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558525+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Lithuania U19 vs Germany U19",
+        "description": "Coverage of Lithuania U19 against Germany U19.",
+        "raw": "Lithuania U19 vs. Germany U19"
+      }
     },
     "29bf95c193e4d273b2de20dbbedea0112cda88a72b8eb626f02dc7cffaaefb90": {
       "created_at": "2026-11-10T13:47:32.391033+00:00",
@@ -2565,10 +2568,13 @@
       }
     },
     "3401d9a401727c5ddd8c7df71751aacd09dcd7c95c183ff356a8549dca475dad": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558491+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Eastern Michigan vs Western Michigan",
+        "description": "Coverage of Eastern Michigan against Western Michigan.",
+        "raw": "Eastern Michigan @ Western Michigan"
+      }
     },
     "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -2746,7 +2752,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "37203bd5a2da3770cd8943922e74a1a09958ba126d9092f540e7e99f2b367eb5": {
       "created_at": "2026-11-13T15:26:57.908661+00:00",
@@ -3323,7 +3329,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "42446361549c8badd647e859156bad4e8eabcd88ac57e89ab283dc4dd76d86f9": {
       "created_at": "2026-11-15T16:20:32.347294+00:00",
@@ -3733,10 +3739,13 @@
       "title": "cbssportshq: Just Football"
     },
     "4a6a1acbced4b1e3c2c9f9cf16bbe5efcda249c5adedce5c7d2836693d4f35e7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558527+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Maple Leafs vs Blackhawks",
+        "description": "Coverage of Maple Leafs against Blackhawks.",
+        "raw": "Maple Leafs @ Blackhawks"
+      }
     },
     "4a810e4738628c46ba51252ed720663cc3d7d2fe7d1332792c69927d0df2fbd0": {
       "created_at": "2026-11-15T13:36:37.422889+00:00",
@@ -3751,7 +3760,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "4ab496e79c822b965e1d0a28fce42f8618b6f740d452595e6c69c2ab9b04c048": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -3968,10 +3977,13 @@
       "title": "NYC Marathon: Countdown to the Starting Line"
     },
     "4ff4ab7bc2376f863be2729b0542a0ac2b9c7dc41d38bdaf7d8daa943df9ef8e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558515+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Kings vs Bruins",
+        "description": "Coverage of Kings against Bruins.",
+        "raw": "Kings @ Bruins"
+      }
     },
     "5021d033d4dd199a7184270bd3b7d832c77959be5747c172d733e62f04c6dd92": {
       "created_at": "2026-11-10T16:30:55.548000+00:00",
@@ -5491,10 +5503,13 @@
       "title": "Al Mabarra vs. Riyadi Abbasiyah"
     },
     "71020514b4d43a25ff5ce41281d0d634880292fc8bc76b7eb96e62eabd313388": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558509+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Flames vs Sharks",
+        "description": "Coverage of Flames against Sharks.",
+        "raw": "Flames @ Sharks"
+      }
     },
     "711623853ff4610a92ac2a30b3196f3fed5bfcd3bdd1fc65634d1035c0a15952": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -5572,10 +5587,13 @@
       "title": "Oral Roberts vs. Central Arkansas"
     },
     "728c8c18df96d85af85967b9c43c38f395b1136a1c9effbded9155366edab76c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558523+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Lipscomb vs Purdue",
+        "description": "Coverage of Lipscomb against Purdue.",
+        "raw": "Lipscomb @ Purdue"
+      }
     },
     "72b2aea14bf66d890b1aac448ca5111c1a981e60701ac333fe8f7bb6f15cf5f8": {
       "created_at": "2026-11-11T13:53:16.395621+00:00",
@@ -6149,7 +6167,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "7de13d392b52d957c1c856fedbedda4e7c57c741e5b492d7fd24006d0a8d3c5f": {
       "created_at": "2026-11-07T07:42:20.029326+00:00",
@@ -8055,7 +8073,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "a6d24cda6a711b1342da7a1d63dade59c0edeaed91f7ddb34b3b7d297bd4b6ef": {
       "created_at": "2026-11-15T06:33:59.821293+00:00",
@@ -9082,7 +9100,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "bc31708f8d5c94ebd2eb9ca2b736091300af707a2e09933e532d6afa76febd92": {
       "created_at": "2026-11-04T05:36:22.113108+00:00",
@@ -9720,10 +9738,13 @@
       }
     },
     "c8f7ae16d7a950de54658ae256eed87eb1b3bbeab5694d9ac34f1830e053c65f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558513+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Illinois vs Duke",
+        "description": "Coverage of Illinois against Duke.",
+        "raw": "Illinois @ Duke"
+      }
     },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
@@ -9853,10 +9874,13 @@
       }
     },
     "cadcf82862803b107a94109cc438211c930416b0d22a86e150a0330e63070305": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558517+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Knockout Semi-Final - Day 1",
+        "description": "Coverage of Knockout Semi-Final - Day 1.",
+        "raw": "Knockout Semi-Final - Day 1"
+      }
     },
     "cafdc9decc069a8032eb4c70d536d23df8b029c0629ad916c8e508edb09f3a57": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -9903,7 +9927,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "cbdd93976012538c50d2e0e1bf979b2be3438ba97f426d7f9bfc982540681cd8": {
       "created_at": "2026-11-14T18:14:59.970935+00:00",
@@ -10575,10 +10599,13 @@
       }
     },
     "d89fe3d49e4b473056d198765a1214db603b4c23d563035016b21c91436d003d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558529+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Michigan State vs Tennessee",
+        "description": "Coverage of Michigan State against Tennessee.",
+        "raw": "Michigan State @ Tennessee"
+      }
     },
     "d8e7f0e6a1d0196b862f916c6bcfae9b99bd9f0d7e728cf93d9f9550f28919bc": {
       "created_at": "2026-11-08T05:30:03.515478+00:00",
@@ -11729,10 +11756,13 @@
       }
     },
     "f16b080b27915e51edcec998bbc3bb15fd1174552cc3bf094b3f58d9da5789a7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-17T15:32:08.558520+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+      "result": {
+        "clean_title": "Laçi vs. KF Shiroka",
+        "description": "Coverage of Laçi against KF Shiroka.",
+        "raw": "Laçi vs. KF Shiroka"
+      }
     },
     "f170ed078c569809e13711a2981155bb699e5ba1c8ceffbfb708ec92ccce5250": {
       "created_at": "2026-11-13T05:39:27.557293+00:00",
@@ -12135,7 +12165,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+      "retry_after": "2026-11-17T15:32:19.662562+00:00"
     },
     "fa9f43f464654493cc130252c094f12ddbf1b8777cfc847a656d5692b3717d6e": {
       "created_at": "2026-11-08T14:21:39.960140+00:00",
@@ -12389,7 +12419,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-17T19:53:53.806151+00:00"
+    "gemini": "2026-11-17T19:53:53.806151+00:00",
+    "groq": "2026-11-17T15:32:19.662562+00:00"
   },
   "version": 1
 }
