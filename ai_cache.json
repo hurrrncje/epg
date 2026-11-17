@@ -9600,6 +9600,15 @@
         "raw": "Cholet vs. Dijon"
       }
     },
+    "ca46d2953b96aab90f140403cf4f024a43270f2c40f027c57237b4fe5389787e": {
+      "created_at": "2026-11-17T05:38:37.569306+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
+      }
+    },
     "ca67bb441150319bf185c002f3264db047064505ee33140226ed07f6e6ac9853": {
       "created_at": "2026-11-13T15:26:51.536024+00:00",
       "kind": "live-title",
@@ -9607,6 +9616,15 @@
         "clean_title": "Czechia U23 vs South Africa U23",
         "description": "Coverage of Czechia U23 against South Africa U23.",
         "raw": "Czechia U23 vs. South Africa U23"
+      }
+    },
+    "ca6a8d301e54162529c4221978555859688951a2f442121af8900ebeeaa31637": {
+      "created_at": "2026-11-17T05:38:37.569321+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Polymarket UFC 334: Gane vs Hokit",
+        "description": "Coverage of Polymarket UFC 334: Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
       }
     },
     "ca8e36d1c567f0ab7cd1a8f3291e730f1eaf532b368717e205e000d29ac68b53": {
@@ -12133,6 +12151,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-17T11:38:32.363215+00:00"
+  },
   "version": 1
 }
