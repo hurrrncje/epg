@@ -32,6 +32,15 @@
         "raw": "Wake Forest @ SMU"
       }
     },
+    "00f772ac9e36908feb298502b64d1969317580126997ce7d6e56c538f02682e0": {
+      "created_at": "2026-11-17T13:54:05.689615+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 1, Draw 4",
+        "description": "Coverage of Sydney, Nova Scotia - Day 1, Draw 4.",
+        "raw": "Sydney, Nova Scotia - Day 1, Draw 4"
+      }
+    },
     "0124b7164188449ebf0845a8594e44c435165cd69eede54c4643dae7e0cae0d9": {
       "created_at": "2026-11-15T05:33:11.434128+00:00",
       "kind": "live-title",
@@ -686,6 +695,12 @@
       "kind": "event-description",
       "result": "UTSA Weekly Volleyball Press Conference."
     },
+    "10a889bb41cc155dbd18304f5daafa5b2a65057816ba02eef622770256663437": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+    },
     "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
       "context": "EPLFulham.uk; Next Game: Fulham vs Crystal Palace on 28/10/2026 at 19:45 GMT",
       "created_at": "2026-10-27T03:17:18.770350+00:00",
@@ -1283,12 +1298,30 @@
       "result": "Men's basketball game between Saint Mary's Gaels and Pacific Tigers scheduled for Oct 29 2026.",
       "title": "Saint Mary's vs. Pacific"
     },
+    "1d895404af1d4c4ffea99493f1c3f7e2d0ddc715426720dd44c235ef2e383f0d": {
+      "created_at": "2026-11-17T13:54:02.320898+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Asisa Joventut vs. FC Porto",
+        "description": "Coverage of Asisa Joventut against FC Porto.",
+        "raw": "Asisa Joventut vs. FC Porto"
+      }
+    },
     "1dd39e87cf6ff1cec568e45f6b9f62ec75dd0447acdfe333dda672baf000e021": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
       "created_at": "2026-11-03T01:44:47.524621+00:00",
       "kind": "event-description",
       "result": "Florida A&M vs. Florida State college baseball game.",
       "title": "Florida A&M vs. Florida State"
+    },
+    "1df1a278dee3615df4ecf742bc5169e65232b84bbefb62439fdc279cf7b013f0": {
+      "created_at": "2026-11-17T13:54:02.320905+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Blue Jackets vs. Islanders",
+        "description": "Coverage of Blue Jackets against Islanders.",
+        "raw": "Blue Jackets @ Islanders"
+      }
     },
     "1df639412f4731ed42c3c081f9425465da5976facd8c976a3054bc563d43481c": {
       "created_at": "2026-11-15T05:32:57.224736+00:00",
@@ -1883,6 +1916,12 @@
         "raw": "Pitch 3B | Day 3: Afternoon Session"
       }
     },
+    "287287a0cb79d713b3dd7237802dcbe0f90ba9ddd5635171214823e26fb7eaef": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+    },
     "28a114fd4329a04497d496cb073c7ea7baa9d95c70ff27b9a195cfb530fb235e": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
       "created_at": "2026-10-29T03:25:48.898628+00:00",
@@ -1969,6 +2008,12 @@
         "description": "Coverage of Red Wings against Blues.",
         "raw": "Red Wings @ Blues"
       }
+    },
+    "29bcf0141e7d4722f7b013ade13471f08f7cab2074f519e250782d6e95ca5bb1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "29bf95c193e4d273b2de20dbbedea0112cda88a72b8eb626f02dc7cffaaefb90": {
       "created_at": "2026-11-10T13:47:32.391033+00:00",
@@ -2410,6 +2455,15 @@
       "result": "College basketball game: Memphis Tigers vs. Tulsa Golden Hurricane.",
       "title": "Memphis vs. Tulsa"
     },
+    "311097e48e88b09331eeda8d8970202c5cd94fa15afa447525c5a16115136caf": {
+      "created_at": "2026-11-17T13:54:02.320913+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Costa Rica U16 vs. USA U16",
+        "description": "Coverage of Costa Rica U16 against USA U16.",
+        "raw": "Costa Rica U16 vs. USA U16"
+      }
+    },
     "3148d984d9a396a507c60c7ee1e2a3c63dfce3f083c0581ee0952f0fa647f667": {
       "created_at": "2026-11-04T13:50:28.840974+00:00",
       "kind": "live-title",
@@ -2509,6 +2563,12 @@
         "description": "Coverage of Bills against Vikings.",
         "raw": "MNF Playbook | Bills @ Vikings"
       }
+    },
+    "3401d9a401727c5ddd8c7df71751aacd09dcd7c95c183ff356a8549dca475dad": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "34178c8938652127f2b2d11f300529146449177294227bb237d716c3951fec72": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -2682,6 +2742,12 @@
         "raw": "Montmelo: Race 1"
       }
     },
+    "371a59665131d6ed79feaef8657aec124ce11a32363371f8f6a017821719d2bb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+    },
     "37203bd5a2da3770cd8943922e74a1a09958ba126d9092f540e7e99f2b367eb5": {
       "created_at": "2026-11-13T15:26:57.908661+00:00",
       "kind": "live-title",
@@ -2807,6 +2873,15 @@
         "clean_title": "Illinois State @ Purdue",
         "description": "Coverage of Illinois State against Purdue.",
         "raw": "Illinois State @ Purdue"
+      }
+    },
+    "3a4eecddcf6f56bce3504110ff975a833dfa1e827aea9f18a0040ff69be761cb": {
+      "created_at": "2026-11-17T13:54:02.320914+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Croatia U21 vs. Germany U21",
+        "description": "Coverage of Croatia U21 against Germany U21.",
+        "raw": "Croatia U21 vs. Germany U21"
       }
     },
     "3a7e32b0f80906d6f324fcda292ef81e7eb420ad7bb2015d6ddddb8dea01fb46": {
@@ -3244,6 +3319,12 @@
         "raw": "Medicine Hat, AB - Day 1 - Draw 4"
       }
     },
+    "423a57306d2f4dae3859b9ea43659a345f17c7f2fb8c5cffa70dabbde672d0f5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+    },
     "42446361549c8badd647e859156bad4e8eabcd88ac57e89ab283dc4dd76d86f9": {
       "created_at": "2026-11-15T16:20:32.347294+00:00",
       "kind": "live-title",
@@ -3651,6 +3732,12 @@
       "result": "CBS Sports HQ Just Football, a football highlights show on Paramount+ scheduled for 28 October 2026 at 16:00 GMT.",
       "title": "cbssportshq: Just Football"
     },
+    "4a6a1acbced4b1e3c2c9f9cf16bbe5efcda249c5adedce5c7d2836693d4f35e7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+    },
     "4a810e4738628c46ba51252ed720663cc3d7d2fe7d1332792c69927d0df2fbd0": {
       "created_at": "2026-11-15T13:36:37.422889+00:00",
       "kind": "live-title",
@@ -3659,6 +3746,12 @@
         "description": "Coverage of Canucks against Golden Knights.",
         "raw": "Canucks @ Golden Knights"
       }
+    },
+    "4a9054b98d6d9eb979596eeb66699adf9012d079835f6884d0ffab400c2f0556": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
     },
     "4ab496e79c822b965e1d0a28fce42f8618b6f740d452595e6c69c2ab9b04c048": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -3873,6 +3966,12 @@
       "kind": "event-description",
       "result": "NYC Marathon countdown event featuring a live countdown to the starting line, 3:30 pm GMT.",
       "title": "NYC Marathon: Countdown to the Starting Line"
+    },
+    "4ff4ab7bc2376f863be2729b0542a0ac2b9c7dc41d38bdaf7d8daa943df9ef8e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "5021d033d4dd199a7184270bd3b7d832c77959be5747c172d733e62f04c6dd92": {
       "created_at": "2026-11-10T16:30:55.548000+00:00",
@@ -5148,6 +5247,15 @@
         "raw": "Red Wings @ Panthers"
       }
     },
+    "6d251938d65ed975c2519797f39ec181a5e0b6ce348474517a7b25bd99acd5b2": {
+      "created_at": "2026-11-17T13:54:02.320911+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "College Football Playoff Rankings Show",
+        "description": "Coverage of College Football Playoff Rankings Show.",
+        "raw": "College Football Playoff Rankings Show"
+      }
+    },
     "6d3fb6aeac2abec52fad927d72a3daac870393abe1400251f3b61ec4e7557a5e": {
       "created_at": "2026-11-04T13:50:28.840957+00:00",
       "kind": "live-title",
@@ -5339,6 +5447,15 @@
       "kind": "event-description",
       "result": "Charlotte vs. UAB."
     },
+    "701cabb3242a58552ee139335eb438aedbc53ee5c8512d3f98f64094bad7e78a": {
+      "created_at": "2026-11-17T13:54:02.320909+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Capitals vs. Lightning",
+        "description": "Coverage of Capitals against Lightning.",
+        "raw": "Capitals @ Lightning"
+      }
+    },
     "70270f63d1677faf731eeb8b9b84a84f02b51f86bf55ded1fb0174eebecd75ad": {
       "created_at": "2026-11-14T15:19:44.001829+00:00",
       "kind": "live-title",
@@ -5372,6 +5489,12 @@
       "kind": "event-description",
       "result": "Al Mabarrah vs Al Riyadi Al Abbasiyah in the Lebanese Premier League.",
       "title": "Al Mabarra vs. Riyadi Abbasiyah"
+    },
+    "71020514b4d43a25ff5ce41281d0d634880292fc8bc76b7eb96e62eabd313388": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "711623853ff4610a92ac2a30b3196f3fed5bfcd3bdd1fc65634d1035c0a15952": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
@@ -5447,6 +5570,12 @@
       "kind": "event-description",
       "result": "Oral Roberts vs. Central Arkansas college baseball game.",
       "title": "Oral Roberts vs. Central Arkansas"
+    },
+    "728c8c18df96d85af85967b9c43c38f395b1136a1c9effbded9155366edab76c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "72b2aea14bf66d890b1aac448ca5111c1a981e60701ac333fe8f7bb6f15cf5f8": {
       "created_at": "2026-11-11T13:53:16.395621+00:00",
@@ -5576,6 +5705,15 @@
         "clean_title": "Chinese Taipei U23 vs Australia U23",
         "description": "Coverage of Chinese Taipei U23 against Australia U23.",
         "raw": "Chinese Taipei U23 vs. Australia U23"
+      }
+    },
+    "7474489e9798d6e11935a25c5737ddf7e7c2a47c8e45790a30012f9fe198359e": {
+      "created_at": "2026-11-17T13:54:02.320902+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "BC Juventus Utena vs. Pallacanestro Reggiana",
+        "description": "Coverage of BC Juventus Utena against Pallacanestro Reggiana.",
+        "raw": "BC Juventus Utena vs. Pallacanestro Reggiana"
       }
     },
     "747ccfd7233ff4b0e4f6c0134b9bed732a044eea2d8d0ed1db4f5653abe93992": {
@@ -5896,6 +6034,15 @@
       "kind": "event-description",
       "result": "Georgia Southern Football Press Conference."
     },
+    "7baaf9407a43d0200ddfd6522120e14d19e4e38cc8a2280bdf39884943a0b95d": {
+      "created_at": "2026-11-17T13:54:05.689618+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Windrose Giants Antwerp vs Salon Vilpas",
+        "description": "Coverage of Windrose Giants Antwerp against Salon Vilpas.",
+        "raw": "Windrose Giants Antwerp vs. Salon Vilpas"
+      }
+    },
     "7bc38d0945af9d95e7669f6bcaa779e2d456691c39c8ab0c519cc2ef3fb46c41": {
       "created_at": "2026-11-11T05:37:07.446855+00:00",
       "kind": "live-title",
@@ -5997,6 +6144,12 @@
       "kind": "event-description",
       "result": "College basketball game UC Santa Barbara Gauchos vs Cal State Northridge Matadors scheduled for Oct 29 2026.",
       "title": "UC Santa Barbara vs. Cal State Northridge"
+    },
+    "7db5ba3523b49074419d5ff049ebc4c2a55bfb1a39a3a48db236329de7e35b97": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
     },
     "7de13d392b52d957c1c856fedbedda4e7c57c741e5b492d7fd24006d0a8d3c5f": {
       "created_at": "2026-11-07T07:42:20.029326+00:00",
@@ -7040,6 +7193,15 @@
         "raw": "Virginia Tech vs. Iowa"
       }
     },
+    "947ebd6f115f7ef71ae21ccff1fb548ac34395f73e2e63244f7c01b09d0161c1": {
+      "created_at": "2026-11-17T13:54:02.320916+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Ducks vs. Blues",
+        "description": "Coverage of Ducks against Blues.",
+        "raw": "Ducks @ Blues"
+      }
+    },
     "94d490b06e6d673d68f71710d545085861af52af9fbf19f499cbf66fddfe6824": {
       "context": "DAZN UK event scheduled 01/11/2026 21:05 GMT",
       "created_at": "2026-11-01T21:19:10.371131+00:00",
@@ -7889,6 +8051,12 @@
         "raw": "LOU @ UNC, @ MNE @ PSU, TEX @ LSU, UTA @ AZN"
       }
     },
+    "a6c86fceb9bd64ab78f965bee51a6f903c64c95b6d649a143ef9c8f8db3044ab": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+    },
     "a6d24cda6a711b1342da7a1d63dade59c0edeaed91f7ddb34b3b7d297bd4b6ef": {
       "created_at": "2026-11-15T06:33:59.821293+00:00",
       "kind": "live-title",
@@ -8313,6 +8481,15 @@
         "clean_title": "Red Wings vs Avalanche",
         "description": "Coverage of Red Wings against Avalanche.",
         "raw": "Red Wings @ Avalanche"
+      }
+    },
+    "b019e93c9d72e77812090851959916d45dfe3a797403fa4afe1dab38479f4acc": {
+      "created_at": "2026-11-17T13:54:02.320907+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bnei Penlink Herzliya vs. Telekom Baskets Bonn",
+        "description": "Coverage of Bnei Penlink Herzliya against Telekom Baskets Bonn.",
+        "raw": "Bnei Penlink Herzliya vs. Telekom Baskets Bonn"
       }
     },
     "b021a15c32258620119c03d04df5b527cceaf477094af4a42d5d65f0860e85fa": {
@@ -8900,6 +9077,12 @@
         "description": "Coverage of The Dirt Track at Charlotte.",
         "raw": "The Dirt Track at Charlotte"
       }
+    },
+    "bc09819ad6d439a7f29c084fcb7a76986a8f05f557cd01bec697070b9c2f6686": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
     },
     "bc31708f8d5c94ebd2eb9ca2b736091300af707a2e09933e532d6afa76febd92": {
       "created_at": "2026-11-04T05:36:22.113108+00:00",
@@ -9536,6 +9719,12 @@
         "raw": "Costa Rica U19 vs. Cuba U19"
       }
     },
+    "c8f7ae16d7a950de54658ae256eed87eb1b3bbeab5694d9ac34f1830e053c65f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+    },
     "c8ff15780c6998d80efd36d4f8cc3e9ff032abc2db9e79b5c77f93bca3dfe8e9": {
       "created_at": "2026-11-04T13:50:50.158564+00:00",
       "kind": "live-title",
@@ -9663,6 +9852,12 @@
         "raw": "Arizona @ Auburn"
       }
     },
+    "cadcf82862803b107a94109cc438211c930416b0d22a86e150a0330e63070305": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
+    },
     "cafdc9decc069a8032eb4c70d536d23df8b029c0629ad916c8e508edb09f3a57": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
       "created_at": "2026-11-02T16:40:59.690107+00:00",
@@ -9703,6 +9898,12 @@
         "description": "Coverage of ONE Fight Night 49: Gabriel against Rasulov.",
         "raw": "ONE Fight Night 49 Gabriel v Rasulov"
       }
+    },
+    "cbc50e494bfaa64db50549daeaa2d100422e3c179a991e92640d8db86dd76f34": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
     },
     "cbdd93976012538c50d2e0e1bf979b2be3438ba97f426d7f9bfc982540681cd8": {
       "created_at": "2026-11-14T18:14:59.970935+00:00",
@@ -9888,6 +10089,15 @@
         "clean_title": "Bidiyah vs Muscat",
         "description": "Coverage of Bidiyah against Muscat.",
         "raw": "Bidiyah vs. Muscat"
+      }
+    },
+    "d02ad76ae5dc3da3e06e50803d474085069a172eab05061d6d1a5097fbdfdcdb": {
+      "created_at": "2026-11-17T13:54:02.320883+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Arkansas vs. Indiana",
+        "description": "Coverage of Arkansas against Indiana.",
+        "raw": "Arkansas vs. Indiana"
       }
     },
     "d03b8f92fdf269d8abf9959f0e189b986525faff76438ce528ec7ff5d77b72c4": {
@@ -10363,6 +10573,12 @@
         "description": "Coverage of Georgia State Race Warmup – Lavonia.",
         "raw": "Georgia State Race Warmup Lavonia"
       }
+    },
+    "d89fe3d49e4b473056d198765a1214db603b4c23d563035016b21c91436d003d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "d8e7f0e6a1d0196b862f916c6bcfae9b99bd9f0d7e728cf93d9f9550f28919bc": {
       "created_at": "2026-11-08T05:30:03.515478+00:00",
@@ -11371,6 +11587,15 @@
         "raw": "Australia U23 vs. Nicaragua U23"
       }
     },
+    "ee879bc07663be663c63be12d1587a1e9324d6f042a217d0ac096533a418d005": {
+      "created_at": "2026-11-17T13:54:05.689601+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 1, Draw 3",
+        "description": "Coverage of Sydney, Nova Scotia - Day 1, Draw 3.",
+        "raw": "Sydney, Nova Scotia - Day 1, Draw 3"
+      }
+    },
     "eeb20824200d63cff9654425159018152076cc263c2ce62949ff65d9a7c72a4a": {
       "context": "Disney+ Events event scheduled 03/11/2026 15:00 GMT",
       "created_at": "2026-11-03T12:31:31.234452+00:00",
@@ -11502,6 +11727,12 @@
         "description": "Coverage of Bills against Vikings.",
         "raw": "Field Pass with The Pat McAfee Show: Bills @ Vikings"
       }
+    },
+    "f16b080b27915e51edcec998bbc3bb15fd1174552cc3bf094b3f58d9da5789a7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:02.904934+00:00"
     },
     "f170ed078c569809e13711a2981155bb699e5ba1c8ceffbfb708ec92ccce5250": {
       "created_at": "2026-11-13T05:39:27.557293+00:00",
@@ -11900,6 +12131,12 @@
         "raw": "Cheshire Phoenix vs. Newcastle Eagles"
       }
     },
+    "fa7e528393e3ad6346584df2f7c261c2edc9ac7453da027b6005977c3fc2fbc7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-17T14:09:03.626276+00:00"
+    },
     "fa9f43f464654493cc130252c094f12ddbf1b8777cfc847a656d5692b3717d6e": {
       "created_at": "2026-11-08T14:21:39.960140+00:00",
       "kind": "live-title",
@@ -12151,6 +12388,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-17T19:53:53.806151+00:00"
+  },
   "version": 1
 }
