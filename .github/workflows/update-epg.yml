@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths:
       - polish_epg_channels.tsv
+      - clean_epg.py
 
 permissions:
   contents: write

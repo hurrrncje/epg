@@ -259,6 +259,41 @@ class AIProcessingTests(unittest.TestCase):
         manifest = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
         self.assertTrue({f'dummy-{i}' for i in range(1412, 1472)} <= manifest)
 
+    def test_missing_football_listings_get_no_match_today(self):
+        import xml.etree.ElementTree as ET
+        folder = self.prepare_process([
+            'Birmingham City', 'EPL 01', 'EFL02', 'Blackburn Rovers', 'General channel',
+            'Burnley', 'EPL03:',
+        ])
+        (folder / 'football.txt').write_text('c0\nc3\nc5\n')
+        root = ET.fromstring(self.requests.get.return_value.content)
+        now = self.ns['datetime'].now(self.ns['UTC'])
+        start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+        stop = start + self.ns['timedelta'](days=1)
+        for channel, title in [
+            ('c1', 'EPL01'), ('c3', 'Blackburn Rovers vs. Burnley'),
+            ('c5', 'BURNLEY:'), ('c6', 'Another listed fixture'),
+        ]:
+            row = ET.SubElement(root, 'programme', channel=channel,
+                                start=start.strftime('%Y%m%d%H%M%S %z'),
+                                stop=stop.strftime('%Y%m%d%H%M%S %z'))
+            ET.SubElement(row, 'title').text = title
+        self.requests.get.return_value.content = ET.tostring(root)
+
+        with patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for channel in ('c0', 'c1', 'c2', 'c5'):
+            rows = result.findall(f"programme[@channel='{channel}']")
+            self.assertEqual([row.findtext('title') for row in rows], ['No match today'])
+            self.assertEqual(rows[0].get('stop'), stop.strftime('%Y%m%d%H%M%S %z'))
+        self.assertEqual(result.findtext("programme[@channel='c3']/title"),
+                         'Blackburn Rovers vs. Burnley')
+        self.assertIsNone(result.find("programme[@channel='c4']"))
+        self.assertEqual(result.findtext("programme[@channel='c6']/title"),
+                         'Another listed fixture')
+
     def test_fa_cup_pipe_labels_parse_fixture_and_empty_channels(self):
         parse = self.ns['_parse_european_league_label']
         today = self.ns['datetime'](2026, 5, 16).date()

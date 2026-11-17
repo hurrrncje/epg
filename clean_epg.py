@@ -2215,8 +2215,42 @@ def process_epg() -> None:
         generated.append(event)
         bounded_events.append(event)
 
+    def football_label(text: str) -> str:
+        return "".join(text.strip().rstrip(" :–—-|").casefold().split())
+
+    bare_league_ids = {
+        ch_id for ch_id, names in display_names_by_id.items()
+        if any(
+            _parse_epl_dynamic_label(name + ":", epl_today) is not None
+            or _parse_european_league_label(name + ":", epl_today) is not None
+            for name in names if ":" not in name and "|" not in name
+        )
+    }
+    football_labels = {
+        ch_id: {football_label(name) for name in display_names_by_id.get(ch_id, [])}
+        for ch_id in football_mirror_ids | bare_league_ids | epl_targets.keys()
+        | european_league_targets.keys()
+    }
+
+    def has_fixture_listing(programme: ET.Element, labels: set[str]) -> bool:
+        return any(
+            football_label(title.text or "") not in labels
+            and not _is_no_event_title(_clean_mirrored_event_title(title.text or ""))
+            for title in programme.findall("title")
+        )
+
+    scheduled_football_ids = {
+        ch_id for programme in source_programmes
+        if (ch_id := programme.get("channel")) in football_labels
+        and has_fixture_listing(programme, football_labels[ch_id])
+    }
+
     # Replace repeating source placeholders on the dynamic football event channels.
-    dynamic_football_targets = {**epl_targets, **european_league_targets}
+    dynamic_football_targets = {
+        ch_id: item
+        for ch_id, item in {**epl_targets, **european_league_targets}.items()
+        if item["start_utc"] is not None or ch_id not in scheduled_football_ids
+    }
     programmes_to_remove = [
         programme
         for programme in root.iter("programme")
@@ -2435,7 +2469,24 @@ def process_epg() -> None:
             for display_el in channel.findall("display-name"):
                 display_el.text = stable_name
 
-    mirror_ids_to_replace = set(mirrored_football_targets) | set(mirrored_event_targets)
+    # The provider may omit all guide rows or send only the channel name.
+    # Limit the fallback to reviewed team IDs and recognized numbered leagues.
+    football_without_fixtures = (
+        ((football_mirror_ids | bare_league_ids) & display_names_by_id.keys())
+        - handled_channel_ids - mirrored_football_targets.keys()
+        - mirrored_event_targets.keys() - scheduled_football_ids
+    )
+    # A timed channel alias itself can supply the fixture when rows are absent.
+    for ch_id in sorted(football_without_fixtures):
+        for name in display_names_by_id[ch_id]:
+            if _parse_mirrored_start(name, epl_today) is not None:
+                mirrored_football_targets[ch_id] = name
+                football_without_fixtures.remove(ch_id)
+                break
+
+    mirror_ids_to_replace = (
+        set(mirrored_football_targets) | set(mirrored_event_targets) | football_without_fixtures
+    )
     for programme in list(root.iter("programme")):
         if programme.get("channel") in mirror_ids_to_replace:
             root.remove(programme)
@@ -2496,6 +2547,9 @@ def process_epg() -> None:
         ET.SubElement(event, "desc").text = title
         generated.append(event)
         bounded_events.append(event)
+
+    for ch_id in sorted(football_without_fixtures):
+        add_all_day_notice(ch_id, "No match today")
 
     for ch_id, raw_title in mirrored_football_targets.items():
         title = _clean_mirrored_event_title(raw_title)
