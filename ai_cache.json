@@ -1019,10 +1019,13 @@
       }
     },
     "156ae8e1a1351c4be5ba40a3bdd219ed68ddef9f936c47f1028c6c3e0a5f6af5": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534433+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 2, Draw 7",
+        "description": "Coverage of Sydney, Nova Scotia - Day 2, Draw 7.",
+        "raw": "Sydney, Nova Scotia - Day 2, Draw 7"
+      }
     },
     "15ff985d899eff7f9074f0450a684cdf534767e20ab6d7c3af12cfe7945d5de1": {
       "created_at": "2026-11-05T13:54:40.508123+00:00",
@@ -2677,10 +2680,13 @@
       }
     },
     "34708a9c777513cb064faca89cc2a06a8358461d569a61ee054fe977e8d5509d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534426+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "Paynesville vs FC Fassell",
+        "description": "Coverage of Paynesville against FC Fassell.",
+        "raw": "Paynesville FC vs. FC Fassell"
+      }
     },
     "347d7a4f16bc5770869548802f5d3514d06e2b2dc0f99f8188856486d651b842": {
       "created_at": "2026-11-14T18:14:59.970956+00:00",
@@ -2805,10 +2811,13 @@
       }
     },
     "36d062147b1a3d1a1c2f079509c39c02186266995c0cae86ad50b8a99b6bd7e2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534429+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "South Dakota vs. Nebraska",
+        "description": "Coverage of South Dakota against Nebraska.",
+        "raw": "South Dakota @ Nebraska"
+      }
     },
     "36d43be6d45affb0d4e7bf28ab80fd05ea025ee52a87310580ef8b639a0c775e": {
       "created_at": "2026-11-07T13:33:23.422104+00:00",
@@ -4282,7 +4291,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "543c1babad91d2917a211fcb8bf661a73c8c5f1e408844c0e1170a2d251b1383": {
       "created_at": "2026-11-08T14:21:58.625439+00:00",
@@ -4456,7 +4465,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "57cdcd14019228d01e00f635a216ff99541d2e8d64c01425f1b85aafcf750501": {
       "created_at": "2026-11-04T05:36:22.113089+00:00",
@@ -5158,7 +5167,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "retry_after": "2026-11-18T18:45:03.534451+00:00"
     },
     "64a1b3b1dc26134bd37e854e339d56703053a9bdaf3d570da5876e84c0603875": {
       "created_at": "2026-11-15T14:26:17.445660+00:00",
@@ -5510,10 +5519,13 @@
       "title": "Whittier vs. UC San Diego"
     },
     "6e3374518fc4266bd2943a1958459e60e1b2f9c0dc0a4b971a8af3ac898ff7bf": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534439+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "UConn vs. Arizona",
+        "description": "Coverage of UConn against Arizona.",
+        "raw": "UConn @ Arizona"
+      }
     },
     "6e6223eab5c980a9c469308b141672b77a8b1f5b70ee514c571cf70f98967885": {
       "created_at": "2026-11-07T14:24:25.648900+00:00",
@@ -5623,7 +5635,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "6fcc9ce71595db31ddcf3cee98f2234746cf2273583fd33210279927aad42f42": {
       "created_at": "2026-11-14T18:14:59.970971+00:00",
@@ -5643,7 +5655,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "701cabb3242a58552ee139335eb438aedbc53ee5c8512d3f98f64094bad7e78a": {
       "created_at": "2026-11-17T13:54:02.320909+00:00",
@@ -6251,7 +6263,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "7baaf9407a43d0200ddfd6522120e14d19e4e38cc8a2280bdf39884943a0b95d": {
       "created_at": "2026-11-17T13:54:05.689618+00:00",
@@ -6502,10 +6514,13 @@
       "title": "Swindon Town FC vs Rotherham United FC"
     },
     "811bb6b4b44b6f6a2c77b6eef3eb47d2426c972b1e80f656c2294b879b1139a4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534409+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "Pro Padel League Las Vegas - Day 1",
+        "description": "Coverage of Pro Padel League Las Vegas - Day 1.",
+        "raw": "PPL MGM Las Vegas - Day 1"
+      }
     },
     "8121a00fa1464bee79f117c5ceea7e93ed92473cb7eb755d15eb8d74d19d1a29": {
       "context": "ESPN+ event scheduled 03/11/2026 17:55 GMT",
@@ -6738,7 +6753,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "8460b456d3626a5f384a57aa20782244a026c5e287ee0d6f29af26ab824c5999": {
       "created_at": "2026-10-26T19:21:40.738768+00:00",
@@ -6888,10 +6903,13 @@
       }
     },
     "87a2fee2eb2246eab5195a5eeb8351db629a165c6f60940f05724e54f59e76e8": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534435+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 2, Draw 8",
+        "description": "Coverage of Sydney, Nova Scotia - Day 2, Draw 8.",
+        "raw": "Sydney, Nova Scotia - Day 2, Draw 8"
+      }
     },
     "87a591a610e76866c91cf20f52ff75b9e48bed00c2d3e6ac3a766f44dadfc211": {
       "created_at": "2026-11-15T22:16:40.539433+00:00",
@@ -6913,7 +6931,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
       "created_at": "2026-11-07T07:42:06.081847+00:00",
@@ -7560,10 +7578,13 @@
       }
     },
     "96271a7ebfd40d91c9f20c5c5467eab1b50742eb7a36f1c3ad57e99e782b6221": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534431+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 2, Draw 6",
+        "description": "Coverage of Sydney, Nova Scotia - Day 2, Draw 6.",
+        "raw": "Sydney, Nova Scotia - Day 2, Draw 6"
+      }
     },
     "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
       "context": "ESPN+ event scheduled 03/11/2026 03:00 GMT",
@@ -8608,7 +8629,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "retry_after": "2026-11-18T18:45:03.534451+00:00"
     },
     "abf529027d4ef9ac0da0e55f110af4c2e66ea079e6271028b1e2cb65e1ba26d3": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -8621,7 +8642,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "ac413d410473b1a024ff3ffe5a1188af2a68f504472dc806a662657b2bcb777b": {
       "created_at": "2026-11-06T16:30:24.695984+00:00",
@@ -8914,10 +8935,13 @@
       }
     },
     "b2fed70bc182fc2ba6b18bb074587739e85776aa2f645322d44c297fc608bf4a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-18T18:30:03.534437+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:00.998340+00:00"
+      "result": {
+        "clean_title": "Teachers FC vs Teachers Young Strikers",
+        "description": "Coverage of Teachers FC against Teachers Young Strikers.",
+        "raw": "Teachers FC vs. Teachers Young Strikers"
+      }
     },
     "b30a10d9df8320c713953d10afceb2fd145535ed3782ab58b43eeaefd5c2808f": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -9740,7 +9764,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:53:06.366184+00:00"
+      "retry_after": "2026-11-18T18:45:14.102173+00:00"
     },
     "c2662b3700ebcea10205bc97b077373b5a73e56b1d99dbac3bb1dbfb810c563a": {
       "created_at": "2026-11-08T17:16:11.697730+00:00",
@@ -10735,7 +10759,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "d5409c02841fded4a3ee40319a94268388ffec1b84ccc68ece5f20ac837f7c6f": {
       "created_at": "2026-11-13T15:26:54.247638+00:00",
@@ -12115,7 +12139,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-18T17:52:45.449515+00:00"
+      "retry_after": "2026-11-18T18:44:36.352990+00:00"
     },
     "f0a2bfd8d46bdc04cc1838121884cf599719bcda12b56adf45ecc4d77329962a": {
       "created_at": "2026-11-05T13:54:36.011728+00:00",
