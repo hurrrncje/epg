@@ -583,6 +583,12 @@
         "raw": "Rytas Vilnius vs. Nanterre 92"
       }
     },
+    "0d699430850c907de071805eca3cdeb1fa8c9828d88025c4611093ef110d6bf4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
+    },
     "0d9061dc38829cca8fef26aa970967045dd26f0b1b074d7130796454261511f8": {
       "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
       "created_at": "2026-10-27T03:17:18.770318+00:00",
@@ -1009,6 +1015,12 @@
         "raw": "NYJ @ KC, DET @ MIA, DAL @ IND, CLE @ NO"
       }
     },
+    "156ae8e1a1351c4be5ba40a3bdd219ed68ddef9f936c47f1028c6c3e0a5f6af5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "15ff985d899eff7f9074f0450a684cdf534767e20ab6d7c3af12cfe7945d5de1": {
       "created_at": "2026-11-05T13:54:40.508123+00:00",
       "kind": "live-title",
@@ -1171,6 +1183,12 @@
         "description": "Coverage of NHRL 2026 World Championship Pro Tour Round 3 Primetime.",
         "raw": "NHRL 2026 World Championship Pro Tour - Round 3 - Primetime"
       }
+    },
+    "1aacb69df8b88a5e803c3efe60304940a93c11b44c38772186684d42be9cb1c7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "1aca4d8d2f456555fc4210da47adcf298f7ba3d7455c51428097c10a878120ec": {
       "created_at": "2026-11-13T15:26:57.908649+00:00",
@@ -2294,6 +2312,12 @@
         "raw": "Pacheco vs. Fulghum"
       }
     },
+    "2d22dd28cceaa44e63fd0f42e63e45c9815de9ea991433f16e449411530e8d95": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
+    },
     "2d342084041aff1e0e51bb484acd06ae7f095904754c1b7210e7d36b36b77dbe": {
       "created_at": "2026-11-06T13:50:44.090590+00:00",
       "kind": "live-title",
@@ -2643,6 +2667,12 @@
         "raw": "Senators @ Penguins"
       }
     },
+    "34708a9c777513cb064faca89cc2a06a8358461d569a61ee054fe977e8d5509d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "347d7a4f16bc5770869548802f5d3514d06e2b2dc0f99f8188856486d651b842": {
       "created_at": "2026-11-14T18:14:59.970956+00:00",
       "kind": "live-title",
@@ -2764,6 +2794,12 @@
         "description": "Coverage of Miami Round 6 Race Off.",
         "raw": "Miami - Round 6, Race Off"
       }
+    },
+    "36d062147b1a3d1a1c2f079509c39c02186266995c0cae86ad50b8a99b6bd7e2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
     },
     "36d43be6d45affb0d4e7bf28ab80fd05ea025ee52a87310580ef8b639a0c775e": {
       "created_at": "2026-11-07T13:33:23.422104+00:00",
@@ -3217,6 +3253,12 @@
         "description": "Coverage of Northern Iowa against Michigan State.",
         "raw": "Northern Iowa @ Michigan State"
       }
+    },
+    "3fb678e00839781285ea81fb777cd4ba608b9ed84de5b68c2a1f5178dc7aef57": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "3fc137731f25c2677611b8d3196b73424dcce9bfe0fe212001707ec52b647ec0": {
       "created_at": "2026-11-08T17:16:11.697732+00:00",
@@ -4224,6 +4266,12 @@
         "raw": "Saud Bin Salman Cup for Fillies & Colts"
       }
     },
+    "53f057e4fc932aca06fdc156481c918d832b64d3a263cd3a4e45ce9e77d24f14": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
+    },
     "543c1babad91d2917a211fcb8bf661a73c8c5f1e408844c0e1170a2d251b1383": {
       "created_at": "2026-11-08T14:21:58.625439+00:00",
       "kind": "live-title",
@@ -4391,6 +4439,12 @@
         "description": "Coverage of Cuba U23 against Nicaragua U23.",
         "raw": "Cuba U23 vs. Nicaragua U23"
       }
+    },
+    "57af6f2d5141949a6a7ebf30a27fc43bad8c2d7c2d67908fbead2b35f69d71b1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
     },
     "57cdcd14019228d01e00f635a216ff99541d2e8d64c01425f1b85aafcf750501": {
       "created_at": "2026-11-04T05:36:22.113089+00:00",
@@ -5088,6 +5142,12 @@
         "raw": "Canucks @ Jets"
       }
     },
+    "6426ec91f5fcf0b00736bfd95aee068addb7408e9f314611ae67c5dea4bfabc7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "64a1b3b1dc26134bd37e854e339d56703053a9bdaf3d570da5876e84c0603875": {
       "created_at": "2026-11-15T14:26:17.445660+00:00",
       "kind": "live-title",
@@ -5437,6 +5497,12 @@
       "result": "Whittier Poets vs. UC San Diego Tritons college football game on Disney+ Events, scheduled 03/11/2026 03:00 GMT.",
       "title": "Whittier vs. UC San Diego"
     },
+    "6e3374518fc4266bd2943a1958459e60e1b2f9c0dc0a4b971a8af3ac898ff7bf": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "6e6223eab5c980a9c469308b141672b77a8b1f5b70ee514c571cf70f98967885": {
       "created_at": "2026-11-07T14:24:25.648900+00:00",
       "kind": "live-title",
@@ -5541,6 +5607,12 @@
         "raw": "Wild @ Maple Leafs"
       }
     },
+    "6fb18a415b8cb950aa0b0a1c5d5dcd190a413700ce4d4ed4ef4133afd53928ca": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
+    },
     "6fcc9ce71595db31ddcf3cee98f2234746cf2273583fd33210279927aad42f42": {
       "created_at": "2026-11-14T18:14:59.970971+00:00",
       "kind": "live-title",
@@ -5554,6 +5626,12 @@
       "created_at": "2026-10-26T12:30:58.030789+00:00",
       "kind": "event-description",
       "result": "Charlotte vs. UAB."
+    },
+    "7005a60fcbb101fe4a3d996542b254152103a431d2787fb725be93f428b00116": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
     },
     "701cabb3242a58552ee139335eb438aedbc53ee5c8512d3f98f64094bad7e78a": {
       "created_at": "2026-11-17T13:54:02.320909+00:00",
@@ -6157,6 +6235,12 @@
       "kind": "event-description",
       "result": "Georgia Southern Football Press Conference."
     },
+    "7b93cacff16afc733a40e1d8cd8eb3aae152051ba4fd7c39db2222ff1a519a6c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
+    },
     "7baaf9407a43d0200ddfd6522120e14d19e4e38cc8a2280bdf39884943a0b95d": {
       "created_at": "2026-11-17T13:54:05.689618+00:00",
       "kind": "live-title",
@@ -6405,6 +6489,12 @@
       "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
       "title": "Swindon Town FC vs Rotherham United FC"
     },
+    "811bb6b4b44b6f6a2c77b6eef3eb47d2426c972b1e80f656c2294b879b1139a4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "8121a00fa1464bee79f117c5ceea7e93ed92473cb7eb755d15eb8d74d19d1a29": {
       "context": "ESPN+ event scheduled 03/11/2026 17:55 GMT",
       "created_at": "2026-11-03T17:30:31.771878+00:00",
@@ -6463,6 +6553,12 @@
         "description": "Coverage of College Football Playoff Rankings Show - Nov 10.",
         "raw": "College Football Playoff Rankings Show - Nov 10"
       }
+    },
+    "818ec0fea615b3b315ece9243418d69a307893b39592a3e2d3f66036b983b9cb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "8199d091d145c71083836a6f64c12d174555e7f932af666376392f34c62b6044": {
       "created_at": "2026-11-15T05:32:57.224739+00:00",
@@ -6623,6 +6719,12 @@
         "raw": "Auckland City FC vs. Birkenhead United"
       }
     },
+    "845dddda7c90b1ac7f9ff1007cf51ebfd40b2fcd4de16a6e15f673971652bbfe": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
+    },
     "8460b456d3626a5f384a57aa20782244a026c5e287ee0d6f29af26ab824c5999": {
       "created_at": "2026-10-26T19:21:40.738768+00:00",
       "kind": "live-title",
@@ -6770,6 +6872,12 @@
         "raw": "New Zealand vs. India"
       }
     },
+    "87a2fee2eb2246eab5195a5eeb8351db629a165c6f60940f05724e54f59e76e8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "87a591a610e76866c91cf20f52ff75b9e48bed00c2d3e6ac3a766f44dadfc211": {
       "created_at": "2026-11-15T22:16:40.539433+00:00",
       "kind": "live-title",
@@ -6785,6 +6893,12 @@
       "kind": "event-description",
       "result": "Women’s college basketball game: Charleston Southern vs. East Carolina at Williams Arena, 3 Nov 2026, 16:00 GMT.",
       "title": "Charleston Southern vs. East Carolina"
+    },
+    "881209c068da65f46c1e802e8380e70e697814c18e5ece7683dad9acb76845c0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
     },
     "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
       "created_at": "2026-11-07T07:42:06.081847+00:00",
@@ -6803,6 +6917,12 @@
         "description": "Coverage of New Jersey Devils against Washington Capitals.",
         "raw": "Devils @ Capitals"
       }
+    },
+    "886c0b9647df0d4ef1333dbaec545c8d8281eb51d5f6847f7242ce72ca9de914": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "88906e543b104d8a12f3a15d6e86780a62bd71ad5751f9b90f90985b8a5da565": {
       "created_at": "2026-11-10T05:32:33.153343+00:00",
@@ -7421,6 +7541,12 @@
         "raw": "Le Castellet: Race 1"
       }
     },
+    "96271a7ebfd40d91c9f20c5c5467eab1b50742eb7a36f1c3ad57e99e782b6221": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "962f7700fcc8ab370a36e6facc976fc2d3d94d68fb710c51b54b1413ee52b982": {
       "context": "ESPN+ event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T04:31:24.766732+00:00",
@@ -7666,6 +7792,12 @@
         "description": "Coverage of Round 5.",
         "raw": "Round 5"
       }
+    },
+    "9ca9b02e6a9ab7803270378128ac3665f0875286ffde25c2c3a941f6cf169209": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
@@ -8390,6 +8522,12 @@
       "result": "NCAA men’s basketball: Arkansas State Red Wolves host Ball State Cardinals at John E. Worthen Arena, Feb 11 2026.",
       "title": "Arkansas State vs. Ball State"
     },
+    "a9fb0c3964027050252c36c1e62fcf655817c8807e968c847331fc689cb48170": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
+    },
     "aa39e1a8bb0c067d5f65be15f66ce47302c9cab281b51dbbd23db48ccd4cd1ef": {
       "context": "Scottish Cup fixture scheduled 07/02/2027 17:30 GMT",
       "created_at": "2026-10-28T18:24:17.569466+00:00",
@@ -8442,12 +8580,24 @@
         "raw": "Peterson v Hernandez"
       }
     },
+    "abdcdebc7c8fe51ac8c492167a40ab976f3d0c72c8704ea1bec59a28eaade4fa": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
+    },
     "abf529027d4ef9ac0da0e55f110af4c2e66ea079e6271028b1e2cb65e1ba26d3": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
       "created_at": "2026-11-03T11:30:53.073512+00:00",
       "kind": "event-description",
       "result": "International Championship Round 4: Wang Xinbo vs. Marco Fu – 03/11/2026 11:30 GMT",
       "title": "International Championship | Round 4: Wang Xinbo - Marco Fu"
+    },
+    "ac3565da84f8a216d3be8c5e9478e7b096a669cefa8456ea0d78354af1adcdd2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
     },
     "ac413d410473b1a024ff3ffe5a1188af2a68f504472dc806a662657b2bcb777b": {
       "created_at": "2026-11-06T16:30:24.695984+00:00",
@@ -8738,6 +8888,12 @@
         "description": "Coverage of Malaga Marathon.",
         "raw": "Malaga Marathon"
       }
+    },
+    "b2fed70bc182fc2ba6b18bb074587739e85776aa2f645322d44c297fc608bf4a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.066052+00:00"
     },
     "b30a10d9df8320c713953d10afceb2fd145535ed3782ab58b43eeaefd5c2808f": {
       "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
@@ -9556,6 +9712,12 @@
         "raw": "Ballon d'Or 2026 Ceremony (in Arabic)"
       }
     },
+    "c24c842be38b1c8ea387ef26487add6e3f4fe6f3b2521fc1416bc70a0c17a5fa": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:52.608227+00:00"
+    },
     "c2662b3700ebcea10205bc97b077373b5a73e56b1d99dbac3bb1dbfb810c563a": {
       "created_at": "2026-11-08T17:16:11.697730+00:00",
       "kind": "live-title",
@@ -9895,6 +10057,12 @@
         "description": "Coverage of Flames against Ducks.",
         "raw": "Flames @ Ducks"
       }
+    },
+    "c8c810e648d406d29feb7469a0953884ce144a8794ffedb54ff5f5a1b99ec4bd": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "c8dc5313f070167746914db571a4e15387ab780fb6c8e85745eaa5faa99951d5": {
       "created_at": "2026-11-09T22:26:26.057775+00:00",
@@ -10536,6 +10704,12 @@
         "raw": "Malaga Marathon"
       }
     },
+    "d53c52004fbce2cb61dcb097f5a41ea927c8f0ecd413e620bcbbbad4345cccd3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
+    },
     "d5409c02841fded4a3ee40319a94268388ffec1b84ccc68ece5f20ac837f7c6f": {
       "created_at": "2026-11-13T15:26:54.247638+00:00",
       "kind": "live-title",
@@ -10879,6 +11053,12 @@
         "description": "Coverage of Zamora B against Deportivo Lara.",
         "raw": "Zamora B vs. Deportivo Lara"
       }
+    },
+    "db74527ddd35378154d2ed4d6624fedc7c9665a44bdbc9aee43864ce88071cd8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:51.401590+00:00"
     },
     "db8dfebac50807e6ee81bb295c7f4ff0f98cbc17a906800e8390fbd2e63e7b64": {
       "created_at": "2026-11-18T05:43:14.839857+00:00",
@@ -11901,6 +12081,12 @@
         "raw": "FC 334 Gane v Hokit - Special Feed"
       }
     },
+    "f097937fb09380d0828a6a0d9220148e7342f63d51249cead78379d6e5f0c118": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-18T15:50:50.652709+00:00"
+    },
     "f0a2bfd8d46bdc04cc1838121884cf599719bcda12b56adf45ecc4d77329962a": {
       "created_at": "2026-11-05T13:54:36.011728+00:00",
       "kind": "live-title",
@@ -12619,6 +12805,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-18T21:35:50.006272+00:00"
+  },
   "version": 1
 }
