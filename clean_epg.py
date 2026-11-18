@@ -1817,6 +1817,31 @@ def _normalize_paramount_branding(
                         element.text = pattern.sub("CBS Sports HQ", element.text)
 
 
+def _split_long_event_listings(root: ET.Element, channel_ids: set[str]) -> None:
+    """Keep in-progress listings inside Nuvio's six-hour start-time lookup."""
+    limit = timedelta(hours=6)
+    stamp = "%Y%m%d%H%M%S %z"
+    children = []
+    for row in root:
+        children.append(row)
+        if row.tag != "programme" or row.get("channel") not in channel_ids:
+            continue
+        try:
+            start = datetime.strptime(row.get("start", ""), stamp).astimezone(UTC)
+            stop = datetime.strptime(row.get("stop", ""), stamp).astimezone(UTC)
+        except ValueError:
+            continue
+        while start + limit < stop:
+            start += limit
+            boundary = start.strftime(stamp)
+            continuation = deepcopy(row)
+            row.set("stop", boundary)
+            continuation.set("start", boundary)
+            children.append(continuation)
+            row = continuation
+    root[:] = children
+
+
 def process_epg() -> None:
     client: genai.Client | None = None
     groq_api_key = os.environ.get("GROQ_API_KEY")
@@ -2759,6 +2784,7 @@ def process_epg() -> None:
 
     _fill_polish_epg_gaps(root, datetime.now(UTC))
     _fill_uk_news_epg_gaps(root, datetime.now(UTC))
+    _split_long_event_listings(root, handled_channel_ids | football_mirror_ids | event_mirror_ids | bare_league_ids)
     tree = ET.ElementTree(root)
     with gzip.open(
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL

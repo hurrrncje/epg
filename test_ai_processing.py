@@ -249,7 +249,7 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(result.find("channel[@id='c0']/display-name").text, 'Sky Sports+ 01')
         upcoming = result.find("programme[@channel='c0']")
         self.assertEqual(upcoming.findtext('title'), 'Upcoming Event: Tennis A v B at 6.30pm')
-        self.assertEqual(upcoming.get('stop'), '20261101183000 +0000')
+        self.assertEqual(result.findall("programme[@channel='c0']")[3].get('stop'), '20261101183000 +0000')
         active = result.find("programme[@channel='c1']")
         self.assertEqual(active.findtext('title'), 'Tennis C v D')
         self.assertEqual(active.get('stop'), '20261101140000 +0000')
@@ -259,6 +259,23 @@ class AIProcessingTests(unittest.TestCase):
         self.requests.post.assert_not_called()
         manifest = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
         self.assertTrue({f'dummy-{i}' for i in range(1412, 1472)} <= manifest)
+
+    def test_long_event_visible_in_afternoon_and_late_evening(self):
+        ET = self.ns['ET']
+        root = ET.fromstring('<tv><programme channel="event" start="20261118000000 +0000" '
+                             'stop="20261119001500 +0000"><title>Upcoming event</title>'
+                             '<desc>Fixture details</desc></programme></tv>')
+        self.ns['_split_long_event_listings'](root, {'event'})
+        rows = list(root)
+        self.assertEqual(rows[0].get('start'), '20261118000000 +0000')
+        self.assertEqual(rows[-1].get('stop'), '20261119001500 +0000')
+        for left, right in zip(rows, rows[1:]):
+            self.assertEqual(left.get('stop'), right.get('start'))
+        for hour in (6, 13, 23):
+            now = f'20261118{hour:02d}1500 +0000'
+            earliest = f'20261118{hour - 6:02d}1500 +0000'
+            visible = [r for r in rows if earliest <= r.get('start') <= now < r.get('stop')]
+            self.assertEqual([r.findtext('desc') for r in visible], ['Fixture details'])
 
     def test_missing_football_listings_get_no_match_today(self):
         import xml.etree.ElementTree as ET
@@ -287,8 +304,8 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         for channel in ('c0', 'c1', 'c2', 'c5'):
             rows = result.findall(f"programme[@channel='{channel}']")
-            self.assertEqual([row.findtext('title') for row in rows], ['No match today'])
-            self.assertEqual(rows[0].get('stop'), stop.strftime('%Y%m%d%H%M%S %z'))
+            self.assertEqual([row.findtext('title') for row in rows], ['No match today'] * 4)
+            self.assertEqual(rows[-1].get('stop'), stop.strftime('%Y%m%d%H%M%S %z'))
         self.assertEqual(result.findtext("programme[@channel='c3']/title"),
                          'Blackburn Rovers vs. Burnley')
         self.assertIsNone(result.find("programme[@channel='c4']"))
@@ -382,11 +399,11 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         programmes = result.findall("programme[@channel='dummy-12375']")
         self.assertEqual([p.findtext('title') for p in programmes], [
-            'Upcoming Match: Chelsea vs Manchester City at 2pm',
-            'Chelsea vs Manchester City', 'Match ended',
+            *(['Upcoming Match: Chelsea vs Manchester City at 2pm'] * 3),
+            'Chelsea vs Manchester City', 'Match ended', 'Match ended',
         ])
-        self.assertEqual(programmes[1].get('start'), '20260516140000 +0000')
-        self.assertEqual(programmes[1].get('stop'), '20260516163000 +0000')
+        self.assertEqual(programmes[3].get('start'), '20260516140000 +0000')
+        self.assertEqual(programmes[3].get('stop'), '20260516163000 +0000')
         self.assertEqual(result.find("programme[@channel='dummy-12376']/title").text, 'No match today')
         self.assertEqual(result.find("programme[@channel='dummy-12377']/title").text, 'No match today')
         manifest = set(Path(__file__).with_name('football_mirror_channel_ids.txt').read_text().splitlines())
@@ -423,14 +440,14 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         programmes = result.findall("programme[@channel='dummy-12575']")
         self.assertEqual([p.findtext('title') for p in programmes], [
-            'Upcoming Match: FC Halifax Town vs. Yeovil at 3pm',
-            'FC Halifax Town vs. Yeovil', 'Match ended',
+            *(['Upcoming Match: FC Halifax Town vs. Yeovil at 3pm'] * 3),
+            'FC Halifax Town vs. Yeovil', 'Match ended', 'Match ended',
         ])
-        self.assertEqual(programmes[1].get('start'), '20261101150000 +0000')
-        self.assertEqual(programmes[1].get('stop'), '20261101173000 +0000')
+        self.assertEqual(programmes[3].get('start'), '20261101150000 +0000')
+        self.assertEqual(programmes[3].get('stop'), '20261101173000 +0000')
         for channel_id in ['dummy-12576', 'dummy-12577']:
             rows = result.findall(f"programme[@channel='{channel_id}']")
-            self.assertEqual(len(rows), 1)
+            self.assertEqual(len(rows), 4)
             self.assertEqual(rows[0].findtext('title'), 'No match today')
         active = result.find("programme[@channel='dummy-12578']")
         self.assertEqual(active.findtext('title'), 'Barrow vs. Eastleigh')
@@ -534,7 +551,7 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(live[0].get('stop'), '20261102120000 +0000')
         self.assertEqual(live[1].findtext('title'), 'No further event scheduled')
         continuous = root.findall("programme[@channel='c7']")
-        self.assertEqual(len(continuous), 1)
+        self.assertEqual(len(continuous), 4)
         self.assertEqual(continuous[0].findtext('title'), 'UFC Special Feed')
         self.assertNotIn('estimated', continuous[0].findtext('desc'))
         self.requests.post.assert_not_called()
@@ -583,8 +600,8 @@ class AIProcessingTests(unittest.TestCase):
         for i, title in enumerate(['LALIGA Highlight Show', 'The Rich Eisen Show']):
             rows = result.findall(f"programme[@channel='c{i}']")
             self.assertEqual(rows[0].findtext('title'), f'Upcoming Event: {title} at 5pm')
-            self.assertEqual(rows[1].findtext('title'), title)
-            self.assertEqual(rows[1].get('start'), '20261103170000 +0000')
+            self.assertEqual(rows[3].findtext('title'), title)
+            self.assertEqual(rows[3].get('start'), '20261103170000 +0000')
         retained = result.find("programme[@channel='c2']")
         self.assertEqual(retained.findtext('title'), 'Retained provider show')
         self.assertEqual(retained.get('stop'), '20261103180000 +0000')
@@ -623,11 +640,11 @@ class AIProcessingTests(unittest.TestCase):
         for i in range(len(labels)):
             with self.subTest(channel=labels[i]):
                 rows = result.findall(f"programme[@channel='c{i}']")
-                self.assertEqual(len(rows), 1)
+                self.assertEqual(len(rows), 4)
                 self.assertEqual(rows[0].findtext('title'), 'No event today')
                 self.assertEqual(rows[0].findtext('desc'), 'No event today')
                 self.assertEqual(rows[0].get('start'), '20261103000000 +0000')
-                self.assertEqual(rows[0].get('stop'), '20261104000000 +0000')
+                self.assertEqual(rows[-1].get('stop'), '20261104000000 +0000')
         self.requests.post.assert_not_called()
         self.client.models.generate_content.assert_not_called()
 
@@ -681,10 +698,10 @@ class AIProcessingTests(unittest.TestCase):
             with self.subTest(channel=labels[i], minute=minute):
                 rows = result.findall(f"programme[@channel='c{i}']")
                 upcoming = [r for r in rows if r.findtext('title', '').startswith('Upcoming Event:')]
-                self.assertEqual(len(upcoming), 1)
+                self.assertEqual(len(upcoming), 4 if minute == 0 else 5)
                 self.assertEqual(upcoming[0].get('start'), '20261103000000 +0000')
-                self.assertEqual(upcoming[0].get('stop'), f'2026110400{minute:02d}00 +0000')
-                active = [r for r in rows if r.get('start') == upcoming[0].get('stop')]
+                self.assertEqual(upcoming[-1].get('stop'), f'2026110400{minute:02d}00 +0000')
+                active = [r for r in rows if r.get('start') == upcoming[-1].get('stop')]
                 self.assertEqual(len(active), 1)
                 self.assertIn('Scheduled start: 04/11/2026 00:', upcoming[0].findtext('desc'))
                 self.assertFalse(any(r.findtext('title') == 'No event today' for r in rows))
