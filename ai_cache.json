@@ -538,6 +538,15 @@
         "raw": "Governors Cup New Smyrna"
       }
     },
+    "0c6d9940052f7bc01131afa887dbf6f239e63aa2a35464da703174b418048a97": {
+      "created_at": "2026-11-18T05:43:14.839866+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Ducks vs. Blues",
+        "description": "Coverage of Ducks against Blues.",
+        "raw": "Ducks @ Blues"
+      }
+    },
     "0cdc92132774720aa93f0fb3fa91a46a33b1d4986085aa12484a88acff4fa767": {
       "created_at": "2026-10-28T06:20:34.001580+00:00",
       "kind": "live-title",
@@ -1545,6 +1554,15 @@
       "kind": "event-description",
       "result": "#15 Stanford vs. #23 North Carolina."
     },
+    "22511f9b86e524e99810829fdc89bde428214cceb65883b9c8587240933a149d": {
+      "created_at": "2026-11-18T05:43:28.894761+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Stars vs Golden Knights",
+        "description": "Coverage of Stars against Golden Knights.",
+        "raw": "Stars @ Golden Knights"
+      }
+    },
     "228644c5c5b57b04a1f240468245e712c2dac61206b1540a2b2e138498908af2": {
       "created_at": "2026-11-04T15:31:01.992679+00:00",
       "kind": "live-title",
@@ -1958,6 +1976,15 @@
       "result": "Domestic league match between Liberte FC and JS Tahoua scheduled for 1 Nov 2026 at 15:15 GMT.",
       "title": "Liberté FC vs. JS Tahoua"
     },
+    "292b887258599183a3fe3d3ca3224ec449188b04c4cfe171a8f79b21b8d13ccb": {
+      "created_at": "2026-11-18T05:43:28.894754+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Predators vs Wild",
+        "description": "Coverage of Predators against Wild.",
+        "raw": "Predators @ Wild"
+      }
+    },
     "292baa88bdce00ae6d4a0aac5c8a7ec1078e81274c11b5cfaeefae0881fcbe7e": {
       "created_at": "2026-11-06T04:37:05.962194+00:00",
       "kind": "live-title",
@@ -2065,6 +2092,15 @@
         "clean_title": "Sharks vs Mammoth",
         "description": "Coverage of Sharks against Mammoth.",
         "raw": "Sharks @ Mammoth"
+      }
+    },
+    "2a12b4fb90187b70a141cef0df8c3a9c6c1ed4827c18c927a6c5d4d5fc4296f0": {
+      "created_at": "2026-11-18T05:43:28.894764+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 1, Draw 4",
+        "description": "Coverage of Sydney, Nova Scotia - Day 1, Draw 4.",
+        "raw": "Sydney, Nova Scotia - Day 1, Draw 4"
       }
     },
     "2a4b455e6a2792acf1be2a8adca5a3a1269dea6019760b2702063239fbf7525d": {
@@ -2700,6 +2736,15 @@
         "clean_title": "Panthère Noir vs. Never Give Up",
         "description": "Coverage of Panthère Noir against Never Give Up.",
         "raw": "Panthère Noir vs. Never Give Up"
+      }
+    },
+    "36a787d2fbfdd03be386495f070d74a78abd860caf18c489da34aabe0cfcd827": {
+      "created_at": "2026-11-18T05:43:14.839864+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "College Football Playoff Rankings Show",
+        "description": "Coverage of College Football Playoff Rankings Show.",
+        "raw": "College Football Playoff Rankings Show"
       }
     },
     "36c2fe58cb81112e07baac970fd8d542916b68e9ffb925299c2465f247938834": {
@@ -4023,6 +4068,15 @@
       "result": "Women Group Stage Dakar 2026: Iran vs. Cameroon – 03/11/2026 11:55 GMT",
       "title": "Women | Group Stage | Dakar 2026: Iran - Cameroon"
     },
+    "50b68743ac1e7cee51a2181c84386540ba45b5f9c0fbb69ffc4dcd0bb9cef9a7": {
+      "created_at": "2026-11-18T05:43:14.839868+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UFC 334: Gane vs. Hokit",
+        "description": "Coverage of UFC 334: Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
+      }
+    },
     "50f1ee8e8975becdea7bc85eb25ea15adc9654ef805f4e07933adfeb46f0c886": {
       "created_at": "2026-11-14T13:34:13.414015+00:00",
       "kind": "live-title",
@@ -4089,6 +4143,15 @@
         "clean_title": "Medicine Hat, AB - Day 3, Draw 11",
         "description": "Coverage of Medicine Hat, AB - Day 3, Draw 11.",
         "raw": "Medicine Hat, AB - Day 3, Draw 11"
+      }
+    },
+    "5286cde38b8b2b6f79f643e06fefed0fa31f02bee7c72991c1d72b12748320e3": {
+      "created_at": "2026-11-18T05:43:28.894750+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Players Era 8 - Quarterfinal: UNLV vs Kansas",
+        "description": "Coverage of Players Era 8 - Quarterfinal: UNLV against Kansas.",
+        "raw": "Players Era 8 - Quarterfinal: UNLV vs. Kansas"
       }
     },
     "528b295aef3d23be145b3665172e27c5c12f10b2d1eff67ef06f9ad378f53f74": {
@@ -4474,12 +4537,30 @@
         "raw": "Southern Thunder Super Dirt Series"
       }
     },
+    "5a228c510a835cf0ffb4be830c17a88995d84878ff2fbd6df28505c76ea152cc": {
+      "created_at": "2026-11-18T05:43:14.839860+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Blue Jackets vs. Islanders",
+        "description": "Coverage of Blue Jackets against Islanders.",
+        "raw": "Blue Jackets @ Islanders"
+      }
+    },
     "5a5a17a78e4f55c644801e44b53dc6af39a62365eb89f817566012241b30945a": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:15 GMT",
       "created_at": "2026-11-03T06:34:50.695542+00:00",
       "kind": "event-description",
       "result": "NFL Monday Night Football features the Chicago Bears versus Seattle Seahawks in Week 8 of the 2026 season at Lumen Field.",
       "title": "MNF with Peyton and Eli-Chicago Bears vs. Seattle Seahawks"
+    },
+    "5a84fff7dfc8fe6a7d944de2f2505c21b797178eb291f33b9a09ab83d9eacc7d": {
+      "created_at": "2026-11-18T05:43:28.894756+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Sabres vs Flyers",
+        "description": "Coverage of Sabres against Flyers.",
+        "raw": "Sabres @ Flyers"
+      }
     },
     "5af9ed47030dd20ba09d70f8386d4aa2802781d4cd9bfc9e6005e9ed79529352": {
       "created_at": "2026-11-07T14:24:25.648908+00:00",
@@ -5540,6 +5621,15 @@
         "clean_title": "Monza vs. Atalanta",
         "description": "Coverage of Monza against Atalanta.",
         "raw": "Monza vs. Atalanta"
+      }
+    },
+    "716717ff935ce1b097f7b61cf94940a59c42af6500a87c80817bd42f76d24c26": {
+      "created_at": "2026-11-18T05:43:28.894730+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Maple Leafs vs Blackhawks",
+        "description": "Coverage of Maple Leafs against Blackhawks.",
+        "raw": "Maple Leafs @ Blackhawks"
       }
     },
     "71a13b01a1893ebf730139dab8f0066fdbe2a9846e2e25ad2d6559ceac693951": {
@@ -6798,6 +6888,15 @@
         "clean_title": "Penguins vs. Ducks",
         "description": "Coverage of Penguins against Ducks.",
         "raw": "Penguins @ Ducks"
+      }
+    },
+    "8a93b94e44f05b100c6ede8e10956716d05739b18750a639e93779dbc7feba49": {
+      "created_at": "2026-11-18T05:43:28.894759+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Senators vs Jets",
+        "description": "Coverage of Senators against Jets.",
+        "raw": "Senators @ Jets"
       }
     },
     "8a966af5e5c7cd65bf9c0931ddb92334eb99a7d2cbc09f14a505de9fd5ad5927": {
@@ -8375,6 +8474,15 @@
       "result": "Hofstra women's basketball plays Georgia Tech in a collegiate game.",
       "title": "Hofstra vs. Georgia Tech"
     },
+    "ac7bbfc7789477069ed74f3d3ab5b90c1473a6b61877db6d47afaf7c5a1ea2c4": {
+      "created_at": "2026-11-18T05:43:14.839873+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Kings vs. Bruins",
+        "description": "Coverage of Kings against Bruins.",
+        "raw": "Kings @ Bruins"
+      }
+    },
     "acf33545ab6692184d23843c9803e4b3853e4e0109ceb2f22e46d5111ebb0a4d": {
       "created_at": "2026-11-09T15:34:57.820110+00:00",
       "kind": "live-title",
@@ -8638,6 +8746,15 @@
       "result": "EFL League One fixture between Wigan Athletic and Bromley at 15:00 GMT on 31 Oct 2026.",
       "title": "Wigan Athletic vs Bromley FC"
     },
+    "b316160385df5a59fef139fde053ca993b69e195d4fc894680640ff4ff044253": {
+      "created_at": "2026-11-18T05:43:14.839872+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Illinois vs. Duke",
+        "description": "Coverage of Illinois against Duke.",
+        "raw": "Illinois @ Duke"
+      }
+    },
     "b3225572b49a58b91ec00c2ebbd45191070a2891f10acb9d2e720f3cefcd639e": {
       "created_at": "2026-11-10T16:30:55.547999+00:00",
       "kind": "live-title",
@@ -8645,6 +8762,15 @@
         "clean_title": "Sabah BC vs. Trabzonspor",
         "description": "Coverage of Sabah BC against Trabzonspor.",
         "raw": "Sabah BC vs. Trabzonspor"
+      }
+    },
+    "b34d05a299d3092bb9c0f89a1ba4b1f355a638b130a4286dc254ebb960f1bf45": {
+      "created_at": "2026-11-18T05:43:28.894747+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Michigan State vs Tennessee",
+        "description": "Coverage of Michigan State against Tennessee.",
+        "raw": "Michigan State @ Tennessee"
       }
     },
     "b36fc770f7f0a8d20ae0bd24baa6ec2e82f50e9740a746cac4121e104d3dfd81": {
@@ -8663,6 +8789,15 @@
         "clean_title": "Bea Mountain FC vs Paynesville FC",
         "description": "Coverage of Bea Mountain FC against Paynesville FC.",
         "raw": "Bea Mountain FC vs. Paynesville FC"
+      }
+    },
+    "b3b75ed553deb506840f4e7311a7ccc3ca92a6e25cd153938cff2aeafa56a9ae": {
+      "created_at": "2026-11-18T05:43:14.839870+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Flames vs. Sharks",
+        "description": "Coverage of Flames against Sharks.",
+        "raw": "Flames @ Sharks"
       }
     },
     "b3be9f0bf20a144d0a49ea8c2bfac91951736e9d3efc09a97011faa7839558fa": {
@@ -9605,6 +9740,15 @@
         "clean_title": "Chiefs vs Seahawks",
         "description": "Week 7 NFL game between the Kansas City Chiefs and the Seattle Seahawks, played on October 25, 2026, at Lumen Field in Seattle.",
         "raw": "Chiefs @ Seahawks"
+      }
+    },
+    "c60e79d1e8145d1b9ac520a30dabd94d58ed707dddf1280dd69f5b4efab2a492": {
+      "created_at": "2026-11-18T05:43:14.839843+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
       }
     },
     "c62a79bda9705ae06cbb7bd1cd81e63f1108bcf99f7ab65200dc0c479c30a95d": {
@@ -10736,6 +10880,15 @@
         "raw": "Zamora B vs. Deportivo Lara"
       }
     },
+    "db8dfebac50807e6ee81bb295c7f4ff0f98cbc17a906800e8390fbd2e63e7b64": {
+      "created_at": "2026-11-18T05:43:14.839857+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Arkansas vs. Indiana",
+        "description": "Coverage of Arkansas against Indiana.",
+        "raw": "Arkansas vs. Indiana"
+      }
+    },
     "dbb96d3137aba880d275e95801288ffcbe6a905fa05b98d40bdcb0c5259cf51c": {
       "created_at": "2026-11-08T05:29:32.514117+00:00",
       "kind": "live-title",
@@ -10881,6 +11034,15 @@
         "clean_title": "OKTAGON 97: Igor Severino vs. Max Holzer",
         "description": "Coverage of OKTAGON 97: Igor Severino against Max Holzer.",
         "raw": "Oktagon 97 Severino v Holzer"
+      }
+    },
+    "df1b862108d567e3fde2485285155c735a90f223daa1d2af125445329c040719": {
+      "created_at": "2026-11-18T05:43:28.894752+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Players Era 8 - Quarterfinal: West Virginia vs Auburn",
+        "description": "Coverage of Players Era 8 - Quarterfinal: West Virginia against Auburn.",
+        "raw": "Players Era 8 - Quarterfinal: West Virginia vs. Auburn"
       }
     },
     "df28ad7b732b31226f8672bee70a3bd8168f1cb812135eea6990415f3a4a8ada": {
@@ -11492,6 +11654,15 @@
         "clean_title": "Florida vs Florida State",
         "description": "Coverage of Florida against Florida State.",
         "raw": "Florida @ Florida State"
+      }
+    },
+    "eaff35448149fe136d239f35c2c031cc0c0587bc5cb9677b8ee740db5f93276b": {
+      "created_at": "2026-11-18T05:43:14.839862+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Capitals vs. Lightning",
+        "description": "Coverage of Capitals against Lightning.",
+        "raw": "Capitals @ Lightning"
       }
     },
     "eb4fae5325f96f128283bedbbfa99c391c451275ca0ed45de2252299c6e06897": {
@@ -12448,6 +12619,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-18T11:42:43.274324+00:00"
+  },
   "version": 1
 }
