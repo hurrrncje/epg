@@ -150,6 +150,7 @@ class AIProcessingTests(unittest.TestCase):
         self.addCleanup(temporary.cleanup)
         folder = Path(temporary.name)
         for constant, name in [('AI_CACHE_FILE', 'ai_cache.json'), ('OUTPUT_GZ_FILE', 'guide.gz'),
+                                ('FOOTBALL_TEAM_CHANNELS_FILE', 'teams.tsv'),
                                 ('FOOTBALL_MIRROR_IDS_FILE', 'football.txt'), ('EVENT_MIRROR_IDS_FILE', 'events.txt')]:
             self.ns[constant] = folder / name
         xml = '<tv>' + ''.join(f'<channel id="c{i}"><display-name>{label}</display-name></channel>' for i, label in enumerate(labels)) + '</tv>'
@@ -293,6 +294,54 @@ class AIProcessingTests(unittest.TestCase):
         self.assertIsNone(result.find("programme[@channel='c4']"))
         self.assertEqual(result.findtext("programme[@channel='c6']/title"),
                          'Another listed fixture')
+
+    def test_omitted_playlist_teams_receive_no_match_today(self):
+        import xml.etree.ElementTree as ET
+        folder = self.prepare_process(['General channel'])
+        (folder / 'teams.tsv').write_text('EFLBirminghamCity.uk\tBirmingham City\nEPLArsenal.uk\tArsenal\n')
+        with patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        for channel_id in ('EFLBirminghamCity.uk', 'EPLArsenal.uk'):
+            self.assertIsNotNone(result.find(f"channel[@id='{channel_id}']"))
+            self.assertEqual(result.findtext(f"programme[@channel='{channel_id}']/title"), 'No match today')
+
+    def test_efl_backup_pipe_labels_and_tomorrow_upcoming(self):
+        import xml.etree.ElementTree as ET
+        tomorrow = self.ns['datetime'].now(self.ns['UTC']).date() + self.ns['timedelta'](days=1)
+        label = f'EFL01ⓧ| Bristol City 20:00 Watford (CH) {tomorrow:%d/%m/%Y}'
+        parsed = self.ns['_parse_epl_dynamic_label'](label, tomorrow)
+        self.assertEqual(parsed['title'], 'Bristol City vs Watford')
+        folder = self.prepare_process([label])
+        with patch.dict(os.environ, {'GEMINI_API_KEY': '', 'GROQ_API_KEY': ''}):
+            self.ns['process_epg']()
+        result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        upcoming = result.find("programme[@channel='c0']")
+        self.assertTrue(upcoming.findtext('title').startswith('Upcoming Match:'))
+        self.assertEqual(upcoming.get('start')[:8], self.ns['datetime'].now(self.ns['UTC']).strftime('%Y%m%d'))
+
+    def test_news_placeholders_use_detailed_alias_and_backup_schedules(self):
+        import xml.etree.ElementTree as ET
+        now = self.ns['datetime'](2026, 11, 18, 12, tzinfo=self.ns['UTC'])
+        root = ET.fromstring('''<tv>
+          <channel id="bbcnews.uk"/><channel id="skynews.uk"/><channel id="Sky.News.be"/>
+          <programme channel="bbcnews.uk" start="20261118000000 +0000" stop="20261119000000 +0000"><title>BBC News</title></programme>
+          <programme channel="skynews.uk" start="20261118000000 +0000" stop="20261119000000 +0000"><title>Sky News</title></programme>
+          <programme channel="Sky.News.be" start="20261118120000 +0000" stop="20261118130000 +0000"><title>Sky News Today</title></programme>
+        </tv>''')
+        self.requests.get.return_value = Response(content=gzip.compress(b'''<tv>
+          <programme channel="BBC.NEWS.HD.uk" start="20261118120000 +0000" stop="20261118130000 +0000"><title>BBC News Now</title></programme>
+        </tv>'''))
+        self.ns['_fill_uk_news_epg_gaps'](root, now)
+        self.assertEqual(root.findtext("programme[@channel='bbcnews.uk']/title"), 'BBC News Now')
+        self.assertEqual(root.findtext("programme[@channel='skynews.uk']/title"), 'Sky News Today')
+        self.assertEqual(root.findtext("programme[@channel='Sky.News.be']/title"), 'Sky News Today')
+        self.requests.get.reset_mock()
+        self.ns['_fill_uk_news_epg_gaps'](root, now)
+        self.requests.get.assert_not_called()
+        manifest = set(Path(__file__).with_name('event_mirror_channel_ids.txt').read_text().splitlines())
+        news_ids = {channel_id for ids, _ in self.ns['UK_NEWS_CHANNELS'] for channel_id in ids}
+        self.assertFalse(news_ids & manifest)
 
     def test_fa_cup_pipe_labels_parse_fixture_and_empty_channels(self):
         parse = self.ns['_parse_european_league_label']

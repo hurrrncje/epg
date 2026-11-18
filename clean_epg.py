@@ -25,6 +25,13 @@ from google.genai import types
 
 
 EPG_URL = "https://opop.pro/JKmjctL4MbfezAX"
+FOOTBALL_TEAM_CHANNELS_FILE = Path(__file__).with_name("football_team_channels.tsv")
+UK_NEWS_EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz"
+UK_NEWS_CHANNELS = (
+    (("bbcnews.uk", "BBC.News.be"), "BBC.NEWS.HD.uk"),
+    (("skynews.uk", "Sky.News.be"), "Sky.News.HD.uk"),
+    (("skysportsnews.uk", "Sky.Sports.News.cz"), "SkySp.News.HD.uk"),
+)
 POLISH_EPG_CHANNELS_FILE = Path(__file__).with_name("polish_epg_channels.tsv")
 POLISH_EPG_URLS = (
     "https://epg.ovh/pl.gz",
@@ -762,6 +769,8 @@ def _replace_game_with_match(title: str) -> str:
 
 def _parse_epl_dynamic_label(label: str, today: Any) -> dict[str, Any] | None:
     """Parse numbered EPL/EFL labels such as `EFL01: Team A 12:30 Team B 24/10`."""
+    label = re.sub(r"^((?:EPL|EFL)\s*\d{1,2})\s*ⓧ?\s*\|", r"\1:", label.strip(), flags=re.I)
+    label = re.sub(r"\s+\((?:CH|L1|L2)\)(?=\s+\d{1,2}/\d{1,2})", "", label, flags=re.I)
     channel_match = EPL_EFL_CHANNEL_PATTERN.match(label.strip())
     if not channel_match:
         return None
@@ -1620,6 +1629,91 @@ def _download_epg_root() -> ET.Element:
     raise RuntimeError("No EPG download attempts configured")
 
 
+def _restore_team_channels(root: ET.Element) -> set[str]:
+    """Declare reviewed playlist team IDs even when XMLTV omits idle teams."""
+    if not FOOTBALL_TEAM_CHANNELS_FILE.is_file():
+        return set()
+    channels = {channel.get("id") for channel in root.iter("channel")}
+    team_ids = set()
+    added = []
+    for line in FOOTBALL_TEAM_CHANNELS_FILE.read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
+            continue
+        channel_id, name = line.split("\t", 1)
+        team_ids.add(channel_id)
+        if channel_id not in channels:
+            channel = ET.Element("channel", id=channel_id)
+            ET.SubElement(channel, "display-name").text = name
+            added.append(channel)
+            channels.add(channel_id)
+    first_programme = next((i for i, item in enumerate(root) if item.tag == "programme"), len(root))
+    root[first_programme:first_programme] = added
+    print(f"Restored {len(added)} omitted team channel(s) using playlist XMLTV IDs.")
+    return team_ids
+
+
+def _fill_uk_news_epg_gaps(root: ET.Element, now: datetime) -> None:
+    """Replace generic news placeholders with detailed schedules under exact IDs."""
+    channel_ids = {channel.get("id") for channel in root.iter("channel")}
+    listings: dict[str, list[ET.Element]] = {}
+    for programme in root.iter("programme"):
+        listings.setdefault(programme.get("channel", ""), []).append(programme)
+
+    def detailed_rows(channel_id: str, aliases: set[str]) -> list[ET.Element]:
+        rows = []
+        for programme in listings.get(channel_id, []):
+            title = (programme.findtext("title") or "").strip().casefold()
+            if not title or title in aliases:
+                continue
+            try:
+                stop = datetime.strptime(programme.get("stop", ""), "%Y%m%d%H%M%S %z")
+            except ValueError:
+                continue
+            if stop > now:
+                rows.append(programme)
+        return rows
+
+    pending = []
+    replacements = {}
+    for destination_ids, backup_id in UK_NEWS_CHANNELS:
+        aliases = {"bbc news", "bbc news hd", "sky news", "sky news hd", "sky sports news"}
+        available = next((rows for channel_id in destination_ids
+                          if (rows := detailed_rows(channel_id, aliases))), [])
+        missing = [channel_id for channel_id in destination_ids
+                   if channel_id in channel_ids and not detailed_rows(channel_id, aliases)]
+        if available:
+            replacements.update({channel_id: available for channel_id in missing})
+        elif missing:
+            pending.append((missing, backup_id))
+    if pending:
+        try:
+            with requests.get(UK_NEWS_EPG_URL, timeout=(10, 40)) as response:
+                response.raise_for_status()
+                data = response.content
+            backup = ET.fromstring(gzip.decompress(data) if data.startswith(b"\x1f\x8b") else data)
+            if backup.tag != "tv":
+                raise ValueError("Expected an XMLTV document")
+            backup_rows = {}
+            for programme in backup.iter("programme"):
+                backup_rows.setdefault(programme.get("channel", ""), []).append(programme)
+            listings.update(backup_rows)
+            for missing, backup_id in pending:
+                available = detailed_rows(backup_id, set())
+                if available:
+                    replacements.update({channel_id: available for channel_id in missing})
+        except (requests.exceptions.RequestException, OSError, EOFError, ET.ParseError, ValueError) as exc:
+            print(f"UK news EPG backup unavailable ({type(exc).__name__}).")
+    for programme in list(root.iter("programme")):
+        if programme.get("channel") in replacements:
+            root.remove(programme)
+    for channel_id, rows in replacements.items():
+        for programme in rows:
+            listing = deepcopy(programme)
+            listing.set("channel", channel_id)
+            root.append(listing)
+        print(f"Restored detailed UK news schedule for {channel_id}: {len(rows)} programme(s).")
+
+
 def _fill_polish_epg_gaps(root: ET.Element, now: datetime) -> None:
     """Fill missing schedules under the editor's exact playlist channel IDs."""
     if not POLISH_EPG_CHANNELS_FILE.is_file():
@@ -1743,6 +1837,8 @@ def process_epg() -> None:
         return client
 
     root = _download_epg_root()
+    team_channel_ids = _restore_team_channels(root)
+    football_mirror_ids.update(team_channel_ids)
 
     print("Finding dynamic live-event and football channels...")
     targets: dict[str, dict[str, Any]] = {}
@@ -2233,6 +2329,11 @@ def process_epg() -> None:
     }
 
     def has_fixture_listing(programme: ET.Element, labels: set[str]) -> bool:
+        try:
+            if datetime.strptime(programme.get("stop", ""), "%Y%m%d%H%M%S %z") <= now_utc:
+                return False
+        except ValueError:
+            return False
         return any(
             football_label(title.text or "") not in labels
             and not _is_no_event_title(_clean_mirrored_event_title(title.text or ""))
@@ -2283,7 +2384,7 @@ def process_epg() -> None:
         day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         day_end = day_start + timedelta(days=1)
         event_end = min(start_utc + EPL_EVENT_DURATION, day_end)
-        upcoming_start = day_start
+        upcoming_start = guide_day_start
         upcoming_title = f"Upcoming Match: {title} at {_format_gmt_time(start_utc)}"
         description = _local_event_description(title, item.get("league", "Football"))
         if upcoming_start < start_utc and now_utc < start_utc:
@@ -2564,7 +2665,7 @@ def process_epg() -> None:
         match_end = min(start_utc + EPL_EVENT_DURATION, match_day_end)
         if mirror_now_utc < start_utc:
             upcoming = ET.Element("programme", {
-                "start": match_day_start.strftime("%Y%m%d%H%M%S %z"),
+                "start": mirror_day_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
                 "channel": ch_id,
             })
@@ -2657,6 +2758,7 @@ def process_epg() -> None:
                 title_element.text = _clean_programme_date_labels(title_element.text)
 
     _fill_polish_epg_gaps(root, datetime.now(UTC))
+    _fill_uk_news_epg_gaps(root, datetime.now(UTC))
     tree = ET.ElementTree(root)
     with gzip.open(
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL

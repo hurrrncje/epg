@@ -36,8 +36,6 @@ abcnewslive.us
 alf.us
 antiquesroadshow.us
 Baseball.Dummy.us
-BBC.News.be
-bbcnews.uk
 bbcnews.us
 beachtv.us
 bigbrothercamera1.us
@@ -12015,8 +12013,6 @@ RTSH.Muzike.al
 RTSH.Shqip.al
 samuelgoldwynchannel.us
 samuelgoldwynclassics.us
-skynews.uk
-skysportsnews.uk
 spectrumxcast2.us
 Stingray.Classic.Rock.ca2
 Stingray.Country.ca2
