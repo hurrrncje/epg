@@ -61,7 +61,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.978005+00:00"
+      "retry_after": "2026-11-19T08:25:39.908335+00:00"
     },
     "015f33362acb1190d086383a376970fca54b67ac0e4b707bd5ff0746bc5ceae0": {
       "context": "ESPN+ event scheduled 02/11/2026 19:00 GMT",
@@ -3184,10 +3184,13 @@
       "title": "| Columbus Crew vs D.C. United (English)"
     },
     "3dce578bde502853840aec41720ff7fd0bc635f6ea1d81b94f6ab3510413fc94": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315674+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Kansas @ Minnesota",
+        "description": "Coverage of Kansas against Minnesota.",
+        "raw": "Kansas @ Minnesota"
+      }
     },
     "3df2c4a35a92413d7d492ab2faf55c6745258b3aecbbd665c3b8ddc6b783bc3f": {
       "context": "MLS fixture scheduled 31/10/2026 16:55 GMT",
@@ -3580,7 +3583,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.978005+00:00"
+      "retry_after": "2026-11-19T08:25:39.908335+00:00"
     },
     "43df81343ba104c15dce33f307200b2bdfb8f7016b21a54704d677d72c9fdf34": {
       "created_at": "2026-11-07T16:17:32.146922+00:00",
@@ -4408,10 +4411,13 @@
       }
     },
     "5606242b61e4bab5bf6ee81a31d55a31a214564fa3f21f146f86a79f8b27430f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315665+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Bruins @ Red Wings",
+        "description": "Coverage of Bruins against Red Wings.",
+        "raw": "Bruins @ Red Wings"
+      }
     },
     "5635fb804fdcdcb6b471caf105a9eb2c6b5314c0f512e6e6b65bf00ab8b382a5": {
       "created_at": "2026-11-14T06:31:11.948480+00:00",
@@ -6663,10 +6669,13 @@
       }
     },
     "82364f0f3744842b508f9697d1a6735be3f4cc1eb7719205f0602dcbdbec0241": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315676+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Ole Miss @ Ohio State",
+        "description": "Coverage of Ole Miss against Ohio State.",
+        "raw": "Ole Miss @ Ohio State"
+      }
     },
     "8238e018b4dc90451a2a644f609c9bf28eee67c1224fc41f5828876849ba999e": {
       "created_at": "2026-11-05T13:54:36.011721+00:00",
@@ -7129,7 +7138,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.978005+00:00"
+      "retry_after": "2026-11-19T08:25:39.908335+00:00"
     },
     "8b4190bdf1bd5e4c34f1a47a0ef74ef2b27b802a339d0abde8612263272c1c07": {
       "created_at": "2026-11-09T22:26:26.057768+00:00",
@@ -7344,10 +7353,13 @@
       }
     },
     "90ef628b72e385da0d0f301391878969e8478d7b3e36a6ba8c4c64a5622236d0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315646+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
+      }
     },
     "90ffc09633f9f2d971fb525f670bce7f3520cf6b47f21c8e1980a011c3b19021": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -8071,10 +8083,13 @@
       }
     },
     "a045d3749f58aac9a36375fcbdb1cebdde335bf08fa10dc9eeb4851e17289b51": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315667+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Cal State Fullerton @ UCLA",
+        "description": "Coverage of Cal State Fullerton against UCLA.",
+        "raw": "Cal State Fullerton @ UCLA"
+      }
     },
     "a06025cb51c1c098ffc4088d372715dacfd9dd7b365928c9cacf1776f786afdb": {
       "created_at": "2026-11-04T15:31:01.992676+00:00",
@@ -8499,10 +8514,13 @@
       }
     },
     "a8ba53900f0c5dae8ecaa55c64ae1c68a7ef0183a6d8463535ff5e60adfc394e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315670+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Central Michigan @ Buffalo",
+        "description": "Coverage of Central Michigan against Buffalo.",
+        "raw": "Central Michigan @ Buffalo"
+      }
     },
     "a8ea41e482f4f87e662bbea06cb68dd54caf0a0bf5e8a2dfe8e45d27baa3cca7": {
       "created_at": "2026-11-08T05:29:51.590120+00:00",
@@ -9368,10 +9386,13 @@
       }
     },
     "b911b0f9506c2d455ec0be3b2492e2bfd1db003f866805522688494ede40e424": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315678+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "PPL MGM Las Vegas",
+        "description": "Coverage of PPL MGM Las Vegas.",
+        "raw": "PPL MGM Las Vegas - Day 1"
+      }
     },
     "b95454ce713d09a6587c63ac7c2c9c1557961bf8fd4ca791c89f98bdd0fc0fe9": {
       "created_at": "2026-11-08T07:43:01.987195+00:00",
@@ -9584,10 +9605,13 @@
       "title": "Sabres @ Sharks"
     },
     "bd53087a40583eef07a21b4a91908f04fc47c1a8bfe71b586fec079e7e15a817": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315679+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Players Era 8 - Semifinal: Kansas vs. West Virginia",
+        "description": "Coverage of Players Era 8 - Semifinal: Kansas against West Virginia.",
+        "raw": "Players Era 8 - Semifinal: Kansas vs. West Virginia"
+      }
     },
     "bd59e31283bb16cd371c1d3bfc20f328ac51be39f2e28213e9b80bebb631511a": {
       "created_at": "2026-10-26T12:30:58.030820+00:00",
@@ -10425,7 +10449,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.978005+00:00"
+      "retry_after": "2026-11-19T08:25:39.908335+00:00"
     },
     "ccf87a0ad49e47c0929a3576c19d8a47792fd5d5c7c83de6fd1047579d7a59c7": {
       "created_at": "2026-11-15T05:33:11.434091+00:00",
@@ -11212,10 +11236,13 @@
       "title": "Women | Group Stage | Dakar 2026: Ukraine - Fiji"
     },
     "dcbc94a05dbd1dabb48f76ad5003464f9cb145bf67c249ebc24526501ee73911": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315661+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "Avalanche @ Mammoth",
+        "description": "Coverage of Avalanche against Mammoth.",
+        "raw": "Avalanche @ Mammoth"
+      }
     },
     "dcbef1a9cfc7044c7d41cf98e5ef0a1b16631872e25d430990dd2e66c13922c7": {
       "created_at": "2026-11-15T05:32:57.224753+00:00",
@@ -12733,10 +12760,13 @@
       }
     },
     "fc3701709ca44da9c95241cd85c8a3f0d166da74d76cb93cd0529f963be4462b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T08:10:30.315672+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T06:05:39.407381+00:00"
+      "result": {
+        "clean_title": "FC 334 Gane v Hokit",
+        "description": "Coverage of FC 334 Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
+      }
     },
     "fc3b1cca3708724643456068905e0cc08c20ffe848922414e9971c562648f8f5": {
       "created_at": "2026-11-04T13:50:28.840976+00:00",
