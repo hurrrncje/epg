@@ -27,7 +27,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "00f5e21248bdf6db6beb46c4b3278d7fdfe9901cd5fb7233011b956c296f6ecb": {
       "created_at": "2026-11-14T17:17:57.408760+00:00",
@@ -3062,7 +3062,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "3a246ff9d07e61a0bf815fb3e0642da5f4f953e12be02f296b6e307ec0c37228": {
       "created_at": "2026-11-14T14:25:52.267700+00:00",
@@ -3149,7 +3149,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -6165,7 +6165,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "74e49fc0843f19a73d4266c4424926278504451dbdc6d8527f2606e78e50c16b": {
       "created_at": "2026-11-10T05:32:33.153341+00:00",
@@ -7457,7 +7457,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "8d81f2c6a918ce563152f194f7805b08ec819b2b7933debdd33191519b0d978f": {
       "created_at": "2026-11-19T16:43:17.107961+00:00",
@@ -7731,7 +7731,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "93a3f2fc00f2f5bc8c9593bf8c7d81cf424b0d48d782bd940449f5d3a217406b": {
       "created_at": "2026-11-05T13:54:36.011714+00:00",
@@ -8304,7 +8304,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "9f85674dd7ab441469aad21aeb5fc20aafeb51d76a3b1b7ec48e838e6054482b": {
       "created_at": "2026-11-13T12:37:26.138305+00:00",
@@ -9282,7 +9282,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "b1f75b357b99ba92066ad34b9092df245b01c6f3aa3e7e40fc58f1b095bca1a4": {
       "created_at": "2026-11-04T13:50:50.158558+00:00",
@@ -10440,7 +10440,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -13164,7 +13164,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T17:51:49.230160+00:00"
+      "retry_after": "2026-11-19T18:40:46.458615+00:00"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
