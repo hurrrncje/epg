@@ -12826,8 +12826,6 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {
-    "gemini": "2026-11-19T04:30:13.044892+00:00"
-  },
+  "provider_cooldowns": {},
   "version": 1
 }
