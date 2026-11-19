@@ -27,7 +27,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "00f5e21248bdf6db6beb46c4b3278d7fdfe9901cd5fb7233011b956c296f6ecb": {
       "created_at": "2026-11-14T17:17:57.408760+00:00",
@@ -817,10 +817,13 @@
       }
     },
     "11b314fbbccecc10eb6e92301abc2723f460c643d803d37ad2075441e9dca260": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:26.683129+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:38:18.849458+00:00"
+      "result": {
+        "clean_title": "Tarleton State vs USC",
+        "description": "Coverage of Tarleton State against USC.",
+        "raw": "Tarleton State @ USC"
+      }
     },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
       "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
@@ -3059,7 +3062,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "3a246ff9d07e61a0bf815fb3e0642da5f4f953e12be02f296b6e307ec0c37228": {
       "created_at": "2026-11-14T14:25:52.267700+00:00",
@@ -3146,7 +3149,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -4332,10 +4335,13 @@
       }
     },
     "51d1187103a91b43fb3f9a6f5a9103de325142bc23eaac2c8dc6fff6ef874156": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107990+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "Oregon State vs Oregon",
+        "description": "Coverage of Oregon State against Oregon.",
+        "raw": "Oregon State @ Oregon"
+      }
     },
     "520e62f97e6a939901950579edaa923c65eef2947399d80e674211b1c4b02290": {
       "created_at": "2026-11-15T05:32:30.749306+00:00",
@@ -5532,10 +5538,13 @@
       }
     },
     "69bd72e295efd646a9d3e33490e70e2603a78d046e88aac31c8f212fd9b279c4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107980+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "NRL 360: 2027 Draw",
+        "description": "Coverage of NRL 360: 2027 Draw.",
+        "raw": "NRL 360: 2027 Draw"
+      }
     },
     "69cf0c22af94f0dbece0d9e86b43d428317e5444e3b979aa6697d9dba400cc24": {
       "created_at": "2026-11-13T12:37:26.138307+00:00",
@@ -5751,10 +5760,13 @@
       }
     },
     "6ef314006ef02d5e5a8f0a5965ce0a35cc55dcd5d5272549211f1d74cf9ebfd5": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:26.683153+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:38:18.849458+00:00"
+      "result": {
+        "clean_title": "Wologisi FC vs District-17 FC",
+        "description": "Coverage of Wologisi FC against District-17 FC.",
+        "raw": "Wologisi FC vs. District-17 FC"
+      }
     },
     "6f253719fc294dcf3957bc1c4dfac1fe09a9e9788eab5a8ee7f1f69e3374f256": {
       "created_at": "2026-11-14T20:15:15.573739+00:00",
@@ -6153,7 +6165,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "74e49fc0843f19a73d4266c4424926278504451dbdc6d8527f2606e78e50c16b": {
       "created_at": "2026-11-10T05:32:33.153341+00:00",
@@ -6808,10 +6820,13 @@
       "title": "Wycombe Wanderers FC vs Burton Albion FC"
     },
     "81b87ec7ace158429c2a67c9049274f2b4e5ad18f5c99e9f92cee758425ac796": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107992+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "PPL MGM Las Vegas Day 2 Session 1",
+        "description": "Coverage of PPL MGM Las Vegas Day 2 Session 1.",
+        "raw": "PPL MGM Las Vegas - Day 2 - Session 1"
+      }
     },
     "81c64623d6283b0002d5036dbcc162344b07cc86fc860e92bd4d357417c77c9f": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -7442,13 +7457,16 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "8d81f2c6a918ce563152f194f7805b08ec819b2b7933debdd33191519b0d978f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107961+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "Mozambique U17 vs Denmark U17",
+        "description": "Coverage of Mozambique U17 against Denmark U17.",
+        "raw": "Mozambique U17 vs. Denmark U17"
+      }
     },
     "8dc5c537a5ad76564e0440ecbfc69e9f0088f7f6fb4dfb8f868cf573c3880158": {
       "created_at": "2026-11-06T16:30:24.696006+00:00",
@@ -7713,7 +7731,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "93a3f2fc00f2f5bc8c9593bf8c7d81cf424b0d48d782bd940449f5d3a217406b": {
       "created_at": "2026-11-05T13:54:36.011714+00:00",
@@ -8286,7 +8304,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "9f85674dd7ab441469aad21aeb5fc20aafeb51d76a3b1b7ec48e838e6054482b": {
       "created_at": "2026-11-13T12:37:26.138305+00:00",
@@ -8298,10 +8316,13 @@
       }
     },
     "9fb890712a721c8ade6b6795ad2fc04744545e57ac06f99e0ebb2573f558b077": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107996+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "Players Era 8 3rd Place Game Florida vs West Virginia",
+        "description": "Coverage of Players Era 8 3rd Place Game Florida against West Virginia.",
+        "raw": "Players Era 8 - 3rd Place Game: Florida vs. West Virginia"
+      }
     },
     "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
       "created_at": "2026-11-06T03:30:23.708951+00:00",
@@ -8383,10 +8404,13 @@
       }
     },
     "a15ef6b16fbd03de171969f201cfd3dcb4b149d279327c3ddd53f1d2da3fc836": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:26.683150+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:38:18.849458+00:00"
+      "result": {
+        "clean_title": "Wild vs Flames",
+        "description": "Coverage of Wild against Flames.",
+        "raw": "Wild @ Flames"
+      }
     },
     "a178616f2f4907215543520ee44c0923fb7c61e390d395015c72d0515c1d5212": {
       "created_at": "2026-11-07T06:27:35.762097+00:00",
@@ -8616,10 +8640,13 @@
       }
     },
     "a632b78e68f28892750c54167d8cec0abf217e655e48bfee3227b2f98d9a6b92": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107998+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "Players Era 8 Championship Game Houston vs Kansas",
+        "description": "Coverage of Players Era 8 Championship Game Houston against Kansas.",
+        "raw": "Players Era 8 - Championship Game: Houston vs. Kansas"
+      }
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -9021,10 +9048,13 @@
       }
     },
     "ad03a8281202ce7709a0b156b6cad98fe8a2fb3679b8b3b34b1810f66022cab1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107994+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "PPL MGM Las Vegas Day 2 Session 2",
+        "description": "Coverage of PPL MGM Las Vegas Day 2 Session 2.",
+        "raw": "PPL MGM Las Vegas - Day 2 - Session 2"
+      }
     },
     "ad113bfdca80a8cfabe804e11c4b990228d085758937527df4e8137e216f09e5": {
       "created_at": "2026-11-04T13:50:50.158560+00:00",
@@ -9217,10 +9247,13 @@
       }
     },
     "b0f3b348f83973fb05453cfc25ee91ba333a58831d1b8b76db5dd1bda04a7e23": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107987+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "Oilers vs Lightning",
+        "description": "Coverage of Oilers against Lightning.",
+        "raw": "Oilers @ Lightning"
+      }
     },
     "b15fb8bb2c631dc1dc45337b9719824f27f36a585e5db90590e5c444942ced9c": {
       "created_at": "2026-10-26T12:30:58.030767+00:00",
@@ -9249,7 +9282,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "b1f75b357b99ba92066ad34b9092df245b01c6f3aa3e7e40fc58f1b095bca1a4": {
       "created_at": "2026-11-04T13:50:50.158558+00:00",
@@ -9261,10 +9294,13 @@
       }
     },
     "b20d57f60da71a458c915d11b941dc705afc4cf75c9c5520164e0d599f7f9137": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:26.683148+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:38:18.849458+00:00"
+      "result": {
+        "clean_title": "Verona vs GCL Super Cup Quarter Final",
+        "description": "Coverage of Verona against GCL Super Cup Quarter Final.",
+        "raw": "Verona - GCL Super Cup Quarter Final"
+      }
     },
     "b22a5fe4aa05011e4f52b1ad383bedf8a79d880877341bdbd2da1695d1fa0f94": {
       "created_at": "2026-11-10T16:30:55.547988+00:00",
@@ -10227,10 +10263,13 @@
       }
     },
     "c380fb01768c80255bda7249d34486ea999247420f59b4efec41415988a0ba42": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107977+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "NPA Anchors vs Freeport FC",
+        "description": "Coverage of NPA Anchors against Freeport FC.",
+        "raw": "NPA Anchors vs. Freeport FC"
+      }
     },
     "c389663089c9ef26ac544eb3332290997525e69759d369b39b352978315c88bf": {
       "created_at": "2026-11-11T13:53:16.395617+00:00",
@@ -10401,7 +10440,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -10948,10 +10987,13 @@
       }
     },
     "d05c2a5be31a48420f048307bbcbae7533dda1c076ac1f3b1ceff0d7c03658ac": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:17.107984+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:53:00.439453+00:00"
+      "result": {
+        "clean_title": "New Caledonia U17 vs Ecuador U17",
+        "description": "Coverage of New Caledonia U17 against Ecuador U17.",
+        "raw": "New Caledonia U17 vs. Ecuador U17"
+      }
     },
     "d07a12190350c4ff9245048b5b11bc712f5069a85b52842cf1025ef3c9ea31d6": {
       "context": "Disney+ Events event scheduled 03/11/2026 17:50 GMT",
@@ -13122,7 +13164,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:52:49.499192+00:00"
+      "retry_after": "2026-11-19T16:58:15.038703+00:00"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
@@ -13132,10 +13174,13 @@
       "title": "NFL Primetime Presented by Mucinex"
     },
     "fbbf9ef608c43ebe035e9c1290f6ea8b8b66d125f46227c49ddc58c794dea58a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T16:43:26.683145+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T15:38:18.849458+00:00"
+      "result": {
+        "clean_title": "UMBC vs Ohio State",
+        "description": "Coverage of UMBC against Ohio State.",
+        "raw": "UMBC @ Ohio State"
+      }
     },
     "fc15de91f53d0531f81a05f7fd4220be58dace03c8661610c93b89e3261f57c3": {
       "created_at": "2026-11-16T05:06:06.607791+00:00",
@@ -13337,8 +13382,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-19T18:40:46.458615+00:00",
-    "groq": "2026-11-19T15:38:18.849458+00:00"
+    "gemini": "2026-11-19T18:40:46.458615+00:00"
   },
   "version": 1
 }
