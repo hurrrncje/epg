@@ -27,7 +27,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "00f5e21248bdf6db6beb46c4b3278d7fdfe9901cd5fb7233011b956c296f6ecb": {
       "created_at": "2026-11-14T17:17:57.408760+00:00",
@@ -71,10 +71,13 @@
       "title": "Coordinators Corner"
     },
     "019204637d72376b30cb0814b1199939ea307d02c0e20087390a9471da97452c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805979+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Bishoftu vs Sululta",
+        "description": "Coverage of Bishoftu against Sululta.",
+        "raw": "Bishoftu vs. Sululta"
+      }
     },
     "01b3ec7b6cfb6b80bccb77ccef1a0547b82323111be0024d0d5340def08bd67e": {
       "created_at": "2026-11-06T15:25:20.143327+00:00",
@@ -412,10 +415,13 @@
       }
     },
     "09ae6820251a5b00b0cfeac65a52d2182d75b481e4841f573be57a052e5ff29f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.735001+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "St. Louis Suns United FC vs Bel Air FC",
+        "description": "Coverage of St. Louis Suns United FC against Bel Air FC.",
+        "raw": "St. Louis Suns United FC vs. Bel Air FC"
+      }
     },
     "0a39256e61793ba9c40eba853e7cbc0b1395f60bd9b9365dd98e8841c824aff6": {
       "created_at": "2026-11-09T15:34:57.820093+00:00",
@@ -810,6 +816,12 @@
         "raw": "Republic of Korea 23 vs. Cuba U23"
       }
     },
+    "11b314fbbccecc10eb6e92301abc2723f460c643d803d37ad2075441e9dca260": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-19T15:38:18.849458+00:00"
+    },
     "11b8bafc6b117cad20e1ea0ea4af5ce5153b901c24b5b4b96c92a0d6c10f264c": {
       "context": "Paramount+ event scheduled 03/11/2026 17:00 GMT",
       "created_at": "2026-11-03T16:30:41.541207+00:00",
@@ -1132,10 +1144,13 @@
       "title": "UEFA Women's Champions League: Arsenal vs. Benfica"
     },
     "18719f1ca40e18f176310697f834085aa948eb617813ab9d4e66d03949e93bb0": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.735009+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 3 - Draw 12",
+        "description": "Coverage of Sydney, Nova Scotia - Day 3 - Draw 12.",
+        "raw": "Sydney, Nova Scotia - Day 3 - Draw 12"
+      }
     },
     "1894b02d381abcff20024f3bd8b44508c5a50391b394d3bfef084833d3d1b433": {
       "created_at": "2026-11-15T14:26:17.445691+00:00",
@@ -1410,10 +1425,13 @@
       "title": "#20 Maryland vs. #1 South Carolina"
     },
     "1e660fbc477541337a5ff95f1829c55c09e58c57721642e5aab9ff60b43a2dce": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805955+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "AFL Draft 2026 Day 2",
+        "description": "Coverage of AFL Draft 2026 Day 2.",
+        "raw": "AFL Draft 2026 - Day 2"
+      }
     },
     "1e71b30f64d0321ab7215e89bc310dc1c14ba599e34128c3ee05a9c7550f1702": {
       "created_at": "2026-11-13T15:27:17.807877+00:00",
@@ -1682,10 +1700,13 @@
       "title": "Leicester City vs Wigan Athletic"
     },
     "235395b9b81edbbab168d825180a916c9923db5b18acb9a7c8231b1f3caf2a7b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.735007+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 3 - Draw 11",
+        "description": "Coverage of Sydney, Nova Scotia - Day 3 - Draw 11.",
+        "raw": "Sydney, Nova Scotia - Day 3 - Draw 11"
+      }
     },
     "23b48df915a75361b545f4f59d98f3c63ac2d14368527fdefeae0cb213112644": {
       "created_at": "2026-11-13T15:26:57.908646+00:00",
@@ -2999,10 +3020,13 @@
       }
     },
     "39228f3e527fab38fd161fd5ca65440e03ca67ae958405e80056758fe3abd3ed": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.734991+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Rice vs Temple",
+        "description": "Coverage of Rice against Temple.",
+        "raw": "Rice @ Temple"
+      }
     },
     "39680f4d1f2c4ec9c61c94e0b9b22dab7d607fb4024895cc665f42bcf40ea068": {
       "created_at": "2026-10-26T19:21:40.738753+00:00",
@@ -3035,7 +3059,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "3a246ff9d07e61a0bf815fb3e0642da5f4f953e12be02f296b6e307ec0c37228": {
       "created_at": "2026-11-14T14:25:52.267700+00:00",
@@ -3092,10 +3116,13 @@
       }
     },
     "3af267ff9b465edb76516924cc9b7a42252bcaae5e62b70510e5ba0947707369": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805977+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "BKFC Fight Night Myrtle Beach Weigh-In",
+        "description": "Coverage of BKFC Fight Night Myrtle Beach Weigh-In.",
+        "raw": "BKFC Fight Night Myrtle Beach: Weigh-In"
+      }
     },
     "3b1f5b6607e42599716247db6ef8628a701030d4358ccac213a5d9ce7b33580a": {
       "created_at": "2026-11-09T18:28:25.464129+00:00",
@@ -3119,7 +3146,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -3695,10 +3722,13 @@
       }
     },
     "4495b0e897d89d5c50bb04dd0c1c7859b2b94b25913b47d0586bf3017bd906e9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.734994+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Robinhood vs Coronie Boys",
+        "description": "Coverage of Robinhood against Coronie Boys.",
+        "raw": "Robinhood vs. Coronie Boys"
+      }
     },
     "449ab7a579f3e1bbd756553ca52247120c10c6668d243dc8c99e10e6e1a7b5ff": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -4186,10 +4216,13 @@
       }
     },
     "4f75b8a1c112c7175435d15b43319fbd398b946ffdbef0965d586c2514a54a8d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.734999+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Saudi Arabia U17 vs Uruguay U17",
+        "description": "Coverage of Saudi Arabia U17 against Uruguay U17.",
+        "raw": "Saudi Arabia U17 vs. Uruguay U17"
+      }
     },
     "4fb1d15f11fc8d7e3f3789657f90705a406a9af01af5e0710b5233f8f72ba026": {
       "created_at": "2026-11-05T13:54:36.011730+00:00",
@@ -4274,10 +4307,13 @@
       }
     },
     "515b35a99b9614ee70b2d1c4b97d634ad50301abcd944da02c00bc988a7d4f1d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805968+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "AS Douanes vs Kaedi FC",
+        "description": "Coverage of AS Douanes against Kaedi FC.",
+        "raw": "AS Douanes vs. Kaedi FC"
+      }
     },
     "516409835a1bd4e95ef1bb86dd54826eff2fe4a91d09f777c98dd2e5a66809cc": {
       "context": "EPL fixture scheduled 02/11/2026 20:00 GMT",
@@ -4299,7 +4335,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "520e62f97e6a939901950579edaa923c65eef2947399d80e674211b1c4b02290": {
       "created_at": "2026-11-15T05:32:30.749306+00:00",
@@ -4374,10 +4410,13 @@
       }
     },
     "531bd5e3d66dfa28bec8cae1b8aec85859ddb9e3758e88b7de249967e64d100d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805974+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Argentina U17 vs Australia U17",
+        "description": "Coverage of Argentina U17 against Australia U17.",
+        "raw": "Argentina U17 vs. Australia U17"
+      }
     },
     "5320859dc2d17303448d156dbebd433d37300ca832440762b9a4357588b42a43": {
       "created_at": "2026-11-10T16:30:33.325113+00:00",
@@ -5496,7 +5535,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "69cf0c22af94f0dbece0d9e86b43d428317e5444e3b979aa6697d9dba400cc24": {
       "created_at": "2026-11-13T12:37:26.138307+00:00",
@@ -5710,6 +5749,12 @@
         "description": "Coverage of Tennessee Tech against Indiana.",
         "raw": "Tennessee Tech @ Indiana"
       }
+    },
+    "6ef314006ef02d5e5a8f0a5965ce0a35cc55dcd5d5272549211f1d74cf9ebfd5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-19T15:38:18.849458+00:00"
     },
     "6f253719fc294dcf3957bc1c4dfac1fe09a9e9788eab5a8ee7f1f69e3374f256": {
       "created_at": "2026-11-14T20:15:15.573739+00:00",
@@ -6108,7 +6153,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "74e49fc0843f19a73d4266c4424926278504451dbdc6d8527f2606e78e50c16b": {
       "created_at": "2026-11-10T05:32:33.153341+00:00",
@@ -6766,7 +6811,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "81c64623d6283b0002d5036dbcc162344b07cc86fc860e92bd4d357417c77c9f": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -6860,10 +6905,13 @@
       "title": "Arkansas-Pine Bluff vs. Texas A&M"
     },
     "830b379b9be55072b3c72d682379a9c0ca6cb36802780ed8083dbc8a866b2d26": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805988+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Canucks vs Kraken",
+        "description": "Coverage of Canucks against Kraken.",
+        "raw": "Canucks @ Kraken"
+      }
     },
     "837e710a946466076ac25f14688dcc08d2afdd8e4f7c6e54bd13d455dfd15b89": {
       "created_at": "2026-11-12T09:36:23.034839+00:00",
@@ -7074,16 +7122,22 @@
       }
     },
     "872d3390b4ed89fd947a2d85e8e1510030f3026bbbf5df7fea839f27871a8e4c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805981+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Blue Jackets vs Blackhawks",
+        "description": "Coverage of Blue Jackets against Blackhawks.",
+        "raw": "Blue Jackets @ Blackhawks"
+      }
     },
     "87426c7189e38899997739d1ae0684cb8f4ac78ceda55d9d20e77be993f7587c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.734980+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Qatar U17 vs Panama U17",
+        "description": "Coverage of Qatar U17 against Panama U17.",
+        "raw": "Qatar U17 vs. Panama U17 (Including Opening Ceremony)"
+      }
     },
     "87a2fee2eb2246eab5195a5eeb8351db629a165c6f60940f05724e54f59e76e8": {
       "created_at": "2026-11-18T18:30:03.534435+00:00",
@@ -7111,10 +7165,13 @@
       "title": "Charleston Southern vs. East Carolina"
     },
     "87e4625950712ebfdb4ba09b21877ebb2714130a4064a200c710b3d634009f95": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805983+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Blues vs Penguins",
+        "description": "Coverage of Blues against Penguins.",
+        "raw": "Blues @ Penguins"
+      }
     },
     "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
       "created_at": "2026-11-07T07:42:06.081847+00:00",
@@ -7385,13 +7442,13 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "8d81f2c6a918ce563152f194f7805b08ec819b2b7933debdd33191519b0d978f": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "8dc5c537a5ad76564e0440ecbfc69e9f0088f7f6fb4dfb8f868cf573c3880158": {
       "created_at": "2026-11-06T16:30:24.696006+00:00",
@@ -7583,10 +7640,13 @@
       "title": "| Los Angeles Football Club vs Minnesota United (English)"
     },
     "9183272012078ce8e1016b525dbc85abbd9e9e3c6ec8a4bf674e085fe8ce96bf": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.734997+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Sabres vs Capitals",
+        "description": "Coverage of Sabres against Capitals.",
+        "raw": "Sabres @ Capitals"
+      }
     },
     "919e71cb0cd4049e26182585aa0531d785b6089ec375af02b5b2a72ed7fd0448": {
       "created_at": "2026-11-11T13:53:16.395619+00:00",
@@ -7653,7 +7713,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "93a3f2fc00f2f5bc8c9593bf8c7d81cf424b0d48d782bd940449f5d3a217406b": {
       "created_at": "2026-11-05T13:54:36.011714+00:00",
@@ -8226,7 +8286,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "9f85674dd7ab441469aad21aeb5fc20aafeb51d76a3b1b7ec48e838e6054482b": {
       "created_at": "2026-11-13T12:37:26.138305+00:00",
@@ -8241,7 +8301,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
       "created_at": "2026-11-06T03:30:23.708951+00:00",
@@ -8321,6 +8381,12 @@
         "description": "Coverage of Predators against Avalanche.",
         "raw": "Predators @ Avalanche"
       }
+    },
+    "a15ef6b16fbd03de171969f201cfd3dcb4b149d279327c3ddd53f1d2da3fc836": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-19T15:38:18.849458+00:00"
     },
     "a178616f2f4907215543520ee44c0923fb7c61e390d395015c72d0515c1d5212": {
       "created_at": "2026-11-07T06:27:35.762097+00:00",
@@ -8553,7 +8619,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "a63f7b3086677e6e316960af8c285a172dc53c405e7397ddd65a406294533246": {
       "created_at": "2026-10-26T12:30:58.030796+00:00",
@@ -8958,7 +9024,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "ad113bfdca80a8cfabe804e11c4b990228d085758937527df4e8137e216f09e5": {
       "created_at": "2026-11-04T13:50:50.158560+00:00",
@@ -9154,7 +9220,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "b15fb8bb2c631dc1dc45337b9719824f27f36a585e5db90590e5c444942ced9c": {
       "created_at": "2026-10-26T12:30:58.030767+00:00",
@@ -9183,7 +9249,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "b1f75b357b99ba92066ad34b9092df245b01c6f3aa3e7e40fc58f1b095bca1a4": {
       "created_at": "2026-11-04T13:50:50.158558+00:00",
@@ -9193,6 +9259,12 @@
         "description": "Coverage of Falco-Vulcano Szombathely against AEK BC.",
         "raw": "Falco-Vulcano Szombathely vs. AEK BC"
       }
+    },
+    "b20d57f60da71a458c915d11b941dc705afc4cf75c9c5520164e0d599f7f9137": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-19T15:38:18.849458+00:00"
     },
     "b22a5fe4aa05011e4f52b1ad383bedf8a79d880877341bdbd2da1695d1fa0f94": {
       "created_at": "2026-11-10T16:30:55.547988+00:00",
@@ -10073,10 +10145,13 @@
       }
     },
     "c257c1b9261d7b110f0f1718c0d75c95643af16fdc3b46effa156cbeb4c71c4a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805985+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Canadiens vs Hurricanes",
+        "description": "Coverage of Canadiens against Hurricanes.",
+        "raw": "Canadiens @ Hurricanes"
+      }
     },
     "c2662b3700ebcea10205bc97b077373b5a73e56b1d99dbac3bb1dbfb810c563a": {
       "created_at": "2026-11-08T17:16:11.697730+00:00",
@@ -10155,7 +10230,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "c389663089c9ef26ac544eb3332290997525e69759d369b39b352978315c88bf": {
       "created_at": "2026-11-11T13:53:16.395617+00:00",
@@ -10326,7 +10401,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -10876,7 +10951,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:24.265941+00:00"
+      "retry_after": "2026-11-19T15:53:00.439453+00:00"
     },
     "d07a12190350c4ff9245048b5b11bc712f5069a85b52842cf1025ef3c9ea31d6": {
       "context": "Disney+ Events event scheduled 03/11/2026 17:50 GMT",
@@ -11000,10 +11075,13 @@
       }
     },
     "d2fb7ba312015484d4f562519e44407c8e40493bde7c7c0b625dfcde24f9b45b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.735003+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Stars vs Golden Knights",
+        "description": "Coverage of Stars against Golden Knights.",
+        "raw": "Stars @ Golden Knights"
+      }
     },
     "d31d9a08516f35215d67ee084313594e976d376dd07fda9bb469c878427cec4a": {
       "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
@@ -11049,10 +11127,13 @@
       }
     },
     "d3e0a7b9a077fe00ec106aea4139b0ca2a91a5b212b13417b9d47977efb51e91": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:37:39.805972+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:11:59.618011+00:00"
+      "result": {
+        "clean_title": "Addis Ketema vs Yirga Chefe",
+        "description": "Coverage of Addis Ketema against Yirga Chefe.",
+        "raw": "Addis Ketema vs. Yirga Chefe"
+      }
     },
     "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
       "created_at": "2026-10-28T00:12:37.428417+00:00",
@@ -13041,7 +13122,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T14:12:00.317374+00:00"
+      "retry_after": "2026-11-19T15:52:49.499192+00:00"
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
@@ -13049,6 +13130,12 @@
       "kind": "event-description",
       "result": "NFL Primetime Presented by Mucinex – an NFL regular‑season game streamed on ESPN+.",
       "title": "NFL Primetime Presented by Mucinex"
+    },
+    "fbbf9ef608c43ebe035e9c1290f6ea8b8b66d125f46227c49ddc58c794dea58a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-19T15:38:18.849458+00:00"
     },
     "fc15de91f53d0531f81a05f7fd4220be58dace03c8661610c93b89e3261f57c3": {
       "created_at": "2026-11-16T05:06:06.607791+00:00",
@@ -13129,10 +13216,13 @@
       }
     },
     "fde220854f834d415ac0f706d6dc72098adec02c3711640d3d28b5bb4ab11bfe": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-19T15:38:08.735005+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-19T13:57:30.480623+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 3 - Draw 10",
+        "description": "Coverage of Sydney, Nova Scotia - Day 3 - Draw 10.",
+        "raw": "Sydney, Nova Scotia - Day 3 - Draw 10"
+      }
     },
     "fdf77ed24e6888fb45c36617e34f0ce69d93b53e81df88e0236069f135aa284f": {
       "created_at": "2026-11-08T17:16:11.697741+00:00",
@@ -13248,7 +13338,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-19T18:40:46.458615+00:00",
-    "groq": "2026-11-19T13:57:30.480623+00:00"
+    "groq": "2026-11-19T15:38:18.849458+00:00"
   },
   "version": 1
 }
