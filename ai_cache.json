@@ -61,7 +61,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T09:55:02.158868+00:00"
+      "retry_after": "2026-11-19T10:49:50.136878+00:00"
     },
     "015f33362acb1190d086383a376970fca54b67ac0e4b707bd5ff0746bc5ceae0": {
       "context": "ESPN+ event scheduled 02/11/2026 19:00 GMT",
@@ -3583,7 +3583,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T09:55:02.158868+00:00"
+      "retry_after": "2026-11-19T10:49:50.136878+00:00"
     },
     "43df81343ba104c15dce33f307200b2bdfb8f7016b21a54704d677d72c9fdf34": {
       "created_at": "2026-11-07T16:17:32.146922+00:00",
@@ -7138,7 +7138,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T09:55:02.158868+00:00"
+      "retry_after": "2026-11-19T10:49:50.136878+00:00"
     },
     "8b4190bdf1bd5e4c34f1a47a0ef74ef2b27b802a339d0abde8612263272c1c07": {
       "created_at": "2026-11-09T22:26:26.057768+00:00",
@@ -10449,7 +10449,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-19T09:55:02.158868+00:00"
+      "retry_after": "2026-11-19T10:49:50.136878+00:00"
     },
     "ccf87a0ad49e47c0929a3576c19d8a47792fd5d5c7c83de6fd1047579d7a59c7": {
       "created_at": "2026-11-15T05:33:11.434091+00:00",
