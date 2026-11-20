@@ -132,6 +132,12 @@
         "raw": "BKFC 96: Weir vs. Cohoon"
       }
     },
+    "0310f26a28474f6961229eedafc3ae253422c0058ce30d3f3df38b2f695a9179": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
+    },
     "031881f8c2a23927e0e7f64051b8d780c8bb75911314f613dd0a22bcbd8753da": {
       "created_at": "2026-11-07T14:24:37.317148+00:00",
       "kind": "live-title",
@@ -2816,6 +2822,15 @@
         "raw": "MNF Playbook | Bills @ Vikings"
       }
     },
+    "338c0b597beb147a90b3a2f603cd94d4918ee19ae6b984caf7533d399686bc6d": {
+      "created_at": "2026-11-20T11:35:00.256619+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Yeka Kifle Ketema vs Shashemene Kenema",
+        "description": "Coverage of Yeka Kifle Ketema against Shashemene Kenema.",
+        "raw": "Yeka vs. Shashemene"
+      }
+    },
     "3401d9a401727c5ddd8c7df71751aacd09dcd7c95c183ff356a8549dca475dad": {
       "created_at": "2026-11-17T15:32:08.558491+00:00",
       "kind": "live-title",
@@ -4709,6 +4724,12 @@
       "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
       "title": "Sheffield United vs Wrexham AFC"
     },
+    "56891313134fb3bfb86ed3cda789339060581faa9ef86a86e6c023aa8c0eddf5": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
+    },
     "569074dd3360217dc67e58163bde7e8a88947020a9106fdcf3369aedd6bbb7dc": {
       "created_at": "2026-11-14T13:34:29.850273+00:00",
       "kind": "live-title",
@@ -6398,6 +6419,12 @@
         "raw": "TCU @ Arizona"
       }
     },
+    "76591f20e129c08dec58c62bf01cd158babc054e2385d2153d40aab4c74f623f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
+    },
     "76c49874494ea0bc1f40ba2e60b921584fa70176e62345ee4f94025aafe6f5c0": {
       "created_at": "2026-11-16T05:06:06.607817+00:00",
       "kind": "live-title",
@@ -7493,6 +7520,12 @@
         "raw": "AMA EnduroCross Idaho Falls"
       }
     },
+    "8adedc31a7f82bc3154d3dfcbfd5f0feed8b0e452e84c9ab69ad22ca251e622f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
+    },
     "8afe4b8db8dc73498ce99635872ceff7e7c5181edf16f13c0763142d90f7870b": {
       "created_at": "2026-11-04T13:50:28.840969+00:00",
       "kind": "live-title",
@@ -8306,6 +8339,12 @@
         "raw": "Golden Dream FC vs. Bea Mountain FC"
       }
     },
+    "9cc4dab36ea115dc02321f1cbbb88805607301f14f9e093b34d39dd6491ee750": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
+    },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
       "kind": "live-title",
@@ -8488,6 +8527,12 @@
         "description": "Coverage of Players Era 8 3rd Place Game Florida against West Virginia.",
         "raw": "Players Era 8 - 3rd Place Game: Florida vs. West Virginia"
       }
+    },
+    "9fbdeac47868413f25bec716348ec7f37859542f0a4febec4609526ee1a6a2ac": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
     },
     "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
       "created_at": "2026-11-06T03:30:23.708951+00:00",
@@ -8787,6 +8832,12 @@
         "description": "Coverage of Coastal Carolina against Duke.",
         "raw": "Coastal Carolina @ Duke"
       }
+    },
+    "a54f36551283f3531d65cecd107f63fcd571b6fa6c93c21bb756b3d6d664d287": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
     },
     "a566d1211e5ce197df424ed89ec0f57ca9235cd8249f7271b5970c39e67a6710": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -9230,6 +9281,12 @@
         "raw": "NRL 360: 2027 Draw"
       }
     },
+    "ace1ce5e1155c13bf298912c78447c7d179fdb9b2ba622f39f081d0bc19d6ab9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
+    },
     "acf33545ab6692184d23843c9803e4b3853e4e0109ceb2f22e46d5111ebb0a4d": {
       "created_at": "2026-11-09T15:34:57.820110+00:00",
       "kind": "live-title",
@@ -9401,6 +9458,12 @@
       "kind": "event-description",
       "result": "College basketball game between Gardner‑Webb and South Carolina Upstate.",
       "title": "Gardner-Webb vs. South Carolina Upstate"
+    },
+    "b02e194dd27d5896e97328c6263d5a72c35ffdcb8295c65cfd172bc0d56e63f0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
     },
     "b06fb4ca4bd382596f18c2a505f3ebcf24b828ae18b02fbb87e07f7c779c19d5": {
       "created_at": "2026-11-11T13:53:16.395627+00:00",
@@ -10236,6 +10299,12 @@
         "description": "Coverage of Puerto Rico U23 against Czechia U23.",
         "raw": "Puerto Rico U23 vs. Czechia U23"
       }
+    },
+    "beb5d0e61662b4cfd2fd2cb00fe9dcef22732d600651ba45453f278f1ad6b89b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T11:49:58.522401+00:00"
     },
     "bec0e8cbc0bb4e72d7a07b9711e1dafd5de60154b2d38f55aa4ec0bcdd4c9d9c": {
       "created_at": "2026-11-11T06:38:48.807923+00:00",
