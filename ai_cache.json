@@ -356,6 +356,15 @@
         "raw": "Ducks @ Canucks"
       }
     },
+    "07f9d510cbef768573a3f1fa7b618a4d9a0a8ca1fa4fb5784902b92d76abb1a7": {
+      "created_at": "2026-11-20T06:37:15.185470+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "BKFC Fight Night Richardson vs Oxendine",
+        "description": "Coverage of BKFC Fight Night Richardson against Oxendine.",
+        "raw": "BKFC Fight Night Richardson v Oxendine"
+      }
+    },
     "083aaad78d077c9f78034b0e36452769154830a03d40691c95b2b770e6ac56a1": {
       "created_at": "2026-11-14T05:29:37.608179+00:00",
       "kind": "live-title",
@@ -655,7 +664,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
     },
     "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
@@ -674,10 +683,13 @@
       }
     },
     "0e9aff1e8f9d6979400193e744d6df98f4cdbba4c09d0134adcda65e76c18684": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185496+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Ducks vs Avalanche",
+        "description": "Coverage of Ducks against Avalanche.",
+        "raw": "Ducks @ Avalanche"
+      }
     },
     "0ec5dcf4707f7845e9445d56ffc2055f02eaa4de97c45381ab3825b4931a4bb1": {
       "created_at": "2026-11-10T16:30:55.547993+00:00",
@@ -1460,6 +1472,12 @@
         "raw": "Riley vs. Coupe: Weigh-In"
       }
     },
+    "1e9b109afb8b9ec4e34ef4ed52fa7b1936eea002e1c0a9dab47d83e3cd0f0199": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+    },
     "1ea5587b39f53f242c85248ab932f2471008f88a29fa5ef5a3124c4ebace1f8c": {
       "context": "ESPN+ event scheduled 03/11/2026 17:15 GMT",
       "created_at": "2026-11-03T17:30:31.771875+00:00",
@@ -1556,10 +1574,13 @@
       }
     },
     "1ff12197f64b67f41e9add634eec7ca7afac89a474a776e6b67696829bd8e5d1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185499+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Eastern Illinois vs Illinois",
+        "description": "Coverage of Eastern Illinois against Illinois.",
+        "raw": "Eastern Illinois @ Illinois"
+      }
     },
     "1ffef06f754f4685310e4387234d16f117a1477f3dfa856f4e6619392b552ef8": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -2172,7 +2193,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
     },
     "29bcf0141e7d4722f7b013ade13471f08f7cab2074f519e250782d6e95ca5bb1": {
       "created_at": "2026-11-17T15:32:08.558525+00:00",
@@ -2590,6 +2611,12 @@
       "kind": "event-description",
       "result": "MLS match between FC Dallas and Columbus Crew scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
+    },
+    "2f7efdf633425299209b107c722d2b73d3348e40165bdaef5ecbbdbd3039715d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
     },
     "2fbe43a866c61962db1bd95fb799f550ae9a6295622ea1742b69e54e454bc921": {
       "created_at": "2026-11-04T00:18:05.294012+00:00",
@@ -3983,10 +4010,13 @@
       "title": "Messi Cup 2026 (5th Place Match)"
     },
     "48cd6c1e97d84038457c091c5431e1c8ff3919c109c376fc7ce9d8579589e13e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185507+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Islanders vs Jets",
+        "description": "Coverage of Islanders against Jets.",
+        "raw": "Islanders @ Jets"
+      }
     },
     "48dc300de7dbc052bffb9026d258fa874acd03b8b2aa11ae9126def0e262dd26": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
@@ -5594,6 +5624,12 @@
         "raw": "Pitch 8A | Day 3: Afternoon Session"
       }
     },
+    "6986169940cf6fc010fa5c0ee47bfaf9c187d03e87d25e776cdc84bbb8b7b3ad": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+    },
     "69acec9e68c77dfe180ff4d77f91f8c97bc9a3053241207fea2f00dd8727e28f": {
       "created_at": "2026-11-13T15:27:17.807874+00:00",
       "kind": "live-title",
@@ -6203,10 +6239,13 @@
       }
     },
     "7461912143d4a5e7f7e0fcac41637b46059f324806e198c898a79e24f8116c8c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185501+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "FC 334 Gane vs Hokit",
+        "description": "Coverage of FC 334 Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
+      }
     },
     "7474489e9798d6e11935a25c5737ddf7e7c2a47c8e45790a30012f9fe198359e": {
       "created_at": "2026-11-17T13:54:02.320902+00:00",
@@ -6477,10 +6516,13 @@
       "title": "CSU San Marcos vs. Cal Poly"
     },
     "7a3b4e3ee4393a444b03b9a43e1c92c796f5f79ffebdd25452318c83620ed599": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185505+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Influencer Fight Night Butterbean vs Campbell",
+        "description": "Coverage of Influencer Fight Night Butterbean against Campbell.",
+        "raw": "Influencer Fight Night Butterbean v Campbell"
+      }
     },
     "7a90ffc76e9904af2a9241ba83960785db7e2e2e59b47484cf6e2c4693b9aa8d": {
       "created_at": "2026-11-13T04:38:32.086501+00:00",
@@ -7517,10 +7559,13 @@
       }
     },
     "8d3cbf215939f59ca2a53369e49dbecef64384965f33b18592bb3b9aa11aeb9e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185491+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Colts vs Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans (Spanish Broadcast)"
+      }
     },
     "8d4be924a88ccf252a50396050a09c897fa7ae57ddd23f5a1d5e9ac0f84c18c2": {
       "created_at": "2026-11-14T05:29:37.608190+00:00",
@@ -8699,6 +8744,15 @@
         "raw": "Grambling @ Texas"
       }
     },
+    "a5f1f99cf8b6b7047c7926a122208126abe7c92cb07e391e52ace229c1cd0280": {
+      "created_at": "2026-11-20T06:37:15.185503+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Fury Challenger Series 18",
+        "description": "Coverage of Fury Challenger Series 18.",
+        "raw": "Fury Challenger Series 18"
+      }
+    },
     "a61abb1b8731148206e293d50c78c6f85793c43416248f48494d92976feaf675": {
       "created_at": "2026-11-14T06:31:54.194802+00:00",
       "kind": "live-title",
@@ -9106,6 +9160,12 @@
         "description": "Coverage of Kings against Bruins.",
         "raw": "Kings @ Bruins"
       }
+    },
+    "ac88786f5a25d69b9b7d5896aea021791a79517d832201ca7d2dad76bcfe9aa9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
     },
     "acf33545ab6692184d23843c9803e4b3853e4e0109ceb2f22e46d5111ebb0a4d": {
       "created_at": "2026-11-09T15:34:57.820110+00:00",
@@ -9515,10 +9575,13 @@
       }
     },
     "b46bb0fc4112f588ce834a3c695cb53b0a18e9d99876f1a9f25ff28b27e0f993": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185486+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Colts vs Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans (Prime Vision with Next Gen Stats)"
+      }
     },
     "b47756f5aeb44be62bb26f85aa7954f78110be4faeade323cc77abddf20ae201": {
       "created_at": "2026-11-08T05:29:32.514153+00:00",
@@ -9807,6 +9870,12 @@
         "description": "Coverage of Prelims MVPW 07 Turhan against Baumgardner.",
         "raw": "Prelims MVPW 07 Turhan v Baumgardner"
       }
+    },
+    "b981a78102597cb2bfc1761db1394ff6b8ad356bfc3351904999db873c07a1ac": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -11232,10 +11301,13 @@
       "title": "Leicester City vs Stevenage FC"
     },
     "d35c677cba739877133a8c8f6907cd00a746c7656c033f477a0a0baa82b96be4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T06:37:15.185494+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T05:41:08.981827+00:00"
+      "result": {
+        "clean_title": "Colts vs Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "d37b7186f35ff42f767a56f32e162914373468a16878294c8dc164c531f2f562": {
       "created_at": "2026-11-06T04:37:05.962199+00:00",
@@ -12029,6 +12101,12 @@
         "raw": "Nicaragua U19 vs. Cuba U19"
       }
     },
+    "e20569d04907f709af93b8094f6ac7da48dbcebf462e10d7438076cd14d46777": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+    },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
       "created_at": "2026-11-09T22:26:26.057785+00:00",
       "kind": "live-title",
@@ -12459,6 +12537,12 @@
         "description": "Coverage of UGA against MISS, IOWA vs NU, COL vs ASU, OU vs UF.",
         "raw": "UGA @ MISS, IOWA @ NU, COL @ ASU, OU @ UF"
       }
+    },
+    "e8c9a7d6d9f2575263d270200c6efe6a8d3636f96aefe8fdd8238a3250f035b7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
     },
     "e91b0b1c40ff97103c274fdfcbe3f4c9c0bc96d1edf521337ec862c76a4e96e1": {
       "created_at": "2026-11-14T06:30:58.331167+00:00",
@@ -13027,6 +13111,12 @@
         "raw": "Bea Mountain FC vs. LISCR FC"
       }
     },
+    "f5aabb9890f14382e427f8d2c16fac10741fef71e0c23ee81413591d0e9e6455": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+    },
     "f5ec12a0c566d0b531ac4282cc4b768a4ab4f442c4f245aff83760d6eba06bcd": {
       "created_at": "2026-11-13T15:27:17.807890+00:00",
       "kind": "live-title",
@@ -13527,7 +13617,7 @@
   },
   "provider_cooldowns": {
     "gemini": "2026-11-20T07:52:37.788686+00:00",
-    "groq": "2026-11-20T05:41:08.981827+00:00"
+    "groq": "2026-11-20T06:37:26.553004+00:00"
   },
   "version": 1
 }
