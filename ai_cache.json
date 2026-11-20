@@ -661,10 +661,13 @@
       }
     },
     "0e08e6deebebcf258077d97f41bb666c14199bf4c25d5771853a9c0258831693": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605021+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Kentucky vs. Indiana",
+        "description": "Coverage of Kentucky against Indiana.",
+        "raw": "Kentucky @ Indiana"
+      }
     },
     "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
@@ -1473,10 +1476,13 @@
       }
     },
     "1e9b109afb8b9ec4e34ef4ed52fa7b1936eea002e1c0a9dab47d83e3cd0f0199": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605032+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "PPL MGM Las Vegas - Day 2 - Session 2",
+        "description": "Coverage of PPL MGM Las Vegas - Day 2 - Session 2.",
+        "raw": "PPL MGM Las Vegas - Day 2 - Session 2"
+      }
     },
     "1ea5587b39f53f242c85248ab932f2471008f88a29fa5ef5a3124c4ebace1f8c": {
       "context": "ESPN+ event scheduled 03/11/2026 17:15 GMT",
@@ -2190,10 +2196,13 @@
       }
     },
     "29a01839c2be6c9e37178b903c386f10d1b32c0b0bb0f0de08a662ef1c9739ac": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605006+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Jones vs. Pettus",
+        "description": "Coverage of Jones against Pettus.",
+        "raw": "Jones v Pettus"
+      }
     },
     "29bcf0141e7d4722f7b013ade13471f08f7cab2074f519e250782d6e95ca5bb1": {
       "created_at": "2026-11-17T15:32:08.558525+00:00",
@@ -2613,10 +2622,13 @@
       "title": "0 | FC Dallas vs Columbus Crew (Spanish)"
     },
     "2f7efdf633425299209b107c722d2b73d3348e40165bdaef5ecbbdbd3039715d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605034+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Players Era 8 Championship Game: Houston vs. Kansas",
+        "description": "Coverage of Players Era 8 Championship Game: Houston against Kansas.",
+        "raw": "Players Era 8 - Championship Game: Houston vs. Kansas"
+      }
     },
     "2fbe43a866c61962db1bd95fb799f550ae9a6295622ea1742b69e54e454bc921": {
       "created_at": "2026-11-04T00:18:05.294012+00:00",
@@ -5643,10 +5655,13 @@
       }
     },
     "6986169940cf6fc010fa5c0ee47bfaf9c187d03e87d25e776cdc84bbb8b7b3ad": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605028+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Oilers vs. Lightning",
+        "description": "Coverage of Oilers against Lightning.",
+        "raw": "Oilers @ Lightning"
+      }
     },
     "69acec9e68c77dfe180ff4d77f91f8c97bc9a3053241207fea2f00dd8727e28f": {
       "created_at": "2026-11-13T15:27:17.807874+00:00",
@@ -9207,10 +9222,13 @@
       }
     },
     "ac88786f5a25d69b9b7d5896aea021791a79517d832201ca7d2dad76bcfe9aa9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605027+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "NRL 2027 Draw",
+        "description": "Coverage of NRL 2027 Draw.",
+        "raw": "NRL 360: 2027 Draw"
+      }
     },
     "acf33545ab6692184d23843c9803e4b3853e4e0109ceb2f22e46d5111ebb0a4d": {
       "created_at": "2026-11-09T15:34:57.820110+00:00",
@@ -9917,10 +9935,13 @@
       }
     },
     "b981a78102597cb2bfc1761db1394ff6b8ad356bfc3351904999db873c07a1ac": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605036+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Price vs. Kotaskova",
+        "description": "Coverage of Price against Kotaskova.",
+        "raw": "Price v Kotaskova"
+      }
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -12156,10 +12177,13 @@
       }
     },
     "e20569d04907f709af93b8094f6ac7da48dbcebf462e10d7438076cd14d46777": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605024+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Kings vs. Maple Leafs",
+        "description": "Coverage of Kings against Maple Leafs.",
+        "raw": "Kings @ Maple Leafs"
+      }
     },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
       "created_at": "2026-11-09T22:26:26.057785+00:00",
@@ -12602,10 +12626,13 @@
       }
     },
     "e8c9a7d6d9f2575263d270200c6efe6a8d3636f96aefe8fdd8238a3250f035b7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605030+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Oregon State vs. Oregon",
+        "description": "Coverage of Oregon State against Oregon.",
+        "raw": "Oregon State @ Oregon"
+      }
     },
     "e91b0b1c40ff97103c274fdfcbe3f4c9c0bc96d1edf521337ec862c76a4e96e1": {
       "created_at": "2026-11-14T06:30:58.331167+00:00",
@@ -13184,10 +13211,13 @@
       }
     },
     "f5aabb9890f14382e427f8d2c16fac10741fef71e0c23ee81413591d0e9e6455": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T10:37:33.605037+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T09:52:03.184613+00:00"
+      "result": {
+        "clean_title": "Sabres vs. Capitals",
+        "description": "Coverage of Sabres against Capitals.",
+        "raw": "Sabres @ Capitals"
+      }
     },
     "f5ec12a0c566d0b531ac4282cc4b768a4ab4f442c4f245aff83760d6eba06bcd": {
       "created_at": "2026-11-13T15:27:17.807890+00:00",
