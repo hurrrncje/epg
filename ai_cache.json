@@ -664,7 +664,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "0e4e41b3351aa2c748d6966aa4f1ef3ab887dc3a38f556d4618bc6d07121f833": {
       "context": "ESPN+ event scheduled 02/11/2026 16:30 GMT",
@@ -1476,7 +1476,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "1ea5587b39f53f242c85248ab932f2471008f88a29fa5ef5a3124c4ebace1f8c": {
       "context": "ESPN+ event scheduled 03/11/2026 17:15 GMT",
@@ -2193,7 +2193,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "29bcf0141e7d4722f7b013ade13471f08f7cab2074f519e250782d6e95ca5bb1": {
       "created_at": "2026-11-17T15:32:08.558525+00:00",
@@ -2616,7 +2616,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "2fbe43a866c61962db1bd95fb799f550ae9a6295622ea1742b69e54e454bc921": {
       "created_at": "2026-11-04T00:18:05.294012+00:00",
@@ -4613,6 +4613,15 @@
         "raw": "KFF Malisheva vs. KFF Mitrovica"
       }
     },
+    "54f7bf5f7f6270264ecdcd337d4361ee1714e548442176c94270a85f839d5364": {
+      "created_at": "2026-11-20T07:55:39.924327+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "USAC Chase Johnson Classic Merced",
+        "description": "Coverage of USAC Chase Johnson Classic Merced.",
+        "raw": "USAC Chase Johnson Classic Merced"
+      }
+    },
     "5561195955f02ebd3e59e2d9964f432653509e75bd096334e05cc3f22e3740d5": {
       "created_at": "2026-11-12T16:41:29.270275+00:00",
       "kind": "live-title",
@@ -4808,6 +4817,15 @@
         "clean_title": "USS Berkane vs. Wydad AC",
         "description": "Coverage of USS Berkane against Wydad AC.",
         "raw": "USS Berkane vs. Wydad AC"
+      }
+    },
+    "58857df37d8f05e4912dbe909e3b684943369b29450999d49e8acff9483ca443": {
+      "created_at": "2026-11-20T07:55:39.924316+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Dallas Stars vs. Vegas Golden Knights",
+        "description": "Coverage of Dallas Stars against Vegas Golden Knights.",
+        "raw": "Stars @ Golden Knights"
       }
     },
     "58ba39064ece4ab833030fa7c2175887fe0a2bbdebd36680cfdb7e1bf256c96b": {
@@ -5628,7 +5646,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "69acec9e68c77dfe180ff4d77f91f8c97bc9a3053241207fea2f00dd8727e28f": {
       "created_at": "2026-11-13T15:27:17.807874+00:00",
@@ -7180,6 +7198,15 @@
       "result": "2026 TCS New York City Marathon, a full‑distance road race held on 1 Nov 2026.",
       "title": "2026: New York City Marathon"
     },
+    "85893aa95093e80b288bd4f332b8d7d47cbbbafc8b6a965bc6274a4a5eb049df": {
+      "created_at": "2026-11-20T07:55:39.924329+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UWC 60",
+        "description": "Coverage of UWC 60.",
+        "raw": "UWC 60"
+      }
+    },
     "858c0a29840c41956c4af9772af5934f4bd55710b770a609743cccadc1d67f5a": {
       "created_at": "2026-11-07T15:17:20.541514+00:00",
       "kind": "live-title",
@@ -7982,6 +8009,15 @@
         "raw": "Le Castellet: Race 1"
       }
     },
+    "961de728407370477c786a158321e77c833f10d720383323c31cf5e8b88ec397": {
+      "created_at": "2026-11-20T07:55:39.924332+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Minnesota Wild vs. Calgary Flames",
+        "description": "Coverage of Minnesota Wild against Calgary Flames.",
+        "raw": "Wild @ Flames"
+      }
+    },
     "96271a7ebfd40d91c9f20c5c5467eab1b50742eb7a36f1c3ad57e99e782b6221": {
       "created_at": "2026-11-18T18:30:03.534431+00:00",
       "kind": "live-title",
@@ -8585,6 +8621,15 @@
       "result": "Maryville (MO) competes against Missouri in an NCAA wrestling match.",
       "title": "Maryville (MO) vs. Missouri"
     },
+    "a232dd43a5807d48a6f64b29591aee12a03a3745a17436a1611441dc59919fc8": {
+      "created_at": "2026-11-20T07:55:39.924319+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "HearingLife National Draw 12",
+        "description": "Coverage of HearingLife National Draw 12.",
+        "raw": "Sydney, Nova Scotia - Day 3 - Draw 12"
+      }
+    },
     "a256e0fda23f671c4bce247ae04eb6770b040ae0e5cf6d974c45c457c8f52c5f": {
       "created_at": "2026-11-15T06:33:59.821284+00:00",
       "kind": "live-title",
@@ -9165,7 +9210,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "acf33545ab6692184d23843c9803e4b3853e4e0109ceb2f22e46d5111ebb0a4d": {
       "created_at": "2026-11-09T15:34:57.820110+00:00",
@@ -9875,7 +9920,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "ba2c715dd7a7eb2544ea577f1202ac88302aa4da679587dd9d8e4537c8f60105": {
       "created_at": "2026-11-04T05:36:14.786986+00:00",
@@ -11442,6 +11487,15 @@
         "raw": "Colorado @ Arizona State"
       }
     },
+    "d5e3885e897aaddb933b883154469fd105d58f10c54a76f39b2bb64a900383cb": {
+      "created_at": "2026-11-20T07:55:39.924322+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Tarleton State vs. USC",
+        "description": "Coverage of Tarleton State against USC.",
+        "raw": "Tarleton State @ USC"
+      }
+    },
     "d6018c51bf2325ea98e321eb589e9f54b5704d6fdd170a9de760e462ae78e4e2": {
       "created_at": "2026-11-04T00:18:05.293989+00:00",
       "kind": "live-title",
@@ -12105,7 +12159,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "e20cfe5ea06a36b45a501da318c995079d9463b46995470eeb311cb62f3bc005": {
       "created_at": "2026-11-09T22:26:26.057785+00:00",
@@ -12300,6 +12354,15 @@
         "clean_title": "GCW: Massacre in Missoula",
         "description": "Coverage of GCW: Massacre in Missoula.",
         "raw": "GCW Massacre in Missoula"
+      }
+    },
+    "e5309b33b5e2a5771d952f2e13b102a0558206bbce476a780a8bfcae79b20527": {
+      "created_at": "2026-11-20T07:55:39.924300+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Southern Thunder Super Dirt Series Championship",
+        "description": "Coverage of Southern Thunder Super Dirt Series Championship.",
+        "raw": "Southern Thunder Super Dirt Series Championship"
       }
     },
     "e55622d5366db8e618120995ee968775dcd5397a433172326c40cfb41aeb1c85": {
@@ -12542,7 +12605,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "e91b0b1c40ff97103c274fdfcbe3f4c9c0bc96d1edf521337ec862c76a4e96e1": {
       "created_at": "2026-11-14T06:30:58.331167+00:00",
@@ -12633,6 +12696,15 @@
         "clean_title": "Coronie Boys vs. SV Broki",
         "description": "Coverage of Coronie Boys against SV Broki.",
         "raw": "Coronie Boys vs. Broki"
+      }
+    },
+    "ebfaa4c97767305eeda562f30707d701898631a6767a97d9016404746318a4d7": {
+      "created_at": "2026-11-20T07:55:39.924325+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UMBC vs. Ohio State",
+        "description": "Coverage of UMBC against Ohio State.",
+        "raw": "UMBC @ Ohio State"
       }
     },
     "ec03bd8e02c73be764c51350bf5fd8e19ce6faa529f65f9516a7daa2e93b373a": {
@@ -13115,7 +13187,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T06:37:26.553004+00:00"
+      "retry_after": "2026-11-20T08:10:21.688005+00:00"
     },
     "f5ec12a0c566d0b531ac4282cc4b768a4ab4f442c4f245aff83760d6eba06bcd": {
       "created_at": "2026-11-13T15:27:17.807890+00:00",
@@ -13616,8 +13688,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-20T07:52:37.788686+00:00",
-    "groq": "2026-11-20T06:37:26.553004+00:00"
+    "gemini": "2026-11-20T13:55:20.992287+00:00"
   },
   "version": 1
 }
