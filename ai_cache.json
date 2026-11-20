@@ -24,10 +24,13 @@
       }
     },
     "00edb41133a978f502f607aabe1f0c80edf372462b9d989b5dc2258aa939ec20": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T01:52:43.898401+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T00:40:14.631607+00:00"
+      "result": {
+        "clean_title": "Colts @ Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans (Prime Vision with Next Gen Stats)"
+      }
     },
     "00f5e21248bdf6db6beb46c4b3278d7fdfe9901cd5fb7233011b956c296f6ecb": {
       "created_at": "2026-11-14T17:17:57.408760+00:00",
@@ -3059,10 +3062,13 @@
       }
     },
     "39f8749b470325c10207cfc7748ea768120883f6d0e7ab8c0f51831007dae979": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T01:52:43.898408+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T00:40:14.631607+00:00"
+      "result": {
+        "clean_title": "Ducks @ Avalanche",
+        "description": "Coverage of Ducks against Avalanche.",
+        "raw": "Ducks @ Avalanche"
+      }
     },
     "3a246ff9d07e61a0bf815fb3e0642da5f4f953e12be02f296b6e307ec0c37228": {
       "created_at": "2026-11-14T14:25:52.267700+00:00",
@@ -3146,10 +3152,13 @@
       }
     },
     "3ba70e53fcac42c69393b444de7431e6ce8f08022ae94288b009285df510fa1c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T01:52:43.898410+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T00:40:14.631607+00:00"
+      "result": {
+        "clean_title": "Eastern Illinois @ Illinois",
+        "description": "Coverage of Eastern Illinois against Illinois.",
+        "raw": "Eastern Illinois @ Illinois"
+      }
     },
     "3bbe92106f79658b84e55edc281104efe759cd7949c72d22df1938e5aa98935b": {
       "context": "Paramount+ event scheduled 02/11/2026 15:00 GMT",
@@ -8283,10 +8292,13 @@
       }
     },
     "9f65ded8ce646edcfc56fa2e6c35468e00afd378513119557b4f091ec207a494": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T01:52:43.898386+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T00:40:14.631607+00:00"
+      "result": {
+        "clean_title": "Colts @ Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans"
+      }
     },
     "9f85674dd7ab441469aad21aeb5fc20aafeb51d76a3b1b7ec48e838e6054482b": {
       "created_at": "2026-11-13T12:37:26.138305+00:00",
@@ -10413,10 +10425,13 @@
       }
     },
     "c7314147bef4c1eb64d7902bf46ddea2a288703575343763ba74f5ab4a3ea85b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T01:52:43.898406+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T00:40:14.631607+00:00"
+      "result": {
+        "clean_title": "Colts @ Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "c73ef44b4e03be232b710e834a18977bca4b043a80b7374d859d443dbade8d01": {
       "created_at": "2026-10-26T19:21:40.738741+00:00",
@@ -13137,10 +13152,13 @@
       }
     },
     "fb386c2b32f1bb79f80ac6a6f568da366b407527083661ee23becc1c40aba050": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-20T01:52:43.898404+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T00:40:14.631607+00:00"
+      "result": {
+        "clean_title": "Colts @ Texans",
+        "description": "Coverage of Colts against Texans.",
+        "raw": "Colts @ Texans (Spanish Broadcast)"
+      }
     },
     "fb6ad86712d5bb7985e24eac3f78cdaa7a475f3987de30827b823b99ed74e5cf": {
       "context": "ESPN+ event scheduled 02/11/2026 00:30 GMT",
@@ -13358,7 +13376,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-20T01:42:31.589934+00:00"
+    "gemini": "2026-11-20T07:52:37.788686+00:00"
   },
   "version": 1
 }
