@@ -136,7 +136,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "031881f8c2a23927e0e7f64051b8d780c8bb75911314f613dd0a22bcbd8753da": {
       "created_at": "2026-11-07T14:24:37.317148+00:00",
@@ -208,7 +208,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "044310d7aab93438b58d836d132cbe52f7620c2d61b3f2b5668f313901433835": {
       "created_at": "2026-11-06T03:30:23.708947+00:00",
@@ -424,7 +424,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "0973dc9a6432c288b463c6b3daa36a2c81e696513a7f5652b912cb374f048b86": {
       "created_at": "2026-11-11T19:41:56.553346+00:00",
@@ -466,7 +466,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "0a39256e61793ba9c40eba853e7cbc0b1395f60bd9b9365dd98e8841c824aff6": {
       "created_at": "2026-11-09T15:34:57.820093+00:00",
@@ -1050,7 +1050,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "14a0256b499e1c5915543a18fb3e417f78d4d498a5c0661192baf4f2dce5a806": {
       "created_at": "2026-11-07T07:42:06.081836+00:00",
@@ -1350,7 +1350,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "1af18ee0cde92955dd86dc6c21ccebd23b61eea2f240208c0635517c80cc185f": {
       "created_at": "2026-11-15T17:18:43.376452+00:00",
@@ -1533,7 +1533,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "1e660fbc477541337a5ff95f1829c55c09e58c57721642e5aab9ff60b43a2dce": {
       "created_at": "2026-11-19T15:37:39.805955+00:00",
@@ -1898,7 +1898,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "247a5388be6ef030f0910ba91f1d1825646bc280c8882e98fa77c9700cec30e6": {
       "context": "DAZN UK event scheduled 03/11/2026 03:00 GMT",
@@ -2863,7 +2863,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "3298059fa870c0824f5e756458f67f5664ef921c36d7be2b263d936c71e33d20": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2910,7 +2910,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "338c0b597beb147a90b3a2f603cd94d4918ee19ae6b984caf7533d399686bc6d": {
       "created_at": "2026-11-20T11:35:00.256619+00:00",
@@ -2993,7 +2993,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "3515caa20ede4ad12bcada38ab40b03bbce41fd41f0fac24328ef79e5e9771bc": {
       "created_at": "2026-11-07T14:24:37.317152+00:00",
@@ -3390,7 +3390,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "3c1d60164204389534490329a596efb145b5661d221cdda88dcd7cd986b6ed1a": {
       "created_at": "2026-11-08T14:21:39.960136+00:00",
@@ -4208,7 +4208,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "4a0085a9eed3443af7d31a20e22443f9276514cf2167e6fefe22efe92f304296": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
@@ -4341,7 +4341,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "4b9fcc5e1889cc0c494d143cb978ca27e390967f6db9cddad528f13f380027db": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -4409,7 +4409,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -4911,7 +4911,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "569074dd3360217dc67e58163bde7e8a88947020a9106fdcf3369aedd6bbb7dc": {
       "created_at": "2026-11-14T13:34:29.850273+00:00",
@@ -5157,7 +5157,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "5affe0011cfb247f3e235b597b7ea33ae291c9eca8816fcd2f061d2b22ad5488": {
       "created_at": "2026-11-08T05:29:51.590155+00:00",
@@ -5628,7 +5628,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "626d27d76e0afe21436d10c843bf9fe5dcc777dc422091ea7a37ffca82f6b411": {
       "created_at": "2026-11-15T15:20:47.533746+00:00",
@@ -5652,7 +5652,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "633cba0bbc3c809c17ab0c88cf340f9f4b6224ed476f726e71a35a84d919084a": {
       "created_at": "2026-11-14T06:31:37.561345+00:00",
@@ -6138,7 +6138,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "6ef314006ef02d5e5a8f0a5965ce0a35cc55dcd5d5272549211f1d74cf9ebfd5": {
       "created_at": "2026-11-19T16:43:26.683153+00:00",
@@ -6666,7 +6666,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "76c49874494ea0bc1f40ba2e60b921584fa70176e62345ee4f94025aafe6f5c0": {
       "created_at": "2026-11-16T05:06:06.607817+00:00",
@@ -6690,7 +6690,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "782e69bfcd909dfde1d57d71b55ff8142c6a192aaebf5adf09fb663cd626c8d7": {
       "created_at": "2026-11-11T06:38:48.807936+00:00",
@@ -6955,7 +6955,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "7cbf40d8f9d235f4c37789e49eaf7c0c74056df78f74149f19a3316c198d3fd7": {
       "created_at": "2026-11-15T15:20:39.075644+00:00",
@@ -7329,7 +7329,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "827a65a62ab344ab344abfb2f3d5a6a41711eac5d0d96f2cc389085c7bff8cb3": {
       "created_at": "2026-11-15T15:20:39.075636+00:00",
@@ -7880,7 +7880,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "8c51708c9d0a5550aef6a35279cfcd111e0ef1f36333968a80d815c07a45dc14": {
       "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
@@ -8649,7 +8649,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
@@ -8802,7 +8802,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "9f1d35fefcc9ff799aac9b69735dbc3ba4ceb198a2cdd365a0f9d8ff52d79319": {
       "created_at": "2026-11-08T15:17:34.680495+00:00",
@@ -8844,7 +8844,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "9fcb68e3c590ffa364e8124a68eabc61c2cd5932a279b59c2830eb541b644a67": {
       "created_at": "2026-11-06T03:30:23.708951+00:00",
@@ -8875,7 +8875,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "a021abafa5eca96e6714b8d445489f2e6fb463b2f2d0f9b2fa008ae9ac9136be": {
       "created_at": "2026-11-07T05:28:43.411745+00:00",
@@ -9155,7 +9155,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "a566d1211e5ce197df424ed89ec0f57ca9235cd8249f7271b5970c39e67a6710": {
       "context": "ESPN+ event scheduled 02/11/2026 17:00 GMT",
@@ -9168,7 +9168,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "a5ee596569e0bdd50d34c57888bac494d474530e4cb7b4ec2912627f37a7b281": {
       "created_at": "2026-11-10T05:32:33.153347+00:00",
@@ -10111,7 +10111,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "b5e9c88dccee94d9127ab9d38fb4ca32d5824d62e16904f5a86d54b1187ace59": {
       "created_at": "2026-11-07T16:17:32.146917+00:00",
@@ -10640,7 +10640,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:46.317036+00:00"
     },
     "bec0e8cbc0bb4e72d7a07b9711e1dafd5de60154b2d38f55aa4ec0bcdd4c9d9c": {
       "created_at": "2026-11-11T06:38:48.807923+00:00",
@@ -10875,7 +10875,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "c36d386752f7645a85e65b16ffe5aa400045a90dc21e2336fecb4207a749f82d": {
       "created_at": "2026-11-14T14:26:04.754154+00:00",
@@ -11048,7 +11048,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "c6cadfa0316720c198061a0d06cfdc444bafb3545c5b524595c94e7060c0b1f8": {
       "created_at": "2026-11-20T12:38:50.625949+00:00",
@@ -11201,7 +11201,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:44.958346+00:00"
     },
     "c8a4d0afc13b2d4cf46eebf71499bb038c32b401b28adde3f907e732faa0b42c": {
       "context": "Disney+ Events event scheduled 02/11/2026 17:00 GMT",
@@ -13578,7 +13578,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:47.098670+00:00"
     },
     "f3b048293ac321c26209116f3733bf680a4c8c7ce8cefe17694c4e34d9b5f390": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -13643,7 +13643,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-20T13:55:20.992287+00:00"
+      "retry_after": "2026-11-20T15:50:45.628371+00:00"
     },
     "f4b5b6d4bfda9835f15ad358c541f4137ff063843f05dc00592a1505b616180d": {
       "created_at": "2026-11-13T05:39:21.524020+00:00",
@@ -14225,7 +14225,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-20T13:55:20.992287+00:00"
+    "gemini": "2026-11-20T21:35:44.169250+00:00"
   },
   "version": 1
 }
