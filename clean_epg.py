@@ -1914,12 +1914,36 @@ def process_epg() -> None:
     # These channel IDs were reviewed in IPTV Editor as channels whose
     # programme title mirrors the channel name. Use only manifest IDs and
     # verify the mirror still exists in this feed before rewriting anything.
+    # PlaylistLabs switches the prefix when Dynamic Event EPG is enabled.
+    # Keep the exported ID on every XML element; the numeric part only
+    # carries the existing football classification across that change.
+    dynamic_ids = {key for key in display_names_by_id if re.fullmatch(r"event-\d+", key)}
+    dynamic_football = {key for key in dynamic_ids
+                        if key.replace("event-", "dummy-", 1) in football_mirror_ids}
+    football_mirror_ids.update(dynamic_football)
+    event_mirror_ids.update(dynamic_ids - dynamic_football)
+    today_london = datetime.now(LONDON).date()
+    dynamic_defaults: dict[str, str] = {}
     mirrored_title_counts: dict[str, Counter[str]] = {}
     for programme in root.iter("programme"):
         ch_id = programme.get("channel")
         if ch_id not in football_mirror_ids and ch_id not in event_mirror_ids:
             continue
         title = (programme.findtext("title") or "").strip()
+        if ch_id in dynamic_ids and ch_id not in dynamic_defaults:
+            if title.casefold() == "no scheduled event":
+                dynamic_defaults[ch_id] = "No event today"
+            elif title.startswith("Next Match:"):
+                # Some synced labels place the clock inside provider-specific
+                # text. PlaylistLabs repeats the advertised time in the
+                # description; its XMLTV row boundaries are just grid slots.
+                clock = re.search(r"\(([^()]*(?:AM|PM))\)\s*$", programme.findtext("desc", ""), re.I)
+                if clock and display_names_by_id[ch_id]:
+                    label = display_names_by_id[ch_id][0]
+                    zone = re.search(r"\b(ET|EDT|EST|London|GMT|UTC|PT|PST|PDT)\s*$", label, re.I)
+                    if zone:
+                        event = re.sub(r"\s+@\s+London$", "", title.removeprefix("Next Match:").strip(), flags=re.I)
+                        dynamic_defaults[ch_id] = f"{event} @ {clock[1].strip()} {zone[1]}"
         if title and title in display_names_by_id.get(ch_id or "", []):
             mirrored_title_counts.setdefault(ch_id, Counter())[title] += 1
     mirrored_titles = {
@@ -1927,9 +1951,16 @@ def process_epg() -> None:
         for ch_id, counts in mirrored_title_counts.items()
         if counts
     }
+    for ch_id in dynamic_ids:
+        for name in display_names_by_id[ch_id]:
+            if _parse_mirrored_start(name, today_london) or _is_no_event_title(_clean_mirrored_event_title(name)):
+                mirrored_titles[ch_id] = name
+                break
+        else:
+            if ch_id in dynamic_defaults:
+                mirrored_titles[ch_id] = dynamic_defaults[ch_id]
     # Numbered Sky Sports+ feeds publish the current event in their channel
     # label. EPG rows can still repeat the previous event after a slot rotates.
-    today_london = datetime.now(LONDON).date()
     for ch_id in event_mirror_ids:
         for name in display_names_by_id.get(ch_id, []):
             if not re.match(r"^Sky Sports\s*\+\s*\d+\s*:", name, re.I):
@@ -2027,7 +2058,7 @@ def process_epg() -> None:
     # Some providers expose the event title only in the programme entries.
     for programme in root.iter("programme"):
         ch_id = programme.get("channel")
-        if ch_id in targets and not targets[ch_id]["event_title"]:
+        if ch_id in targets and not targets[ch_id]["event_title"] and ch_id not in dynamic_ids:
             title = (programme.findtext("title") or "").strip()
             clean_title = _format_title_event_name(title)
             if _is_no_event_title(clean_title):
@@ -2325,7 +2356,7 @@ def process_epg() -> None:
         day_end = day_start + timedelta(days=1)
 
         upcoming_start = guide_day_start
-        if upcoming_start < start_utc and now_utc < start_utc:
+        if upcoming_start < start_utc and (ch_id in dynamic_ids or now_utc < start_utc):
             upcoming_title = (
                 f"Upcoming Event: {clean_title} at {_format_gmt_time(start_utc)}"
             )
@@ -2367,6 +2398,10 @@ def process_epg() -> None:
     }
 
     def has_fixture_listing(programme: ET.Element, labels: set[str]) -> bool:
+        if programme.get("channel") in dynamic_ids and programme.findtext("title", "").casefold() in {
+            "no scheduled event", "the event has ended"
+        }:
+            return False
         try:
             if datetime.strptime(programme.get("stop", ""), "%Y%m%d%H%M%S %z") <= now_utc:
                 return False
@@ -2425,7 +2460,7 @@ def process_epg() -> None:
         upcoming_start = guide_day_start
         upcoming_title = f"Upcoming Match: {title} at {_format_gmt_time(start_utc)}"
         description = _local_event_description(title, item.get("league", "Football"))
-        if upcoming_start < start_utc and now_utc < start_utc:
+        if upcoming_start < start_utc and (ch_id in dynamic_ids or now_utc < start_utc):
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
@@ -2491,7 +2526,7 @@ def process_epg() -> None:
         upcoming_start = guide_day_start
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
         description = _local_event_description(title)
-        if upcoming_start < start_utc and now_utc < start_utc:
+        if upcoming_start < start_utc and (ch_id in dynamic_ids or now_utc < start_utc):
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
@@ -2553,7 +2588,7 @@ def process_epg() -> None:
         description = _local_event_description(title)
         upcoming_start = guide_day_start
         upcoming_title = f"Upcoming Event: {title} at {_format_gmt_time(start_utc)}"
-        if upcoming_start < start_utc and now_utc < start_utc:
+        if upcoming_start < start_utc and (ch_id in dynamic_ids or now_utc < start_utc):
             upcoming = ET.Element("programme", {
                 "start": upcoming_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
@@ -2667,7 +2702,7 @@ def process_epg() -> None:
             continue
         event_day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         event_day_end = event_day_start + timedelta(days=1)
-        if mirror_now_utc < start_utc:
+        if mirror_day_start < start_utc and (ch_id in dynamic_ids or mirror_now_utc < start_utc):
             upcoming = ET.Element("programme", {
                 "start": mirror_day_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),
@@ -2701,7 +2736,7 @@ def process_epg() -> None:
         match_day_start = datetime.combine(start_utc.date(), datetime_time.min, tzinfo=UTC)
         match_day_end = match_day_start + timedelta(days=1)
         match_end = min(start_utc + EPL_EVENT_DURATION, match_day_end)
-        if mirror_now_utc < start_utc:
+        if mirror_day_start < start_utc and (ch_id in dynamic_ids or mirror_now_utc < start_utc):
             upcoming = ET.Element("programme", {
                 "start": mirror_day_start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": start_utc.strftime("%Y%m%d%H%M%S %z"),

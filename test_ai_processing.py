@@ -283,6 +283,30 @@ class AIProcessingTests(unittest.TestCase):
             visible = [r for r in rows if earliest <= r.get('start') <= now < r.get('stop')]
             self.assertEqual([r.findtext('desc') for r in visible], ['Fixture details'])
 
+    def test_playlistlabs_dynamic_ids_use_fixture_time_and_empty_slot_rules(self):
+        ET = self.ns['ET']
+        folder = self.prepare_process([])
+        (folder / 'football.txt').write_text('dummy-22\n')
+        root = ET.Element('tv')
+        today = self.ns['datetime'].now(self.ns['LONDON']).strftime('%d %b')
+        for number, label, text in [
+            (20, f'Sky Sports + 09: A v B @ {today} 01:25 PM London', 'Next Match: A v B'),
+            (21, 'General Feed 37: NO EVENT', 'No scheduled event'),
+            (22, 'National League TV 22: NO MATCH', 'No scheduled event'),
+        ]:
+            key = f'event-{number}'
+            ET.SubElement(ET.SubElement(root, 'channel', id=key), 'display-name').text = label
+            row = ET.SubElement(root, 'programme', channel=key)
+            ET.SubElement(row, 'title').text = text
+        self.requests.get.return_value.content = ET.tostring(root)
+        self.ns['process_epg']()
+        guide = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
+        rows = guide.findall("programme[@channel='event-20']")
+        self.assertTrue(any(row.findtext('title') == 'A v B' for row in rows))
+        self.assertTrue(any(row.findtext('title').startswith('Upcoming Event:') for row in rows))
+        self.assertEqual(guide.findtext("programme[@channel='event-21']/title"), 'No event today')
+        self.assertEqual(guide.findtext("programme[@channel='event-22']/title"), 'No match today')
+
     def test_missing_football_listings_get_no_match_today(self):
         import xml.etree.ElementTree as ET
         folder = self.prepare_process([
