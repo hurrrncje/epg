@@ -283,6 +283,13 @@ class AIProcessingTests(unittest.TestCase):
             visible = [r for r in rows if earliest <= r.get('start') <= now < r.get('stop')]
             self.assertEqual([r.findtext('desc') for r in visible], ['Fixture details'])
 
+    def test_native_preview_ends_when_the_broadcast_starts(self):
+        ET = self.ns['ET']
+        guide = ET.fromstring('<tv><programme channel="event-7" start="20261121120000 +0000" stop="20261121140000 +0000"><title>Next Match: A v B</title></programme><programme channel="event-7" start="20261121132500 +0000" stop="20261121150000 +0000"><title>A v B</title></programme></tv>')
+        self.ns['_clean_native_dynamic_rows'](guide, {'event-7'}, set())
+        self.assertEqual(guide[0].get('stop'), guide[1].get('start'))
+        self.assertEqual(guide[0].findtext('title'), 'Upcoming Event: A v B at 1.25pm')
+
     def test_playlistlabs_dynamic_ids_use_fixture_time_and_empty_slot_rules(self):
         ET = self.ns['ET']
         folder = self.prepare_process([])

@@ -1819,6 +1819,50 @@ def _normalize_paramount_branding(
                         element.text = pattern.sub("CBS Sports HQ", element.text)
 
 
+def _clean_native_dynamic_rows(root: ET.Element, dynamic_ids: set[str], football_ids: set[str]) -> None:
+    """Normalise native rows retained when a synced name has no usable fixture time."""
+    by_channel: dict[str, list[ET.Element]] = {}
+    for row in root.iter("programme"):
+        channel = row.get("channel")
+        if channel in dynamic_ids:
+            by_channel.setdefault(channel, []).append(row)
+    remove = set()
+    for channel, rows in by_channel.items():
+        football = channel in football_ids
+        next_start = None
+        for row in sorted(rows, key=lambda item: item.get("start", ""), reverse=True):
+            title = row.findtext("title", "")
+            if title.startswith("Next Match:"):
+                title = title.removeprefix("Next Match:").strip()
+                prefix = "Upcoming Match" if football else "Upcoming Event"
+                if next_start is not None:
+                    # The final two-hour preview can overlap the live slot.
+                    boundary = next_start.strftime("%Y%m%d%H%M%S %z")
+                    if row.get("start", "") >= boundary:
+                        remove.add(row)
+                        continue
+                    if row.get("stop", "") > boundary:
+                        row.set("stop", boundary)
+                    title = f"{title} at {_format_gmt_time(next_start)}"
+                title = f"{prefix}: {title}"
+            elif title == "The event has ended":
+                title = "Match ended" if football else "No further event scheduled"
+            elif title == "No scheduled event":
+                title = "No match today" if football else "No event today"
+            else:
+                try:
+                    next_start = datetime.strptime(row.get("start", ""), "%Y%m%d%H%M%S %z").astimezone(UTC)
+                except ValueError:
+                    next_start = None
+                continue
+            row.find("title").text = title
+            desc = row.find("desc")
+            if desc is not None:
+                desc.text = title
+    if remove:
+        root[:] = [item for item in root if item not in remove]
+
+
 def _split_long_event_listings(root: ET.Element, channel_ids: set[str]) -> None:
     """Keep in-progress listings inside Nuvio's six-hour start-time lookup."""
     limit = timedelta(hours=6)
@@ -2775,6 +2819,7 @@ def process_epg() -> None:
         for channel_id, item in {**epl_targets, **european_league_targets}.items()
     }
     description_context.update({channel_id: "Football" for channel_id in mirrored_football_targets})
+    _clean_native_dynamic_rows(root, dynamic_ids, football_mirror_ids | epl_targets.keys() | european_league_targets.keys())
     _apply_local_event_descriptions(generated, source_programmes, description_context)
     _bound_event_programmes(generated, bounded_events, source_programmes, now_utc)
 
