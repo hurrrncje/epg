@@ -236,7 +236,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "05743992cece6fa9aa4e0d5ecf2f474ebbffdd424936cb3b65871788d930f04d": {
       "created_at": "2026-11-04T05:36:14.786990+00:00",
@@ -1396,7 +1396,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "1bf90389b23f3425b0def891b7510f922de0be3215b3c24f601b3603ba5455f2": {
       "created_at": "2026-11-14T18:14:59.970967+00:00",
@@ -1597,7 +1597,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "1ef4f1182443f228288be3204dda8e1f2396334bb12f27e0e3a8e1dcd9f3298a": {
       "created_at": "2026-11-14T13:34:07.126872+00:00",
@@ -1655,7 +1655,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "1f772297c27c9aadb432decc3cf99131cc7484d6b241fc75f40f9abed76e0bdd": {
       "created_at": "2026-11-13T15:26:54.247631+00:00",
@@ -1718,7 +1718,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "20a8f5d15430981dafce7b4579a11bcb7bebb1d27d82a78bc4a5d723b4b1f3ab": {
       "context": "DAZN UK event scheduled 01/11/2026 15:30 GMT",
@@ -2616,7 +2616,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "2d7877c43f8bd59a18724d44a8879b3be3d6a0c80d141d762a7d392bf24c6d34": {
       "created_at": "2026-11-05T05:40:32.979997+00:00",
@@ -3724,7 +3724,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "403ff2801332ffb6a635448a9a026b20a025e77fde48967f0689305cc6944f17": {
       "created_at": "2026-11-14T06:31:11.948506+00:00",
@@ -3988,7 +3988,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "43df81343ba104c15dce33f307200b2bdfb8f7016b21a54704d677d72c9fdf34": {
       "created_at": "2026-11-07T16:17:32.146922+00:00",
@@ -4333,7 +4333,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "4a9054b98d6d9eb979596eeb66699adf9012d079835f6884d0ffab400c2f0556": {
       "created_at": "2026-11-17T16:41:14.527054+00:00",
@@ -5214,7 +5214,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "5af9ed47030dd20ba09d70f8386d4aa2802781d4cd9bfc9e6005e9ed79529352": {
       "created_at": "2026-11-07T14:24:25.648908+00:00",
@@ -6348,7 +6348,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "706bf835915851a6e85dea660512e0e49113f33bc33e90f63cd754b6e9fe0c23": {
       "created_at": "2026-11-15T13:36:32.414316+00:00",
@@ -8831,7 +8831,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "9e6daa7c5ce8b398f9124bbfa359c55faf4a69fcb95038442766acf09ff6b164": {
       "created_at": "2026-10-26T19:21:40.738745+00:00",
@@ -9190,7 +9190,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "a474d65e7bd65047b2c5d4eae135bebe10c38f9fc3ec42a6411daa28c3e54def": {
       "created_at": "2026-11-06T05:37:42.631716+00:00",
@@ -9631,7 +9631,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "ab88a683e86f5c1f4a895ebdf05e1039be6fdcca8b42d7c93bf156269f22f330": {
       "created_at": "2026-11-14T18:14:59.970963+00:00",
@@ -10739,7 +10739,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "be988001cd1d27120eef74c947dc044f3cc5dde2d438eb388a0c9e22f190ef69": {
       "created_at": "2026-11-08T17:16:11.697727+00:00",
@@ -10822,7 +10822,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "c020d584a91ca87946d1de0f4f5deb17bcf5d2eddc8eacb500a8964cf070ac8d": {
       "created_at": "2026-10-28T00:12:37.428452+00:00",
@@ -12438,7 +12438,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "db74527ddd35378154d2ed4d6624fedc7c9665a44bdbc9aee43864ce88071cd8": {
       "created_at": "2026-11-18T17:38:00.284001+00:00",
@@ -12566,7 +12566,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -12762,7 +12762,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:09.853826+00:00"
+      "retry_after": "2026-11-21T06:52:38.400606+00:00"
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -13163,7 +13163,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T05:50:12.491337+00:00"
+      "retry_after": "2026-11-21T06:52:39.165145+00:00"
     },
     "e67ff27c97b92549d51289c3c7162bcb64d457c71f971dc5ab050ba2e17300d7": {
       "created_at": "2026-11-15T05:33:11.434121+00:00",
