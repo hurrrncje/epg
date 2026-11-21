@@ -132,12 +132,6 @@
         "raw": "BKFC 96: Weir vs. Cohoon"
       }
     },
-    "0310f26a28474f6961229eedafc3ae253422c0058ce30d3f3df38b2f695a9179": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
-    },
     "031881f8c2a23927e0e7f64051b8d780c8bb75911314f613dd0a22bcbd8753da": {
       "created_at": "2026-11-07T14:24:37.317148+00:00",
       "kind": "live-title",
@@ -422,12 +416,6 @@
       "kind": "event-description",
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
-    },
-    "090c8168513dc7bf18e1747cc8d1d0c189a52e9ac003fd9bdc1568756afad409": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
     },
     "0973dc9a6432c288b463c6b3daa36a2c81e696513a7f5652b912cb374f048b86": {
       "created_at": "2026-11-11T19:41:56.553346+00:00",
@@ -1354,12 +1342,6 @@
         "description": "Coverage of Japan U23 against Chinese Taipei U23.",
         "raw": "Japan U23 vs. Chinese Taipei U23"
       }
-    },
-    "1acc89679bb148465ef88c4e07bd8bbb330e5d4508bf5cb4c8acb30bf4dba760": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
     },
     "1af18ee0cde92955dd86dc6c21ccebd23b61eea2f240208c0635517c80cc185f": {
       "created_at": "2026-11-15T17:18:43.376452+00:00",
@@ -2875,10 +2857,13 @@
       }
     },
     "327fa6474af991b7b5c057a2ebda0d0700a36d733e3d49ae48408cb3beada29e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T00:27:53.783000+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
+      "result": {
+        "clean_title": "Georgia vs Georgia Tech",
+        "description": "Coverage of Georgia against Georgia Tech.",
+        "raw": "Georgia @ Georgia Tech"
+      }
     },
     "3298059fa870c0824f5e756458f67f5664ef921c36d7be2b263d936c71e33d20": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -2920,12 +2905,6 @@
         "description": "Coverage of Bills against Vikings.",
         "raw": "MNF Playbook | Bills @ Vikings"
       }
-    },
-    "338031c1a80bd0b6a085ab79ec3f40ee2f283590702db5deaf95e54eda487a7b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
     },
     "338c0b597beb147a90b3a2f603cd94d4918ee19ae6b984caf7533d399686bc6d": {
       "created_at": "2026-11-20T11:35:00.256619+00:00",
@@ -4226,10 +4205,13 @@
       "title": "Eagles @ Commanders (US., French, German, Japanese, Portuguese Game Commentary Available)"
     },
     "49e94233e5324cb86b0550fb1b3a24f4a81f7979e244177df432b7ba59ee44ea": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T00:27:53.783003+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
+      "result": {
+        "clean_title": "Jones vs Pettus",
+        "description": "Coverage of Jones against Pettus.",
+        "raw": "Jones vs. Pettus"
+      }
     },
     "4a0085a9eed3443af7d31a20e22443f9276514cf2167e6fefe22efe92f304296": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
@@ -4359,10 +4341,13 @@
       }
     },
     "4b90f0b97bc527635f977acdb98c1d4b042e98fab800ecbd2ab08c0fd79e6f3d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T00:27:53.783007+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
+      "result": {
+        "clean_title": "Jones vs Pettus",
+        "description": "Coverage of Jones against Pettus.",
+        "raw": "Jones vs. Pettus (Polish Commentary)"
+      }
     },
     "4b9fcc5e1889cc0c494d143cb978ca27e390967f6db9cddad528f13f380027db": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:00 GMT",
@@ -4425,12 +4410,6 @@
       "kind": "event-description",
       "result": "Rivier Raiders play the UMass Lowell River Hawks in a men’s college basketball game.",
       "title": "Rivier vs. UMass Lowell"
-    },
-    "4d8ef96dbaafb8e2d294d75e4574e8f444a26e0375124a573fafbcaebe83354c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
     },
     "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -5177,12 +5156,6 @@
         "raw": "BYU @ UTA, TEX @ MIZ, UCLA @ MNE, ISU @ BAY"
       }
     },
-    "5afa64c402cabe912455406b0dd32d980d17cad336f76d07fa26b93682dc447c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
-    },
     "5affe0011cfb247f3e235b597b7ea33ae291c9eca8816fcd2f061d2b22ad5488": {
       "created_at": "2026-11-08T05:29:51.590155+00:00",
       "kind": "live-title",
@@ -5649,10 +5622,13 @@
       }
     },
     "62458d7a0d8013dc1efc7dbdb44b6036aa9bf098081420ebdd01028606586592": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T00:27:53.782983+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
+      "result": {
+        "clean_title": "Clemson vs Duke",
+        "description": "Coverage of Clemson against Duke.",
+        "raw": "Clemson @ Duke"
+      }
     },
     "626d27d76e0afe21436d10c843bf9fe5dcc777dc422091ea7a37ffca82f6b411": {
       "created_at": "2026-11-15T15:20:47.533746+00:00",
@@ -6160,12 +6136,6 @@
         "description": "Coverage of Tennessee Tech against Indiana.",
         "raw": "Tennessee Tech @ Indiana"
       }
-    },
-    "6ee5203d02ef8b1c1c751b149c783b7fcbc8155fa3c340fb5fdb708368576348": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
     },
     "6ef314006ef02d5e5a8f0a5965ce0a35cc55dcd5d5272549211f1d74cf9ebfd5": {
       "created_at": "2026-11-19T16:43:26.683153+00:00",
@@ -6689,12 +6659,6 @@
         "raw": "TCU @ Arizona"
       }
     },
-    "76591f20e129c08dec58c62bf01cd158babc054e2385d2153d40aab4c74f623f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
-    },
     "76c49874494ea0bc1f40ba2e60b921584fa70176e62345ee4f94025aafe6f5c0": {
       "created_at": "2026-11-16T05:06:06.607817+00:00",
       "kind": "live-title",
@@ -6712,12 +6676,6 @@
         "description": "Coverage of Kansas City Chiefs against Atlanta Falcons, Buffalo Bills vs. New York Jets, Houston Texans vs. Cleveland Browns, Miami Dolphins vs. Indianapolis Colts.",
         "raw": "KC @ ATL, BUF @ NYJ, HOU @ CLE, MIA @ IND"
       }
-    },
-    "776ea3297fe2197088825f4138ee0cad25bc8f3a007834f529984d2923f0fa24": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
     },
     "782e69bfcd909dfde1d57d71b55ff8142c6a192aaebf5adf09fb663cd626c8d7": {
       "created_at": "2026-11-11T06:38:48.807936+00:00",
@@ -8681,12 +8639,6 @@
         "raw": "Golden Dream FC vs. Bea Mountain FC"
       }
     },
-    "9cc4dab36ea115dc02321f1cbbb88805607301f14f9e093b34d39dd6491ee750": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
-    },
     "9cc76177e1e9b1ea07a3631365d1b56d5d3e968cac88c53c9292c227f8127283": {
       "created_at": "2026-11-06T05:37:48.861304+00:00",
       "kind": "live-title",
@@ -8912,12 +8864,6 @@
       "kind": "event-description",
       "result": "CBS Sports HQ scoreboard final for the day's games.",
       "title": "cbssportshq: Scoreboard Final"
-    },
-    "9fe5ff11e8080766662c8593366aa1777a9bd0c5b2cbcff36ef4597a4f33695d": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
     },
     "a021abafa5eca96e6714b8d445489f2e6fb463b2f2d0f9b2fa008ae9ac9136be": {
       "created_at": "2026-11-07T05:28:43.411745+00:00",
@@ -10155,12 +10101,6 @@
         "raw": "Al Taliya vs. Majees"
       }
     },
-    "b5d14473687bda32ece309e731a41c1fabc594b67c23944e74fcbbfbe75169dd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
-    },
     "b5e9c88dccee94d9127ab9d38fb4ca32d5824d62e16904f5a86d54b1187ace59": {
       "created_at": "2026-11-07T16:17:32.146917+00:00",
       "kind": "live-title",
@@ -10684,12 +10624,6 @@
         "raw": "Puerto Rico U23 vs. Czechia U23"
       }
     },
-    "beb5d0e61662b4cfd2fd2cb00fe9dcef22732d600651ba45453f278f1ad6b89b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.878906+00:00"
-    },
     "bec0e8cbc0bb4e72d7a07b9711e1dafd5de60154b2d38f55aa4ec0bcdd4c9d9c": {
       "created_at": "2026-11-11T06:38:48.807923+00:00",
       "kind": "live-title",
@@ -10919,12 +10853,6 @@
       "result": "Ohio State University men's basketball team plays BYU in a regular‑season NCAA Division I matchup.",
       "title": "Ohio State @ BYU"
     },
-    "c3675a6989eb63251128ffdebef98316588dd7db1f649fc412b8324d4a86a3dd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
-    },
     "c36d386752f7645a85e65b16ffe5aa400045a90dc21e2336fecb4207a749f82d": {
       "created_at": "2026-11-14T14:26:04.754154+00:00",
       "kind": "live-title",
@@ -11091,12 +11019,6 @@
         "description": "Coverage of Panthers against Saints.",
         "raw": "Panthers @ Saints"
       }
-    },
-    "c647b74d88703457915c51baff711ba4c04dedaff59a076bcc75a99fda6e9694": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
     },
     "c6cadfa0316720c198061a0d06cfdc444bafb3545c5b524595c94e7060c0b1f8": {
       "created_at": "2026-11-20T12:38:50.625949+00:00",
@@ -13692,12 +13614,6 @@
         "description": "Coverage of Japan U23 against Great Britain U23.",
         "raw": "Japan U23 vs. Great Britain U23"
       }
-    },
-    "f47e830fd531c91867484a57a69c6504c51b3b45a2c7437e70d07183a97607bd": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-20T23:42:27.207416+00:00"
     },
     "f4b5b6d4bfda9835f15ad358c541f4137ff063843f05dc00592a1505b616180d": {
       "created_at": "2026-11-13T05:39:21.524020+00:00",
