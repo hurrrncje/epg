@@ -1602,7 +1602,9 @@ def _download_epg_root() -> ET.Element:
     for attempt in range(MAX_RETRIES):
         try:
             print(f"Downloading EPG XML (attempt {attempt + 1}/{MAX_RETRIES})...", flush=True)
-            with requests.get(EPG_URL, timeout=REQUEST_TIMEOUT) as response:
+            with requests.get(EPG_URL, timeout=REQUEST_TIMEOUT, headers={
+                "Cache-Control": "no-cache", "User-Agent": "Mozilla/5.0 (XMLTV guide refresh)"
+            }) as response:
                 response.raise_for_status()
                 # Parse bytes so XML encoding declarations remain authoritative.
                 root = ET.fromstring(response.content)
@@ -1925,6 +1927,17 @@ def process_epg() -> None:
         for ch_id, counts in mirrored_title_counts.items()
         if counts
     }
+    # Numbered Sky Sports+ feeds publish the current event in their channel
+    # label. EPG rows can still repeat the previous event after a slot rotates.
+    today_london = datetime.now(LONDON).date()
+    for ch_id in event_mirror_ids:
+        for name in display_names_by_id.get(ch_id, []):
+            if not re.match(r"^Sky Sports\s*\+\s*\d+\s*:", name, re.I):
+                continue
+            start = _parse_mirrored_start(name, today_london)
+            if start and today_london <= start.astimezone(LONDON).date() <= today_london + timedelta(days=1):
+                mirrored_titles[ch_id] = name
+                break
     # An explicit empty-event alias is sufficient even when the provider has
     # omitted programme rows entirely. Only reviewed event channels qualify.
     for ch_id in event_mirror_ids:

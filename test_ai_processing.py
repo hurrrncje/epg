@@ -232,7 +232,13 @@ class AIProcessingTests(unittest.TestCase):
         folder = self.prepare_process(labels)
         (folder / 'events.txt').write_text('c0\nc1\nc2\nc3\n')
         root = ET.fromstring(self.requests.get.return_value.content)
+        stale = 'Sky Sports + 01: Previous fixture @ 31 Oct 09:00 AM London'
+        ET.SubElement(root.find("channel[@id='c0']"), 'display-name').text = stale
         for i, label in enumerate(labels):
+            if i == 0:
+                label = stale
+            if i == 1:
+                continue  # Only the synced channel name contains this fixture.
             programme = ET.SubElement(root, 'programme', channel=f'c{i}', start='20261101000000 +0000', stop='20261102000000 +0000')
             ET.SubElement(programme, 'title').text = label if i < 4 else 'Original linear schedule'
         self.requests.get.return_value.content = ET.tostring(root)
