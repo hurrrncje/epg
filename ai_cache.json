@@ -54,7 +54,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "0124b7164188449ebf0845a8594e44c435165cd69eede54c4643dae7e0cae0d9": {
       "created_at": "2026-11-15T05:33:11.434128+00:00",
@@ -1273,10 +1273,13 @@
       "title": "UEFA Women's Champions League: Arsenal vs. Benfica"
     },
     "17c6b30fb917cc1247649bcf2dec4876de10a4c347dfee004fc5fd47a7d78eab": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310377+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Washington State vs Duke",
+        "description": "Coverage of Washington State against Duke.",
+        "raw": "Washington State vs. Duke"
+      }
     },
     "17fce0ae1b17df89974fae0645dcf945bcdbb52bf4421bad13cad48410f8db35": {
       "created_at": "2026-11-20T13:55:04.539526+00:00",
@@ -1541,10 +1544,13 @@
       }
     },
     "1d352bf126e295afb188c1f1e47922c81041dcad25bec4d9ecbb0f18c4b9a0d4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310379+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Wild at Canucks",
+        "description": "Coverage of Wild at Canucks.",
+        "raw": "Wild @ Canucks"
+      }
     },
     "1d5885836d3c5417e0092762f7379890b842964adc477e76f32c9740567ee319": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -1591,7 +1597,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "1e36828b1457a799552a72a1ff6332c466c1f3d7baa0d97a058dc8b83b3ab845": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -2232,10 +2238,13 @@
       }
     },
     "27596f5b26622d0f04bc8ff3c64f6e09c0f24c8d282afd2983a563a12182a138": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310382+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Wisconsin at Purdue",
+        "description": "Coverage of Wisconsin at Purdue.",
+        "raw": "Wisconsin @ Purdue"
+      }
     },
     "275d7f95062d0ae51a6622f4781b85e14d3c504313abbde49ea8ab3b4e8c1294": {
       "created_at": "2026-11-03T18:24:18.345691+00:00",
@@ -2531,7 +2540,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "2a7adc846a983c8f320da70a9c0dd201c6195f86c9688f620e5c3d7fcfb0b977": {
       "created_at": "2026-11-14T05:29:37.608184+00:00",
@@ -2825,7 +2834,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "2eba6dc182b695f2e42c73e91199a3bc010b28de8ad01fac61e533b85b8deeb1": {
       "created_at": "2026-10-26T19:21:40.738743+00:00",
@@ -3003,7 +3012,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "31a162d960dc258d53df930cb153820d9e0356ce24a90a78d4dac4e9184e212e": {
       "created_at": "2026-11-14T13:34:07.126883+00:00",
@@ -3049,10 +3058,13 @@
       }
     },
     "32736d28c584bfda3b0a5a2adfb3942551cf3dfbf9c88f51c834071ce7882f7f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310363+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Vanderbilt at Florida",
+        "description": "Coverage of Vanderbilt at Florida.",
+        "raw": "Vanderbilt @ Florida"
+      }
     },
     "327fa6474af991b7b5c057a2ebda0d0700a36d733e3d49ae48408cb3beada29e": {
       "created_at": "2026-11-21T00:27:53.783000+00:00",
@@ -3074,7 +3086,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "32ed802d711b42d28967791614cc4436645d7d1abcc9609f576416af516a82dd": {
       "created_at": "2026-11-15T15:20:47.533718+00:00",
@@ -3819,10 +3831,13 @@
       "title": "Mississippi Christian vs. Southern Miss"
     },
     "3ec711a29c1e93c5d79453a8656d03875467378b87d09f4360e779eef1758ed1": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697005+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 5 - Women’s Quarter-Finals",
+        "description": "Coverage of Sydney, Nova Scotia - Day 5 - Women’s Quarter-Finals.",
+        "raw": "Sydney, Nova Scotia - Day 5 - Women’s Quarter-Finals"
+      }
     },
     "3ef5abca0167b032a54e544e9cb83d58938b638211bacbc0c2d7684cdd6f7a29": {
       "created_at": "2026-11-07T07:42:06.081841+00:00",
@@ -4128,10 +4143,13 @@
       }
     },
     "42c91707d31e29ecfe3f2ba9a20c5a18125a7ee1c8943da40ab8df02e13c7c57": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.696999+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 5 - Men’s & Women’s Semi-Finals",
+        "description": "Coverage of Sydney, Nova Scotia - Day 5 - Men’s & Women’s Semi-Finals.",
+        "raw": "Sydney, Nova Scotia - Day 5 - Men’s & Women’s Semi-Finals"
+      }
     },
     "4338a76e0d26267938791ff9c240b9785c173eb3ab452ff9ff0bfa84b01b528a": {
       "created_at": "2026-11-15T13:36:37.422899+00:00",
@@ -4420,10 +4438,13 @@
       }
     },
     "48832c2a4fe5b33132f01744d5e114664506b73f109eca94f1154c041df55c99": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697013+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Texas Tech vs Baylor",
+        "description": "Coverage of Texas Tech against Baylor.",
+        "raw": "Texas Tech @ Baylor"
+      }
     },
     "48c3cba40aa32d6fc175fdf8cd45ed8958fd7e0d990a77a6a6b51bf72d85f811": {
       "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
@@ -4738,10 +4759,13 @@
       "title": "| FC Cincinnati vs Philadelphia Union (English)"
     },
     "4f046a4be1c63ac3716afc3603d7ddf3f7f6e8a43258560d0da530432d76b543": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697016+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "UCAM Murcia vs Zaragoza",
+        "description": "Coverage of UCAM Murcia against Zaragoza.",
+        "raw": "UCAM Murcia vs. Zaragoza"
+      }
     },
     "4f12fd1f4d7fbfd013a4ddc531da7fafc8440a2fd8b8d079ec4dc9452efb349b": {
       "created_at": "2026-11-12T09:36:23.034832+00:00",
@@ -4940,6 +4964,12 @@
         "raw": "Oregon State @ Oregon"
       }
     },
+    "51e351b8b73ba8e6641a5ec23cbf4199c087530261d51327029b410c4626677e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+    },
     "520e62f97e6a939901950579edaa923c65eef2947399d80e674211b1c4b02290": {
       "created_at": "2026-11-15T05:32:30.749306+00:00",
       "kind": "live-title",
@@ -5077,7 +5107,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "543c1babad91d2917a211fcb8bf661a73c8c5f1e408844c0e1170a2d251b1383": {
       "created_at": "2026-11-08T14:21:58.625439+00:00",
@@ -5366,7 +5396,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "586f3427669f0cd47b19ffa21f6e0bc30ec801c7b1fb09776d22d2582fea6b30": {
       "created_at": "2026-11-15T15:20:47.533751+00:00",
@@ -5430,10 +5460,13 @@
       }
     },
     "59669f287796f75e6fe6ab82934cb487592f37db3f7a49d57d09f7fd0a4da764": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.696995+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Stanford vs California",
+        "description": "Coverage of Stanford against California.",
+        "raw": "Stanford @ California"
+      }
     },
     "59706ef2f429eb9f26d1d6c0c96a4307715101d329c52f691e0fff66fe3cdb9a": {
       "context": "DAZN UK event scheduled 01/11/2026 12:00 GMT",
@@ -6024,7 +6057,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "62cad3d6e46d9c840de4048292de6214b2172d46cf9052342632afdd264df3b5": {
       "created_at": "2026-11-04T13:50:28.840962+00:00",
@@ -6348,10 +6381,13 @@
       }
     },
     "6b5d25123752e85885ad6c1f93035e037c0f705b2155b012fd6afcfbb65b5e4c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697011+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Texas A&M vs Oklahoma",
+        "description": "Coverage of Texas A&M against Oklahoma.",
+        "raw": "Texas A&M @ Oklahoma"
+      }
     },
     "6bcd7828a51181b840ef63b7a1bc13f9001045dc023fe5c984d42b42a1d89870": {
       "created_at": "2026-11-14T05:29:37.608196+00:00",
@@ -6828,7 +6864,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "7264440f2b08d711afceba388b6c536bf12f9367612985cf5cf9b1398c712aaa": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -6902,10 +6938,13 @@
       "title": "3 | St. Louis CITY SC vs Portland Timbers (English)"
     },
     "734110e04acaa21ec5df4f4a326b9974943f3b65b653272e2d9a626325ace76a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.696977+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Sporting Cascades vs Majestic FC",
+        "description": "Coverage of Sporting Cascades against Majestic FC.",
+        "raw": "Sporting Cascades vs. Majestic FC"
+      }
     },
     "7355e4d19f451d8959dadfb0b5a1bf912c2c21346c44b067a02df22666f29595": {
       "created_at": "2026-11-14T15:19:44.001820+00:00",
@@ -7076,16 +7115,22 @@
       }
     },
     "75b120a70f0d8ce8299fc329437b19f6021459f3162fedbe7ac7f0ac7744ae35": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697009+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Tamworth vs Eastleigh",
+        "description": "Coverage of Tamworth against Eastleigh.",
+        "raw": "Tamworth vs. Eastleigh"
+      }
     },
     "75d1d2257d011d0fc82e9fc4f1a94794471318c74999c4bebd9e143679e8736f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697007+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Syracuse vs Boston College",
+        "description": "Coverage of Syracuse against Boston College.",
+        "raw": "Syracuse @ Boston College"
+      }
     },
     "75df288e4e8a1f7858e7626a130f56a6a33a3f57a74033ab966608b729d2aa6d": {
       "created_at": "2026-11-15T05:32:57.224748+00:00",
@@ -7131,10 +7176,13 @@
       }
     },
     "76e81c4cfeb88b63bb36feabdf6c4f18639a182f01ad4691c90e544165e2f160": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310370+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Virginia Tech at Miami",
+        "description": "Coverage of Virginia Tech at Miami.",
+        "raw": "Virginia Tech @ Miami"
+      }
     },
     "773dcac8d5d4715efa7b21439c070675065f4523cd57a926cec79e7b30b59d9f": {
       "created_at": "2026-11-15T22:16:40.539435+00:00",
@@ -7242,7 +7290,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "78a444d16b46517302b9a2dd71e9031804dbc8c24a3d008d9611ecacad8fc333": {
       "created_at": "2026-11-11T05:37:07.446849+00:00",
@@ -7474,10 +7522,13 @@
       }
     },
     "7d0da0e69134a3416f615b76d29c9547f102e728f8345c9abb1c13b53fcbbf25": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310385+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Yeovil vs Forest Green",
+        "description": "Coverage of Yeovil against Forest Green.",
+        "raw": "Yeovil vs. Forest Green"
+      }
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -7489,10 +7540,13 @@
       }
     },
     "7d57f09a68fda2a2ea2c5b306389f5b645836a85902b52412a4464321ed1ac51": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:41.697001+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:54.768399+00:00"
+      "result": {
+        "clean_title": "Sydney, Nova Scotia - Day 5 - Men’s Quarter-Finals",
+        "description": "Coverage of Sydney, Nova Scotia - Day 5 - Men’s Quarter-Finals.",
+        "raw": "Sydney, Nova Scotia - Day 5 - Men’s Quarter-Finals"
+      }
     },
     "7d6289f58a18e8467c2ff605251c417b49abbb6e0d441ce16d259a1ce84b95a7": {
       "created_at": "2026-11-12T09:36:23.034836+00:00",
@@ -7589,7 +7643,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "7ee4dbc74f62b4e7058513c5dacca8f339d0e96f2d1b75bff4ebed1f9b71ac4c": {
       "created_at": "2026-11-15T13:36:37.422894+00:00",
@@ -8182,7 +8236,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
       "created_at": "2026-11-07T07:42:06.081847+00:00",
@@ -8961,7 +9015,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "retry_after": "2026-11-21T15:40:46.699457+00:00"
     },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -9348,13 +9402,13 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "9ecbacc1234ffe5d17939e1a65f1c2349766ac380c1f7e120f323954317eaecd": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
       "created_at": "2026-11-13T15:27:17.807884+00:00",
@@ -9484,7 +9538,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "a0f90992d9bee171960f3d4c821166eec94721da9de26df4e39b5caa4deee6c9": {
       "created_at": "2026-11-16T05:06:06.607811+00:00",
@@ -9499,7 +9553,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "a145c6bf09813f183d448b19127ee53a18cecf52e236ffb2c7c90b4f95f2caf9": {
       "created_at": "2026-11-06T05:37:50.696329+00:00",
@@ -10257,7 +10311,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "ace1ce5e1155c13bf298912c78447c7d179fdb9b2ba622f39f081d0bc19d6ab9": {
       "created_at": "2026-11-20T12:38:50.625976+00:00",
@@ -10453,7 +10507,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "b06fb4ca4bd382596f18c2a505f3ebcf24b828ae18b02fbb87e07f7c779c19d5": {
       "created_at": "2026-11-11T13:53:16.395627+00:00",
@@ -10682,10 +10736,13 @@
       }
     },
     "b4175b85816d86a2768417b28da8fca0ff6fb0560e6d9096b5ed4f307a4aa9d3": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310375+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Wake Forest at Georgia Tech",
+        "description": "Coverage of Wake Forest at Georgia Tech.",
+        "raw": "Wake Forest @ Georgia Tech"
+      }
     },
     "b458b9d9c9318f0fcebbc0633c00976beb4fa41a549e28e95785e0326a2c42fc": {
       "created_at": "2026-11-08T06:28:44.003423+00:00",
@@ -11024,7 +11081,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "b95454ce713d09a6587c63ac7c2c9c1557961bf8fd4ca791c89f98bdd0fc0fe9": {
       "created_at": "2026-11-08T07:43:01.987195+00:00",
@@ -11281,7 +11338,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "bdb64942ea24ed0cf2e5ea8c3aec67792d1c38315810ec6324384a244d804122": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -11479,7 +11536,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "c112ae59b1732003ba871f80562e0c773a3831c0a114143160eae39375307040": {
       "created_at": "2026-11-09T09:41:25.797845+00:00",
@@ -11994,7 +12051,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "c8f7ae16d7a950de54658ae256eed87eb1b3bbeab5694d9ac34f1830e053c65f": {
       "created_at": "2026-11-17T15:32:08.558513+00:00",
@@ -12312,10 +12369,13 @@
       }
     },
     "ce1b1140d00c167fae08dde5182bec6dee1ae9b008c94d5a15a5f367c041a35c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310344+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "result": {
+        "clean_title": "VT @ MIM, UGA @ SC, UK @ MIZ, STAN @ CAL",
+        "description": "Coverage of VT against MIM, UGA @ SC, UK @ MIZ, STAN @ CAL.",
+        "raw": "VT @ MIM, UGA @ SC, UK @ MIZ, STAN @ CAL"
+      }
     },
     "ce318246c2e5bd62597aa21e94c602b5802b89bd0a4231d5c915fc5759d3e193": {
       "created_at": "2026-11-15T19:27:37.024313+00:00",
@@ -13032,7 +13092,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "d8e7f0e6a1d0196b862f916c6bcfae9b99bd9f0d7e728cf93d9f9550f28919bc": {
       "created_at": "2026-11-08T05:30:03.515478+00:00",
@@ -13185,7 +13245,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -13243,7 +13303,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:45.059490+00:00"
+      "retry_after": "2026-11-21T15:40:39.428115+00:00"
     },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
@@ -13906,7 +13966,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:32:25.180541+00:00"
+      "retry_after": "2026-11-21T15:40:38.483271+00:00"
     },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
@@ -14002,10 +14062,13 @@
       }
     },
     "e7a459a7c78f1282eaa3b5a050475fb55174c0fc98c8d920ac0f8b1add4da26a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310373+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Wake Forest at Georgia Tech, Vanderbilt at UF, Syracuse at BC, Memphis at Navy",
+        "description": "Coverage of Wake Forest at Georgia Tech, Vanderbilt at UF, Syracuse at BC, Memphis at Navy.",
+        "raw": "WAKE @ GT, VAN @ UF, SYR @ BC, MEM @ NAVY"
+      }
     },
     "e7a8c25f4caaf89b71566ce6ed505650536ec204b16053ff045c7ee54b83cc29": {
       "created_at": "2026-11-14T06:31:11.948501+00:00",
@@ -14145,7 +14208,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
@@ -14212,7 +14275,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:09.712781+00:00"
+      "retry_after": "2026-11-21T15:40:43.174487+00:00"
     },
     "eccbfbb8cff546f49f93e22066f5aeb148d778e07ff08beadec6827b8d767d66": {
       "created_at": "2026-11-14T20:15:15.573747+00:00",
@@ -14840,10 +14903,13 @@
       }
     },
     "f7e2933fb064401346521277a1195843860aa701135c9b0dd9abee9a94d90183": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T15:25:46.310367+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+      "result": {
+        "clean_title": "Verona Longines Global Champions Tour Super Grand Prix",
+        "description": "Coverage of Verona Longines Global Champions Tour Super Grand Prix.",
+        "raw": "Verona - Longines Global Champions Tour Super Grand Prix"
+      }
     },
     "f80912adbe6f3c34caf73ce967a0276eaa02815dc384504604b7854245039218": {
       "created_at": "2026-11-08T06:28:44.003438+00:00",
