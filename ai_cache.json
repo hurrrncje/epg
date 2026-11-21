@@ -51,10 +51,13 @@
       }
     },
     "0111be9074d48d6058de6fd7de7b0fde59ca0dcdf7086e8aff88d9393bf76834": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199521+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Mechelen vs Club Brugge",
+        "description": "Coverage of Mechelen against Club Brugge.",
+        "raw": "Mechelen vs. Club Brugge"
+      }
     },
     "0124b7164188449ebf0845a8594e44c435165cd69eede54c4643dae7e0cae0d9": {
       "created_at": "2026-11-15T05:33:11.434128+00:00",
@@ -1594,10 +1597,13 @@
       }
     },
     "1e287c3f60157abdbd19ca7467c099a577ce275ed29585fc6e7dd73e6733b97a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230406+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "UCLA vs UM, LSU vs TENN, ARK vs TEX, TAMU vs OU",
+        "description": "Coverage of UCLA against UM, LSU vs TENN, ARK vs TEX, TAMU vs OU.",
+        "raw": "UCLA @ UM, LSU @ TENN, ARK @ TEX, TAMU @ OU"
+      }
     },
     "1e36828b1457a799552a72a1ff6332c466c1f3d7baa0d97a058dc8b83b3ab845": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -2537,10 +2543,13 @@
       }
     },
     "2a698b59e156f59ccb171a5c2491b7fad526a0a2a17f8462298127c719c2d945": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230414+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "VT vs MIM, AZN vs KSU, UGA vs SC, UK vs MIZ",
+        "description": "Coverage of VT against MIM, AZN vs KSU, UGA vs SC, UK vs MIZ.",
+        "raw": "VT @ MIM, AZN @ KSU, UGA @ SC, UK @ MIZ"
+      }
     },
     "2a7adc846a983c8f320da70a9c0dd201c6195f86c9688f620e5c3d7fcfb0b977": {
       "created_at": "2026-11-14T05:29:37.608184+00:00",
@@ -2834,7 +2843,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "2eba6dc182b695f2e42c73e91199a3bc010b28de8ad01fac61e533b85b8deeb1": {
       "created_at": "2026-10-26T19:21:40.738743+00:00",
@@ -3012,7 +3021,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "31a162d960dc258d53df930cb153820d9e0356ce24a90a78d4dac4e9184e212e": {
       "created_at": "2026-11-14T13:34:07.126883+00:00",
@@ -3083,10 +3092,13 @@
       "title": "Jacksonville State vs. New Mexico State"
     },
     "3299552cead3c5ff4f08b53c6f2e5d6f9e069b96a0c0be4f2571e7fb2ae7217f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199524+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Michigan vs Villanova",
+        "description": "Coverage of Michigan against Villanova.",
+        "raw": "Michigan @ Villanova"
+      }
     },
     "32ed802d711b42d28967791614cc4436645d7d1abcc9609f576416af516a82dd": {
       "created_at": "2026-11-15T15:20:47.533718+00:00",
@@ -4965,10 +4977,13 @@
       }
     },
     "51e351b8b73ba8e6641a5ec23cbf4199c087530261d51327029b410c4626677e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230409+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "UFC Fight Night - Special Feed",
+        "description": "Coverage of UFC Fight Night - Special Feed.",
+        "raw": "UFC Fight Nigh - Special Feed"
+      }
     },
     "520e62f97e6a939901950579edaa923c65eef2947399d80e674211b1c4b02290": {
       "created_at": "2026-11-15T05:32:30.749306+00:00",
@@ -5104,10 +5119,13 @@
       }
     },
     "53c70bfb91c4a4b103fceefafc82010deac140d03ef0b58c5133cdd0d6e40333": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199531+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Northwestern vs Minnesota",
+        "description": "Coverage of Northwestern against Minnesota.",
+        "raw": "Northwestern @ Minnesota"
+      }
     },
     "543c1babad91d2917a211fcb8bf661a73c8c5f1e408844c0e1170a2d251b1383": {
       "created_at": "2026-11-08T14:21:58.625439+00:00",
@@ -5393,10 +5411,13 @@
       }
     },
     "586750a032d1e31b73af503ff5cd07cf995165ddc00db313df4f9833beb5a73a": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199530+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Napoli vs Torino",
+        "description": "Coverage of Napoli against Torino.",
+        "raw": "Napoli vs. Torino"
+      }
     },
     "586f3427669f0cd47b19ffa21f6e0bc30ec801c7b1fb09776d22d2582fea6b30": {
       "created_at": "2026-11-15T15:20:47.533751+00:00",
@@ -6057,7 +6078,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "62cad3d6e46d9c840de4048292de6214b2172d46cf9052342632afdd264df3b5": {
       "created_at": "2026-11-04T13:50:28.840962+00:00",
@@ -6861,10 +6882,13 @@
       }
     },
     "725009e319674ff29fbccbe44fe908be8fd92b9f8fd8ead866775fb5d7074d36": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230410+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "USFAS vs US Bougouba",
+        "description": "Coverage of USFAS against US Bougouba.",
+        "raw": "USFAS vs. US Bougouba"
+      }
     },
     "7264440f2b08d711afceba388b6c536bf12f9367612985cf5cf9b1398c712aaa": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -7290,7 +7314,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "78a444d16b46517302b9a2dd71e9031804dbc8c24a3d008d9611ecacad8fc333": {
       "created_at": "2026-11-11T05:37:07.446849+00:00",
@@ -7643,7 +7667,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "7ee4dbc74f62b4e7058513c5dacca8f339d0e96f2d1b75bff4ebed1f9b71ac4c": {
       "created_at": "2026-11-15T13:36:37.422894+00:00",
@@ -8236,7 +8260,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
       "created_at": "2026-11-07T07:42:06.081847+00:00",
@@ -9015,7 +9039,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:46.699457+00:00"
+      "retry_after": "2026-11-21T16:40:14.549119+00:00"
     },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -9402,13 +9426,16 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "9ecbacc1234ffe5d17939e1a65f1c2349766ac380c1f7e120f323954317eaecd": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230404+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "UCLA vs UM, LSU vs TENN, ARK vs TEX, NCSU vs FSU",
+        "description": "Coverage of UCLA against UM, LSU vs TENN, ARK vs TEX, NCSU vs FSU.",
+        "raw": "UCLA @ UM, LSU @ TENN, ARK @ TEX, NCSU @ FSU"
+      }
     },
     "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
       "created_at": "2026-11-13T15:27:17.807884+00:00",
@@ -9535,10 +9562,13 @@
       }
     },
     "a0ef3cf5ad7a74aed9f9e7f714551cddd2f9922b4c402277ee43fa76221c8ae2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199523+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Memphis vs Navy",
+        "description": "Coverage of Memphis against Navy.",
+        "raw": "Memphis @ Navy"
+      }
     },
     "a0f90992d9bee171960f3d4c821166eec94721da9de26df4e39b5caa4deee6c9": {
       "created_at": "2026-11-16T05:06:06.607811+00:00",
@@ -9550,10 +9580,13 @@
       }
     },
     "a13db491e27c19123e8affb361e9ba4690ad638de0ef648bae424973e64f3c9b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230416+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "VT vs MIM, AZN vs KSU, UK vs MIZ, PITT vs LOU",
+        "description": "Coverage of VT against MIM, AZN vs KSU, UK vs MIZ, PITT vs LOU.",
+        "raw": "VT @ MIM, AZN @ KSU, UK @ MIZ, PITT @ LOU"
+      }
     },
     "a145c6bf09813f183d448b19127ee53a18cecf52e236ffb2c7c90b4f95f2caf9": {
       "created_at": "2026-11-06T05:37:50.696329+00:00",
@@ -10311,7 +10344,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "ace1ce5e1155c13bf298912c78447c7d179fdb9b2ba622f39f081d0bc19d6ab9": {
       "created_at": "2026-11-20T12:38:50.625976+00:00",
@@ -10504,10 +10537,13 @@
       }
     },
     "b05eb02ba0a7f74b28d256e8c7c493cbca04d6fc5c7ff0b1f321e9d5fef9083f": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199527+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Nancy vs Pau-Lacq-Orthez",
+        "description": "Coverage of Nancy against Pau-Lacq-Orthez.",
+        "raw": "Nancy vs. Pau-Lacq-Orthez"
+      }
     },
     "b06fb4ca4bd382596f18c2a505f3ebcf24b828ae18b02fbb87e07f7c779c19d5": {
       "created_at": "2026-11-11T13:53:16.395627+00:00",
@@ -11078,10 +11114,13 @@
       }
     },
     "b93c84c2ebac25a5bf987619fe0a8da8cd0d894570bfe6eb7b5eac16e1bc0d85": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199528+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Nanterre vs Strasbourg",
+        "description": "Coverage of Nanterre against Strasbourg.",
+        "raw": "Nanterre vs. Strasbourg"
+      }
     },
     "b95454ce713d09a6587c63ac7c2c9c1557961bf8fd4ca791c89f98bdd0fc0fe9": {
       "created_at": "2026-11-08T07:43:01.987195+00:00",
@@ -11335,10 +11374,13 @@
       "result": "Mon, 10/26 - The Rich Eisen Show."
     },
     "bda07b1fec8bce9e3c6d770dd6fefa92a14b735dd1485137dcc396eadc3305b6": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230402+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "UCLA vs UM, IDN vs UW, TTU vs BAY, RUT vs PSU",
+        "description": "Coverage of UCLA against UM, IDN vs UW, TTU vs BAY, RUT vs PSU.",
+        "raw": "UCLA @ UM, IDN @ UW, TTU @ BAY, RUT @ PSU"
+      }
     },
     "bdb64942ea24ed0cf2e5ea8c3aec67792d1c38315810ec6324384a244d804122": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -11533,10 +11575,13 @@
       }
     },
     "c0f888d85723428f78ef3c9954aec7e6b681b3aa659f7fe755042895d75d89c9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199504+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Maryland vs USC",
+        "description": "Coverage of Maryland against USC.",
+        "raw": "Maryland @ USC"
+      }
     },
     "c112ae59b1732003ba871f80562e0c773a3831c0a114143160eae39375307040": {
       "created_at": "2026-11-09T09:41:25.797845+00:00",
@@ -12048,10 +12093,13 @@
       }
     },
     "c8f76a5e9f29db5d07bcf355078d7c0936ff07b222e98f891d80cd46bf53ca2e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199533+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "Legierski vs Buchinger",
+        "description": "Coverage of Legierski against Buchinger.",
+        "raw": "OKTAGON 98: Legierski vs. Buchinger"
+      }
     },
     "c8f7ae16d7a950de54658ae256eed87eb1b3bbeab5694d9ac34f1830e053c65f": {
       "created_at": "2026-11-17T15:32:08.558513+00:00",
@@ -13089,10 +13137,13 @@
       }
     },
     "d8a142096aa26f73fdecf13d7e8e700e60be25386ee26390726928bbc8d7c480": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230412+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "Utah vs TCU",
+        "description": "Coverage of Utah against TCU.",
+        "raw": "Utah @ TCU"
+      }
     },
     "d8e7f0e6a1d0196b862f916c6bcfae9b99bd9f0d7e728cf93d9f9550f28919bc": {
       "created_at": "2026-11-08T05:30:03.515478+00:00",
@@ -13245,7 +13296,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
@@ -13303,7 +13354,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:39.428115+00:00"
+      "retry_after": "2026-11-21T16:40:11.170398+00:00"
     },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
@@ -13963,10 +14014,13 @@
       "title": "Cal State Northridge vs. UC Santa Barbara"
     },
     "e654984f9bcb737f5fafd3d5532eade5f7879bc39edd0f4191053f449f6ef128": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:10.199526+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:38.483271+00:00"
+      "result": {
+        "clean_title": "NC State vs Florida State",
+        "description": "Coverage of NC State against Florida State.",
+        "raw": "NC State @ Florida State"
+      }
     },
     "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
       "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
@@ -14205,10 +14259,13 @@
       }
     },
     "eb9725fbb4c8d660881c86aa0412cdd7dc5255829135ad0ed2f680bb50a4e899": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230418+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "VT vs MIM, UGA vs SC, PITT vs LOU, STAN vs CAL",
+        "description": "Coverage of VT against MIM, UGA vs SC, PITT vs LOU, STAN vs CAL.",
+        "raw": "VT @ MIM, UGA @ SC, PITT @ LOU, STAN @ CAL"
+      }
     },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
@@ -14272,10 +14329,13 @@
       }
     },
     "eca74158a6dbd35955a2d375efde219ce6402b23026ddfc1c1106b782d86c4fa": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T16:25:14.230384+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T15:40:43.174487+00:00"
+      "result": {
+        "clean_title": "UCLA vs Michigan",
+        "description": "Coverage of UCLA against Michigan.",
+        "raw": "UCLA @ Michigan"
+      }
     },
     "eccbfbb8cff546f49f93e22066f5aeb148d778e07ff08beadec6827b8d767d66": {
       "created_at": "2026-11-14T20:15:15.573747+00:00",
