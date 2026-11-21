@@ -1272,6 +1272,12 @@
       "result": "UEFA Women’s Champions League match between Arsenal and Benfica, part of the 2026‑27 UEFA Women’s Champions League, scheduled for 28 October 2026 at 19:00 GMT.",
       "title": "UEFA Women's Champions League: Arsenal vs. Benfica"
     },
+    "17c6b30fb917cc1247649bcf2dec4876de10a4c347dfee004fc5fd47a7d78eab": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "17fce0ae1b17df89974fae0645dcf945bcdbb52bf4421bad13cad48410f8db35": {
       "created_at": "2026-11-20T13:55:04.539526+00:00",
       "kind": "live-title",
@@ -1534,6 +1540,12 @@
         "raw": "Panama U23 vs. Chinese Taipei U23"
       }
     },
+    "1d352bf126e295afb188c1f1e47922c81041dcad25bec4d9ecbb0f18c4b9a0d4": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "1d5885836d3c5417e0092762f7379890b842964adc477e76f32c9740567ee319": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
       "created_at": "2026-10-29T06:23:30.006241+00:00",
@@ -1579,7 +1591,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "1e36828b1457a799552a72a1ff6332c466c1f3d7baa0d97a058dc8b83b3ab845": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
@@ -2219,6 +2231,12 @@
         "raw": "GCW Massacre in Missoula"
       }
     },
+    "27596f5b26622d0f04bc8ff3c64f6e09c0f24c8d282afd2983a563a12182a138": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "275d7f95062d0ae51a6622f4781b85e14d3c504313abbde49ea8ab3b4e8c1294": {
       "created_at": "2026-11-03T18:24:18.345691+00:00",
       "kind": "live-title",
@@ -2513,7 +2531,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "2a7adc846a983c8f320da70a9c0dd201c6195f86c9688f620e5c3d7fcfb0b977": {
       "created_at": "2026-11-14T05:29:37.608184+00:00",
@@ -3029,6 +3047,12 @@
         "description": "Coverage of Porto against Braga.",
         "raw": "Porto vs. Braga"
       }
+    },
+    "32736d28c584bfda3b0a5a2adfb3942551cf3dfbf9c88f51c834071ce7882f7f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
     },
     "327fa6474af991b7b5c057a2ebda0d0700a36d733e3d49ae48408cb3beada29e": {
       "created_at": "2026-11-21T00:27:53.783000+00:00",
@@ -6804,7 +6828,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "7264440f2b08d711afceba388b6c536bf12f9367612985cf5cf9b1398c712aaa": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:30 GMT",
@@ -7105,6 +7129,12 @@
         "description": "Coverage of Panthers against Stars.",
         "raw": "Panthers @ Stars"
       }
+    },
+    "76e81c4cfeb88b63bb36feabdf6c4f18639a182f01ad4691c90e544165e2f160": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
     },
     "773dcac8d5d4715efa7b21439c070675065f4523cd57a926cec79e7b30b59d9f": {
       "created_at": "2026-11-15T22:16:40.539435+00:00",
@@ -7442,6 +7472,12 @@
         "description": "Coverage of Puerto Rico U23 against Republic of Korea U23.",
         "raw": "Puerto Rico U23 vs. Republic of Korea U23"
       }
+    },
+    "7d0da0e69134a3416f615b76d29c9547f102e728f8345c9abb1c13b53fcbbf25": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
     },
     "7d12a3376e37c9d1058999b0779eff43155b49973195ad5bc200f3d969065608": {
       "created_at": "2026-11-06T13:50:32.471784+00:00",
@@ -8921,6 +8957,12 @@
       "result": "Stanford Cardinal host Louisville Cardinals in FBS football.",
       "title": "Stanford vs. Louisville"
     },
+    "974deb2913cd9a5250d9ebe280c8de33ed0c9210489d120a20ee05dbd9c08d19": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "9768222b607c7ccc7db44cea629d322f68a9c94b00a1e01856e07c5f889b42a5": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569489+00:00",
@@ -9312,7 +9354,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
       "created_at": "2026-11-13T15:27:17.807884+00:00",
@@ -9457,7 +9499,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "a145c6bf09813f183d448b19127ee53a18cecf52e236ffb2c7c90b4f95f2caf9": {
       "created_at": "2026-11-06T05:37:50.696329+00:00",
@@ -10639,6 +10681,12 @@
         "raw": "Patriots vs. Lions"
       }
     },
+    "b4175b85816d86a2768417b28da8fca0ff6fb0560e6d9096b5ed4f307a4aa9d3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "b458b9d9c9318f0fcebbc0633c00976beb4fa41a549e28e95785e0326a2c42fc": {
       "created_at": "2026-11-08T06:28:44.003423+00:00",
       "kind": "live-title",
@@ -11233,7 +11281,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "bdb64942ea24ed0cf2e5ea8c3aec67792d1c38315810ec6324384a244d804122": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -12267,7 +12315,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "ce318246c2e5bd62597aa21e94c602b5802b89bd0a4231d5c915fc5759d3e193": {
       "created_at": "2026-11-15T19:27:37.024313+00:00",
@@ -12984,7 +13032,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "d8e7f0e6a1d0196b862f916c6bcfae9b99bd9f0d7e728cf93d9f9550f28919bc": {
       "created_at": "2026-11-08T05:30:03.515478+00:00",
@@ -13953,6 +14001,12 @@
         "raw": "Lideta vs. Shashemene"
       }
     },
+    "e7a459a7c78f1282eaa3b5a050475fb55174c0fc98c8d920ac0f8b1add4da26a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "e7a8c25f4caaf89b71566ce6ed505650536ec204b16053ff045c7ee54b83cc29": {
       "created_at": "2026-11-14T06:31:11.948501+00:00",
       "kind": "live-title",
@@ -14091,7 +14145,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
@@ -14158,7 +14212,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T14:18:04.948639+00:00"
+      "retry_after": "2026-11-21T14:37:09.712781+00:00"
     },
     "eccbfbb8cff546f49f93e22066f5aeb148d778e07ff08beadec6827b8d767d66": {
       "created_at": "2026-11-14T20:15:15.573747+00:00",
@@ -14785,6 +14839,12 @@
         "raw": "Canucks @ Kraken"
       }
     },
+    "f7e2933fb064401346521277a1195843860aa701135c9b0dd9abee9a94d90183": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-21T14:37:10.567583+00:00"
+    },
     "f80912adbe6f3c34caf73ce967a0276eaa02815dc384504604b7854245039218": {
       "created_at": "2026-11-08T06:28:44.003438+00:00",
       "kind": "live-title",
@@ -15173,8 +15233,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-21T20:16:24.736022+00:00",
-    "groq": "2026-11-21T14:18:04.948639+00:00"
+    "gemini": "2026-11-21T20:16:24.736022+00:00"
   },
   "version": 1
 }
