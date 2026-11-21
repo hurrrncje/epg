@@ -233,10 +233,13 @@
       "title": "Abilene Christian vs. Colorado"
     },
     "052c9bfc46edfe3b10a6bf1528418bc340a0874b1b95c70eac9272f71ad0e8c7": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205414+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Stanford vs Washington",
+        "description": "Coverage of Stanford against Washington.",
+        "raw": "Stanford @ Washington"
+      }
     },
     "05743992cece6fa9aa4e0d5ecf2f474ebbffdd424936cb3b65871788d930f04d": {
       "created_at": "2026-11-04T05:36:14.786990+00:00",
@@ -1393,10 +1396,13 @@
       }
     },
     "1bd6f55b63c59d99d4844139cb5fae4065c438cf30a728d1b068f425f8d31f81": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205404+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "PPL MGM Las Vegas",
+        "description": "Coverage of PPL MGM Las Vegas.",
+        "raw": "PPL MGM Las Vegas - Day 3 - Session 3"
+      }
     },
     "1bf90389b23f3425b0def891b7510f922de0be3215b3c24f601b3603ba5455f2": {
       "created_at": "2026-11-14T18:14:59.970967+00:00",
@@ -1594,10 +1600,13 @@
       }
     },
     "1eea46cef32079e2ecf5fa45a37272bf8ae0227718e7219bfbaad258523f389b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725170+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "UFC 334 Gane vs Hokit",
+        "description": "Coverage of UFC 334 Gane against Hokit.",
+        "raw": "FC 334 Gane v Hokit - Special Feed"
+      }
     },
     "1ef4f1182443f228288be3204dda8e1f2396334bb12f27e0e3a8e1dcd9f3298a": {
       "created_at": "2026-11-14T13:34:07.126872+00:00",
@@ -1652,10 +1661,13 @@
       }
     },
     "1f6f99849bbb809f15dffcca31f0e84e4b50561f109483adc116b67d7004b9d9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725168+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Clemson @ Duke",
+        "description": "Coverage of Clemson against Duke.",
+        "raw": "Clemson @ Duke"
+      }
     },
     "1f772297c27c9aadb432decc3cf99131cc7484d6b241fc75f40f9abed76e0bdd": {
       "created_at": "2026-11-13T15:26:54.247631+00:00",
@@ -1715,10 +1727,13 @@
       "title": "Muzinga vs. Aigle Noir"
     },
     "20849b6edf52792849a5113f87d69a0732b37a4bf231137ca09b691758a4f57d": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725161+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Baylor @ USC",
+        "description": "Coverage of Baylor against USC.",
+        "raw": "Baylor @ USC"
+      }
     },
     "20a8f5d15430981dafce7b4579a11bcb7bebb1d27d82a78bc4a5d723b4b1f3ab": {
       "context": "DAZN UK event scheduled 01/11/2026 15:30 GMT",
@@ -2613,10 +2628,13 @@
       }
     },
     "2d6c6e6448421289ec407a5b74652eb7c6a183a6d7dc18c0fae1a8a2801cf316": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725175+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Georgia State Race Night One",
+        "description": "Coverage of Georgia State Race Night One.",
+        "raw": "Georgia State Race Night One"
+      }
     },
     "2d7877c43f8bd59a18724d44a8879b3be3d6a0c80d141d762a7d392bf24c6d34": {
       "created_at": "2026-11-05T05:40:32.979997+00:00",
@@ -3721,10 +3739,13 @@
       "title": "AFLW | Round 12: Essendon - Collingwood"
     },
     "3ffddc65056d5c991663fa85340c3340e8db30432146255115dd3ece37258c7e": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205412+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Southern Thunder Super Dirt Series Championship",
+        "description": "Coverage of Southern Thunder Super Dirt Series Championship.",
+        "raw": "Southern Thunder Super Dirt Series Championship"
+      }
     },
     "403ff2801332ffb6a635448a9a026b20a025e77fde48967f0689305cc6944f17": {
       "created_at": "2026-11-14T06:31:11.948506+00:00",
@@ -3985,10 +4006,13 @@
       }
     },
     "43c3e6548d291bcef014b871a8e1649d3c92227ae7037fe0241431f9f550d786": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205387+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Oregon vs Michigan State",
+        "description": "Coverage of Oregon against Michigan State.",
+        "raw": "Oregon @ Michigan State"
+      }
     },
     "43df81343ba104c15dce33f307200b2bdfb8f7016b21a54704d677d72c9fdf34": {
       "created_at": "2026-11-07T16:17:32.146922+00:00",
@@ -4330,10 +4354,13 @@
       }
     },
     "4a85ee9814f289ac41cb43a55afff49dd3ea7850c22225c1a0a0a3a07205f02b": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725172+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Fight Clubbing 45",
+        "description": "Coverage of Fight Clubbing 45.",
+        "raw": "Fight Clubbing 45"
+      }
     },
     "4a9054b98d6d9eb979596eeb66699adf9012d079835f6884d0ffab400c2f0556": {
       "created_at": "2026-11-17T16:41:14.527054+00:00",
@@ -5211,10 +5238,13 @@
       }
     },
     "5a98f477a5699e1644d579cabf912c68ed67bedfe70e6b97f9c978e169f8dab6": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725157+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "BKFC Fight Night Myrtle Beach: Richardson vs. Oxendine",
+        "description": "Coverage of BKFC Fight Night Myrtle Beach: Richardson against Oxendine.",
+        "raw": "BKFC Fight Night Myrtle Beach: Richardson vs. Oxendine"
+      }
     },
     "5af9ed47030dd20ba09d70f8386d4aa2802781d4cd9bfc9e6005e9ed79529352": {
       "created_at": "2026-11-07T14:24:25.648908+00:00",
@@ -6345,10 +6375,13 @@
       }
     },
     "70469a8e13ff97a7df91bbd021abfb54924bf0c853c65fe0ec2297a5ceb72d68": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205425+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "USAC Chase Johnson Classic Merced",
+        "description": "Coverage of USAC Chase Johnson Classic Merced.",
+        "raw": "USAC Chase Johnson Classic Merced"
+      }
     },
     "706bf835915851a6e85dea660512e0e49113f33bc33e90f63cd754b6e9fe0c23": {
       "created_at": "2026-11-15T13:36:32.414316+00:00",
@@ -8828,10 +8861,13 @@
       }
     },
     "9e3c1afc16c8f993fc150a20cd57d7ea1fe18794f295e203e86eccedcd4161e2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205420+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Sydney Nova Scotia Draw 16",
+        "description": "Coverage of Sydney Nova Scotia Draw 16.",
+        "raw": "Sydney, Nova Scotia - Day 4 - Draw 16"
+      }
     },
     "9e6daa7c5ce8b398f9124bbfa359c55faf4a69fcb95038442766acf09ff6b164": {
       "created_at": "2026-10-26T19:21:40.738745+00:00",
@@ -9187,10 +9223,13 @@
       }
     },
     "a46f9ec5ebc19c861bca8af39e35876b871410fbf1a4e4c7ce4b37ccc3d61bfc": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205417+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Stein vs Antonietti",
+        "description": "Coverage of Stein against Antonietti.",
+        "raw": "Stein v Antonietti"
+      }
     },
     "a474d65e7bd65047b2c5d4eae135bebe10c38f9fc3ec42a6411daa28c3e54def": {
       "created_at": "2026-11-06T05:37:42.631716+00:00",
@@ -9628,10 +9667,13 @@
       }
     },
     "ab7616cc5328c4bb0b6be7ecfeadf10da6027c416d6b1ae8c67c3c734b2c65a8": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725163+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Bobby Martin Memorial Flip Flop 50 Night Two",
+        "description": "Coverage of Bobby Martin Memorial Flip Flop 50 Night Two.",
+        "raw": "Bobby Martin Memorial Flip Flop 50 Night Two"
+      }
     },
     "ab88a683e86f5c1f4a895ebdf05e1039be6fdcca8b42d7c93bf156269f22f330": {
       "created_at": "2026-11-14T18:14:59.970963+00:00",
@@ -10736,10 +10778,13 @@
       }
     },
     "be931b69e8e98738d6499093371347a0ec18f7b190418c8052e3073f5688fd49": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205407+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Shuriken Fight Series 25",
+        "description": "Coverage of Shuriken Fight Series 25.",
+        "raw": "Shuriken Fight Series 25"
+      }
     },
     "be988001cd1d27120eef74c947dc044f3cc5dde2d438eb388a0c9e22f190ef69": {
       "created_at": "2026-11-08T17:16:11.697727+00:00",
@@ -10819,10 +10864,13 @@
       }
     },
     "c015fbfac5e9ea48588e4bb63c671f22f547d93caf2331ee305229f3e2968135": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725165+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Bowling Green @ Toledo",
+        "description": "Coverage of Bowling Green against Toledo.",
+        "raw": "Bowling Green @ Toledo"
+      }
     },
     "c020d584a91ca87946d1de0f4f5deb17bcf5d2eddc8eacb500a8964cf070ac8d": {
       "created_at": "2026-10-28T00:12:37.428452+00:00",
@@ -12435,10 +12483,13 @@
       }
     },
     "db385d801dc0e2b1d2423e1a9ced9ea1642d43831a8b081948c454dbf9c7e46c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205422+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Top Level Pro 25 Thanksgiving Throwdown",
+        "description": "Coverage of Top Level Pro 25 Thanksgiving Throwdown.",
+        "raw": "Top Level Pro 25 Thanksgiving Throwdown"
+      }
     },
     "db74527ddd35378154d2ed4d6624fedc7c9665a44bdbc9aee43864ce88071cd8": {
       "created_at": "2026-11-18T17:38:00.284001+00:00",
@@ -12563,10 +12614,13 @@
       }
     },
     "dda4cceddd4afcc751093137822128aff2c1c5c16916826ba9ac309fbb2643d2": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725144+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
+      }
     },
     "ddca410a7a94b2b9b719bed9917128f3ca764e1dc65a10adf5d05e88b605145d": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
@@ -12759,10 +12813,13 @@
       }
     },
     "e0c417c67533d716ef8a67d734f52188e584d070a48ab1b6c651159813f027c4": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:51:50.725173+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:38.400606+00:00"
+      "result": {
+        "clean_title": "Georgia @ Georgia Tech",
+        "description": "Coverage of Georgia against Georgia Tech.",
+        "raw": "Georgia @ Georgia Tech"
+      }
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -13160,10 +13217,13 @@
       "title": "Plymouth Argyle vs Reading FC"
     },
     "e6658a549d520b500ec6adcc0fa291dbb8d4b8c4b634a2278e12196cabf02754": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-21T07:52:04.205409+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-21T06:52:39.165145+00:00"
+      "result": {
+        "clean_title": "Snowball Derby",
+        "description": "Coverage of Snowball Derby.",
+        "raw": "Snowball Derby"
+      }
     },
     "e67ff27c97b92549d51289c3c7162bcb64d457c71f971dc5ab050ba2e17300d7": {
       "created_at": "2026-11-15T05:33:11.434121+00:00",
