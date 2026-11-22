@@ -2839,12 +2839,6 @@
         "raw": "Senators @ Golden Knights"
       }
     },
-    "2ea9085fe37ac8400e8e251b4eeec549efb5a6f147571bf827607a3cdab29055": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
-    },
     "2eba6dc182b695f2e42c73e91199a3bc010b28de8ad01fac61e533b85b8deeb1": {
       "created_at": "2026-10-26T19:21:40.738743+00:00",
       "kind": "live-title",
@@ -3016,12 +3010,6 @@
       "kind": "event-description",
       "result": "Men's basketball game between Denver Pioneers and Loyola Marymount Lions scheduled for Oct 29 2026.",
       "title": "Denver vs. Loyola Marymount"
-    },
-    "319fcf5670c89cbeca4b853d2bf33ec3d7bc114faa7be1cf9c740c31ae0c0fa6": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
     },
     "31a162d960dc258d53df930cb153820d9e0356ce24a90a78d4dac4e9184e212e": {
       "created_at": "2026-11-14T13:34:07.126883+00:00",
@@ -6074,12 +6062,6 @@
         "raw": "Turrialbeñas vs. Somos La Unión"
       }
     },
-    "62808619c899a82f3f23e7b689e62eecd3910b60100fc34ac46be3a4d980916d": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
-    },
     "62cad3d6e46d9c840de4048292de6214b2172d46cf9052342632afdd264df3b5": {
       "created_at": "2026-11-04T13:50:28.840962+00:00",
       "kind": "live-title",
@@ -7310,12 +7292,6 @@
         "raw": "Yeka vs. Sululta"
       }
     },
-    "789f63038e43879bfa6cf950c430e5edf4805087e89b51fc06214fe29664f5bc": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
-    },
     "78a444d16b46517302b9a2dd71e9031804dbc8c24a3d008d9611ecacad8fc333": {
       "created_at": "2026-11-11T05:37:07.446849+00:00",
       "kind": "live-title",
@@ -7667,7 +7643,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
+      "retry_after": "2026-11-22T00:31:22.656708+00:00"
     },
     "7ee4dbc74f62b4e7058513c5dacca8f339d0e96f2d1b75bff4ebed1f9b71ac4c": {
       "created_at": "2026-11-15T13:36:37.422894+00:00",
@@ -8255,12 +8231,6 @@
         "description": "Coverage of Blues against Penguins.",
         "raw": "Blues @ Penguins"
       }
-    },
-    "8827486403b24728564f33a182525d8ab58606533c7d14a1389b6c6757d8da78": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
     },
     "884f5dcef4cbe4404d8d8868a4bd0a08e6a2dd83146a8f276a65237c2181729a": {
       "created_at": "2026-11-07T07:42:06.081847+00:00",
@@ -9425,12 +9395,6 @@
       "result": "#18 Stanford Cardinal vs California Golden Bears college football game scheduled for Oct 29 2026.",
       "title": "#18 Stanford vs. California"
     },
-    "9eafcc72190583f9fbd26ba7433c19eae5a2f20880ae091ef48a6b12614ff300": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
-    },
     "9ecbacc1234ffe5d17939e1a65f1c2349766ac380c1f7e120f323954317eaecd": {
       "created_at": "2026-11-21T16:25:14.230404+00:00",
       "kind": "live-title",
@@ -10342,12 +10306,6 @@
         "description": "Coverage of MLTT - Week 6: New York Slice against Atlanta Blazers.",
         "raw": "MLTT - Week 6: New York Slice vs. Atlanta Blazers"
       }
-    },
-    "acb652037344847ee79a6c9446eaeab99495aabd14a59a2a9451df32c9f02d47": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
     },
     "ace1ce5e1155c13bf298912c78447c7d179fdb9b2ba622f39f081d0bc19d6ab9": {
       "created_at": "2026-11-20T12:38:50.625976+00:00",
@@ -13295,12 +13253,6 @@
         "raw": "Medicine Hat, AB - Day 2, Draw 7"
       }
     },
-    "dbf837438ebc246ee9c19fd77c06bb9ab9fdca8a46847e0a62aa9144ca760199": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
-    },
     "dbfb93ce43a210f67d36bde5f2916e30cb1786f3b523091d149e8bb2700d579d": {
       "created_at": "2026-10-26T19:21:40.738737+00:00",
       "kind": "live-title",
@@ -13352,12 +13304,6 @@
         "description": "Coverage of TCU against Arizona.",
         "raw": "TCU @ Arizona"
       }
-    },
-    "dce1dfff12d01e4feb208e851340a799cf23016c48578c857eb05eea9d29830a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-21T23:33:39.762772+00:00"
     },
     "dd2dd8b0df8f8abb05f2902aeb1e40d862083b31904cd7b08e0d611eae1f8523": {
       "created_at": "2026-10-26T19:21:40.738734+00:00",
