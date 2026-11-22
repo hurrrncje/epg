@@ -11986,6 +11986,15 @@
         "raw": "Perez v Rivera"
       }
     },
+    "c85993d404140fd3526437362d751074040c4580bdcbdb568dbdbe18d9e8f13a": {
+      "created_at": "2026-11-22T03:30:51.500546+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "18th Annual Bobby Martin Memorial Flip Flop 50 Night Two",
+        "description": "Coverage of 18th Annual Bobby Martin Memorial Flip Flop 50 Night Two.",
+        "raw": "CANCELLED 8pm Bobby Martin Memorial Flip Flop 50 Night Two"
+      }
+    },
     "c867c4fd908060bed43701369fb3adb5569efa585a290d8d68535673676fce07": {
       "created_at": "2026-11-06T03:30:23.708925+00:00",
       "kind": "live-title",
@@ -15311,7 +15320,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-22T02:22:02.526674+00:00"
+    "gemini": "2026-11-22T09:30:49.354986+00:00"
   },
   "version": 1
 }
