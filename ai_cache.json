@@ -11337,6 +11337,15 @@
       "kind": "event-description",
       "result": "Mon, 10/26 - The Rich Eisen Show."
     },
+    "bd873a6fb306e95734553e0af44034666bc2f7fccb764956517cb8d42bee8713": {
+      "created_at": "2026-11-22T04:39:16.266230+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Georgia State Race Championship",
+        "description": "Coverage of Georgia State Race Championship.",
+        "raw": "Georgia State Race Championship Sunday"
+      }
+    },
     "bda07b1fec8bce9e3c6d770dd6fefa92a14b735dd1485137dcc396eadc3305b6": {
       "created_at": "2026-11-21T16:25:14.230402+00:00",
       "kind": "live-title",
