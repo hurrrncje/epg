@@ -7640,10 +7640,13 @@
       "title": "Panthers @ Jets"
     },
     "7ecb92514f68c695108d796e2e1842729844b2f62f7006306ffc9cfd99d30583": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-22T01:52:08.694338+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-22T00:31:22.656708+00:00"
+      "result": {
+        "clean_title": "Pittsburgh vs Louisville",
+        "description": "Coverage of Pittsburgh against Louisville.",
+        "raw": "Pittsburgh @ Louisville"
+      }
     },
     "7ee4dbc74f62b4e7058513c5dacca8f339d0e96f2d1b75bff4ebed1f9b71ac4c": {
       "created_at": "2026-11-15T13:36:37.422894+00:00",
