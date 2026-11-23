@@ -834,7 +834,11 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str], league_i
                     fixtures.setdefault(kickoff, hint[1])
                     if preview and value == re.sub(r"^Next Match:", "Next Game:", title, flags=re.I):
                         formatted = f"{hint[1]} at {kickoff.astimezone(LONDON):%H:%M}"
-                        row.find("title").text = f"Upcoming match: {formatted}" if league else formatted
+                        if league:
+                            row.find("title").text = f"Upcoming match: {formatted}"
+                        else:
+                            # Preserve the date on advance notices. Match-day previews are rebuilt below.
+                            row.find("title").text = hint[0]
             if preview or title.casefold() in {"no match today", "match ended", "signing off",
                                                "no further match scheduled"}:
                 idle.add(row)
@@ -913,6 +917,66 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str], league_i
     ordered = iter(sorted(football_rows, key=lambda row: (row.get("channel"), row.get("start", ""))))
     root[:] = [next(ordered) if row.tag == "programme" and row.get("channel") in by_channel else row
                for row in root]
+
+
+def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
+    """Use the fixture's date and clock, independently of the preview slot."""
+    names = {c.get("id"): c.findtext("display-name", "") for c in root.iter("channel")}
+    football_feed = re.compile(
+        r"^monepg\.(?:epl|efl|spfl|serie-a|la-liga|bundesliga|ligue-1|mls|soccer|football)(?:[-.])"
+    )
+    next_clock = re.compile(
+        r"\s[-–]\s*Next:\s*(\w{3}) (\w{3}) (\d{1,2}),\s*(\d{1,2}:\d{2}\s*[AP]M) (GMT|BST|UK)$", re.I
+    )
+    venue = re.compile(r"Upcoming:\s*(Home to|Away at) (.+), (\w{3}) (\d{1,2}) (\w{3}) (\d{2}:\d{2})$", re.I)
+    weekdays = dict(zip("mon tue wed thu fri sat sun".split(),
+                        "Monday Tuesday Wednesday Thursday Friday Saturday Sunday".split()))
+    for row in root.iter("programme"):
+        channel = row.get("channel", "")
+        title = row.findtext("title", "")
+        desc = row.findtext("desc", "")
+        if not (channel in team_ids or channel.lower().endswith((".epl", ".efl", ".spfl"))
+                or football_feed.match(channel) or ("⚽" in desc and next_clock.search(title))):
+            continue
+        clock = next_clock.search(title)
+        match = venue.fullmatch(title)
+        if clock:
+            pairing = re.search(r"\bNext:\s*(.+?\s+vs\.?\s+.+?)(?=\s+on\s|\.\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b|$)", desc, re.I)
+            if not pairing:
+                continue
+            teams = re.sub(r"(?:⚽\ufe0f?|\[[^\]]+\])\s*", "", pairing[1]).strip().rstrip(".")
+            weekday, month, day = clock.group(1, 2, 3)
+            try:
+                time_label = datetime.strptime(clock[4].replace(" ", "").upper(), "%I:%M%p").strftime("%H:%M")
+            except ValueError:
+                continue
+        elif match:
+            side, opponent, weekday, day, month, time_label = match.groups()
+            club = names.get(channel)
+            if not club:
+                continue
+            teams = f"{club} vs {opponent}" if side.casefold() == "home to" else f"{opponent} vs {club}"
+        else:
+            # Some feeds carry the entire dated notice in the description alone.
+            for el in row.findall("title") + row.findall("desc"):
+                value = re.sub(r"^Next match:", "Next Game:", el.text or "", flags=re.I)
+                if not value.lower().startswith("next game:"):
+                    continue
+                dated = re.fullmatch(r"Next Game: (.+) on (\d{2}/\d{2}/\d{4} at \d{2}:\d{2}) GMT",
+                                     _rewrite_football_text(value), re.I)
+                if dated:
+                    try:
+                        local = datetime.strptime(dated[2], "%d/%m/%Y at %H:%M").replace(tzinfo=UTC).astimezone(LONDON)
+                    except ValueError:
+                        continue
+                    el.text = f"Next match: {dated[1]}, {local:%A} {local.day} {local:%b, %H:%M}"
+            continue
+        weekday = weekdays.get(weekday.lower())
+        if weekday:
+            label = f"Next match: {teams}, {weekday} {int(day)} {month.title()}, {time_label}"
+            row.find("title").text = label
+            if clock and row.find("desc") is not None:
+                row.find("desc").text = label
 
 
 def _replace_game_with_match(title: str) -> str:
@@ -3051,6 +3115,7 @@ def process_epg() -> None:
                 for name in display_names_by_id.get(channel, []))
     }
     _build_football_matchdays(root, matchday_ids, league_ids)
+    _clean_team_previews(root, team_channel_ids)
     _split_long_event_listings(root, matchday_ids | handled_channel_ids | football_mirror_ids | event_mirror_ids | bare_league_ids)
     tree = ET.ElementTree(root)
     with gzip.open(

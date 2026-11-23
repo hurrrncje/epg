@@ -362,6 +362,17 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(result.findtext("programme[@channel='c6']/title"),
                          'Another listed fixture')
 
+    def test_club_next_match_uses_opponent_and_uk_clock(self):
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring("""<tv><programme channel="club">
+          <title>⚽ [EPL] Arsenal - Next: Tue Nov 24, 8:00 PM GMT</title>
+          <desc>No game today. Next: ⚽ [EPL] Arsenal vs ⚽ [Bundesliga] Borussia Dortmund on Paramount+. Tue Nov 24: 3:00 PM ET · 8:00 PM UK.</desc>
+        </programme></tv>""")
+        self.ns['_clean_team_previews'](root, {'club'})
+        for tag in ('title', 'desc'):
+            self.assertEqual(root.findtext('programme/' + tag),
+                             'Next match: Arsenal vs Borussia Dortmund, Tuesday 24 Nov, 20:00')
+
     def test_provider_matchday_starts_at_midnight_and_keeps_live_slot(self):
         import xml.etree.ElementTree as ET
         root = ET.fromstring("""<tv>
