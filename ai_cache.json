@@ -1861,6 +1861,15 @@
       "result": "Muzinga FC vs. Aigle Noir CS, a Burundi Premier League football match.",
       "title": "Muzinga vs. Aigle Noir"
     },
+    "206d3d9281250e2aad3817e0478e80a7dc58026883a69ef767ba0a314663ace7": {
+      "created_at": "2026-11-23T06:46:50.391730+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
+      }
+    },
     "20849b6edf52792849a5113f87d69a0732b37a4bf231137ca09b691758a4f57d": {
       "created_at": "2026-11-21T07:51:50.725161+00:00",
       "kind": "live-title",
@@ -2645,6 +2654,15 @@
       "kind": "event-description",
       "result": "EFL Championship clash between West Ham United and West Bromwich Albion at 15:00 GMT on 31 Oct 2026.",
       "title": "West Ham United vs West Bromwich Albion"
+    },
+    "2b3b434808b86cbe9e0a82458c3449f68d5decf878f91f05d84a8dd27dc2dfe0": {
+      "created_at": "2026-11-23T06:46:50.391748+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "UFC Fight Night - Special Feed",
+        "description": "Coverage of UFC Fight Night - Special Feed.",
+        "raw": "UFC Fight Nigh - Special Feed"
+      }
     },
     "2b43779101b51fcda9e0c6c1bd388a458816080c70dd8ac83f8df394591ed9e9": {
       "created_at": "2026-11-21T14:16:27.554641+00:00",
@@ -7808,6 +7826,15 @@
         "clean_title": "Lightning @ Blue Jackets",
         "description": "Coverage of Lightning against Blue Jackets.",
         "raw": "Lightning @ Blue Jackets"
+      }
+    },
+    "7f0fbd18be68b2092b5a982280cb7f6206420e2103178c969f925226a96fa23b": {
+      "created_at": "2026-11-23T06:46:50.391751+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "USAC National Midgets Plaza Park",
+        "description": "Coverage of USAC National Midgets Plaza Park.",
+        "raw": "USAC National Midgets Plaza Park"
       }
     },
     "7f525a2aafa89db6d1094873cfb2fe669b94f064e993e35e26340b1ae8187a01": {
