@@ -8189,6 +8189,15 @@
         "raw": "GNCC Buckwheat 100"
       }
     },
+    "847e6ab7f85328f7516a0e70a61dfa0af4304db8078aa5a5b43dcaf58ee244fd": {
+      "created_at": "2026-11-23T01:59:16.484350+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "USAC National Midgets – Plaza Park",
+        "description": "Coverage of USAC National Midgets – Plaza Park.",
+        "raw": "USAC National Midgets Plaza Park"
+      }
+    },
     "84918a7458bc8a9fc0d2370670bcfe2bb8a0f84c6867783494ac386a13892c58": {
       "created_at": "2026-11-15T05:33:32.824271+00:00",
       "kind": "live-title",
@@ -15607,6 +15616,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-23T07:59:13.790157+00:00"
+  },
   "version": 1
 }
