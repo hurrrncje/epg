@@ -931,6 +931,7 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
     venue = re.compile(r"Upcoming:\s*(Home to|Away at) (.+), (\w{3}) (\d{1,2}) (\w{3}) (\d{2}:\d{2})$", re.I)
     weekdays = dict(zip("mon tue wed thu fri sat sun".split(),
                         "Monday Tuesday Wednesday Thursday Friday Saturday Sunday".split()))
+    club_times = {}
     for row in root.iter("programme"):
         channel = row.get("channel", "")
         title = row.findtext("title", "")
@@ -977,6 +978,56 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
             row.find("title").text = label
             if clock and row.find("desc") is not None:
                 row.find("desc").text = label
+            club_times.setdefault((teams.casefold(), f"{weekday} {int(day)} {month.title()}"), set()).add(time_label)
+
+    # Club guides publish UK kick-offs. Reconcile duplicate team feeds only when
+    # both opponents and the local fixture date agree on a single club-guide time.
+    by_channel = {}
+    for row in root.iter("programme"):
+        channel = row.get("channel", "")
+        if channel in team_ids or channel.lower().endswith((".epl", ".efl", ".spfl")):
+            by_channel.setdefault(channel, []).append(row)
+    for rows in by_channel.values():
+        ordered = sorted(rows, key=lambda row: row.get("start", ""))
+        for index, row in enumerate(ordered):
+            for el in row.findall("title") + row.findall("desc"):
+                notice = re.fullmatch(r"Next match: (.+), (\w+ \d+ \w+), \d{2}:\d{2}", el.text or "")
+                if notice:
+                    clocks = club_times.get((notice[1].casefold(), notice[2]), set())
+                    if len(clocks) == 1:
+                        el.text = f"Next match: {notice[1]}, {notice[2]}, {next(iter(clocks))}"
+                        if el.tag == "desc" and row.findtext("title") == "No match today":
+                            row.find("title").text = el.text
+            fixture = re.fullmatch(r"(.+ vs .+) at (\d{2}:\d{2})", row.findtext("title", ""))
+            if not fixture:
+                continue
+            stamp = "%Y%m%d%H%M%S %z"
+            try:
+                start = datetime.strptime(row.get("start", ""), stamp).astimezone(LONDON)
+            except ValueError:
+                continue
+            key = (fixture[1].casefold(), f"{start:%A} {start.day} {start:%b}")
+            clocks = club_times.get(key, set())
+            if len(clocks) != 1 or fixture[2] in clocks:
+                continue
+            uk_clock = next(iter(clocks))
+            title = f"{fixture[1]} at {uk_clock}"
+            hour, minute = map(int, uk_clock.split(":"))
+            kickoff = start.replace(hour=hour, minute=minute).astimezone(UTC)
+            if start.strftime("%H:%M") == fixture[2]:
+                before = ordered[index - 1] if index else None
+                if (before is None or before.get("stop") != row.get("start")
+                        or before.findtext("title") != title
+                        or not (datetime.strptime(before.get("start"), stamp) < kickoff
+                                < datetime.strptime(row.get("stop"), stamp))):
+                    continue
+                row.set("start", kickoff.strftime(stamp))
+                before.set("stop", row.get("start"))
+            row.find("title").text = title
+            desc = row.find("desc")
+            if desc is not None and (desc.text or "").startswith("Upcoming match:"):
+                desc.text = f"Upcoming match: {title}"
+
 
 
 def _replace_game_with_match(title: str) -> str:

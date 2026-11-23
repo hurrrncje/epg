@@ -373,6 +373,22 @@ class AIProcessingTests(unittest.TestCase):
             self.assertEqual(root.findtext('programme/' + tag),
                              'Next match: Arsenal vs Borussia Dortmund, Tuesday 24 Nov, 20:00')
 
+    def test_club_time_aligns_duplicate_fixture_and_preview_boundary(self):
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring("""<tv>
+          <channel id="monepg.epl.1"><display-name>Arsenal</display-name></channel>
+          <programme channel="monepg.epl.1"><title>Upcoming: Home to Borussia Dortmund, Tue 24 Nov 20:00</title></programme>
+          <programme channel="Arsenal.epl"><title>No match today</title><desc>Next Game: Borussia Dortmund @ Arsenal on 2026-11-24 at 04:00PM EST</desc></programme>
+          <programme channel="Arsenal.epl" start="20261124000000 +0000" stop="20261124210000 +0000"><title>Arsenal vs Borussia Dortmund at 21:00</title></programme>
+          <programme channel="Arsenal.epl" start="20261124210000 +0000" stop="20261124231500 +0000"><title>Arsenal vs Borussia Dortmund at 21:00</title></programme>
+        </tv>""")
+        self.ns['_clean_team_previews'](root, set())
+        notice, preview, live = root.findall("programme[@channel='Arsenal.epl']")
+        self.assertEqual(notice.findtext('title'), 'Next match: Arsenal vs Borussia Dortmund, Tuesday 24 Nov, 20:00')
+        self.assertEqual(preview.get('stop'), live.get('start'))
+        self.assertEqual(live.get('start'), '20261124200000 +0000')
+        self.assertEqual(live.findtext('title'), 'Arsenal vs Borussia Dortmund at 20:00')
+
     def test_provider_matchday_starts_at_midnight_and_keeps_live_slot(self):
         import xml.etree.ElementTree as ET
         root = ET.fromstring("""<tv>
