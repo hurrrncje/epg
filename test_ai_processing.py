@@ -399,7 +399,7 @@ class AIProcessingTests(unittest.TestCase):
             self.ns['process_epg']()
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         upcoming = result.find("programme[@channel='c0']")
-        self.assertTrue(upcoming.findtext('title').startswith('Upcoming Match:'))
+        self.assertEqual(upcoming.findtext('title'), f'Upcoming match: Bristol City vs Watford at {parsed["start_utc"].astimezone(self.ns["LONDON"]):%H:%M}')
         self.assertEqual(upcoming.get('start')[:8], self.ns['datetime'].now(self.ns['UTC']).strftime('%Y%m%d'))
 
     def test_news_placeholders_use_detailed_alias_and_backup_schedules(self):
@@ -464,7 +464,7 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         programmes = result.findall("programme[@channel='dummy-12375']")
         self.assertEqual([p.findtext('title') for p in programmes], [
-            *(['Chelsea vs Manchester City at 15:00'] * 4), 'Match ended', 'Match ended',
+            *(['Upcoming match: Chelsea vs Manchester City at 15:00'] * 3), 'Chelsea vs Manchester City', 'Match ended', 'Match ended',
         ])
         self.assertEqual(programmes[3].get('start'), '20260516140000 +0000')
         self.assertEqual(programmes[3].get('stop'), '20260516163000 +0000')
@@ -504,7 +504,7 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         programmes = result.findall("programme[@channel='dummy-12575']")
         self.assertEqual([p.findtext('title') for p in programmes], [
-            *(['FC Halifax Town vs Yeovil at 15:00'] * 4), 'Match ended', 'Match ended',
+            *(['Upcoming match: FC Halifax Town vs Yeovil at 15:00'] * 3), 'FC Halifax Town vs Yeovil', 'Match ended', 'Match ended',
         ])
         self.assertEqual(programmes[3].get('start'), '20261101150000 +0000')
         self.assertEqual(programmes[3].get('stop'), '20261101173000 +0000')
@@ -513,7 +513,7 @@ class AIProcessingTests(unittest.TestCase):
             self.assertEqual(len(rows), 4)
             self.assertEqual(rows[0].findtext('title'), 'No match today')
         active = result.find("programme[@channel='dummy-12578'][@start='20261101110000 +0000']")
-        self.assertEqual(active.findtext('title'), 'Barrow vs Eastleigh at 11:00')
+        self.assertEqual(active.findtext('title'), 'Barrow vs Eastleigh')
         self.assertEqual(active.get('stop'), '20261101133000 +0000')
         self.assertEqual(result.find("channel[@id='dummy-12575']/display-name").text, 'National League TV 01')
         all_titles = [p.findtext('title') for p in result.findall('programme')]

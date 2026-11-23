@@ -786,7 +786,7 @@ def _normalise_football_notices(root: ET.Element, football_ids: set[str]) -> Non
                 element.text = re.sub(r"\bNext Game:", "Next match:", value, flags=re.I)
 
 
-def _build_football_matchdays(root: ET.Element, football_ids: set[str]) -> None:
+def _build_football_matchdays(root: ET.Element, football_ids: set[str], league_ids: set[str] = frozenset()) -> None:
     """Cover free time on each UK match day, keeping separate live programme boundaries."""
     stamp = "%Y%m%d%H%M%S %z"
     prefix = re.compile(r"^(?:next (?:match|game)|upcoming (?:match|event)):\s*", re.I)
@@ -807,6 +807,7 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str]) -> None:
     removed = set()
     additions = []
     for channel, rows in by_channel.items():
+        league = channel in league_ids
         fixtures = {}
         idle = set()
         protected = []
@@ -832,7 +833,8 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str]) -> None:
                         continue
                     fixtures.setdefault(kickoff, hint[1])
                     if preview and value == re.sub(r"^Next Match:", "Next Game:", title, flags=re.I):
-                        row.find("title").text = f"{hint[1]} at {kickoff.astimezone(LONDON):%H:%M}"
+                        formatted = f"{hint[1]} at {kickoff.astimezone(LONDON):%H:%M}"
+                        row.find("title").text = f"Upcoming match: {formatted}" if league else formatted
             if preview or title.casefold() in {"no match today", "match ended", "signing off",
                                                "no further match scheduled"}:
                 idle.add(row)
@@ -842,10 +844,23 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str]) -> None:
                 name = re.sub(r"\s+at \d{2}:\d{2}$", "", _rewrite_football_text(title))
                 name = re.sub(r"\s+v(?:s)?\.?\s+", " vs ", name, flags=re.I)
                 fixtures[start] = name
-                row.find("title").text = f"{name} at {start.astimezone(LONDON):%H:%M}"
+                row.find("title").text = name if league else f"{name} at {start.astimezone(LONDON):%H:%M}"
 
         if not fixtures:
             continue
+        # A preview can already be on air the day before the match.
+        if league:
+            for start, _, row in rows:
+                title = row.findtext("title", "")
+                if not prefix.match(title):
+                    continue
+                label = re.sub(r"\s+at \d{1,2}(?:[.:]\d{2})?(?:am|pm)?$", "",
+                               prefix.sub("", title), flags=re.I)
+                label = re.sub(r"\s+v(?:s)?\.?\s+", " vs ", label, flags=re.I)
+                for kickoff, name in sorted(fixtures.items()):
+                    if kickoff >= start and label.casefold() == name.casefold():
+                        row.find("title").text = f"Upcoming match: {name} at {kickoff.astimezone(LONDON):%H:%M}"
+                        break
         horizon = max(stop for _, stop, _ in rows)
         previews = []
         previous = None
@@ -887,8 +902,9 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str]) -> None:
         for start, stop, name, kickoff in previews:
             row = ET.Element("programme", channel=channel, start=start.strftime(stamp), stop=stop.strftime(stamp))
             title = f"{name} at {kickoff.astimezone(LONDON):%H:%M}"
-            ET.SubElement(row, "title").text = title
-            ET.SubElement(row, "desc").text = f"Upcoming match: {title}"
+            preview_title = f"Upcoming match: {title}"
+            ET.SubElement(row, "title").text = preview_title if league else title
+            ET.SubElement(row, "desc").text = preview_title
             additions.append(row)
     root[:] = [item for item in root if item not in removed]
     root.extend(additions)
@@ -3028,7 +3044,13 @@ def process_epg() -> None:
 
     _fill_polish_epg_gaps(root, datetime.now(UTC))
     _fill_uk_news_epg_gaps(root, datetime.now(UTC))
-    _build_football_matchdays(root, matchday_ids)
+    league_ids = bare_league_ids | epl_targets.keys() | european_league_targets.keys() | {
+        channel for channel in matchday_ids
+        if channel not in team_channel_ids and not channel.lower().endswith((".epl", ".efl", ".spfl"))
+        and any(re.search(r"\d", re.split(r"[:|]", name, maxsplit=1)[0])
+                for name in display_names_by_id.get(channel, []))
+    }
+    _build_football_matchdays(root, matchday_ids, league_ids)
     _split_long_event_listings(root, matchday_ids | handled_channel_ids | football_mirror_ids | event_mirror_ids | bare_league_ids)
     tree = ET.ElementTree(root)
     with gzip.open(
