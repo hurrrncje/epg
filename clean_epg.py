@@ -848,7 +848,7 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str], league_i
                 name = re.sub(r"\s+at \d{2}:\d{2}$", "", _rewrite_football_text(title))
                 name = re.sub(r"\s+v(?:s)?\.?\s+", " vs ", name, flags=re.I)
                 fixtures[start] = name
-                row.find("title").text = name if league else f"{name} at {start.astimezone(LONDON):%H:%M}"
+                row.find("title").text = name
 
         if not fixtures:
             continue
@@ -907,7 +907,7 @@ def _build_football_matchdays(root: ET.Element, football_ids: set[str], league_i
             row = ET.Element("programme", channel=channel, start=start.strftime(stamp), stop=stop.strftime(stamp))
             title = f"{name} at {kickoff.astimezone(LONDON):%H:%M}"
             preview_title = f"Upcoming match: {title}"
-            ET.SubElement(row, "title").text = preview_title if league else title
+            ET.SubElement(row, "title").text = preview_title
             ET.SubElement(row, "desc").text = preview_title
             additions.append(row)
     root[:] = [item for item in root if item not in removed]
@@ -1010,7 +1010,11 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
                         el.text = f"Next match: {notice[1]}, {notice[2]}, {next(iter(clocks))}"
                     if el.tag == "desc" and row.findtext("title", "").strip().casefold() in idle_titles:
                         row.find("title").text = el.text
-            fixture = re.fullmatch(r"(.+ vs .+) at (\d{2}:\d{2})", row.findtext("title", ""))
+            value = row.findtext("title", "")
+            if value.startswith("Next match:"):
+                continue
+            preview = value.startswith("Upcoming match:")
+            fixture = re.fullmatch(r"(.+ vs .+?) at (\d{2}:\d{2})", value.removeprefix("Upcoming match: ")) if preview else re.fullmatch(r"(.+ vs .+)", value)
             if not fixture:
                 continue
             stamp = "%Y%m%d%H%M%S %z"
@@ -1020,13 +1024,13 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
                 continue
             key = (fixture[1].casefold(), f"{start:%A} {start.day} {start:%b}")
             clocks = club_times.get(key, set())
-            if len(clocks) != 1 or fixture[2] in clocks:
+            if len(clocks) != 1 or (fixture[2] if preview else start.strftime("%H:%M")) in clocks:
                 continue
             uk_clock = next(iter(clocks))
-            title = f"{fixture[1]} at {uk_clock}"
+            title = f"Upcoming match: {fixture[1]} at {uk_clock}"
             hour, minute = map(int, uk_clock.split(":"))
             kickoff = start.replace(hour=hour, minute=minute).astimezone(UTC)
-            if start.strftime("%H:%M") == fixture[2]:
+            if not preview:
                 before = ordered[index - 1] if index else None
                 if (before is None or before.get("stop") != row.get("start")
                         or before.findtext("title") != title
@@ -1035,10 +1039,11 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
                     continue
                 row.set("start", kickoff.strftime(stamp))
                 before.set("stop", row.get("start"))
-            row.find("title").text = title
-            desc = row.find("desc")
-            if desc is not None and (desc.text or "").startswith("Upcoming match:"):
-                desc.text = f"Upcoming match: {title}"
+            else:
+                row.find("title").text = title
+                desc = row.find("desc")
+                if desc is not None and (desc.text or "").startswith("Upcoming match:"):
+                    desc.text = title
 
 
 

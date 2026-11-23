@@ -357,7 +357,7 @@ class AIProcessingTests(unittest.TestCase):
             self.assertEqual([row.findtext('title') for row in rows], ['No match today'] * 4)
             self.assertEqual(rows[-1].get('stop'), stop.strftime('%Y%m%d%H%M%S %z'))
         self.assertEqual(result.findtext("programme[@channel='c3']/title"),
-                         f'Blackburn Rovers vs Burnley at {start.astimezone(self.ns["LONDON"]):%H:%M}')
+                         'Blackburn Rovers vs Burnley')
         self.assertIsNone(result.find("programme[@channel='c4']"))
         self.assertEqual(result.findtext("programme[@channel='c6']/title"),
                          'Another listed fixture')
@@ -379,15 +379,15 @@ class AIProcessingTests(unittest.TestCase):
           <channel id="monepg.epl.1"><display-name>Arsenal</display-name></channel>
           <programme channel="monepg.epl.1"><title>Upcoming: Home to Borussia Dortmund, Tue 24 Nov 20:00</title></programme>
           <programme channel="Arsenal.epl"><title>No match today</title><desc>Next Game: Borussia Dortmund @ Arsenal on 2026-11-24 at 04:00PM EST</desc></programme>
-          <programme channel="Arsenal.epl" start="20261124000000 +0000" stop="20261124210000 +0000"><title>Arsenal vs Borussia Dortmund at 21:00</title></programme>
-          <programme channel="Arsenal.epl" start="20261124210000 +0000" stop="20261124231500 +0000"><title>Arsenal vs Borussia Dortmund at 21:00</title></programme>
+          <programme channel="Arsenal.epl" start="20261124000000 +0000" stop="20261124210000 +0000"><title>Upcoming match: Arsenal vs Borussia Dortmund at 21:00</title></programme>
+          <programme channel="Arsenal.epl" start="20261124210000 +0000" stop="20261124231500 +0000"><title>Arsenal vs Borussia Dortmund</title></programme>
         </tv>""")
         self.ns['_clean_team_previews'](root, set())
         notice, preview, live = root.findall("programme[@channel='Arsenal.epl']")
         self.assertEqual(notice.findtext('title'), 'Next match: Arsenal vs Borussia Dortmund, Tuesday 24 Nov, 20:00')
         self.assertEqual(preview.get('stop'), live.get('start'))
         self.assertEqual(live.get('start'), '20261124200000 +0000')
-        self.assertEqual(live.findtext('title'), 'Arsenal vs Borussia Dortmund at 20:00')
+        self.assertEqual(live.findtext('title'), 'Arsenal vs Borussia Dortmund')
 
     def test_description_only_next_matches_without_another_feed(self):
         import xml.etree.ElementTree as ET
@@ -414,8 +414,8 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual([(p.get('start')[:12], p.get('stop')[:12], p.findtext('title'))
                           for p in root.findall('programme')], [
             ('202611222200', '202611230000', 'No match today'),
-            ('202611230000', '202611232000', 'Brentford FC vs Everton at 20:00'),
-            ('202611232000', '202611232215', 'Brentford FC vs Everton at 20:00'),
+            ('202611230000', '202611232000', 'Upcoming match: Brentford FC vs Everton at 20:00'),
+            ('202611232000', '202611232215', 'Brentford FC vs Everton'),
         ])
 
     def test_omitted_playlist_teams_receive_no_match_today(self):
