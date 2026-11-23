@@ -931,6 +931,8 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
     venue = re.compile(r"Upcoming:\s*(Home to|Away at) (.+), (\w{3}) (\d{1,2}) (\w{3}) (\d{2}:\d{2})$", re.I)
     weekdays = dict(zip("mon tue wed thu fri sat sun".split(),
                         "Monday Tuesday Wednesday Thursday Friday Saturday Sunday".split()))
+    idle_titles = {"no match today", "no game today", "no event today", "signing off",
+                   "match ended", "no further match scheduled"}
     club_times = {}
     for row in root.iter("programme"):
         channel = row.get("channel", "")
@@ -941,6 +943,11 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
             continue
         clock = next_clock.search(title)
         match = venue.fullmatch(title)
+        description_clock = re.search(
+            r"\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun) (\w{3}) (\d{1,2}):[^\n]*?"
+            r"(\d{1,2}:\d{2}\s*[AP]M) UK\b(?!\s*\()", desc, re.I
+        ) if title.strip().casefold() in idle_titles or "next:" in title.casefold() else None
+        clock = clock or description_clock
         if clock:
             pairing = re.search(r"\bNext:\s*(.+?\s+vs\.?\s+.+?)(?=\s+on\s|\.\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b|$)", desc, re.I)
             if not pairing:
@@ -960,7 +967,12 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
         else:
             # Some feeds carry the entire dated notice in the description alone.
             for el in row.findall("title") + row.findall("desc"):
-                value = re.sub(r"^Next match:", "Next Game:", el.text or "", flags=re.I)
+                value = el.text or ""
+                if el.tag == "desc" and title.strip().casefold() in idle_titles:
+                    marker = re.search(r"\bnext (?:game|match):", value, re.I)
+                    if marker:
+                        value = value[marker.start():].strip().rstrip(".")
+                value = re.sub(r"^Next match:", "Next Game:", value, flags=re.I)
                 if not value.lower().startswith("next game:"):
                     continue
                 dated = re.fullmatch(r"Next Game: (.+) on (\d{2}/\d{2}/\d{4} at \d{2}:\d{2}) GMT",
@@ -985,7 +997,7 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
     by_channel = {}
     for row in root.iter("programme"):
         channel = row.get("channel", "")
-        if channel in team_ids or channel.lower().endswith((".epl", ".efl", ".spfl")):
+        if channel in team_ids or channel.lower().endswith((".epl", ".efl", ".spfl")) or football_feed.match(channel):
             by_channel.setdefault(channel, []).append(row)
     for rows in by_channel.values():
         ordered = sorted(rows, key=lambda row: row.get("start", ""))
@@ -996,8 +1008,8 @@ def _clean_team_previews(root: ET.Element, team_ids: set[str]) -> None:
                     clocks = club_times.get((notice[1].casefold(), notice[2]), set())
                     if len(clocks) == 1:
                         el.text = f"Next match: {notice[1]}, {notice[2]}, {next(iter(clocks))}"
-                        if el.tag == "desc" and row.findtext("title") == "No match today":
-                            row.find("title").text = el.text
+                    if el.tag == "desc" and row.findtext("title", "").strip().casefold() in idle_titles:
+                        row.find("title").text = el.text
             fixture = re.fullmatch(r"(.+ vs .+) at (\d{2}:\d{2})", row.findtext("title", ""))
             if not fixture:
                 continue

@@ -389,6 +389,20 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(live.get('start'), '20261124200000 +0000')
         self.assertEqual(live.findtext('title'), 'Arsenal vs Borussia Dortmund at 20:00')
 
+    def test_description_only_next_matches_without_another_feed(self):
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring("""<tv>
+          <programme channel="Club.efl"><title>Signing Off</title><desc>Next Game: Visitors @ City on 2026-11-25 at 02:45PM EST</desc></programme>
+          <programme channel="Club.spfl"><title>No match today</title><desc>No game today. Next: ⚽ [SPFL] City vs ⚽ [SPFL] Visitors on TV. Wed Nov 25: 2:45 PM ET · 7:45 PM UK.</desc></programme>
+          <programme channel="Club.epl"><title>Club interviews</title><desc>Next Game: Visitors @ City on 2026-11-25 at 02:45PM EST</desc></programme>
+        </tv>""")
+        self.ns['_clean_team_previews'](root, set())
+        self.assertEqual([p.findtext('title') for p in root], [
+            'Next match: City vs Visitors, Wednesday 25 Nov, 19:45',
+            'Next match: City vs Visitors, Wednesday 25 Nov, 19:45',
+            'Club interviews',
+        ])
+
     def test_provider_matchday_starts_at_midnight_and_keeps_live_slot(self):
         import xml.etree.ElementTree as ET
         root = ET.fromstring("""<tv>
