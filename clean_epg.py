@@ -756,6 +756,36 @@ def _rewrite_football_text(text: str) -> str:
     )
 
 
+def _normalise_football_notices(root: ET.Element, football_ids: set[str]) -> None:
+    """Apply football wording to both provider and generated off-air slots."""
+    notices = re.compile(
+        r"no\s+(?:live\s+|scheduled\s+)?(?:games?|events?|match(?:es)?)"
+        r"(?:\s+(?:scheduled|available))?(?:\s+(?:for\s+)?today)?[.!]?", re.I
+    )
+    finished = {"match ended", "game ended", "the event has ended"}
+    rows = [row for row in root.iter("programme") if row.get("channel") in football_ids]
+    match_days = set()
+    for row in rows:
+        title = row.findtext("title", "").strip().casefold()
+        if (title and not notices.fullmatch(title) and not title.startswith(
+            ("no further ", "upcoming ", "next match:", "next game:")
+        )):
+            match_days.add((row.get("channel"), row.get("start", "")[:8]))
+    for row in rows:
+        for element in row.findall("title") + row.findall("desc"):
+            value = (element.text or "").strip()
+            if notices.fullmatch(value):
+                element.text = "No match today"
+            elif value.casefold() in {"no further event scheduled", "no further game scheduled",
+                                      "no further match scheduled"}:
+                has_match = (row.get("channel"), row.get("start", "")[:8]) in match_days
+                element.text = "No further match scheduled" if has_match else "No match today"
+            elif value.casefold() in finished:
+                element.text = "Match ended"
+            elif element.tag == "desc":
+                element.text = re.sub(r"\bNext Game:", "Next match:", value, flags=re.I)
+
+
 def _replace_game_with_match(title: str) -> str:
     """Use football terminology in EPL/EFL programme titles."""
     replacements = {"game": "match", "Game": "Match", "GAME": "MATCH"}
@@ -2851,6 +2881,14 @@ def process_epg() -> None:
                 element.text = _rewrite_football_text(element.text)
                 if tag == "title":
                     element.text = _replace_game_with_match(element.text)
+    wording_ids = _read_channel_id_manifest(Path(__file__).with_name("football_wording_ids.txt"))
+    for channel_id, names in display_names_by_id.items():
+        if (channel_id.casefold().endswith((".epl", ".efl", ".spfl"))
+            or channel_id.replace("event-", "dummy-", 1) in wording_ids
+            or any(re.match(r"^SPFL\s*\d+\b", name, re.I) for name in names)):
+            wording_ids.add(channel_id)
+    _normalise_football_notices(root, wording_ids | football_channel_ids | football_mirror_ids
+                                | bare_league_ids | epl_targets.keys())
     _normalize_paramount_branding(root, set(paramount_targets))
 
     # Apply after schedule generation so provider rows and Upcoming Match

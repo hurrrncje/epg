@@ -314,6 +314,19 @@ class AIProcessingTests(unittest.TestCase):
         self.assertEqual(guide.findtext("programme[@channel='event-21']/title"), 'No event today')
         self.assertEqual(guide.findtext("programme[@channel='event-22']/title"), 'No match today')
 
+    def test_team_and_spfl_empty_slots_use_exact_match_wording(self):
+        ET = self.ns['ET']
+        guide = ET.Element('tv')
+        for channel, title in [('Arsenal.epl', 'No Game Today'), ('event-12476', 'No event today'),
+                               ('event-12476', 'Upcoming Match: A vs B'), ('other', 'No event today')]:
+            row = ET.SubElement(guide, 'programme', channel=channel)
+            ET.SubElement(row, 'title').text = title
+            ET.SubElement(row, 'desc').text = title
+        self.ns['_normalise_football_notices'](guide, {'Arsenal.epl', 'event-12476'})
+        for tag in ('title', 'desc'):
+            self.assertEqual([r.findtext(tag) for r in guide],
+                             ['No match today', 'No match today', 'Upcoming Match: A vs B', 'No event today'])
+
     def test_missing_football_listings_get_no_match_today(self):
         import xml.etree.ElementTree as ET
         folder = self.prepare_process([

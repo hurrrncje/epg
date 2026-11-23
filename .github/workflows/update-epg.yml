@@ -11,6 +11,7 @@ on:
     paths:
       - polish_epg_channels.tsv
       - football_team_channels.tsv
+      - football_wording_ids.txt
       - event_mirror_channel_ids.txt
       - football_mirror_channel_ids.txt
       - clean_epg.py
