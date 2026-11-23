@@ -331,6 +331,12 @@
         "raw": "Flyers @ Flames"
       }
     },
+    "06b3cf4274d9b3ea1e10bbb72d716445eb4e429bc5cd65999cd93fd12c5eb489": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
+    },
     "06b4788e335b4bb78c035e672c82acf76ceb309c90b3f7e4bab73f14a693cd7e": {
       "created_at": "2026-11-07T22:16:07.678306+00:00",
       "kind": "live-title",
@@ -339,6 +345,12 @@
         "description": "Coverage of Rahimo FC against Salitas FC.",
         "raw": "Rahimo FC vs. Salitas FC"
       }
+    },
+    "06cc5622ff991b3146de3bd2e4fd01e1f5bebdd53312db7b3031c4052c569d9b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
     },
     "07094bbf4a5135a4135b70d1807f8d63bcf6d33582839e8daa4674c794e7b4ef": {
       "created_at": "2026-11-21T14:16:27.554635+00:00",
@@ -471,6 +483,12 @@
       "result": "NFL games: Minnesota Vikings vs. Detroit Lions, Cleveland Browns vs. Pittsburgh Steelers, Atlanta Falcons vs. Tampa Bay Buccaneers, plus RedZone.",
       "title": "MIN @ DET, CLE @ PIT, ATL @ TB, RedZone"
     },
+    "08cf2400d8b720dce7c038d41ccaa9ed8498f6ed21012e49246eb3b19d8e1cae": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
+    },
     "09713567054f149866ec8453102fce9fcfd8b6435336e58c77be9b3da9aec342": {
       "created_at": "2026-11-22T05:36:53.443943+00:00",
       "kind": "live-title",
@@ -505,6 +523,15 @@
         "clean_title": "Le Mans vs ASVEL",
         "description": "Coverage of Le Mans against ASVEL.",
         "raw": "Le Mans vs. ASVEL"
+      }
+    },
+    "09ad8f8aff6a68ee29c774cbe9ef55a5799c5b0e413df5d3f15917efb8026ebf": {
+      "created_at": "2026-11-23T11:32:45.981941+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Spain U17 vs Fiji U17",
+        "description": "Coverage of Spain U17 against Fiji U17.",
+        "raw": "Spain U17 vs. Fiji U17"
       }
     },
     "09ae6820251a5b00b0cfeac65a52d2182d75b481e4841f573be57a052e5ff29f": {
@@ -542,6 +569,12 @@
         "description": "Coverage of ORE against OSU, CNC @ HOU, UCF @ KU, VAN @ MSST.",
         "raw": "ORE @ OSU, CNC @ HOU, UCF @ KU, VAN @ MSST"
       }
+    },
+    "0a4d5337acca2f4ca18a26f6b1eb776640d88ccd8732efd293a395332cdf5895": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
     },
     "0a92ab36162d1a111c87943fc9101794b704f08b2221c8f3e13ed9af9f6345a6": {
       "created_at": "2026-11-14T20:15:15.573728+00:00",
@@ -607,6 +640,15 @@
         "raw": "LAR @ WAS, NYJ @ KC, DAL @ IND, RedZone"
       }
     },
+    "0b5e18c3d64abe01e87b3379cc851eb060bc06ae657428ad1ddaa9315635e9b3": {
+      "created_at": "2026-11-23T11:32:45.981943+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Tajikistan U17 vs Croatia U17",
+        "description": "Coverage of Tajikistan U17 against Croatia U17.",
+        "raw": "Tajikistan U17 vs. Croatia U17"
+      }
+    },
     "0b5f2c528ef20576407380a1cfd09308c35f3cd62e0584e2cb1d25530ca681af": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061708+00:00",
@@ -648,6 +690,15 @@
         "raw": "MNF Playbook | Cowboys @ Eagles"
       }
     },
+    "0bfab175f1b068e87567b856ac2def7b7001d7fd58eee419ec30c0e9a8db385d": {
+      "created_at": "2026-11-23T11:32:25.825754+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Blue Jackets vs Devils",
+        "description": "Coverage of Blue Jackets against Devils.",
+        "raw": "Blue Jackets @ Devils"
+      }
+    },
     "0c1adb05a459ae923f01c044652b1f5ae2d5b558dee67d140206aa6e60e5e886": {
       "created_at": "2026-11-15T06:33:59.821279+00:00",
       "kind": "live-title",
@@ -681,6 +732,12 @@
         "description": "Coverage of Ducks against Blues.",
         "raw": "Ducks @ Blues"
       }
+    },
+    "0c9d15ddae9f32b6f77e56857a2e2fbafdfa6e774a3522bb29f2db9ca88eeda6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
     },
     "0cdc92132774720aa93f0fb3fa91a46a33b1d4986085aa12484a88acff4fa767": {
       "created_at": "2026-10-28T06:20:34.001580+00:00",
@@ -877,6 +934,15 @@
         "clean_title": "Wild vs Canucks",
         "description": "Coverage of Wild against Canucks.",
         "raw": "Wild @ Canucks"
+      }
+    },
+    "104197b2c10eacbc2340be52653e95f13cefe4205e9698336210aacdbf5176e8": {
+      "created_at": "2026-11-23T11:32:45.981947+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Uzbekistan U17 vs Jamaica U17",
+        "description": "Coverage of Uzbekistan U17 against Jamaica U17.",
+        "raw": "Uzbekistan U17 vs. Jamaica U17"
       }
     },
     "10499bc14c01c013d282951940a10aaf4435fae34b0b0a830c5b7ff307c0fe8c": {
@@ -2224,6 +2290,24 @@
         "raw": "RAF Abu Dhabi Chimaev v Weidman"
       }
     },
+    "25fe62670d09fa21f5c3ecccaf96e42a773027559bedb7e936807167cb21540c": {
+      "created_at": "2026-11-23T11:32:25.825753+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bengals vs Commanders (Spanish Broadcast)",
+        "description": "Coverage of Bengals against Commanders (Spanish Broadcast).",
+        "raw": "Bengals @ Commanders (Spanish Broadcast)"
+      }
+    },
+    "26045c9ff2ed2c82a3d971cbd64a438dbb9db8be08874616b06d5ba065fd3b54": {
+      "created_at": "2026-11-23T11:32:45.981951+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Wild @ Sharks",
+        "description": "Coverage of Wild against Sharks.",
+        "raw": "Wild @ Sharks"
+      }
+    },
     "260c634544b9b10064d5274a0cf58e98c4b3679750e5d0d185682e9bb13fa141": {
       "created_at": "2026-11-06T16:30:24.696001+00:00",
       "kind": "live-title",
@@ -3008,6 +3092,12 @@
         "raw": "DUKE @ MIM, NU @ OSU, AUB @ MSST, WIS @ MD"
       }
     },
+    "2fe6cd1c434eccca7243d2647e7a9755fde43db237ce28c29b2064d20c5ba75b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
+    },
     "301aab654d7f05496abbdffe7f83353e5cf7303219b0d79b831f8f0a15ae48a2": {
       "context": "DAZN UK event scheduled 03/11/2026 01:00 GMT",
       "created_at": "2026-11-03T07:52:42.440681+00:00",
@@ -3108,6 +3198,15 @@
         "clean_title": "Buccaneers vs. Bears (US., French, German, Japanese, Portuguese Game Commentary Available)",
         "description": "Coverage of Buccaneers against Bears (US., French, German, Japanese, Portuguese Game Commentary Available).",
         "raw": "Buccaneers @ Bears (US., French, German, Japanese, Portuguese Game Commentary Available)"
+      }
+    },
+    "31ca99339211fea9cb97ef96947360ebbea2e0c5499e82389fbf7a9d7532ce3a": {
+      "created_at": "2026-11-23T11:32:25.825731+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Awards 2026",
+        "description": "Coverage of Awards 2026.",
+        "raw": "Awards 2026"
       }
     },
     "324ddc19e42de738af1def7ace4eade46aae9428d9fc1aeedfc91cce51ef3f5e": {
@@ -3273,6 +3372,15 @@
         "raw": "Bills @ Vikings"
       }
     },
+    "3496a576b384c10d00cdbba64c878e7e205513aaef0eac31e0dab73795f4d813": {
+      "created_at": "2026-11-23T11:32:25.825758+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Ducks vs Kraken",
+        "description": "Coverage of Ducks against Kraken.",
+        "raw": "Ducks @ Kraken"
+      }
+    },
     "34af10f8323cf59db0ca903267b0ad2275ad0d0782f8483d9049d7bcb0924537": {
       "context": "MLS fixture scheduled 02/11/2026 03:40 GMT",
       "created_at": "2026-11-02T03:33:22.316096+00:00",
@@ -3330,6 +3438,15 @@
         "clean_title": "Panama U23 vs. Australia U23",
         "description": "Coverage of Panama U23 against Australia U23.",
         "raw": "Panama U23 vs. Australia U23"
+      }
+    },
+    "35b44f6006aed993c7879fcae60cae4a3b28b7e675ef23e886b87e1032c2c987": {
+      "created_at": "2026-11-23T11:32:25.825763+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Flamurtari FC vs KF Bylis",
+        "description": "Coverage of Flamurtari FC against KF Bylis.",
+        "raw": "Flamurtari FC vs. KF Bylis"
       }
     },
     "35bcae84deada1d6c6a97e8adda4137fcc11809fcceec4380f2883e581a55ae9": {
@@ -4552,6 +4669,15 @@
         "raw": "Islanders @ Jets"
       }
     },
+    "48ced99eb18cc64ff094da0ae88b258c0541ebe431b31ba2cd228e963a632c67": {
+      "created_at": "2026-11-23T11:32:45.981938+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Morocco U17 vs China U17",
+        "description": "Coverage of Morocco U17 against China U17.",
+        "raw": "Morocco U17 vs. China PR U17"
+      }
+    },
     "48dc300de7dbc052bffb9026d258fa874acd03b8b2aa11ae9126def0e262dd26": {
       "context": "Disney+ Events event scheduled 01/11/2026 21:00 GMT",
       "created_at": "2026-11-01T21:19:10.371144+00:00",
@@ -5196,6 +5322,15 @@
         "raw": "Saud Bin Salman Cup for Fillies & Colts"
       }
     },
+    "53b53433f600c1ad0a6888d7c1e4f4d6a9d3ccbb83886051e8262b1853a2c52d": {
+      "created_at": "2026-11-23T11:32:25.825761+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Flames vs Senators",
+        "description": "Coverage of Flames against Senators.",
+        "raw": "Flames @ Senators"
+      }
+    },
     "53c70bfb91c4a4b103fceefafc82010deac140d03ef0b58c5133cdd0d6e40333": {
       "created_at": "2026-11-21T16:25:10.199531+00:00",
       "kind": "live-title",
@@ -5204,6 +5339,12 @@
         "description": "Coverage of Northwestern against Minnesota.",
         "raw": "Northwestern @ Minnesota"
       }
+    },
+    "53ec7500bff2c66e7ee026db3caaef5a676873396be67cc2df821ec2647e199f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
     },
     "543c1babad91d2917a211fcb8bf661a73c8c5f1e408844c0e1170a2d251b1383": {
       "created_at": "2026-11-08T14:21:58.625439+00:00",
@@ -5382,6 +5523,24 @@
         "clean_title": "Kidderminster vs. FC Halifax Town",
         "description": "Coverage of Kidderminster against FC Halifax Town.",
         "raw": "Kidderminster vs. FC Halifax Town"
+      }
+    },
+    "56f2887c84885074401c0e8c97799bdb5c60e2bdaaafc90bd7be8f19db9f4c2d": {
+      "created_at": "2026-11-23T11:32:45.981936+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Monza vs Fiorentina",
+        "description": "Coverage of Monza against Fiorentina.",
+        "raw": "Monza vs. Fiorentina"
+      }
+    },
+    "5702ac0b1fe6bf713b890f50f08dd3729dd466c20ce7df0733fe625d5022e635": {
+      "created_at": "2026-11-23T11:32:25.825749+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bayern Munich vs Hoffenheim",
+        "description": "Coverage of Bayern Munich against Hoffenheim.",
+        "raw": "Bayern Munich vs. Hoffenheim"
       }
     },
     "5715f8dd467101aea8104494586326f18d4b47923b87e54186a2910f50032916": {
@@ -5650,6 +5809,12 @@
         "description": "Coverage of BKFC Fight Night Myrtle Beach: Richardson against Oxendine.",
         "raw": "BKFC Fight Night Myrtle Beach: Richardson vs. Oxendine"
       }
+    },
+    "5ac375fed346e5144b0d4323d41c2844077eee86b45bdff78df215b022eed645": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
     },
     "5af9ed47030dd20ba09d70f8386d4aa2802781d4cd9bfc9e6005e9ed79529352": {
       "created_at": "2026-11-07T14:24:25.648908+00:00",
@@ -7908,6 +8073,12 @@
       "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
       "title": "Swindon Town FC vs Rotherham United FC"
     },
+    "80c29164960c9d12da147435549142ac83ad224bcdfd27485ab1947be1e54f8b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
+    },
     "811bb6b4b44b6f6a2c77b6eef3eb47d2426c972b1e80f656c2294b879b1139a4": {
       "created_at": "2026-11-18T18:30:03.534409+00:00",
       "kind": "live-title",
@@ -9002,6 +9173,15 @@
         "raw": "Coronie Boys vs. Transvaal"
       }
     },
+    "92b2c98fb1d64004c2fb0068eed0d68b77f5594bc1a2b3b5de058af23cc88f41": {
+      "created_at": "2026-11-23T11:32:25.825756+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bubali vs Estrella",
+        "description": "Coverage of Bubali against Estrella.",
+        "raw": "Bubali vs. Estrella"
+      }
+    },
     "92d74e3f23ba240210c59e48e297a7d06f82a9333c4ea1c7a758efdea00e39ff": {
       "created_at": "2026-11-07T21:15:51.916442+00:00",
       "kind": "live-title",
@@ -9045,6 +9225,15 @@
         "clean_title": "AS Sonabel vs. US Forces Armées",
         "description": "Coverage of AS Sonabel against US Forces Armées.",
         "raw": "AS Sonabel vs. US Forces Armées"
+      }
+    },
+    "9408bab02c0c56258fbbd3e20624df5002ef8e4830dc02c0065be8ba56ef0026": {
+      "created_at": "2026-11-23T11:32:45.981939+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Senegal U17 vs Cuba U17",
+        "description": "Coverage of Senegal U17 against Cuba U17.",
+        "raw": "Senegal U17 vs. Cuba U17"
       }
     },
     "9439223143542f945218c4e56b84df63dfdcb593b3a162905f9337e835b4d5fd": {
@@ -12003,6 +12192,15 @@
         "raw": "Pitch 4A | Day 3: Afternoon Session"
       }
     },
+    "c48f65809f5e1aea621e437a4b8842593bd74116e2417e09f5c64cd8d93cefa8": {
+      "created_at": "2026-11-23T11:32:45.981945+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "The Run Home with Scope and Fletch",
+        "description": "Coverage of The Run Home with Scope and Fletch.",
+        "raw": "The Run Home with Scope and Fletch"
+      }
+    },
     "c49d2210fa06e6acf30ea5b9e9b442f87dacbeaadab69ac590451d4c11065481": {
       "created_at": "2026-11-13T15:26:54.247629+00:00",
       "kind": "live-title",
@@ -12641,6 +12839,15 @@
         "raw": "Blue Jackets @ Maple Leafs"
       }
     },
+    "cde5b6581a93b7bcb196abf085973bd40acc48abd800a8685324349537950955": {
+      "created_at": "2026-11-23T11:32:25.825759+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "ES Bingerville vs Atlantis FC",
+        "description": "Coverage of ES Bingerville against Atlantis FC.",
+        "raw": "ES Bingerville vs. Atlantis FC"
+      }
+    },
     "ce068bacd538417bf432dd8dbd2de5e26640b65a64ef3cb51f843efb33fe2b72": {
       "created_at": "2026-11-20T13:55:04.539529+00:00",
       "kind": "live-title",
@@ -12947,6 +13154,15 @@
         "clean_title": "Malaga vs. Girona",
         "description": "Coverage of Malaga against Girona.",
         "raw": "Malaga vs. Girona"
+      }
+    },
+    "d1c5badefeb0293e5b372ad83036da763920f6864e719fe48196d625b0d2b868": {
+      "created_at": "2026-11-23T11:32:53.950308+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Yirga Chefe Bunna vs Bench Maji Buna FC",
+        "description": "Coverage of Yirga Chefe Bunna against Bench Maji Buna FC.",
+        "raw": "Yirga Chefe vs. Bench Maji"
       }
     },
     "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
@@ -13499,6 +13715,15 @@
         "raw": "Zamora B vs. Deportivo Lara"
       }
     },
+    "db249dc1363f3459a661bba94fc10535002f20a7f4c2ccfe5aa2d8b754582127": {
+      "created_at": "2026-11-23T11:32:45.981918+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Maui Invitational Quarterfinal: Providence vs VCU",
+        "description": "Coverage of Maui Invitational Quarterfinal: Providence against VCU.",
+        "raw": "Maui Invitational - Quarterfinal: Providence vs. VCU"
+      }
+    },
     "db385d801dc0e2b1d2423e1a9ced9ea1642d43831a8b081948c454dbf9c7e46c": {
       "created_at": "2026-11-21T07:52:04.205422+00:00",
       "kind": "live-title",
@@ -13864,6 +14089,12 @@
         "description": "Coverage of Georgia against Georgia Tech.",
         "raw": "Georgia @ Georgia Tech"
       }
+    },
+    "e0cc1390115df37e8eb1326a23c32586d87ee7f7b75868821897c9f0974768e2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-23T11:47:36.873560+00:00"
     },
     "e0ee4652fee576c843dbab0ee304f5097362e5a7e82fe246e81d3708b5a1b49d": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -14869,6 +15100,15 @@
         "raw": "Toughman Contest"
       }
     },
+    "f18e6213b09f4459640d743cf2e5c750e5ca54673e17937d0a71b3eb705d2d9a": {
+      "created_at": "2026-11-23T11:32:53.950288+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Winthrop vs Illinois",
+        "description": "Coverage of Winthrop against Illinois.",
+        "raw": "Winthrop @ Illinois"
+      }
+    },
     "f1c307dfb32641d06e9b61a2f0d37fb2f08ae304bde6d10372abb05bb62976b7": {
       "created_at": "2026-11-03T18:24:18.345696+00:00",
       "kind": "live-title",
@@ -15136,6 +15376,15 @@
         "raw": "CB San Pablo Burgos vs. Malaga"
       }
     },
+    "f616c5782cc9dd60359bb4b40bdfbdda4d792dc1a1c60fc0e941a0b119779a84": {
+      "created_at": "2026-11-23T11:32:45.981950+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Vietnam U17 vs New Zealand U17",
+        "description": "Coverage of Vietnam U17 against New Zealand U17.",
+        "raw": "Vietnam U17 vs. New Zealand U17"
+      }
+    },
     "f62af70b04163c0f5f54f0ee590be46c24d4704599f7413cf45e482b25e94482": {
       "created_at": "2026-11-08T00:12:59.117960+00:00",
       "kind": "live-title",
@@ -15173,6 +15422,15 @@
         "clean_title": "Blues vs Predators",
         "description": "Coverage of Blues against Predators.",
         "raw": "Blues @ Predators"
+      }
+    },
+    "f6de0a197ae035954c62c922bb1724cd55cc2da7253fbf2303f972eed252a588": {
+      "created_at": "2026-11-23T11:32:25.825751+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bengals vs Commanders",
+        "description": "Coverage of Bengals against Commanders.",
+        "raw": "Bengals @ Commanders"
       }
     },
     "f6deb3d78d41fdcb1f626567d9123ca59381952c5c49baae2303825e3f877f6d": {
@@ -15643,6 +15901,8 @@
       "title": "Dundee United vs Heart of Midlothian"
     }
   },
-  "provider_cooldowns": {},
+  "provider_cooldowns": {
+    "gemini": "2026-11-23T17:32:09.548213+00:00"
+  },
   "version": 1
 }
