@@ -1,4 +1,5 @@
-# Additional football category IDs for wording only. Dynamic event IDs share the dummy numeric key.
+# Additional football category IDs for wording only. PlaylistLabs event-N and dummy-N aliases share the same numeric key.
+# These IDs control idle programme wording only. Fixture times come from the guide.
 CANAL+.PREMIER.LEAGUE.ch
 SPFLDundeeUnited.uk
 beIN.Sports.HD.ae
