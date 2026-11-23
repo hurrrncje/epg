@@ -357,10 +357,25 @@ class AIProcessingTests(unittest.TestCase):
             self.assertEqual([row.findtext('title') for row in rows], ['No match today'] * 4)
             self.assertEqual(rows[-1].get('stop'), stop.strftime('%Y%m%d%H%M%S %z'))
         self.assertEqual(result.findtext("programme[@channel='c3']/title"),
-                         'Blackburn Rovers vs. Burnley')
+                         f'Blackburn Rovers vs Burnley at {start.astimezone(self.ns["LONDON"]):%H:%M}')
         self.assertIsNone(result.find("programme[@channel='c4']"))
         self.assertEqual(result.findtext("programme[@channel='c6']/title"),
                          'Another listed fixture')
+
+    def test_provider_matchday_starts_at_midnight_and_keeps_live_slot(self):
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring("""<tv>
+          <programme channel="Everton.epl" start="20261122220000 +0000" stop="20261123020000 +0000"><title>No match today</title></programme>
+          <programme channel="Everton.epl" start="20261123140000 +0000" stop="20261123200000 +0000"><title>Next Game: Everton @ Brentford FC on 2026-11-23 at 03:00PM EST</title></programme>
+          <programme channel="Everton.epl" start="20261123200000 +0000" stop="20261123221500 +0000"><title>Everton @ Brentford FC</title></programme>
+        </tv>""")
+        self.ns['_build_football_matchdays'](root, {'Everton.epl'})
+        self.assertEqual([(p.get('start')[:12], p.get('stop')[:12], p.findtext('title'))
+                          for p in root.findall('programme')], [
+            ('202611222200', '202611230000', 'No match today'),
+            ('202611230000', '202611232000', 'Brentford FC vs Everton at 20:00'),
+            ('202611232000', '202611232215', 'Brentford FC vs Everton at 20:00'),
+        ])
 
     def test_omitted_playlist_teams_receive_no_match_today(self):
         import xml.etree.ElementTree as ET
@@ -449,8 +464,7 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         programmes = result.findall("programme[@channel='dummy-12375']")
         self.assertEqual([p.findtext('title') for p in programmes], [
-            *(['Upcoming Match: Chelsea vs Manchester City at 2pm'] * 3),
-            'Chelsea vs Manchester City', 'Match ended', 'Match ended',
+            *(['Chelsea vs Manchester City at 15:00'] * 4), 'Match ended', 'Match ended',
         ])
         self.assertEqual(programmes[3].get('start'), '20260516140000 +0000')
         self.assertEqual(programmes[3].get('stop'), '20260516163000 +0000')
@@ -490,8 +504,7 @@ class AIProcessingTests(unittest.TestCase):
         result = ET.fromstring(gzip.decompress((folder / 'guide.gz').read_bytes()))
         programmes = result.findall("programme[@channel='dummy-12575']")
         self.assertEqual([p.findtext('title') for p in programmes], [
-            *(['Upcoming Match: FC Halifax Town vs. Yeovil at 3pm'] * 3),
-            'FC Halifax Town vs. Yeovil', 'Match ended', 'Match ended',
+            *(['FC Halifax Town vs Yeovil at 15:00'] * 4), 'Match ended', 'Match ended',
         ])
         self.assertEqual(programmes[3].get('start'), '20261101150000 +0000')
         self.assertEqual(programmes[3].get('stop'), '20261101173000 +0000')
@@ -499,8 +512,8 @@ class AIProcessingTests(unittest.TestCase):
             rows = result.findall(f"programme[@channel='{channel_id}']")
             self.assertEqual(len(rows), 4)
             self.assertEqual(rows[0].findtext('title'), 'No match today')
-        active = result.find("programme[@channel='dummy-12578']")
-        self.assertEqual(active.findtext('title'), 'Barrow vs. Eastleigh')
+        active = result.find("programme[@channel='dummy-12578'][@start='20261101110000 +0000']")
+        self.assertEqual(active.findtext('title'), 'Barrow vs Eastleigh at 11:00')
         self.assertEqual(active.get('stop'), '20261101133000 +0000')
         self.assertEqual(result.find("channel[@id='dummy-12575']/display-name").text, 'National League TV 01')
         all_titles = [p.findtext('title') for p in result.findall('programme')]

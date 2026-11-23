@@ -786,6 +786,119 @@ def _normalise_football_notices(root: ET.Element, football_ids: set[str]) -> Non
                 element.text = re.sub(r"\bNext Game:", "Next match:", value, flags=re.I)
 
 
+def _build_football_matchdays(root: ET.Element, football_ids: set[str]) -> None:
+    """Cover free time on each UK match day, keeping separate live programme boundaries."""
+    stamp = "%Y%m%d%H%M%S %z"
+    prefix = re.compile(r"^(?:next (?:match|game)|upcoming (?:match|event)):\s*", re.I)
+    dated = re.compile(r"^Next (?:Match|Game): (.+?) on (\d{2}/\d{2}/\d{4} at \d{2}:\d{2}) GMT$", re.I)
+    pairing = re.compile(r"\s+(?:vs\.?|v\.?|@)\s+", re.I)
+    by_channel = {}
+    for row in root.iter("programme"):
+        channel = row.get("channel")
+        if channel in football_ids:
+            try:
+                start, stop = (datetime.strptime(row.get(key, ""), stamp).astimezone(UTC)
+                               for key in ("start", "stop"))
+            except ValueError:
+                continue
+            if start < stop:
+                by_channel.setdefault(channel, []).append((start, stop, row))
+
+    removed = set()
+    additions = []
+    for channel, rows in by_channel.items():
+        fixtures = {}
+        idle = set()
+        protected = []
+        preview_ends = set()
+        for _, end, entry in rows:
+            teaser = entry.findtext("title", "")
+            if prefix.match(teaser):
+                label = re.sub(r"\s+at \d{1,2}(?:[.:]\d{2})?\s*(?:am|pm)$", "",
+                               prefix.sub("", teaser), flags=re.I)
+                preview_ends.add((end, label.casefold()))
+        for start, stop, row in rows:
+            title = row.findtext("title", "").strip()
+            preview = prefix.match(title)
+            for value in (title, row.findtext("desc", "")):
+                if not prefix.match(value):
+                    continue
+                value = re.sub(r"^Next Match:", "Next Game:", value, flags=re.I)
+                hint = dated.fullmatch(_rewrite_football_text(value))
+                if hint:
+                    try:
+                        kickoff = datetime.strptime(hint[2], "%d/%m/%Y at %H:%M").replace(tzinfo=UTC)
+                    except ValueError:
+                        continue
+                    fixtures.setdefault(kickoff, hint[1])
+                    if preview and value == re.sub(r"^Next Match:", "Next Game:", title, flags=re.I):
+                        row.find("title").text = f"{hint[1]} at {kickoff.astimezone(LONDON):%H:%M}"
+            if preview or title.casefold() in {"no match today", "match ended", "signing off",
+                                               "no further match scheduled"}:
+                idle.add(row)
+                continue
+            protected.append((start, stop))
+            if pairing.search(title) or (start, title.casefold()) in preview_ends:
+                name = re.sub(r"\s+at \d{2}:\d{2}$", "", _rewrite_football_text(title))
+                name = re.sub(r"\s+v(?:s)?\.?\s+", " vs ", name, flags=re.I)
+                fixtures[start] = name
+                row.find("title").text = f"{name} at {start.astimezone(LONDON):%H:%M}"
+
+        if not fixtures:
+            continue
+        horizon = max(stop for _, stop, _ in rows)
+        previews = []
+        previous = None
+        for kickoff, name in sorted(fixtures.items()):
+            midnight = kickoff.astimezone(LONDON).replace(hour=0, minute=0, second=0, microsecond=0)
+            begin = midnight.astimezone(UTC)
+            if previous:
+                begin = max(begin, previous)
+            previous = kickoff
+            if kickoff < min(item[0] for item in rows) or kickoff > horizon or begin >= kickoff:
+                continue
+            # Preserve live games and other genuine programming between midnight and kick-off.
+            cursor = begin
+            for start, stop in sorted(protected):
+                if stop <= cursor or start >= kickoff:
+                    continue
+                if cursor < start:
+                    previews.append((cursor, start, name, kickoff))
+                cursor = max(cursor, stop)
+            if cursor < kickoff:
+                previews.append((cursor, kickoff, name, kickoff))
+        for start, stop, row in rows:
+            if row not in idle:
+                continue
+            cursor = start
+            for begin, end, _, _ in previews:
+                if end <= cursor or begin >= stop:
+                    continue
+                removed.add(row)
+                if cursor < begin:
+                    part = deepcopy(row)
+                    part.attrib.update(start=cursor.strftime(stamp), stop=begin.strftime(stamp))
+                    additions.append(part)
+                cursor = max(cursor, end)
+            if row in removed and cursor < stop:
+                part = deepcopy(row)
+                part.set("start", cursor.strftime(stamp))
+                additions.append(part)
+        for start, stop, name, kickoff in previews:
+            row = ET.Element("programme", channel=channel, start=start.strftime(stamp), stop=stop.strftime(stamp))
+            title = f"{name} at {kickoff.astimezone(LONDON):%H:%M}"
+            ET.SubElement(row, "title").text = title
+            ET.SubElement(row, "desc").text = f"Upcoming match: {title}"
+            additions.append(row)
+    root[:] = [item for item in root if item not in removed]
+    root.extend(additions)
+    # Players and subsequent splitting expect each channel's programmes in time order.
+    football_rows = [row for row in root if row.tag == "programme" and row.get("channel") in by_channel]
+    ordered = iter(sorted(football_rows, key=lambda row: (row.get("channel"), row.get("start", ""))))
+    root[:] = [next(ordered) if row.tag == "programme" and row.get("channel") in by_channel else row
+               for row in root]
+
+
 def _replace_game_with_match(title: str) -> str:
     """Use football terminology in EPL/EFL programme titles."""
     replacements = {"game": "match", "Game": "Match", "GAME": "MATCH"}
@@ -2887,8 +3000,8 @@ def process_epg() -> None:
             or channel_id.replace("event-", "dummy-", 1) in wording_ids
             or any(re.match(r"^SPFL\s*\d+\b", name, re.I) for name in names)):
             wording_ids.add(channel_id)
-    _normalise_football_notices(root, wording_ids | football_channel_ids | football_mirror_ids
-                                | bare_league_ids | epl_targets.keys())
+    matchday_ids = wording_ids | football_channel_ids | football_mirror_ids | bare_league_ids | epl_targets.keys()
+    _normalise_football_notices(root, matchday_ids)
     _normalize_paramount_branding(root, set(paramount_targets))
 
     # Apply after schedule generation so provider rows and Upcoming Match
@@ -2915,7 +3028,8 @@ def process_epg() -> None:
 
     _fill_polish_epg_gaps(root, datetime.now(UTC))
     _fill_uk_news_epg_gaps(root, datetime.now(UTC))
-    _split_long_event_listings(root, handled_channel_ids | football_mirror_ids | event_mirror_ids | bare_league_ids)
+    _build_football_matchdays(root, matchday_ids)
+    _split_long_event_listings(root, matchday_ids | handled_channel_ids | football_mirror_ids | event_mirror_ids | bare_league_ids)
     tree = ET.ElementTree(root)
     with gzip.open(
         OUTPUT_GZ_FILE, "wb", compresslevel=GZIP_COMPRESSLEVEL
