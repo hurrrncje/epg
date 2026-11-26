@@ -11,7 +11,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "008c084c830d217f1db4375326c1b5cc7979eb90d765fa58af34d7531f212ef5": {
       "created_at": "2026-11-14T06:31:11.948499+00:00",
@@ -923,6 +923,12 @@
         "description": "Coverage of Stars against Golden Knights.",
         "raw": "Stars @ Golden Knights"
       }
+    },
+    "10cc423e79db942f2c9cdf2afa33819c56c7742276099e643a0aaed96b5c76f7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "10e77b62a53df1375feca2bdfac4a9eb4f720287d06255d5b313c6502783e2a3": {
       "created_at": "2026-11-08T15:17:14.088543+00:00",
@@ -2059,6 +2065,12 @@
         "raw": "Stars @ Golden Knights"
       }
     },
+    "2259cd8177c61b212862f93d0980993a832e6d2d1af05c56d175023fdf2d8803": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+    },
     "228644c5c5b57b04a1f240468245e712c2dac61206b1540a2b2e138498908af2": {
       "created_at": "2026-11-04T15:31:01.992679+00:00",
       "kind": "live-title",
@@ -2659,6 +2671,12 @@
         "raw": "Mekelle 70 Enderta vs. Arba Minch"
       }
     },
+    "29ed3a8e7d2c227ff130b34f2af7460c04a053a5aaaa1b73befecbfab6fff5b3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+    },
     "2a0363b759503cde8f1217b504bc35ae89bd48a998370c9b81599348cb571fc3": {
       "created_at": "2026-11-15T06:33:59.821287+00:00",
       "kind": "live-title",
@@ -2870,6 +2888,12 @@
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks.",
       "title": "Ottawa Senators vs. Anaheim Ducks"
     },
+    "2c73ceb0764d81634df087ddd29a25b07f56840ad6a27c6ea9fe4efc50bae631": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+    },
     "2c811530d6b29f550608e741acffd076d60688a1787575ba1f00a090471e757d": {
       "created_at": "2026-11-07T06:27:19.927226+00:00",
       "kind": "live-title",
@@ -3014,7 +3038,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "2eb9b4b52ec1d89dc8e29e4fdeff9abba3731deefcea437e6051a0421433792b": {
       "created_at": "2026-11-25T10:30:02.497350+00:00",
@@ -3287,7 +3311,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "33135972befe597dc96b7c5fd7ad0d523b20653149a7937db08e370b204df75f": {
       "created_at": "2026-11-25T10:30:02.497380+00:00",
@@ -4199,7 +4223,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "409709f6a10a6a18e2eb76fa753491f7f03dbb43f0e93ebbcfcd135577a780c3": {
       "created_at": "2026-11-15T19:27:37.024317+00:00",
@@ -4613,6 +4637,12 @@
       "result": "Scottish Premiership match Aberdeen vs Falkirk scheduled for Oct 28 2026 at 19:45 GMT.",
       "title": "Aberdeen vs Falkirk"
     },
+    "478b49dd1d6c8d076aaddec94f5d6f12da4aeae972706d152bb6d31375a422e2": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+    },
     "47d064dcf43c0be2ebcaf99d7aac7ea7f6bf8e03ebba9ad3dba1363d78849368": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T03:31:18.914269+00:00",
@@ -4804,6 +4834,12 @@
       "result": "#22 Florida State takes on Miami in a college basketball game.",
       "title": "#22 Florida State vs. Miami"
     },
+    "4ae578a63a31e0c48f5bf2cb4ae5799e8382950c3e75ffa951194e0965f2b9f0": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+    },
     "4af095635f51f5fef4f410a10c4a33d0792e4573dcbc21e8a5b8df6a308d6a19": {
       "created_at": "2026-11-07T02:27:15.103052+00:00",
       "kind": "live-title",
@@ -4901,7 +4937,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "4c590bbebfcb3675d6f11aef76ea3f6741be67ed7fe313948f793b56d164c22a": {
       "created_at": "2026-11-15T15:20:39.075639+00:00",
@@ -4941,6 +4977,12 @@
       "kind": "event-description",
       "result": "NCAA Division I men’s soccer match: San Diego vs. Seattle U at Championship Field",
       "title": "San Diego vs. Seattle U"
+    },
+    "4dbc57174b562b800370f7618fff239043da0a8c17fae66f4667bce8755d8f24": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "4e78b1c1bb6319ca96b5193306fc3185a1fea234ce27a382f948654b13ea3705": {
       "created_at": "2026-11-08T15:17:55.840695+00:00",
@@ -5374,6 +5416,12 @@
       "result": "Western Illinois faces Southern Indiana in a college basketball game.",
       "title": "Western Illinois vs. Southern Indiana"
     },
+    "5478c84a00f46bfc89045166e680612a0fad9b86c648ae795d186f07ed07ae0e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+    },
     "54bd17f23fbfadb3f80cbf9168e1125892769d4f94b1d047f5bd8cc76431f240": {
       "created_at": "2026-11-14T13:34:29.850269+00:00",
       "kind": "live-title",
@@ -5556,6 +5604,12 @@
       "kind": "event-description",
       "result": "The Rich Eisen Show episode, 3 Nov 2026, 17:00 GMT.",
       "title": "Tue, 11/3 - The Rich Eisen Show"
+    },
+    "57803f369b170572d0f89f99d3e40c8e109b29e81fd6f1151cc281950a1ab866": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "578b9ad627da7095ae8d19ba62a36bef78ad8adc84b58ff5500b92ff24e1a944": {
       "created_at": "2026-11-14T13:34:13.414019+00:00",
@@ -7875,6 +7929,12 @@
       "result": "College basketball game UC Santa Barbara Gauchos vs Cal State Northridge Matadors scheduled for Oct 29 2026.",
       "title": "UC Santa Barbara vs. Cal State Northridge"
     },
+    "7db00464d951ae936e8c24ce43623ce1fc6748fbb82af8e98b8cf36d085f54a9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+    },
     "7db5ba3523b49074419d5ff049ebc4c2a55bfb1a39a3a48db236329de7e35b97": {
       "created_at": "2026-11-17T16:41:14.527040+00:00",
       "kind": "live-title",
@@ -7967,6 +8027,12 @@
         "description": "Coverage of Lightning against Blue Jackets.",
         "raw": "Lightning @ Blue Jackets"
       }
+    },
+    "7eef7cdc2627390c7302b0149722270a517330e32371d3fd8f97482485e8bdac": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "7f0fbd18be68b2092b5a982280cb7f6206420e2103178c969f925226a96fa23b": {
       "created_at": "2026-11-23T06:46:50.391751+00:00",
@@ -8949,6 +9015,12 @@
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
     },
+    "8fdc02315ecd837d5fa38432ab48ce33de2f221b4d309daac925e7b4e56a9718": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:08.315795+00:00"
+    },
     "8ff77e6e2b40fbf0c95d0408e458f72fc20f9fb108aeb4b3c479d35b61b81511": {
       "created_at": "2026-11-06T05:37:48.861310+00:00",
       "kind": "live-title",
@@ -9197,6 +9269,12 @@
         "description": "Coverage of Cage Warriors 212.",
         "raw": "2/3pm Cage Warriors 212"
       }
+    },
+    "934af85d29a4b061b40ae80b8da9355a17046c2425effe141718d4d9b9361e24": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "93a3f2fc00f2f5bc8c9593bf8c7d81cf424b0d48d782bd940449f5d3a217406b": {
       "created_at": "2026-11-05T13:54:36.011714+00:00",
@@ -9591,6 +9669,12 @@
       "result": "Premier League match Tottenham Hotspur vs Crystal Palace scheduled for Oct 31 2026 at 17:30 GMT.",
       "title": "Tottenham Hotspur vs Crystal Palace"
     },
+    "9bf0e30fd10b581c084661efc5bddfc627174ead7eb0b484d358cfb95a2c6906": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+    },
     "9c092675467c7b13b5741c37008b8feddf0df95f05a19d487690a65e54ad3c1a": {
       "created_at": "2026-11-14T06:31:11.948509+00:00",
       "kind": "live-title",
@@ -9805,7 +9889,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
       "created_at": "2026-11-13T15:27:17.807884+00:00",
@@ -10705,6 +10789,12 @@
         "raw": "Kings @ Bruins"
       }
     },
+    "ac854db08505f3e23f2c4dc71e72911f4086ff67962feb3a4b2e07a41fcd0d7a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+    },
     "ac88786f5a25d69b9b7d5896aea021791a79517d832201ca7d2dad76bcfe9aa9": {
       "created_at": "2026-11-20T10:37:33.605027+00:00",
       "kind": "live-title",
@@ -10806,7 +10896,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:23:47.773236+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "ae3f38d5eceb4d4511c97d2795f02b84118c45ecbc6626547dd501935200fb08": {
       "created_at": "2026-11-15T17:18:43.376463+00:00",
@@ -11741,6 +11831,12 @@
       "kind": "event-description",
       "result": "Leumit League game: Sektzia Nes Tziona take on Shimshon Tel Aviv.",
       "title": "Sektzya Ness Ziona vs. Shimshon Tel Aviv"
+    },
+    "bd00323751f2f8139ef6b0bf8281f30e6f5b3f5ec6b2fc927c7a4e21dde5530f": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "bd10825e93b8a5500b9cc437ba8c9b10ceb1af6b1b689efe152adb8835763415": {
       "context": "DAZN UK event scheduled 28/10/2026 02:30 GMT",
@@ -12784,6 +12880,12 @@
         "raw": "Mississippi Valley State @ Washington"
       }
     },
+    "cd35312b1b1059281b9eb5eb526581e1f8834faa45eaa6e7b1d1db544c59fb9c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+    },
     "cd41383604b8dadf96fbe3de97f5f5eca4dc0c58bae8aa0b80beafa6ba17b279": {
       "created_at": "2026-11-20T05:40:59.837958+00:00",
       "kind": "live-title",
@@ -12833,7 +12935,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "ce318246c2e5bd62597aa21e94c602b5802b89bd0a4231d5c915fc5759d3e193": {
       "created_at": "2026-11-15T19:27:37.024313+00:00",
@@ -13310,6 +13412,12 @@
         "raw": "Pau-Lacq-Orthez vs. Strasbourg"
       }
     },
+    "d4a658e56042037d1865409f45c753d95191a27bc22556fce0cb90ab7f8e676b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+    },
     "d4b3bbd22c0716236b89bdd954ee309dc181501b515fed890854da28cc95da40": {
       "created_at": "2026-11-24T16:23:58.593221+00:00",
       "kind": "live-title",
@@ -13345,6 +13453,12 @@
         "description": "Coverage of Greenbrier Tip-Off: Mississippi State against Xavier.",
         "raw": "Greenbrier Tip-Off: Mississippi State vs. Xavier"
       }
+    },
+    "d545938d56235f8aa92a2af604ac9238b4a7e0a4cdb093cf2d808a201fc8715d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "d56a8159c1f241944755a4dd39021d9e1a62753ce99eb3be4b2a1206439ace03": {
       "created_at": "2026-11-09T15:34:57.820101+00:00",
@@ -14073,7 +14187,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:23:47.773236+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "e0c417c67533d716ef8a67d734f52188e584d070a48ab1b6c651159813f027c4": {
       "created_at": "2026-11-21T07:51:50.725173+00:00",
@@ -14745,13 +14859,13 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "ebdb32db944b70dededa944bc86c251a0ca15060ce7815bfc9b5ddcb621c1d60": {
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
@@ -15268,7 +15382,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "f4b5b6d4bfda9835f15ad358c541f4137ff063843f05dc00592a1505b616180d": {
       "created_at": "2026-11-13T05:39:21.524020+00:00",
@@ -15902,8 +16016,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-26T19:08:29.682924+00:00",
-    "groq": "2026-11-26T13:08:56.930279+00:00"
+    "gemini": "2026-11-27T04:36:06.054051+00:00"
   },
   "version": 1
 }
