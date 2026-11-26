@@ -243,12 +243,6 @@
         "raw": "Jets @ Bruins"
       }
     },
-    "04970e4eab969540123143a557e8967406f6f63dd4094febdb1eeda76a6a508b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
-    },
     "04a74cb16905382a45eabf1cff71cafc2b87c6fb63961bd5ec04d3417347df75": {
       "created_at": "2026-11-11T13:53:16.395623+00:00",
       "kind": "live-title",
@@ -1141,7 +1135,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "1365135376c92fec2f4832d894334f04400c0a833ef8dc3621688aa99cd60a14": {
       "created_at": "2026-11-06T05:37:50.696335+00:00",
@@ -1728,7 +1722,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "1e287c3f60157abdbd19ca7467c099a577ce275ed29585fc6e7dd73e6733b97a": {
       "created_at": "2026-11-21T16:25:14.230406+00:00",
@@ -1874,12 +1868,6 @@
       "kind": "event-description",
       "result": "UEFA Champions League multiview coverage of the league‑stage matches scheduled for 3 Nov 2026.",
       "title": "UEFA Champions League | Tuesday: Multiview"
-    },
-    "1f3d90f22cf3b4e9f50f88845cd5c3ba494e90891314dcd0ee9550fccdbb9079": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
     },
     "1f6554cb0cee475f445026531bbce3e15882ba359914cd05c134f1d762e7620e": {
       "created_at": "2026-11-20T05:40:59.837969+00:00",
@@ -2919,12 +2907,6 @@
         "raw": "Ole Miss @ Ohio State"
       }
     },
-    "2d2e746121af165cdb99d7c8feaf15c183a36bfdd10d089648fd777999dc4eb1": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
-    },
     "2d342084041aff1e0e51bb484acd06ae7f095904754c1b7210e7d36b36b77dbe": {
       "created_at": "2026-11-06T13:50:44.090590+00:00",
       "kind": "live-title",
@@ -3241,7 +3223,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -4638,7 +4620,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "46da3391c0930e3137d7480353c50218c2b1ea2bead926f7fd87f2146ffa8abf": {
       "context": "Aberdeen.spfl; Next Game: Aberdeen vs Falkirk on 28/10/2026 at 19:45 GMT",
@@ -4760,12 +4742,6 @@
         "description": "Coverage of Jones against Pettus.",
         "raw": "Jones vs. Pettus"
       }
-    },
-    "49f3a6e7dd1f46230181936e1177ec9952e7664ab0a416f0ddd00d9d7028fc13": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
     },
     "4a0085a9eed3443af7d31a20e22443f9276514cf2167e6fefe22efe92f304296": {
       "context": "Disney+ Events event scheduled 02/11/2026 01:00 GMT",
@@ -4987,7 +4963,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -5454,12 +5430,6 @@
         "description": "Coverage of USAC Southwest Sprints at Central AZ Raceway.",
         "raw": "USAC Southwest Sprints Central AZ"
       }
-    },
-    "54f18633eb99a738a6d1bd2e0ea72b27172576470570b4e7e8d3bbd7575bdb06": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
     },
     "54f473851639fd2da92dc17e4a355d10bbfaa942980df1a3b71e2e5342eeb35e": {
       "created_at": "2026-11-13T15:26:57.908651+00:00",
@@ -8426,7 +8396,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "8401a35f0e674f62c394d8013ba4b6e91c814af07972dc7559a5c40273442970": {
       "created_at": "2026-11-14T13:34:29.850275+00:00",
@@ -10245,7 +10215,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "a3b4dc90bb2e568b404f0c5c36b349ff39cb51588f66bd623747531de22e7f03": {
       "context": "Disney+ Events event scheduled 02/11/2026 21:00 GMT",
@@ -12134,12 +12104,6 @@
         "raw": "Predators @ Golden Knights"
       }
     },
-    "c23bc1268cff9d16f03301a0ccaaa06dc1b56ecc0449eb423daed885819f3cbf": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
-    },
     "c257c1b9261d7b110f0f1718c0d75c95643af16fdc3b46effa156cbeb4c71c4a": {
       "created_at": "2026-11-19T15:37:39.805985+00:00",
       "kind": "live-title",
@@ -12651,12 +12615,6 @@
         "raw": "Nicaragua U23 vs. Puerto Rico U23"
       }
     },
-    "c9827ea338eac129cc1ea10e4dd4e46efe7f8160e5062282e210f0bf573cd2a1": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
-    },
     "c9a9a8cf029a15034dfe3bfd57c394dcb98e5090081fdca4e6e7ab1171dee71b": {
       "created_at": "2026-11-13T15:26:57.908654+00:00",
       "kind": "live-title",
@@ -12884,10 +12842,13 @@
       }
     },
     "cc9cc8bd93470a04f185c1592353b76663b3763fbcf3a82e0827ea9ece8fe04c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-26T03:05:49.986094+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
+      "result": {
+        "clean_title": "Real Esteli vs Rancho Santana",
+        "description": "Coverage of Real Esteli against Rancho Santana.",
+        "raw": "Real Estelí FC vs. Rancho Santana FC"
+      }
     },
     "ccac60f7e0495b011e62834ea9976e67c024362888c680da51bb674acb253908": {
       "created_at": "2026-11-21T05:35:11.812308+00:00",
@@ -13353,7 +13314,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "d35c677cba739877133a8c8f6907cd00a746c7656c033f477a0a0baa82b96be4": {
       "created_at": "2026-11-20T06:37:15.185494+00:00",
@@ -13469,6 +13430,12 @@
         "description": "Coverage of Great Britain against Venezuela.",
         "raw": "Great Britain U23 vs. Venezuela U23"
       }
+    },
+    "d50af920eeb190324b4bf39db73ca6fe635f959fc15f7232cdf01714f13fd4b6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "d51d47ff985de021a72f48c16b98af959d9fefc47721d2c0afbfccc6d9c73505": {
       "created_at": "2026-11-08T05:29:51.590115+00:00",
@@ -13985,12 +13952,6 @@
         "raw": "Venezuela U23 vs. Puerto Rico U23"
       }
     },
-    "dda0a37a47feb9fdaefc5874a2f5d5c2f9f693d6a3048cc573f204ad521577d5": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
-    },
     "dda4cceddd4afcc751093137822128aff2c1c5c16916826ba9ac309fbb2643d2": {
       "created_at": "2026-11-21T07:51:50.725144+00:00",
       "kind": "live-title",
@@ -14199,12 +14160,6 @@
         "raw": "Fairfield @ Wisconsin"
       }
     },
-    "e0ab2c8a0ae7d3c79c09535ec551be7fcdc8908c5866311a901060bb3132c0ff": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
-    },
     "e0aeb2a02973b1a90cbfd5d92d7061622f47568a1b413ecc1f39f8df8cfa812e": {
       "created_at": "2026-11-14T13:34:07.126887+00:00",
       "kind": "live-title",
@@ -14229,12 +14184,6 @@
       "kind": "event-description",
       "result": "New Jersey Devils vs Colorado Avalanche NHL game at Ball Arena, Denver, Oct 28 2026, Avalanche win 5‑2.",
       "title": "New Jersey Devils vs. Colorado Avalanche (Devils Broadcast)"
-    },
-    "e0fb079bbd0f49f846b6b01fcecc3da81062881a00d8378c8e799a249e36295e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:14.819412+00:00"
     },
     "e0fbc041549137377660ab2d9840f0dc8360515795ff8fc6719f8b01a419d0e6": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:00 GMT",
@@ -15732,7 +15681,7 @@
       "failed": true,
       "failure_policy": 2,
       "kind": "live-title",
-      "retry_after": "2026-11-25T20:26:15.336966+00:00"
+      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "f993eef966e866a22b97d08726935edf136684ee04f4ca5e0a5113f884c98094": {
       "created_at": "2026-11-07T13:33:23.422113+00:00",
@@ -16080,7 +16029,7 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-26T02:11:12.211538+00:00"
+    "gemini": "2026-11-26T09:05:47.494290+00:00"
   },
   "version": 1
 }
