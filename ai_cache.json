@@ -1,18 +1,17 @@
 {
   "entries": {
-    "00254e08a55ba4c6d1e7c31f4367b7c8419782ddbd0b526abedff8cb66d19c7d": {
-      "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770315+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
-      "title": "Millwall FC vs Derby County"
-    },
     "00474045440fc7294f809ecdb5f966361ecaae45083bad7930718bc44618fa71": {
       "context": "Paramount+ event scheduled 02/11/2026 01:00 GMT",
       "created_at": "2026-11-02T06:42:29.061705+00:00",
       "kind": "event-description",
       "result": "CBS Sports HQ Postgame recap of recent sports events.",
       "title": "cbssportshq: The Postgame"
+    },
+    "0056ef82a5e1bb3d9d25c1374a5c460bc08b0dbfc41495dd06423d73ae6acc37": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
     },
     "008c084c830d217f1db4375326c1b5cc7979eb90d765fa58af34d7531f212ef5": {
       "created_at": "2026-11-14T06:31:11.948499+00:00",
@@ -123,6 +122,15 @@
       "result": "Women’s Group Stage match between Colombia and Ukraine in the Dakar 2026 Youth Olympic Futsal Tournament.",
       "title": "Women | Group Stage | Dakar 2026: Colombia - Ukraine"
     },
+    "0258a537ef4ca68baf17727436b9579958794d7148f3c0730e7e03a880b6bed2": {
+      "created_at": "2026-11-26T13:08:47.773212+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Croatia U17 vs Cuba U17",
+        "description": "Coverage of Croatia U17 against Cuba U17.",
+        "raw": "Croatia U17 vs. Cuba U17"
+      }
+    },
     "026286d2bf24887b876ff5f32eb190476eaa29fdf381bd1a98981f9ffbb77e82": {
       "created_at": "2026-11-24T16:23:55.945455+00:00",
       "kind": "live-title",
@@ -201,13 +209,6 @@
         "description": "Coverage of Mammoth against Maple Leafs.",
         "raw": "Mammoth @ Maple Leafs"
       }
-    },
-    "037f00ad7c15b09d3f1a9a46e9d4c5a109010c0b8ea66c1ba427466e740b1da0": {
-      "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770312+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
-      "title": "Crewe Alexandra FC vs Barnet FC"
     },
     "0413aabb229fadc9ef56ea4d8bcc2f46d36a4b32173090dc2ce6259fda2098be": {
       "context": "Disney+ Events event scheduled 01/11/2026 18:25 GMT",
@@ -588,13 +589,6 @@
         "raw": "Nebraska @ Rutgers"
       }
     },
-    "0aa563289d30790f75bea244ab55b5d4499c760d5f6b25b3f261943216a3db0d": {
-      "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770309+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
-      "title": "Colchester United FC vs Walsall FC"
-    },
     "0af6b1d43eeebbb0ce5ecf5130acc6184c6df0c9aa6c431e519167ca490f82de": {
       "context": "DAZN UK event scheduled 03/11/2026 02:00 GMT",
       "created_at": "2026-11-03T02:30:26.191771+00:00",
@@ -772,13 +766,6 @@
         "raw": "Inter Moengotapoe vs. Inter Wanica"
       }
     },
-    "0d9061dc38829cca8fef26aa970967045dd26f0b1b074d7130796454261511f8": {
-      "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770318+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Peterborough United and Luton Town at 15:00 GMT on 31 Oct 2026.",
-      "title": "Peterborough United FC vs Luton Town"
-    },
     "0daa7c1c9de24014849b65c02ee1d059c797c41a526e5d618c5ad5cd3ee70730": {
       "created_at": "2026-11-08T15:17:14.088536+00:00",
       "kind": "live-title",
@@ -937,13 +924,6 @@
         "raw": "Stars @ Golden Knights"
       }
     },
-    "10ac8dd867aee93b4d40214188aa916f982f50ff4d5cf55ef0855d9af85c94d9": {
-      "context": "EPLFulham.uk; Next Game: Fulham vs Crystal Palace on 28/10/2026 at 19:45 GMT",
-      "created_at": "2026-10-27T03:17:18.770350+00:00",
-      "kind": "event-description",
-      "result": "Premier League clash between Fulham and Crystal Palace at 19:45 GMT on 28 Oct 2026.",
-      "title": "Fulham vs Crystal Palace"
-    },
     "10e77b62a53df1375feca2bdfac4a9eb4f720287d06255d5b313c6502783e2a3": {
       "created_at": "2026-11-08T15:17:14.088543+00:00",
       "kind": "live-title",
@@ -1050,6 +1030,15 @@
         "raw": "LISCR FC vs. FC Fassell"
       }
     },
+    "12979684fa038482cd53d0397bc51b0bcec9324de697f424e9a2e2abde7980b3": {
+      "created_at": "2026-11-26T13:08:47.773216+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Diriangén FC vs Matagalpa FC",
+        "description": "Coverage of Diriangén FC against Matagalpa FC.",
+        "raw": "Diriangén FC vs. Matagalpa FC"
+      }
+    },
     "12998588bc9258c7842e9e44c29620b694cbc18b7d3cf58915939589a21928f1": {
       "created_at": "2026-11-06T16:30:46.812805+00:00",
       "kind": "live-title",
@@ -1131,12 +1120,6 @@
         "raw": "ART Municipal Jalapa vs. San Marcos FC"
       }
     },
-    "135fc1bb1ff5c8d6ab496cf63bd3c0297a2ec399b9194c2f083504f6c73daf7d": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
-    },
     "1365135376c92fec2f4832d894334f04400c0a833ef8dc3621688aa99cd60a14": {
       "created_at": "2026-11-06T05:37:50.696335+00:00",
       "kind": "live-title",
@@ -1153,6 +1136,15 @@
         "clean_title": "BYU @ UTA, TEX @ MIZ, CLEM @ SYR, ARK @ AUB",
         "description": "Coverage of BYU against UTA, TEX @ MIZ, CLEM @ SYR, ARK @ AUB.",
         "raw": "BYU @ UTA, TEX @ MIZ, CLEM @ SYR, ARK @ AUB"
+      }
+    },
+    "13c0caa4627d3b1a873f96badb47a64e78922ce831415d2d1c29bfc781402ff2": {
+      "created_at": "2026-11-26T13:08:47.773221+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Fort Myers Tip-Off: DePaul vs Pittsburgh",
+        "description": "Coverage of Fort Myers Tip-Off: DePaul against Pittsburgh.",
+        "raw": "Fort Myers Tip-Off: DePaul vs. Pittsburgh"
       }
     },
     "13cac4189278010af75d4861de8e13d9861f500cdf9377ff30ea8ee6fc72d6ad": {
@@ -1449,6 +1441,15 @@
       "result": "UEFA Youth League match: Barcelona U19 vs. Aston Villa U19.",
       "title": "UEFA Youth League: Barcelona U19 - Aston Villa U19"
     },
+    "18d4aa714fa7ea0c8f0e6e1f57b252766aacbb772e808e9494c159c37e7ffbd3": {
+      "created_at": "2026-11-26T13:08:33.122775+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Bears @ Lions",
+        "description": "Coverage of Bears against Lions.",
+        "raw": "Bears @ Lions"
+      }
+    },
     "192bf157aab192ba42876991e3168a9bcd66f591557a51b878730c34d245afd4": {
       "created_at": "2026-11-06T04:37:05.962192+00:00",
       "kind": "live-title",
@@ -1718,12 +1719,6 @@
         "raw": "Flames @ Kings"
       }
     },
-    "1dfbb6eeb5e0f7e6e29975baeb25faf294d48fc4fa43ae597263820f1d3a4d3a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
-    },
     "1e287c3f60157abdbd19ca7467c099a577ce275ed29585fc6e7dd73e6733b97a": {
       "created_at": "2026-11-21T16:25:14.230406+00:00",
       "kind": "live-title",
@@ -1983,6 +1978,15 @@
       "result": "USL League One quarterfinal: Athletic Club Boise vs. One Knoxville SC.",
       "title": "Athletic Club Boise vs. One Knoxville SC (Quarterfinal)"
     },
+    "20eb7a177b18540d58c1067a872b6eec236ae6a8dd32cb6b0cc1c9b4e70a6ff8": {
+      "created_at": "2026-11-26T13:08:33.122767+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "ART Municipal Jalapa vs. San Marcos FC",
+        "description": "Coverage of ART Municipal Jalapa against San Marcos FC.",
+        "raw": "ART Municipal Jalapa vs. San Marcos FC"
+      }
+    },
     "2146057aa2df145eeac49dd5d9ad46c0cab5c43b1a8269bb32972b1bdfbe6a62": {
       "created_at": "2026-11-14T06:31:37.561343+00:00",
       "kind": "live-title",
@@ -2099,13 +2103,6 @@
         "description": "Coverage of Ducks against Oilers.",
         "raw": "Ducks @ Oilers"
       }
-    },
-    "2341816f2e7a50a5b4c92f6692cdfabc9d4f840b785687c5f4956055729ed344": {
-      "context": "EFLWiganAthletic.uk; Next Game: Leicester City vs Wigan Athletic on 27/10/2026 at 19:45 GMT",
-      "created_at": "2026-10-27T03:17:18.770342+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Leicester City and Wigan Athletic at 19:45 GMT on 27 Oct 2026.",
-      "title": "Leicester City vs Wigan Athletic"
     },
     "235395b9b81edbbab168d825180a916c9923db5b18acb9a7c8231b1f3caf2a7b": {
       "created_at": "2026-11-19T15:38:08.735007+00:00",
@@ -2250,6 +2247,15 @@
         "clean_title": "Predators vs Hurricanes",
         "description": "Coverage of Predators against Hurricanes.",
         "raw": "Hurricanes @ Predators"
+      }
+    },
+    "2583a12495ed72e41aa76974887912a9d710f2ba9e5cc458acb4a81d8fff177d": {
+      "created_at": "2026-11-26T13:08:33.122777+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Chiefs @ Bills",
+        "description": "Coverage of Chiefs against Bills.",
+        "raw": "Chiefs @ Bills"
       }
     },
     "2599eb11ed48ddfe4e47388ad79ea88e0be7a395a1cb737ef1a0513abc934314": {
@@ -2739,13 +2745,6 @@
       "result": "Youth Olympic Futsal Women’s Group A match: Senegal vs. Venezuela.",
       "title": "Women | Group Stage | Dakar 2026: Senegal - Venezuela"
     },
-    "2b0871023a97ef1c364fa4d1a60504a19c63a6180df45483685a4560c383d3a4": {
-      "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770340+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship clash between West Ham United and West Bromwich Albion at 15:00 GMT on 31 Oct 2026.",
-      "title": "West Ham United vs West Bromwich Albion"
-    },
     "2b3b434808b86cbe9e0a82458c3449f68d5decf878f91f05d84a8dd27dc2dfe0": {
       "created_at": "2026-11-23T06:46:50.391748+00:00",
       "kind": "live-title",
@@ -3011,6 +3010,12 @@
         "raw": "Senators @ Golden Knights"
       }
     },
+    "2e5d918325d8925f86e13a0b6c4290b27b78c50761ca253014d6e1176f20496d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+    },
     "2eb9b4b52ec1d89dc8e29e4fdeff9abba3731deefcea437e6051a0421433792b": {
       "created_at": "2026-11-25T10:30:02.497350+00:00",
       "kind": "live-title",
@@ -3219,12 +3224,6 @@
         "raw": "Syracuse @ Indiana"
       }
     },
-    "326113ec529975ace7394f2082d603291455bd7eef1aa367992e1dc1d55004a5": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
-    },
     "3261350bd81f7a3ce4fda99109f9c5d4d67e65389527d6f172f742f64e96241a": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
       "created_at": "2026-10-31T21:16:12.334902+00:00",
@@ -3283,6 +3282,12 @@
         "description": "Coverage of Steelers against Bengals.",
         "raw": "Steelers @ Bengals (Spanish Broadcast)"
       }
+    },
+    "330bb729f3c380ad6d8b6e7095a268551a310ffec241b5d64c9111309ace318c": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
     },
     "33135972befe597dc96b7c5fd7ad0d523b20653149a7937db08e370b204df75f": {
       "created_at": "2026-11-25T10:30:02.497380+00:00",
@@ -3588,13 +3593,6 @@
         "description": "Coverage of London Lions against Surrey 89ers.",
         "raw": "London Lions vs. Surrey 89ers"
       }
-    },
-    "37395df1f6ae7b4b23b9ebfac30dec92d4331ed5d39137a4e9dfdc6c10d060a9": {
-      "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770337+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two match between Stockport County and AFC Wimbledon at 15:00 GMT on 31 Oct 2026.",
-      "title": "Stockport County vs AFC Wimbledon"
     },
     "37466b10226367431e41ab7036ff9363eaf27ac3a5796bd210cf4c764b77191f": {
       "context": "Disney+ Events event scheduled 02/11/2026 22:00 GMT",
@@ -3937,13 +3935,6 @@
         "raw": "Japan U23 vs. Republic of Korea U23"
       }
     },
-    "3d3be574f4ef7d480adb58433a5581b154b536b5f46636a0cc296edb24290a4e": {
-      "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770320+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Accrington Stanley and Northampton Town at 15:00 GMT on 31 Oct 2026.",
-      "title": "Accrington Stanley FC vs Northampton Town FC"
-    },
     "3d878bae5743dde267ae4c097d25766324d6d7abd59b84b73a0818241d8d3fb0": {
       "context": "Serie A fixture scheduled 02/11/2026 17:30 GMT",
       "created_at": "2026-11-02T17:31:56.705953+00:00",
@@ -4204,6 +4195,12 @@
         "raw": "Chinese Taipei U23 vs. Nicaragua U23"
       }
     },
+    "4093b072e41dd26592819d8b0aa148a92d2db2358362facf4f54f1dfd2796726": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+    },
     "409709f6a10a6a18e2eb76fa753491f7f03dbb43f0e93ebbcfcd135577a780c3": {
       "created_at": "2026-11-15T19:27:37.024317+00:00",
       "kind": "live-title",
@@ -4316,13 +4313,6 @@
         "description": "Coverage of Costa Rica U19 against Honduras U19.",
         "raw": "Final | Costa Rica U19 vs. Honduras U19"
       }
-    },
-    "4262461b8a7ba17da42c97295d13791b68f2e499d86851875877eb1452db0d6d": {
-      "context": "EFLLutonTown.uk; Next Game: Peterborough United FC vs Luton Town on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770318+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Peterborough United and Luton Town at 15:00 GMT on 31 Oct 2026.",
-      "title": "Peterborough United FC vs Luton Town"
     },
     "427cb433db679b59aa6248726137db836a4ee50b60606d5aa25366c6072b6088": {
       "created_at": "2026-11-07T14:24:37.317143+00:00",
@@ -4616,25 +4606,12 @@
       "result": "The Messi Cup 2026 final, a club football match featuring Lionel Messi’s team against the tournament’s runner‑up, is scheduled for 21:55 GMT on 01/11/2026.",
       "title": "Messi Cup 2026 (Final)"
     },
-    "46944abd418dfdabdb322b7fe585c47f68c09f37e1eb16fe3844f32da8e70280": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
-    },
     "46da3391c0930e3137d7480353c50218c2b1ea2bead926f7fd87f2146ffa8abf": {
       "context": "Aberdeen.spfl; Next Game: Aberdeen vs Falkirk on 28/10/2026 at 19:45 GMT",
       "created_at": "2026-10-29T06:23:30.006280+00:00",
       "kind": "event-description",
       "result": "Scottish Premiership match Aberdeen vs Falkirk scheduled for Oct 28 2026 at 19:45 GMT.",
       "title": "Aberdeen vs Falkirk"
-    },
-    "4723142829a05d3d457bdb0c0a7534fe5699073cfee9059a7aafa4d179457a20": {
-      "context": "EFLOldhamAthletic.uk; Next Game: Oldham Athletic AFC vs Crawley Town FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770322+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
-      "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
     "47d064dcf43c0be2ebcaf99d7aac7ea7f6bf8e03ebba9ad3dba1363d78849368": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
@@ -4920,12 +4897,11 @@
         "raw": "2026 Global Series: Kraken @ Hurricanes"
       }
     },
-    "4c48d6e8f72cad4cf43bd9b7afd4c1cd2d2bc2f987106b174036ed347a521308": {
-      "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770302+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
-      "title": "Bolton Wanderers FC vs Bristol City FC"
+    "4c49166318b60fd9a1eafa8ce0161f44223ee7873f98f152ced6eac91b715747": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
     },
     "4c590bbebfcb3675d6f11aef76ea3f6741be67ed7fe313948f793b56d164c22a": {
       "created_at": "2026-11-15T15:20:39.075639+00:00",
@@ -4958,12 +4934,6 @@
       "kind": "event-description",
       "result": "Rivier Raiders play the UMass Lowell River Hawks in a men’s college basketball game.",
       "title": "Rivier vs. UMass Lowell"
-    },
-    "4dad2bd3e6379e40803546c62b22f3ad45dc56f060f720a75ab4b964ace72e31": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "4daeb72d965bc498a492590c7f553d4140dbc0c368991323070673d5169e5902": {
       "context": "Disney+ Events event scheduled 01/11/2026 02:00 GMT",
@@ -5535,13 +5505,6 @@
       "result": "Scottish Cup fifth‑round match between Celtic and Dundee, scheduled for 7 February 2027 at 17:30 GMT.",
       "title": "Celtic vs Dundee"
     },
-    "5672a157c4e7e6f823e6c4e7aafed3732d70d9c705ed840aee6f9fa6131b52ad": {
-      "context": "EFLSheffieldUnited.uk; Next Game: Sheffield United vs Wrexham AFC on 30/10/2026 at 20:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770329+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Sheffield United and Wrexham at 20:00 GMT on 30 Oct 2026.",
-      "title": "Sheffield United vs Wrexham AFC"
-    },
     "56891313134fb3bfb86ed3cda789339060581faa9ef86a86e6c023aa8c0eddf5": {
       "created_at": "2026-11-20T18:36:59.266864+00:00",
       "kind": "live-title",
@@ -5949,13 +5912,6 @@
         "raw": "Louisville @ Memphis"
       }
     },
-    "5c56e76e89c2109224adac1b49b2568e7b7bb6cfc06935c726f4ab4a26c25926": {
-      "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770345+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Wigan Athletic and Bromley at 15:00 GMT on 31 Oct 2026.",
-      "title": "Wigan Athletic vs Bromley FC"
-    },
     "5c6a01476b0e4f92e350a49ca739a0a991320410dd02d413da571d0fe9a46943": {
       "created_at": "2026-10-28T06:20:34.001588+00:00",
       "kind": "live-title",
@@ -6078,6 +6034,15 @@
         "raw": "UDRA vs. Inter FC Bombom"
       }
     },
+    "5ed0b8b9317582b4e97635e58c6165a0a9380188784e155557a7d76a0114c6fd": {
+      "created_at": "2026-11-26T13:08:33.122747+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Dynamite",
+        "description": "Coverage of AEW Dynamite.",
+        "raw": "AEW Dynamite (Commercial Free)"
+      }
+    },
     "5ee29d324681cb385d37c619f705fdd3686fa74a0d6002a0cac5f5aaa5f862fd": {
       "created_at": "2026-11-15T21:18:49.476125+00:00",
       "kind": "live-title",
@@ -6147,13 +6112,6 @@
         "description": "Coverage of Medicine Hat, AB - Day 3, Draw 12.",
         "raw": "Medicine Hat, AB - Day 3, Draw 12"
       }
-    },
-    "5faad55d2170a94f7aa7dae0d48b3da08bde726a8679d9abf8d8b89bf58769b7": {
-      "context": "EFLOldhamAthletic.uk; Next Game: Oldham Athletic AFC vs Crawley Town FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770322+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Oldham Athletic and Crawley Town at 15:00 GMT on 31 Oct 2026.",
-      "title": "Oldham Athletic AFC vs Crawley Town FC"
     },
     "5fcc625ca15bf1f50de98ea8bda866047f7f48b9b707e2e20034b2ca606ef8e4": {
       "created_at": "2026-11-09T15:34:57.820107+00:00",
@@ -6339,13 +6297,6 @@
         "description": "Coverage of FocuSport FC against ASFA Yennenga.",
         "raw": "FocuSport FC vs. ASFA Yennenga"
       }
-    },
-    "62155bf4b8163c1b903f61cc3b46837cd8ba13280f7bba4e918d8c1fb2c1d837": {
-      "context": "EPLFulham.uk; Next Game: Aston Villa vs Fulham on 31/10/2026 at 20:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770352+00:00",
-      "kind": "event-description",
-      "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
-      "title": "Aston Villa vs Fulham"
     },
     "622000fc83d25d54b8a1690c7c6a02789ed744c898723a8805e9cb0f7ba40e96": {
       "created_at": "2026-11-21T14:17:38.344503+00:00",
@@ -6808,13 +6759,6 @@
         "raw": "Auckland United vs. West Coast Rangers"
       }
     },
-    "6d48c33762f2d36f4b5d1b11917acee569aa1738219e4eeb11d3d843d6016c84": {
-      "context": "EFLWestBromwichAlbion.uk; Next Game: West Ham United vs West Bromwich Albion on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770340+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship clash between West Ham United and West Bromwich Albion at 15:00 GMT on 31 Oct 2026.",
-      "title": "West Ham United vs West Bromwich Albion"
-    },
     "6d4b0ab149a8c999a73e527a6119f472ec9e334295b88a8d4bee64cf700cf142": {
       "created_at": "2026-11-22T05:36:34.912627+00:00",
       "kind": "live-title",
@@ -7220,6 +7164,15 @@
         "raw": "Lipscomb @ Purdue"
       }
     },
+    "729f5f7cc091a100a8eca8de561a5f60bef7a7357bd686cd62e2b010828ca5e4": {
+      "created_at": "2026-11-26T13:08:47.773225+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Golden Dream FC vs LPRC Oilers",
+        "description": "Coverage of Golden Dream FC against LPRC Oilers.",
+        "raw": "Golden Dream FC vs. LPRC Oilers"
+      }
+    },
     "72b2aea14bf66d890b1aac448ca5111c1a981e60701ac333fe8f7bb6f15cf5f8": {
       "created_at": "2026-11-11T13:53:16.395621+00:00",
       "kind": "live-title",
@@ -7385,13 +7338,6 @@
         "raw": "Debre Birhan vs. Menge"
       }
     },
-    "74c6c386b1f6c1b01404c07c1b3fa9d8c73c63d5483974ea0a657d59e53f9db7": {
-      "context": "EFLLutonTown.uk; Next Game: Luton Town vs Doncaster Rovers FC on 27/10/2026 at 19:45 GMT",
-      "created_at": "2026-10-27T03:17:18.770317+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Luton Town and Doncaster Rovers at 19:45 GMT on 27 Oct 2026.",
-      "title": "Luton Town vs Doncaster Rovers FC"
-    },
     "74e49fc0843f19a73d4266c4424926278504451dbdc6d8527f2606e78e50c16b": {
       "created_at": "2026-11-10T05:32:33.153341+00:00",
       "kind": "live-title",
@@ -7407,13 +7353,6 @@
       "kind": "event-description",
       "result": "KF Teuta face FK Partizani in the Albanian Superliga at 17:30 GMT on 02/11/2026.",
       "title": "KF Teuta vs. FK Partizani"
-    },
-    "752b9d85d0a5d2cb34655ce0b80e9f7133c0b42763f893d03de3d19260dc69c7": {
-      "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770348+00:00",
-      "kind": "event-description",
-      "result": "Scottish Premiership fixture between Dundee United and Heart of Midlothian at 15:00 GMT on 31 Oct 2026.",
-      "title": "Dundee United vs Heart of Midlothian"
     },
     "75545b474e1e59e9f830f3286c7451802ff9e54a6bbec49df44a1e51226d9016": {
       "created_at": "2026-11-03T18:24:18.345694+00:00",
@@ -7671,13 +7610,6 @@
         "description": "Coverage of Fight Clubbing #45 - Lamezia Terme.",
         "raw": "Fight Clubbing #45 - Lamezia Terme"
       }
-    },
-    "79e1b2f08758361c1d4654cbd407507cac8943ad4d371db7ecc300a483827460": {
-      "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
-      "created_at": "2026-10-27T03:17:18.770326+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship fixture between Stoke City and Preston North End at 12:30 GMT on 31 Oct 2026.",
-      "title": "Stoke City vs Preston North End FC"
     },
     "7a126331c690613a4e923cda480464cc9f1bc760e4ad75ad7340deb9086b7c77": {
       "context": "Disney+ Events event scheduled 31/10/2026 21:00 GMT",
@@ -8045,13 +7977,6 @@
         "raw": "USAC National Midgets Plaza Park"
       }
     },
-    "7f525a2aafa89db6d1094873cfb2fe669b94f064e993e35e26340b1ae8187a01": {
-      "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770307+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
-      "title": "Wolverhampton Wanderers vs Cardiff City"
-    },
     "7fd1ad87be5f9f88a68be39b8b0fc721d242d634f4a5e25bb8ad7d498ef7602b": {
       "context": "Rangers.spfl; Next Game: St Mirren vs Rangers on 07/11/2026 at 20:00 GMT",
       "created_at": "2026-11-02T09:40:06.869230+00:00",
@@ -8103,13 +8028,6 @@
         "description": "Coverage of BUF against NYJ, CAR @ NO, MIA @ IND.",
         "raw": "BUF @ NYJ, CAR @ NO, MIA @ IND, RedZone"
       }
-    },
-    "80a2c862c2296e37f1a3954c14b8ffd2d20ab4cb01a0eb1ec9c3b0851f6e32f8": {
-      "context": "EFLSwindonTown.uk; Next Game: Swindon Town FC vs Rotherham United FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770339+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
-      "title": "Swindon Town FC vs Rotherham United FC"
     },
     "811bb6b4b44b6f6a2c77b6eef3eb47d2426c972b1e80f656c2294b879b1139a4": {
       "created_at": "2026-11-18T18:30:03.534409+00:00",
@@ -8206,13 +8124,6 @@
         "raw": "Chinese Taipei U23 vs. Czechia U23"
       }
     },
-    "81b6955b149184ea74055a81971d9e93366b2628e364acf1beb72ecf0a832c01": {
-      "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770305+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
-      "title": "Wycombe Wanderers FC vs Burton Albion FC"
-    },
     "81b87ec7ace158429c2a67c9049274f2b4e5ad18f5c99e9f92cee758425ac796": {
       "created_at": "2026-11-19T16:43:17.107992+00:00",
       "kind": "live-title",
@@ -8237,13 +8148,6 @@
       "kind": "event-description",
       "result": "College basketball game between William Jessup and Sacramento State.",
       "title": "William Jessup vs. Sacramento State"
-    },
-    "81d43a7a643146f633a4f3fce959dd9db8c18baa3f9fa997f04a1c534a70be4e": {
-      "context": "EFLBristolCity.uk; Next Game: Bolton Wanderers FC vs Bristol City FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770302+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship match between Bolton Wanderers and Bristol City at 15:00 GMT on 31 Oct 2026.",
-      "title": "Bolton Wanderers FC vs Bristol City FC"
     },
     "822117156979fad9d03660f82035094e1ec62084f4046ea6adc631713a722600": {
       "created_at": "2026-11-11T06:38:48.807932+00:00",
@@ -8349,6 +8253,15 @@
         "raw": "Canucks @ Kraken"
       }
     },
+    "8352601f21b9dc02b0bdf3497ca6be148147e056a3be0225a07ec6f2e15338d5": {
+      "created_at": "2026-11-26T13:08:47.773218+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Eagles vs Cowboys",
+        "description": "Coverage of Eagles against Cowboys.",
+        "raw": "Eagles @ Cowboys"
+      }
+    },
     "837e710a946466076ac25f14688dcc08d2afdd8e4f7c6e54bd13d455dfd15b89": {
       "created_at": "2026-11-12T09:36:23.034839+00:00",
       "kind": "live-title",
@@ -8391,12 +8304,6 @@
         "description": "Coverage of Surne Bilbao against ALBA BERLIN.",
         "raw": "Surne Bilbao vs. ALBA BERLIN"
       }
-    },
-    "83fa12957c518fab800b78badcd4c014253d2d642ad94522e83dff2b0fb1dd10": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "8401a35f0e674f62c394d8013ba4b6e91c814af07972dc7559a5c40273442970": {
       "created_at": "2026-11-14T13:34:29.850275+00:00",
@@ -8773,6 +8680,15 @@
         "raw": "Penguins @ Ducks"
       }
     },
+    "8a78f905c1253b814a06dfc0471bfd8e7cf531035ece1759c487fad0d6350ab0": {
+      "created_at": "2026-11-26T13:08:33.122780+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Chiefs @ Bills",
+        "description": "Coverage of Chiefs against Bills.",
+        "raw": "Chiefs @ Bills (Spanish Broadcast)"
+      }
+    },
     "8a93b94e44f05b100c6ede8e10956716d05739b18750a639e93779dbc7feba49": {
       "created_at": "2026-11-18T05:43:28.894759+00:00",
       "kind": "live-title",
@@ -8913,13 +8829,6 @@
         "raw": "Iowa @ Illinois"
       }
     },
-    "8c51708c9d0a5550aef6a35279cfcd111e0ef1f36333968a80d815c07a45dc14": {
-      "context": "EFLNorthamptonTown.uk; Next Game: Accrington Stanley FC vs Northampton Town FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770320+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Accrington Stanley and Northampton Town at 15:00 GMT on 31 Oct 2026.",
-      "title": "Accrington Stanley FC vs Northampton Town FC"
-    },
     "8cca287cf41fb79232c607dc318487c14c20f6bbfe32240c1536564ff1cd0ccc": {
       "created_at": "2026-11-15T05:33:32.824293+00:00",
       "kind": "live-title",
@@ -8998,13 +8907,6 @@
       "kind": "event-description",
       "result": "UC Riverside Highlanders play Cal Poly Mustangs in a men's college basketball game.",
       "title": "UC Riverside vs. Cal Poly"
-    },
-    "8e62094a957c9a92a7cea04ac83f6b4b36e69e997d92781ae4adf68b5822381e": {
-      "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
-      "created_at": "2026-10-27T03:17:18.770324+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship clash between Plymouth Argyle and Reading at 12:30 GMT on 31 Oct 2026.",
-      "title": "Plymouth Argyle vs Reading FC"
     },
     "8e6ae5e88912d84c83d08505a7137d7aeebca17e1cb2a2bc4158e047805da9fd": {
       "created_at": "2026-11-13T05:39:27.557273+00:00",
@@ -9899,6 +9801,12 @@
         "raw": "UCLA @ UM, LSU @ TENN, ARK @ TEX, NCSU @ FSU"
       }
     },
+    "9eda895a734df64ee18c5958a899fda629abdf29d64cf7289fb33cce18744678": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+    },
     "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
       "created_at": "2026-11-13T15:27:17.807884+00:00",
       "kind": "live-title",
@@ -10202,6 +10110,15 @@
         "raw": "New Mexico @ Wyoming"
       }
     },
+    "a31a7aaca3d1c7eff7a7ccf2c53b5ccdeaae1e2db736960bb893ccb7e716ea22": {
+      "created_at": "2026-11-26T13:08:33.122774+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Battle 4 Atlantis: West Virginia vs. Notre Dame",
+        "description": "Coverage of Battle 4 Atlantis: West Virginia against Notre Dame.",
+        "raw": "Battle 4 Atlantis: West Virginia vs. Notre Dame"
+      }
+    },
     "a35d2a80bda6f461e910f0826c2c2fe90e61222f16eece4ae196059f0071d5b3": {
       "created_at": "2026-11-07T13:33:06.938291+00:00",
       "kind": "live-title",
@@ -10210,12 +10127,6 @@
         "description": "Coverage of Canucks against Oilers.",
         "raw": "Canucks @ Oilers"
       }
-    },
-    "a3ae2b99ffd0b07d576b80b2f5ca654b244663624d42c88348ec15601f021426": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "a3b4dc90bb2e568b404f0c5c36b349ff39cb51588f66bd623747531de22e7f03": {
       "context": "Disney+ Events event scheduled 02/11/2026 21:00 GMT",
@@ -10891,6 +10802,12 @@
         "raw": "Michigan @ Villanova"
       }
     },
+    "ae1e75267d7f4a4b87cd3995e565d2e3334798bec629a6b214687a71ed92e7c9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:23:47.773236+00:00"
+    },
     "ae3f38d5eceb4d4511c97d2795f02b84118c45ecbc6626547dd501935200fb08": {
       "created_at": "2026-11-15T17:18:43.376463+00:00",
       "kind": "live-title",
@@ -11110,13 +11027,6 @@
         "raw": "Panama U23 vs. Australia U23"
       }
     },
-    "b2808e741bf6f9a0aba78ffb40f624fad698631e4917321cfecd993d0b157d36": {
-      "context": "EFLPrestonNorthEnd.uk; Next Game: Stoke City vs Preston North End FC on 31/10/2026 at 12:30 GMT",
-      "created_at": "2026-10-27T03:17:18.770326+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship fixture between Stoke City and Preston North End at 12:30 GMT on 31 Oct 2026.",
-      "title": "Stoke City vs Preston North End FC"
-    },
     "b2df2f49698e1924ba8efd0032fa8559c741b56e204466493f61eda3a93b7b4b": {
       "created_at": "2026-11-07T13:33:23.422109+00:00",
       "kind": "live-title",
@@ -11134,13 +11044,6 @@
         "description": "Coverage of Teachers FC against Teachers Young Strikers.",
         "raw": "Teachers FC vs. Teachers Young Strikers"
       }
-    },
-    "b30a10d9df8320c713953d10afceb2fd145535ed3782ab58b43eeaefd5c2808f": {
-      "context": "EFLWiganAthletic.uk; Next Game: Wigan Athletic vs Bromley FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770345+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Wigan Athletic and Bromley at 15:00 GMT on 31 Oct 2026.",
-      "title": "Wigan Athletic vs Bromley FC"
     },
     "b316160385df5a59fef139fde053ca993b69e195d4fc894680640ff4ff044253": {
       "created_at": "2026-11-18T05:43:14.839872+00:00",
@@ -11546,13 +11449,6 @@
         "raw": "Wild @ Flyers"
       }
     },
-    "b859e325fa416e1341487bfd803a4850cab8f36260a3f86077ad78816156c050": {
-      "context": "EFLStockportCounty.uk; Next Game: Oxford United vs Stockport County on 27/10/2026 at 19:45 GMT",
-      "created_at": "2026-10-27T03:17:18.770334+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two fixture between Oxford United and Stockport County at 19:45 GMT on 27 Oct 2026.",
-      "title": "Oxford United vs Stockport County"
-    },
     "b886994ffdd1bb7a80023d03a44329f0d930f9e95d22eb51d5b9812a8ef2570d": {
       "context": "Disney+ Events event scheduled 29/10/2026 01:30 GMT",
       "created_at": "2026-10-29T06:23:30.006244+00:00",
@@ -11685,13 +11581,6 @@
         "description": "Coverage of AEW Saturday Tailgate Brawl.",
         "raw": "AEW Saturday Tailgate Brawl"
       }
-    },
-    "ba6ce4a9344df0b72d54bb62aeb623207bce99bc07910e57379c63727ea531a7": {
-      "context": "HeartofMidlothian.spfl; Next Game: Heart of Midlothian vs Rangers on 28/10/2026 at 20:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770346+00:00",
-      "kind": "event-description",
-      "result": "Scottish Premiership match between Heart of Midlothian and Rangers at 20:00 GMT on 28 Oct 2026.",
-      "title": "Heart of Midlothian vs Rangers"
     },
     "ba8460ff546ef6de10687a7eed74d9900a82a5ac7c0ec438673110ea17ef0959": {
       "created_at": "2026-11-08T16:16:24.705347+00:00",
@@ -12086,6 +11975,15 @@
       "result": "Snooker event: International Championship Round 2 at the SNC National Fitness Center in Nanjing, China.",
       "title": "International Championship | Round 2: Snooker"
     },
+    "c1c707c2590adce13f7bbb3af25bb1dfd4477c115b5cc3667b44fe03ef8ec203": {
+      "created_at": "2026-11-26T13:08:47.773220+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Eagles vs Cowboys (Spanish Broadcast)",
+        "description": "Coverage of Eagles against Cowboys (Spanish Broadcast).",
+        "raw": "Eagles @ Cowboys (Spanish Broadcast)"
+      }
+    },
     "c1eeda5fca2c5a7e812b999c8c4760d6bb01c3468beb945c2bcde663bd343447": {
       "created_at": "2026-11-05T13:54:40.508100+00:00",
       "kind": "live-title",
@@ -12121,13 +12019,6 @@
         "description": "Coverage of US Touarga against USS Berkane.",
         "raw": "US Touarga vs. USS Berkane"
       }
-    },
-    "c269bce43535954894caeb326eda37c100a7c25c2aaa4e84175a2e8c17b74208": {
-      "context": "EFLSwindonTown.uk; Next Game: Swindon Town FC vs Rotherham United FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770339+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Swindon Town and Rotherham United at 15:00 GMT on 31 Oct 2026.",
-      "title": "Swindon Town FC vs Rotherham United FC"
     },
     "c27be6f954dcb7f0ba2f31210352efef190743fc19a397b26201275ddedc14f0": {
       "created_at": "2026-11-15T15:20:39.075615+00:00",
@@ -12214,6 +12105,15 @@
       "kind": "event-description",
       "result": "MLS match between Minnesota United and Sporting Kansas City scheduled for 29 Oct 2026 at 00:25 GMT.",
       "title": "1 | Minnesota United vs Sporting Kansas City (English)"
+    },
+    "c3a509ef55a08d02c9b400a07fbb19c3b2d4a6866fc3f5fd50edbb9b8fac2bc6": {
+      "created_at": "2026-11-26T13:08:33.122782+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Chiefs @ Bills",
+        "description": "Coverage of Chiefs against Bills.",
+        "raw": "Chiefs @ Bills (U.S., French, Japanese, Portuguese Game Commentary Available)"
+      }
     },
     "c3e2eedbacae01dc1f6f2cfb96f1c43ab7758034930899be839835313e1cca03": {
       "created_at": "2026-11-05T13:54:40.508131+00:00",
@@ -12929,6 +12829,12 @@
         "raw": "VT @ MIM, UGA @ SC, UK @ MIZ, STAN @ CAL"
       }
     },
+    "ce26e517a143158ac04ecc968b5985788c433e4752d5a8156c91008abd8a8371": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+    },
     "ce318246c2e5bd62597aa21e94c602b5802b89bd0a4231d5c915fc5759d3e193": {
       "created_at": "2026-11-15T19:27:37.024313+00:00",
       "kind": "live-title",
@@ -12953,13 +12859,6 @@
         "description": "Coverage of Middle Tennessee against Kansas.",
         "raw": "Middle Tennessee @ Kansas"
       }
-    },
-    "cebc1aabf205c869c986a52f2d0af06ab740b490cf90baa5e5be60ec06de7f27": {
-      "context": "EFLColchesterUnited.uk; Next Game: Colchester United FC vs Walsall FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770309+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two match between Colchester United and Walsall at 15:00 GMT on 31 Oct 2026.",
-      "title": "Colchester United FC vs Walsall FC"
     },
     "cece5f269625478a2a363107f1407cbfb27191d79d842224fc3c75195d5fb7e8": {
       "created_at": "2026-11-06T13:50:32.471809+00:00",
@@ -13160,6 +13059,15 @@
       "result": "Scottish Premiership fixture: St. Johnstone vs Dundee FC at McDiarmid Park, 7 November 2026, 15:00 GMT.",
       "title": "St. Johnstone vs Dundee FC"
     },
+    "d1302c1dab60327beb9c0acab80c5e2077aac8b2d686f76bcd0451a911c395fb": {
+      "created_at": "2026-11-26T13:08:47.773223+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Fort Myers Tip-Off: Oklahoma vs Purdue",
+        "description": "Coverage of Fort Myers Tip-Off: Oklahoma against Purdue.",
+        "raw": "Fort Myers Tip-Off: Oklahoma vs. Purdue"
+      }
+    },
     "d132336039ad611cb504e9b42f6fd138df44339dbdd9d14bf0d43a02d8492768": {
       "created_at": "2026-11-14T13:34:13.414029+00:00",
       "kind": "live-title",
@@ -13246,13 +13154,6 @@
         "raw": "Blackhawks @ Kraken"
       }
     },
-    "d20fa3b1fefb1e473aeea4ca5aca7e2846d69034f77f276662870cb762e75a90": {
-      "context": "EFLStockportCounty.uk; Next Game: Stockport County vs AFC Wimbledon on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770337+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two match between Stockport County and AFC Wimbledon at 15:00 GMT on 31 Oct 2026.",
-      "title": "Stockport County vs AFC Wimbledon"
-    },
     "d22c5e3ebf0d5485d7f959530bccb08b9e57187837fa152371804d0f37045627": {
       "created_at": "2026-11-21T05:35:11.812293+00:00",
       "kind": "live-title",
@@ -13276,6 +13177,15 @@
         "clean_title": "Wologisi FC vs Watanga FC",
         "description": "Coverage of Wologisi FC against Watanga FC.",
         "raw": "Wologisi FC vs. Watanga FC"
+      }
+    },
+    "d26e03fee43a0082a50bdd2401421eee099b845aab1c088a4b5641dc0fd39285": {
+      "created_at": "2026-11-26T13:08:33.122769+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Argentina vs. Bahamas",
+        "description": "Coverage of Argentina against Bahamas.",
+        "raw": "Argentina vs. Bahamas"
       }
     },
     "d294161dd36b3db466cfcf3e791eeab1a74e2839f829f19eeec0727dfae3eac5": {
@@ -13302,19 +13212,6 @@
         "description": "Coverage of Stars against Golden Knights.",
         "raw": "Stars @ Golden Knights"
       }
-    },
-    "d31d9a08516f35215d67ee084313594e976d376dd07fda9bb469c878427cec4a": {
-      "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770333+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
-      "title": "Leicester City vs Stevenage FC"
-    },
-    "d31f5741644b92d6d04ebe4c241a2e0c2528cf5a3fa062edbfeb3332908be181": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "d35c677cba739877133a8c8f6907cd00a746c7656c033f477a0a0baa82b96be4": {
       "created_at": "2026-11-20T06:37:15.185494+00:00",
@@ -13430,12 +13327,6 @@
         "description": "Coverage of Great Britain against Venezuela.",
         "raw": "Great Britain U23 vs. Venezuela U23"
       }
-    },
-    "d50af920eeb190324b4bf39db73ca6fe635f959fc15f7232cdf01714f13fd4b6": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
     },
     "d51d47ff985de021a72f48c16b98af959d9fefc47721d2c0afbfccc6d9c73505": {
       "created_at": "2026-11-08T05:29:51.590115+00:00",
@@ -13986,6 +13877,15 @@
         "raw": "Golden Knights @ Jets"
       }
     },
+    "de5c3ee3abad7f9ec6153806d93b9406461032c405bfcabcf0f2746a7227fdf8": {
+      "created_at": "2026-11-26T13:08:47.773197+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "China PR U17 vs Fiji U17",
+        "description": "Coverage of China PR U17 against Fiji U17.",
+        "raw": "China PR U17 vs. Fiji U17"
+      }
+    },
     "de6fd442aec348081db7d23549d058328d601893083b19e6ff123c6d4ab0cbf2": {
       "created_at": "2026-11-21T05:35:11.812277+00:00",
       "kind": "live-title",
@@ -14169,6 +14069,12 @@
         "raw": "Big Noon Kickoff - Nov 14"
       }
     },
+    "e0bb404796c8d60c0a575114b405b33836505f03e62ba517fb10d23cc3ffaf89": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:23:47.773236+00:00"
+    },
     "e0c417c67533d716ef8a67d734f52188e584d070a48ab1b6c651159813f027c4": {
       "created_at": "2026-11-21T07:51:50.725173+00:00",
       "kind": "live-title",
@@ -14191,13 +14097,6 @@
       "kind": "event-description",
       "result": "Men's soccer match between Cal Poly Mustangs and UC Riverside Highlanders scheduled for Oct 29 2026.",
       "title": "Cal Poly vs. UC Riverside"
-    },
-    "e1634450b7baa25898cdf2e90a74853c82c23a8fa64318367a80dad7987949a4": {
-      "context": "EPLFulham.uk; Next Game: Aston Villa vs Fulham on 31/10/2026 at 20:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770352+00:00",
-      "kind": "event-description",
-      "result": "Premier League match between Aston Villa and Fulham at 20:00 GMT on 31 Oct 2026.",
-      "title": "Aston Villa vs Fulham"
     },
     "e1ce8f995b71cd69c093652cf01196af63194c994e927de7719f117a4f7635b3": {
       "created_at": "2026-11-08T06:28:44.003435+00:00",
@@ -14305,6 +14204,15 @@
         "clean_title": "Big Noon Kickoff - Nov 7",
         "description": "Coverage of Big Noon Kickoff - Nov 7.",
         "raw": "Big Noon Kickoff - Nov 7"
+      }
+    },
+    "e3a7fb30c5a8b419da541b57d807d464c146bda44a00251c805f75144a62cbed": {
+      "created_at": "2026-11-26T13:08:33.122763+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
       }
     },
     "e3be8fe6ddca837a7cbcf6b7c89ce8a5f2aa5d8ef2f1e86287670e8e6fbf2b7a": {
@@ -14543,13 +14451,6 @@
       "result": "Men’s college basketball: Towson Tigers visit Santa Clara Broncos.",
       "title": "Towson vs. Santa Clara"
     },
-    "e627dbe1d711e24e1f1c44a4861ce27898ce61e5ae2434f9088248d4677421b3": {
-      "context": "EFLCardiffCity.uk; Next Game: Wolverhampton Wanderers vs Cardiff City on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770307+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship clash between Wolverhampton Wanderers and Cardiff City at 15:00 GMT on 31 Oct 2026.",
-      "title": "Wolverhampton Wanderers vs Cardiff City"
-    },
     "e63023ed9749ebcaf55bf0946c10d6b458313d2f9f2c60d78cd4895025da78b0": {
       "created_at": "2026-11-13T15:26:54.247621+00:00",
       "kind": "live-title",
@@ -14592,13 +14493,6 @@
         "description": "Coverage of NC State against Florida State.",
         "raw": "NC State @ Florida State"
       }
-    },
-    "e664252db0e789a19ffd8bf11cc0d3791a91278f3738515446d63998cd2909c5": {
-      "context": "EFLPlymouthArgyle.uk; Next Game: Plymouth Argyle vs Reading FC on 31/10/2026 at 12:30 GMT",
-      "created_at": "2026-10-27T03:17:18.770324+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship clash between Plymouth Argyle and Reading at 12:30 GMT on 31 Oct 2026.",
-      "title": "Plymouth Argyle vs Reading FC"
     },
     "e6658a549d520b500ec6adcc0fa291dbb8d4b8c4b634a2278e12196cabf02754": {
       "created_at": "2026-11-21T07:52:04.205409+00:00",
@@ -14847,6 +14741,18 @@
         "raw": "VT @ MIM, UGA @ SC, PITT @ LOU, STAN @ CAL"
       }
     },
+    "ebc4aa3a53e865d946682b58bcf1ce938aa39ac052a59c3f6dbe8095f022c047": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+    },
+    "ebdb32db944b70dededa944bc86c251a0ca15060ce7815bfc9b5ddcb621c1d60": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
+    },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
       "kind": "live-title",
@@ -15064,13 +14970,6 @@
         "raw": "Le Castellet: Race 1"
       }
     },
-    "ef4af734f4be28015f06ad30713e2026be5bc7bead2c2ffc6a8de06785fc25ec": {
-      "context": "EFLSheffieldWednesday.uk; Next Game: Sheffield Wednesday vs Cambridge United FC on 27/10/2026 at 19:45 GMT",
-      "created_at": "2026-10-27T03:17:18.770331+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Sheffield Wednesday and Cambridge United at 19:45 GMT on 27 Oct 2026.",
-      "title": "Sheffield Wednesday vs Cambridge United FC"
-    },
     "ef688c6e911bb217c3e60919cd6dbb674a404a95c145cb26a7688e1d372e73fd": {
       "created_at": "2026-11-13T05:39:27.557298+00:00",
       "kind": "live-title",
@@ -15213,13 +15112,6 @@
         "raw": "Hurricanes @ Predators"
       }
     },
-    "f1e4ec933fb7648f8a8ed573e91329fe9b047ee670a05913a6db3ee74b6b365b": {
-      "context": "EFLBurtonAlbion.uk; Next Game: Wycombe Wanderers FC vs Burton Albion FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770305+00:00",
-      "kind": "event-description",
-      "result": "EFL League One fixture between Wycombe Wanderers and Burton Albion at 15:00 GMT on 31 Oct 2026.",
-      "title": "Wycombe Wanderers FC vs Burton Albion FC"
-    },
     "f1ed86d59775ef934ee69138591851372ebead5bb8dac94cf534896552617386": {
       "created_at": "2026-11-15T05:33:32.824295+00:00",
       "kind": "live-title",
@@ -15295,6 +15187,15 @@
         "raw": "Sydney, Nova Scotia - Day 4 - Draw 16"
       }
     },
+    "f39795e54ae00530891f52fd263a06e25556d49db2e717964b65c78d0a361819": {
+      "created_at": "2026-11-26T13:08:33.122771+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Arkansas @ Michigan State",
+        "description": "Coverage of Arkansas against Michigan State.",
+        "raw": "Arkansas @ Michigan State"
+      }
+    },
     "f3b048293ac321c26209116f3733bf680a4c8c7ce8cefe17694c4e34d9b5f390": {
       "context": "MAX UK event scheduled 03/11/2026 11:30 GMT",
       "created_at": "2026-11-03T11:30:53.073505+00:00",
@@ -15362,6 +15263,12 @@
         "description": "Coverage of Virginia Tech against Miami, Georgia vs South Carolina, Pittsburgh vs Louisville, Stanford vs California.",
         "raw": "VT @ MIM, UGA @ SC, PITT @ LOU, STAN @ CAL"
       }
+    },
+    "f4936c2a19e5ebaf998c516b50c916107d68cdca09394f507ba22f93f440c994": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-26T13:08:56.930279+00:00"
     },
     "f4b5b6d4bfda9835f15ad358c541f4137ff063843f05dc00592a1505b616180d": {
       "created_at": "2026-11-13T05:39:21.524020+00:00",
@@ -15677,12 +15584,6 @@
         "raw": "Hurricanes @ Lightning"
       }
     },
-    "f96d2e6dc8f596cf61a1d4a50c3b744dfc624b31bfcdb1e9d0fd3d5e2c3750c3": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T03:20:48.041533+00:00"
-    },
     "f993eef966e866a22b97d08726935edf136684ee04f4ca5e0a5113f884c98094": {
       "created_at": "2026-11-07T13:33:23.422113+00:00",
       "kind": "live-title",
@@ -15852,20 +15753,6 @@
         "raw": "FC Fassell vs. LPRC Oilers"
       }
     },
-    "fcb9be48758759a14e5ea47da9fda1969461f23e629fc6aaea7ef680c04b9019": {
-      "context": "EFLDerbyCounty.uk; Next Game: Millwall FC vs Derby County on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770315+00:00",
-      "kind": "event-description",
-      "result": "EFL Championship match between Millwall and Derby County at 15:00 GMT on 31 Oct 2026.",
-      "title": "Millwall FC vs Derby County"
-    },
-    "fcdb318892c5e29d77f230266371d95348e2643cfc5cae6e2d38c4817129bd27": {
-      "context": "EFLCreweAlexandra.uk; Next Game: Crewe Alexandra FC vs Barnet FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770312+00:00",
-      "kind": "event-description",
-      "result": "EFL League Two fixture between Crewe Alexandra and Barnet at 15:00 GMT on 31 Oct 2026.",
-      "title": "Crewe Alexandra FC vs Barnet FC"
-    },
     "fd5b8aa24769fd3c3cbda3f693cc47bd4a98977ecf51915741f5a5949feaa0fe": {
       "created_at": "2026-11-10T16:30:33.325108+00:00",
       "kind": "live-title",
@@ -15968,13 +15855,6 @@
         "raw": "Canadiens @ Maple Leafs"
       }
     },
-    "fef06759bb10b50bb6dda33f8ec5f8bb4d36b1b4207159a82338d52e8a12a42d": {
-      "context": "EFLStevenage.uk; Next Game: Leicester City vs Stevenage FC on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770333+00:00",
-      "kind": "event-description",
-      "result": "EFL League One match between Leicester City and Stevenage at 15:00 GMT on 31 Oct 2026.",
-      "title": "Leicester City vs Stevenage FC"
-    },
     "ff0a7c0ff60642e8c09c85c5215e026294b8148dce3edd1050fa93f72080e4cc": {
       "created_at": "2026-11-15T05:33:32.824287+00:00",
       "kind": "live-title",
@@ -16019,17 +15899,11 @@
         "description": "Coverage of Florida against Kentucky.",
         "raw": "Florida @ Kentucky"
       }
-    },
-    "ff9e77de7f38533811f7e5c5d5dc832f69307eb0809db71b6feb9fbe49d7dcbe": {
-      "context": "HeartofMidlothian.spfl; Next Game: Dundee United vs Heart of Midlothian on 31/10/2026 at 15:00 GMT",
-      "created_at": "2026-10-27T03:17:18.770348+00:00",
-      "kind": "event-description",
-      "result": "Scottish Premiership fixture between Dundee United and Heart of Midlothian at 15:00 GMT on 31 Oct 2026.",
-      "title": "Dundee United vs Heart of Midlothian"
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-26T09:05:47.494290+00:00"
+    "gemini": "2026-11-26T19:08:29.682924+00:00",
+    "groq": "2026-11-26T13:08:56.930279+00:00"
   },
   "version": 1
 }
