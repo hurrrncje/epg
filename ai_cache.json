@@ -75,6 +75,15 @@
       "result": "ESPN+ airs the “Coordinators Corner” sports discussion program.",
       "title": "Coordinators Corner"
     },
+    "017ec40a2eb051e45c7d0c425dc1af47bcfcad3eee8814b6d62eb880dfbd7d8b": {
+      "created_at": "2026-11-27T14:19:55.229566+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Avalanche @ Wild",
+        "description": "Coverage of Avalanche against Wild.",
+        "raw": "Avalanche @ Wild"
+      }
+    },
     "019204637d72376b30cb0814b1199939ea307d02c0e20087390a9471da97452c": {
       "created_at": "2026-11-19T15:37:39.805979+00:00",
       "kind": "live-title",
@@ -108,6 +117,12 @@
         "description": "Coverage of Kansas City Chiefs against Atlanta Falcons, Carolina Panthers @ New Orleans Saints, Miami Dolphins @ Indianapolis Colts.",
         "raw": "KC @ ATL, CAR @ NO, MIA @ IND, RedZone"
       }
+    },
+    "02211fb8ee67dcb77841b1bee5f3e8e996474818485e7dd654cc7b81b16ca8b7": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
     },
     "024a8f384ce131a4fe8c49223ef8964848ac58e4b57f8a53a6730668d0a777e8": {
       "context": "MAX UK event scheduled 01/11/2026 15:25 GMT",
@@ -681,6 +696,12 @@
         "raw": "Blue Jackets @ Devils"
       }
     },
+    "0bffbf25967a1af36283a681ea1ad4eeb0c657f0e3feec744e65e06575d38d35": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
     "0c1adb05a459ae923f01c044652b1f5ae2d5b558dee67d140206aa6e60e5e886": {
       "created_at": "2026-11-15T06:33:59.821279+00:00",
       "kind": "live-title",
@@ -713,15 +734,6 @@
         "clean_title": "Ducks vs. Blues",
         "description": "Coverage of Ducks against Blues.",
         "raw": "Ducks @ Blues"
-      }
-    },
-    "0cdc92132774720aa93f0fb3fa91a46a33b1d4986085aa12484a88acff4fa767": {
-      "created_at": "2026-10-28T06:20:34.001580+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Panthers vs Jets",
-        "description": "Florida Panthers defeated the Winnipeg Jets 5‑1 on Oct 27 2026, with Matthew Tkachuk recording four assists and Brady Tkachuk scoring【12†L10-L20】.",
-        "raw": "Panthers @ Jets"
       }
     },
     "0ce1e662e44dd3b460b7b98ebefcd3516306733240dfe4a134bb6582277b74f6": {
@@ -759,6 +771,12 @@
         "description": "Coverage of Inter Moengotapoe against Inter Wanica.",
         "raw": "Inter Moengotapoe vs. Inter Wanica"
       }
+    },
+    "0d9a99eb66bf7b54a29d473b3fbc24cdc11646ebffc41852a72a849c54dd4d87": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
     },
     "0daa7c1c9de24014849b65c02ee1d059c797c41a526e5d618c5ad5cd3ee70730": {
       "created_at": "2026-11-08T15:17:14.088536+00:00",
@@ -1015,6 +1033,12 @@
         "raw": "Medicine Hat, AB - Day 2, Draw 8"
       }
     },
+    "123aa377d8f9e8be822a12c4e0c53cece02a6f237a2d3c5e99b7e69dfd029f45": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
+    },
     "1281acdf62e15510a2d773a433f30dbe8646b92c70edb95ea03ab369b8678ffe": {
       "created_at": "2026-11-08T15:17:14.088534+00:00",
       "kind": "live-title",
@@ -1068,6 +1092,12 @@
         "description": "Coverage of Jaguars against Titans.",
         "raw": "Jaguars @ Titans"
       }
+    },
+    "12ed8aa3c46a18b9ada53efb9aca266da3aae745d68eda876a4b4b1b962e03c1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
     },
     "1306e338d72d883cd4772ef7065a92e36ef43214c3514d740758c94d25de611b": {
       "created_at": "2026-11-08T14:21:58.625431+00:00",
@@ -1183,6 +1213,12 @@
         "description": "Coverage of Idaho State against Montana.",
         "raw": "Idaho State @ Montana"
       }
+    },
+    "1484dd88f68c75970d64caf6ab0bddca80d227781725ab44462ba9521b275cee": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
     },
     "1491299f227c9b6c40b9af6f707b7dcdd13782c7f5edcbeafb33f96c1578979e": {
       "created_at": "2026-11-20T18:36:59.266890+00:00",
@@ -1901,15 +1937,6 @@
       "result": "Cal State Fullerton Titans vs UC Irvine Anteaters women's soccer match at Anteater Stadium, Irvine, Oct 28 2026, 9:00 PM EDT.",
       "title": "Cal State Fullerton vs. UC Irvine"
     },
-    "2009c5658ce199139b6b30977d6c7046f21f54195b08d2e5e7c28874408d410e": {
-      "created_at": "2026-10-28T06:20:34.001574+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Devils vs Stars",
-        "description": "New Jersey Devils defeated the Dallas Stars 5‑1 at American Airlines Center on Oct 27 2026, with Connor Hellebuyck making 16 saves in his debut【6†L11-L18】.",
-        "raw": "Devils @ Stars"
-      }
-    },
     "2030ad3fbcef9ed9d592d2eeee0a629bdc0203976791663169594a175328eab1": {
       "context": "Disney+ Events event scheduled 02/11/2026 00:00 GMT",
       "created_at": "2026-11-02T00:12:44.516358+00:00",
@@ -2259,6 +2286,15 @@
         "clean_title": "Flyers vs Oilers",
         "description": "Coverage of Flyers against Oilers.",
         "raw": "Flyers @ Oilers"
+      }
+    },
+    "25acdc600499a5659e754bc435fbf662c39dff12886f21ae00d04a1e76177481": {
+      "created_at": "2026-11-27T14:19:55.229559+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AS BNG vs. AS Kondzo",
+        "description": "Coverage of AS BNG against AS Kondzo.",
+        "raw": "AS BNG vs. AS Kondzo"
       }
     },
     "25b395acbcedd1d61bce6ebe4de1d48ea2b0f8043a9696099863b63e8e34c4f7": {
@@ -2986,15 +3022,6 @@
       "result": "MLS regular‑season match: Charlotte FC vs Orlando City, Saturday 31 Oct 2026, kickoff 12:00 PM local (16:55 GMT)【1†L12-L13】",
       "title": "| Charlotte FC vs Orlando City (English)"
     },
-    "2e3971e83e6f41b4b972c88ea8d8fcdc8c6bb442dc4ceef27dc0cda86d760278": {
-      "created_at": "2026-10-28T06:20:34.001586+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Senators vs Golden Knights",
-        "description": "Vegas Golden Knights beat the Ottawa Senators 4‑1 on Oct 27 2026, with Raphael Lavoie scoring his first NHL goal【18†L16-L20】.",
-        "raw": "Senators @ Golden Knights"
-      }
-    },
     "2eb9b4b52ec1d89dc8e29e4fdeff9abba3731deefcea437e6051a0421433792b": {
       "created_at": "2026-11-25T10:30:02.497350+00:00",
       "kind": "live-title",
@@ -3443,6 +3470,12 @@
         "raw": "Hornchurch vs. Sutton"
       }
     },
+    "360845088bed6eb160fe84b165ae9bfc995e687c8039521f2ee710e74215c25b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
     "36103a4fd7eb34e4da71a5ebd1c16778962971110d9b9bc59f0ad57f09de0047": {
       "created_at": "2026-11-25T20:11:14.165412+00:00",
       "kind": "live-title",
@@ -3564,6 +3597,12 @@
       "kind": "event-description",
       "result": "Texas Southern plays Tulane in an NCAA women's basketball regular‑season game.",
       "title": "Texas Southern vs. Tulane"
+    },
+    "374b17644aab1796b12596f01c498d4064403c8ad868716c2dc7692de23b24a6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
     },
     "378590c4751e1755c0d215356b8c3f8e2d145a50c274d889a9ab33cdecd0ec14": {
       "created_at": "2026-11-14T20:15:19.816825+00:00",
@@ -4299,15 +4338,6 @@
         "raw": "Homosha Shenga vs. Batu"
       }
     },
-    "42af88a85baf93b5d3391a02b86c1449e8aea7c115ddfdd8747602c9d5f4af28": {
-      "created_at": "2026-10-28T06:20:34.001570+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Canadiens vs Blues",
-        "description": "Montreal Canadiens defeated the St. Louis Blues 2‑0 at Enterprise Center on Oct 27 2026, with Jacob Fowler recording a career‑high 46‑save shutout【3†L10-L20】.",
-        "raw": "Canadiens @ Blues"
-      }
-    },
     "42bfc9c12fb986a886605b7f6ecbf21cc2b4cbc796ec1e70bb4065cac91a39ee": {
       "created_at": "2026-11-14T06:31:11.948504+00:00",
       "kind": "live-title",
@@ -4902,6 +4932,12 @@
         "description": "Coverage of Players Era 16 - Semifinal: Louisville against St. John's.",
         "raw": "Players Era 16 - Semifinal: Louisville vs. St. John's"
       }
+    },
+    "4dc09d3a7e97903856bd2e88373cdba5d051ad1ae7c17ad24743280c93ae2089": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
     },
     "4e78b1c1bb6319ca96b5193306fc3185a1fea234ce27a382f948654b13ea3705": {
       "created_at": "2026-11-08T15:17:55.840695+00:00",
@@ -5751,6 +5787,12 @@
         "raw": "Sabres @ Flyers"
       }
     },
+    "5a935601dd4280bf807d2d171f65e837c031479d3b0766f8e674cf4ee00b7d7e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
+    },
     "5a98f477a5699e1644d579cabf912c68ed67bedfe70e6b97f9c978e169f8dab6": {
       "created_at": "2026-11-21T07:51:50.725157+00:00",
       "kind": "live-title",
@@ -5802,15 +5844,6 @@
       "kind": "event-description",
       "result": "CBS Sports HQ presents a news segment titled \"This Just In\" covering recent sports updates.",
       "title": "cbssportshq: This Just In"
-    },
-    "5b6962dbad410f402105dddf3167989356112cc51c675380c0467afa237a2117": {
-      "created_at": "2026-10-28T06:20:34.001552+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Bruins vs Hurricanes",
-        "description": "Boston Bruins played the Carolina Hurricanes at the Hurricanes’ home on Oct 27 2026, losing 2‑1 in a game where Pyotr Kochetkov made a career‑high 46‑save shutout【1†L10-L20】.",
-        "raw": "Bruins @ Hurricanes"
-      }
     },
     "5b9dfa11af46c5c1329f8e3e1519fabc02ee5b82da1508fc9271140cfdbd1631": {
       "context": "Hibernian.spfl; Next Game: Aberdeen vs Hibernian on 07/11/2026 at 17:45 GMT",
@@ -5873,15 +5906,6 @@
         "raw": "Louisville @ Memphis"
       }
     },
-    "5c6a01476b0e4f92e350a49ca739a0a991320410dd02d413da571d0fe9a46943": {
-      "created_at": "2026-10-28T06:20:34.001588+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Wild vs Mammoth",
-        "description": "Minnesota Wild defeated the Utah Mammoth 3‑1 on Oct 27 2026, with Kirill Kaprizov scoring a goal and an assist【24†L10-L16】.",
-        "raw": "Wild @ Mammoth"
-      }
-    },
     "5c75e9481f7475db7beb06bac6500a826f691c15dfa6b0a0906deb5ba3b30f40": {
       "created_at": "2026-11-03T18:24:18.345699+00:00",
       "kind": "live-title",
@@ -5916,6 +5940,15 @@
         "clean_title": "Discoveries FC vs Bea Mountain FC",
         "description": "Coverage of Discoveries FC against Bea Mountain FC.",
         "raw": "Discoveries FC vs. Bea Mountain FC"
+      }
+    },
+    "5d5e5f41089814122376dc2d60499d330fe6c69a8be03395bc8a80669aa8a967": {
+      "created_at": "2026-11-27T14:19:55.229567+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Battle 4 Atlantis: Virginia vs. Xavier",
+        "description": "Coverage of Battle 4 Atlantis: Virginia against Xavier.",
+        "raw": "Battle 4 Atlantis: Virginia vs. Xavier"
       }
     },
     "5d81b7849740ead78d08522e6c5f2b47287f0b371ad595e25cd192183c6f13d2": {
@@ -6250,6 +6283,12 @@
         "raw": "Phoenix Marrakesh vs. SC Casablanca"
       }
     },
+    "61e0a68297dd674f9cebcac20a4a94ad489ec752403f94e77cf59a8b3f1bb4bb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
+    },
     "61f7a549c8eb2d431b00a3d8e06d4ff35438ef30ff2e342ac871ca96284d55b0": {
       "created_at": "2026-11-07T14:24:34.772815+00:00",
       "kind": "live-title",
@@ -6472,6 +6511,15 @@
         "raw": "Flyers @ Blue Jackets"
       }
     },
+    "6780251b3a9509847bfca5f52297e35ea85495dff1afc33fd69705132bec4119": {
+      "created_at": "2026-11-27T14:19:55.229562+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AS Douanes vs. Sahel SC",
+        "description": "Coverage of AS Douanes against Sahel SC.",
+        "raw": "AS Douanes vs. Sahel SC"
+      }
+    },
     "67868b2fb509b6953feb3f2d7bb487c939dd54030775aaa63238c72207c3933f": {
       "created_at": "2026-11-07T07:42:20.029332+00:00",
       "kind": "live-title",
@@ -6523,6 +6571,21 @@
       "kind": "event-description",
       "result": "Colorado Avalanche defeat Chicago Blackhawks 5‑2 in an NHL game on November 2, 2026 at United Center.",
       "title": "Avalanche @ Blackhawks"
+    },
+    "68465e29f3c294ffcb3c7d9d67c841b38391c405788201383f031ade911c0a3d": {
+      "created_at": "2026-11-27T14:19:55.229563+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AS Vegas vs. JS Talangaï",
+        "description": "Coverage of AS Vegas against JS Talangaï.",
+        "raw": "AS Vegas vs. JS Talangaï"
+      }
+    },
+    "68707ac1f6b8e2562f75be062e96a1f1840e15dc87b9832be8895b8461b1653d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
     },
     "69176581175a5aa4c8a3e83d9d3507a2bf897919725edc455bc597234e7031c8": {
       "created_at": "2026-11-08T05:29:32.514151+00:00",
@@ -6827,15 +6890,6 @@
         "clean_title": "Clemson vs Syracuse",
         "description": "Coverage of Clemson against Syracuse.",
         "raw": "Clemson @ Syracuse"
-      }
-    },
-    "6ecbf32674a563c4da563803a44a1f78f71ab9dd735f70bba3a8dda5109ac768": {
-      "created_at": "2026-10-28T06:20:34.001573+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Canucks vs Ducks",
-        "description": "Vancouver Canucks beat the Anaheim Ducks 6‑5 in overtime on Oct 27 2026, ending a 10‑game losing streak【5†L18-L22】.",
-        "raw": "Canucks @ Ducks"
       }
     },
     "6ecc20e5e2ea52ce701aebd4391b60dbc6eef369a20366c42154a3fe65e2459c": {
@@ -7420,6 +7474,12 @@
         "description": "Coverage of Virginia Tech at Miami.",
         "raw": "Virginia Tech @ Miami"
       }
+    },
+    "76f4300c8b6def80525698d2feb5f2dcff324374f0071041ef0dc4c6aa94a589": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
     },
     "77342b159a431c973a16674caba2b02e62cc3f9a38000e3b3347f02673d23a7c": {
       "created_at": "2026-11-25T10:30:02.497366+00:00",
@@ -8031,15 +8091,6 @@
       "result": "Halftime band performances during the Oklahoma football game.",
       "title": "SEC Halftime Band Performances at Oklahoma"
     },
-    "815260001fef79adde87c602537999fd79a36be9404f3751dcf3f84d7daa5868": {
-      "created_at": "2026-10-28T06:20:34.001579+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Kings vs Blackhawks",
-        "description": "Chicago Blackhawks beat the Los Angeles Kings 2‑1 on Oct 27 2026, with Wyatt Kaiser scoring the game‑winner【10†L18-L20】.",
-        "raw": "Kings @ Blackhawks"
-      }
-    },
     "815460267c5e4d3c860835daabea1320ae8f81f4438284d6fde4479c0d6221fb": {
       "created_at": "2026-11-14T13:34:07.126876+00:00",
       "kind": "live-title",
@@ -8112,12 +8163,24 @@
         "raw": "Flyers @ Canadiens"
       }
     },
+    "81bc96ad83649ff30875b9cc535ad8fe73a6e0f983cb628eb7d9041552351b15": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
+    },
     "81c64623d6283b0002d5036dbcc162344b07cc86fc860e92bd4d357417c77c9f": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T03:31:18.914272+00:00",
       "kind": "event-description",
       "result": "College basketball game between William Jessup and Sacramento State.",
       "title": "William Jessup vs. Sacramento State"
+    },
+    "8218d7d01b8f46e8c786d1fdead4afdc07bea2580b202d3ebba09d7321213284": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
     },
     "822117156979fad9d03660f82035094e1ec62084f4046ea6adc631713a722600": {
       "created_at": "2026-11-11T06:38:48.807932+00:00",
@@ -8318,6 +8381,15 @@
         "clean_title": "USAC National Midgets – Plaza Park",
         "description": "Coverage of USAC National Midgets – Plaza Park.",
         "raw": "USAC National Midgets Plaza Park"
+      }
+    },
+    "847fe843dab299bbc0191fda758739676281b11ffa69292efb333d01955a9307": {
+      "created_at": "2026-11-27T14:19:55.229568+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Binga FC vs. ASKO",
+        "description": "Coverage of Binga FC against ASKO.",
+        "raw": "Binga FC vs. ASKO"
       }
     },
     "84918a7458bc8a9fc0d2370670bcfe2bb8a0f84c6867783494ac386a13892c58": {
@@ -8530,6 +8602,12 @@
         "raw": "Jounieh FA vs. Jwaya SC"
       }
     },
+    "87a83034ebdd6102c0618e880a8789ac894873f8addf54a31099abcca016e690": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
+    },
     "87cb09ae386046fa00983de30258f21dc89c8944e1d3014e86c78bbb49d0c8a2": {
       "context": "Disney+ Events event scheduled 03/11/2026 16:00 GMT",
       "created_at": "2026-11-03T15:25:28.327531+00:00",
@@ -8615,15 +8693,6 @@
       "kind": "event-description",
       "result": "NBA game Oklahoma City Thunder vs Dallas Mavericks scheduled for Oct 29 2026.",
       "title": "Oklahoma City Thunder vs. Dallas Mavericks"
-    },
-    "897f1378957ead43fe57585e550720dd98289d29743b89d3db5b5acd41781a92": {
-      "created_at": "2026-10-28T06:20:34.001577+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Islanders vs Predators",
-        "description": "New York Islanders edged the Nashville Predators 4‑3 in a shootout on Oct 27 2026, after blowing a three‑goal lead【8†L12-L26】.",
-        "raw": "Islanders @ Predators"
-      }
     },
     "89b26e3e7674daf132fa00e4cff9b688cf547444728b33208bf790f242a1afef": {
       "created_at": "2026-11-04T13:50:50.158570+00:00",
@@ -8780,6 +8849,12 @@
         "description": "Coverage of Auckland United against West Coast Rangers.",
         "raw": "Auckland United vs. West Coast Rangers"
       }
+    },
+    "8bd84baf85da3ffee6150be5d4b9040c33e6a90afb5ff0325b572805a88bc47b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
     },
     "8bfc4b5d1f962aefa726d5e2277a69189674df00cc55bbaaacbab4059dc61a55": {
       "created_at": "2026-11-20T18:37:11.300355+00:00",
@@ -9089,6 +9164,12 @@
         "raw": "Derby Académie vs. AS Kayes"
       }
     },
+    "9200e974b102729a9cab5cc4ab9df5179db99f7b0293804b2cf6aa03e50a426d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
+    },
     "9238ccd842b5a145f87015c8768bf52c605d792a12c53edde65be5eafb463e6e": {
       "created_at": "2026-11-13T04:38:32.086504+00:00",
       "kind": "live-title",
@@ -9308,15 +9389,6 @@
         "raw": "River Plate Aruba vs. Nacional"
       }
     },
-    "95dd4cadd3eecb9182e6debfe909b4e26f67b678f287cde573d2e79bf496bf6b": {
-      "created_at": "2026-10-28T06:20:34.001582+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Sabres vs Sharks",
-        "description": "Buffalo Sabres shut out the San Jose Sharks 2‑0 on Oct 27 2026, with Colten Ellis making 23 saves【14†L10-L22】.",
-        "raw": "Sabres @ Sharks"
-      }
-    },
     "95dee3434ff4d143403b6649b25e180e5b526377a6e81cea5056b0c53580bbb9": {
       "context": "Disney+ Events event scheduled 03/11/2026 01:00 GMT",
       "created_at": "2026-11-03T07:52:42.440687+00:00",
@@ -9373,6 +9445,12 @@
         "description": "Coverage of Avalanche against Maple Leafs.",
         "raw": "Avalanche @ Maple Leafs"
       }
+    },
+    "97054ee248b07209fbb4fdd027cdb3065a9127b14a8c5c8e2f32e7a4d6a35d87": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
     },
     "972288b0957b42a3823e2ccc47c96368e38134797f2de5597f9937d0e4e175cd": {
       "context": "Disney+ Events event scheduled 03/11/2026 07:14 GMT",
@@ -9524,6 +9602,12 @@
       "result": "A-League Women match between Canberra United and Western Sydney Wanderers at Campbelltown Stadium, 3:00 pm AEDT.",
       "title": "Canberra United vs. Western Sydney Wanderers FC"
     },
+    "9a4964be165a12f5e9a94973ef5e4c2c72ef041562ba79d17008b48361f389e6": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
+    },
     "9a4d7fc66b45b4582df29f58e900b0d54cd93b99d560b0c3c79a2fd8a287888b": {
       "context": "Paramount+ event scheduled 28/10/2026 17:20 GMT",
       "created_at": "2026-10-28T18:24:17.569528+00:00",
@@ -9633,6 +9717,12 @@
         "raw": "Jaguars @ Ravens (Prime Vision with Next Gen Stats)"
       }
     },
+    "9ce2f7054208108a4e014dcac9aae95023132796fbe4933c5f6485c9f48dbbe9": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
+    },
     "9ce654d9237e765ad8e381947a47f1c59c017ac292a9411b0f6ab6af290fc4df": {
       "created_at": "2026-11-08T16:16:24.705351+00:00",
       "kind": "live-title",
@@ -9668,6 +9758,12 @@
         "description": "Coverage of FloRacing Night in America at Senoia Raceway.",
         "raw": "FloRacing Night In America Senoia"
       }
+    },
+    "9d7f8b84c4ec7feadc00ab8ef180585f1e9904b57d7e6d711ea7aef8a4d9d333": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
     },
     "9d90e64b12ffbb894866057ef9c813fcf02dc93f17149483e314d7ae44dba86a": {
       "context": "Paramount+ event scheduled 28/10/2026 19:00 GMT",
@@ -10092,6 +10188,15 @@
         "raw": "Canucks @ Oilers"
       }
     },
+    "a368e15810dd86935ef1add7fe4f06387318e7daf486fdfafea4da3dd20d638f": {
+      "created_at": "2026-11-27T14:19:55.229539+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "4-Cylinder Nationals at Cherokee Speedway",
+        "description": "Coverage of 4-Cylinder Nationals at Cherokee Speedway.",
+        "raw": "4 Cyl Nationals Cherokee"
+      }
+    },
     "a3b4dc90bb2e568b404f0c5c36b349ff39cb51588f66bd623747531de22e7f03": {
       "context": "Disney+ Events event scheduled 02/11/2026 21:00 GMT",
       "created_at": "2026-11-02T21:24:45.985797+00:00",
@@ -10106,6 +10211,15 @@
         "clean_title": "Australia U23 vs Republic of Korea U23",
         "description": "Coverage of Australia U23 against Republic of Korea U23.",
         "raw": "Australia U23 vs. Republic of Korea U23"
+      }
+    },
+    "a460131b4b012f5d620ba46233cd969e58f959519e97d1e6f87b69c71740200f": {
+      "created_at": "2026-11-27T14:19:55.229560+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AS Bakaridjan vs. FC Diarra",
+        "description": "Coverage of AS Bakaridjan against FC Diarra.",
+        "raw": "AS Bakaridjan vs. FC Diarra"
       }
     },
     "a46f9ec5ebc19c861bca8af39e35876b871410fbf1a4e4c7ce4b37ccc3d61bfc": {
@@ -10211,6 +10325,12 @@
         "description": "Coverage of Verona - GCL Super Cup Semi Final.",
         "raw": "Verona - GCL Super Cup Semi Final"
       }
+    },
+    "a5898bea12f5b47223bf69bd069810f1a4f361aa11116c496545d07a0685ca45": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
     },
     "a5ee596569e0bdd50d34c57888bac494d474530e4cb7b4ec2912627f37a7b281": {
       "created_at": "2026-11-10T05:32:33.153347+00:00",
@@ -10367,6 +10487,12 @@
         "description": "Coverage of Capitals against Senators.",
         "raw": "Capitals @ Senators"
       }
+    },
+    "a7dd4149f91f59cc497645729aea11a5e0d1bab0e8829898114d6c3c5e30c97d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
     },
     "a7deb17edb71e2931841d85e23a40fdd49547ae9a7d994756cc304a41e9e72ed": {
       "created_at": "2026-11-07T07:42:20.029328+00:00",
@@ -10811,6 +10937,12 @@
         "raw": "Union Berlin vs. Hoffenheim"
       }
     },
+    "af05072673ee365c1a785ccc2155957cb448c53c7f14d00bfaf2e5b5e004dcea": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
+    },
     "af2c48d1951f445dfa3461a8508c4412bd23aefdb83e87dc6cb7721d479aff57": {
       "context": "MLS fixture scheduled 29/10/2026 00:25 GMT",
       "created_at": "2026-10-29T03:25:48.898595+00:00",
@@ -11179,6 +11311,12 @@
         "raw": "Hawai'i @ Nevada"
       }
     },
+    "b4f79fc2d94c0b24d18a5fe58b6418e6b668deff52d7e857960672d9299c18c8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
     "b5424f19b33ee0a3bff14ce8e851fc69d84075de51cff1095b185d582723fc79": {
       "created_at": "2026-11-21T14:17:17.573064+00:00",
       "kind": "live-title",
@@ -11196,6 +11334,12 @@
         "description": "Coverage of UGA against MISS, MSU vs UM, COL vs ASU, LOU vs GT.",
         "raw": "UGA @ MISS, MSU @ UM, COL @ ASU, LOU @ GT"
       }
+    },
+    "b59fcc917798b611c271e9da06fa323a1170bc3e3e6c19be9414b2f993710448": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
     },
     "b5a33f2d8227ec0c6e2982b6ca7a42e8be61207821b39e6f91c43f2668d50132": {
       "created_at": "2026-11-13T17:31:13.584685+00:00",
@@ -11723,6 +11867,15 @@
         "clean_title": "UCLA vs UM, IDN vs UW, TTU vs BAY, RUT vs PSU",
         "description": "Coverage of UCLA against UM, IDN vs UW, TTU vs BAY, RUT vs PSU.",
         "raw": "UCLA @ UM, IDN @ UW, TTU @ BAY, RUT @ PSU"
+      }
+    },
+    "bda30bb7f6095f40eacafe53dd3c05c941d0ade6efe5eee4b322dd7f86744e61": {
+      "created_at": "2026-11-27T14:19:55.229564+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "Algeria U17 vs. Dominican Republic U17",
+        "description": "Coverage of Algeria U17 against Dominican Republic U17.",
+        "raw": "Algeria U17 vs. Dominican Republic U17"
       }
     },
     "bdb64942ea24ed0cf2e5ea8c3aec67792d1c38315810ec6324384a244d804122": {
@@ -12353,6 +12506,12 @@
         "raw": "PPL MGM Las Vegas - Day 4 - Play offs"
       }
     },
+    "c881ae8530168ce55b15d39c5feee5bbb5ede99702fbac27ea4fe66f6ad005bb": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
     "c88a3f6aa5e9ac079476de4824ade19fffe05a002be27df734ebd993a3b43867": {
       "created_at": "2026-11-07T05:28:43.411747+00:00",
       "kind": "live-title",
@@ -12612,6 +12771,12 @@
         "description": "Coverage of ONE Fight Night 49: Gabriel against Rasulov.",
         "raw": "ONE Fight Night 49 Gabriel v Rasulov"
       }
+    },
+    "cba1de49ed07ede8b0a1dbf03a492870290160fff7ec8148408c1a27678f36e1": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
     },
     "cbc50e494bfaa64db50549daeaa2d100422e3c179a991e92640d8db86dd76f34": {
       "created_at": "2026-11-17T16:41:14.527053+00:00",
@@ -13137,6 +13302,12 @@
       "kind": "event-description",
       "result": "Saint Anselm College women's basketball team plays UMass Lowell.",
       "title": "Saint Anselm vs. UMass Lowell"
+    },
+    "d29b2cf1feea70248ebf3c6aa3891784def42a60246f6f372ce54ad131c27754": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
     },
     "d2c33b9e7a4b38dab60c6f3ed6ec575a9092cd7f99a5a0c2ecf4ddab0ceffd8d": {
       "created_at": "2026-11-07T22:16:07.678277+00:00",
@@ -14017,6 +14188,24 @@
       "result": "Men's soccer match between Cal Poly Mustangs and UC Riverside Highlanders scheduled for Oct 29 2026.",
       "title": "Cal Poly vs. UC Riverside"
     },
+    "e1265ae018488cc4ce4a48c0051d1e9454d1452db79ae8d270f7e40c0ca2804a": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
+    },
+    "e159ffe289a38141834351668923f0df548c2e5cb5fb7210ffa22301d2230cf3": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
+    "e15fb3ecf97ae023dc9f5617fb530ff0e8afaa940a22ee73cd665211da84570b": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
+    },
     "e1ce8f995b71cd69c093652cf01196af63194c994e927de7719f117a4f7635b3": {
       "created_at": "2026-11-08T06:28:44.003435+00:00",
       "kind": "live-title",
@@ -14154,6 +14343,15 @@
       "kind": "event-description",
       "result": "A-League Men match between Melbourne Victory and Central Coast Mariners at AAMI Park, 3:00 pm AEDT.",
       "title": "Melbourne Victory vs. Central Coast Mariners FC"
+    },
+    "e3f4c8ead61ff412282c6295ba9950a9fac54d96a7bda480e9517bfec59e9f2f": {
+      "created_at": "2026-11-27T14:19:55.229556+00:00",
+      "kind": "live-title",
+      "result": {
+        "clean_title": "AEW Saturday Tailgate Brawl",
+        "description": "Coverage of AEW Saturday Tailgate Brawl.",
+        "raw": "AEW Saturday Tailgate Brawl"
+      }
     },
     "e3f992e4c1825fda74a60376d3cd433d0374f4e5e6734dd523f5ecd509940de2": {
       "context": "Disney+ Events event scheduled 29/10/2026 00:30 GMT",
@@ -14542,6 +14740,12 @@
         "raw": "Japan U17 vs. Serbia U17"
       }
     },
+    "e84b70026601e0370faa9600facf9e375f28bd6c539191d80351aba343c3d942": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
     "e896e38b24ccc7a504994f83dc743348ad4e164e61de6457d42d5bee5ca8f07f": {
       "created_at": "2026-11-20T13:55:04.539537+00:00",
       "kind": "live-title",
@@ -14886,15 +15090,6 @@
         "raw": "Wild @ Maple Leafs"
       }
     },
-    "ef6f53a153eff95a5083d1de428589af16a08bf8be7cff3cd82900c5c7c9621b": {
-      "created_at": "2026-10-28T06:20:34.001584+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Sam Houston vs Missouri State",
-        "description": "Missouri State defeated Sam Houston 24‑3 on Oct 27 2026, with Henry Belin IV throwing for 184 yards and two touchdowns【17†L0-L10】.",
-        "raw": "Sam Houston @ Missouri State"
-      }
-    },
     "f0009b6d2e9f07a2006a71e5f055a905564f8493ad73cfde7ea73f111dd31725": {
       "created_at": "2026-11-08T14:22:17.311556+00:00",
       "kind": "live-title",
@@ -14930,6 +15125,12 @@
         "description": "Coverage of Canadiens against Avalanche.",
         "raw": "Canadiens @ Avalanche"
       }
+    },
+    "f0950aa80543ea8a9023ad42a0db5f803ddc71c8566013eb6ec99b9338457b95": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:56.558796+00:00"
     },
     "f0a2bfd8d46bdc04cc1838121884cf599719bcda12b56adf45ecc4d77329962a": {
       "created_at": "2026-11-05T13:54:36.011728+00:00",
@@ -15027,6 +15228,12 @@
         "description": "Coverage of Blues against Mammoth.",
         "raw": "Blues @ Mammoth"
       }
+    },
+    "f287b1dc48b114cba32f7ffc97b6522a22303ca63fa5231291269af5a9cfd114": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:20:03.425695+00:00"
     },
     "f28da9c56ab1233f8b1a6315cc1930a9c4362de305a24418c5c4ff63ee04e918": {
       "created_at": "2026-11-22T05:36:25.981174+00:00",
@@ -15152,6 +15359,12 @@
         "description": "Coverage of Japan U23 against Great Britain U23.",
         "raw": "Japan U23 vs. Great Britain U23"
       }
+    },
+    "f425ff2a6bc41d62d1401cd2aaf8760647ab2784cc636c93afef334220ec9b99": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
     },
     "f446fc0dd6eedb6ee690850cfff1235d00b2f90e4926c0d4740935566727713c": {
       "created_at": "2026-11-22T05:36:53.443947+00:00",
@@ -15494,6 +15707,12 @@
         "raw": "Eastleigh vs. Fylde"
       }
     },
+    "f9be7d001f8439e3b5ed9a4d6366dfa9980d548d77c47e999ec337b90d8abf9e": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
+    },
     "f9c400901935f8e871a9881a0c55a6e018b53428d42d2983561f08f6706a6859": {
       "created_at": "2026-11-06T03:30:23.708906+00:00",
       "kind": "live-title",
@@ -15618,6 +15837,12 @@
         "raw": "UMBC @ Ohio State"
       }
     },
+    "fc081bc49c53bf6dd7c9355d91c7e367e97321b24c130e2b225bf77e2191c8e8": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:55.739511+00:00"
+    },
     "fc15de91f53d0531f81a05f7fd4220be58dace03c8661610c93b89e3261f57c3": {
       "created_at": "2026-11-16T05:06:06.607791+00:00",
       "kind": "live-title",
@@ -15703,6 +15928,12 @@
         "description": "Coverage of Venezuela U23 against Republic of Korea U23.",
         "raw": "Venezuela U23 vs. Republic of Korea U23"
       }
+    },
+    "fe542bd4c9162f9178155218a0afe5de2a3b60a60d1be624a01691413c60499d": {
+      "failed": true,
+      "failure_policy": 2,
+      "kind": "live-title",
+      "retry_after": "2026-11-27T14:34:57.288911+00:00"
     },
     "fe6925c4a9213a3856d57d5a9f3904a3dbe645ef50353a1f943ff8656dde74ed": {
       "created_at": "2026-11-07T16:17:32.146914+00:00",
@@ -15794,7 +16025,8 @@
     }
   },
   "provider_cooldowns": {
-    "gemini": "2026-11-27T04:36:06.054051+00:00"
+    "gemini": "2026-11-27T20:19:50.150792+00:00",
+    "groq": "2026-11-27T14:20:03.425695+00:00"
   },
   "version": 1
 }
