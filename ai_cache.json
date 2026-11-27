@@ -7,12 +7,6 @@
       "result": "CBS Sports HQ Postgame recap of recent sports events.",
       "title": "cbssportshq: The Postgame"
     },
-    "0056ef82a5e1bb3d9d25c1374a5c460bc08b0dbfc41495dd06423d73ae6acc37": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
-    },
     "008c084c830d217f1db4375326c1b5cc7979eb90d765fa58af34d7531f212ef5": {
       "created_at": "2026-11-14T06:31:11.948499+00:00",
       "kind": "live-title",
@@ -923,12 +917,6 @@
         "description": "Coverage of Stars against Golden Knights.",
         "raw": "Stars @ Golden Knights"
       }
-    },
-    "10cc423e79db942f2c9cdf2afa33819c56c7742276099e643a0aaed96b5c76f7": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "10e77b62a53df1375feca2bdfac4a9eb4f720287d06255d5b313c6502783e2a3": {
       "created_at": "2026-11-08T15:17:14.088543+00:00",
@@ -1897,15 +1885,6 @@
         "raw": "Georgetown @ Clemson"
       }
     },
-    "1fc62bfb261279c82b543745e8586a572238840a7cb66ba4c13a99319c355514": {
-      "created_at": "2026-10-28T00:12:37.428457+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Ottawa Senators vs Vegas Golden Knights",
-        "description": "NHL regular season game between the Ottawa Senators and the Vegas Golden Knights, scheduled for Wednesday, October 28, 2026 at the T-Mobile Arena in Las Vegas, NV. 【8†L31-L32】",
-        "raw": "Senators @ Golden Knights"
-      }
-    },
     "1ff12197f64b67f41e9add634eec7ca7afac89a474a776e6b67696829bd8e5d1": {
       "created_at": "2026-11-20T06:37:15.185499+00:00",
       "kind": "live-title",
@@ -2066,10 +2045,13 @@
       }
     },
     "2259cd8177c61b212862f93d0980993a832e6d2d1af05c56d175023fdf2d8803": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915432+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+      "result": {
+        "clean_title": "Players Era 16 - Semifinal: Baylor vs Gonzaga",
+        "description": "Coverage of Players Era 16 - Semifinal: Baylor against Gonzaga.",
+        "raw": "Players Era 16 - Semifinal: Baylor vs. Gonzaga"
+      }
     },
     "228644c5c5b57b04a1f240468245e712c2dac61206b1540a2b2e138498908af2": {
       "created_at": "2026-11-04T15:31:01.992679+00:00",
@@ -2671,12 +2653,6 @@
         "raw": "Mekelle 70 Enderta vs. Arba Minch"
       }
     },
-    "29ed3a8e7d2c227ff130b34f2af7460c04a053a5aaaa1b73befecbfab6fff5b3": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
-    },
     "2a0363b759503cde8f1217b504bc35ae89bd48a998370c9b81599348cb571fc3": {
       "created_at": "2026-11-15T06:33:59.821287+00:00",
       "kind": "live-title",
@@ -2854,15 +2830,6 @@
       "result": "Morning Boxscore recap of recent baseball games on Paramount+.",
       "title": "cbssportshq: Morning Boxscore"
     },
-    "2be64ba92ecd146af8dcfadd8b92c37c0a141e8574af99f1f32d89b75e7d80f6": {
-      "created_at": "2026-10-28T00:12:37.428434+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Montreal Canadiens vs St. Louis Blues",
-        "description": "NHL regular season game between the Montreal Canadiens and the St. Louis Blues, scheduled for Wednesday, October 28, 2026 at the Enterprise Center in St. Louis, MO. 【8†L25-L26】",
-        "raw": "Canadiens @ Blues"
-      }
-    },
     "2c10bc41309b963feee1a23cec86a30fd99dc6eb3774e0efb8db6aa0469806fd": {
       "created_at": "2026-11-03T17:53:06.054628+00:00",
       "kind": "live-title",
@@ -2887,12 +2854,6 @@
       "kind": "event-description",
       "result": "NHL game: Ottawa Senators vs. Anaheim Ducks.",
       "title": "Ottawa Senators vs. Anaheim Ducks"
-    },
-    "2c73ceb0764d81634df087ddd29a25b07f56840ad6a27c6ea9fe4efc50bae631": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "2c811530d6b29f550608e741acffd076d60688a1787575ba1f00a090471e757d": {
       "created_at": "2026-11-07T06:27:19.927226+00:00",
@@ -3033,12 +2994,6 @@
         "description": "Vegas Golden Knights beat the Ottawa Senators 4‑1 on Oct 27 2026, with Raphael Lavoie scoring his first NHL goal【18†L16-L20】.",
         "raw": "Senators @ Golden Knights"
       }
-    },
-    "2e5d918325d8925f86e13a0b6c4290b27b78c50761ca253014d6e1176f20496d": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "2eb9b4b52ec1d89dc8e29e4fdeff9abba3731deefcea437e6051a0421433792b": {
       "created_at": "2026-11-25T10:30:02.497350+00:00",
@@ -3307,12 +3262,6 @@
         "raw": "Steelers @ Bengals (Spanish Broadcast)"
       }
     },
-    "330bb729f3c380ad6d8b6e7095a268551a310ffec241b5d64c9111309ace318c": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
-    },
     "33135972befe597dc96b7c5fd7ad0d523b20653149a7937db08e370b204df75f": {
       "created_at": "2026-11-25T10:30:02.497380+00:00",
       "kind": "live-title",
@@ -3328,15 +3277,6 @@
       "kind": "event-description",
       "result": "MLS match between Vancouver Whitecaps FC and San Diego FC scheduled for 29 Oct 2026 at 02:25 GMT.",
       "title": "1 | Vancouver Whitecaps FC vs San Diego FC (English)"
-    },
-    "33512667d1640a17a0b4a8df2baede6ec45e839f165e5a043b7c3cb1bc2154e6": {
-      "created_at": "2026-10-28T00:12:37.428459+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Minnesota Wild vs Utah Mammoth",
-        "description": "NHL regular season game between the Minnesota Wild and the Utah Mammoth, scheduled for Wednesday, October 28, 2026 at the Delta Center in Salt Lake City, UT. 【8†L27-L28】",
-        "raw": "Wild @ Mammoth"
-      }
     },
     "3377e3af84f23235277a2dde09c09ac19afb60ed2049bb31000ef65113b5adc2": {
       "created_at": "2026-11-10T05:32:33.153355+00:00",
@@ -4219,12 +4159,6 @@
         "raw": "Chinese Taipei U23 vs. Nicaragua U23"
       }
     },
-    "4093b072e41dd26592819d8b0aa148a92d2db2358362facf4f54f1dfd2796726": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
-    },
     "409709f6a10a6a18e2eb76fa753491f7f03dbb43f0e93ebbcfcd135577a780c3": {
       "created_at": "2026-11-15T19:27:37.024317+00:00",
       "kind": "live-title",
@@ -4637,12 +4571,6 @@
       "result": "Scottish Premiership match Aberdeen vs Falkirk scheduled for Oct 28 2026 at 19:45 GMT.",
       "title": "Aberdeen vs Falkirk"
     },
-    "478b49dd1d6c8d076aaddec94f5d6f12da4aeae972706d152bb6d31375a422e2": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
-    },
     "47d064dcf43c0be2ebcaf99d7aac7ea7f6bf8e03ebba9ad3dba1363d78849368": {
       "context": "Disney+ Events event scheduled 03/11/2026 03:00 GMT",
       "created_at": "2026-11-03T03:31:18.914269+00:00",
@@ -4834,12 +4762,6 @@
       "result": "#22 Florida State takes on Miami in a college basketball game.",
       "title": "#22 Florida State vs. Miami"
     },
-    "4ae578a63a31e0c48f5bf2cb4ae5799e8382950c3e75ffa951194e0965f2b9f0": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
-    },
     "4af095635f51f5fef4f410a10c4a33d0792e4573dcbc21e8a5b8df6a308d6a19": {
       "created_at": "2026-11-07T02:27:15.103052+00:00",
       "kind": "live-title",
@@ -4933,12 +4855,6 @@
         "raw": "2026 Global Series: Kraken @ Hurricanes"
       }
     },
-    "4c49166318b60fd9a1eafa8ce0161f44223ee7873f98f152ced6eac91b715747": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
-    },
     "4c590bbebfcb3675d6f11aef76ea3f6741be67ed7fe313948f793b56d164c22a": {
       "created_at": "2026-11-15T15:20:39.075639+00:00",
       "kind": "live-title",
@@ -4979,10 +4895,13 @@
       "title": "San Diego vs. Seattle U"
     },
     "4dbc57174b562b800370f7618fff239043da0a8c17fae66f4667bce8755d8f24": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915434+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+      "result": {
+        "clean_title": "Players Era 16 - Semifinal: Louisville vs St. John's",
+        "description": "Coverage of Players Era 16 - Semifinal: Louisville against St. John's.",
+        "raw": "Players Era 16 - Semifinal: Louisville vs. St. John's"
+      }
     },
     "4e78b1c1bb6319ca96b5193306fc3185a1fea234ce27a382f948654b13ea3705": {
       "created_at": "2026-11-08T15:17:55.840695+00:00",
@@ -5416,12 +5335,6 @@
       "result": "Western Illinois faces Southern Indiana in a college basketball game.",
       "title": "Western Illinois vs. Southern Indiana"
     },
-    "5478c84a00f46bfc89045166e680612a0fad9b86c648ae795d186f07ed07ae0e": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
-    },
     "54bd17f23fbfadb3f80cbf9168e1125892769d4f94b1d047f5bd8cc76431f240": {
       "created_at": "2026-11-14T13:34:29.850269+00:00",
       "kind": "live-title",
@@ -5604,12 +5517,6 @@
       "kind": "event-description",
       "result": "The Rich Eisen Show episode, 3 Nov 2026, 17:00 GMT.",
       "title": "Tue, 11/3 - The Rich Eisen Show"
-    },
-    "57803f369b170572d0f89f99d3e40c8e109b29e81fd6f1151cc281950a1ab866": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "578b9ad627da7095ae8d19ba62a36bef78ad8adc84b58ff5500b92ff24e1a944": {
       "created_at": "2026-11-14T13:34:13.414019+00:00",
@@ -7930,10 +7837,13 @@
       "title": "UC Santa Barbara vs. Cal State Northridge"
     },
     "7db00464d951ae936e8c24ce43623ce1fc6748fbb82af8e98b8cf36d085f54a9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915428+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
+      "result": {
+        "clean_title": "Panama vs Puerto Rico",
+        "description": "Coverage of Panama against Puerto Rico.",
+        "raw": "Panama vs. Puerto Rico"
+      }
     },
     "7db5ba3523b49074419d5ff049ebc4c2a55bfb1a39a3a48db236329de7e35b97": {
       "created_at": "2026-11-17T16:41:14.527040+00:00",
@@ -8027,12 +7937,6 @@
         "description": "Coverage of Lightning against Blue Jackets.",
         "raw": "Lightning @ Blue Jackets"
       }
-    },
-    "7eef7cdc2627390c7302b0149722270a517330e32371d3fd8f97482485e8bdac": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "7f0fbd18be68b2092b5a982280cb7f6206420e2103178c969f925226a96fa23b": {
       "created_at": "2026-11-23T06:46:50.391751+00:00",
@@ -8913,15 +8817,6 @@
         "raw": "Players Era 16 - Alabama vs. Baylor"
       }
     },
-    "8d1bdfa93acb7297bf548243a017386cbcb5308cd319ef283d6daac36c43b4f2": {
-      "created_at": "2026-10-28T00:12:37.428438+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Vancouver Canucks vs Anaheim Ducks",
-        "description": "NHL regular season game between the Vancouver Canucks and the Anaheim Ducks, scheduled for Wednesday, October 28, 2026 at the Honda Center in Anaheim, CA. 【8†L29-L30】",
-        "raw": "Canucks @ Ducks"
-      }
-    },
     "8d2093d3d8c7a149eb1a066f102539a7e0d2db4866b7d670fdfb8de18e9dbc95": {
       "created_at": "2026-11-08T06:28:44.003437+00:00",
       "kind": "live-title",
@@ -9014,12 +8909,6 @@
       "kind": "event-description",
       "result": "NHL game Toronto Maple Leafs vs Seattle Kraken, broadcast by Kraken, scheduled for Oct 29 2026.",
       "title": "Toronto Maple Leafs vs. Seattle Kraken (Kraken Broadcast)"
-    },
-    "8fdc02315ecd837d5fa38432ab48ce33de2f221b4d309daac925e7b4e56a9718": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:08.315795+00:00"
     },
     "8ff77e6e2b40fbf0c95d0408e458f72fc20f9fb108aeb4b3c479d35b61b81511": {
       "created_at": "2026-11-06T05:37:48.861310+00:00",
@@ -9271,10 +9160,13 @@
       }
     },
     "934af85d29a4b061b40ae80b8da9355a17046c2425effe141718d4d9b9361e24": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915439+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+      "result": {
+        "clean_title": "UFC Fight Night - Special Feed",
+        "description": "Coverage of UFC Fight Night - Special Feed.",
+        "raw": "UFC Fight Nigh - Special Feed"
+      }
     },
     "93a3f2fc00f2f5bc8c9593bf8c7d81cf424b0d48d782bd940449f5d3a217406b": {
       "created_at": "2026-11-05T13:54:36.011714+00:00",
@@ -9669,12 +9561,6 @@
       "result": "Premier League match Tottenham Hotspur vs Crystal Palace scheduled for Oct 31 2026 at 17:30 GMT.",
       "title": "Tottenham Hotspur vs Crystal Palace"
     },
-    "9bf0e30fd10b581c084661efc5bddfc627174ead7eb0b484d358cfb95a2c6906": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
-    },
     "9c092675467c7b13b5741c37008b8feddf0df95f05a19d487690a65e54ad3c1a": {
       "created_at": "2026-11-14T06:31:11.948509+00:00",
       "kind": "live-title",
@@ -9886,10 +9772,13 @@
       }
     },
     "9eda895a734df64ee18c5958a899fda629abdf29d64cf7289fb33cce18744678": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915425+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
+      "result": {
+        "clean_title": "Jordan vs New Zealand",
+        "description": "Coverage of Jordan against New Zealand.",
+        "raw": "Jordan vs. New Zealand"
+      }
     },
     "9ee1dcc9cdf1c9097d9d26e7311bdbfa587ec2e5e2c722f3c240066d3b07b19e": {
       "created_at": "2026-11-13T15:27:17.807884+00:00",
@@ -10110,15 +9999,6 @@
         "clean_title": "Pacheco vs Fulghum Prelims",
         "description": "Coverage of Pacheco against Fulghum Prelims.",
         "raw": "Pacheco vs. Fulghum: Prelims"
-      }
-    },
-    "a20af9e77f370542072777d8b1fb435600274cdcedbfacb439d667dd7bc4bbf2": {
-      "created_at": "2026-10-28T00:12:37.428454+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Sam Houston State vs Missouri State",
-        "description": "College football game between the Sam Houston State Bearkats and the Missouri State Bears, scheduled for October 27, 2026 at Plaster Stadium in Springfield, MO. 【9†L4-L8】【9†L16-L24】",
-        "raw": "Sam Houston @ Missouri State"
       }
     },
     "a2308211614ebdea5ec6444313eb7d62bbf93ca339019e1c4b2c0b3af4c5a5a1": {
@@ -10685,15 +10565,6 @@
         "raw": "Força Lleida vs. Baskonia"
       }
     },
-    "ab1c5da332493b2a912d8bf55ee9938597cf0b81e584a5a43d0f9d2ccaf4b7db": {
-      "created_at": "2026-10-28T00:12:37.428441+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "New Jersey Devils vs Dallas Stars",
-        "description": "NHL regular season game between the New Jersey Devils and the Dallas Stars, scheduled for Wednesday, October 28, 2026 at the American Airlines Center in Dallas, TX. 【8†L21-L22】",
-        "raw": "Devils @ Stars"
-      }
-    },
     "ab7616cc5328c4bb0b6be7ecfeadf10da6027c416d6b1ae8c67c3c734b2c65a8": {
       "created_at": "2026-11-21T07:51:50.725163+00:00",
       "kind": "live-title",
@@ -10788,12 +10659,6 @@
         "description": "Coverage of Kings against Bruins.",
         "raw": "Kings @ Bruins"
       }
-    },
-    "ac854db08505f3e23f2c4dc71e72911f4086ff67962feb3a4b2e07a41fcd0d7a": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "ac88786f5a25d69b9b7d5896aea021791a79517d832201ca7d2dad76bcfe9aa9": {
       "created_at": "2026-11-20T10:37:33.605027+00:00",
@@ -10893,10 +10758,13 @@
       }
     },
     "ae1e75267d7f4a4b87cd3995e565d2e3334798bec629a6b214687a71ed92e7c9": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915409+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
+      "result": {
+        "clean_title": "Czechia vs Nicaragua",
+        "description": "Coverage of Czechia against Nicaragua.",
+        "raw": "Czechia vs. Nicaragua"
+      }
     },
     "ae3f38d5eceb4d4511c97d2795f02b84118c45ecbc6626547dd501935200fb08": {
       "created_at": "2026-11-15T17:18:43.376463+00:00",
@@ -11757,15 +11625,6 @@
       "result": "ACC Women’s Basketball quarterfinal between Louisville and Syracuse.",
       "title": "Louisville vs. #13 Syracuse (Quarterfinals)"
     },
-    "bbd6dec84af4fbf9c25a322e1141737c166bb32f7018bdb76bc08a977343670b": {
-      "created_at": "2026-10-28T00:12:37.428449+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Florida Panthers vs Winnipeg Jets",
-        "description": "NHL regular season game between the Florida Panthers and the Winnipeg Jets, scheduled for Wednesday, October 28, 2026 at the Canada Life Centre in Winnipeg, MB. 【8†L15-L16】",
-        "raw": "Panthers @ Jets"
-      }
-    },
     "bbeb5aef12ea95fcd2b74c086386b3c0425c92cab45852b9e387b52ed6dfd887": {
       "created_at": "2026-11-08T05:30:03.515479+00:00",
       "kind": "live-title",
@@ -11831,12 +11690,6 @@
       "kind": "event-description",
       "result": "Leumit League game: Sektzia Nes Tziona take on Shimshon Tel Aviv.",
       "title": "Sektzya Ness Ziona vs. Shimshon Tel Aviv"
-    },
-    "bd00323751f2f8139ef6b0bf8281f30e6f5b3f5ec6b2fc927c7a4e21dde5530f": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "bd10825e93b8a5500b9cc437ba8c9b10ceb1af6b1b689efe152adb8835763415": {
       "context": "DAZN UK event scheduled 28/10/2026 02:30 GMT",
@@ -11999,15 +11852,6 @@
         "clean_title": "Bowling Green @ Toledo",
         "description": "Coverage of Bowling Green against Toledo.",
         "raw": "Bowling Green @ Toledo"
-      }
-    },
-    "c020d584a91ca87946d1de0f4f5deb17bcf5d2eddc8eacb500a8964cf070ac8d": {
-      "created_at": "2026-10-28T00:12:37.428452+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Buffalo Sabres vs San Jose Sharks",
-        "description": "NHL regular season game between the Buffalo Sabres and the San Jose Sharks, scheduled for Wednesday, October 28, 2026 at the SAP Center in San Jose, CA. 【8†L33-L34】",
-        "raw": "Sabres @ Sharks"
       }
     },
     "c03c3064beddf3a3298057706ccd5f426a1c7bce033decaf270238aceed3608d": {
@@ -12881,10 +12725,13 @@
       }
     },
     "cd35312b1b1059281b9eb5eb526581e1f8834faa45eaa6e7b1d1db544c59fb9c": {
-      "failed": true,
-      "failure_policy": 2,
+      "created_at": "2026-11-27T04:32:35.915437+00:00",
       "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
+      "result": {
+        "clean_title": "TCU vs Texas Tech",
+        "description": "Coverage of TCU against Texas Tech.",
+        "raw": "TCU @ Texas Tech"
+      }
     },
     "cd41383604b8dadf96fbe3de97f5f5eca4dc0c58bae8aa0b80beafa6ba17b279": {
       "created_at": "2026-11-20T05:40:59.837958+00:00",
@@ -12930,12 +12777,6 @@
         "description": "Coverage of VT against MIM, UGA @ SC, UK @ MIZ, STAN @ CAL.",
         "raw": "VT @ MIM, UGA @ SC, UK @ MIZ, STAN @ CAL"
       }
-    },
-    "ce26e517a143158ac04ecc968b5985788c433e4752d5a8156c91008abd8a8371": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "ce318246c2e5bd62597aa21e94c602b5802b89bd0a4231d5c915fc5759d3e193": {
       "created_at": "2026-11-15T19:27:37.024313+00:00",
@@ -13387,15 +13228,6 @@
         "raw": "Kentucky @ Missouri"
       }
     },
-    "d41347d18fd5537661e9a84125fe5cdb8733014290ccf1fe246e01cc5b88ad9f": {
-      "created_at": "2026-10-28T00:12:37.428417+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Boston Bruins vs Carolina Hurricanes",
-        "description": "NHL regular season game between the Boston Bruins and the Carolina Hurricanes, scheduled for Wednesday, October 28, 2026 at the Lenovo Center in Raleigh, NC. 【8†L19-L20】",
-        "raw": "Bruins @ Hurricanes"
-      }
-    },
     "d468b08fe75764b6969f713f4ae704850c596005a9fd441d1027992263263b94": {
       "context": "DAZN UK event scheduled 28/10/2026 00:00 GMT",
       "created_at": "2026-10-28T18:24:17.569485+00:00",
@@ -13411,12 +13243,6 @@
         "description": "Coverage of Pau-Lacq-Orthez against Strasbourg.",
         "raw": "Pau-Lacq-Orthez vs. Strasbourg"
       }
-    },
-    "d4a658e56042037d1865409f45c753d95191a27bc22556fce0cb90ab7f8e676b": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.970691+00:00"
     },
     "d4b3bbd22c0716236b89bdd954ee309dc181501b515fed890854da28cc95da40": {
       "created_at": "2026-11-24T16:23:58.593221+00:00",
@@ -13453,12 +13279,6 @@
         "description": "Coverage of Greenbrier Tip-Off: Mississippi State against Xavier.",
         "raw": "Greenbrier Tip-Off: Mississippi State vs. Xavier"
       }
-    },
-    "d545938d56235f8aa92a2af604ac9238b4a7e0a4cdb093cf2d808a201fc8715d": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:07.224476+00:00"
     },
     "d56a8159c1f241944755a4dd39021d9e1a62753ce99eb3be4b2a1206439ace03": {
       "created_at": "2026-11-09T15:34:57.820101+00:00",
@@ -13752,15 +13572,6 @@
         "clean_title": "ONE Fight Night 49 Gabriel v Rasulov",
         "description": "Coverage of ONE Fight Night 49 Gabriel against Rasulov.",
         "raw": "ONE Fight Night 49 Gabriel v Rasulov"
-      }
-    },
-    "da0566176861644787f1520a0e23ad8341394624dde872285e009d504d7e61a6": {
-      "created_at": "2026-10-28T00:12:37.428443+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "New York Islanders vs Nashville Predators",
-        "description": "NHL regular season game between the New York Islanders and the Nashville Predators, scheduled for Wednesday, October 28, 2026 at the Bridgestone Arena in Nashville, TN. 【8†L17-L18】",
-        "raw": "Islanders @ Predators"
       }
     },
     "da34104bdf252a4f5a7df2a921714a77664b6d0984aa021970d6c3f1a52a1aba": {
@@ -14182,12 +13993,6 @@
         "description": "Coverage of Big Noon Kickoff Nov 14.",
         "raw": "Big Noon Kickoff - Nov 14"
       }
-    },
-    "e0bb404796c8d60c0a575114b405b33836505f03e62ba517fb10d23cc3ffaf89": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "e0c417c67533d716ef8a67d734f52188e584d070a48ab1b6c651159813f027c4": {
       "created_at": "2026-11-21T07:51:50.725173+00:00",
@@ -14855,18 +14660,6 @@
         "raw": "VT @ MIM, UGA @ SC, PITT @ LOU, STAN @ CAL"
       }
     },
-    "ebc4aa3a53e865d946682b58bcf1ce938aa39ac052a59c3f6dbe8095f022c047": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
-    },
-    "ebdb32db944b70dededa944bc86c251a0ca15060ce7815bfc9b5ddcb621c1d60": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
-    },
     "ebe3bb35d94991cfb11a20e7c26f8cdc22de876ff4d5a5d1395ae8023a88d4e2": {
       "created_at": "2026-11-14T13:34:13.414018+00:00",
       "kind": "live-title",
@@ -15147,15 +14940,6 @@
         "raw": "Jaguars @ Ravens (Spanish Broadcast)"
       }
     },
-    "f0b6ac5064ae88e1a8f427e548791c4c4e1cb115836becba2cfc902f6bee510e": {
-      "created_at": "2026-10-28T00:12:37.428446+00:00",
-      "kind": "live-title",
-      "result": {
-        "clean_title": "Los Angeles Kings vs Chicago Blackhawks",
-        "description": "NHL regular season game between the Los Angeles Kings and the Chicago Blackhawks, scheduled for Wednesday, October 28, 2026 at the United Center in Chicago, IL. 【8†L23-L24】",
-        "raw": "Kings @ Blackhawks"
-      }
-    },
     "f0f645fa8d6fb893ac9428cdb951c328daa8c4c5fb84650853d1d9ccbdecf652": {
       "context": "DAZN UK event scheduled 03/11/2026 00:00 GMT",
       "created_at": "2026-11-03T00:14:13.691115+00:00",
@@ -15377,12 +15161,6 @@
         "description": "Coverage of Virginia Tech against Miami, Georgia vs South Carolina, Pittsburgh vs Louisville, Stanford vs California.",
         "raw": "VT @ MIM, UGA @ SC, PITT @ LOU, STAN @ CAL"
       }
-    },
-    "f4936c2a19e5ebaf998c516b50c916107d68cdca09394f507ba22f93f440c994": {
-      "failed": true,
-      "failure_policy": 2,
-      "kind": "live-title",
-      "retry_after": "2026-11-26T22:51:06.583606+00:00"
     },
     "f4b5b6d4bfda9835f15ad358c541f4137ff063843f05dc00592a1505b616180d": {
       "created_at": "2026-11-13T05:39:21.524020+00:00",
